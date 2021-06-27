@@ -1,0 +1,316 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY swrlx "http://www.w3.org/2003/11/swrlx#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY Place "http://www.ICPS/ontologies/Place#" >
+    <!ENTITY ruleml "http://www.w3.org/2003/11/ruleml#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owlx "http://www.w3.org/2003/05/owl-xml#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY kaon2 "http://kaon2.semanticweb.org/internal#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY ICPSMerged "http://www.apsf.net.au/ontologies/ICPSMerged.owl#" >
+    <!ENTITY IncidentCharacteristic "http://www.ICPS/ontologies/IncidentCharacteristic#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ICPS/ontologies/"
+     xml:base="http://www.ICPS/ontologies/Place"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:Place="http://www.ICPS/ontologies/Place#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:kaon2="http://kaon2.semanticweb.org/internal#"
+     xmlns:owlx="http://www.w3.org/2003/05/owl-xml#"
+     xmlns:IncidentCharacteristic="http://www.ICPS/ontologies/IncidentCharacteristic#"
+     xmlns:ICPSMerged="http://www.apsf.net.au/ontologies/ICPSMerged.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrlx="http://www.w3.org/2003/11/swrlx#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ruleml="http://www.w3.org/2003/11/ruleml#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="">
+        <owl:priorVersion>1.0</owl:priorVersion>
+        <dc:creator>Oscar Corcho</dc:creator>
+        <dc:creator
+            >Elena Montiel-Ponsoda</dc:creator>
+        <owl:versionInfo>2.0</owl:versionInfo>
+        <dc:creator>Mar&#237;a Poveda</dc:creator>
+        <dc:creator
+            >Mari Carmen Su&#225;rez-Figueroa</dc:creator>
+        <rdfs:comment xml:lang="en"
+            >Ontology about places.</rdfs:comment>
+        <rdfs:comment xml:lang="en"
+            >This work has been carried out by the Ontological Engineering Group, using sources from the University of Saint Etienne and the Australian Patient Safety Foundation, and supported by the World Health Organisation under the International Classification for Patient Safety programme.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/Place#composes -->
+
+    <owl:ObjectProperty rdf:about="#composes">
+        <rdfs:label xml:lang="en">composes</rdfs:label>
+        <rdfs:domain rdf:resource="#HospitalArea"/>
+        <rdfs:range rdf:resource="#HospitalBuilding"/>
+        <owl:inverseOf rdf:resource="#isComposedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Place#isComposedBy -->
+
+    <owl:ObjectProperty rdf:about="#isComposedBy">
+        <rdfs:label xml:lang="en">is composed by</rdfs:label>
+        <rdfs:range rdf:resource="#HospitalArea"/>
+        <rdfs:domain rdf:resource="#HospitalBuilding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/Place#HospitalArea -->
+
+    <owl:Class rdf:about="#HospitalArea">
+        <rdfs:label xml:lang="en">Hospital area</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Place"/>
+        <owl:disjointWith rdf:resource="#HospitalBuilding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Place#HospitalBuilding -->
+
+    <owl:Class rdf:about="#HospitalBuilding">
+        <rdfs:label xml:lang="en"
+            >Hospital building</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Place#Place -->
+
+    <owl:Class rdf:about="#Place">
+        <rdfs:label xml:lang="en">Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/Place#bathroom -->
+
+    <owl:Thing rdf:about="#bathroom">
+        <rdf:type rdf:resource="#HospitalArea"/>
+        <rdfs:label xml:lang="en">bathroom</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Place#cafeteria -->
+
+    <Place:HospitalArea rdf:about="#cafeteria">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">cafeteria</rdfs:label>
+    </Place:HospitalArea>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Place#chapel -->
+
+    <owl:Thing rdf:about="#chapel">
+        <rdf:type rdf:resource="#HospitalArea"/>
+        <rdfs:label xml:lang="en">chapel</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Place#corridor -->
+
+    <owl:Thing rdf:about="#corridor">
+        <rdf:type rdf:resource="#HospitalArea"/>
+        <rdfs:label xml:lang="en">corridor</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Place#doctorsOffice -->
+
+    <Place:HospitalArea rdf:about="#doctorsOffice">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">doctors office</rdfs:label>
+    </Place:HospitalArea>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Place#elevator -->
+
+    <Place:HospitalArea rdf:about="#elevator">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">elevator</rdfs:label>
+    </Place:HospitalArea>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Place#emergencyRoom -->
+
+    <Place:HospitalArea rdf:about="#emergencyRoom">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">emergency room</rdfs:label>
+    </Place:HospitalArea>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Place#hall -->
+
+    <Place:HospitalArea rdf:about="#hall">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">hall</rdfs:label>
+    </Place:HospitalArea>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Place#operatingTheatre -->
+
+    <owl:Thing rdf:about="#operatingTheatre">
+        <rdf:type rdf:resource="#HospitalArea"/>
+        <rdfs:label xml:lang="en"
+            >operating theatre</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Place#recoveryRoom -->
+
+    <Place:HospitalArea rdf:about="#recoveryRoom">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">recovery room</rdfs:label>
+    </Place:HospitalArea>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Place#room -->
+
+    <Place:HospitalArea rdf:about="#room">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">room</rdfs:label>
+    </Place:HospitalArea>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Place#staffRoom -->
+
+    <Place:HospitalArea rdf:about="#staffRoom">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">staff room</rdfs:label>
+    </Place:HospitalArea>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Place#waitingRoom -->
+
+    <Place:HospitalArea rdf:about="#waitingRoom">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">waiting room</rdfs:label>
+    </Place:HospitalArea>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Place#ward -->
+
+    <owl:Thing rdf:about="#ward">
+        <rdf:type rdf:resource="#HospitalArea"/>
+        <rdfs:label xml:lang="en">ward</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="#corridor"/>
+            <rdf:Description rdf:about="#hall"/>
+            <rdf:Description rdf:about="#operatingTheatre"/>
+            <rdf:Description rdf:about="#recoveryRoom"/>
+            <rdf:Description rdf:about="#staffRoom"/>
+            <rdf:Description rdf:about="#bathroom"/>
+            <rdf:Description rdf:about="#waitingRoom"/>
+            <rdf:Description rdf:about="#cafeteria"/>
+            <rdf:Description rdf:about="#emergencyRoom"/>
+            <rdf:Description rdf:about="#chapel"/>
+            <rdf:Description rdf:about="#elevator"/>
+            <rdf:Description rdf:about="#ward"/>
+            <rdf:Description rdf:about="#room"/>
+            <rdf:Description rdf:about="#doctorsOffice"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,2033 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2015/0/apaneurocluster.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/ontologies/2015/0/apaneurocluster.owl"
+     versionIRI="http://www.semanticweb.org/ontologies/2015/0/apaneurocluster.owl">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Import>http://alexandergarcia.name/ontos/neuro/Electrophysiology.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/neuro/NeurologicalDisorders.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/neuro/Neuroanatomy.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/neuro/AssessmentDiagnosis.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/neuro/NeurologicalIntervention.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/neuro/NeurotransmittersNeuroregulators.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/neuro/Neurosciences.owl</Import>
+    <Declaration>
+        <Class IRI="#AssessmentDiagnosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electrophysiology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neuroanatomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NeurologicalDisorders"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NeurologicalIntervention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neurosciences"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#AIDS_Dementia_Complex"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#AMPA"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Abducens_Nerve"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Acalculia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Acetylcholine"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Acetylcholinesterase"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Acoustic_Nerve"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Action_Potentials"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Adenosine"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Adenylyl_Cyclase"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Adipocytes"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Adrenergic_Nerves"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Adrenergic_Receptors"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Afferent_Pathways"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Afferent_Stimulation"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Agnosia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Agraphia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Alanines"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Alcoholic_Hallucinosis"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Alcoholic_Psychosis"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Alexia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Alpha_Rhythm"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Alzheimer&#39;s_Disease"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Amino_Acids"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Amygdala"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Amyloid_Precursor_Protein"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Amyotrophic_Lateral_Sclerosis"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Anencephaly"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Angiotensin"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Anosognosia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Anoxia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Anterograde_Amnesia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Aphasia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Apraxia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Aspartic_Acid"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Astrocytes"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Ataxia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Athetosis"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Atomoxetine"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Audiogenic_Seizures"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Auditory_Cortex"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Auditory_Evoked_Potentials"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Auditory_Neurons"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Autonomic_Ganglia"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Autonomic_Nervous_System"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Autonomic_Nervous_System_Disorders"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Axons"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Back_Pain"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Bacterial_Meningitis"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Balint&#39;s_Syndrome"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Baroreceptors"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Basal_Ganglia"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Basal_Skin_Resistance"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Behavioral_Neuroscience"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Bender_Gestalt_Test"/>
+        <Class IRI="#AssessmentDiagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Beta_Rhythm"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Bipolar_Cells"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Blood_Brain_Barrier"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Bombesin"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Botulinum_Toxin"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Bradykinesia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Brain"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Brain_Concussion"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Brain_Damage"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Brain_Derived_Neurotrophic_Factor"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Brain_Development"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Brain_Disorders"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Brain_Neoplasms"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Brain_Self_Stimulation"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Brain_Size"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Brain_Stem"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Brain_Stimulation"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Brain_Weight"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Broca&#39;s_Area"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#CREB_Activation"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Catalepsy"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cataplexy"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Catecholamines"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Caudate_Nucleus"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cell_Adhesion_Molecules"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cell_Differentiation"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cell_Membrane"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cellular_Neuroscience"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Central_Nervous_System"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Central_Nervous_System_Disorders"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Central_Pattern_Generator"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cerebellum"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cerebral_Arteriosclerosis"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cerebral_Atrophy"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cerebral_Blood_Flow"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cerebral_Cortex"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cerebral_Dominance"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cerebral_Hemorrhage"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cerebral_Ischemia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cerebral_Palsy"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cerebral_Ventricles"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cerebrospinal_Fluid"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cerebrovascular_Accidents"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cerebrovascular_Disorders"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Charcot-Marie-Tooth_Disease"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Chemical_Brain_Stimulation"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Chemoreceptors"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cholecystokinin"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Choline"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cholinergic_Nerves"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cholinergic_Receptors"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cholinesterase"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Chorea"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Chronic_Pain"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cingulate_Cortex"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Clinical_Neuroscience"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cognitive_Impairment"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cognitive_Neuroscience"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cognitive_Reserve"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Coma"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Commissurotomy"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Computational_Neuroscience"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cones_(Eye)"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Contingent_Negative_Variation"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Corpus_Callosum"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Corticobasal_Degeneration"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Creutzfeldt_Jakob_Syndrome"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cutaneous_Receptive_Fields"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cutaneous_Sense"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cytoarchitecture"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cytoskeleton"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Decerebration"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Decortication_(Brain)"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Deep_Brain_Stimulation"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Delirium_Tremens"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Delta_Rhythm"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dementia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dementia_with_Lewy_Bodies"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dendrites"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Depolarization"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Developmental_Neuroscience"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Diencephalon"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dihydroxyphenylacetic_Acid"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dihydroxytryptamine"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dopamine"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dopamine_Metabolites"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dorsal_Horns"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dorsal_Roots"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dynorphins"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dysarthria"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dysexecutive_Syndrome"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dyskinesia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dyslexia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dysphasia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dysphonia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dyspraxia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Echoencephalography"/>
+        <Class IRI="#AssessmentDiagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Efferent_Pathways"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Electrical_Activity"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Electrical_Brain_Stimulation"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Electroencephalography"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Electrophysiology"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Encephalitis"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Encephalomyelitis"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Encephalopathies"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Endocytosis"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Endogenous_Opiates"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Endoplasmic_Reticulum"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Endorphins"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Enkephalins"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Entorhinal_Cortex"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Epilepsy"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Epileptic_Seizures"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Epinephrine"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Evoked_Potentials"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Excitatory_Postsynaptic_Potentials"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Excitatory_Synapse"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Exocytosis"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Extrapyramidal_Symptoms"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Extrapyramidal_Tracts"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Facial_Nerve"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Forebrain"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Fornix"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Fovea"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Frontal_Lobe"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Functional_Magnetic_Resonance_Imaging"/>
+        <Class IRI="#AssessmentDiagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Fusiform_Gyrus"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Galvanic_Skin_Response"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Gamma_Aminobutyric_Acid"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Gamma_Rhythm"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Ganglia"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Ganglion_Cells_(Retina)"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Gap_Junctions"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#General_Paresis"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Geniculate_Bodies_(Thalamus)"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Glioma"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Gliosis"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Global_Amnesia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Globus_Pallidus"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Glutamate_Receptors"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Glutamic_Acid"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Glycine"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Golgi_Apparatus"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Grand_Mal_Seizures"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Granule_Cells"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Gray_Matter"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Halstead_Reitan_Neuropsychological_Battery"/>
+        <Class IRI="#AssessmentDiagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Head_Injuries"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Headache"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hemianopia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hemiplegia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hemispherectomy"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hindbrain"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hippocampus"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Histamine"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Histochemistry"/>
+        <Class IRI="#AssessmentDiagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Homovanillic_Acid"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Huntingtons_Disease"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hydrocephalus"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hydroxydopamine_(6-)"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hydroxyindoleacetic_Acid_(5-)"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hyperkinesis"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hyperpolarization"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hypothalamic_Pituitary_Adrenal_Axis"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hypothalamo_Hypophyseal_System"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hypothalamus"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hypothalamus_Lesions"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Ibotenic_Acid"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Immunocytochemistry"/>
+        <Class IRI="#AssessmentDiagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Immunodepression"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Immunotoxin"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Inferior_Colliculus"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Inhibitory_Postsynaptic_Potentials"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Insula"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Interhemispheric_Interaction"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Interneurons"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Intracranial_Abscesses"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Ion_Channel"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Kainic_Acid"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Kindling"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Kluver_Bucy_Syndrome"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Korsakoffs_Psychosis"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Lateral_Dominance"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Left_Hemisphere"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Lemniscal_System"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Leptin"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Leukoencephalopathy"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Ligand-gated_Ion_Channel"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Limbic_System"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Lipopolysaccharide"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Locus_Ceruleus"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Lumbar_Spinal_Cord"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Luria_Nebraska_Neuropsychological_Battery"/>
+        <Class IRI="#AssessmentDiagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Magnetic_Resonance_Imaging"/>
+        <Class IRI="#AssessmentDiagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Magnetoencephalography"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mechanoreceptors"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Medial_Forebrain_Bundle"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Medulla_Oblongata"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Melanocyte_Stimulating_Hormone"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Membrane_Potentials"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Memory_Disorders"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Memory_for_Designs_Test"/>
+        <Class IRI="#AssessmentDiagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Meninges"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Meningitis"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Meningoradiculitis"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mesencephalon"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Methoxyhydroxyphenylglycol_(3,4)"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Microcephaly"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Microglia"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Migraine_Headache"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Migration_of_Nerve_Cells"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mini_Mental_State_Examination"/>
+        <Class IRI="#AssessmentDiagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mirror_Neurons"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mismatch_Negativity"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mitochondria"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mitogen_Activated_Protein_Kinase"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Molecular_Neuroscience"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Monoamine_Oxidases"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Motor_Cortex"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Motor_Neurons"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Movement_Disorders"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Multiple_Sclerosis"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Multiple_System_Atrophy"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Muscle_Contraction_Headache"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Muscular_Dystrophy"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Myasthenia_Gravis"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Myelin_Sheath"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Myelitis"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Myofascial_Pain"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Myopathy"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Narcolepsy"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Nerve_Endings"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Nerve_Growth_Factor"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Nerve_Tissues"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Nervous_System"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Nervous_System_Disorders"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Nervous_System_Neoplasms"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neural_Analyzers"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neural_Development"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neural_Inhibition"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neural_Lesions"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neural_Networks"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neural_Pathways"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neural_Plasticity"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neural_Pruning"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neural_Receptors"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neural_Regeneration"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neural_Transplantation"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neuralgia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neuroanatomy"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurobiology"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurochemistry"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurocognition"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurodegeneration"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurodegenerative_Diseases"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurodevelopmental_Disorders"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neuroeconomics"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neuroendocrinology"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurofibrillary_Tangles"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurofibromatosis"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurogenesis"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neuroglia"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neuroimaging"/>
+        <Class IRI="#AssessmentDiagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neuroimmunology"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neuroinflammation"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurokinins"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neuroleptic_Malignant_Syndrome"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurolinguistics"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurology"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neuromuscular_Disorders"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurons"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neuropathic_Pain"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neuropathology"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neuropeptide_Y"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neuropeptides"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neuropharmacology"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurophysiology"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neuroprotection"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neuropsychiatry"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neuropsychological_Assessment"/>
+        <Class IRI="#AssessmentDiagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neuropsychology"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neuropsychopharmacology"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurosciences"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurosurgery"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurosyphilis"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurotensin"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurotherapy"/>
+        <Class IRI="#AssessmentDiagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurotoxicity"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurotoxins"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurotransmission"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurotransmitter_Transporters"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurotransmitter_Uptake_Inhibitors"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurotransmitters"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurotrophic_Factor"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Nitric_Oxide"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Nociceptors"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Node_of_Ranvier"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Norepinephrine"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Norepinephrine_Metabolites"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Nucleosides"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Nucleus_Basalis_Magnocellularis"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Occipital_Lobe"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Ocular_Dominance"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Olfactory_Bulb"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Olfactory_Evoked_Potentials"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Olfactory_Nerve"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Oligodendrocytes"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Optic_Chiasm"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Optic_Lobe"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Optic_Nerve"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Optic_Tract"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Organic_Brain_Syndromes"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Oxidative_Stress"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Oxytocin"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#P300"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Pain"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Paralysis"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Paraplegia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Parasympathetic_Nervous_System"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Parietal_Lobe"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Parkinson&#39;s_Disease"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Peptides"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Periaqueductal_Gray"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Peripheral_Nervous_System"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Peripheral_Neuropathy"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Periventricular_Leukomalacia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Petit_Mal_Seizures"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Phenethylamines"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Phosphodiesterase"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Photoreceptors"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Picks_Disease"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Pneumoencephalography"/>
+        <Class IRI="#AssessmentDiagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Poliomyelitis"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Polysomnography"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Pons"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Positron_Emission_Tomography"/>
+        <Class IRI="#AssessmentDiagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Postactivation_Potentials"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Posterior_Reversible_Encephalopathy"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Preoptic_Area"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Presenile_Dementia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Prion"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Progenitor_Cells"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Progressive_Supranuclear_Palsy"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Proprioceptors"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Prosopagnosia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Proteomics"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychoneuroendocrinology"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychoneuroimmunology"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychopharmacology"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychosurgery"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Purkinje_Cells"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Putamen"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Pyramidal_Tracts"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Quadriplegia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Raphe_Nuclei"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Receptive_Fields"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Receptor_Binding"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Reticular_Formation"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Retina"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Retrograde_Amnesia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Reuptake"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Rheoencephalography"/>
+        <Class IRI="#AssessmentDiagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Ribosomes"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Right_Hemisphere"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Rimonabant"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Rods_(Eye)"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Schwann_Cells"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sclerosis_(Nervous_System)"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Seizures"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Semantic_Dementia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Senile_Dementia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Senile_Plaques"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Senile_Psychosis"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sense_Organs"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sensory_Neurons"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Septal_Nuclei"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Serotonin"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Serotonin_Metabolites"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Serotonin_Norepinephrine_Reuptake_Inhibitors"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Single_Photon_Emission_Computed_Tomography"/>
+        <Class IRI="#AssessmentDiagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Skin_Electrical_Properties"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Skin_Potential"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Skin_Resistance"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Social_Neuroscience"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Soma_(Cells)"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Somatosensory_Cortex"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Somatosensory_Evoked_Potentials"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Somatostatin"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Spasms"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Spinal_Column"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Spinal_Cord"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Spinal_Cord_Injuries"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Spinal_Ganglia"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Spinothalamic_Tracts"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Stereotaxic_Techniques"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Striatum"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Substance_P"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Substantia_Nigra"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Subthalamic_Nucleus"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Subventricular_Zone"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sympathectomy"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sympathetic_Nervous_System"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Synaptic_Pruning"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Synaptic_Vesicle"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Synaptotagmin"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Synesthesia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Systems_Neuroscience"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Tachykinins"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Tardive_Dyskinesia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Task_Switching"/>
+        <Class IRI="#AssessmentDiagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Taurine"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Tegmentum"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Teratology"/>
+        <Class IRI="#Neurosciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Thalamic_Nuclei"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Thalamotomy"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Thalamus"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Theta_Rhythm"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Tics"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Torticollis"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Tourette_Syndrome"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Toxic_Encephalopathies"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Tractotomy"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Traumatic_Brain_Injury"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Tremor"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Trigeminal_Nerve"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Trigeminal_Neuralgia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Tryptamine"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Tyramine"/>
+        <Class IRI="#NeurotransmittersNeuroregulators"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Vagotomy"/>
+        <Class IRI="#NeurologicalIntervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Vagus_Nerve"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Vascular_Dementia"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Ventral_Roots"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Visual_Cortex"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Visual_Evoked_Potentials"/>
+        <Class IRI="#Electrophysiology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Wechsler_Memory_Scale"/>
+        <Class IRI="#AssessmentDiagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Wernicke&#39;s_Syndrome"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#White_Matter"/>
+        <Class IRI="#Neuroanatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Williams_Syndrome"/>
+        <Class IRI="#NeurologicalDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Wisconsin_Card_Sorting_Test"/>
+        <Class IRI="#AssessmentDiagnosis"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

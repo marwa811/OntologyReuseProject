@@ -1,0 +1,2333 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace">
+    <Prefix name="" IRI="http://www.cablesat.com.au/research/hypothetical_ward.owl#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="sno" IRI="http://purl.bioontology.org/ontology/SNOMEDCT/"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="xsp" IRI="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"/>
+    <Prefix name="ICNP" IRI="http://purl.bioontology.org/ontology/ICNP/"/>
+    <Prefix name="Ward" IRI="http://www.cablesat.com.au/research/"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="mesh" IRI="http://purl.bioontology.org/ontology/MSH/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="dbpedia" IRI="http://dbpedia.org/resource/"/>
+    <Prefix name="owl2xml" IRI="http://www.w3.org/2006/12/owl2-xml#"/>
+    <Prefix name="protege" IRI="http://protege.stanford.edu/plugins/owl/protege#"/>
+    <Prefix name="webprotege" IRI="http://protege.stanford.edu/webprotege/"/>
+    <Prefix name="wardOntology" IRI="http://www.cablesat.com.au/research/hypothetical_ward.owl#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal datatypeIRI="&xsd;string">system</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&xsd;string">This ontology was generated from a transitional care graph from a domain expert.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&xsd;string">This ontology was generated from an ontology revision in WebProtégé http://webprotege.stanford.edu</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal datatypeIRI="&xsd;string">shielphi</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <Literal datatypeIRI="&xsd;dateTime">Oct 28, 2013 9:03:53 PM</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="Ward:transitional.owl#Doctor"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurse"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Dependent_Role"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Independent_Role"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_interdependent_Role"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="Ward:transitional.owl#Patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Administer_Analgesia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Administer_Antibiotics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Admissions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Answer_Phones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Care_Plan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Change_dressings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Check_Emails"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Checking_DDs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Computers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Dietician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Discharge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Discharge_Planner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Documentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Empty_Drains"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Family"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Finding_keys"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Fluid_Balance_Chart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Make_Beds"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Manditory_Education"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Medication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Medication_Administration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Medication_Charts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Monitor_IV_Infusions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Nursing_Notes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#OT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Observation_Charts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Other_Nurses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Page_Doctors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Paging_Porters"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Patient_Education"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Personal_care"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Physio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Pick_patients_Up_From_Theatre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Prepare_Patient_for_Theatre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Put_IVs_in"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Referrals_to_Allied_Health"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Review_Pathology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Riskman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Shower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Speech_Pathology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Supervise_Student_Nurse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Take_Blood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Take_Patients_to_Theatre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Wound_Chart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Thing"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#Morphene_Injection_IV"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#dependent_role_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#diagnosis_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#employee_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#independent_role_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#interdependent_role_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#medication_generic_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_designation_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_education_level_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_registration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#patient_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#physician_initiated_treatment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbpedia:Ipratropium_bromide/salbutamol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Agency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Bachelor_of_Nursing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Bachelor_of_Nursing_Honours"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Blart_Versenwald"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Case_Management"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Casual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Cetirizine_Hydrochloride"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Clinical_Nurse_Consultant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Clinical_Nurse_Specialist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Clinical_Symptom_Control"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Coordination_of_Care"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Dan_Streetmentioner"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Disease_Education"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Eccentrica_Gallumbits"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Emergency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Enalapril"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Enrolled_Nurse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Esomeprazole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Execution_of_medical_orders"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Ford_Prefect"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Freedom_From_Complication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Full_Time"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Functional_Status"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Gag_Halfrunt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Gastric_reflux"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Gogrilla_Mincefriend"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Googleplex_Starthinker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Gout"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Graduate_RN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:High_Blood_Pressure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Hyoscine_Butylbromide"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Jane_Arkleseizure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Joe_Bleu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:John_Smith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Masters_degree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Mavis_Garkbit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Medical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Nosocomial_Infection"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Nurse_Administrator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Nurse_Assessment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Nurse_Educator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Nurse_Follow_up_Care"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Nurse_Intervention"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Nurse_Researcher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Nursing_Certificate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Nursing_Diagnosis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Nursing_Diploma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:PhD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Physician_initiated_Treatment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Post_graduate_diploma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Registered_Nurse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Salbutamol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Slarty_Bartfast"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Surgical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Ulcer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:fall"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:hypothetical_ward.owl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:interdisciplinary_communications"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:Zaphod_Beeblebrox/Zaphod_Beeblebrox.rdf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="Ward:transitional.owl#Insufficient_Gas_Exchange"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.icn.ch/icnp#ActualNegativeGaseousExchange"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="foaf:knows"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI="Ward:transitional.owl#Doctor"/>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Dependent_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="Ward:transitional.owl#Patient"/>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Independent_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Administer_Analgesia"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Medication_Administration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Administer_Antibiotics"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Medication_Administration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Admissions"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Documentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Answer_Phones"/>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Independent_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Care_Plan"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Documentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Change_dressings"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Personal_care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Check_Emails"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Computers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Checking_DDs"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Medication_Administration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Computers"/>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Independent_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Dietician"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Referrals_to_Allied_Health"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Discharge"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Documentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Discharge_Planner"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Referrals_to_Allied_Health"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Documentation"/>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Independent_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Empty_Drains"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Personal_care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Family"/>
+        <Class abbreviatedIRI="Ward:transitional.owl#Patient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Finding_keys"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Medication_Administration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Fluid_Balance_Chart"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Documentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Make_Beds"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Personal_care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Manditory_Education"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Computers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Medication"/>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Dependent_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Medication_Administration"/>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Independent_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Medication_Charts"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Documentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Monitor_IV_Infusions"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Medication_Administration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Nursing_Notes"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Documentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#OT"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Referrals_to_Allied_Health"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Observation_Charts"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Documentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Other_Nurses"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Medication_Administration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Page_Doctors"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Computers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Paging_Porters"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Computers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Patient_Education"/>
+        <Class abbreviatedIRI="Ward:transitional.owl#Patient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Personal_care"/>
+        <Class abbreviatedIRI="Ward:transitional.owl#Patient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Physio"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Referrals_to_Allied_Health"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Pick_patients_Up_From_Theatre"/>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Independent_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Prepare_Patient_for_Theatre"/>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Independent_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Put_IVs_in"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Medication_Administration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Referrals_to_Allied_Health"/>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_interdependent_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Review_Pathology"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Computers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Riskman"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Computers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Shower"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Personal_care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Speech_Pathology"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Referrals_to_Allied_Health"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Supervise_Student_Nurse"/>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Independent_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Take_Blood"/>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Independent_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Take_Patients_to_Theatre"/>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Independent_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Wound_Chart"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Documentation"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class abbreviatedIRI="Ward:transitional.owl#Doctor"/>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurse"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Dependent_Role"/>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Independent_Role"/>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_interdependent_Role"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Agency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Bachelor_of_Nursing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Bachelor_of_Nursing_Honours"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Blart_Versenwald"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_interdependent_Role"/>
+        <NamedIndividual abbreviatedIRI="Ward:Case_Management"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Case_Management"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Casual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Cetirizine_Hydrochloride"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Clinical_Nurse_Consultant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Clinical_Nurse_Specialist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Clinical_Symptom_Control"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_interdependent_Role"/>
+        <NamedIndividual abbreviatedIRI="Ward:Coordination_of_Care"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Coordination_of_Care"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Dan_Streetmentioner"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Disease_Education"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Eccentrica_Gallumbits"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Emergency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Enalapril"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Enrolled_Nurse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Esomeprazole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Dependent_Role"/>
+        <NamedIndividual abbreviatedIRI="Ward:Execution_of_medical_orders"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Execution_of_medical_orders"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Ford_Prefect"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Freedom_From_Complication"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Full_Time"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Functional_Status"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="Ward:transitional.owl#Patient"/>
+        <NamedIndividual abbreviatedIRI="Ward:Gag_Halfrunt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Gag_Halfrunt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Gastric_reflux"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="Ward:transitional.owl#Patient"/>
+        <NamedIndividual abbreviatedIRI="Ward:Gogrilla_Mincefriend"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Gogrilla_Mincefriend"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="Ward:transitional.owl#Patient"/>
+        <NamedIndividual abbreviatedIRI="Ward:Googleplex_Starthinker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Googleplex_Starthinker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Gout"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Graduate_RN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:High_Blood_Pressure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Hyoscine_Butylbromide"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurse"/>
+        <NamedIndividual abbreviatedIRI="Ward:Jane_Arkleseizure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Jane_Arkleseizure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Joe_Bleu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:John_Smith"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Masters_degree"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="Ward:transitional.owl#Patient"/>
+        <NamedIndividual abbreviatedIRI="Ward:Mavis_Garkbit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Mavis_Garkbit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Medical"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nosocomial_Infection"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nurse_Administrator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Independent_Role"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nurse_Assessment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nurse_Assessment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nurse_Educator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Independent_Role"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nurse_Follow_up_Care"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nurse_Follow_up_Care"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Independent_Role"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nurse_Intervention"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nurse_Intervention"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nurse_Researcher"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nursing_Certificate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Independent_Role"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nursing_Diagnosis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nursing_Diagnosis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nursing_Diploma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:PhD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Dependent_Role"/>
+        <NamedIndividual abbreviatedIRI="Ward:Physician_initiated_Treatment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Physician_initiated_Treatment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Post_graduate_diploma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Registered_Nurse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Salbutamol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurse"/>
+        <NamedIndividual abbreviatedIRI="Ward:Slarty_Bartfast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Slarty_Bartfast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Surgical"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Ulcer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:fall"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:hypothetical_ward.owl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurses_interdependent_Role"/>
+        <NamedIndividual abbreviatedIRI="Ward:interdisciplinary_communications"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:interdisciplinary_communications"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="Ward:transitional.owl#Nurse"/>
+        <NamedIndividual abbreviatedIRI="Ward:Zaphod_Beeblebrox/Zaphod_Beeblebrox.rdf"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Thing"/>
+        <NamedIndividual abbreviatedIRI="Ward:Zaphod_Beeblebrox/Zaphod_Beeblebrox.rdf"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual abbreviatedIRI="dbpedia:Ipratropium_bromide/salbutamol"/>
+        <NamedIndividual abbreviatedIRI="Ward:Hyoscine_Butylbromide"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual abbreviatedIRI="dbpedia:Ipratropium_bromide/salbutamol"/>
+        <NamedIndividual abbreviatedIRI="Ward:Salbutamol"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual abbreviatedIRI="sno:70944005"/>
+        <NamedIndividual abbreviatedIRI="Ward:transitional.owl#Insufficient_Gas_Exchange"/>
+    </SameIndividual>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_education_level_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Bachelor_of_Nursing"/>
+        <Literal datatypeIRI="&xsd;string">Nursing Certificate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_education_level_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Bachelor_of_Nursing_Honours"/>
+        <Literal datatypeIRI="&xsd;string">Nursing Diploma</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#employee_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Blart_Versenwald"/>
+        <Literal datatypeIRI="&xsd;string">Blart Versenwald</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#interdependent_role_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Case_Management"/>
+        <Literal datatypeIRI="&xsd;string">Case management</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#medication_generic_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Cetirizine_Hydrochloride"/>
+        <Literal datatypeIRI="&xsd;string">Cetirizine Hydrochloride</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_designation_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Clinical_Nurse_Consultant"/>
+        <Literal datatypeIRI="&xsd;string">Clinical Nurse Consultant</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_designation_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Clinical_Nurse_Specialist"/>
+        <Literal datatypeIRI="&xsd;string">Clinical Nurse Specialist</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#interdependent_role_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Coordination_of_Care"/>
+        <Literal datatypeIRI="&xsd;string">coordination of care</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#employee_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Dan_Streetmentioner"/>
+        <Literal datatypeIRI="&xsd;string">Dan Streetmentioner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#employee_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Eccentrica_Gallumbits"/>
+        <Literal datatypeIRI="&xsd;string">Eccentrica Gallumbits</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#medication_generic_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Enalapril"/>
+        <Literal datatypeIRI="&xsd;string">Enalapril</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_designation_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Enrolled_Nurse"/>
+        <Literal datatypeIRI="&xsd;string">Enrolled Nurse</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#medication_generic_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Esomeprazole"/>
+        <Literal datatypeIRI="&xsd;string">Esomeprazole</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#dependent_role_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Execution_of_medical_orders"/>
+        <Literal datatypeIRI="&xsd;string">Execution of medical orders</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#employee_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Ford_Prefect"/>
+        <Literal datatypeIRI="&xsd;string">Ford Prefect</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#patient_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Gag_Halfrunt"/>
+        <Literal datatypeIRI="&xsd;string">Gag Halfrunt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#diagnosis_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Gastric_reflux"/>
+        <Literal datatypeIRI="&xsd;string">Gastric reflux</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#patient_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Gogrilla_Mincefriend"/>
+        <Literal datatypeIRI="&xsd;string">Gogrilla Mincefriend</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#patient_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Googleplex_Starthinker"/>
+        <Literal datatypeIRI="&xsd;string">Googleplex Starthinker</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#diagnosis_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Gout"/>
+        <Literal datatypeIRI="&xsd;string">Gout</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_designation_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Graduate_RN"/>
+        <Literal datatypeIRI="&xsd;string">Graduate RN</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#diagnosis_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:High_Blood_Pressure"/>
+        <Literal datatypeIRI="&xsd;string">High Blood Pressure</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#medication_generic_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Hyoscine_Butylbromide"/>
+        <Literal datatypeIRI="&xsd;string">hyoscine Butylbromide</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#employee_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Jane_Arkleseizure"/>
+        <Literal datatypeIRI="&xsd;string">Jane Arkleseizure</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#employee_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Joe_Bleu"/>
+        <Literal datatypeIRI="&xsd;string">Joe Bleu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#employee_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:John_Smith"/>
+        <Literal datatypeIRI="&xsd;string">John Smith</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_education_level_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Masters_degree"/>
+        <Literal datatypeIRI="&xsd;string">Bachelor of Nursing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#patient_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Mavis_Garkbit"/>
+        <Literal datatypeIRI="&xsd;string">Mavis Garkbit</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_designation_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nurse_Administrator"/>
+        <Literal datatypeIRI="&xsd;string">Nurse Administrator</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#independent_role_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nurse_Assessment"/>
+        <Literal datatypeIRI="&xsd;string">nurse assessment</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_designation_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nurse_Educator"/>
+        <Literal datatypeIRI="&xsd;string">Nurse Educator</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#independent_role_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nurse_Follow_up_Care"/>
+        <Literal datatypeIRI="&xsd;string">nurse follow up care</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#independent_role_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nurse_Intervention"/>
+        <Literal datatypeIRI="&xsd;string">nurse intervention</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_designation_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nurse_Researcher"/>
+        <Literal datatypeIRI="&xsd;string">Nurse Researcher</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_education_level_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nursing_Certificate"/>
+        <Literal datatypeIRI="&xsd;string">Nursing Certificate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#independent_role_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nursing_Diagnosis"/>
+        <Literal datatypeIRI="&xsd;string">nursing diagnosis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_education_level_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Nursing_Diploma"/>
+        <Literal datatypeIRI="&xsd;string">Nursing Diploma</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_education_level_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:PhD"/>
+        <Literal datatypeIRI="&xsd;string">PhD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#Morphene_Injection_IV"/>
+        <NamedIndividual abbreviatedIRI="Ward:Physician_initiated_Treatment"/>
+        <Literal datatypeIRI="&xsd;string">Zaphod_BeebleBrox
+Mavis_Garkbit
+2 Mg
+20/12/2013 09:20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_education_level_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Post_graduate_diploma"/>
+        <Literal datatypeIRI="&xsd;string">Post graduate diploma</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_designation_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Registered_Nurse"/>
+        <Literal datatypeIRI="&xsd;string">Registered Nurse</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#employee_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Slarty_Bartfast"/>
+        <Literal datatypeIRI="&xsd;string">Slarty Bartfast</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#interdependent_role_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:interdisciplinary_communications"/>
+        <Literal datatypeIRI="&xsd;string">interdisciplinary communications</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#employee_name"/>
+        <NamedIndividual abbreviatedIRI="Ward:Zaphod_Beeblebrox/Zaphod_Beeblebrox.rdf"/>
+        <Literal datatypeIRI="&xsd;string">Zaphod Beeblebrox</Literal>
+    </DataPropertyAssertion>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#Morphene_Injection_IV"/>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#physician_initiated_treatment"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#dependent_role_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#diagnosis_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#employee_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#independent_role_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#interdependent_role_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#medication_generic_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_designation_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_education_level_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_registration"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#patient_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#physician_initiated_treatment"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#dependent_role_name"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Dependent_Role"/>
+            <Class IRI="Thing"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#independent_role_name"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="Ward:transitional.owl#Nurses_Independent_Role"/>
+            <Class IRI="Thing"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#interdependent_role_name"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="Ward:transitional.owl#Nurses_interdependent_Role"/>
+            <Class IRI="Thing"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#patient_name"/>
+        <Class abbreviatedIRI="Ward:transitional.owl#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#dependent_role_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#diagnosis_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#employee_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#independent_role_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#interdependent_role_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#medication_generic_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_designation_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_education_level_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#nurse_registration"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#patient_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="Ward:transitional.owl#physician_initiated_treatment"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Agency</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Employed through an external agency
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Agency</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Agency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Bachelor_of_Nursing</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing educational qualification
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Bachelor_of_Nursing</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Bachelor of Nursing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Bachelor_of_Nursing_Honours</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing educational qualification
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Bachelor_of_Nursing_Honours</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Bachelor of Nursing Honours</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Blart_Versenwald</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      A Doctor
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Blart_Versenwald</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Blart Versenwald</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Case_Management</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing role carried out in cooperation with allied health and other 
+      health workers
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Case_Management</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Case Management</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Casual</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Employed through the casual bank
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Casual</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Casual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Cetirizine_Hydrochloride</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Zyrtec
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Cetirizine_Hydrochloride</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Cetirizine Hydrochloride</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Clinical_Nurse_Consultant</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing level in hierarchy
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Clinical_Nurse_Consultant</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Clinical Nurse Consultant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Clinical_Nurse_Specialist</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing level in hierarchy
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Clinical_Nurse_Specialist</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Clinical Nurse Specialist</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Clinical_Symptom_Control</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Patient Outcome that is expected as a result of intervention
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Clinical_Symptom_Control</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Clinical Symptom Control</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Coordination_of_Care</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing role carried out in cooperation with allied health and other 
+      health workers
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Coordination_of_Care</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Coordination of Care</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Dan_Streetmentioner</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      A doctor
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Dan_Streetmentioner</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Dan Streetmentioner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Disease_Education</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Patient Outcome that is expected as a result of intervention
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Disease_Education</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Disease Education</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Eccentrica_Gallumbits</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      A doctor
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Eccentrica_Gallumbits</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Eccentrica Gallumbits</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Emergency</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Type of ward
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Emergency</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Emergency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Enalapril</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Enalapril
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Enalapril</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Enalapril</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>Ward:Enalapril</AbbreviatedIRI>
+        <AbbreviatedIRI>mesh:D064098</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Enrolled_Nurse</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing level in hierarchy
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Enrolled_Nurse</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Enrolled Nurse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Esomeprazole</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nexium
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Esomeprazole</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Esomeprazole</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>Ward:Esomeprazole</AbbreviatedIRI>
+        <AbbreviatedIRI>mesh:D064098</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Execution_of_medical_orders</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing role dependent on a physician
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Execution_of_medical_orders</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Execution of medical orders</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Ford_Prefect</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      A doctor
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Ford_Prefect</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Ford Prefect</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Freedom_From_Complication</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Patient Outcome that is expected as a result of intervention
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Freedom_From_Complication</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Freedom From Complication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Full_Time</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Employed on a permanent contract
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Full_Time</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Full Time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Functional_Status</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Patient Outcome that is expected as a result of intervention
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Functional_Status</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Functional Status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>Ward:Functional_Status</AbbreviatedIRI>
+        <AbbreviatedIRI>ICNP:AbilityStatus</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Gag_Halfrunt</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      A patient in a ward
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Gag_Halfrunt</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Gag Halfrunt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Gastric_reflux</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Gastric reflux</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>Ward:Gastric_reflux</AbbreviatedIRI>
+        <AbbreviatedIRI>sno:139302007</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Gogrilla_Mincefriend</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      A patient in a ward
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Gogrilla_Mincefriend</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Gogrilla Mincefriend</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Googleplex_Starthinker</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      A patient in a ward
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Googleplex_Starthinker</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Googleplex Starthinker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Gout</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Gout</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>Ward:Gout</AbbreviatedIRI>
+        <AbbreviatedIRI>sno:90560007</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Graduate_RN</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing level in hierarchy
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Graduate_RN</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Graduate RN</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:High_Blood_Pressure</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">High Blood Pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>Ward:High_Blood_Pressure</AbbreviatedIRI>
+        <AbbreviatedIRI>sno:148440000</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Hyoscine_Butylbromide</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Buscopan
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Hyoscine_Butylbromide</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Buscopan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>Ward:Hyoscine_Butylbromide</AbbreviatedIRI>
+        <AbbreviatedIRI>mesh:D002086</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Jane_Arkleseizure</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      A nurse
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Jane_Arkleseizure</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Jane Arkleseizure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Joe_Bleu</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      An Allied health worker
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Joe_Bleu</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Joe Bleu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:John_Smith</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      An allied health worker
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:John_Smith</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">John Smith</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Masters_degree</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing educational qualification
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Masters_degree</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Masters degree</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Mavis_Garkbit</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      A patient in a ward
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Mavis_Garkbit</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Mavis Garkbit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Medical</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Type of ward
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Medical</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Medical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Nosocomial_Infection</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      An adverse event which occured to a patient
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Nosocomial_Infection</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Nosocomial Infection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Nurse_Administrator</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing level in hierarchy
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Nurse_Administrator</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Nurse Administrator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Nurse_Assessment</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Role carried out autonomously by a nurse
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Nurse_Assessment</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Nurse Assessment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Nurse_Educator</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing level in hierarchy
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Nurse_Educator</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Nurse educator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Nurse_Follow_up_Care</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Role carried out autonomously by a nurse
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Nurse_Follow_up_Care</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Nurse Follow up Care</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Nurse_Intervention</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Role carried out autonomously by a nurse
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Nurse_Intervention</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Nurse Intervention</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Nurse_Researcher</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing level in hierarchy
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Nurse_Researcher</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Nurse researcher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Nursing_Certificate</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing educational qualification
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Nursing_Certificate</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Nursing Certificate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Nursing_Diagnosis</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Role carried out autonomously by a nurse
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Nursing_Diagnosis</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Nursing Diagnosis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Nursing_Diploma</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing educational qualification
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Nursing_Diploma</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Nursing Diploma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:PhD</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing educational qualification
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:PhD</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">PhD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Physician_initiated_Treatment</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing role dependent on a physician
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Physician_initiated_Treatment</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Physician initiated Treatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Post_graduate_diploma</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing educational qualification
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Post_graduate_diploma</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Post graduate diploma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Registered_Nurse</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing level in hierarchy
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Registered_Nurse</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Registered Nurse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Salbutamol</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Ventolin
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Salbutamol</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Salbutamol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>Ward:Salbutamol</AbbreviatedIRI>
+        <AbbreviatedIRI>dbpedia:Ipratropium_bromide/salbutamol</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>Ward:Salbutamol</AbbreviatedIRI>
+        <AbbreviatedIRI>mesh:D000420</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>Ward:Salbutamol</AbbreviatedIRI>
+        <AbbreviatedIRI>sno:372897005</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Slarty_Bartfast</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      A nurse
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Slarty_Bartfast</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Slarty Bartfast</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Surgical</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Type of ward
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Surgical</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Surgical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Ulcer</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      An adverse event which occured to a patient
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Ulcer</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Ulcer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:fall</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      An adverse event which occured to a patient
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:fall</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Fall</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:interdisciplinary_communications</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing role carried out in cooperation with allied health and other 
+      health workers
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:interdisciplinary_communications</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">interdisciplinary communications</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:Zaphod_Beeblebrox/Zaphod_Beeblebrox.rdf</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      A nurse
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:Zaphod_Beeblebrox/Zaphod_Beeblebrox.rdf</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Zaphod Beeblebrox</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>Ward:Zaphod_Beeblebrox/Zaphod_Beeblebrox.rdf</AbbreviatedIRI>
+        <AbbreviatedIRI>dbpedia:Zaphod_Beeblebrox</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="foaf:knows"/>
+        <AbbreviatedIRI>Ward:Zaphod_Beeblebrox/Zaphod_Beeblebrox.rdf</AbbreviatedIRI>
+        <AbbreviatedIRI>Ward:Slarty_Bartfast</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:transitional.owl#Doctor</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">A Doctor of medicine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>Ward:transitional.owl#Insufficient_Gas_Exchange</AbbreviatedIRI>
+        <IRI>http://www.icn.ch/icnp#ActualNegativeGaseousExchange</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:transitional.owl#Nurse</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A nurse cares for a patient in this facility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:transitional.owl#Nurses_Dependent_Role</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">NREM Processes that a nurse can carry out authorised by a doctor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:transitional.owl#Nurses_Independent_Role</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">NREM processes that a nurse can carry out autonomously</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:transitional.owl#Nurses_interdependent_Role</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">NREM Process a nurse can carry out in conjunction with allied health and other employees of the hospital</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Ward:transitional.owl#Patient</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a person who is being cared for in this facility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:transitional.owl#dependent_role_name</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">dependent_role_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:transitional.owl#diagnosis_name</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">diagnosis_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:transitional.owl#employee_name</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">employee_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:transitional.owl#independent_role_name</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">independent_role_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:transitional.owl#interdependent_role_name</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">interdependent_role_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:transitional.owl#medication_generic_name</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">medication_generic_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:transitional.owl#nurse_designation_name</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">nurse_designation_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:transitional.owl#nurse_education_level_name</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">nurse_education_level_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:transitional.owl#nurse_name</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">nurse_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:transitional.owl#patient_name</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">patient_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>Ward:transitional.owl#physician_initiated_treatment</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">physician_initiated_treatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Administer_Analgesia</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pain killing drugs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Administer_Antibiotics</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AntiBiotics are often administered through the IV line</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Admissions</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Documentation required to admit a patient to the facility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Answer_Phones</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Phone calls are often recieved from the family of patients asking about their condition and calls from theatre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Care_Plan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A plan of care dictating what has to be done to improve the patient&apos;s condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Change_dressings</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Wound dressings are checked and changed. Recorded on wound chart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Check_Emails</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Emails are a communication from the facility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Checking_DDs</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dangerous Drugs have tio be checked out of a safe with two registered nurses using a Government register.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Computers</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A nurse&apos;s station computer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Dietician</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Responsible for nutrition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Discharge</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Documentation necessary for the discharge of a patient from the surgical unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Discharge_Planner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Organises the discharge of a patient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Documentation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Paperwork that has to filled out regarding the patient;s care</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Empty_Drains</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Wounds drain into bags which have to be recorded and changed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Finding_keys</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Keys to the locked dangerous drugs safe have to be located</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Fluid_Balance_Chart</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A chart documenting the ratio of how much fluid is expelled and ingested resulting in the tolal fluid left remaining in the patient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Make_Beds</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Change sheets and make beds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Manditory_Education</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Manditory nursing education is delivered by computer which has to be undertaken when there is time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Medication</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Medications prescribed by a doctor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Medication_Administration</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Checking dose, route, time, amount, type identification of patients and drugs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Medication_Charts</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Documentation dictating the dosage, type, route and time for a patients medication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Monitor_IV_Infusions</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Intra Venous Infusions have to be monitored for rate of flow and blockages/age</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Nursing_Notes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A written running record documenting the day&apos;s care for a patient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#OT</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Occupational Therapy, environmental functioning of the patient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Observation_Charts</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Line graphs and histograms detailing the patient&apos;s vital signs over time. Includes blood pressure, pulse, temperature and respirations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Other_Nurses</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Other nurses help with checking and advice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Page_Doctors</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Doctors are paged to make decisions about the patient&apos;s care and medications after a nurse&apos;s summation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Paging_Porters</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Porters help move patients and their belongings around the facility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Patient_Education</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Education about their surgery, medications and what is generally going on about them</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Personal_care</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Personal hygiene the patient cannot do autonomously </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Physio</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Physiotherapy is concerned with structural mobility and movement of the patient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Pick_patients_Up_From_Theatre</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hand over patients from surgery to surgical ward</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Prepare_Patient_for_Theatre</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The patient&apos;s Paperwork, identification, fasting and gowning is prepared prior to surgery </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Put_IVs_in</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A cannula has to be inserted in a patient&apos;s arm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Referrals_to_Allied_Health</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A patient can be referred to Allied Health, other health professionals with specialised disciplines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Review_Pathology</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pathology is mainly results of blood tests which appear on the computer after being analysed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Riskman</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The computerised risk management system which adverse events are entered into</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Shower</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Patient is showered if unable to do it themselves</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Speech_Pathology</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Concerned with muscles concerned with swallowing an dthe upper airway</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Supervise_Student_Nurse</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Student nurses are assisted and supervised by the nurse as they learn procedures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Take_Blood</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Blood in taken from a cannula in the patient for analysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Take_Patients_to_Theatre</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Handover patients from surgical ward to surgery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#Wound_Chart</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Charts the healing progression of a wound. Records area, colour, exudate temperature, moisture</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

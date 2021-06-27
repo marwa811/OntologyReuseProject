@@ -1,0 +1,637 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/clininf/covid19#"
+     xml:base="http://www.semanticweb.org/clininf/covid19"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/clininf/covid19"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLAnnotationProperty_0000000003 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/clininf/covid19#OWLAnnotationProperty_0000000003">
+        <rdfs:label xml:lang="en">has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLAnnotationProperty_0000000004 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/clininf/covid19#OWLAnnotationProperty_0000000004">
+        <rdfs:label xml:lang="en">SCTID</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLAnnotationProperty_0000000011 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/clininf/covid19#OWLAnnotationProperty_0000000011">
+        <rdfs:label xml:lang="en">TPP</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLAnnotationProperty_0000000051 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/clininf/covid19#OWLAnnotationProperty_0000000051">
+        <rdfs:label xml:lang="en">Read2</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLAnnotationProperty_0000000052 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/clininf/covid19#OWLAnnotationProperty_0000000052">
+        <rdfs:label xml:lang="en">CTv3</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000000 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000000">
+        <rdfs:label xml:lang="en">exposure to COVID-19</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000001 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000001">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000014"/>
+        <OWLAnnotationProperty_0000000011>Y20d0</OWLAnnotationProperty_0000000011>
+        <rdfs:label xml:lang="en">Tested for 2019-nCoV (Wuhan) infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000002 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000002">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000000"/>
+        <OWLAnnotationProperty_0000000003>Exposure to 2019 novel coronavirus infection</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000003>Exposure to 2019-nCoV (Wuhan) infection</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000003>Exposure to 2019-nCoV (novel coronavirus) infection</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1240431000000104</OWLAnnotationProperty_0000000004>
+        <OWLAnnotationProperty_0000000011>Y20ce</OWLAnnotationProperty_0000000011>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label xml:lang="en">exposure to Wuhan 2019-nCoV (novel coronavirus) infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000003 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000003">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000014"/>
+        <OWLAnnotationProperty_0000000003>2019 novel coronavirus serology</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000003>Wuhan 2019-nCoV (novel coronavirus) serology</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1240741000000103</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">2019-nCoV (novel coronavirus) serology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000004 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000004">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000014"/>
+        <OWLAnnotationProperty_0000000003>Serotype 2019 novel coronavirus</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000003>Serotype Wuhan 2019-nCoV (novel coronavirus)</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1240421000000101</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">serotype 2019-nCoV (novel coronavirus)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000005 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000005">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000000"/>
+        <OWLAnnotationProperty_0000000003>Close exposure to 2019 novel coronavirus infection</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000003>Close exposure to Wuhan 2019-nCoV (novel coronavirus) infection</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1240441000000108</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">close exposure to 2019-nCoV (novel coronavirus) infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000006 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000006">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000000"/>
+        <OWLAnnotationProperty_0000000003>Coronavirus contact</OWLAnnotationProperty_0000000003>
+        <rdfs:label xml:lang="en">exposure to coronavirus infection (Non specific)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000007 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000007">
+        <rdfs:label xml:lang="en">definite COVID-19</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000008 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000008">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000007"/>
+        <OWLAnnotationProperty_0000000003>2019 novel coronavirus detected</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000003>Confirmed 2019-nCoV (Wuhan) infection</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000003>Wuhan 2019-nCoV (novel coronavirus) detected</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1240581000000104</OWLAnnotationProperty_0000000004>
+        <OWLAnnotationProperty_0000000011>Y20d1</OWLAnnotationProperty_0000000011>
+        <rdfs:comment>Indicates confirmed 2019-nCoV (Wuhan) infection.  Could be used where a test has confrmed 2019-nCoV infection whether or not the patient is ill</rdfs:comment>
+        <rdfs:label xml:lang="en">2019-nCoV (novel coronavirus) detected</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000009 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000009">
+        <rdfs:label xml:lang="en">possible COVID-19</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000010 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000010">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000009"/>
+        <OWLAnnotationProperty_0000000003>Suspected 2019-nCoV (Wuhan) infection</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000003>Suspected disease caused by 2019 novel coronavirus</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000003>Suspected disease caused by Wuhan 2019-nCoV (novel coronavirus)</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1240761000000102</OWLAnnotationProperty_0000000004>
+        <OWLAnnotationProperty_0000000004>Y20cf</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">Suspected disease caused by 2019-nCoV (novel coronavirus)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000011 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000011">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000014"/>
+        <OWLAnnotationProperty_0000000003>Antibody to 2019 novel coronavirus</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000003>Antibody to Wuhan 2019-nCoV (novel coronavirus)</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1240401000000105</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">antibody to 2019-nCoV (novel coronavirus)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000012 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000012">
+        <rdfs:label xml:lang="en">not detected COVID-19</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000013 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000013">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000012"/>
+        <OWLAnnotationProperty_0000000003>2019 novel coronavirus not detected</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000003>Wuhan 2019-nCoV (novel coronavirus) not detected</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1240591000000102</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">2019-nCoV (novel coronavirus) not detected</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000014 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000014">
+        <rdfs:label xml:lang="en">investigation COVID-19</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000015 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000015">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000014"/>
+        <OWLAnnotationProperty_0000000003>Detection of 2019 novel coronavirus using polymerase chain reaction technique</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000003>Detection of Wuhan 2019-nCoV (novel coronavirus) using polymerase chain reaction technique</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1240511000000106</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">Detection of 2019-nCoV (novel coronavirus) using polymerase chain reaction technique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000016 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000016">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000014"/>
+        <OWLAnnotationProperty_0000000003>Measurement of 2019 novel coronavirus antibody</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000003>Measurement of Wuhan 2019-nCoV (novel coronavirus) antibody</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1240461000000109</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">Measurement of 2019-nCoV (novel coronavirus) antibody</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000017 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000017">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000014"/>
+        <OWLAnnotationProperty_0000000003>Measurement of 2019 novel coronavirus antigen</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000003>Measurement of Wuhan 2019-nCoV (novel coronavirus) antigen</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1240471000000102</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">Measurement of 2019-nCoV (novel coronavirus) antigen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000018 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000018">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000014"/>
+        <OWLAnnotationProperty_0000000003>Antigen of 2019 novel coronavirus</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000003>Antigen of Wuhan 2019-nCoV (novel coronavirus)</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1240391000000107</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">antigen of 2019-nCoV (novel coronavirus)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000019 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000019">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000014"/>
+        <OWLAnnotationProperty_0000000003>Ribonucleic acid of 2019 novel coronavirus</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000003>Ribonucleic acid of Wuhan 2019-nCoV (novel coronavirus)</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1240411000000107</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">ribonucleic acid of 2019-nCoV (novel coronavirus)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000020 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000020">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000014"/>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">269946004</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">throat swab taken</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000021 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000021">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000014"/>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">269944001</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">nasal swab taken</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000022 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000022">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000014"/>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">269946004</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">throat swab culture positive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000023 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000023">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000014"/>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">168301000</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">throat swab culture negative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000024 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000024">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000014"/>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">168296000</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">nose swab culture positive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000025 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000025">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000014"/>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">168297009</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">nose swab culture negative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000026 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000026">
+        <rdfs:label xml:lang="en">education for COVID-19</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000027 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000027">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000026"/>
+        <OWLAnnotationProperty_0000000003>Advice given about 2019 novel coronavirus by telephone</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000003>Advice given about Wuhan 2019-nCoV (novel coronavirus) by telephone</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1240731000000107</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">advice given about 2019-nCoV (novel coronavirus) by telephone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000028 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000028">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000026"/>
+        <OWLAnnotationProperty_0000000003>Advice given about 2019 novel coronavirus infection</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000003>Advice given about Wuhan 2019-nCoV (novel coronavirus) infection</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1240721000000105</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">advice given about 2019-nCoV (novel coronavirus) infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000029 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000029">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000026"/>
+        <OWLAnnotationProperty_0000000003>Educated about 2019 novel coronavirus infection</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000003>Educated about Wuhan 2019-nCoV (novel coronavirus) infection</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1240711000000104</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">educated about 2019-nCoV (novel coronavirus) infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000030 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000030">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000026"/>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">710874007</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">education about cross infection prevention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000031 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000031">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000026"/>
+        <OWLAnnotationProperty_0000000003>Education for infection control isolation</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">737612005</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">education about isolation for infection control</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000032 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000032">
+        <rdfs:label xml:lang="en">isolation due to COVID-19 symptoms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000033 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000033">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000032"/>
+        <OWLAnnotationProperty_0000000003>Isolation after contact with infectious disease</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000003>Isolation because of infection</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">170497006</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">Quarantine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000034 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000034">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000032"/>
+        <OWLAnnotationProperty_0000000003>Contact isolation</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000003>Isolation after contact with infectious disease</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">170499009</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">Isolation of infection contact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000035 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000035">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000032"/>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">170500000</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">Isolation of infection carrier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000036 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000036">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000032"/>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">170503003</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">Surveillance of contact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000037 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000037">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000032"/>
+        <OWLAnnotationProperty_0000000003>CT - Contact tracing</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">225368008</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">Contact tracing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000038 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000038">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000032"/>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">305559001</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">Under care of contact tracing nurse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000039 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000039">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000032"/>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">305736005</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">Seen by contact tracing nurse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000040 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000040">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000032"/>
+        <OWLAnnotationProperty_0000000003>Referral from contact tracing nurse</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">306030003</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">Referral by contact tracing nurse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000041 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000041">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000032"/>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">306323004</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">Referral to contact tracing nurse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000042 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000042">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000032"/>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">306497009</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">Discharge by contact tracing nurse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000043 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000043">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000032"/>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">361235007</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">Isolation of infected patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000044 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000044">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000032"/>
+        <OWLAnnotationProperty_0000000003>Monitors for signs and symptoms of infection</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">370835007</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">Monitoring for signs and symptoms of infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000045 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000045">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000032"/>
+        <OWLAnnotationProperty_0000000003>Isolation nursing in negative pressure environment</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">444908001</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">Isolation nursing in negative pressure isolation environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000046 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000046">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000032"/>
+        <OWLAnnotationProperty_0000000003>Management of infection control isolation</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">742879000</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">Management of isolation for infection control</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000047 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000047">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000032"/>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9478004</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">Prospective focused infection control surveillance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000048 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000048">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000032"/>
+        <OWLAnnotationProperty_0000000003>Free from symptoms and signs of infection</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004>397680002 </OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">Absence of signs and symptoms of infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000049 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000049">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000032"/>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">162467007</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">Free of symptoms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000050 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000050">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000032"/>
+        <OWLAnnotationProperty_0000000051>ZV07</OWLAnnotationProperty_0000000051>
+        <OWLAnnotationProperty_0000000052>ZV07</OWLAnnotationProperty_0000000052>
+        <rdfs:label xml:lang="en">Need for isolation and other prophylactic measures</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clininf/covid19#OWLClass_0000000053 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000053">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clininf/covid19#OWLClass_0000000009"/>
+        <OWLAnnotationProperty_0000000003>Telephone consultation for suspected 2019 novel coronavirus</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000003>Telephone consultation for suspected Wuhan 2019-nCoV (novel coronavirus)</OWLAnnotationProperty_0000000003>
+        <OWLAnnotationProperty_0000000004 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1240451000000106</OWLAnnotationProperty_0000000004>
+        <rdfs:label xml:lang="en">Telephone consultation for suspected 2019-nCoV (novel coronavirus)</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

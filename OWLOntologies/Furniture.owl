@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY swrlx "http://www.w3.org/2003/11/swrlx#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY ruleml "http://www.w3.org/2003/11/ruleml#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owlx "http://www.w3.org/2003/05/owl-xml#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY kaon2 "http://kaon2.semanticweb.org/internal#" >
+    <!ENTITY Furniture "http://www.ICPS/ontologies/Furniture.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY ICPSMerged "http://www.apsf.net.au/ontologies/ICPSMerged.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ICPS/ontologies/Furniture.owl#"
+     xml:base="http://www.ICPS/ontologies/Furniture.owl"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:kaon2="http://kaon2.semanticweb.org/internal#"
+     xmlns:owlx="http://www.w3.org/2003/05/owl-xml#"
+     xmlns:ICPSMerged="http://www.apsf.net.au/ontologies/ICPSMerged.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:owl2="http://www.w3.org/2006/12/owl2#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrlx="http://www.w3.org/2003/11/swrlx#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:Furniture="http://www.ICPS/ontologies/Furniture.owl#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ruleml="http://www.w3.org/2003/11/ruleml#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="">
+        <owl:priorVersion>1.0</owl:priorVersion>
+        <dc:creator>Oscar Corcho</dc:creator>
+        <dc:creator>Mar&#237;a Poveda</dc:creator>
+        <dc:creator
+            >Elena Montiel-Ponsoda</dc:creator>
+        <owl:versionInfo>2.0</owl:versionInfo>
+        <dc:creator
+            >Mari Carmen Su&#225;rez-Figueroa</dc:creator>
+        <rdfs:comment xml:lang="en"
+            >Ontology about furniture in a hospital.</rdfs:comment>
+        <rdfs:comment xml:lang="en"
+            >This work has been carried out by the Ontological Engineering Group, using sources from the University of Saint Etienne and the Australian Patient Safety Foundation, and supported by the World Health Organisation under the International Classification for Patient Safety programme.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;source"/>
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/Furniture.owl#Chair -->
+
+    <owl:Class rdf:about="#Chair">
+        <rdfs:label xml:lang="en">Chair</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PieceOfFurniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Furniture.owl#PieceOfFurniture -->
+
+    <owl:Class rdf:about="#PieceOfFurniture">
+        <rdfs:label xml:lang="en"
+            >Piece of furniture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/Furniture.owl#armChair -->
+
+    <Chair rdf:about="#armChair">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">arm chair</rdfs:label>
+    </Chair>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Furniture.owl#bed -->
+
+    <owl:Thing rdf:about="#bed">
+        <rdf:type rdf:resource="#PieceOfFurniture"/>
+        <rdfs:label xml:lang="en">bed</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Furniture.owl#commode -->
+
+    <owl:Thing rdf:about="#commode">
+        <rdf:type rdf:resource="#Chair"/>
+        <rdfs:label xml:lang="en">commode</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Furniture.owl#cot -->
+
+    <PieceOfFurniture rdf:about="#cot">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">cot</rdfs:label>
+    </PieceOfFurniture>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Furniture.owl#geriatricChair -->
+
+    <owl:Thing rdf:about="#geriatricChair">
+        <rdf:type rdf:resource="#Chair"/>
+        <rdfs:label xml:lang="en">geriatric chair</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Furniture.owl#playEquipment -->
+
+    <PieceOfFurniture rdf:about="#playEquipment">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">play equipment</rdfs:label>
+    </PieceOfFurniture>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Furniture.owl#recliner -->
+
+    <owl:Thing rdf:about="#recliner">
+        <rdf:type rdf:resource="#Chair"/>
+        <rdfs:label xml:lang="en">recliner</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Furniture.owl#showerChair -->
+
+    <owl:Thing rdf:about="#showerChair">
+        <rdf:type rdf:resource="#Chair"/>
+        <rdfs:label xml:lang="en">shower chair</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Furniture.owl#stretcher -->
+
+    <PieceOfFurniture rdf:about="#stretcher">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">stretcher</rdfs:label>
+    </PieceOfFurniture>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Furniture.owl#toilet -->
+
+    <PieceOfFurniture rdf:about="#toilet">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">toilet</rdfs:label>
+    </PieceOfFurniture>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Furniture.owl#trolley -->
+
+    <owl:Thing rdf:about="#trolley">
+        <rdf:type rdf:resource="#PieceOfFurniture"/>
+        <rdfs:label xml:lang="en">trolley</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Furniture.owl#wheelChair -->
+
+    <owl:Thing rdf:about="#wheelChair">
+        <rdf:type rdf:resource="#Chair"/>
+        <rdfs:label xml:lang="en">wheel chair</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="#playEquipment"/>
+            <rdf:Description rdf:about="#armChair"/>
+            <rdf:Description rdf:about="#geriatricChair"/>
+            <rdf:Description rdf:about="#cot"/>
+            <rdf:Description rdf:about="#trolley"/>
+            <rdf:Description rdf:about="#bed"/>
+            <rdf:Description rdf:about="#showerChair"/>
+            <rdf:Description rdf:about="#wheelChair"/>
+            <rdf:Description rdf:about="#commode"/>
+            <rdf:Description rdf:about="#stretcher"/>
+            <rdf:Description rdf:about="#recliner"/>
+            <rdf:Description rdf:about="#toilet"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

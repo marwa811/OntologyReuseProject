@@ -1,0 +1,3298 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.co-ode.org/ontologies/ont.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.co-ode.org/ontologies/ont.owl">
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="ontologyIRI" IRI="http://www.semanticweb.org/ontologies/2011/7/Ontology1314368515010.owl"/>
+    <Declaration>
+        <Class IRI="#AMBIORE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assessment-of-Uncertainty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Author"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BIRCH"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bayesian-Inference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bootstrapping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bosque"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Branch-Swapping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CodeAxe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Combinatorial-Extension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conference_Paper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consensus-Based-Assessment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cross-Validation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DALI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DAMBE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DOI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decay-Assessment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distance-Wagner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dot-Matrix-Method"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dynamic-Programming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EDIBLE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EMBOSS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Edge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Empirical-Substitution-Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#End_Page"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Epub_Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Experimental_data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#External_data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#F81+1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#F81+P"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#F81+P+1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FastTree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GARLI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GTR+I"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GTR+P"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GTR+P+I"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Global-Alignment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HKY+I"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HKY+P"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HKY+P+I"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HY-PHY"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hidden-Markov-Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ISSN"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Information-Criterion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Issue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Iterative-Method"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JC+I"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JC+P"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JC+P+I"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JTT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JackKnifing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Journal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Journal_Article"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Literature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Local-Alignment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mesquite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motif-Finding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MrAIC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MrBayes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Multiple-Sequence-Alignment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NHML"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NNI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NONA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Node"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Optimality-Criterion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PAL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PAM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PAML"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PAUP*"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PHASE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PHYLIP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PLATO"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PROCOV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PTP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pairwise-Alignment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PaupUp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Permutation-Test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhyloBayes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poisson-Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Posterior-Probability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Progressive-Method"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Provenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QuickTree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resampling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SIMMAP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SPR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SSAP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SYM+I"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SYM+P"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SYM+P+1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sequence-Alignment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Set_of_tree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Short_Title"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Start_Page"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structural-Alignment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TBR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Title"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Traversing-Tree-Space"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Type_of_Article"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Volume"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WAG"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Word-Method/K-Tuple-Method"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Year"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#data_set_type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pages"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#Amino-Acid-Model"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#Character-Based"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#Codon-Based-Model"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#DNA-Model"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#DataFormat"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#DataType"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#Distance-Based"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#F81"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#FASTA"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#GTR"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#HKY"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#MEGA"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#MOLPHY"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#Maximum-Likelihood"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#Maximum-Parsimony"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#Method"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#Model"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#Model-of-Protein-Evolution"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#NEXUX"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#NINJA"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#Neighbor-Joining"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#Nucleotide-Substitution-Model"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#POY"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#Phylogenetic_Tree"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#Protein-Structure-and-Correlated-Change"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#SYM"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#Sequence"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#Sequence_Alignment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#SourceTaxon"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#Tree-Estimation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#Tree_Puzzle"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#UPGMA"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#k80+I"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#k80+P"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontologyIRI:#k80+P+I"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Ancestor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Annotation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Child_Node"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Node"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Parent_Node"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Root"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_State"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_input"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_node_value"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_output"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_substitution_model"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#in_topic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_approach_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_branch_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_method_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_sub-class_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_technique_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_branch_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_classify_as"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_format_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_function_as"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_identifier_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_implemented_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_inferred_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_output_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_result_from"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_used_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_used_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_used_to_build"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#uses"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has-param_boolean_value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_Support_Value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_param_float_value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_param_integer_value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_param_text_value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_parameter_value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_value"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Needlman_Wunsch_Algorithm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Smit_Waterman_Algorithm"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#Example"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#analyze"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#curator_note"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#definition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#imported_from"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#source"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#usage"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="ontologyIRI:#F81"/>
+        <Class abbreviatedIRI="ontologyIRI:#HKY"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AMBIORE"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assessment-of-Uncertainty"/>
+        <Class abbreviatedIRI="ontologyIRI:#Tree-Estimation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Author"/>
+        <Class IRI="#Journal_Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BIRCH"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bayesian-Inference"/>
+        <Class abbreviatedIRI="ontologyIRI:#Character-Based"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bayesian-Inference"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_used_in"/>
+            <Class IRI="#MrBayes"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bootstrapping"/>
+        <Class IRI="#Resampling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bootstrapping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_used_in"/>
+            <Class IRI="#DAMBE"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bootstrapping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_used_in"/>
+            <Class IRI="#FastTree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bootstrapping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_used_in"/>
+            <Class IRI="#GARLI"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bootstrapping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_used_in"/>
+            <Class IRI="#PHYLIP"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bootstrapping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_used_in"/>
+            <Class abbreviatedIRI="ontologyIRI:#RAxML"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bosque"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Branch-Swapping"/>
+        <Class IRI="#Traversing-Tree-Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CodeAxe"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Combinatorial-Extension"/>
+        <Class IRI="#Structural-Alignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conference_Paper"/>
+        <Class IRI="#Literature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consensus-Based-Assessment"/>
+        <Class IRI="#Assessment-of-Uncertainty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cross-Validation"/>
+        <Class IRI="#Resampling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DALI"/>
+        <Class IRI="#Structural-Alignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DAMBE"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DAMBE"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_output"/>
+            <Class abbreviatedIRI="ontologyIRI:#Phylogenetic_Tree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DAMBE"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#Bootstrapping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DAMBE"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#JackKnifing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DAMBE"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class abbreviatedIRI="ontologyIRI:#Distance-Based"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DAMBE"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class abbreviatedIRI="ontologyIRI:#Maximum-Likelihood"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DAMBE"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class abbreviatedIRI="ontologyIRI:#Maximum-Parsimony"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DOI"/>
+        <Class IRI="#Journal_Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Date"/>
+        <Class IRI="#Journal_Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decay-Assessment"/>
+        <Class IRI="#Assessment-of-Uncertainty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Distance-Wagner"/>
+        <Class abbreviatedIRI="ontologyIRI:#Distance-Based"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Distance-Wagner"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_used_in"/>
+            <Class IRI="#DAMBE"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Distance-Wagner"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_used_in"/>
+            <Class IRI="#PAUP*"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dot-Matrix-Method"/>
+        <Class IRI="#Pairwise-Alignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dynamic-Programming"/>
+        <Class IRI="#Pairwise-Alignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EDIBLE"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EMBOSS"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Edge"/>
+        <Class abbreviatedIRI="ontologyIRI:#DataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Edge"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_substitution_model"/>
+            <Class abbreviatedIRI="ontologyIRI:#Nucleotide-Substitution-Model"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Empirical-Substitution-Model"/>
+        <Class abbreviatedIRI="ontologyIRI:#Amino-Acid-Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#End_Page"/>
+        <Class IRI="#Journal_Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Epub_Data"/>
+        <Class IRI="#Journal_Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Experimental_data"/>
+        <Class IRI="#data_set_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#External_data"/>
+        <Class IRI="#data_set_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F81+1"/>
+        <Class abbreviatedIRI="ontologyIRI:#F81"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F81+P"/>
+        <Class abbreviatedIRI="ontologyIRI:#F81"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F81+P+1"/>
+        <Class abbreviatedIRI="ontologyIRI:#F81"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FastTree"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FastTree"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_output"/>
+            <Class abbreviatedIRI="ontologyIRI:#Phylogenetic_Tree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FastTree"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#Bootstrapping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FastTree"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class abbreviatedIRI="ontologyIRI:#GTR"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FastTree"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class abbreviatedIRI="ontologyIRI:#Maximum-Likelihood"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GARLI"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GARLI"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_output"/>
+            <Class abbreviatedIRI="ontologyIRI:#Phylogenetic_Tree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GARLI"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class abbreviatedIRI="ontologyIRI:#Maximum-Likelihood"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GTR+I"/>
+        <Class abbreviatedIRI="ontologyIRI:#GTR"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GTR+P"/>
+        <Class abbreviatedIRI="ontologyIRI:#GTR"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GTR+P+I"/>
+        <Class abbreviatedIRI="ontologyIRI:#GTR"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Global-Alignment"/>
+        <Class IRI="#Sequence-Alignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HKY+I"/>
+        <Class abbreviatedIRI="ontologyIRI:#HKY"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HKY+P"/>
+        <Class abbreviatedIRI="ontologyIRI:#HKY"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HKY+P+I"/>
+        <Class abbreviatedIRI="ontologyIRI:#HKY"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HY-PHY"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hidden-Markov-Model"/>
+        <Class IRI="#Multiple-Sequence-Alignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ISSN"/>
+        <Class IRI="#Journal_Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Information-Criterion"/>
+        <Class IRI="#Assessment-of-Uncertainty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Issue"/>
+        <Class IRI="#Journal_Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Iterative-Method"/>
+        <Class IRI="#Multiple-Sequence-Alignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JC"/>
+        <Class abbreviatedIRI="ontologyIRI:#Nucleotide-Substitution-Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JC+I"/>
+        <Class IRI="#JC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JC+P"/>
+        <Class IRI="#JC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JC+P+I"/>
+        <Class IRI="#JC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JTT"/>
+        <Class IRI="#Empirical-Substitution-Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JackKnifing"/>
+        <Class IRI="#Resampling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JackKnifing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_used_in"/>
+            <Class IRI="#DAMBE"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Journal"/>
+        <Class IRI="#Journal_Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Journal_Article"/>
+        <Class IRI="#Literature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Literature"/>
+        <Class IRI="#External_data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Local-Alignment"/>
+        <Class IRI="#Sequence-Alignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mesquite"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motif-Finding"/>
+        <Class IRI="#Multiple-Sequence-Alignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MrAIC"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MrBayes"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MrBayes"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_output"/>
+            <Class abbreviatedIRI="ontologyIRI:#Phylogenetic_Tree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MrBayes"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#Bayesian-Inference"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Multiple-Sequence-Alignment"/>
+        <Class IRI="#Structural-Alignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NHML"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NNI"/>
+        <Class IRI="#Branch-Swapping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NONA"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NONA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_output"/>
+            <Class abbreviatedIRI="ontologyIRI:#Phylogenetic_Tree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NONA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class abbreviatedIRI="ontologyIRI:#Maximum-Parsimony"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Node"/>
+        <Class abbreviatedIRI="ontologyIRI:#DataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Optimality-Criterion"/>
+        <Class abbreviatedIRI="ontologyIRI:#Tree-Estimation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PAL"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PAM"/>
+        <Class IRI="#Empirical-Substitution-Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PAML"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PAUP*"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PAUP*"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_output"/>
+            <Class abbreviatedIRI="ontologyIRI:#Phylogenetic_Tree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PAUP*"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_used_in"/>
+            <Class abbreviatedIRI="ontologyIRI:#F81"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PAUP*"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_used_in"/>
+            <Class abbreviatedIRI="ontologyIRI:#SYM"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PAUP*"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class abbreviatedIRI="ontologyIRI:#Distance-Based"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PAUP*"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class abbreviatedIRI="ontologyIRI:#Maximum-Likelihood"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PAUP*"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class abbreviatedIRI="ontologyIRI:#Maximum-Parsimony"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PHASE"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PHYLIP"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PHYLIP"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_output"/>
+            <Class abbreviatedIRI="ontologyIRI:#Phylogenetic_Tree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PLATO"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PROCOV"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PTP"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pairwise-Alignment"/>
+        <Class IRI="#Sequence-Alignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pairwise-Alignment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_used_in"/>
+            <Class abbreviatedIRI="ontologyIRI:#NINJA"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PaupUp"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Permutation-Test"/>
+        <Class IRI="#Resampling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhyloBayes"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poisson-Model"/>
+        <Class abbreviatedIRI="ontologyIRI:#Amino-Acid-Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Posterior-Probability"/>
+        <Class IRI="#Assessment-of-Uncertainty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Progressive-Method"/>
+        <Class IRI="#Multiple-Sequence-Alignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QuickTree"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resampling"/>
+        <Class IRI="#Assessment-of-Uncertainty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SIMMAP"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SPR"/>
+        <Class IRI="#Branch-Swapping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SSAP"/>
+        <Class IRI="#Structural-Alignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SYM+I"/>
+        <Class abbreviatedIRI="ontologyIRI:#SYM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SYM+P"/>
+        <Class abbreviatedIRI="ontologyIRI:#SYM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SYM+P+1"/>
+        <Class abbreviatedIRI="ontologyIRI:#SYM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sequence-Alignment"/>
+        <Class abbreviatedIRI="ontologyIRI:#Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Set_of_tree"/>
+        <Class abbreviatedIRI="ontologyIRI:#DataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Set_of_tree"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_result_from"/>
+            <Class IRI="#Bootstrapping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Set_of_tree"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_result_from"/>
+            <Class abbreviatedIRI="ontologyIRI:#Method"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Short_Title"/>
+        <Class IRI="#Journal_Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Start_Page"/>
+        <Class IRI="#Journal_Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Structural-Alignment"/>
+        <Class IRI="#Sequence-Alignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TBR"/>
+        <Class IRI="#Branch-Swapping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Title"/>
+        <Class IRI="#Journal_Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Traversing-Tree-Space"/>
+        <Class abbreviatedIRI="ontologyIRI:#Tree-Estimation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tree"/>
+        <Class abbreviatedIRI="ontologyIRI:#DataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tree"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_substitution_model"/>
+            <Class abbreviatedIRI="ontologyIRI:#Nucleotide-Substitution-Model"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tree"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_inferred_by"/>
+            <Class abbreviatedIRI="ontologyIRI:#Maximum-Likelihood"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tree"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_inferred_by"/>
+            <Class abbreviatedIRI="ontologyIRI:#Method"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Type_of_Article"/>
+        <Class IRI="#Journal_Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Volume"/>
+        <Class IRI="#Journal_Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WAG"/>
+        <Class IRI="#Empirical-Substitution-Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Word-Method/K-Tuple-Method"/>
+        <Class IRI="#Pairwise-Alignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Year"/>
+        <Class IRI="#Journal_Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#data_set_type"/>
+        <Class IRI="#Provenance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pages"/>
+        <Class IRI="#Journal_Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Amino-Acid-Model"/>
+        <Class abbreviatedIRI="ontologyIRI:#Model-of-Protein-Evolution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Character-Based"/>
+        <Class IRI="#Optimality-Criterion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Codon-Based-Model"/>
+        <Class abbreviatedIRI="ontologyIRI:#DNA-Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#DNA-Model"/>
+        <Class abbreviatedIRI="ontologyIRI:#Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Distance-Based"/>
+        <Class IRI="#Optimality-Criterion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#F81"/>
+        <Class abbreviatedIRI="ontologyIRI:#Nucleotide-Substitution-Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#F81"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#PAUP*"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#FASTA"/>
+        <Class abbreviatedIRI="ontologyIRI:#DataFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#GTR"/>
+        <Class abbreviatedIRI="ontologyIRI:#Nucleotide-Substitution-Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#GTR"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#FastTree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#HKY"/>
+        <Class abbreviatedIRI="ontologyIRI:#Nucleotide-Substitution-Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#MEGA"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#MEGA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_output"/>
+            <Class abbreviatedIRI="ontologyIRI:#Phylogenetic_Tree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#MEGA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class abbreviatedIRI="ontologyIRI:#Maximum-Likelihood"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#MEGA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class abbreviatedIRI="ontologyIRI:#Maximum-Parsimony"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#MEGA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class abbreviatedIRI="ontologyIRI:#Neighbor-Joining"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#MEGA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class abbreviatedIRI="ontologyIRI:#UPGMA"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#MOLPHY"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#MOLPHY"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_output"/>
+            <Class abbreviatedIRI="ontologyIRI:#Phylogenetic_Tree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#MOLPHY"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class abbreviatedIRI="ontologyIRI:#Maximum-Likelihood"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Maximum-Likelihood"/>
+        <Class abbreviatedIRI="ontologyIRI:#Character-Based"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Maximum-Likelihood"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_used_in"/>
+            <Class IRI="#PAUP*"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Maximum-Likelihood"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_used_in"/>
+            <Class IRI="#PHYLIP"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Maximum-Parsimony"/>
+        <Class abbreviatedIRI="ontologyIRI:#Character-Based"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Maximum-Parsimony"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_used_in"/>
+            <Class abbreviatedIRI="ontologyIRI:#POY"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Method"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Model-of-Protein-Evolution"/>
+        <Class abbreviatedIRI="ontologyIRI:#Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#NEXUX"/>
+        <Class abbreviatedIRI="ontologyIRI:#DataFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#NINJA"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#NINJA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_output"/>
+            <Class abbreviatedIRI="ontologyIRI:#Phylogenetic_Tree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#NINJA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#Pairwise-Alignment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#NINJA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class abbreviatedIRI="ontologyIRI:#Neighbor-Joining"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#NeXML"/>
+        <Class abbreviatedIRI="ontologyIRI:#DataFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Neighbor-Joining"/>
+        <Class abbreviatedIRI="ontologyIRI:#Distance-Based"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Nucleotide-Substitution-Model"/>
+        <Class abbreviatedIRI="ontologyIRI:#DNA-Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Nucleotide-Substitution-Model"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#is_used_in"/>
+            <Class abbreviatedIRI="ontologyIRI:#Maximum-Likelihood"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#POY"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#POY"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_output"/>
+            <Class abbreviatedIRI="ontologyIRI:#Phylogenetic_Tree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#POY"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class abbreviatedIRI="ontologyIRI:#Maximum-Parsimony"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Phylogenetic_Tree"/>
+        <Class abbreviatedIRI="ontologyIRI:#DataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_output"/>
+            <Class abbreviatedIRI="ontologyIRI:#Phylogenetic_Tree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Protein-Structure-and-Correlated-Change"/>
+        <Class abbreviatedIRI="ontologyIRI:#Model-of-Protein-Evolution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#RAxML"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#RAxML"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_output"/>
+            <Class abbreviatedIRI="ontologyIRI:#Phylogenetic_Tree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#RAxML"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#Bootstrapping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#RAxML"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class abbreviatedIRI="ontologyIRI:#Maximum-Likelihood"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#RAxML"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class abbreviatedIRI="ontologyIRI:#Maximum-Parsimony"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#SYM"/>
+        <Class abbreviatedIRI="ontologyIRI:#Nucleotide-Substitution-Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#SYM"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#PAUP*"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Sequence"/>
+        <Class abbreviatedIRI="ontologyIRI:#DataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Sequence_Alignment"/>
+        <Class abbreviatedIRI="ontologyIRI:#DataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#SourceTaxon"/>
+        <Class abbreviatedIRI="ontologyIRI:#DataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Tree-Estimation"/>
+        <Class abbreviatedIRI="ontologyIRI:#Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Tree_Puzzle"/>
+        <Class abbreviatedIRI="ontologyIRI:#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Tree_Puzzle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_output"/>
+            <Class abbreviatedIRI="ontologyIRI:#Phylogenetic_Tree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#Tree_Puzzle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class abbreviatedIRI="ontologyIRI:#Maximum-Likelihood"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#UPGMA"/>
+        <Class abbreviatedIRI="ontologyIRI:#Distance-Based"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#k80"/>
+        <Class abbreviatedIRI="ontologyIRI:#Nucleotide-Substitution-Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#k80+I"/>
+        <Class abbreviatedIRI="ontologyIRI:#k80"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#k80+P"/>
+        <Class abbreviatedIRI="ontologyIRI:#k80"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ontologyIRI:#k80+P+I"/>
+        <Class abbreviatedIRI="ontologyIRI:#k80"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class abbreviatedIRI="ontologyIRI:#Phylogenetic_Tree"/>
+        <Class abbreviatedIRI="ontologyIRI:#Sequence"/>
+        <Class abbreviatedIRI="ontologyIRI:#Sequence_Alignment"/>
+        <Class abbreviatedIRI="ontologyIRI:#SourceTaxon"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Global-Alignment"/>
+        <NamedIndividual IRI="#Needlman_Wunsch_Algorithm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Local-Alignment"/>
+        <NamedIndividual IRI="#Smit_Waterman_Algorithm"/>
+    </ClassAssertion>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#is_a_method_of"/>
+        <ObjectProperty IRI="#is_used_in"/>
+    </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Ancestor"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Annotation"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Child_Node"/>
+        <ObjectProperty IRI="#has_Node"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Node"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Parent_Node"/>
+        <ObjectProperty IRI="#has_Node"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Root"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_State"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_node_value"/>
+        <ObjectProperty IRI="#has_Node"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_output_of"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_used_in"/>
+            <Class abbreviatedIRI="ontologyIRI:#Phylogenetic_Tree"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has-param_boolean_value"/>
+        <DataProperty IRI="#has_parameter_value"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_param_float_value"/>
+        <DataProperty IRI="#has_parameter_value"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_param_integer_value"/>
+        <DataProperty IRI="#has_parameter_value"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_param_text_value"/>
+        <DataProperty IRI="#has_parameter_value"/>
+    </SubDataPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Author</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Author</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#Example"/>
+        <IRI>#Bayesian-Inference</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bayesian inference in phylogeny generates a posterior distribution for a parameter, composed of a phylogenetic  tree and a model of evolution, based on the prior for that parameter and the likelihood of the data, generated by a multiple alignment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Bayesian-Inference</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, TD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <IRI>#Bayesian-Inference</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">(http://www.sciencemag.org/content/294/5550/2310.full)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Bayesian-Inference</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bayesian_Interence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#Example"/>
+        <IRI>#Bootstrapping</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Example:
+CONSENSUS TREE:
+The numbers at the forks indicate the number of times the group con-sisting of the species which are to the right of that fork occurred among the trees, out of 1000 trees
++--------------Taxon 4
+ !                                    
+ ! +---------Taxon 1
+ +1000.0
+      ! +----Taxon 2
+      +572.7
+·                      +----Taxon 3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Bootstrapping</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Bootstrapping</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The parametric bootstrap: A method of attempting to estimate confidence levels of inferred relationships. Bootstrap proceeds by resampling the original data matrix by replacement of characters. The data sets are obtained by simulation on our best estimate of the tree rather than by resampling columns of the original data matrix.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <IRI>#Bootstrapping</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Usage:
+Programs such as DAMBE, Fast tree, GARLI, PHYLIP, RAXML.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Bootstrapping</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bootstrapping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Branch-Swapping</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Branch_Swampling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Combinatorial-Extension</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Combinatorial-Extension</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Combinatorial extension uses local geometry to align short fragments of the two proteins being analysed and then assembles these fragments into a larger alignment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Combinatorial-Extension</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Combinatorial_Extension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Conference_Paper</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Conference_Paper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#Example"/>
+        <IRI>#Cross-Validation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Example: To determine the expression levels of 20 proteins to predict whether a cancer patient will respond to a drug. Cross-validation uses the best fit and will generally include only a subset of the features that are deemed truly informative.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Cross-Validation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Cross-Validation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cross-validation (rotation estimation) is a technique for assessing how the results of a statistical analysis will generalize to an independent data set. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cross-Validation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cross_Validation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#Example"/>
+        <IRI>#DALI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Example: construction of protein data bank.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#DALI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#DALI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">distance matrix alignment is a fragment based method for constructing structural alignment based on similarity patterns between successive hexapeptides in queries.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DALI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DALI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#DAMBE</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP,HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#DAMBE</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">(Data Analysis in Molecular Biology and Evolution)
+It is a general-purpose package that reads and converts a number of file formats, and has many features for descriptive statistics in computing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <IRI>#DAMBE</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"> Xuhua Xia, Department of Biology 
+and the Center for Advanced Research in Environmental Genomics   
+(CAREG), University of Ottawa, Ontario, Canada.
+Details: http://dambe.bio.uottawa.ca/dambe.asp. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <IRI>#DAMBE</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Usage:  Parsimony, distance, or likelihood methods, including 
+  bootstrapping and jackknifing.
+~Analyze:  DNA and protein sequence and gene frequencies.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DAMBE</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Advantages: It allows sequences to be fetched over the web while 
+  running DAMBE using simple web browser.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DAMBE</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DAMBE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DOI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DOI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Date</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Distance-Wagner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP,SV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Distance-Wagner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The distance-Wagner method is intended as an approximation to construction of a most parsimonious tree. Species are added to a tree, each in the best possible place. This is judged by computation of the increase in the length of the tree caused by each possible placement of that species.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Distance-Wagner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Distance_Wangner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#Example"/>
+        <IRI>#Dot-Matrix-Method</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Example: identify insertions, deletions or inverted repeats.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Dot-Matrix-Method</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Dot-Matrix-Method</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dot –matrix method is a primary method of producing pairwise alignment.
+Is qualitative, simple and time consuming.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dot-Matrix-Method</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Problems: noise, lack of clarity, non-intuitiveness, difficulty extracting match summary and match positions on the two sequences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dot-Matrix-Method</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dot_Metrix_Method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Dynamic-Programming</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Dynamic-Programming</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dynamic programming is a primary method of producing pairwise alignment.
+Can produce global alignments via Needleman-Wunsch algorithm and local alignments via Smith-Waterman algorithm.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dynamic-Programming</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dynamic_Programming</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Empirical-Substitution-Model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP,HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Empirical-Substitution-Model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This model resulted in the development of a set of widely used replacement matrices. In this approach, replacement rates are derived from alignments of protein sequences that are at least 85% identical such that the likelihood of a particular mutation being the result of a set of successive mutations is low. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <IRI>#Empirical-Substitution-Model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ref:  Dayhoff et al. 1978.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Empirical-Substitution-Model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Empirical_Substitution_Models</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#End_Page</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">End_Page</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Epub_Data</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Epub_Date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Experimental_data</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Experimental_Data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#External_data</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">External_Data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#FastTree</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#FastTree</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FastTree: Computing Large Minimum Evolution Trees with  
+     Profiles instead of a Distance Matrix, Molecular Biology and Evolution      
+MP,HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <IRI>#FastTree</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Written by/released/produced by:  Morgan Price of the Adam Arkin&#39;s 
+     group, Physical Biosciences Division of Lawrence Berkeley National      Laboratory, Berkeley, California
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <IRI>#FastTree</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Usage: Bootstrapping, Shimodaira-Hasegawa (SH), maximum 
+               likelihood, GTR.
+Analyze:  Nucleotide or protein sequences
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FastTree</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Advantages: Fast maximum likelihood program</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FastTree</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fast_Tree</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#GARLI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MD,TD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#GARLI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GARLI (Genetic Algorithm for Rapid Likelihood Inference) performs phylogenetic searches on aligned nucleotide, codon and amino acid data sets using the maximum likelihood criterion. 
+(http://molecularevolution.org/software/phylogenetics/GARLI)
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <IRI>#GARLI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">(http://molecularevolution.org/resources/activities/garli_activity)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <IRI>#GARLI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Usage: 
+GARLI main steps of an analysis of a nucleotide data set (both codon and partitioned models) includes setting up and monitoring a run, using features such as constrained searches and bootstrap analyses if needed, and inspecting the output from a run. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GARLI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Garli</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Global-Alignment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Global-Alignment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Global alignment is a computational approach to sequence alignment.
+Mostly used to align every residue in every sequence where the sequences in the query set are of similar and equal size.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Global-Alignment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Global_Alignmnet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Hidden-Markov-Model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Hidden-Markov-Model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hidden Markov model is used to produce probability scores for a family of multiple sequence alignment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hidden-Markov-Model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hidden_Markov_Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ISSN</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ISSN</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Issue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Issue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Iterative-Method</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Iterative-Method</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Iterative methods:  It is an extension of progressive methods attempting to improve the heavy dependence on the accuracy of the initial pairwise alignment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Iterative-Method</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Iterative_Method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#JC</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, TD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#JC</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The Jukes-Cantor (JC69) model is the simplest DNA substitution model because it assumes equal base frequencies (25%) and equal nucleotide substitution rates for all pairs of the four nucleotides A, T, C, and G. It also does not correct for the higher rate of transitional substitutions in comparison to transversional substitutions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <IRI>#JC</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">(http://www.megasoftware.net/3.1/WebHelp/distancemethods_hc/hc_jukes_cantor_distance.htm)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <IRI>#JC</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Usage: It is special case of F81 model and thus is only used for the original likelihood test.
+(http://www.annualreviews.org/doi/pdf/10.1146/annurev.ecolsys.28.1.437)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#JC</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">JC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#JackKnifing</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#JackKnifing</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Jack knifing, is used in statistical interference to estimate the bias and standard error (variance) of a statistic, when a random sample of observations is used to calculate it. This is a method of resampling data in an effort to assess confidence in the hypothesized relationships between taxa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <IRI>#JackKnifing</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Usage: Programs as DAMBE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#JackKnifing</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Jack_Knifing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Journal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Journal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Journal_Article</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Journal_Article</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Literature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Literature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#Example"/>
+        <IRI>#Local-Alignment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Example: 
+S1= GCGCATGGATTGAGCGA
+S2= TGCGCCATTGATGACC
+ possible alignment:
+S’1= ATTGA-G
+S’2= ATTGATG </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Local-Alignment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Local-Alignment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Local alignment is a computational approach to sequence alignment.
+Used for aligning dissimilar sequences.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Local-Alignment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Local_Alignmnet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Motif-Finding</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Motif-Finding</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Motif finding: Constructs global alignment sequences that attempt to align short conserved sequence motifs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Motif-Finding</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Motif_Finding</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#MrBayes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP,HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#MrBayes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MrBayes assumes prior distribution of tree topologies and uses MCMC (Markov Chain Monte Carlo) methods to search tree space and infer the posterior distribution of topologies. It reads sequence data in the NEXUS file format, and outputs posterior distribution estimates of trees and parameters.
+
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <IRI>#MrBayes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Written by/released/produced by:  John Huelsenbeck and Fredrik 
+                                                          Ronquist
+Details:  http://mrbayes.net
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <IRI>#MrBayes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"> Usage:  Bayesian inference
+ Analyze:  Nucleic acid sequences, protein sequences and  
+                    morphological characters
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MrBayes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MrBayes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#Example"/>
+        <IRI>#Multiple-Sequence-Alignment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Example:
+S1=AGGTC
+S2=GTTCG
+S3=TGAAC
+Possible alignment   AGGGT-C-
+                                  -G-T TC G
+                                   TG-AAC-
+Possible alignment   AGGT-C-
+                                 GTT—CG
+                                  -TGAAAC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Multiple-Sequence-Alignment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Multiple-Sequence-Alignment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">It is an extension of pairwise alignment to incorporate more than two sequences at a time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Multiple-Sequence-Alignment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Multiple-Sequence-Alignment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Multiple_Sequence_Alignment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#NNI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, SV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#NNI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nearest Neighbor Interchange (NNI): This is a heuristic algorithm for searching through treespace.  It proceeds by juxtaposing the positions of neighbors on a phylogenetic tree.  If the resulting tree is better, then it is retained.  This algorithm is quite a gentle perturbation of the tree and is inferior to either SPR or TBR in terms of completeness of the searsh.  On average it will be quicker than SPR or TBR. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <IRI>#NNI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.dbbm.fiocruz.br/james/GlossaryN.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <IRI>#NNI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Programs used: 
+PAUP, PhyML 3.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NNI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NNI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#analyze"/>
+        <IRI>#NONA</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Analyze: DNA sequence data or discrete characters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#NONA</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#NONA</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">It searches for most parsimonious trees according to character weights defined by the user a priori. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <IRI>#NONA</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Written by/released/produced by:  Pablo Goloboff,  Instituto Miguel 
+    Lillo, Tucumán, Argentina
+ ~Details:  http://www.cladistics.com/aboutNona.htm.
+MP,HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <IRI>#NONA</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Usage: Parsimony</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NONA</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"> ~Advantages: Very fast than other parsimony programs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NONA</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NONA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Optimality-Criterion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, TD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Optimality-Criterion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An optimality criterion provides a measure of the fit of the data to a given hypothesis. The selection process is determined by the solution that optimizes the criteria used to evaluate the alternative hypotheses. The term has been used to identify the different criteria that are used to infer a phylogenetic tree and include maximum likelihood, Bayesian, maximum parsimony.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Optimality-Criterion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Optimaly</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#analyze"/>
+        <IRI>#PAUP*</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Analyze: Molecular sequences, morphological data and other data   
+  types.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#PAUP*</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP,HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#PAUP*</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">(Phylogenetic Analysis Using Parsimony)
+PAUP is a comprehensive program and competes with PHYLIP to be responsible for the most trees published. 
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <IRI>#PAUP*</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Written by/ released/produced by: David Swofford and distributed by 
+ Sinauer Associates of Sunderland,Massachusetts. 
+Details: http://www.sinauer.com/detail.php?id=8060. 
+             Swofford et al. (1998)
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <IRI>#PAUP*</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Usage: Parsimony, Maximum likelihood and distance matrix methods</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PAUP*</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PAUP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#PHYLIP</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, TD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#PHYLIP</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHYLIP (PHYLogeny Inference Package) is a  package of 35 programs for inferring phylogenies. It is distributed as source code, documentation files, and a number of different types of executables.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <IRI>#PHYLIP</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">(http://evolution.gs.washington.edu/phylip.html)
+(http://evolution.gs.washington.edu/phylip/general.html)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <IRI>#PHYLIP</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Usage: Methods available in each program include parsimony, distance matrix, and likelihood methods, including bootstrapping and consensus trees. Data types that can be handled include molecular sequences, gene frequencies, restriction sites and fragments, distance matrices, and discrete characters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PHYLIP</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHYLIP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Pairwise-Alignment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Pairwise-Alignment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Are used to find the local or global alignments of two query sequences
+Used for methods that do not require extreme precision.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Pairwise-Alignment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pairwise_Alignment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Permutation-Test</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Permutation-Test</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Permutation tests are standard nonparametric methods. It is often called the permutation tail probability test (PTP). Here the columns of the matrix are randomised so that the consensus sequence and the composition for any particular column is maintained, but any signal is lost.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Permutation-Test</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Permutation_Test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Poisson-Model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP,HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Poisson-Model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This implements a poissson distribution that accurately estimates the number of amino acid replacements when species are closely related.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <IRI>#Poisson-Model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ref:  Nei  et al. (1987)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Poisson-Model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Poisson_Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Progressive-Method</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Progressive-Method</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Progressive, hierarchial or tree methods generate multiple sequence alignment by aligning the most similar sequences first and then adding successively less related sequences until the entire query has been incorporated.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Progressive-Method</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Progressive_Method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Provenance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Provenance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Resampling</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Resampling</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Resampling techniques provide an estimate of dispersion or statistics of uknown or poorly known distribution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Resampling</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Resampling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#SPR</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP,SV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#SPR</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Subtree Pruning Regrafting (SPR) This is a heuristic search algorithm for searching through treespace.  It proceeds by breaking off part of the tree and attaching it to another part of the tree.  If it finds a better tree, then the new tree is used as a starting tree for another round of SPR.  This is a more rigorous algorithm than NNI, but not as robust as TBR.  Another name for SPR is cut-and-paste.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <IRI>#SPR</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.dbbm.fiocruz.br/james/GlossaryS.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <IRI>#SPR</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Programs used: 
+PAUP, PhyML 3.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SPR</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SPR</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#SSAP</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#SSAP</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sequential structure alignment program is a program of structural alignment that uses atom-to-atom vectors in structure space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SSAP</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SSAP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Sequence-Alignment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Sequence-Alignment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">It is a way of arranging the specific sequences (DNA, RNA, protein) to identify regions of similarity that may be a consequence of functional, structural or evolutionary relationships between the sequences.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sequence-Alignment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sequence_Alignmnet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Short_Title</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Short_Title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Start_Page</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Start_Page</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Structural-Alignment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Structural-Alignment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Uses information about the secondary and teritiary structure of the specific molecule in aligning sequences.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Structural-Alignment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Structure_Alignment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#TBR</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, SV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#TBR</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tree-Bisection-Reconnection (TBR) This is a heuristic algorithm for searching through treespace.  It proceeds by breaking a phylogenetic tree into two parts and then reconnecting the two subtrees at all possible branches.  If a better tree is found, it is retained and another round of TBR is initiated.  This is quite a rigorous method of searching treespace.  It is not guaranteed to find the optimal tree, but it is more robust than SPR OR NNI. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <IRI>#TBR</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.dbbm.fiocruz.br/james/GlossaryT.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <IRI>#TBR</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Programs used: 
+PAUP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TBR</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TBR</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Title</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Traversing-Tree-Space</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Traversing-Tree-Space</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">tree-traversal refers to the process of visiting (examining and/or updating) each node in a tree data structure, exactly once, in a systematic way</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Traversing-Tree-Space</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Traversing_Tree_Space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Type_of_Article</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Type_of_Article</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Volume</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <IRI>#Word-Method/K-Tuple-Method</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Word-Method/K-Tuple-Method</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Word method (K-tuple method) is a primary method of producing pairwise alignment. Particularly used in large data base searche.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Word-Method/K-Tuple-Method</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Word_Method/k_tuple_Method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Year</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Year</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#data_set_type</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Data_Set_Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pages</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#Amino-Acid-Model</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Amino_Acid_Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <AbbreviatedIRI>ontologyIRI:#Character-Based</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, TD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <AbbreviatedIRI>ontologyIRI:#Character-Based</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Whereas the distance based methods compress all sequence information into a single number, the character-based methods attempt to infer the phylogeny based on all the individual characters (nucleotides or amino acids).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#Character-Based</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Character_Based</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <AbbreviatedIRI>ontologyIRI:#Codon-Based-Model</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP,TD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <AbbreviatedIRI>ontologyIRI:#Codon-Based-Model</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A codon-based model describes the evolution of protein-coding DNA sequences using substitions between codons. They are used in phylogenetic estimation within the ML framework. 
+(Goldman and Yang 1994)
+- 3 types of codon based models:
+(http://e-collection.library.ethz.ch/eserv/eth:3/eth-3-02.pdf)
+1/ Parametric model/Muse and Gaut (1994)
+The model uses six parameters, α and β for the synonymous and nonsynonymous
+substitution rates and the four nucleotide frequencies πx (x =A,G,T,C). The instantaneous rate
+between codons i and j is only positive if they differ by exactly one nucleotide.
+2/ Empirical model/ Yang and others (1994)
+This model has parameter for transversion/transition bias, codon usage bias, physicochemical distances between amino acids (coded by the codons) and ”the variability of the gene or its tendency to undergo nonsynonymous substitution.” Like the first model, it only takes into account codons that are different by one nucleotide.
+3/Combined codon model/Whelan and Goldman (2004)
+Whelan and Goldman model consider substitutions of two or three consecutive nucleotides as one possible evolutionary event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#Codon-Based-Model</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Codon_Based_Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#DNA-Model</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DNA_Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#DataFormat</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DataFormat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#DataType</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DataType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <AbbreviatedIRI>ontologyIRI:#Distance-Based</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP,SV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <AbbreviatedIRI>ontologyIRI:#Distance-Based</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">It requires distance measures between the sequences of the data. 
+It calculates a measure of the distance between each pair of species and then finds a tree that predicts the observed set of distances as closely as possible or that minimizes discrepancies among pair-wise distances.
+Distances are considered as the estimates of the branch length separating that pair of species.
+Ref: Inferring Phylogenies by Joseph Felsenstein</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <AbbreviatedIRI>ontologyIRI:#Distance-Based</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Programs used:
+FITCH,  KITSCH, NEIGHBOR, DNADIST, RESTDIST</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <AbbreviatedIRI>ontologyIRI:#Distance-Based</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ref: http://www.mbio.ncsu.edu/bioedit/appinstall.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#Distance-Based</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Distance_Based</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#Example"/>
+        <AbbreviatedIRI>ontologyIRI:#F81</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Example: We assume that the probability of change from state ‘i’ to state ‘j’ is proportional to the frequency of state ‘j’.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <AbbreviatedIRI>ontologyIRI:#F81</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <AbbreviatedIRI>ontologyIRI:#F81</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Felsenstein 1981 (F81, nst=1): 
+Model in which the probability of nucleotide changes were determined by the equilibrium nucleotide frequencies.  This is an extension of JC model. There are variable base frequencies, all substitutions equally likely (PAUP, PAML)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <AbbreviatedIRI>ontologyIRI:#F81</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ref:D.H. Bos, D. Posada, Developmental and Comparative Immunology 29 (2005) 211–227.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#F81</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">F81</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#FASTA</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FASTA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <AbbreviatedIRI>ontologyIRI:#GTR</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP,SV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <AbbreviatedIRI>ontologyIRI:#GTR</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GTR(General Time-Reversal):
+It assumes a symmetric substitution matrix and so the time is reversible. The nucleotides can occur at different frequencies. Distance is made by estimating the base frequencies and the rates and finding ones that exactly predict the observed net transition matrix.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <AbbreviatedIRI>ontologyIRI:#GTR</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.life.umd.edu/labs/delwiche/bsci348s/lec/NTSeqEvol.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#GTR</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GTR</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <AbbreviatedIRI>ontologyIRI:#HKY</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP,TD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <AbbreviatedIRI>ontologyIRI:#HKY</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Unlike JC69, “the HKY (Hasegawa, Kishino, Yano, 1985) model assumes a time-reversible process, a non-uniform distribution of nucleotides and different rates for transitions and transversions.”
+
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <AbbreviatedIRI>ontologyIRI:#HKY</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">(http://lectures.molgen.mpg.de/phylogeny_ws05/exercises/exercises_07.pdf)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <AbbreviatedIRI>ontologyIRI:#HKY</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">(http://www.annualreviews.org/doi/pdf/10.1146/annurev.ecolsys.28.1.437)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <AbbreviatedIRI>ontologyIRI:#HKY</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Usage:  HKY85 and F81 are similar and can be used as appropriate models for the alternative hypothesis of likelihood. (The alternative hypothesis answers the question “Does the addition of a substitution parameter provide a signiﬁcant increase in the likelihood”?)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#HKY</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HKY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <AbbreviatedIRI>ontologyIRI:#MEGA</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP,TD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <AbbreviatedIRI>ontologyIRI:#MEGA</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MEGA is an integrated tool for conducting automatic and manual sequence alignment, inferring phylogenetic trees, mining web-based databases, estimating rates of molecular evolution, inferring ancestral sequences, and testing evolutionary hypotheses. (http://www.megasoftware.net/)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <AbbreviatedIRI>ontologyIRI:#MEGA</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">(http://www.megasoftware.net/tutorial.php)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <AbbreviatedIRI>ontologyIRI:#MEGA</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Usage: 
+MEGA can re-construct a phylogeny using Maximum Likelihood, Minimum Evolution, UPGMA, and Maximum Parsimony methods in addition to Neighbor-Joining. For example, MEGA can re-construct the MP phylogeny using Branch and Bound search method.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#MEGA</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Mega</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <AbbreviatedIRI>ontologyIRI:#MOLPHY</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, TD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <AbbreviatedIRI>ontologyIRI:#MOLPHY</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MOLPHY is a free package of programs for molecular phylogenetics based on the Maximum Likelihood (ML) method. The main program of MOLPHY is ProtML which infers evolutionary trees from Protein (amino acid) sequences </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <AbbreviatedIRI>ontologyIRI:#MOLPHY</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">(http://www.is.titech.ac.jp/~shimo/class/doc/csm96.pdf)
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <AbbreviatedIRI>ontologyIRI:#MOLPHY</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">using ML criterion.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#MOLPHY</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Molphy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#Example"/>
+        <AbbreviatedIRI>ontologyIRI:#Maximum-Likelihood</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Example: 
+The likelihood generally depends upon the phylogeny sites, branch lengths, and other substitution parameters. The method of maximum likelihood estimates the mutational probabilities and finds the values of the parameters which maximize the likelihood function. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <AbbreviatedIRI>ontologyIRI:#Maximum-Likelihood</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, TD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <AbbreviatedIRI>ontologyIRI:#Maximum-Likelihood</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Maximum Likelihood Estimation (MLE) is a method for the inference of phylogeny. Using statistical techniques to assign probabilities to the proposed tree models, the method searches for the tree with the highest probability or likelihood.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <AbbreviatedIRI>ontologyIRI:#Maximum-Likelihood</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">(http://bioinf.ncl.ac.uk/molsys/data/like.pdf) 
+(http://www.sciencemag.org/site/feature/data/1050262.pdf)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <AbbreviatedIRI>ontologyIRI:#Maximum-Likelihood</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Usage:
+The method is used in phylogeny programs such as PAUP*, PHYLIP, and PAML. MLE works well with many nucleotide-based models such as JC, GTR, HKY, F81, K2P.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#Maximum-Likelihood</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Maximum_Likelihood</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#Example"/>
+        <AbbreviatedIRI>ontologyIRI:#Maximum-Parsimony</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Example:
+Given a set of aligned sequences or taxa, parsimony analysis determines the number of steps of each character on a given tree. The sum over all characters is called tree Length and most parsimonious trees have the minimum tree length needed to explain the
+observed distribution of all the characters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <AbbreviatedIRI>ontologyIRI:#Maximum-Parsimony</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP, TD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <AbbreviatedIRI>ontologyIRI:#Maximum-Parsimony</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Maximum parsimony is a character-based method that infers a phylogenetic tree by minimizing the total number of evolutionary steps required to explain a given set of data, or in other words by minimizing the total tree length.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <AbbreviatedIRI>ontologyIRI:#Maximum-Parsimony</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">(http://bioinf.ncl.ac.uk/molsys/data/characters.pdf)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <AbbreviatedIRI>ontologyIRI:#Maximum-Parsimony</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Usage:
+MALIGN and POY program use the advantage of maximum parsimony  analysis to optimize multiple sequence alignments and cladogram score of the corresponding tree.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#Maximum-Parsimony</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Maximum_Parsimony</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#Method</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <AbbreviatedIRI>ontologyIRI:#Model</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP,HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <AbbreviatedIRI>ontologyIRI:#Model</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Model represents the footprint of evolutionary phenomenon that generated the data (such as mutation and selection) and provides framework through which the phylogenetic construction method estimates parameters to find the preferred tree.
+The specific model selected for a data set depends on features of the data such as level of variation and frequency.
+Benefits:
+•Overcome most of the phylogenetic scenarios.
+•Provide simplifications, summarizing many evolutionary forces and incorporation of these models leads to improvement in phylogenetic analysis.
+Example: Maximum likelihood, neighbor joining and Bayesian methods use models and benefit from them but maximum parsimony does not use models.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <AbbreviatedIRI>ontologyIRI:#Model</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ref: 
+•Nei M. Phylogenetic analysis in molecular evolutionary genetics. Ann Rev Genet 1996;30:371–403.
+•Kuhner MK, Felsenstein J. A simulation comparison of phylogeny algorithms under equal and unequal evolutionary rates. Mol Biol Evol 1994;11:459–68.
+•Huelsenbeck JP, Hillis DM. Success of phylogenetic methods in the four-taxon case. Syst Biol 1993;42:247–64.
+•Felsenstein J. Cases in which parsimony or compatibility methods will be positively misleading. Syst Zool 1978;27: 401–10.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#Model</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#Model-of-Protein-Evolution</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Model_of_Protein_Evolution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#NEXUX</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NEXUX</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <AbbreviatedIRI>ontologyIRI:#NINJA</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP,TD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <AbbreviatedIRI>ontologyIRI:#NINJA</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NINJA is a software for large-scale neighbor-joining phylogeny inference.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <AbbreviatedIRI>ontologyIRI:#NINJA</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://nimbletwist.com/software/ninja/docs.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <AbbreviatedIRI>ontologyIRI:#NINJA</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Usage:  It expects inputs to be either alignments (in fasta format) or pairwise distance matrices (in phylip format), and can produce both a distance matrix (phylip) and a tree file (newick format).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#NINJA</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ninja</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#NeXML</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NeXML</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <AbbreviatedIRI>ontologyIRI:#Neighbor-Joining</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP,SV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <AbbreviatedIRI>ontologyIRI:#Neighbor-Joining</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Neighbor joining method is a bottom-up clustering method for the creation of phonetic trees. This method also applies an algorithm for clustering.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <AbbreviatedIRI>ontologyIRI:#Neighbor-Joining</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Programs used: Neighbor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#Neighbor-Joining</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Neighbor_Joining</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <AbbreviatedIRI>ontologyIRI:#Nucleotide-Substitution-Model</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">- Nucleotide Substitution models describe the evolutionary rates at which one nucleotide replaces another. “These models assume that only the instantaneous state of a character is important and the probability of change from state i to state j depends upon the amount of time that has passed and the substitution rate.”
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <AbbreviatedIRI>ontologyIRI:#Nucleotide-Substitution-Model</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">(http://www.life.umd.edu/labs/delwiche/bsci348s/lec/NTSeqEvol.html)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <AbbreviatedIRI>ontologyIRI:#Nucleotide-Substitution-Model</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Usage: They are used in molecular phylogenetic analyses and tree likelihood calculation (mostly in Bayesian and maximum likelihood approaches of tree estimation)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#Nucleotide-Substitution-Model</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nucleotide_Substitution_Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#analyze"/>
+        <AbbreviatedIRI>ontologyIRI:#POY</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Analyze: DNA sequence data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <AbbreviatedIRI>ontologyIRI:#POY</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP,SV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <AbbreviatedIRI>ontologyIRI:#POY</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">POY is a program for phylogenetic analysis of DNA sequence data based on the principle behavior of parsimony. POY uses concepts of homology of DNA sequence data than those of static DNA sequence alignments. This program implements two methods of DNA analysis “optimization alignment” and “fixed-states optimization”
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <AbbreviatedIRI>ontologyIRI:#POY</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Exploring the Behavior of POY, a Program for Direct Optimization of Molecular Data, Cladistics 17, S60–S70 (2001)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <AbbreviatedIRI>ontologyIRI:#POY</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Usage:  Parsimony</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#POY</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Poy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#Phylogenetic_Tree</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhylogeneticTree</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ontologyIRI:#Program</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"> These are the tools for interpreting and inferring phylogenetic trees.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#Program</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Program</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#Protein-Structure-and-Correlated-Change</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Protein_Structure_and_Correlated_Change</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#analyze"/>
+        <AbbreviatedIRI>ontologyIRI:#RAxML</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Analyze: Molecular sequence data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <AbbreviatedIRI>ontologyIRI:#RAxML</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP,SV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <AbbreviatedIRI>ontologyIRI:#RAxML</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">It is a fast program for sequential and parallel phylogenetic tree calculations based on the maximum likelihood method. It provides faster heuristic search, use of parallel processing, and a simulated annealing algorithm.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <AbbreviatedIRI>ontologyIRI:#RAxML</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RAxML-II: a program for sequential, parallel and distributed inference of large phylogenetic trees, Concurrency Computat.: Pract. Exper. 2005; 17:1705–1723.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <AbbreviatedIRI>ontologyIRI:#RAxML</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Usage:  Maximum likelihood method, parsimony, bootstrapping, and consensus tree methods.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#RAxML</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Raxml</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#Example"/>
+        <AbbreviatedIRI>ontologyIRI:#SYM</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Example: The probability of having a ‘i’ which mutates to a ‘j’ is the same as starting with a ‘j’ which mutates into an ‘i’.
+Sites are divided into two classes those that are variable or invariable and incorporated them into the nucleotide models as below:
+ I: Proportion of invariable sites within the model; 
+G (Π): Gamma distribution of rates among sites: There is a continuous probability of change in nucleotide sites that determines the shape of gamma distribution. Slow rates have a skewed distribution to right,whereas high rates have a small shape.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <AbbreviatedIRI>ontologyIRI:#SYM</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP,HY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <AbbreviatedIRI>ontologyIRI:#SYM</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Symmetric Model: Estimation of evolutionary distances between nucleotide sequences of equal base frequencies, symmetrical substitution matrix (A to T = T to A) (PAUP, PAML) </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <AbbreviatedIRI>ontologyIRI:#SYM</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">•D.H. Bos, D. Posada / Developmental and Comparative Immunology 29 (2005) 211–227</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#SYM</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SYM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#Sequence</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sequence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#Sequence_Alignment</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SequenceAlignment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#SourceTaxon</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SourceTaxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#Tree-Estimation</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tree Estimation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#analyze"/>
+        <AbbreviatedIRI>ontologyIRI:#Tree_Puzzle</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Analyze: molecular sequence data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <AbbreviatedIRI>ontologyIRI:#Tree_Puzzle</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP,SV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <AbbreviatedIRI>ontologyIRI:#Tree_Puzzle</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This is a program for tree estimation and to reconstruct phylogenetic trees. It implements a fast tree search algorithm by the strategy of “quartet puzzling” which allows large data sets. It also computes pair-wise maximum likelihood distances as well as branch lengths for user specified trees. It also conducts a number of statistical tests on the data sets.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <AbbreviatedIRI>ontologyIRI:#Tree_Puzzle</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.tree-puzzle.de/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <AbbreviatedIRI>ontologyIRI:#Tree_Puzzle</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Usage: Maximum likelihood method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#Tree_Puzzle</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tree_Puzzle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#Example"/>
+        <AbbreviatedIRI>ontologyIRI:#UPGMA</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Example: If a node leads to two branches, one of which leads on upwards to all  mammals and the other on upwards to all birds, the estimate of the total branch length down to the node is half the average of the distances between all( bird, mammal) pairs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <AbbreviatedIRI>ontologyIRI:#UPGMA</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP,SV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <AbbreviatedIRI>ontologyIRI:#UPGMA</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Unweighted Pair Group Method with Arithmetic Mean
+This method applies a particular algorithm to a distance matrix to come up with a tree directly.At each step, the nearest two clusters are combined into a higher-level cluster. The distance between any two clusters A and B is taken to be the average of all distances between pairs of objects &quot;x&quot; in A and &quot;y&quot; in B, that is, the mean distance between elements of each cluster.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#usage"/>
+        <AbbreviatedIRI>ontologyIRI:#UPGMA</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Programs used: 
+neighbor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#UPGMA</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UPGMA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#creator"/>
+        <AbbreviatedIRI>ontologyIRI:#k80</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MP,SV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <AbbreviatedIRI>ontologyIRI:#k80</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">k80 (kimura):
+This model uses two rates, ALPHA (Transitions) and BETA (Transversions) as parameters along with time. Transitions are substitutions between nucleotides of the same or similar molecular structure like purines or between pyrimidines. All other substitutions are tranversions and are known to occur less frequently than transitions.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#source"/>
+        <AbbreviatedIRI>ontologyIRI:#k80</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.stats.ox.ac.uk/__data/assets/pdf_file/0003/4296/Basic_Models_of_Nucleotide_Evolution_2.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#k80</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">K80</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#k80+I</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">K80+1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#k80+P</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">K80+∏</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontologyIRI:#k80+P+I</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">K80+∏+1</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.22702) http://owlapi.sourceforge.net -->
+

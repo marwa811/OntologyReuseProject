@@ -1,0 +1,4687 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/hsiehjulien/ontologies/2016/3/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/hsiehjulien/ontologies/2016/3/untitled-ontology-4">
+    <Prefix name="" IRI="http://www.semanticweb.org/hsiehjulien/ontologies/2016/3/untitled-ontology-4#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <NamedIndividual IRI="#tactile_dysgeusia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#oseltamivir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#occipital_headache"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#partial_puberty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nasal_posterior_drip"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#parageusia/phantogeusia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antiparkinsonian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#oral_cavity_and_oropharynx"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#salty_dysgeusia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pentoxyfilline"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#benzene"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Beta_blockers"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#charpenter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#effect_on_quality_of_life"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#umami"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hyposmia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tonsillectomy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bilateral_nasal_obstruction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wax"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gender"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#chemicals"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#paints"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nortriptyline"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#left_olfactory_cleft_nonvisualized_or_congested"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dysmnesia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#more_than_2_years"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#urticaria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#normotonic_sodium_chloride"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#left_inferior_turbinate_hypertrophy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#glossitis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#magnet_production"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#allergic_rhinitis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Isolated_congenital_anosmia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#xerostomy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sleep_disturbance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manufacturing_processes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pharmacist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tin_fumes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#right_facial_paresthesia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#chloroform"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cranial_nerve_2_to_12_grossly_intact"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#postural_instability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hours"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hepatitis_C"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Toxic_agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#molds"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Weber_lateralized_right"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mastoid_ecchymosis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#arsenic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rinne_positive_left"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Demographic_characteristics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#seasonal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#non_mobile_or_retracted_tympanic_membrane"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Recent_events_and_conversations_are_increasingly_Forgotten"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dental_issue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#oxymetazoline"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#phenylephrine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#left_nasal_mass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#progressive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ethyl_acetate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#woodworker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Anorexia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tympanic_membrane_perforation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#kidney_disease"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#unilateral_right"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ex-smoker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#therapeutic_agents"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Family_History"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#oral_cavitiy_infection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#food"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nifedipine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#active_substance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#septal_perforation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mild_cognitive_impairment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Weber_no_lateralization"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dioxide"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#liver_disease"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gas_detector"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bilateral_nasal_mass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#medication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#propafenone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lithium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#purulent_rhinorrhea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cholestyramine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#primary_amenorrhea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#head_trauma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Borreliosis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#right_middle_turbinate_hypertrophy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dichromates"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#acetaldehyde"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#micropenis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#propylthiouracil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aciclovir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#eszopiclone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#personal_hygiene_monitoring"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#asphalt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#noon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#chronic_rhinosinusitis_with_nasal_polyposis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#age"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#watery_rhinorrhea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tunnel_vision"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#methotrexate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#maternal_grandmother"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#benzodiazepine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#xerosis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Problem_in_handling_financial_results_from_mathematical_challenges"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#halitosis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#amiodarone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#left_epistaxis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#clomipramine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#less_than_3_months_ago"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#asthma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#air-fluid_levels_or_bubbles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#blurred_central_vision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Respiratory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nasal_spray"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#doxorubicin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#medical_condition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Integumentary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#acupuncture"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#guillain-barre_syndrome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HIV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cocaine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Waking_up"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#crepitus,_tenderness,_step-offs_or_mobility_of_the_region_of_the_nasal_bone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rigidity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intravenous"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fluctuating"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#metronidazole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#diplopia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alpha_lipoic_acid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#history_of_illness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dexametasone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#neoplasia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#frontal_pressure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#constipation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Medical_treatment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dantrolene"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fluorides"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#oral_surgery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hematologic_lymphatic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neurological"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#symptoms_pattern"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#chronic_otitis_media"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#temporal_lobectomy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#positive_cottle_sign"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Asthenia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cardiovascular"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#multiple_sclerosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#psychiatric"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#quinolone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#blind_spots_in_peripheral_vision"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#worse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#drug_induced_smell_dysfunction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#carbamazepine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#amyotrophic_lateral_sclerosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#nonmetallic_inorganic_compounds"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Olfactory_groove_meningioma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#formaldehyde"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#left_facial_paresthesia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#migraine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Clozapine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#week"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#main_complaint"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#status_post_uvuloplasty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#endoscopic_sinus_surgery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cromolyn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hemorrhagic_stroke"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Idiopathic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#known_allergies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pyrosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#quantity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dysgrosia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#chemosensory_symptoms_or_signs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#zinc_gluconate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tanning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#time_frame"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#factory_-_naval,_battery,_thermometer,_metal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nephew"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#delayed_puberty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aneurysm_coiling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smell_disorders"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#surgical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bilateral_olfactory_cleft_nonvisualized_or_congested"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#oral_pain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tracheal_intubation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#brain_surgery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#no_puberty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Characteristic_event"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trifluoperazine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#chronic_rhinosinusitis_without_polyps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#acetalozamide"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#arsenite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nasal_drops_in_mygind_position"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#No_recovery_after_upper_respiratory_tract_infection"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#current_smoker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#parkinson&apos;s_disease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dusts"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vitamine_B12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vertigo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#carotid_gustatory_syndrome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#radiotherapy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#parosmia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vincristine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#postinfectious_olfactory_loss"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#acetic_acid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Taste_disorders"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bilateral_epistaxis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#minutes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evolution"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#left_nasal_obstruction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#palatal_palsy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Problems_with_memory_or_concentration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#allergic_immunologic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hydrogen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#post_traumatic_taste_dysfunction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#kartagener_syndrome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rizatriptan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#profession"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tongue_numbness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#falling_asleep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#decrease_in_planning_or_organizational_skills"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nickel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#taste_agnosia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#received_intervention_for_the_current_problem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#purulent_and_thick_secretions"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lack_of_Vitality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#blindness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#food_allergy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aural_fullness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fever"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#posterior_commissure_hypertrophy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ganciclovir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#acids"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#month"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bilateral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bell&apos;s_palsy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#left_ostiomeatal_complex_obstruction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hypergeusia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#not_at_all"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sweet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zinc-containing_nasal_spray"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#amphetamine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#father"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#drug_induced_taste_dysfunction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#diffuse_laryngeal_edema"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#heat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hoarseness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nasal_adenocarcinoma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#olfactory_cleft_stripping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#metallic_compounds"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#phenytoin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#alcohol_consumption"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#methylphenidate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sodium_citrate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#spices"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#zinc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#taste"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#high_blood_pressure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#less_than_1_pack_a_day"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Not_a_smoker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#diahrrea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#facial_pain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aneurysm_clipping"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Levodopa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#behavioral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lead"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aminoglycoside"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#paracetamol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#alternative_medicine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Musculoskeletal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#septoplasty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#chemist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#turbinectomy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#antileukotriene"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#falls"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nitrate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tetracycline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#otologic_and_otoneurologic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#machado-joseph_disease"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rash"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#anti-inflammatory_drugs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#race"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#kallmann_syndrome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bilateral_ostiomeatal_complex_obstruction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#daugther"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#carbon_disulfide"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aunt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#clofibrate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#frontal_or_maxillary_tenderness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#amlodipine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#phantosmia_preceding_a_seizure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#smoking_status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Allievating_factors"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pirodavir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#silicon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#printer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#right_ostiomeatal_complex_obstruction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hardwoods"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Problems_producing_people&apos;s_names_or_the_right_words_for_objects"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#more_than_2_pack_a_day"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#perennial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#thick_endolaryngeal_mucus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#passive_smoker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#carbimazole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bending"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#penicillin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#toxic_exposure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#other_procedures"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cutting_oils"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#weight_gain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#laterality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Misplacing_important_objects_with_increasing_frequency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ethnicity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fragrances"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#polyneuritis_cranialis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pharmacologic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#conjunctivitis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#right_nasal_obstruction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#thiamazole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#second"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#spironolactone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bitter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#selenium_dioxide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#apparition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#chocking_while_eating"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#brother"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#polydactyly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#griseofulvin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stridor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#son"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rhinoplasty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#burning"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#desipramine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#minute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pollens"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nasal_and_paranasal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nasal_polyps_grade_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#epiphora"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#conditions"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Losartan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#paraneoplastic_syndrome_-_lung_cancer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1-2_pack_a_day"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#chlorine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ageusia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dyspnea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nasal_deformities"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#deviated_columella"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#choanal_atresia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ginko_biloba"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#erythema_or_hyperemia_arytenoids"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#granuloma_granulation_tissue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cranial_nerves"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#diltiazem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gastrointestinal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#anti-infectious_drugs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tabacco_consumption"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#unilateral_left"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ischemic_stroke"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#phantosmia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#redness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nasal_polyps_grade_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#metallic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#carbon_monoxide"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ventricular_obliteration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#badly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tabacco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sister"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#antimigraine_drugs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rubber_vulcanization"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#status_post_tonsillectomy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nasal_polyps_grade_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#visual_impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#insects"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#levothyroxine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#thyroid_disease"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#copper"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hypercholesterolemia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#left_middle_turbinate_hypertrophy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gardner"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cryptorchidism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#baclofen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pseudoephedrine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#born_without_a_sense_of_smell"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#normal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cervical_artery_dissection"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mildly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#patient_food_education"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bilateral_inferior_turbinate_hypertrophy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dyspraxia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#urinary_dysfunction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lead_smelting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aspirin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#delivery_method"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#No_known_allergies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#endocrine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#avoiding_gas-related_device"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Very_badly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#clozapine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Topical_intranasal_drugs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#right_inferior_turbinate_hypertrophy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#zolpidem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dysgeusia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hemotympanum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sjorgren_syndrome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#maxillary_pressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#antiepileptic_drugs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rinne_negative_left"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Allergy_evaluation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#trichloroethylene"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cadmium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#corticosteroid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#olfactory_cleft_syndrome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#caroverine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cytostatics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#better"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dental_procedure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bardet-Biedl_syndrome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#coldness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#niece"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Painter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#temporal_lobe_epilespy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#retronasal_dysfunction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#evening"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vocal_folds_edema"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#3_-24_months_ago"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reduced_memory_of_personal_history"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antipsychotics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#left_septal_deviation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#outdoor_activities"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#right_septal_deviation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#facial_palsy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#burning_mouth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#maternal_grandfather"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#chromium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#uvuloplasty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nasal_valve_surgery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#paternal_grandmother"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vitamine_A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Per_os"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#posterior_nasal_drip"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Iatrogenic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#drugs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rehabilitation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#organic_compounds"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#olfactory_training"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pharyngeal_pain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lamotrigine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ammonia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Depression_and_other_mood_disturbances"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#frequency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#subarachnoid_hemorrhage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#minocycline"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#salty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#day"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#theophylline"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#otitis_media"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rinne_positive_right"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#microlaryngoscopy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#metallurgical_processes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nickel_plating_or_refining"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#terbinafide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subjects"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#physical_activities"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hyperosmia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#resting_tremor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#laryngeal_prurit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#situs_inversus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#allergens"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#silver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#burning_mouth_syndrome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cytarabine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#surgical_procedures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exacerbating_factors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antithyroid_agents"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cough"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sialadenitis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#other"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#surgical_treatment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#budesonide"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#chlorometanes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nasal_irrigation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#naratriptan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#middle_ear_surgery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hypogeusia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#change_in_saliva_consistency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cyanide"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#imipramine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#infertility"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bending_sign"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#acetophenone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#oral_or_pharyngeal_foreign_body_sensation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#adenoidectomy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NSAID"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#no_change"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#anosmia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Onset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#right_epistaxis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#familial_dysautonomia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dermatitis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gabapentine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#potash"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vomiting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ocular_prurit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cardiogenic_shock"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#orthostatic_hypotension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chemosensory_phenotyping"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alzheimer&apos;s_Disease"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#paternal_grandfather"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#trifluoperazine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#right_olfactory_cleft_nonvisualized_or_congested"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#penicillamine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mother"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#oral_thrush"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#subglottic_edema"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dexamphetamine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#topiramate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gastroesophageal_Reflux_Disease"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sudden"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#installation_of_dental_prosthesis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bilateral_middle_turbinate_hypertrophy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#statins"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hypopharynx_and_larynx"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#beclometasone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#constant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cotton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#diabetes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#medium_badly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dysphagia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wheezing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#space-occupying_lesion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rinne_negative_right"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#right_nasal_mass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hypertonic_sodium_chloride"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Olfactory_intolerence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sialolithiasis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#trichloroethane"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#night"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#can_be_defined_by"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#morning"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#codeine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#weight_loss"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#general_anesthesia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Steel_production"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#checking_food_expiration_date_to_avoid_spoiled_food_ingestion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cystic_fibrosis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#creutzfeld-jakob_disease"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#laryngectomy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#anticholinergic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Review_of_systems"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Weber_laterilized_left"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#phantosmia_or_hyperosmia_preceding_or_during_headache"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#antihistamine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bradykinesia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#headache"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#subjective_allergic_status"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#oncle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nasal_drops"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mucosal_inflammation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wegener_granulomatosis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nitric_acid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spatial_Disorientation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#manganese"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muscle_relaxants"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#social_history"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#septal_hematoma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#General"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#xerophtalmia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#do_not_remember"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#myasthenia_gravis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#physical_examination_findings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#past_history_and_chronic_diseases"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#psychiatric_medication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#night_vision_dysfunction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prurit_oral_cavity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sumatriptan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cardiovascular_drugs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#upper_respiratory_tract_infection"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#macrolides"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#turbinoplasty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cocaine_hydrochloride"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#watery_and_clear_secrections"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rabies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sneezing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#relatives"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_don&apos;t_know"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ACE_inhibitor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#doxepin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#transsphenoidal_surgery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#polypectomy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_part_of"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hypoacusis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#butyl_acetate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#renal_disease"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#amitriptyline"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#osteoporosis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#moderate_cognitive_decline"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hardly_at_all"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#renal_agenesis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#amoxicillin_clavulanate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it_has_been_there_as_long_as_I_can_remember"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mites"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Eyes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#modalities"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#epileptic_crisis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#amoxicillin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Emotional_Fading"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#smell"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#post-traumatic_olfactory_loss"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dysphasia"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Allergy_evaluation"/>
+        <Class IRI="#Chemosensory_phenotyping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Allievating_factors"/>
+        <Class IRI="#history_of_illness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antiparkinsonian"/>
+        <Class IRI="#medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antipsychotics"/>
+        <Class IRI="#medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antithyroid_agents"/>
+        <Class IRI="#medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <Class IRI="#history_of_illness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cardiovascular"/>
+        <Class IRI="#Review_of_systems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Characteristic_event"/>
+        <Class IRI="#history_of_illness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cytostatics"/>
+        <Class IRI="#medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Demographic_characteristics"/>
+        <Class IRI="#Chemosensory_phenotyping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evolution"/>
+        <Class IRI="#history_of_illness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exacerbating_factors"/>
+        <Class IRI="#history_of_illness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Eyes"/>
+        <Class IRI="#Review_of_systems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Family_History"/>
+        <Class IRI="#Chemosensory_phenotyping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gastrointestinal"/>
+        <Class IRI="#Review_of_systems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#General"/>
+        <Class IRI="#Review_of_systems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Integumentary"/>
+        <Class IRI="#Review_of_systems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manufacturing_processes"/>
+        <Class IRI="#toxic_exposure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Muscle_relaxants"/>
+        <Class IRI="#medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Musculoskeletal"/>
+        <Class IRI="#Review_of_systems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <Class IRI="#physical_examination_findings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neurological"/>
+        <Class IRI="#Review_of_systems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Onset"/>
+        <Class IRI="#history_of_illness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Respiratory"/>
+        <Class IRI="#Review_of_systems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Review_of_systems"/>
+        <Class IRI="#Chemosensory_phenotyping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smell_disorders"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taste_disorders"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Topical_intranasal_drugs"/>
+        <Class IRI="#medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#active_substance"/>
+        <Class IRI="#pharmacologic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#age"/>
+        <Class IRI="#Demographic_characteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#alcohol_consumption"/>
+        <Class IRI="#social_history"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#allergens"/>
+        <Class IRI="#Allergy_evaluation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#allergic_immunologic"/>
+        <Class IRI="#Review_of_systems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#alternative_medicine"/>
+        <Class IRI="#received_intervention_for_the_current_problem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#anti-infectious_drugs"/>
+        <Class IRI="#medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#anti-inflammatory_drugs"/>
+        <Class IRI="#medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#antiepileptic_drugs"/>
+        <Class IRI="#medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#antimigraine_drugs"/>
+        <Class IRI="#medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#apparition"/>
+        <Class IRI="#Onset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#behavioral"/>
+        <Class IRI="#received_intervention_for_the_current_problem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cardiovascular_drugs"/>
+        <Class IRI="#medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#chemosensory_symptoms_or_signs"/>
+        <Class IRI="#Chemosensory_phenotyping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#conditions"/>
+        <Class IRI="#Family_History"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cranial_nerves"/>
+        <Class IRI="#physical_examination_findings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#delivery_method"/>
+        <Class IRI="#pharmacologic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#drugs"/>
+        <Class IRI="#allergens"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dusts"/>
+        <Class IRI="#toxic_exposure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#effect_on_quality_of_life"/>
+        <Class IRI="#history_of_illness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#endocrine"/>
+        <Class IRI="#Review_of_systems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ethnicity"/>
+        <Class IRI="#Demographic_characteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#food"/>
+        <Class IRI="#allergens"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#frequency"/>
+        <Class IRI="#history_of_illness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gender"/>
+        <Class IRI="#Demographic_characteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hematologic_lymphatic"/>
+        <Class IRI="#Review_of_systems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#history_of_illness"/>
+        <Class IRI="#Chemosensory_phenotyping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hypopharynx_and_larynx"/>
+        <Class IRI="#physical_examination_findings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#insects"/>
+        <Class IRI="#allergens"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#laterality"/>
+        <Class IRI="#history_of_illness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#main_complaint"/>
+        <Class IRI="#taste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#medical_condition"/>
+        <Class IRI="#past_history_and_chronic_diseases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#medication"/>
+        <Class IRI="#past_history_and_chronic_diseases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#metallic_compounds"/>
+        <Class IRI="#toxic_exposure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#metallurgical_processes"/>
+        <Class IRI="#toxic_exposure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mites"/>
+        <Class IRI="#allergens"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#modalities"/>
+        <Class IRI="#taste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#molds"/>
+        <Class IRI="#pollens"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nonmetallic_inorganic_compounds"/>
+        <Class IRI="#toxic_exposure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#oral_cavity_and_oropharynx"/>
+        <Class IRI="#physical_examination_findings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#organic_compounds"/>
+        <Class IRI="#toxic_exposure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#other"/>
+        <Class IRI="#received_intervention_for_the_current_problem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#other_procedures"/>
+        <Class IRI="#past_history_and_chronic_diseases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#otologic_and_otoneurologic"/>
+        <Class IRI="#physical_examination_findings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#past_history_and_chronic_diseases"/>
+        <Class IRI="#Chemosensory_phenotyping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pharmacologic"/>
+        <Class IRI="#received_intervention_for_the_current_problem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#physical_examination_findings"/>
+        <Class IRI="#Chemosensory_phenotyping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pollens"/>
+        <Class IRI="#allergens"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#profession"/>
+        <Class IRI="#social_history"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#psychiatric"/>
+        <Class IRI="#Review_of_systems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#psychiatric_medication"/>
+        <Class IRI="#medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#quantity"/>
+        <Class IRI="#tabacco_consumption"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#race"/>
+        <Class IRI="#Demographic_characteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#received_intervention_for_the_current_problem"/>
+        <Class IRI="#history_of_illness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rehabilitation"/>
+        <Class IRI="#received_intervention_for_the_current_problem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#relatives"/>
+        <Class IRI="#Family_History"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#smell"/>
+        <Class IRI="#chemosensory_symptoms_or_signs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#smoking_status"/>
+        <Class IRI="#tabacco_consumption"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#social_history"/>
+        <Class IRI="#Chemosensory_phenotyping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#subjective_allergic_status"/>
+        <Class IRI="#Allergy_evaluation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#surgical"/>
+        <Class IRI="#received_intervention_for_the_current_problem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#surgical_procedures"/>
+        <Class IRI="#past_history_and_chronic_diseases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#symptoms_pattern"/>
+        <Class IRI="#history_of_illness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tabacco_consumption"/>
+        <Class IRI="#social_history"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#taste"/>
+        <Class IRI="#chemosensory_symptoms_or_signs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#time_frame"/>
+        <Class IRI="#Onset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#toxic_exposure"/>
+        <Class IRI="#profession"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Allergy_evaluation"/>
+        <Class IRI="#Demographic_characteristics"/>
+        <Class IRI="#Family_History"/>
+        <Class IRI="#Review_of_systems"/>
+        <Class IRI="#chemosensory_symptoms_or_signs"/>
+        <Class IRI="#history_of_illness"/>
+        <Class IRI="#past_history_and_chronic_diseases"/>
+        <Class IRI="#physical_examination_findings"/>
+        <Class IRI="#social_history"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Allievating_factors"/>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <Class IRI="#Characteristic_event"/>
+        <Class IRI="#Evolution"/>
+        <Class IRI="#Exacerbating_factors"/>
+        <Class IRI="#Onset"/>
+        <Class IRI="#active_substance"/>
+        <Class IRI="#alternative_medicine"/>
+        <Class IRI="#behavioral"/>
+        <Class IRI="#delivery_method"/>
+        <Class IRI="#effect_on_quality_of_life"/>
+        <Class IRI="#laterality"/>
+        <Class IRI="#other"/>
+        <Class IRI="#pharmacologic"/>
+        <Class IRI="#received_intervention_for_the_current_problem"/>
+        <Class IRI="#rehabilitation"/>
+        <Class IRI="#surgical"/>
+        <Class IRI="#symptoms_pattern"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Antiparkinsonian"/>
+        <Class IRI="#Antipsychotics"/>
+        <Class IRI="#Antithyroid_agents"/>
+        <Class IRI="#Cytostatics"/>
+        <Class IRI="#Muscle_relaxants"/>
+        <Class IRI="#Topical_intranasal_drugs"/>
+        <Class IRI="#anti-infectious_drugs"/>
+        <Class IRI="#anti-inflammatory_drugs"/>
+        <Class IRI="#antiepileptic_drugs"/>
+        <Class IRI="#antimigraine_drugs"/>
+        <Class IRI="#cardiovascular_drugs"/>
+        <Class IRI="#medical_condition"/>
+        <Class IRI="#medication"/>
+        <Class IRI="#other_procedures"/>
+        <Class IRI="#psychiatric_medication"/>
+        <Class IRI="#surgical_procedures"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cardiovascular"/>
+        <Class IRI="#Eyes"/>
+        <Class IRI="#Gastrointestinal"/>
+        <Class IRI="#General"/>
+        <Class IRI="#Integumentary"/>
+        <Class IRI="#Musculoskeletal"/>
+        <Class IRI="#Neurological"/>
+        <Class IRI="#Respiratory"/>
+        <Class IRI="#allergic_immunologic"/>
+        <Class IRI="#endocrine"/>
+        <Class IRI="#hematologic_lymphatic"/>
+        <Class IRI="#psychiatric"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Chemosensory_phenotyping"/>
+        <Class IRI="#Smell_disorders"/>
+        <Class IRI="#Subjects"/>
+        <Class IRI="#Taste_disorders"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Manufacturing_processes"/>
+        <Class IRI="#alcohol_consumption"/>
+        <Class IRI="#dusts"/>
+        <Class IRI="#metallic_compounds"/>
+        <Class IRI="#metallurgical_processes"/>
+        <Class IRI="#nonmetallic_inorganic_compounds"/>
+        <Class IRI="#organic_compounds"/>
+        <Class IRI="#profession"/>
+        <Class IRI="#tabacco_consumption"/>
+        <Class IRI="#toxic_exposure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <Class IRI="#cranial_nerves"/>
+        <Class IRI="#hypopharynx_and_larynx"/>
+        <Class IRI="#oral_cavity_and_oropharynx"/>
+        <Class IRI="#otologic_and_otoneurologic"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#age"/>
+        <Class IRI="#ethnicity"/>
+        <Class IRI="#gender"/>
+        <Class IRI="#race"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#allergens"/>
+        <Class IRI="#subjective_allergic_status"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#conditions"/>
+        <Class IRI="#relatives"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#main_complaint"/>
+        <Class IRI="#smell"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#cardiovascular_drugs"/>
+        <NamedIndividual IRI="#ACE_inhibitor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#General"/>
+        <NamedIndividual IRI="#Anorexia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#General"/>
+        <NamedIndividual IRI="#Asthenia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smell_disorders"/>
+        <NamedIndividual IRI="#Bardet-Biedl_syndrome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conditions"/>
+        <NamedIndividual IRI="#Bardet-Biedl_syndrome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cardiovascular_drugs"/>
+        <NamedIndividual IRI="#Beta_blockers"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#Borreliosis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dusts"/>
+        <NamedIndividual IRI="#Cement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Antipsychotics"/>
+        <NamedIndividual IRI="#Clozapine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#Cromolyn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#Cystic_fibrosis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#Depression_and_other_mood_disturbances"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#metallic_compounds"/>
+        <NamedIndividual IRI="#Dichromates"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#Dysgrosia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#Emotional_Fading"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#smoking_status"/>
+        <NamedIndividual IRI="#Ex-smoker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#Gastroesophageal_Reflux_Disease"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#HIV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smell_disorders"/>
+        <NamedIndividual IRI="#Iatrogenic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#Iatrogenic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smell_disorders"/>
+        <NamedIndividual IRI="#Idiopathic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#Ischemic_stroke"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smell_disorders"/>
+        <NamedIndividual IRI="#Isolated_congenital_anosmia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conditions"/>
+        <NamedIndividual IRI="#Isolated_congenital_anosmia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#Lack_of_Vitality"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Antiparkinsonian"/>
+        <NamedIndividual IRI="#Levodopa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cardiovascular_drugs"/>
+        <NamedIndividual IRI="#Losartan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Allievating_factors"/>
+        <NamedIndividual IRI="#Medical_treatment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#Misplacing_important_objects_with_increasing_frequency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exacerbating_factors"/>
+        <NamedIndividual IRI="#NSAID"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#drugs"/>
+        <NamedIndividual IRI="#NSAID"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#Nasal_deformities"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#subjective_allergic_status"/>
+        <NamedIndividual IRI="#No_known_allergies"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Characteristic_event"/>
+        <NamedIndividual IRI="#No_recovery_after_upper_respiratory_tract_infection"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#smoking_status"/>
+        <NamedIndividual IRI="#Not_a_smoker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smell_disorders"/>
+        <NamedIndividual IRI="#Olfactory_groove_meningioma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#smell"/>
+        <NamedIndividual IRI="#Olfactory_intolerence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#profession"/>
+        <NamedIndividual IRI="#Painter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#delivery_method"/>
+        <NamedIndividual IRI="#Per_os"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#Problem_in_handling_financial_results_from_mathematical_challenges"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#Problems_with_memory_or_concentration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#Recent_events_and_conversations_are_increasingly_Forgotten"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#Reduced_memory_of_personal_history"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#otologic_and_otoneurologic"/>
+        <NamedIndividual IRI="#Rinne_negative_left"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#otologic_and_otoneurologic"/>
+        <NamedIndividual IRI="#Rinne_negative_right"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#otologic_and_otoneurologic"/>
+        <NamedIndividual IRI="#Rinne_positive_left"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#otologic_and_otoneurologic"/>
+        <NamedIndividual IRI="#Rinne_positive_right"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#Sjorgren_syndrome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#Sjorgren_syndrome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#Spatial_Disorientation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#metallurgical_processes"/>
+        <NamedIndividual IRI="#Steel_production"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smell_disorders"/>
+        <NamedIndividual IRI="#Toxic_agent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#Toxic_agent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Antipsychotics"/>
+        <NamedIndividual IRI="#Trifluoperazine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#effect_on_quality_of_life"/>
+        <NamedIndividual IRI="#Very_badly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#Vitamine_B12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exacerbating_factors"/>
+        <NamedIndividual IRI="#Waking_up"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#otologic_and_otoneurologic"/>
+        <NamedIndividual IRI="#Weber_lateralized_right"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#otologic_and_otoneurologic"/>
+        <NamedIndividual IRI="#Weber_laterilized_left"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#otologic_and_otoneurologic"/>
+        <NamedIndividual IRI="#Weber_no_lateralization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#Wegener_granulomatosis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topical_intranasal_drugs"/>
+        <NamedIndividual IRI="#Zinc-containing_nasal_spray"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#organic_compounds"/>
+        <NamedIndividual IRI="#acetaldehyde"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#antiepileptic_drugs"/>
+        <NamedIndividual IRI="#acetalozamide"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#organic_compounds"/>
+        <NamedIndividual IRI="#acetic_acid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#organic_compounds"/>
+        <NamedIndividual IRI="#acetophenone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#anti-infectious_drugs"/>
+        <NamedIndividual IRI="#aciclovir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manufacturing_processes"/>
+        <NamedIndividual IRI="#acids"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#alternative_medicine"/>
+        <NamedIndividual IRI="#acupuncture"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical_procedures"/>
+        <NamedIndividual IRI="#adenoidectomy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#main_complaint"/>
+        <NamedIndividual IRI="#ageusia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#otologic_and_otoneurologic"/>
+        <NamedIndividual IRI="#air-fluid_levels_or_bubbles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conditions"/>
+        <NamedIndividual IRI="#allergic_rhinitis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#allergic_rhinitis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#alpha_lipoic_acid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#metallic_compounds"/>
+        <NamedIndividual IRI="#alum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#anti-infectious_drugs"/>
+        <NamedIndividual IRI="#aminoglycoside"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cardiovascular_drugs"/>
+        <NamedIndividual IRI="#amiodarone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#psychiatric_medication"/>
+        <NamedIndividual IRI="#amitriptyline"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cardiovascular_drugs"/>
+        <NamedIndividual IRI="#amlodipine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#nonmetallic_inorganic_compounds"/>
+        <NamedIndividual IRI="#ammonia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#amoxicillin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#amoxicillin_clavulanate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#psychiatric_medication"/>
+        <NamedIndividual IRI="#amphetamine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#amyotrophic_lateral_sclerosis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical_procedures"/>
+        <NamedIndividual IRI="#aneurysm_clipping"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical_procedures"/>
+        <NamedIndividual IRI="#aneurysm_coiling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#smell"/>
+        <NamedIndividual IRI="#anosmia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#anticholinergic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#antihistamine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#antileukotriene"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#metallic_compounds"/>
+        <NamedIndividual IRI="#arsenic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#metallic_compounds"/>
+        <NamedIndividual IRI="#arsenite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manufacturing_processes"/>
+        <NamedIndividual IRI="#asphalt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exacerbating_factors"/>
+        <NamedIndividual IRI="#aspirin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#drugs"/>
+        <NamedIndividual IRI="#aspirin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conditions"/>
+        <NamedIndividual IRI="#asthma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#asthma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#relatives"/>
+        <NamedIndividual IRI="#aunt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#aural_fullness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#behavioral"/>
+        <NamedIndividual IRI="#avoiding_gas-related_device"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Muscle_relaxants"/>
+        <NamedIndividual IRI="#baclofen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#effect_on_quality_of_life"/>
+        <NamedIndividual IRI="#badly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#anti-inflammatory_drugs"/>
+        <NamedIndividual IRI="#beclometasone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exacerbating_factors"/>
+        <NamedIndividual IRI="#bending"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#bending_sign"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#organic_compounds"/>
+        <NamedIndividual IRI="#benzene"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#psychiatric_medication"/>
+        <NamedIndividual IRI="#benzodiazepine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Evolution"/>
+        <NamedIndividual IRI="#better"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#laterality"/>
+        <NamedIndividual IRI="#bilateral"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#bilateral_epistaxis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#bilateral_inferior_turbinate_hypertrophy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#bilateral_middle_turbinate_hypertrophy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#bilateral_nasal_mass"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#bilateral_nasal_obstruction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#bilateral_olfactory_cleft_nonvisualized_or_congested"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#bilateral_ostiomeatal_complex_obstruction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#modalities"/>
+        <NamedIndividual IRI="#bitter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Eyes"/>
+        <NamedIndividual IRI="#blind_spots_in_peripheral_vision"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Eyes"/>
+        <NamedIndividual IRI="#blindness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Eyes"/>
+        <NamedIndividual IRI="#blurred_central_vision"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Characteristic_event"/>
+        <NamedIndividual IRI="#born_without_a_sense_of_smell"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#apparition"/>
+        <NamedIndividual IRI="#born_without_a_sense_of_smell"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#bradykinesia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical"/>
+        <NamedIndividual IRI="#brain_surgery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#relatives"/>
+        <NamedIndividual IRI="#brother"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#anti-inflammatory_drugs"/>
+        <NamedIndividual IRI="#budesonide"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Eyes"/>
+        <NamedIndividual IRI="#burning"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#main_complaint"/>
+        <NamedIndividual IRI="#burning_mouth"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#burning_mouth_syndrome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#organic_compounds"/>
+        <NamedIndividual IRI="#butyl_acetate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#metallic_compounds"/>
+        <NamedIndividual IRI="#cadmium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#antiepileptic_drugs"/>
+        <NamedIndividual IRI="#carbamazepine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Antithyroid_agents"/>
+        <NamedIndividual IRI="#carbimazole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#nonmetallic_inorganic_compounds"/>
+        <NamedIndividual IRI="#carbon_disulfide"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#nonmetallic_inorganic_compounds"/>
+        <NamedIndividual IRI="#carbon_monoxide"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cardiovascular"/>
+        <NamedIndividual IRI="#cardiogenic_shock"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#carotid_gustatory_syndrome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#caroverine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#cervical_artery_dissection"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#change_in_saliva_consistency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#profession"/>
+        <NamedIndividual IRI="#charpenter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#behavioral"/>
+        <NamedIndividual IRI="#checking_food_expiration_date_to_avoid_spoiled_food_ingestion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dusts"/>
+        <NamedIndividual IRI="#chemicals"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#profession"/>
+        <NamedIndividual IRI="#chemist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#nonmetallic_inorganic_compounds"/>
+        <NamedIndividual IRI="#chlorine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#organic_compounds"/>
+        <NamedIndividual IRI="#chloroform"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#organic_compounds"/>
+        <NamedIndividual IRI="#chlorometanes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#choanal_atresia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#chocking_while_eating"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cardiovascular_drugs"/>
+        <NamedIndividual IRI="#cholestyramine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#metallurgical_processes"/>
+        <NamedIndividual IRI="#chromium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#chronic_otitis_media"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smell_disorders"/>
+        <NamedIndividual IRI="#chronic_rhinosinusitis_with_nasal_polyposis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#chronic_rhinosinusitis_with_nasal_polyposis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#chronic_rhinosinusitis_without_polyps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cardiovascular_drugs"/>
+        <NamedIndividual IRI="#clofibrate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#psychiatric_medication"/>
+        <NamedIndividual IRI="#clomipramine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#psychiatric_medication"/>
+        <NamedIndividual IRI="#clozapine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topical_intranasal_drugs"/>
+        <NamedIndividual IRI="#cocaine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#cocaine_hydrochloride"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#codeine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#coldness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Eyes"/>
+        <NamedIndividual IRI="#conjunctivitis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#symptoms_pattern"/>
+        <NamedIndividual IRI="#constant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#constipation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#metallic_compounds"/>
+        <NamedIndividual IRI="#copper"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topical_intranasal_drugs"/>
+        <NamedIndividual IRI="#corticosteroid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#corticosteroid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dusts"/>
+        <NamedIndividual IRI="#cotton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#cough"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Respiratory"/>
+        <NamedIndividual IRI="#cough"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cranial_nerves"/>
+        <NamedIndividual IRI="#cranial_nerve_2_to_12_grossly_intact"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#creutzfeld-jakob_disease"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#cryptorchidism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#smoking_status"/>
+        <NamedIndividual IRI="#current_smoker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manufacturing_processes"/>
+        <NamedIndividual IRI="#cutting_oils"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dusts"/>
+        <NamedIndividual IRI="#cyanide"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cytostatics"/>
+        <NamedIndividual IRI="#cytarabine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Muscle_relaxants"/>
+        <NamedIndividual IRI="#dantrolene"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#relatives"/>
+        <NamedIndividual IRI="#daugther"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#frequency"/>
+        <NamedIndividual IRI="#day"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#decrease_in_planning_or_organizational_skills"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#delayed_puberty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#dental_issue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#other_procedures"/>
+        <NamedIndividual IRI="#dental_procedure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Integumentary"/>
+        <NamedIndividual IRI="#dermatitis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#dermatitis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#psychiatric_medication"/>
+        <NamedIndividual IRI="#desipramine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#deviated_columella"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#anti-inflammatory_drugs"/>
+        <NamedIndividual IRI="#dexametasone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#psychiatric_medication"/>
+        <NamedIndividual IRI="#dexamphetamine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#diabetes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#diabetes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gastrointestinal"/>
+        <NamedIndividual IRI="#diahrrea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#hypopharynx_and_larynx"/>
+        <NamedIndividual IRI="#diffuse_laryngeal_edema"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cardiovascular_drugs"/>
+        <NamedIndividual IRI="#diltiazem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dusts"/>
+        <NamedIndividual IRI="#dioxide"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Eyes"/>
+        <NamedIndividual IRI="#diplopia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#apparition"/>
+        <NamedIndividual IRI="#do_not_remember"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#psychiatric_medication"/>
+        <NamedIndividual IRI="#doxepin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cytostatics"/>
+        <NamedIndividual IRI="#doxorubicin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smell_disorders"/>
+        <NamedIndividual IRI="#drug_induced_smell_dysfunction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#drug_induced_taste_dysfunction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#dysmnesia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#dysphagia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#dysphagia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#dysphasia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Respiratory"/>
+        <NamedIndividual IRI="#dyspnea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#dyspraxia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical"/>
+        <NamedIndividual IRI="#endoscopic_sinus_surgery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical_procedures"/>
+        <NamedIndividual IRI="#endoscopic_sinus_surgery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#epileptic_crisis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Eyes"/>
+        <NamedIndividual IRI="#epiphora"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#hypopharynx_and_larynx"/>
+        <NamedIndividual IRI="#erythema_or_hyperemia_arytenoids"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#psychiatric_medication"/>
+        <NamedIndividual IRI="#eszopiclone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#organic_compounds"/>
+        <NamedIndividual IRI="#ethyl_acetate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exacerbating_factors"/>
+        <NamedIndividual IRI="#evening"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#facial_pain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#facial_palsy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exacerbating_factors"/>
+        <NamedIndividual IRI="#falling_asleep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#falls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#familial_dysautonomia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#relatives"/>
+        <NamedIndividual IRI="#father"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#General"/>
+        <NamedIndividual IRI="#fever"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#symptoms_pattern"/>
+        <NamedIndividual IRI="#fluctuating"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#nonmetallic_inorganic_compounds"/>
+        <NamedIndividual IRI="#fluorides"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#food_allergy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#organic_compounds"/>
+        <NamedIndividual IRI="#formaldehyde"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manufacturing_processes"/>
+        <NamedIndividual IRI="#fragrances"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#frontal_or_maxillary_tenderness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#frontal_pressure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#gabapentine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#anti-infectious_drugs"/>
+        <NamedIndividual IRI="#ganciclovir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#profession"/>
+        <NamedIndividual IRI="#gardner"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#behavioral"/>
+        <NamedIndividual IRI="#gas_detector"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical_procedures"/>
+        <NamedIndividual IRI="#general_anesthesia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#alternative_medicine"/>
+        <NamedIndividual IRI="#ginko_biloba"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#glossitis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#anti-inflammatory_drugs"/>
+        <NamedIndividual IRI="#gold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#hypopharynx_and_larynx"/>
+        <NamedIndividual IRI="#granuloma_granulation_tissue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#anti-infectious_drugs"/>
+        <NamedIndividual IRI="#griseofulvin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#guillain-barre_syndrome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#halitosis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#effect_on_quality_of_life"/>
+        <NamedIndividual IRI="#hardly_at_all"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dusts"/>
+        <NamedIndividual IRI="#hardwoods"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Characteristic_event"/>
+        <NamedIndividual IRI="#head_trauma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#headache"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#heat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#hemorrhagic_stroke"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#otologic_and_otoneurologic"/>
+        <NamedIndividual IRI="#hemotympanum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#hepatitis_C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#high_blood_pressure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#hoarseness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#frequency"/>
+        <NamedIndividual IRI="#hour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#frequency"/>
+        <NamedIndividual IRI="#hours"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#nonmetallic_inorganic_compounds"/>
+        <NamedIndividual IRI="#hydrogen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#hypercholesterolemia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#main_complaint"/>
+        <NamedIndividual IRI="#hypergeusia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#smell"/>
+        <NamedIndividual IRI="#hyperosmia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#hypertonic_sodium_chloride"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#hypoacusis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#main_complaint"/>
+        <NamedIndividual IRI="#hypogeusia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#smell"/>
+        <NamedIndividual IRI="#hyposmia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#psychiatric_medication"/>
+        <NamedIndividual IRI="#imipramine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#endocrine"/>
+        <NamedIndividual IRI="#infertility"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#other_procedures"/>
+        <NamedIndividual IRI="#installation_of_dental_prosthesis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#delivery_method"/>
+        <NamedIndividual IRI="#intravenous"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#time_frame"/>
+        <NamedIndividual IRI="#it_has_been_there_as_long_as_I_can_remember"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smell_disorders"/>
+        <NamedIndividual IRI="#kallmann_syndrome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conditions"/>
+        <NamedIndividual IRI="#kallmann_syndrome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smell_disorders"/>
+        <NamedIndividual IRI="#kartagener_syndrome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conditions"/>
+        <NamedIndividual IRI="#kartagener_syndrome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#kidney_disease"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#subjective_allergic_status"/>
+        <NamedIndividual IRI="#known_allergies"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#antiepileptic_drugs"/>
+        <NamedIndividual IRI="#lamotrigine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#laryngeal_prurit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical_procedures"/>
+        <NamedIndividual IRI="#laryngectomy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manufacturing_processes"/>
+        <NamedIndividual IRI="#lead"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#metallurgical_processes"/>
+        <NamedIndividual IRI="#lead_smelting"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#left_epistaxis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#left_facial_paresthesia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#left_inferior_turbinate_hypertrophy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#left_middle_turbinate_hypertrophy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#left_nasal_mass"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#left_nasal_obstruction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#left_olfactory_cleft_nonvisualized_or_congested"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#left_ostiomeatal_complex_obstruction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#left_septal_deviation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#quantity"/>
+        <NamedIndividual IRI="#less_than_1_pack_a_day"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#time_frame"/>
+        <NamedIndividual IRI="#less_than_3_months_ago"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Antithyroid_agents"/>
+        <NamedIndividual IRI="#levothyroxine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#psychiatric_medication"/>
+        <NamedIndividual IRI="#lithium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#liver_disease"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#liver_disease"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#machado-joseph_disease"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#anti-infectious_drugs"/>
+        <NamedIndividual IRI="#macrolides"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#metallurgical_processes"/>
+        <NamedIndividual IRI="#magnet_production"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#metallurgical_processes"/>
+        <NamedIndividual IRI="#manganese"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#otologic_and_otoneurologic"/>
+        <NamedIndividual IRI="#mastoid_ecchymosis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#relatives"/>
+        <NamedIndividual IRI="#maternal_grandfather"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#relatives"/>
+        <NamedIndividual IRI="#maternal_grandmother"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#maxillary_pressure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#effect_on_quality_of_life"/>
+        <NamedIndividual IRI="#medium_badly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#modalities"/>
+        <NamedIndividual IRI="#metallic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cytostatics"/>
+        <NamedIndividual IRI="#methotrexate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#psychiatric_medication"/>
+        <NamedIndividual IRI="#methylphenidate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#anti-infectious_drugs"/>
+        <NamedIndividual IRI="#metronidazole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical_procedures"/>
+        <NamedIndividual IRI="#microlaryngoscopy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#endocrine"/>
+        <NamedIndividual IRI="#micropenis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical_procedures"/>
+        <NamedIndividual IRI="#middle_ear_surgery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smell_disorders"/>
+        <NamedIndividual IRI="#migraine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smell_disorders"/>
+        <NamedIndividual IRI="#mild_cognitive_impairment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#effect_on_quality_of_life"/>
+        <NamedIndividual IRI="#mildly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#minocycline"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#frequency"/>
+        <NamedIndividual IRI="#minute"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#frequency"/>
+        <NamedIndividual IRI="#minutes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smell_disorders"/>
+        <NamedIndividual IRI="#moderate_cognitive_decline"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#frequency"/>
+        <NamedIndividual IRI="#month"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#quantity"/>
+        <NamedIndividual IRI="#more_than_2_pack_a_day"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#time_frame"/>
+        <NamedIndividual IRI="#more_than_2_years"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exacerbating_factors"/>
+        <NamedIndividual IRI="#morning"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#relatives"/>
+        <NamedIndividual IRI="#mother"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#mucosal_inflammation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smell_disorders"/>
+        <NamedIndividual IRI="#multiple_sclerosis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#multiple_sclerosis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#myasthenia_gravis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#antimigraine_drugs"/>
+        <NamedIndividual IRI="#naratriptan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smell_disorders"/>
+        <NamedIndividual IRI="#nasal_adenocarcinoma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#delivery_method"/>
+        <NamedIndividual IRI="#nasal_drops"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#delivery_method"/>
+        <NamedIndividual IRI="#nasal_drops_in_mygind_position"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#delivery_method"/>
+        <NamedIndividual IRI="#nasal_irrigation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#nasal_polyps_grade_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#nasal_polyps_grade_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#nasal_polyps_grade_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#nasal_posterior_drip"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#delivery_method"/>
+        <NamedIndividual IRI="#nasal_spray"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical"/>
+        <NamedIndividual IRI="#nasal_valve_surgery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#neoplasia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#relatives"/>
+        <NamedIndividual IRI="#nephew"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#metallic_compounds"/>
+        <NamedIndividual IRI="#nickel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#metallurgical_processes"/>
+        <NamedIndividual IRI="#nickel_plating_or_refining"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#relatives"/>
+        <NamedIndividual IRI="#niece"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cardiovascular_drugs"/>
+        <NamedIndividual IRI="#nifedipine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exacerbating_factors"/>
+        <NamedIndividual IRI="#night"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Eyes"/>
+        <NamedIndividual IRI="#night_vision_dysfunction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#metallic_compounds"/>
+        <NamedIndividual IRI="#nitrate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#nonmetallic_inorganic_compounds"/>
+        <NamedIndividual IRI="#nitric_acid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Evolution"/>
+        <NamedIndividual IRI="#no_change"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#no_puberty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#otologic_and_otoneurologic"/>
+        <NamedIndividual IRI="#non_mobile_or_retracted_tympanic_membrane"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exacerbating_factors"/>
+        <NamedIndividual IRI="#noon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#normal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#hypopharynx_and_larynx"/>
+        <NamedIndividual IRI="#normal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#oral_cavity_and_oropharynx"/>
+        <NamedIndividual IRI="#normal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#otologic_and_otoneurologic"/>
+        <NamedIndividual IRI="#normal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#normotonic_sodium_chloride"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#psychiatric_medication"/>
+        <NamedIndividual IRI="#nortriptyline"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#effect_on_quality_of_life"/>
+        <NamedIndividual IRI="#not_at_all"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#occipital_headache"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Eyes"/>
+        <NamedIndividual IRI="#ocular_prurit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical"/>
+        <NamedIndividual IRI="#olfactory_cleft_stripping"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smell_disorders"/>
+        <NamedIndividual IRI="#olfactory_cleft_syndrome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#rehabilitation"/>
+        <NamedIndividual IRI="#olfactory_training"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#relatives"/>
+        <NamedIndividual IRI="#oncle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Characteristic_event"/>
+        <NamedIndividual IRI="#oral_cavitiy_infection"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#oral_or_pharyngeal_foreign_body_sensation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#oral_pain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical_procedures"/>
+        <NamedIndividual IRI="#oral_surgery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#oral_cavity_and_oropharynx"/>
+        <NamedIndividual IRI="#oral_thrush"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#orthostatic_hypotension"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#anti-infectious_drugs"/>
+        <NamedIndividual IRI="#oseltamivir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#osteoporosis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Characteristic_event"/>
+        <NamedIndividual IRI="#otitis_media"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exacerbating_factors"/>
+        <NamedIndividual IRI="#outdoor_activities"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topical_intranasal_drugs"/>
+        <NamedIndividual IRI="#oxymetazoline"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#oxymetazoline"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manufacturing_processes"/>
+        <NamedIndividual IRI="#paints"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#palatal_palsy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#paracetamol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#paraneoplastic_syndrome_-_lung_cancer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#smell"/>
+        <NamedIndividual IRI="#parosmia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#partial_puberty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#smoking_status"/>
+        <NamedIndividual IRI="#passive_smoker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#relatives"/>
+        <NamedIndividual IRI="#paternal_grandfather"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#relatives"/>
+        <NamedIndividual IRI="#paternal_grandmother"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#behavioral"/>
+        <NamedIndividual IRI="#patient_food_education"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#anti-inflammatory_drugs"/>
+        <NamedIndividual IRI="#penicillamine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#anti-infectious_drugs"/>
+        <NamedIndividual IRI="#penicillin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#pentoxyfilline"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#symptoms_pattern"/>
+        <NamedIndividual IRI="#perennial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#behavioral"/>
+        <NamedIndividual IRI="#personal_hygiene_monitoring"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#smell"/>
+        <NamedIndividual IRI="#phantosmia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Characteristic_event"/>
+        <NamedIndividual IRI="#phantosmia_or_hyperosmia_preceding_or_during_headache"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Characteristic_event"/>
+        <NamedIndividual IRI="#phantosmia_preceding_a_seizure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#profession"/>
+        <NamedIndividual IRI="#pharmacist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#pharyngeal_pain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topical_intranasal_drugs"/>
+        <NamedIndividual IRI="#phenylephrine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#antiepileptic_drugs"/>
+        <NamedIndividual IRI="#phenytoin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Allievating_factors"/>
+        <NamedIndividual IRI="#physical_activities"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#anti-infectious_drugs"/>
+        <NamedIndividual IRI="#pirodavir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Musculoskeletal"/>
+        <NamedIndividual IRI="#polydactyly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#polyneuritis_cranialis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical_procedures"/>
+        <NamedIndividual IRI="#polypectomy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#positive_cottle_sign"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smell_disorders"/>
+        <NamedIndividual IRI="#post-traumatic_olfactory_loss"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#post_traumatic_taste_dysfunction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#hypopharynx_and_larynx"/>
+        <NamedIndividual IRI="#posterior_commissure_hypertrophy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#posterior_nasal_drip"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#oral_cavity_and_oropharynx"/>
+        <NamedIndividual IRI="#posterior_nasal_drip"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smell_disorders"/>
+        <NamedIndividual IRI="#postinfectious_olfactory_loss"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#postural_instability"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dusts"/>
+        <NamedIndividual IRI="#potash"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#endocrine"/>
+        <NamedIndividual IRI="#primary_amenorrhea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#profession"/>
+        <NamedIndividual IRI="#printer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#apparition"/>
+        <NamedIndividual IRI="#progressive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cardiovascular_drugs"/>
+        <NamedIndividual IRI="#propafenone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Antithyroid_agents"/>
+        <NamedIndividual IRI="#propylthiouracil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#prurit_oral_cavity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topical_intranasal_drugs"/>
+        <NamedIndividual IRI="#pseudoephedrine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#purulent_and_thick_secretions"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#purulent_rhinorrhea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gastrointestinal"/>
+        <NamedIndividual IRI="#pyrosis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#anti-infectious_drugs"/>
+        <NamedIndividual IRI="#quinolone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#rabies"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#other"/>
+        <NamedIndividual IRI="#radiotherapy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#other_procedures"/>
+        <NamedIndividual IRI="#radiotherapy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Integumentary"/>
+        <NamedIndividual IRI="#rash"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Eyes"/>
+        <NamedIndividual IRI="#redness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#renal_agenesis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#renal_disease"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#resting_tremor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#smell"/>
+        <NamedIndividual IRI="#retronasal_dysfunction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical"/>
+        <NamedIndividual IRI="#rhinoplasty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical_procedures"/>
+        <NamedIndividual IRI="#rhinoplasty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#right_epistaxis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#right_facial_paresthesia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#right_inferior_turbinate_hypertrophy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#right_middle_turbinate_hypertrophy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#right_nasal_mass"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#right_nasal_obstruction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#right_olfactory_cleft_nonvisualized_or_congested"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#right_ostiomeatal_complex_obstruction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#right_septal_deviation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#rigidity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#antimigraine_drugs"/>
+        <NamedIndividual IRI="#rizatriptan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manufacturing_processes"/>
+        <NamedIndividual IRI="#rubber_vulcanization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#modalities"/>
+        <NamedIndividual IRI="#salty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#salty_dysgeusia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#symptoms_pattern"/>
+        <NamedIndividual IRI="#seasonal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#frequency"/>
+        <NamedIndividual IRI="#second"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#nonmetallic_inorganic_compounds"/>
+        <NamedIndividual IRI="#selenium_dioxide"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#septal_hematoma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#septal_perforation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical"/>
+        <NamedIndividual IRI="#septoplasty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical_procedures"/>
+        <NamedIndividual IRI="#septoplasty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#sialadenitis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#sialolithiasis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dusts"/>
+        <NamedIndividual IRI="#silicon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#metallic_compounds"/>
+        <NamedIndividual IRI="#silver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#relatives"/>
+        <NamedIndividual IRI="#sister"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gastrointestinal"/>
+        <NamedIndividual IRI="#situs_inversus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#sleep_disturbance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#sneezing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#sodium_citrate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#relatives"/>
+        <NamedIndividual IRI="#son"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#modalities"/>
+        <NamedIndividual IRI="#sour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#space-occupying_lesion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manufacturing_processes"/>
+        <NamedIndividual IRI="#spices"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cardiovascular_drugs"/>
+        <NamedIndividual IRI="#spironolactone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cardiovascular_drugs"/>
+        <NamedIndividual IRI="#statins"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#oral_cavity_and_oropharynx"/>
+        <NamedIndividual IRI="#status_post_tonsillectomy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#oral_cavity_and_oropharynx"/>
+        <NamedIndividual IRI="#status_post_uvuloplasty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Respiratory"/>
+        <NamedIndividual IRI="#stridor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#subarachnoid_hemorrhage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#hypopharynx_and_larynx"/>
+        <NamedIndividual IRI="#subglottic_edema"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#apparition"/>
+        <NamedIndividual IRI="#sudden"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#antimigraine_drugs"/>
+        <NamedIndividual IRI="#sumatriptan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Allievating_factors"/>
+        <NamedIndividual IRI="#surgical_treatment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#modalities"/>
+        <NamedIndividual IRI="#sweet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manufacturing_processes"/>
+        <NamedIndividual IRI="#tabacco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#main_complaint"/>
+        <NamedIndividual IRI="#tactile_dysgeusia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manufacturing_processes"/>
+        <NamedIndividual IRI="#tanning"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#main_complaint"/>
+        <NamedIndividual IRI="#taste_agnosia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smell_disorders"/>
+        <NamedIndividual IRI="#temporal_lobe_epilespy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical_procedures"/>
+        <NamedIndividual IRI="#temporal_lobectomy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#anti-infectious_drugs"/>
+        <NamedIndividual IRI="#terbinafide"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#anti-infectious_drugs"/>
+        <NamedIndividual IRI="#tetracycline"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#theophylline"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smell_disorders"/>
+        <NamedIndividual IRI="#therapeutic_agents"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Antithyroid_agents"/>
+        <NamedIndividual IRI="#thiamazole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#hypopharynx_and_larynx"/>
+        <NamedIndividual IRI="#thick_endolaryngeal_mucus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#thyroid_disease"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#metallurgical_processes"/>
+        <NamedIndividual IRI="#tin_fumes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#tongue_numbness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical_procedures"/>
+        <NamedIndividual IRI="#tonsillectomy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#antiepileptic_drugs"/>
+        <NamedIndividual IRI="#topiramate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical_procedures"/>
+        <NamedIndividual IRI="#tracheal_intubation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical_procedures"/>
+        <NamedIndividual IRI="#transsphenoidal_surgery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#organic_compounds"/>
+        <NamedIndividual IRI="#trichloroethane"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#organic_compounds"/>
+        <NamedIndividual IRI="#trichloroethylene"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#psychiatric_medication"/>
+        <NamedIndividual IRI="#trifluoperazine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Eyes"/>
+        <NamedIndividual IRI="#tunnel_vision"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical"/>
+        <NamedIndividual IRI="#turbinectomy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical_procedures"/>
+        <NamedIndividual IRI="#turbinectomy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical"/>
+        <NamedIndividual IRI="#turbinoplasty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#otologic_and_otoneurologic"/>
+        <NamedIndividual IRI="#tympanic_membrane_perforation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#modalities"/>
+        <NamedIndividual IRI="#umami"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#laterality"/>
+        <NamedIndividual IRI="#unilateral_left"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#laterality"/>
+        <NamedIndividual IRI="#unilateral_right"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smell_disorders"/>
+        <NamedIndividual IRI="#upper_respiratory_tract_infection"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#urinary_dysfunction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Integumentary"/>
+        <NamedIndividual IRI="#urticaria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#surgical_procedures"/>
+        <NamedIndividual IRI="#uvuloplasty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#hypopharynx_and_larynx"/>
+        <NamedIndividual IRI="#ventricular_obliteration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#vertigo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cytostatics"/>
+        <NamedIndividual IRI="#vincristine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#visual_impairment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#vitamine_A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#hypopharynx_and_larynx"/>
+        <NamedIndividual IRI="#vocal_folds_edema"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gastrointestinal"/>
+        <NamedIndividual IRI="#vomiting"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#watery_and_clear_secrections"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#watery_rhinorrhea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dusts"/>
+        <NamedIndividual IRI="#wax"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#frequency"/>
+        <NamedIndividual IRI="#week"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#General"/>
+        <NamedIndividual IRI="#weight_gain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#General"/>
+        <NamedIndividual IRI="#weight_loss"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Respiratory"/>
+        <NamedIndividual IRI="#wheezing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#profession"/>
+        <NamedIndividual IRI="#woodworker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Evolution"/>
+        <NamedIndividual IRI="#worse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#xerophtalmia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Integumentary"/>
+        <NamedIndividual IRI="#xerosis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Associated_ENT_symptoms_or_signs"/>
+        <NamedIndividual IRI="#xerostomy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#metallic_compounds"/>
+        <NamedIndividual IRI="#zinc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active_substance"/>
+        <NamedIndividual IRI="#zinc_gluconate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#psychiatric_medication"/>
+        <NamedIndividual IRI="#zolpidem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#quantity"/>
+        <NamedIndividual IRI="#1-2_pack_a_day"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#time_frame"/>
+        <NamedIndividual IRI="#3_-24_months_ago"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#Alzheimer&apos;s_Disease"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conditions"/>
+        <NamedIndividual IRI="#Alzheimer&apos;s_Disease"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#Alzheimer&apos;s_Disease"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#Bell&apos;s_palsy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#laterality"/>
+        <NamedIndividual IRI="#I_don&apos;t_know"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#symptoms_pattern"/>
+        <NamedIndividual IRI="#I_don&apos;t_know"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#time_frame"/>
+        <NamedIndividual IRI="#I_don&apos;t_know"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neurological"/>
+        <NamedIndividual IRI="#Problems_producing_people&apos;s_names_or_the_right_words_for_objects"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nasal_and_paranasal"/>
+        <NamedIndividual IRI="#crepitus,_tenderness,_step-offs_or_mobility_of_the_region_of_the_nasal_bone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#profession"/>
+        <NamedIndividual IRI="#factory_-_naval,_battery,_thermometer,_metal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#main_complaint"/>
+        <NamedIndividual IRI="#parageusia/phantogeusia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smell_disorders"/>
+        <NamedIndividual IRI="#parkinson&apos;s_disease"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taste_disorders"/>
+        <NamedIndividual IRI="#parkinson&apos;s_disease"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conditions"/>
+        <NamedIndividual IRI="#parkinson&apos;s_disease"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#medical_condition"/>
+        <NamedIndividual IRI="#parkinson&apos;s_disease"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#can_be_defined_by"/>
+        <Class IRI="#Smell_disorders"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#can_be_defined_by"/>
+        <Class IRI="#Subjects"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#can_be_defined_by"/>
+        <Class IRI="#Taste_disorders"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_part_of"/>
+        <Class IRI="#Allergy_evaluation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_part_of"/>
+        <Class IRI="#Demographic_characteristics"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_part_of"/>
+        <Class IRI="#Family_History"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_part_of"/>
+        <Class IRI="#Review_of_systems"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_part_of"/>
+        <Class IRI="#chemosensory_symptoms_or_signs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_part_of"/>
+        <Class IRI="#history_of_illness"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_part_of"/>
+        <Class IRI="#past_history_and_chronic_diseases"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_part_of"/>
+        <Class IRI="#physical_examination_findings"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_part_of"/>
+        <Class IRI="#social_history"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#can_be_defined_by"/>
+        <Class IRI="#Chemosensory_phenotyping"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_part_of"/>
+        <Class IRI="#Chemosensory_phenotyping"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Olfactory_intolerence</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Subjective hypersensitivity towards odorants with normal olfactory function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Olfactory_intolerence</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Welge-Lüssen, A., &amp; Hummel, T. (n.d.). Assessment of Olfaction and Gustation. In Management of smell and taste disorders: A practical guide for clinicians (pp. 62-75).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#anosmia</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Anosmia is defined by a total loss of olfactory function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#anosmia</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Welge-Lüssen, A., &amp; Hummel, T. (n.d.). Assessment of Olfaction and Gustation. In Management of smell and taste disorders: A practical guide for clinicians (pp. 62-75).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hyperosmia</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Hypernormal olfactory sensitvity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#hyperosmia</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Welge-Lüssen, A., &amp; Hummel, T. (n.d.). Assessment of Olfaction and Gustation. In Management of smell and taste disorders: A practical guide for clinicians (pp. 62-75).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hyposmia</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Partial olfactory loss</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#hyposmia</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Welge-Lüssen, A., &amp; Hummel, T. (n.d.). Assessment of Olfaction and Gustation. In Management of smell and taste disorders: A practical guide for clinicians (pp. 62-75).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#parosmia</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Distortion of olfactory perception with presence of an odor stimuli.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#parosmia</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Leopold D. , Distortion of olfactory perception: diagnosis and treatment. Chem Senses. 2002 Sep;27(7):611-5.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#phantosmia</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The perception of an odor (usually unpleasant) without presence of an odor stimulus.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#phantosmia</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Leopold D. Distortion of olfactory perception: diagnosis and treatment. Chem Senses. 2002 Sep;27(7):611-5.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#thick_endolaryngeal_mucus</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Belafsky Reflux finding score</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
+

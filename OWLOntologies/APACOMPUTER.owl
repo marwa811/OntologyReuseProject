@@ -1,0 +1,485 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2015/0/computercluster.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/ontologies/2015/0/computercluster.owl"
+     versionIRI="http://www.semanticweb.org/ontologies/2015/0/computercluster.owl">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Import>http://alexandergarcia.name/ontos/computer/EducationTraining.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/computer/Information.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/computer/ComputerApplications.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/computer/ComputersMedia.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/computer/ComputersCommunication.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/computer/ComputerAutomation.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/computer/Equipment.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/computer/HumanMachineSystemsEngineering.owl</Import>
+    <Declaration>
+        <Class IRI="#ComputerApplications"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerAutomation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputersCommunication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputersMedia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EducationTraining"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Equipment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanMachineSystemsEngineering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Information"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Algorithms"/>
+        <Class IRI="#ComputerApplications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Analog_Computers"/>
+        <Class IRI="#Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Apparatus"/>
+        <Class IRI="#Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Artificial_Intelligence"/>
+        <Class IRI="#ComputerAutomation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Audiovisual_Communications_Media"/>
+        <Class IRI="#ComputersMedia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Automated_Information_Coding"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Automated_Information_Processing"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Automated_Information_Retrieval"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Automated_Information_Storage"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Automated_Speech_Recognition"/>
+        <Class IRI="#HumanMachineSystemsEngineering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Automation"/>
+        <Class IRI="#ComputerAutomation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Bioinformatics"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Communication_Systems"/>
+        <Class IRI="#ComputersCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Communication_Theory"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Communications_Media"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Computer_Applications"/>
+        <Class IRI="#ComputerApplications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Computer_Assisted_Design"/>
+        <Class IRI="#ComputerAutomation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Computer_Assisted_Diagnosis"/>
+        <Class IRI="#ComputerAutomation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Computer_Assisted_Instruction"/>
+        <Class IRI="#EducationTraining"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Computer_Assisted_Language_Learning"/>
+        <Class IRI="#EducationTraining"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Computer_Assisted_Testing"/>
+        <Class IRI="#EducationTraining"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Computer_Assisted_Therapy"/>
+        <Class IRI="#ComputerApplications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Computer_Games"/>
+        <Class IRI="#ComputerApplications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Computer_Literacy"/>
+        <Class IRI="#EducationTraining"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Computer_Mediated_Communication"/>
+        <Class IRI="#ComputersCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Computer_Peripheral_Devices"/>
+        <Class IRI="#HumanMachineSystemsEngineering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Computer_Programming"/>
+        <Class IRI="#ComputerApplications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Computer_Programming_Languages"/>
+        <Class IRI="#ComputerApplications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Computer_Science"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Computer_Searching"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Computer_Simulation"/>
+        <Class IRI="#ComputerApplications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Computer_Software"/>
+        <Class IRI="#ComputersMedia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Computer_Training"/>
+        <Class IRI="#EducationTraining"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Computer_Usage"/>
+        <Class IRI="#ComputersCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cybernetics"/>
+        <Class IRI="#ComputerAutomation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Data_Collection"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Data_Mining"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Data_Processing"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Databases"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Decision_Support_Systems"/>
+        <Class IRI="#HumanMachineSystemsEngineering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Digital_Computers"/>
+        <Class IRI="#Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Digital_Divide"/>
+        <Class IRI="#EducationTraining"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Digital_Video"/>
+        <Class IRI="#Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Educational_Television"/>
+        <Class IRI="#EducationTraining"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Electronic_Commerce"/>
+        <Class IRI="#ComputersMedia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Electronic_Communication"/>
+        <Class IRI="#ComputersMedia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Electronic_Retailing"/>
+        <Class IRI="#ComputersMedia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Error_Analysis"/>
+        <Class IRI="#ComputerApplications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Expert_Systems"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Groupware"/>
+        <Class IRI="#ComputersCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hot_Line_Services"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Human_Computer_Interaction"/>
+        <Class IRI="#HumanMachineSystemsEngineering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Human_Factors_Engineering"/>
+        <Class IRI="#HumanMachineSystemsEngineering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Human_Machine_Systems"/>
+        <Class IRI="#HumanMachineSystemsEngineering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Human_Machine_Systems_Design"/>
+        <Class IRI="#HumanMachineSystemsEngineering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hypermedia"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hypertext"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Inductive_Logic_Programming"/>
+        <Class IRI="#HumanMachineSystemsEngineering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Information"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Information_Dissemination"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Information_Literacy"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Information_Processing_Model"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Information_Science"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Information_Seeking"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Information_Services"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Information_Specialists"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Information_Systems"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Information_Technology"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Information_Theory"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Instrument_Controls"/>
+        <Class IRI="#HumanMachineSystemsEngineering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Intelligent_Agents"/>
+        <Class IRI="#ComputerApplications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Intelligent_Tutoring_Systems"/>
+        <Class IRI="#HumanMachineSystemsEngineering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Internet"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Internet_Addiction"/>
+        <Class IRI="#ComputersCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Internet_Usage"/>
+        <Class IRI="#ComputersCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Interpreters"/>
+        <Class IRI="#ComputersCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Keyboards"/>
+        <Class IRI="#Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Knowledge_Engineering"/>
+        <Class IRI="#HumanMachineSystemsEngineering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Knowledge_Management"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Knowledge_Representation"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Learning_Management_Systems"/>
+        <Class IRI="#ComputerApplications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mass_Media"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Microcomputers"/>
+        <Class IRI="#Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neural_Networks"/>
+        <Class IRI="#ComputerAutomation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#News_Media"/>
+        <Class IRI="#ComputersMedia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Online_Social_Networks"/>
+        <Class IRI="#ComputersCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Online_Therapy"/>
+        <Class IRI="#ComputerApplications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Ontologies"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Pattern_Recognition_(Computer_Science)"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Person_Environment_Fit"/>
+        <Class IRI="#HumanMachineSystemsEngineering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Robotics"/>
+        <Class IRI="#Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Scientific_Communication"/>
+        <Class IRI="#ComputersCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Semantic_Networks"/>
+        <Class IRI="#ComputerApplications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Systems_Design"/>
+        <Class IRI="#HumanMachineSystemsEngineering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Teaching_Machines"/>
+        <Class IRI="#HumanMachineSystemsEngineering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Technology_Transfer"/>
+        <Class IRI="#ComputersCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Telecommunications_Media"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Televised_Instruction"/>
+        <Class IRI="#EducationTraining"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Television_Advertising"/>
+        <Class IRI="#ComputersCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Video_Display_Units"/>
+        <Class IRI="#Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Virtual_Classrooms"/>
+        <Class IRI="#EducationTraining"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Virtual_Reality"/>
+        <Class IRI="#HumanMachineSystemsEngineering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Virtual_Teams"/>
+        <Class IRI="#EducationTraining"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Visual_Displays"/>
+        <Class IRI="#Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Websites"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Word_Processing"/>
+        <Class IRI="#ComputerApplications"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

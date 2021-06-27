@@ -1,0 +1,513 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/jgraybeal/ontologies/2015/7/cedarvaluesets"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/jgraybeal/ontologies/2015/7/cedarvaluesets">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CEDAR Value Sets Ontology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Adverse_Events"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assessment_Results"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Case_Report_Form"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Co-Principal_Investigator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Concomitant_Medications"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Criterion_Category"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Dictionary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Demographics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exclusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fully_Manual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inclusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intervention_Longitudinal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interventional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interventions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lab_Test_Results"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Longitudinal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medical_Monitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Observational"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Optically_Sensed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Other"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Other_Detection_Method"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Principal_Investigator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role_In_Study"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Site_Manager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Study_Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Study_File_Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Study_Medication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Study_Summary_Description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Study_Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sub-Investigator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Substance_Use"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Titration_Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unknown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ph_Meter_Sensed"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Adverse_Events"/>
+        <Class IRI="#Study_File_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assessment_Results"/>
+        <Class IRI="#Study_File_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Case_Report_Form"/>
+        <Class IRI="#Study_File_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Co-Principal_Investigator"/>
+        <Class IRI="#Role_In_Study"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Concomitant_Medications"/>
+        <Class IRI="#Study_File_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Dictionary"/>
+        <Class IRI="#Study_File_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Demographics"/>
+        <Class IRI="#Study_File_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exclusion"/>
+        <Class IRI="#Criterion_Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fully_Manual"/>
+        <Class IRI="#Titration_Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inclusion"/>
+        <Class IRI="#Criterion_Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intervention_Longitudinal"/>
+        <Class IRI="#Study_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interventional"/>
+        <Class IRI="#Study_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interventions"/>
+        <Class IRI="#Study_File_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lab_Test_Results"/>
+        <Class IRI="#Study_File_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Longitudinal"/>
+        <Class IRI="#Study_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medical_Monitor"/>
+        <Class IRI="#Role_In_Study"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Observational"/>
+        <Class IRI="#Study_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Optically_Sensed"/>
+        <Class IRI="#Titration_Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Other"/>
+        <Class IRI="#Role_In_Study"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Other_Detection_Method"/>
+        <Class IRI="#Titration_Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Principal_Investigator"/>
+        <Class IRI="#Role_In_Study"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Site_Manager"/>
+        <Class IRI="#Role_In_Study"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Study_Data"/>
+        <Class IRI="#Study_File_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Study_Medication"/>
+        <Class IRI="#Study_File_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Study_Summary_Description"/>
+        <Class IRI="#Study_File_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sub-Investigator"/>
+        <Class IRI="#Role_In_Study"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Substance_Use"/>
+        <Class IRI="#Study_File_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unknown"/>
+        <Class IRI="#Titration_Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ph_Meter_Sensed"/>
+        <Class IRI="#Titration_Process"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Adverse_Events"/>
+        <Class IRI="#Assessment_Results"/>
+        <Class IRI="#Case_Report_Form"/>
+        <Class IRI="#Concomitant_Medications"/>
+        <Class IRI="#Data_Dictionary"/>
+        <Class IRI="#Demographics"/>
+        <Class IRI="#Interventions"/>
+        <Class IRI="#Lab_Test_Results"/>
+        <Class IRI="#Study_Data"/>
+        <Class IRI="#Study_Medication"/>
+        <Class IRI="#Study_Summary_Description"/>
+        <Class IRI="#Substance_Use"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Co-Principal_Investigator"/>
+        <Class IRI="#Medical_Monitor"/>
+        <Class IRI="#Other"/>
+        <Class IRI="#Principal_Investigator"/>
+        <Class IRI="#Site_Manager"/>
+        <Class IRI="#Sub-Investigator"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Exclusion"/>
+        <Class IRI="#Inclusion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fully_Manual"/>
+        <Class IRI="#Optically_Sensed"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fully_Manual"/>
+        <Class IRI="#Other_Detection_Method"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fully_Manual"/>
+        <Class IRI="#Unknown"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fully_Manual"/>
+        <Class IRI="#ph_Meter_Sensed"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Intervention_Longitudinal"/>
+        <Class IRI="#Interventional"/>
+        <Class IRI="#Longitudinal"/>
+        <Class IRI="#Observational"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Optically_Sensed"/>
+        <Class IRI="#Other_Detection_Method"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Optically_Sensed"/>
+        <Class IRI="#Unknown"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Optically_Sensed"/>
+        <Class IRI="#ph_Meter_Sensed"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Other_Detection_Method"/>
+        <Class IRI="#Unknown"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Other_Detection_Method"/>
+        <Class IRI="#ph_Meter_Sensed"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Unknown"/>
+        <Class IRI="#ph_Meter_Sensed"/>
+    </DisjointClasses>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Adverse_Events</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Study file type is Adverse Events.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Assessment_Results</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Study file type is Assessment Results.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Case_Report_Form</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Study file type is Case Report Form.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Co-Principal_Investigator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A responsible party role played by a person responsible for the overall conduct of a study.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Concomitant_Medications</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Study file type is Concomitant Medications.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Criterion_Category</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Criterion_Category value set used by the ImmPort basic_study_design template (version 2.29).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Data_Dictionary</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Study file type is Data Dictionary.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Demographics</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Study file type is Demographics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Exclusion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Exclusion Criterion used to evaluate whether a subject is a candidate for exclusion in a study.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Fully_Manual</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Titration is done manually, by visual inspection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Fully_Manual</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fully Manual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Inclusion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Inclusion Criterion used to evaluate whether a subject is a candidate for inclusion in a study.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Intervention_Longitudinal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An Intervention Longitudinal study involves repeated observations of the same variables over long periods of time during an intervention study. It is to Interventional study as Longitudinal is to Observational study.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Interventional</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">In an interventional study, the investigators give the research subjects a particular medicine or other intervention. Usually, they compare the treated subjects to subjects who receive no treatment or standard treatment. Then the researchers measure how the subjects&apos; health changes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Interventions</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Study file type is Interventions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Lab_Test_Results</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Study file type is Lab Test Results (e.g. CBC, chemistry, cytokine).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Longitudinal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A longitudinal study is a correlational research study that involves repeated observations of the same variables over long periods of time - often many decades. It is a type of observational study.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Medical_Monitor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Person employed by the sponsor or clinical research organization, who is responsible for determining that a clinical study is being conducted in accordance with the protocol. A monitor&apos;s duties may include, but are not limited to, helping to plan and initiate a trial, assessing the conduct of trial, assisting in data analysis, interpretation, and extrapolation. Monitor has medical authority for the checking data and documentation from the trial and for the evaluation of its safety aspects.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Observational</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An observational study draws inferences about the possible effect of a treatment on subjects, where the assignment of subjects into a treated group versus a control group is outside the control of the investigator.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Optically_Sensed</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Existence of precipitate is automatically sensed via an optical sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Optically_Sensed</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Optically Sensed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Other</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person having a Role that is some Other value not in CV Terms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Other_Detection_Method</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Precipitate is sensed in some other way (not optical, pH, or manual)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Other_Detection_Method</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Other Detection Method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Principal_Investigator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A responsible party role played by a person responsible for the overall conduct of a study.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Role_In_Study</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Role_In_Study value set used by the ImmPort basic_study_design template (version 2.29).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Site_Manager</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Someone (or something) that controls, directs, and organizes people, resources, or processes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Study_Data</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Data associated with a study. For studies at a data curation level 0, this is the default setting for data linked to a study.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Study_File_Type</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Study_File_Type value set used by the ImmPort basic_study_design template (version 2.29).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Study_Medication</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Study file type is Study Medication.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Study_Summary_Description</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Study Summary Description document.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Study_Type</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Study_Type value set used by the ImmPort basic_study_design template (version 2.29). These study types are adapted from Clinicaltrials.gov terms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sub-Investigator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A worker role authorized to make study-related decisions and carry out tasks related to the study; this role occurs during the study timeline.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Substance_Use</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Study file type is Substance Use.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Unknown</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The method of titration is not known.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Unknown</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Unknown</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ph_Meter_Sensed</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Precipitate is sensed by automatically detecting the change of pH of the sample</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ph_Meter_Sensed</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">pH-Meter Sensed</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

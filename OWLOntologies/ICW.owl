@@ -1,0 +1,1418 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://webprotege.stanford.edu/project/8pMSl9xBFPU3Gtu4U9kAEE#"
+     xml:base="http://webprotege.stanford.edu/project/8pMSl9xBFPU3Gtu4U9kAEE"
+     xmlns:webprotege="http://webprotege.stanford.edu/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://webprotege.stanford.edu/project/8pMSl9xBFPU3Gtu4U9kAEE"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7aek1MU32XlqigKcd4vNb3 -->
+
+    <owl:AnnotationProperty rdf:about="http://webprotege.stanford.edu/R7aek1MU32XlqigKcd4vNb3">
+        <rdfs:label>pref</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RvfJ5PHTkOBistqhdm6sr3 -->
+
+    <owl:AnnotationProperty rdf:about="http://webprotege.stanford.edu/RvfJ5PHTkOBistqhdm6sr3">
+        <rdfs:label>iden</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/R35zyRrzlkTfJCifyNX0sn -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R35zyRrzlkTfJCifyNX0sn">
+        <rdfs:label>ICW-1:01.01.02.07 Fitness - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7t2SBrCeR5IP8uaZwH8zJ9"/>
+        <dc:identifier>ICW-1:01.01.02.07</dc:identifier>
+        <skos:prefLabel>Fitness - NOS</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R6L0j2PdpR1ppdrdFRquNc -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R6L0j2PdpR1ppdrdFRquNc">
+        <rdfs:label>ICW-1:01.03.04.01 Environmental Advocacy - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9yBVRxB6Lv5Z1g0mk36XRG"/>
+        <skos:prefLabel>Environmental Advocacy - NOS</skos:prefLabel>
+        <dc:identifier>ICW-1:01.03.04.01</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R71q8Y6emZLEhkLwjcfEZu4 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R71q8Y6emZLEhkLwjcfEZu4">
+        <rdfs:label>ICW-1:01.08.02.04 Handcraft</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/ROVqqshypl6rhj04LtSFNz"/>
+        <dc:identifier>ICW-1:01.08.02.04</dc:identifier>
+        <skos:prefLabel>Handcraft</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R79xTrFw9YlB9Kn2Sw0yMD5 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R79xTrFw9YlB9Kn2Sw0yMD5">
+        <rdfs:label>ICW-1:01.07.04.01 Individual Mindfullness/Meditation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCa6iKuKOJpj1mye5W70uj"/>
+        <skos:prefLabel>Individual Mindfullness/Meditation</skos:prefLabel>
+        <dc:identifier>ICW-1:01.07.04.01</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7LIrADgT5IE1GDFNqaCUNe -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7LIrADgT5IE1GDFNqaCUNe">
+        <rdfs:label>ICW-1:01.05.04.01 Group Study - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9A5ARp662f44GKPvuqKizC"/>
+        <dc:identifier>ICW-1:01.05.04.01</dc:identifier>
+        <skos:prefLabel>Group Study - NOS</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7QP1JSDNxfwR08dLFYjuLo -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7QP1JSDNxfwR08dLFYjuLo">
+        <rdfs:label>ICW-1:01.04.01 Financial Wellness - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBS9QVm4dyrFSIJHzMw7L8W"/>
+        <dc:identifier>ICW-1:01.04.01</dc:identifier>
+        <skos:prefLabel>Financial Wellness - NOS</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7TwRmYIgevy2lP0m439jRb -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7TwRmYIgevy2lP0m439jRb">
+        <rdfs:label>ICW-1:01.03.02.02 Bird Walk</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBsNvX0jUX9qFpyqXiw5DQ3"/>
+        <skos:prefLabel>Bird Walk</skos:prefLabel>
+        <dc:identifier>ICW-1:01.03.02.02</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7dImEuFqDzWJKviaHx8HST -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7dImEuFqDzWJKviaHx8HST">
+        <rdfs:label>ICW-1:01.04.03.01 Individual Event - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9avY6lKBQ6xZ4r0sJfmRjK"/>
+        <dc:identifier>ICW-1:01.04.03.01</dc:identifier>
+        <skos:prefLabel>Individual Event - NOS</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7hzehJE1KcUxHybVdO2wpM -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7hzehJE1KcUxHybVdO2wpM">
+        <rdfs:label>ICW-1:01.03.01 Environmental Wellness - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8XRVgrRALUZvlsc0d5Tmgs"/>
+        <dc:identifier>ICW-1:01.03.01</dc:identifier>
+        <skos:prefLabel>Environmental Wellness - NOS</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7notNCFT6WaM6k7yUOWJqE -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7notNCFT6WaM6k7yUOWJqE">
+        <rdfs:label>ICW-1:01.02.04 Hospitality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBHDZaOYXTwmS8Tqxx63ATi"/>
+        <skos:prefLabel>Hospitality</skos:prefLabel>
+        <dc:identifier>ICW-1:01.02.04</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7o1kw5Usid1Ovkmv4Og6Q -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7o1kw5Usid1Ovkmv4Og6Q">
+        <rdfs:label>ICW-1:01.01.02.02 Endurance Training</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7t2SBrCeR5IP8uaZwH8zJ9"/>
+        <skos:prefLabel xml:lang="en">Endurance Training</skos:prefLabel>
+        <dc:identifier>ICW-1:01.01.02.02</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7os7vVO1ZFMTwQa9H73CiI -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7os7vVO1ZFMTwQa9H73CiI">
+        <rdfs:label>ICW-1:01.01.03 Therapy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDe2Fiqg4DPcQH6MbqrEp1N"/>
+        <dc:identifier>ICW-1:01.01.03</dc:identifier>
+        <skos:prefLabel>Therapy</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7qbUbxK8aExZ23DgVQ7wwN -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7qbUbxK8aExZ23DgVQ7wwN">
+        <rdfs:label>ICW-1:01.05.02 Intellectual Wellness - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8SBS8ba7dmkAy7SqCi27lU"/>
+        <skos:prefLabel>Intellectual Wellness - NOS</skos:prefLabel>
+        <dc:identifier>ICW-1:01.05.02</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7sCVrQwAAeNMpnViV28IgZ -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7sCVrQwAAeNMpnViV28IgZ">
+        <rdfs:label>ICW-1:01.05.03 Individual Study</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8SBS8ba7dmkAy7SqCi27lU"/>
+        <skos:prefLabel>Individual Study</skos:prefLabel>
+        <dc:identifier>ICW-1:01.05.03</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7t2SBrCeR5IP8uaZwH8zJ9 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7t2SBrCeR5IP8uaZwH8zJ9">
+        <rdfs:label>ICW-1:01.01.02 Fitness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDe2Fiqg4DPcQH6MbqrEp1N"/>
+        <dc:identifier>ICW-1:01.01.02</dc:identifier>
+        <skos:prefLabel xml:lang="en">Fitness</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7tRzF9MC2m35LDBDyDBrsL -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7tRzF9MC2m35LDBDyDBrsL">
+        <rdfs:label>ICW-1:01.05.05.03 Mahjong</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8A8KFuEc5dX9yrHvDqcn01"/>
+        <skos:prefLabel>Mahjong</skos:prefLabel>
+        <dc:identifier>ICW-1:01.05.05.03</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7uXXy4mU4l6nIvaC7KaCI4 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7uXXy4mU4l6nIvaC7KaCI4">
+        <rdfs:label>ICW-1:01.07.01 Prayer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RE08zxiRR4bujP5kFH3qlZ"/>
+        <skos:prefLabel>Prayer</skos:prefLabel>
+        <dc:identifier>ICW-1:01.07.01</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7uuVapLnRibnCNv5u9HEhD -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7uuVapLnRibnCNv5u9HEhD">
+        <rdfs:label>ICW-1:01.04.02.03 Financial Planning</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBjIUt6N6gRO9q7zV83MSdM"/>
+        <dc:identifier>ICW-1:01.04.02.03</dc:identifier>
+        <skos:prefLabel>Financial Planning</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R85dcRCXGH47Pd0iJWUxpfe -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R85dcRCXGH47Pd0iJWUxpfe">
+        <rdfs:label>ICW-1:01.03.03.02 Individual Hike</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCX5hA6QHzcHyRnxnwfmOXW"/>
+        <dc:identifier>ICW-1:01.03.03.02</dc:identifier>
+        <skos:prefLabel>Individual Hike</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R88VzZPl671L7IEzDttWfJX -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R88VzZPl671L7IEzDttWfJX">
+        <rdfs:label>ICW-1:01.07.02.01 Individual Scripture Study</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/REhVGlJw0xdun5SsGboCAB"/>
+        <dc:identifier>ICW-1:01.07.02.01</dc:identifier>
+        <skos:prefLabel>Individual Scripture Study</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8A8KFuEc5dX9yrHvDqcn01 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8A8KFuEc5dX9yrHvDqcn01">
+        <rdfs:label>ICW-1:01.05.05 Group Game</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8SBS8ba7dmkAy7SqCi27lU"/>
+        <skos:prefLabel>Group Game</skos:prefLabel>
+        <dc:identifier>ICW-1:01.05.05</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8IjhVHEkZeWC7uHquKrI8D -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8IjhVHEkZeWC7uHquKrI8D">
+        <rdfs:label>ICW-1:01.01.03.04 Massage Therapy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7os7vVO1ZFMTwQa9H73CiI"/>
+        <dc:identifier>ICW-1:01.01.03.04</dc:identifier>
+        <skos:prefLabel>Massage Therapy</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8LoUqa9iNqqVSKhleikYQ0 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8LoUqa9iNqqVSKhleikYQ0">
+        <rdfs:label>ICW-1:01.05.01 Performing Arts</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8SBS8ba7dmkAy7SqCi27lU"/>
+        <dc:identifier>ICW-1:01.05.01</dc:identifier>
+        <skos:prefLabel>Performing Arts</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8MyhI71krv3OLbxsnHkyF3 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8MyhI71krv3OLbxsnHkyF3">
+        <rdfs:label>ICW-1:01.05.05.01 Group Game - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8A8KFuEc5dX9yrHvDqcn01"/>
+        <dc:identifier>ICW-1:01.05.05.01</dc:identifier>
+        <skos:prefLabel>Group Game - NOS</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8SBS8ba7dmkAy7SqCi27lU -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8SBS8ba7dmkAy7SqCi27lU">
+        <rdfs:label xml:lang="en">ICW-1:01.05 Intellectual Wellness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBoqQbhaDK6nLsxXOcoDE3M"/>
+        <dc:identifier>ICW-1:01.05</dc:identifier>
+        <skos:prefLabel>Intellectual Wellness</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8SIxop7vIkVolfMMSIUcDl -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8SIxop7vIkVolfMMSIUcDl">
+        <rdfs:label>ICW-1:01.07.02.02 Group Scripture Study</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/REhVGlJw0xdun5SsGboCAB"/>
+        <skos:prefLabel>Group Scripture Study</skos:prefLabel>
+        <dc:identifier>ICW-1:01.07.02.02</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8XRVgrRALUZvlsc0d5Tmgs -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8XRVgrRALUZvlsc0d5Tmgs">
+        <rdfs:label xml:lang="en">ICW-1:01.03 Environmental Wellness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBoqQbhaDK6nLsxXOcoDE3M"/>
+        <skos:prefLabel>Environmental Wellness</skos:prefLabel>
+        <dc:identifier>ICW-1:01.03</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8YFRnOG69gohKMCGK1LGMc -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8YFRnOG69gohKMCGK1LGMc">
+        <rdfs:label xml:lang="en">ICW-1:01.08 Vocational Wellness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBoqQbhaDK6nLsxXOcoDE3M"/>
+        <dc:identifier>ICW-1:01.08</dc:identifier>
+        <skos:prefLabel>Vocational Wellness</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8Ze4jz3yd4rvhihsvJslqu -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8Ze4jz3yd4rvhihsvJslqu">
+        <rdfs:label>ICW-1:01.05.03.02 Read Book</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7sCVrQwAAeNMpnViV28IgZ"/>
+        <dc:identifier>ICW-1:01.05.03.02</dc:identifier>
+        <skos:prefLabel>Read Book</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8bvY1tQGCeL2T3tVSqO9aM -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8bvY1tQGCeL2T3tVSqO9aM">
+        <rdfs:label>ICW-1:01.05.01.04 Theater Performance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8LoUqa9iNqqVSKhleikYQ0"/>
+        <skos:prefLabel>Theater Performance</skos:prefLabel>
+        <dc:identifier>ICW-1:01.05.01.04</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8enJPBq5BuynsGwtUaMzMb -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8enJPBq5BuynsGwtUaMzMb">
+        <rdfs:label>ICW-1:01.01.02.02.04 Swim</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7o1kw5Usid1Ovkmv4Og6Q"/>
+        <dc:identifier>ICW-1:01.01.02.02.04</dc:identifier>
+        <skos:prefLabel>Swim</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8lX7GCAI8j8OWdgEsrqDyn -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8lX7GCAI8j8OWdgEsrqDyn">
+        <rdfs:label>ICW-1:01.01.02.02.06 Endurance Training - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7o1kw5Usid1Ovkmv4Og6Q"/>
+        <skos:prefLabel>Endurance Training - NOS</skos:prefLabel>
+        <dc:identifier>ICW-1:01.01.02.02.06</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8qzgJMdmI7sbDooxQM5AXY -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8qzgJMdmI7sbDooxQM5AXY">
+        <rdfs:label>ICW-1:01.05.03.01 Individual Study - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7sCVrQwAAeNMpnViV28IgZ"/>
+        <dc:identifier>ICW-1:01.05.03.01</dc:identifier>
+        <skos:prefLabel>Individual Study - NOS</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8tGCepspeQhjyqMW1vFJ7 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8tGCepspeQhjyqMW1vFJ7">
+        <rdfs:label>ICW-1:01.04.03.02 Stock Market</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9avY6lKBQ6xZ4r0sJfmRjK"/>
+        <skos:prefLabel>Stock Market</skos:prefLabel>
+        <dc:identifier>ICW-1:01.04.03.02</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8wzHgvGZF5mK28fCDunku2 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8wzHgvGZF5mK28fCDunku2">
+        <rdfs:label>ICW-1:01.01.05.03 Immunization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RL0wQDEULNwnJ6zurrBu2B"/>
+        <skos:prefLabel>Immunization</skos:prefLabel>
+        <dc:identifier>ICW-1:01.01.05.03</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8zdUa1VEIYpTgrtD5K0pPI -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8zdUa1VEIYpTgrtD5K0pPI">
+        <rdfs:label>ICW-1:01.07.03.02 Group Spiritual Reflection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Rw4AkAVFRfKaII5aAW403j"/>
+        <skos:prefLabel>Group Spiritual Reflection</skos:prefLabel>
+        <dc:identifier>ICW-1:01.07.03.02</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R91hzmIE5qmKhGIwySLiv2L -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R91hzmIE5qmKhGIwySLiv2L">
+        <rdfs:label>ICW-1:01.08.02.02 Pottery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/ROVqqshypl6rhj04LtSFNz"/>
+        <skos:prefLabel>Pottery</skos:prefLabel>
+        <dc:identifier>ICW-1:01.08.02.02</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R92A63C3bDqt2CdHvYqTfee -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R92A63C3bDqt2CdHvYqTfee">
+        <rdfs:label>ICW-1:01.08.04.03 Tutoring</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDUMFfkVwmNGcwSD1DCK31h"/>
+        <skos:prefLabel>Tutoring</skos:prefLabel>
+        <dc:identifier>ICW-1:01.08.04.03</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R95XfYLMrRXueeYAWfhZ4V5 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R95XfYLMrRXueeYAWfhZ4V5">
+        <rdfs:label>ICW-1:01.06.03 Group Event</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RChj7WsSP26q4c2z5cO1gzw"/>
+        <skos:prefLabel>Group Event</skos:prefLabel>
+        <dc:identifier>ICW-1:01.06.03</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R98RDGXqeHQmvvMzrPFpFAW -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R98RDGXqeHQmvvMzrPFpFAW">
+        <rdfs:label>ICW-1:01.01.02.06.02 Yoga</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDB8QG0QkryFGOIhi21c8pH"/>
+        <dc:identifier>ICW-1:01.01.02.06.02</dc:identifier>
+        <skos:prefLabel>Yoga</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9A5ARp662f44GKPvuqKizC -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9A5ARp662f44GKPvuqKizC">
+        <rdfs:label>ICW-1:01.05.04 Group Study</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8SBS8ba7dmkAy7SqCi27lU"/>
+        <dc:identifier>ICW-1:01.05.04</dc:identifier>
+        <skos:prefLabel>Group Study</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9Z6mAfpQTw0jZFPrx7HzF5 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9Z6mAfpQTw0jZFPrx7HzF5">
+        <rdfs:label>ICW-1:01.03.05 Environmental Action</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8XRVgrRALUZvlsc0d5Tmgs"/>
+        <dc:identifier>ICW-1:01.03.05</dc:identifier>
+        <skos:prefLabel>Environmental Action</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9avY6lKBQ6xZ4r0sJfmRjK -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9avY6lKBQ6xZ4r0sJfmRjK">
+        <rdfs:label>ICW-1:01.04.03 Individual Event</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBS9QVm4dyrFSIJHzMw7L8W"/>
+        <dc:identifier>ICW-1:01.04.03</dc:identifier>
+        <skos:prefLabel>Individual Event</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9cDzWLa2vin0MXUjTb3Mmk -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9cDzWLa2vin0MXUjTb3Mmk">
+        <rdfs:label>ICW-1:01.01.03.01 Physical Therapy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7os7vVO1ZFMTwQa9H73CiI"/>
+        <dc:identifier>ICW-1:01.01.03.01</dc:identifier>
+        <skos:prefLabel>Physical Therapy</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9eB59L8s6dbRjsgBDsUdsi -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9eB59L8s6dbRjsgBDsUdsi">
+        <rdfs:label>ICW-1:01.05.01.01 Dance Performance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8LoUqa9iNqqVSKhleikYQ0"/>
+        <skos:prefLabel>Dance Performance</skos:prefLabel>
+        <dc:identifier>ICW-1:01.05.01.01</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9shmNVX1QJCfWVv28VtAWX -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9shmNVX1QJCfWVv28VtAWX">
+        <rdfs:label>ICW-1:01.06.02.02 Group Class - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBaF2FBeR8a5YZDOXZsaIEe"/>
+        <dc:identifier>ICW-1:01.06.02.02</dc:identifier>
+        <skos:prefLabel>Group Class - NOS</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9utNIsmqArhaSUHPPGaz2C -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9utNIsmqArhaSUHPPGaz2C">
+        <rdfs:label>ICW-1:01.01.02.03.01 Archery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RXbXgaTZQq5GM9aJCAHUzW"/>
+        <skos:prefLabel>Archery</skos:prefLabel>
+        <dc:identifier>ICW-1:01.01.02.03.01</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9yBVRxB6Lv5Z1g0mk36XRG -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9yBVRxB6Lv5Z1g0mk36XRG">
+        <rdfs:label>ICW-1:01.03.04 Environmental Advocacy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8XRVgrRALUZvlsc0d5Tmgs"/>
+        <dc:identifier>ICW-1:01.03.04</dc:identifier>
+        <skos:prefLabel>Environmental Advocacy</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9ycv3qzw9uAEEhkHeHHAHy -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9ycv3qzw9uAEEhkHeHHAHy">
+        <rdfs:label>ICW-1:01.01.02.04 Strength Training</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7t2SBrCeR5IP8uaZwH8zJ9"/>
+        <skos:prefLabel>Strength Training</skos:prefLabel>
+        <dc:identifier>ICW-1:01.01.02.04</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9zvaa7OJgMJ5OJs6lBasSO -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9zvaa7OJgMJ5OJs6lBasSO">
+        <rdfs:label>ICW-1:01.07.05 Spiritual Wellness - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RE08zxiRR4bujP5kFH3qlZ"/>
+        <skos:prefLabel>Spiritual Wellness - NOS</skos:prefLabel>
+        <dc:identifier>ICW-1:01.07.05</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBHDZaOYXTwmS8Tqxx63ATi -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBHDZaOYXTwmS8Tqxx63ATi">
+        <rdfs:label xml:lang="en">ICW-1:01.02 Emotional Wellness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBoqQbhaDK6nLsxXOcoDE3M"/>
+        <dc:identifier>ICW-1:01.02</dc:identifier>
+        <skos:prefLabel>Emotional Wellness</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBKmTGt6gLD93YxZK25nLuW -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBKmTGt6gLD93YxZK25nLuW">
+        <rdfs:label>ICW-1:01.01.02.01.04 Agility Training - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDGUPiCxJ1LBcA1egI2srvp"/>
+        <skos:prefLabel>Agility Training - NOS</skos:prefLabel>
+        <dc:identifier>ICW-1:01.01.02.01.04</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBS9QVm4dyrFSIJHzMw7L8W -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBS9QVm4dyrFSIJHzMw7L8W">
+        <rdfs:label xml:lang="en">ICW-1:01.04 Financial Wellness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBoqQbhaDK6nLsxXOcoDE3M"/>
+        <dc:identifier>ICW-1:01.04</dc:identifier>
+        <skos:prefLabel>Financial Wellness</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBSoWcd0A8wp57lJVxgovQP -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBSoWcd0A8wp57lJVxgovQP">
+        <rdfs:label>ICW-1:01.04.02.02 Stock Market</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBjIUt6N6gRO9q7zV83MSdM"/>
+        <dc:identifier>ICW-1:01.04.02.02</dc:identifier>
+        <skos:prefLabel>Stock Market</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBURpxK32ZPgDJRn83kHfz4 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBURpxK32ZPgDJRn83kHfz4">
+        <rdfs:label>ICW-1:01.01.02.06.03 Balance Training - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDB8QG0QkryFGOIhi21c8pH"/>
+        <dc:identifier>ICW-1:01.01.02.06.03</dc:identifier>
+        <skos:prefLabel>Balance Training - NOS</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBaF2FBeR8a5YZDOXZsaIEe -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBaF2FBeR8a5YZDOXZsaIEe">
+        <rdfs:label>ICW-1:01.06.02 Group Class</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RChj7WsSP26q4c2z5cO1gzw"/>
+        <dc:identifier>ICW-1:01.06.02</dc:identifier>
+        <skos:prefLabel>Group Class</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBe70yMV5MeRdrQwwbRzhyZ -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBe70yMV5MeRdrQwwbRzhyZ">
+        <rdfs:label>ICW-1:01.03.02.01 Group Outing - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBsNvX0jUX9qFpyqXiw5DQ3"/>
+        <skos:prefLabel>Group Outing - NOS</skos:prefLabel>
+        <dc:identifier>ICW-1:01.03.02.01</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBh0q34zUzOVllJF29Rm8mK -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBh0q34zUzOVllJF29Rm8mK">
+        <rdfs:label>ICW-1:01.01.02.03.02 Functional Training - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RXbXgaTZQq5GM9aJCAHUzW"/>
+        <skos:prefLabel>Functional Training - NOS</skos:prefLabel>
+        <dc:identifier>ICW-1:01.01.02.03.02</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBjIUt6N6gRO9q7zV83MSdM -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBjIUt6N6gRO9q7zV83MSdM">
+        <rdfs:label>ICW-1:01.04.02 Group Event</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBS9QVm4dyrFSIJHzMw7L8W"/>
+        <skos:prefLabel>Group Event</skos:prefLabel>
+        <dc:identifier>ICW-1:01.04.02</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBoqQbhaDK6nLsxXOcoDE3M -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBoqQbhaDK6nLsxXOcoDE3M">
+        <rdfs:label xml:lang="en">ICW-1:01 Wellness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <skos:altLabel>Wellness Classification</skos:altLabel>
+        <dc:contributor>John Robinson</dc:contributor>
+        <dc:identifier>ICW-1:01</dc:identifier>
+        <skos:definition>A taxonomy for Wellness</skos:definition>
+        <skos:comment xml:lang="en">Identifiers are constructed as follows:
+ICW-1. &quot;ICW&quot; + version + &quot;:&quot;
+A series of 2-digit hexadecimal expressions separated by periods</skos:comment>
+        <skos:altLabel xml:lang="en">Wellness Nomenclature</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Wellness Taxonomy</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBpDSDpmUTZATuEO5UOC881 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBpDSDpmUTZATuEO5UOC881">
+        <rdfs:label>ICW-1:01.06.02.01 Support Group</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBaF2FBeR8a5YZDOXZsaIEe"/>
+        <dc:identifier>ICW-1:01.06.02.01</dc:identifier>
+        <skos:prefLabel>Support Group</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBsNvX0jUX9qFpyqXiw5DQ3 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBsNvX0jUX9qFpyqXiw5DQ3">
+        <rdfs:label>ICW-1:01.03.02 Group Outing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8XRVgrRALUZvlsc0d5Tmgs"/>
+        <dc:identifier>ICW-1:01.03.02</dc:identifier>
+        <skos:prefLabel>Group Outing</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RC0Qb91P69qPz2GWXxsgrZZ -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RC0Qb91P69qPz2GWXxsgrZZ">
+        <rdfs:label>ICW-1:01.01.05.02 Health Screening</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RL0wQDEULNwnJ6zurrBu2B"/>
+        <skos:prefLabel>Health Screening</skos:prefLabel>
+        <dc:identifier>ICW-1:01.01.05.02</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RC8JamReFwrxtXebcw9svUl -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RC8JamReFwrxtXebcw9svUl">
+        <rdfs:label>ICW-1:01.07.01.01 Individual Prayer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7uXXy4mU4l6nIvaC7KaCI4"/>
+        <dc:identifier>ICW-1:01.07.01.01</dc:identifier>
+        <skos:prefLabel>Individual Prayer</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCUNdcZIcPTJTyeYSN4vLLc -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCUNdcZIcPTJTyeYSN4vLLc">
+        <rdfs:label>ICW-1:01.05.05.02 Bingo</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8A8KFuEc5dX9yrHvDqcn01"/>
+        <skos:prefLabel>Bingo</skos:prefLabel>
+        <dc:identifier>ICW-1:01.05.05.02</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCX5hA6QHzcHyRnxnwfmOXW -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCX5hA6QHzcHyRnxnwfmOXW">
+        <rdfs:label>ICW-1:01.03.03 Individual Outing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8XRVgrRALUZvlsc0d5Tmgs"/>
+        <dc:identifier>ICW-1:01.03.03</dc:identifier>
+        <skos:prefLabel>Individual Outing</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCZLVLp6uEVp3hXf0534kgu -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCZLVLp6uEVp3hXf0534kgu">
+        <rdfs:label>ICW-1:01.05.01.03 Performing Arts - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8LoUqa9iNqqVSKhleikYQ0"/>
+        <dc:identifier>ICW-1:01.05.01.03</dc:identifier>
+        <skos:prefLabel>Performing Arts - NOS</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCa6iKuKOJpj1mye5W70uj -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCa6iKuKOJpj1mye5W70uj">
+        <rdfs:label>ICW-1:01.07.04 Mindfullness/Meditation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RE08zxiRR4bujP5kFH3qlZ"/>
+        <dc:identifier>ICW-1:01.07.04</dc:identifier>
+        <skos:prefLabel>Mindfullness/Meditation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCcwt0jkmS2IX2Vh2wCzaWl -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCcwt0jkmS2IX2Vh2wCzaWl">
+        <rdfs:label>ICW-1:01.07.03.01 Indivitual Spiritual Reflection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Rw4AkAVFRfKaII5aAW403j"/>
+        <skos:prefLabel>Indivitual Spiritual Reflection</skos:prefLabel>
+        <dc:identifier>ICW-1:01.07.03.01</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCeAiLaGyV1OD8nB1bCBUir -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCeAiLaGyV1OD8nB1bCBUir">
+        <rdfs:label>ICW-1:01.04.03.03 Financial Planning</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9avY6lKBQ6xZ4r0sJfmRjK"/>
+        <dc:identifier>ICW-1:01.04.03.03</dc:identifier>
+        <skos:prefLabel>Financial Planning</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCegqGNqavgZkBzati27TZ -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCegqGNqavgZkBzati27TZ">
+        <rdfs:label>ICW-1:01.06.03.01 Group Event - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R95XfYLMrRXueeYAWfhZ4V5"/>
+        <skos:prefLabel>Group Event - NOS</skos:prefLabel>
+        <dc:identifier>ICW-1:01.06.03.01</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCfCgkge1aRoCyZR81kngZy -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCfCgkge1aRoCyZR81kngZy">
+        <rdfs:label>ICW-1:01.06.03.04 Dining Event</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R95XfYLMrRXueeYAWfhZ4V5"/>
+        <skos:prefLabel>Dining Event</skos:prefLabel>
+        <dc:identifier>ICW-1:01.06.03.04</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RChj7WsSP26q4c2z5cO1gzw -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RChj7WsSP26q4c2z5cO1gzw">
+        <rdfs:label xml:lang="en">ICW-1:01.06 Social Wellness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBoqQbhaDK6nLsxXOcoDE3M"/>
+        <skos:prefLabel>Social Wellness</skos:prefLabel>
+        <dc:identifier>ICW-1:01.06</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCqYYOJyjnra0ZLrBC8YyO6 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCqYYOJyjnra0ZLrBC8YyO6">
+        <rdfs:label>ICW-1:01.06.03.03 Televised Event</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R95XfYLMrRXueeYAWfhZ4V5"/>
+        <dc:identifier>ICW-1:01.06.03.03</dc:identifier>
+        <skos:prefLabel>Televised Event</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCqeEdvms6P2bAAI6qqwthG -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCqeEdvms6P2bAAI6qqwthG">
+        <rdfs:label>ICW-1:01.01.03.03 Therapy - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7os7vVO1ZFMTwQa9H73CiI"/>
+        <skos:prefLabel>Therapy - NOS</skos:prefLabel>
+        <dc:identifier>ICW-1:01.01.03.03</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCrqbAnvafgoUTIpJrL0Pow -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCrqbAnvafgoUTIpJrL0Pow">
+        <rdfs:label>ICW-1:01.01.04 Physical Wellness - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDe2Fiqg4DPcQH6MbqrEp1N"/>
+        <skos:prefLabel>Physical Wellness - NOS</skos:prefLabel>
+        <dc:identifier>ICW-1:01.01.04</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCxF2sd93zNbhFWq2TOepBJ -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCxF2sd93zNbhFWq2TOepBJ">
+        <rdfs:label>ICW-1:01.08.04.01 Group Volunteering - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDUMFfkVwmNGcwSD1DCK31h"/>
+        <skos:prefLabel>Group Volunteering - NOS</skos:prefLabel>
+        <dc:identifier>ICW-1:01.08.04.01</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RD2gaiy1JZJUcSRDoPvLkhO -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RD2gaiy1JZJUcSRDoPvLkhO">
+        <rdfs:label>ICW-1:01.09 Wellness - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBoqQbhaDK6nLsxXOcoDE3M"/>
+        <skos:prefLabel>Wellness - NOS</skos:prefLabel>
+        <dc:identifier>ICW-1:01.09</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDB8QG0QkryFGOIhi21c8pH -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDB8QG0QkryFGOIhi21c8pH">
+        <rdfs:label>ICW-1:01.01.02.06 Balance Training</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7t2SBrCeR5IP8uaZwH8zJ9"/>
+        <dc:identifier>ICW-1:01.01.02.06</dc:identifier>
+        <skos:prefLabel xml:lang="en">Balance Training</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDGOOnGFIRC5brkxzR6UuhZ -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDGOOnGFIRC5brkxzR6UuhZ">
+        <rdfs:label>ICW-1:01.01.05.01 Prevention - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RL0wQDEULNwnJ6zurrBu2B"/>
+        <dc:identifier>ICW-1:01.01.05.01</dc:identifier>
+        <skos:prefLabel>Prevention - NOS</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDGUPiCxJ1LBcA1egI2srvp -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDGUPiCxJ1LBcA1egI2srvp">
+        <rdfs:label xml:lang="en">ICW-1:01.01.02.01 Agility Training</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7t2SBrCeR5IP8uaZwH8zJ9"/>
+        <dc:identifier>ICW-1:01.01.02.01</dc:identifier>
+        <skos:prefLabel xml:lang="en">Agility Training</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDLBNfBuyNQnZIvhA9roFF8 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDLBNfBuyNQnZIvhA9roFF8">
+        <rdfs:label>ICW-1:01.01.02.02.02 Bicycle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7o1kw5Usid1Ovkmv4Og6Q"/>
+        <dc:identifier>ICW-1:01.01.02.02.02</dc:identifier>
+        <skos:prefLabel>Bicycle</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDLRj5UqYl89TQ6U1vb37pN -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDLRj5UqYl89TQ6U1vb37pN">
+        <rdfs:label>ICW-1:01.05.01.02 Musical Performance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8LoUqa9iNqqVSKhleikYQ0"/>
+        <dc:identifier>ICW-1:01.05.01.02</dc:identifier>
+        <skos:prefLabel>Musical Performance</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDMcgVSyCAsCtyFzL0l8kfD -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDMcgVSyCAsCtyFzL0l8kfD">
+        <rdfs:label>ICW-1:01.01.03.02 Occupational Therapy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7os7vVO1ZFMTwQa9H73CiI"/>
+        <dc:identifier>ICW-1:01.01.03.02</dc:identifier>
+        <skos:prefLabel xml:lang="en">Occupational Therapy</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDOGCfvDREyjRzzI46dfVdh -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDOGCfvDREyjRzzI46dfVdh">
+        <rdfs:label>ICW-1:01.08.02.03 Creative Arts - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/ROVqqshypl6rhj04LtSFNz"/>
+        <dc:identifier>ICW-1:01.08.02.03</dc:identifier>
+        <skos:prefLabel>Creative Arts - NOS</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDPUBTGALkS1vAd2r1IyaIY -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDPUBTGALkS1vAd2r1IyaIY">
+        <rdfs:label>ICW-1:01.01.02.02.01 Aerobics</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7o1kw5Usid1Ovkmv4Og6Q"/>
+        <dc:identifier>ICW-1:01.01.02.02.01</dc:identifier>
+        <skos:prefLabel>Aerobics</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDUMFfkVwmNGcwSD1DCK31h -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDUMFfkVwmNGcwSD1DCK31h">
+        <rdfs:label>ICW-1:01.08.04 Group Volunteering</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8YFRnOG69gohKMCGK1LGMc"/>
+        <dc:identifier>ICW-1:01.08.04</dc:identifier>
+        <skos:prefLabel>Group Volunteering</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDW2YcLuNSA7ErHZQcco9rm -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDW2YcLuNSA7ErHZQcco9rm">
+        <rdfs:label>ICW-1:01.04.02.01 Group Event - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBjIUt6N6gRO9q7zV83MSdM"/>
+        <skos:prefLabel>Group Event - NOS</skos:prefLabel>
+        <dc:identifier>ICW-1:01.04.02.01</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDaPrhoVAEBzwWu1UMZJklf -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDaPrhoVAEBzwWu1UMZJklf">
+        <rdfs:label>ICW-1:01.02.03 Support Group</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBHDZaOYXTwmS8Tqxx63ATi"/>
+        <skos:prefLabel>Support Group</skos:prefLabel>
+        <dc:identifier>ICW-1:01.02.03</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDcI3G5ys06wqPSngyWPeC -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDcI3G5ys06wqPSngyWPeC">
+        <rdfs:label>ICW-1:01.08.04.04 Teaching</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDUMFfkVwmNGcwSD1DCK31h"/>
+        <skos:prefLabel>Teaching</skos:prefLabel>
+        <dc:identifier>ICW-1:01.08.04.04</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDe2Fiqg4DPcQH6MbqrEp1N -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDe2Fiqg4DPcQH6MbqrEp1N">
+        <rdfs:label>ICW-1:01.01 Physical Wellness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBoqQbhaDK6nLsxXOcoDE3M"/>
+        <dc:identifier>ICW-1:01.01</dc:identifier>
+        <skos:prefLabel>Physical Wellness</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDqsLPgAVAzS38uqwpHb1Bw -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDqsLPgAVAzS38uqwpHb1Bw">
+        <rdfs:label>ICW-1:01.01.02.01.03 Volleyball</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDGUPiCxJ1LBcA1egI2srvp"/>
+        <dc:identifier>ICW-1:01.01.02.01.03</dc:identifier>
+        <skos:prefLabel>Volleyball</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDtcybp5IJs5M4HeJt4amWB -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDtcybp5IJs5M4HeJt4amWB">
+        <rdfs:label>ICW-1:01.01.01 Diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDe2Fiqg4DPcQH6MbqrEp1N"/>
+        <skos:prefLabel xml:lang="en">Diet</skos:prefLabel>
+        <dc:identifier>ICW-1:01.01.01</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RE08zxiRR4bujP5kFH3qlZ -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RE08zxiRR4bujP5kFH3qlZ">
+        <rdfs:label xml:lang="en">ICW-1:01.07 Spiritual Wellness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBoqQbhaDK6nLsxXOcoDE3M"/>
+        <skos:prefLabel>Spiritual Wellness</skos:prefLabel>
+        <dc:identifier>ICW-1:01.07</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/REhVGlJw0xdun5SsGboCAB -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/REhVGlJw0xdun5SsGboCAB">
+        <rdfs:label>ICW-1:01.07.02 Scripture Study</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RE08zxiRR4bujP5kFH3qlZ"/>
+        <skos:prefLabel>Scripture Study</skos:prefLabel>
+        <dc:identifier>ICW-1:01.07.02</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RH3jkxzgWerENoam3RXA51 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RH3jkxzgWerENoam3RXA51">
+        <rdfs:label>ICW-1:01.03.02.04 Group Hike</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBsNvX0jUX9qFpyqXiw5DQ3"/>
+        <dc:identifier>ICW-1:01.03.02.04</dc:identifier>
+        <skos:prefLabel>Group Hike</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RL0wQDEULNwnJ6zurrBu2B -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RL0wQDEULNwnJ6zurrBu2B">
+        <rdfs:label>ICW-1:01.01.05 Prevention</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDe2Fiqg4DPcQH6MbqrEp1N"/>
+        <dc:identifier>ICW-1:01.01.05</dc:identifier>
+        <skos:prefLabel>Prevention</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RMJLArb4uw2F4blmHoThV8 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RMJLArb4uw2F4blmHoThV8">
+        <rdfs:label>ICW-1:01.06.01 Social Wellness - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RChj7WsSP26q4c2z5cO1gzw"/>
+        <dc:identifier>ICW-1:01.06.01</dc:identifier>
+        <skos:prefLabel>Social Wellness - NOS</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/ROVqqshypl6rhj04LtSFNz -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/ROVqqshypl6rhj04LtSFNz">
+        <rdfs:label>ICW-1:01.08.02 Creative Arts</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8YFRnOG69gohKMCGK1LGMc"/>
+        <dc:identifier>ICW-1:01.08.02</dc:identifier>
+        <skos:prefLabel>Creative Arts</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/ROo5U75A211dNq4hLXsul -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/ROo5U75A211dNq4hLXsul">
+        <rdfs:label>ICW-1:01.01.02.06.01 Tai Chi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDB8QG0QkryFGOIhi21c8pH"/>
+        <skos:prefLabel>Tai Chi</skos:prefLabel>
+        <dc:identifier>ICW-1:01.01.02.06.01</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RQJpror1ldE69R5HbImxru -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RQJpror1ldE69R5HbImxru">
+        <rdfs:label>ICW-1:01.06.03.02 Sporting Event</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R95XfYLMrRXueeYAWfhZ4V5"/>
+        <dc:identifier>ICW-1:01.06.03.02</dc:identifier>
+        <skos:prefLabel>Sporting Event</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RTptoSGKEkG57rv1Qu5zjm -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RTptoSGKEkG57rv1Qu5zjm">
+        <rdfs:label>ICW-1:01.01.02.02.03 Run</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7o1kw5Usid1Ovkmv4Og6Q"/>
+        <skos:prefLabel>Run</skos:prefLabel>
+        <dc:identifier>ICW-1:01.01.02.02.03</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RTzURxxRm09snXaSWTXmI0 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RTzURxxRm09snXaSWTXmI0">
+        <rdfs:label>ICW-1:01.08.03 Individual Volunteering</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8YFRnOG69gohKMCGK1LGMc"/>
+        <skos:prefLabel>Individual Volunteering</skos:prefLabel>
+        <dc:identifier>ICW-1:01.08.03</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RU3YvTH3rCiSBszHR4pI2r -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RU3YvTH3rCiSBszHR4pI2r">
+        <rdfs:label>ICW-1:01.08.02.01 Art</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/ROVqqshypl6rhj04LtSFNz"/>
+        <skos:prefLabel>Art</skos:prefLabel>
+        <dc:identifier>ICW-1:01.08.02.01</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RUUK1A4RoPopeAMwAM6i40 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RUUK1A4RoPopeAMwAM6i40">
+        <rdfs:label>ICW-1:01.01.02.01.02 Dance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDGUPiCxJ1LBcA1egI2srvp"/>
+        <skos:prefLabel>Dance</skos:prefLabel>
+        <dc:identifier>ICW-1:01.01.02.01.02</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RXbXgaTZQq5GM9aJCAHUzW -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RXbXgaTZQq5GM9aJCAHUzW">
+        <rdfs:label xml:lang="en">ICW-1:01.01.02.03 Functional Training</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7t2SBrCeR5IP8uaZwH8zJ9"/>
+        <dc:identifier>ICW-1:01.01.02.03</dc:identifier>
+        <skos:prefLabel>Functional Training</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Ra20tlLAkYpw62neLC29bn -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Ra20tlLAkYpw62neLC29bn">
+        <rdfs:label>ICW-1:01.03.03.01 Individual Outing - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCX5hA6QHzcHyRnxnwfmOXW"/>
+        <dc:identifier>ICW-1:01.03.03.01</dc:identifier>
+        <skos:prefLabel>Individual Outing - NOS</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Rb5fliy58kHlwV1tTnAWKJ -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Rb5fliy58kHlwV1tTnAWKJ">
+        <rdfs:label>ICW-1:01.02.01 Aromatherapy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBHDZaOYXTwmS8Tqxx63ATi"/>
+        <skos:prefLabel>Aromatherapy</skos:prefLabel>
+        <dc:identifier>ICW-1:01.02.01</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RbInEmTWmeuUPTsVCo94CU -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RbInEmTWmeuUPTsVCo94CU">
+        <rdfs:label>ICW-1:01.03.02.03 Trail Maintenance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBsNvX0jUX9qFpyqXiw5DQ3"/>
+        <dc:identifier>ICW-1:01.03.02.03</dc:identifier>
+        <skos:prefLabel>Trail Maintenance</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Rbn7qW45YG16LZV9dGq8Kh -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Rbn7qW45YG16LZV9dGq8Kh">
+        <rdfs:label>ICW-1:01.07.04.02 Group Mindfullness/Meditation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCa6iKuKOJpj1mye5W70uj"/>
+        <dc:identifier>ICW-1:01.07.04.02</dc:identifier>
+        <skos:prefLabel>Group Mindfullness/Meditation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RhKOdzYjM9GVADf5QkfaR7 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RhKOdzYjM9GVADf5QkfaR7">
+        <rdfs:label>ICW-1:01.01.02.01.01 Badminton</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDGUPiCxJ1LBcA1egI2srvp"/>
+        <skos:prefLabel>Badminton</skos:prefLabel>
+        <dc:identifier>ICW-1:01.01.02.01.01</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Rif0vAOwFSPV8b2InwlhrO -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Rif0vAOwFSPV8b2InwlhrO">
+        <rdfs:label>ICW-1:01.05.06 Individual Game</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8SBS8ba7dmkAy7SqCi27lU"/>
+        <skos:prefLabel>Individual Game</skos:prefLabel>
+        <dc:identifier>ICW-1:01.05.06</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Rmpv0yXzRacM1sjLezi2Zx -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Rmpv0yXzRacM1sjLezi2Zx">
+        <rdfs:label>ICW-1:01.05.04.02 Book Study</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9A5ARp662f44GKPvuqKizC"/>
+        <skos:prefLabel>Book Study</skos:prefLabel>
+        <dc:identifier>ICW-1:01.05.04.02</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RoOTYzgz90C5EwoPPg7jE6 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RoOTYzgz90C5EwoPPg7jE6">
+        <rdfs:label>ICW-1:01.08.01 Vocational Wellness - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8YFRnOG69gohKMCGK1LGMc"/>
+        <skos:prefLabel>Vocational Wellness - NOS</skos:prefLabel>
+        <dc:identifier>ICW-1:01.08.01</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RrgEFIgrV6NZnGS3CoFoDf -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RrgEFIgrV6NZnGS3CoFoDf">
+        <rdfs:label>ICW-1:01.07.01.02 Group Prayer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7uXXy4mU4l6nIvaC7KaCI4"/>
+        <skos:prefLabel>Group Prayer</skos:prefLabel>
+        <dc:identifier>ICW-1:01.07.01.02</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RtNnlOutu3Tr3A77eEFDMe -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RtNnlOutu3Tr3A77eEFDMe">
+        <rdfs:label>ICW-1:01.02.02 Emotional Wellness - NOS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBHDZaOYXTwmS8Tqxx63ATi"/>
+        <dc:identifier>ICW-1:01.02.02</dc:identifier>
+        <skos:prefLabel>Emotional Wellness - NOS</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RuQFjWNkjypanUrg6HvjXM -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RuQFjWNkjypanUrg6HvjXM">
+        <rdfs:label>ICW-1:01.01.02.05 Stretch Training</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7t2SBrCeR5IP8uaZwH8zJ9"/>
+        <dc:identifier>ICW-1:01.01.02.05</dc:identifier>
+        <skos:prefLabel>Stretch Training</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Rw4AkAVFRfKaII5aAW403j -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Rw4AkAVFRfKaII5aAW403j">
+        <rdfs:label>ICW-1:01.07.03 Spiritual Reflection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RE08zxiRR4bujP5kFH3qlZ"/>
+        <skos:prefLabel>Spiritual Reflection</skos:prefLabel>
+        <dc:identifier>ICW-1:01.07.03</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Rxx6PYsq57TuvmReGuWsQV -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Rxx6PYsq57TuvmReGuWsQV">
+        <rdfs:label>ICW-1:01.08.04.02 Mentoring</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDUMFfkVwmNGcwSD1DCK31h"/>
+        <skos:prefLabel>Mentoring</skos:prefLabel>
+        <dc:identifier>ICW-1:01.08.04.02</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Rz11YuAW2pbg1ziVzjnoor -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Rz11YuAW2pbg1ziVzjnoor">
+        <rdfs:label>ICW-1:01.01.02.02.05 Tennis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7o1kw5Usid1Ovkmv4Og6Q"/>
+        <dc:identifier>ICW-1:01.01.02.02.05</dc:identifier>
+        <skos:prefLabel>Tennis</skos:prefLabel>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

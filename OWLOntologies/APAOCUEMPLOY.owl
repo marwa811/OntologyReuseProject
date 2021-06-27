@@ -1,0 +1,1821 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2015/0/ocupationalemploymentcluster.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/ontologies/2015/0/ocupationalemploymentcluster.owl"
+     versionIRI="http://www.semanticweb.org/ontologies/2015/0/ocupationalemploymentcluster.owl">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Import>http://alexandergarcia.name/ontos/ocupationalemployment/PersonnelManagementProfessionalPersonnelIssues.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/ocupationalemployment/EmployeeOccupationalJobCharacteristics.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/ocupationalemployment/CareerAreas.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/ocupationalemployment/OrganizationsOrganizationalBehavior.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/ocupationalemployment/OccupationalGroups.owl</Import>
+    <Declaration>
+        <Class IRI="#CareerAreas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OccupationalGroups"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Accountants"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Advertising"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Aerospace_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Affirmative_Action"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Age_Discrimination"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Agricultural_Extension_Workers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Agricultural_Workers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Air_Force_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Air_Traffic_Control"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Aircraft_Pilots"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Allied_Health_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#American_Psychological_Association"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#American_Psychological_Association_Divisions"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Anthropologists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Apprenticeship"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Architects"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Army_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Artists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Assessment_Centers"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Astronauts"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Athletes"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Attendants_(Institutions)"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Attorneys"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Awards_(Merit)"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Banking"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Behavioral_Sciences"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Blue_Collar_Workers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Bonuses"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Budgets"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Business"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Business_Ethics"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Business_Management"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Business_Organizations"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Business_and_Industrial_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Career_Change"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Career_Development"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Career_Education"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Chaplains"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Child_Care"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Child_Care_Workers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Child_Day_Care"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Child_Labor"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Clergy"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Clerical_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Clerical_Secretarial_Skills"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Clinical_Psychologists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Clinicians"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Coaches"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Coaching"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Coast_Guard_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#College_Teachers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Commissioned_Officers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Communities_of_Practice"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Community_Psychology"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Computer_Programming"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Conflict_Resolution"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Conflict_of_Interest"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Consultation_Liaison_Psychiatry"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cooperating_Teachers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Corrections_Officers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Counseling"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Counseling_Psychologists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Counselor_Trainees"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Counselors"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cross_Cultural_Psychology"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Data_Processing"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Decentralization"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dentists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Disability_Discrimination"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Disability_Evaluation"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Disability_Management"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Disabled_Personnel"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Distributive_Justice"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Diversity_in_the_Workplace"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Division_of_Labor"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Domestic_Service_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Downsizing"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Draftees"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dual_Careers"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Education"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Educational_Administration"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Educational_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Educational_Psychologists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Educational_Psychology"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Elementary_School_Teachers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Employability"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Employee_Absenteeism"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Employee_Assistance_Programs"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Employee_Attitudes"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Employee_Benefits"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Employee_Characteristics"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Employee_Efficiency"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Employee_Health_Insurance"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Employee_Interaction"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Employee_Leave_Benefits"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Employee_Motivation"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Employee_Pension_Plans"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Employee_Productivity"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Employee_Retention"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Employee_Skills"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Employee_Turnover"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Employer_Attitudes"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Employment_Discrimination"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Employment_History"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Employment_Status"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Employment_Tests"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Engineers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Enlisted_Military_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Entrepreneurship"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Evangelists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Executive_Coaching"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Experimental_Psychologists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Experimental_Psychology"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Faith_Based_Organizations"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Family_Physicians"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Family_Therapy"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Family_Work_Relationship"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Fire_Fighters"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Foreign_Organizations"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Foreign_Workers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Forensic_Psychiatry"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Forensic_Psychology"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#General_Practitioners"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Geriatric_Psychiatry"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Globalization"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Government_Agencies"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Government_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Government_Policy_Making"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Gynecologists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Gynecology"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Health_Care_Administration"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Health_Care_Policy"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Health_Maintenance_Organizations"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Health_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Health_Personnel_Attitudes"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Health_Promotion"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#High_School_Teachers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Home_Care_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hospitality_Industry"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Human_Capital"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Human_Factors_Engineering"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Human_Resource_Management"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hypnotherapists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hypnotherapy"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hypnotists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Impaired_Professionals"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Income_Level"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Industrial_Accidents"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Industrial_Foremen"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Industrial_Psychologists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Industrial_and_Organizational_Psychology"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Information_Science"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Information_Specialists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Innovation"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Inservice_Training"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#International_Organizations"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Internists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Interpreters"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Interviewers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Job_Analysis"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Job_Applicant_Attitudes"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Job_Applicant_Interviews"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Job_Applicant_Screening"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Job_Applicants"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Job_Characteristics"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Job_Corps"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Job_Enrichment"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Job_Experience_Level"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Job_Involvement"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Job_Knowledge"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Job_Performance"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Job_Satisfaction"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Job_Search"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Job_Security"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Journalists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Judges"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Junior_High_School_Teachers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Knowledge_Management"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Labor_Management_Relations"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Labor_Market"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Labor_Union_Members"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Labor_Unions"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Law_Enforcement"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Law_Enforcement_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Lay_Religious_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Leadership"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Leadership_Qualities"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Leadership_Style"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Legal_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Librarians"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Life_Coaching"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Management"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Management_Decision_Making"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Management_Methods"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Management_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Management_Planning"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Management_Training"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Marine_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Marketing"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Marriage_Counseling"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mathematicians"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mediation"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Medical_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Medical_Personnel_Supply"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mental_Health_Inservice_Training"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mental_Health_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mental_Health_Personnel_Supply"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mentor"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mergers_and_Acquisitions"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Middle_Level_Managers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Migrant_Farm_Workers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Military_Attrition"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Military_Deployment"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Military_Duty_Status"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Military_Medical_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Military_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Military_Psychologists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Military_Recruitment"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Military_Training"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Ministers_(Religion)"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Missionaries"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Multinational_Corporations"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Musicians"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#NGOs"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#National_Guard_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Navy_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Negotiation"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Nepotism"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurologists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#News_Media"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Noise_Levels_(Work_Areas)"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Noncommissioned_Officers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Nonprofessional_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Nonprofit_Organizations"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Nontraditional_Careers"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Nuns"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Nurses"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Nursing"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Obstetricians"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Obstetrics"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Occupational_Adjustment"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Occupational_Aspirations"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Occupational_Attitudes"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Occupational_Choice"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Occupational_Exposure"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Occupational_Guidance"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Occupational_Health"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Occupational_Interests"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Occupational_Mobility"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Occupational_Neurosis"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Occupational_Preference"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Occupational_Safety"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Occupational_Status"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Occupational_Stress"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Occupational_Success"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Occupational_Success_Prediction"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Occupational_Tenure"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Occupational_Therapists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Occupational_Therapy"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Occupations"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#On_the_Job_Training"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Optometrists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Optometry"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Organizational_Behavior"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Organizational_Change"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Organizational_Characteristics"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Organizational_Climate"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Organizational_Commitment"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Organizational_Crises"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Organizational_Development"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Organizational_Effectiveness"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Organizational_Learning"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Organizational_Objectives"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Organizational_Structure"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Organizations"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Outsourcing"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Paramedical_Sciences"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Paraprofessional_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Parole_Officers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Participative_Management"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Pathologists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Pathology"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Peace_Corps"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Pediatricians"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Pediatrics"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Personnel_Evaluation"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Personnel_Placement"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Personnel_Promotion"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Personnel_Recruitment"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Personnel_Selection"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Personnel_Supply"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Personnel_Termination"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Personnel_Training"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Pharmacists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Physical_Therapists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Physical_Therapy"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Physicians"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Physicists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Police_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Policy_Making"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Politicians"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Politics"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Preschool_Teachers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Preservice_Teachers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Priests"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Prison_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Private_Practice"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Probation_Officers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Procedural_Justice"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Product_Design"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Professional_Certification"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Professional_Competence"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Professional_Consultation"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Professional_Development"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Professional_Ethics"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Professional_Examinations"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Professional_Fees"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Professional_Identity"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Professional_Liability"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Professional_Licensing"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Professional_Networking"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Professional_Organizations"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Professional_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Professional_Recognition"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Professional_Referral"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Professional_Specialization"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Professional_Standards"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Professional_Supervision"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Professionalism"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychiatric_Aides"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychiatric_Hospital_Staff"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychiatric_Nurses"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychiatric_Social_Workers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychiatrists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychiatry"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychoanalysts"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychological_Contracts"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychologists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychology"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychotherapists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychotherapy"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Public_Health_Service_Nurses"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Public_Relations"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Quality_Control"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Quality_of_Work_Life"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Rabbis"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Race_and_Ethnic_Discrimination"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Reemployment"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Rehabilitation"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Rehabilitation_Counseling"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Rehabilitation_Counselors"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Religious_Organizations"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Religious_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Research_and_Development"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Resource_Teachers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Retailing"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Retirement"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Salaries"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sales_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#School_Administrators"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#School_Counselors"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#School_Nurses"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#School_Principals"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#School_Psychologists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#School_Psychology"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#School_Superintendents"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#School_to_Work_Transition"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sciences"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Scientists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Secretarial_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Self_Employment"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Self_Managing_Work_Teams"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Seminarians"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Service_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sex_Discrimination"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sexual_Harassment"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Skilled_Industrial_Workers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Small_Businesses"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Social_Casework"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Social_Loafing"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Social_Psychologists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Social_Psychology"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Social_Security"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Social_Workers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sociologists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Special_Education_Teachers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Speech_Therapists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Speech_Therapy"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sports"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sports_Coaching"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Stress_Management"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Strikes"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Student_Teachers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Supervisor_Employee_Interaction"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Supply_Chain_Management"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Supply_Chains"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Supported_Employment"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Surgeons"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Surgery"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Tardiness"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Teacher_Aides"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Teacher_Recruitment"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Teachers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Teaching"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Teams"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Technical_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Technical_Service_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Telecommuting"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Therapist_Trainees"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Therapists"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Top_Level_Managers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Transformational_Leadership"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Typing"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Unemployment"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Unskilled_Industrial_Workers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Veterinary_Medicine"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Virtual_Teams"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Vocational_Counselors"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Vocational_Education_Teachers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Vocational_Evaluation"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Vocational_Maturity"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Vocational_Rehabilitation"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Volunteer_Military_Personnel"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Volunteers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#White_Collar_Workers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Work_(Attitudes_Toward)"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Work_Adjustment_Training"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Work_Load"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Work_Related_Illnesses"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Work_Rest_Cycles"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Work_Scheduling"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Work_Teams"/>
+        <Class IRI="#OrganizationsOrganizationalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Work_Week_Length"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Workaholism"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Workday_Shifts"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Workers&#39;_Compensation_Insurance"/>
+        <Class IRI="#PersonnelManagementProfessionalPersonnelIssues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Working_Conditions"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Working_Space"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Working_Women"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Workplace_Violence"/>
+        <Class IRI="#EmployeeOccupationalJobCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Writers"/>
+        <Class IRI="#OccupationalGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Zoology"/>
+        <Class IRI="#CareerAreas"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

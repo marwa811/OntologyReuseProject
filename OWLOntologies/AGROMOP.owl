@@ -1,0 +1,1397 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/vera/ontologies/2020/1/untitled-ontology-5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/vera/ontologies/2020/1/untitled-ontology-5">
+    <Prefix name="" IRI="http://www.semanticweb.org/vera/ontologies/2020/1/untitled-ontology-5"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Cacao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cultivo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ejecucion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Enfermedades"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mayor_Riesgo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Menor_Riesgo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plagas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recomendaciones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sintomas"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EsSintomaDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EsTratamientoDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SetrataCon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SuEjecucionEs"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Descripcion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Nombre_Cientifico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Afidos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Antracnosis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ardillas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Barrenadores_de_tallos_y_ramas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cacao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Comején_o_termitas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EjecucionE1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EjecucionE2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EjecucionE3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EjecucionE4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EjecucionE5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EjecucionP1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EjecucionP2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EjecucionP4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EjecucionR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Escoba_de_bruja"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mal_Rosado"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mal_de_Hilachas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mal_de_Machete"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mazorca_Negra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Monalonion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Moniliasis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Muerte_de_Frutos_Tiernos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RecomendacionE1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RecomendacionE2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RecomendacionE3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RecomendacionE4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RecomendacionE5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RecomendacionE6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RecomendacionE7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RecomendacionE8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RecomendacionP1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RecomendacionP2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RecomendacionP3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RecomendacionP4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RecomendacionP5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RecomendacionR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Roselinia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SintomasE1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SintomasE10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SintomasE2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SintomasE3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SintomasE4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SintomasE5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SintomasE6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SintomasE7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SintomasE8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SintomasE9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SintomasP1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SintomasP2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SintomasP3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SintomasP4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SintomasP5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SintomasP6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SintomasP7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trips"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Verrugas_de_Punto_Verde"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zompopos"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Cacao"/>
+        <Class IRI="#Cultivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ejecucion"/>
+        <Class IRI="#Recomendaciones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mayor_Riesgo"/>
+        <Class IRI="#Enfermedades"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Menor_Riesgo"/>
+        <Class IRI="#Enfermedades"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Plagas"/>
+        <NamedIndividual IRI="#Afidos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Menor_Riesgo"/>
+        <NamedIndividual IRI="#Antracnosis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plagas"/>
+        <NamedIndividual IRI="#Ardillas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plagas"/>
+        <NamedIndividual IRI="#Barrenadores_de_tallos_y_ramas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cultivo"/>
+        <NamedIndividual IRI="#Cacao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plagas"/>
+        <NamedIndividual IRI="#Comején_o_termitas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ejecucion"/>
+        <NamedIndividual IRI="#EjecucionE1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ejecucion"/>
+        <NamedIndividual IRI="#EjecucionE2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ejecucion"/>
+        <NamedIndividual IRI="#EjecucionE3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ejecucion"/>
+        <NamedIndividual IRI="#EjecucionE4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ejecucion"/>
+        <NamedIndividual IRI="#EjecucionE5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ejecucion"/>
+        <NamedIndividual IRI="#EjecucionP1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ejecucion"/>
+        <NamedIndividual IRI="#EjecucionP2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ejecucion"/>
+        <NamedIndividual IRI="#EjecucionP4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ejecucion"/>
+        <NamedIndividual IRI="#EjecucionR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mayor_Riesgo"/>
+        <NamedIndividual IRI="#Escoba_de_bruja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Menor_Riesgo"/>
+        <NamedIndividual IRI="#Mal_Rosado"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Menor_Riesgo"/>
+        <NamedIndividual IRI="#Mal_de_Hilachas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mayor_Riesgo"/>
+        <NamedIndividual IRI="#Mal_de_Machete"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mayor_Riesgo"/>
+        <NamedIndividual IRI="#Mazorca_Negra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plagas"/>
+        <NamedIndividual IRI="#Monalonion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mayor_Riesgo"/>
+        <NamedIndividual IRI="#Moniliasis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Menor_Riesgo"/>
+        <NamedIndividual IRI="#Muerte_de_Frutos_Tiernos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recomendaciones"/>
+        <NamedIndividual IRI="#RecomendacionE1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recomendaciones"/>
+        <NamedIndividual IRI="#RecomendacionE2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recomendaciones"/>
+        <NamedIndividual IRI="#RecomendacionE3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recomendaciones"/>
+        <NamedIndividual IRI="#RecomendacionE4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recomendaciones"/>
+        <NamedIndividual IRI="#RecomendacionE5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recomendaciones"/>
+        <NamedIndividual IRI="#RecomendacionE6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recomendaciones"/>
+        <NamedIndividual IRI="#RecomendacionE7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recomendaciones"/>
+        <NamedIndividual IRI="#RecomendacionE8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recomendaciones"/>
+        <NamedIndividual IRI="#RecomendacionP1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recomendaciones"/>
+        <NamedIndividual IRI="#RecomendacionP2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recomendaciones"/>
+        <NamedIndividual IRI="#RecomendacionP3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recomendaciones"/>
+        <NamedIndividual IRI="#RecomendacionP4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recomendaciones"/>
+        <NamedIndividual IRI="#RecomendacionP5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recomendaciones"/>
+        <NamedIndividual IRI="#RecomendacionR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mayor_Riesgo"/>
+        <NamedIndividual IRI="#Roselinia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas"/>
+        <NamedIndividual IRI="#SintomasE1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas"/>
+        <NamedIndividual IRI="#SintomasE10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas"/>
+        <NamedIndividual IRI="#SintomasE2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas"/>
+        <NamedIndividual IRI="#SintomasE3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas"/>
+        <NamedIndividual IRI="#SintomasE4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas"/>
+        <NamedIndividual IRI="#SintomasE5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas"/>
+        <NamedIndividual IRI="#SintomasE6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas"/>
+        <NamedIndividual IRI="#SintomasE7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas"/>
+        <NamedIndividual IRI="#SintomasE8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas"/>
+        <NamedIndividual IRI="#SintomasE9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas"/>
+        <NamedIndividual IRI="#SintomasP1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas"/>
+        <NamedIndividual IRI="#SintomasP2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas"/>
+        <NamedIndividual IRI="#SintomasP3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas"/>
+        <NamedIndividual IRI="#SintomasP4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas"/>
+        <NamedIndividual IRI="#SintomasP5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas"/>
+        <NamedIndividual IRI="#SintomasP6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas"/>
+        <NamedIndividual IRI="#SintomasP7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plagas"/>
+        <NamedIndividual IRI="#Trips"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Menor_Riesgo"/>
+        <NamedIndividual IRI="#Verrugas_de_Punto_Verde"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plagas"/>
+        <NamedIndividual IRI="#Zompopos"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <NamedIndividual IRI="#Afidos"/>
+        <NamedIndividual IRI="#SintomasP2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Afidos"/>
+        <NamedIndividual IRI="#RecomendacionP1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Afidos"/>
+        <NamedIndividual IRI="#RecomendacionP3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Afidos"/>
+        <NamedIndividual IRI="#RecomendacionP4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Afidos"/>
+        <NamedIndividual IRI="#RecomendacionP5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <NamedIndividual IRI="#Antracnosis"/>
+        <NamedIndividual IRI="#SintomasE6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Antracnosis"/>
+        <NamedIndividual IRI="#RecomendacionE5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <NamedIndividual IRI="#Ardillas"/>
+        <NamedIndividual IRI="#SintomasP7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Ardillas"/>
+        <NamedIndividual IRI="#RecomendacionP1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Ardillas"/>
+        <NamedIndividual IRI="#RecomendacionP2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Ardillas"/>
+        <NamedIndividual IRI="#RecomendacionP3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Ardillas"/>
+        <NamedIndividual IRI="#RecomendacionP4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Ardillas"/>
+        <NamedIndividual IRI="#RecomendacionP5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <NamedIndividual IRI="#Barrenadores_de_tallos_y_ramas"/>
+        <NamedIndividual IRI="#SintomasP6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Barrenadores_de_tallos_y_ramas"/>
+        <NamedIndividual IRI="#RecomendacionP1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Barrenadores_de_tallos_y_ramas"/>
+        <NamedIndividual IRI="#RecomendacionP3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Barrenadores_de_tallos_y_ramas"/>
+        <NamedIndividual IRI="#RecomendacionP4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Barrenadores_de_tallos_y_ramas"/>
+        <NamedIndividual IRI="#RecomendacionP5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <NamedIndividual IRI="#Comején_o_termitas"/>
+        <NamedIndividual IRI="#SintomasP4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Comején_o_termitas"/>
+        <NamedIndividual IRI="#RecomendacionP1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Comején_o_termitas"/>
+        <NamedIndividual IRI="#RecomendacionP3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Comején_o_termitas"/>
+        <NamedIndividual IRI="#RecomendacionP4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Comején_o_termitas"/>
+        <NamedIndividual IRI="#RecomendacionP5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <NamedIndividual IRI="#Escoba_de_bruja"/>
+        <NamedIndividual IRI="#SintomasE4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Escoba_de_bruja"/>
+        <NamedIndividual IRI="#RecomendacionE4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <NamedIndividual IRI="#Mal_Rosado"/>
+        <NamedIndividual IRI="#SintomasE9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Mal_Rosado"/>
+        <NamedIndividual IRI="#RecomendacionE7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <NamedIndividual IRI="#Mal_de_Hilachas"/>
+        <NamedIndividual IRI="#SintomasE8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Mal_de_Hilachas"/>
+        <NamedIndividual IRI="#RecomendacionE7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <NamedIndividual IRI="#Mal_de_Machete"/>
+        <NamedIndividual IRI="#SintomasE3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Mal_de_Machete"/>
+        <NamedIndividual IRI="#RecomendacionE3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <NamedIndividual IRI="#Mazorca_Negra"/>
+        <NamedIndividual IRI="#SintomasE2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Mazorca_Negra"/>
+        <NamedIndividual IRI="#RecomendacionE2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <NamedIndividual IRI="#Monalonion"/>
+        <NamedIndividual IRI="#SintomasP1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Monalonion"/>
+        <NamedIndividual IRI="#RecomendacionP1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Monalonion"/>
+        <NamedIndividual IRI="#RecomendacionP3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Monalonion"/>
+        <NamedIndividual IRI="#RecomendacionP4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Monalonion"/>
+        <NamedIndividual IRI="#RecomendacionP5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <NamedIndividual IRI="#Moniliasis"/>
+        <NamedIndividual IRI="#SintomasE1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Moniliasis"/>
+        <NamedIndividual IRI="#RecomendacionE1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <NamedIndividual IRI="#Muerte_de_Frutos_Tiernos"/>
+        <NamedIndividual IRI="#SintomasE7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Muerte_de_Frutos_Tiernos"/>
+        <NamedIndividual IRI="#RecomendacionE6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SuEjecucionEs"/>
+        <NamedIndividual IRI="#RecomendacionE1"/>
+        <NamedIndividual IRI="#EjecucionE1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SuEjecucionEs"/>
+        <NamedIndividual IRI="#RecomendacionE2"/>
+        <NamedIndividual IRI="#EjecucionE2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SuEjecucionEs"/>
+        <NamedIndividual IRI="#RecomendacionE3"/>
+        <NamedIndividual IRI="#EjecucionE3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SuEjecucionEs"/>
+        <NamedIndividual IRI="#RecomendacionE4"/>
+        <NamedIndividual IRI="#EjecucionE4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SuEjecucionEs"/>
+        <NamedIndividual IRI="#RecomendacionE5"/>
+        <NamedIndividual IRI="#EjecucionE5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SuEjecucionEs"/>
+        <NamedIndividual IRI="#RecomendacionP1"/>
+        <NamedIndividual IRI="#EjecucionP1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SuEjecucionEs"/>
+        <NamedIndividual IRI="#RecomendacionP2"/>
+        <NamedIndividual IRI="#EjecucionP2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SuEjecucionEs"/>
+        <NamedIndividual IRI="#RecomendacionP4"/>
+        <NamedIndividual IRI="#EjecucionP4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SuEjecucionEs"/>
+        <NamedIndividual IRI="#RecomendacionR"/>
+        <NamedIndividual IRI="#EjecucionR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <NamedIndividual IRI="#Roselinia"/>
+        <NamedIndividual IRI="#SintomasE5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Roselinia"/>
+        <NamedIndividual IRI="#RecomendacionR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <NamedIndividual IRI="#Trips"/>
+        <NamedIndividual IRI="#SintomasP3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Trips"/>
+        <NamedIndividual IRI="#RecomendacionP1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Trips"/>
+        <NamedIndividual IRI="#RecomendacionP3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Trips"/>
+        <NamedIndividual IRI="#RecomendacionP4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Trips"/>
+        <NamedIndividual IRI="#RecomendacionP5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <NamedIndividual IRI="#Verrugas_de_Punto_Verde"/>
+        <NamedIndividual IRI="#SintomasE10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <NamedIndividual IRI="#Zompopos"/>
+        <NamedIndividual IRI="#SintomasP5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Zompopos"/>
+        <NamedIndividual IRI="#RecomendacionP1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Zompopos"/>
+        <NamedIndividual IRI="#RecomendacionP3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Zompopos"/>
+        <NamedIndividual IRI="#RecomendacionP4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <NamedIndividual IRI="#Zompopos"/>
+        <NamedIndividual IRI="#RecomendacionP5"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#Afidos"/>
+        <Literal>Son insectos de aspecto oscuro, que atacan las hojas tiernas, flores y frutos de las plantas, suspendiendo su desarrollo, estos insectos atraen otras plagas como las hormigas.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre_Cientifico"/>
+        <NamedIndividual IRI="#Antracnosis"/>
+        <Literal>Colletotrichum gloeosporoides Penz.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre_Cientifico"/>
+        <NamedIndividual IRI="#Antracnosis"/>
+        <Literal>La Actranosis se refiere a un grupo de enfermedades fúngicas caracterizadas por el desarrollo de manchas o lesiones oscuras o hundidas, a menudo con un borde elevado, sobre el follaje afectado, tallos y frutos.
+Ataca a las ramas provocando su muerte lentamente, impide a la planta la formación de tejidos, causa lesiones en las hojas secándolas por completo.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#Ardillas"/>
+        <Literal>las ardillas desde muchos años se han convertido en una plaga que ataca al cultivo de cacao, el daño que causan es que roen la mazorca de cacao, provocando heridas que causan la pudrición del fruto.
+Las ardillas se presentan en plantaciones mal podadas y en plantaciones cercas de áreas boscosas, son consideradas unas de las plagas que más daño causan a los cacaotales.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#Barrenadores_de_tallos_y_ramas"/>
+        <Literal>Son insectos pequeños que realizan hoyos en los tallos o ramas de las plantas para depositar sus huevos, esto puede provocar que las partes afectadas se sequen y ocasionen la muerte de la planta.
+Al crecer las larvas se convierten en pupas luego de unos meses, provocando la muerte de las plantas o ramas.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#Cacao"/>
+        <Literal>El cacao es una fruta de origen tropical que proviene del árbol de cacao y que es el componente básico del chocolate.
+La planta de cacao normalmente da entre 15 y 20 frutos  y cada mazorca contiene entre 20 y 60 semillas de cacao.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre_Cientifico"/>
+        <NamedIndividual IRI="#Cacao"/>
+        <Literal>Theobroma cacao L.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#Comején_o_termitas"/>
+        <Literal>Los comejenes construyen galerías a lo largo del tronco y ramas y edifican voluminosos nidos en el propio árbol o en el suelo, estos insectos pueden ocasionar la muerte de la planta si no se trata a tiempo.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#EjecucionE1"/>
+        <Literal>Dos veces al año (Mayo y Octubre), se podan los árboles de sombra y de cacao, para controlar la humedad, para que los rayos de sol penetren hacia las ramas más bajas y para que haya mayor circulación de aire en el cacaotal.
+El sombrío no debe ser mayor del 30%.
+También se elimina el Musgo que crece sobre las ramas y el tronco, pues reduce el área de floración y sirve de “casa” para las esporas de la Monilia.
+Construir canales de drenajes o zanjas de desagüe para evitar el encharcamiento. Esto ayuda a bajar la humedad del suelo y reduce la humedad del aire en la parcela. 
+La práctica más recomendada es la poda sanitaria que consiste en eliminar los frutos infectados con síntomas de la enfermedad. En época lluviosa y de alta humedad se cortan cada 8 días y en época seca cada 15 días.
+Los frutos cortados hay que enterrarlos o amontonarlos en un lugar y taparlos con tierra u hojarasca.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#EjecucionE2"/>
+        <Literal>Antes que inicien las lluvias hay que recolectar y destruir todas las cáscaras de frutos que quedaron en los lugares de quiebre de las mazorcas cosechadas. 
+Cada ocho días hay que cortar las mazorcas enfermas, quebrar las conchas y enterrarlas en un sitio apartado de la parcela de cacao. Esto se hace para evitar que el hongo infecte otros frutos o cause cáncer en los troncos y ramas de los árboles de cacao.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#EjecucionE3"/>
+        <Literal>Se debe aplicar en las heridas una pasta a base de Sulfato de Cobre y Cal, para evitar la contaminación de las heridas mientras cicatrizan. Si se muere todo el árbol, es necesario destruirlo con todas sus raíces; se saca de la parcela y sé que quema.
+Después de la poda, deben desinfectarse las herramientas de trabajo, metiéndola al menos dos veces en el vástago o tallo de guineo, plátano o banano.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#EjecucionE4"/>
+        <Literal>La utilización de agentes biológicos como los Trichoderma son hongos que colonizan rápido en los árboles y actúan sobre la escoba de bruja inhibiendo su desarrollo. A los 3 0 4 días después de su aplicación se observa  control del patógeno, es importante realizar el monitoreo de la evaluación constante de la enfermedad.
+
+El control cultural se trata de realizar podas oportunas de las plantas que la haran más fuertes y vigorosas al ataque de enfermedades y plagas.
+Reducir la altura de las plantas de cacao para favorece la entrada de luz y circulación de aire en la plantación.
+Establecer un adecuado sistema de drenaje que evite tener charcos de agua despues de la lluvias.
+
+Eliminar las ramas infectadas con escoba de bruja las cuales se deben eliminar por  lo menos de 15 a 20 cm por debajo del punto de infección.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#EjecucionE5"/>
+        <Literal>El control de la Antracnosis se basa en la poda y en la destrucción de todas las ramas y mazorcas enfermas o muertas. Cuando el daño en las hojas y cogollos es muy severo, conviene después de la poda hacer unas tres aplicaciones de caldo Bordelés cada quince días. Esto mismo debe hacerse como control preventivo en el vivero. 
+
+En el vivero, en el suelo de las bolsas, una capa gruesa de aserrín, granza de arroz u otros materiales, asegura que el hongo no pase del suelo a las hojas de las plantitas a través del salpique del agua.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#EjecucionP1"/>
+        <Literal>Realizar después de las cosechas para evitar que las plagas se reproduzcan en el rastrojo y ataquen al cacao, se debe de cortar el rastrojo y utilizarlo como insumo para hacer aboneras.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#EjecucionP2"/>
+        <Literal>Sirve para cambiar el ambiente y afectar a muchos insectos que atacan las diferentes partes de la planta de cacao y además transmiten enfermedades. 
+Bajando la altura del cacao y sombras y disminuyendo la cantidad de árboles de sombras en el cacaotal, se disminuye y combate culturalmente a las ardillas.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#EjecucionP4"/>
+        <Literal>Después de cortar las partes enfermas de las plantas de cacao, estas deben ser sacadas del plantío y quemarlas.
+Otro control es bajar del árbol y quemar las troneras o casas de
+los comejenes o termitas.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#EjecucionR"/>
+        <Literal>Cuando se presenta un ataque, se debe construir un zanjo de unos 30 x 30 cm que rodee los árboles afectados y al menos una planta sana en cada dirección.
+
+Eliminar los árboles enfermos, con todo y raíces, quemando los residuos en el mismo sitio.
+
+Todas las herramientas usadas en el proceso se deben desinfectar con formalina o formol al 10%, hipoclorito de sodio u otro producto similar.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#Escoba_de_bruja"/>
+        <Literal>Una de las enfermedades más dañinas del cacao, ataca las diferentes partes de la planta especialmente a los cojinetes florales y frutos jóvenes, además afecta a los tejidos en crecimiento de la planta.
+Esta enfermedad ataca a las ramas principales y secundarias provocando un crecimiento anormal en las mazorcas debido a un desbalance hormonal inducido. El medio de transmisión más común de esta enfermedad es la semilla.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre_Cientifico"/>
+        <NamedIndividual IRI="#Escoba_de_bruja"/>
+        <Literal>Moniliophthora perniciosa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#Mal_Rosado"/>
+        <Literal>Ataca las ramas, ramillas y el tronco del cacao, cubriéndolos con una costra blanca que luego se vuelve rosada.
+Generalmente se da en árboles jóvenes dispersos en la plantación, lo que limita su importancia económica. El hongo se propaga por esporas llevadas por el viento y sobrevive en las lesiones viejas.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre_Cientifico"/>
+        <NamedIndividual IRI="#Mal_Rosado"/>
+        <Literal>Corticium salmonicolo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#Mal_de_Hilachas"/>
+        <Literal>El hongo Pellicularia koleroga produce hilos de micelio de color blancuzco que avanzan por el tallo y las hojas.
+La enfermedad, usualmente, no causa mayores daños, pero en condiciones extremas puede producir la muerte de ramas. 
+La enfermedad se produce en condiciones de abandono o excesiva sombra de las plantaciones. Se propaga a través del contacto directo, los insectos y las herramientas de trabajo.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre_Cientifico"/>
+        <NamedIndividual IRI="#Mal_de_Hilachas"/>
+        <Literal>Pellicularia koleroga</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#Mal_de_Machete"/>
+        <Literal>Aparición de hongos que ingresan por las heridas en el tronco y raíces, causado por insectos o por el machete y otras herramientas sin desinfectar, esta enfermedad provoca la muerte de la planta si no se controla a tiempo.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre_Cientifico"/>
+        <NamedIndividual IRI="#Mal_de_Machete"/>
+        <Literal>Ceratocystis fimbriata Ell. &amp; Haist.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#Mazorca_Negra"/>
+        <Literal>Esta enfermedad es originaria de Africa, causada por el hongo de Phytophthora, ataca diferentes partes de la planta como tallos, hojas, flores pero principalmente al fruto presentándose una mancha de color café oscuro en él, el ciclo de vida de esta enfermedad es de alrededor de 11 días.
+Puede ser traspasada a otras plantas a través de la lluvia o por herramientas no desinfectadas después de su uso.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre_Cientifico"/>
+        <NamedIndividual IRI="#Mazorca_Negra"/>
+        <Literal>Phytophthora sp</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#Monalonion"/>
+        <Literal>Son insectos que atacan al fruto, chupando la savia de la parte exterior del fruto, lo que ocasiona malformaciones del fruto.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#Moniliasis"/>
+        <Literal>Una de las principales enfermedades que afectan la producción de cacao, ataca a las mazorca, puede acabar con el 95% del fruto.
+Esta enfermedad ataca solo a los frutos en cualquier etapa de desarrollo, es considerada una de las enfermedades más peligrosa que ataca a este cultivo llegando a provocar la pérdida de la producción por completo; esta enfermedad tiene un tiempo de duración de entre sesenta y setenta días aproximadamente.
+El hongo que causa la Moniliasis produce millones de esporas, que se multiplican rápidamente cuando el ambiente es favorable, aumentando su agresividad.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre_Cientifico"/>
+        <NamedIndividual IRI="#Moniliasis"/>
+        <Literal>Moniliophthora roreri (Ciff y Par) Evans.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#Muerte_de_Frutos_Tiernos"/>
+        <Literal>Tambien conocida como muerte prematura es causada por el virus Cherelle Wilt, y está asociada con la reducción del crecimiento del tallo, ciertos frutos tiernos o jóvenes no llegan a la etapa de madurez, se van secando poco a poco en el árbol, en el transcurso de las primeras fases de su desarrollo.
+Destruye los frutos en su etapa prematura y puede reducirlos en un 20 a 90% provocado por un problema de regulación fisiológica, causada por cambios ambientales adversos como cambios fuertes de temperatura, cambios en la humedad del suelo, fertilidad y textura del suelo, que afectan a los frutos en desarrollo.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre_Cientifico"/>
+        <NamedIndividual IRI="#Muerte_de_Frutos_Tiernos"/>
+        <Literal>Cherelle Wilt o marchites</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#RecomendacionE1"/>
+        <Literal>Realizar trabajos culturales en el cacaotal , al iniciar el ciclo de producción, o inicio del período de lluvias,  para que los árboles de cacao se preparen para la próxima cosecha y sean mas resistentes a esta enfermedad.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#RecomendacionE2"/>
+        <Literal>Bajar la humedad del aire en el cacaotal, hay que podar bien los árboles de cacao y de sombras, eliminar las malas hierbas y realizar un buen sistema
+de canales de drenaje.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#RecomendacionE3"/>
+        <Literal>El combate cultural del Mal de Machete es preventivo y consiste en cortar y quemar todas las ramas afectadas.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#RecomendacionE4"/>
+        <Literal>Aplicacion de Agentes Biologicos.
+Control Natural.
+Control Mecánico, consiste en la eliminación de brotes, cojines florales y ramas afectadas.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#RecomendacionE5"/>
+        <Literal>Es importante un buen mantenimiento a los árboles de sombra permanente, para que el cacao nunca quede totalmente expuesto a los rayos directos del sol.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#RecomendacionE6"/>
+        <Literal>Una planta de cacao que recibe buena nutrición, luz y agua en cantidades adecuadas, produce más y mejores frutos.
+
+Mejorar la fertilidad del suelo mediante la aplicación e incorporación de la materia orgánica.
+
+Mantener un porcentaje adecuado de sombra para que exista un ambiente fresco en el cacaotal y una mejor circulación del aire.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#RecomendacionE7"/>
+        <Literal>Un buen manejo de la plantación evita y controla la enfermedad. 
+
+Su combate se realiza cortando y eliminando las ramas enfermas, tras lo cual se deben desinfectar las herramientas usadas.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#RecomendacionE8"/>
+        <Literal>Se debe evitar la propagación de las plantas enfermas. Las plantas muy
+dañadas deben eliminarse totalmente.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#RecomendacionP1"/>
+        <Literal>Eliminar los rastrojos de cultivos anuales.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#RecomendacionP2"/>
+        <Literal>Podas y regulación de sombras.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#RecomendacionP3"/>
+        <Literal>Controlar las malas hierbas.
+Ya que sirven de refugio a muchos insectos que son plagas del cultivo de cacao y transmisores de enfermedades.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#RecomendacionP4"/>
+        <Literal>Eliminar los restos de plantas afectadas.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#RecomendacionP5"/>
+        <Literal>Control natural
+En la naturaleza, los insectos tienen sus propios controles naturales es decir, unos insectos matan a otros para sobrevivir. A estos se les conoce como depredadores o insectos benéficos.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#RecomendacionR"/>
+        <Literal>De forma preventiva, la eliminación de los árboles viejos y enfermos debe hacerse en forma rápida, preferiblemente inyectando un herbicida en el tronco. 
+
+Un buen programa de abonamiento y un manejo ecológico de la plantación previenen la enfermedad.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#Roselinia"/>
+        <Literal>La roselinia daña severamente el sistema radical y la base del tallo.
+La enfermedad se produce en parches que avanzan rápidamente, matando las plantas de cacao y algunas otras especies usadas como sombra o como cultivos asociados al cacao.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre_Cientifico"/>
+        <NamedIndividual IRI="#Roselinia"/>
+        <Literal>Rosellinia pepo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#SintomasE1"/>
+        <Literal>Puntos Grasientos
+Abultamiento o Gibas
+Madurez prematura
+Mancha Cafe
+Polvo blanco y cremoso.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#SintomasE10"/>
+        <Literal>El fruto es muy pequeño, apareciendo como brotes que no llegan a desarrollarse.
+Anormalidades en el crecimiento de tronco y ramas.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#SintomasE2"/>
+        <Literal>Manchas de color café oscuro en la mazorca.
+Las hojas se secan y se enrollan.
+Aparecen manchas oscuras y húmedas en el tallo expulsando un líquido pegajoso.
+Aparecen manchas coloradas dentro del tallo.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#SintomasE3"/>
+        <Literal>Las hojas se secan, y se ponen de color amarillas.
+Las hojas secas permanecen pegadas en la planta ya muerta, por varios días.
+Las partes muertas del tronco se ponen de color rojo oscuro.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#SintomasE4"/>
+        <Literal>Brotes mal formados.
+Formación de brotes vegetativos en los cojinetes florales.
+Mazorcas anormales.
+Manchas necróticas en la corteza de frutos jóvenes y adultos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#SintomasE5"/>
+        <Literal>El follaje de la planta se torna amarillento.
+Las ramas comienzan a secarse y produce la muerte de la planta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#SintomasE6"/>
+        <Literal>Las hojas se van secando del borde hacia adentro, una vez secas completamente se caen dejando las ramillas peladas.
+En la mazorca aparecen  manchas de color café y de apariencia hundida.
+Sobre la mancha en la mazorca aparece una felpa de color rosada.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#SintomasE7"/>
+        <Literal>-El fruto tierno presenta una apariencia amarillenta, marchitándose poco a poco.
+-Plantas con poco vigor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#SintomasE8"/>
+        <Literal>Aparecen hilos de micelio de color blancuzco que se ramifican en el énves de las hojas en forma de talaraña.
+Las hojas comienzan a secarse.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#SintomasE9"/>
+        <Literal>Aparecion de capas blancas en el tallo y ramas de la planta que luego se convierte en color rosado.
+Defoliacion y secamientos de las ramas.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#SintomasP1"/>
+        <Literal>Aparecen ampollas llenas de liquido en la mazorca.
+Ocasiona malformaciones del fruto.
+Reducción del tamaño.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#SintomasP2"/>
+        <Literal>Secreciones azucaradas en tallas y ramas.
+Enroscamiento de las hojas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#SintomasP3"/>
+        <Literal>Perforaciones en la superficie de las hojas tiernas y frutos.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#SintomasP4"/>
+        <Literal>Daños en lugares de la planta donde se forman las flores y fruto.
+Nidos en el tronco y rama de la planta.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#SintomasP5"/>
+        <Literal>Cortan las hojas hasta dejar las ramillas peladas.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#SintomasP6"/>
+        <Literal>Aparecen hoyos en el tallo y ramas de la planta.
+Comienzan a secarse las partes infectadas.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#SintomasP7"/>
+        <Literal>Mordiscos en las Mazorca  especialmente en las maduras.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#Trips"/>
+        <Literal>Son insectos diminutos aproximadamente de 1 a 12 mm de longitud, se alimentan de la savia de las plantas.
+Estos insectos se incrementan en periodos de sequias o en plantaciones con falta de sombra.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#Verrugas_de_Punto_Verde"/>
+        <Literal>Tambien es conocida como Bubas o agallas, es un grupo de anormalidades en el crecimiento que se presentan en el tronco y las ramas del cacao y que se conocen como agallas de puntos verdes, floral, de abanico, perilla y lobular.
+Este hongo produce gran cantidad de brotes muy pequeños que no llegan a desarrollarse, lo que afecta el crecimiento y la fructificación de la planta.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre_Cientifico"/>
+        <NamedIndividual IRI="#Verrugas_de_Punto_Verde"/>
+        <Literal>Albonectria rigidiuscula</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Descripcion"/>
+        <NamedIndividual IRI="#Zompopos"/>
+        <Literal>Son hormigas grandes de color café que se alimentan del hongo que cultivan en su zompopera al descomponerse las hojas que cortan de las plantas.
+Los zompopos son cortadores de hojas, pero en épocas de floración de la planta, también cortan las flores, reduciendo la producción del fruto en la planta.
+Todo el material que cortan lo llevan a sus nidos para cultivar un hongo que les sirve de alimento a toda la colonia. De allí que su control debe dirigirse hacia la
+colonia.</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#EsSintomaDe"/>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#EsTratamientoDe"/>
+        <ObjectProperty IRI="#SetrataCon"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EsSintomaDe"/>
+        <Class IRI="#Sintomas"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EsTratamientoDe"/>
+        <Class IRI="#Ejecucion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EsTratamientoDe"/>
+        <Class IRI="#Recomendaciones"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <Class IRI="#Cultivo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <Class IRI="#Enfermedades"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <Class IRI="#Mayor_Riesgo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <Class IRI="#Menor_Riesgo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <Class IRI="#Plagas"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <Class IRI="#Enfermedades"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <Class IRI="#Mayor_Riesgo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <Class IRI="#Menor_Riesgo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <Class IRI="#Plagas"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#SuEjecucionEs"/>
+        <Class IRI="#Recomendaciones"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EsSintomaDe"/>
+        <Class IRI="#Cultivo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EsSintomaDe"/>
+        <Class IRI="#Enfermedades"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EsSintomaDe"/>
+        <Class IRI="#Mayor_Riesgo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EsSintomaDe"/>
+        <Class IRI="#Menor_Riesgo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EsSintomaDe"/>
+        <Class IRI="#Plagas"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EsTratamientoDe"/>
+        <Class IRI="#Enfermedades"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EsTratamientoDe"/>
+        <Class IRI="#Mayor_Riesgo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EsTratamientoDe"/>
+        <Class IRI="#Menor_Riesgo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EsTratamientoDe"/>
+        <Class IRI="#Plagas"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#PresentaSintomas"/>
+        <Class IRI="#Sintomas"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <Class IRI="#Ejecucion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#SetrataCon"/>
+        <Class IRI="#Recomendaciones"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#SuEjecucionEs"/>
+        <Class IRI="#Ejecucion"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Descripcion"/>
+        <Class IRI="#Ejecucion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Descripcion"/>
+        <Class IRI="#Enfermedades"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Descripcion"/>
+        <Class IRI="#Mayor_Riesgo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Descripcion"/>
+        <Class IRI="#Menor_Riesgo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Descripcion"/>
+        <Class IRI="#Plagas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Descripcion"/>
+        <Class IRI="#Recomendaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Descripcion"/>
+        <Class IRI="#Sintomas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre_Cientifico"/>
+        <Class IRI="#Enfermedades"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre_Cientifico"/>
+        <Class IRI="#Mayor_Riesgo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre_Cientifico"/>
+        <Class IRI="#Menor_Riesgo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre_Cientifico"/>
+        <Class IRI="#Plagas"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Descripcion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Nombre_Cientifico"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

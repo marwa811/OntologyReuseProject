@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY swrlx "http://www.w3.org/2003/11/swrlx#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY ruleml "http://www.w3.org/2003/11/ruleml#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owlx "http://www.w3.org/2003/05/owl-xml#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY kaon2 "http://kaon2.semanticweb.org/internal#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY HospitalEquipment "http://www.ICPS/ontologies/HospitalEquipment.owl#" >
+    <!ENTITY ICPSMerged "http://www.apsf.net.au/ontologies/ICPSMerged.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ICPS/ontologies/"
+     xml:base="http://www.ICPS/ontologies/HospitalEquipment.owl"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:kaon2="http://kaon2.semanticweb.org/internal#"
+     xmlns:owlx="http://www.w3.org/2003/05/owl-xml#"
+     xmlns:ICPSMerged="http://www.apsf.net.au/ontologies/ICPSMerged.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrlx="http://www.w3.org/2003/11/swrlx#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:HospitalEquipment="http://www.ICPS/ontologies/HospitalEquipment.owl#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ruleml="http://www.w3.org/2003/11/ruleml#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="">
+        <dc:creator
+            >Mari Carmen Su&#225;rez-Figueroa</dc:creator>
+        <dc:creator
+            >Elena Montiel-Ponsoda</dc:creator>
+        <owl:priorVersion>1.0</owl:priorVersion>
+        <dc:creator>Mar&#237;a Poveda</dc:creator>
+        <dc:creator>Oscar Corcho</dc:creator>
+        <owl:versionInfo>2.0</owl:versionInfo>
+        <rdfs:comment xml:lang="en"
+            >Ontology about hospital equipment.</rdfs:comment>
+        <rdfs:comment xml:lang="en"
+            >This work has been carried out by the Ontological Engineering Group, using sources from the University of Saint Etienne and the Australian Patient Safety Foundation, and supported by the World Health Organisation under the International Classification for Patient Safety programme.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#Anti-embolicEquipmentDevice -->
+
+    <owl:Class rdf:about="#Anti-embolicEquipmentDevice">
+        <rdfs:label xml:lang="en"
+            >Anti-embolic equipment device</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#MedicalEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#CTScanningMachine -->
+
+    <owl:Class rdf:about="#CTScanningMachine">
+        <rdfs:label xml:lang="en"
+            >CT scanning machine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#TherapeuticEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#CastOrthopaedicDevice -->
+
+    <owl:Class rdf:about="#CastOrthopaedicDevice">
+        <rdfs:label xml:lang="en"
+            >Cast orthopaedic device</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OrthopaedicApplianceEquipmentDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#CrutchesOrthopaedicDevice -->
+
+    <owl:Class rdf:about="#CrutchesOrthopaedicDevice">
+        <rdfs:label xml:lang="en"
+            >Crutches orthopaedic device</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OrthopaedicApplianceEquipmentDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#EndotrachealTubesEquipment -->
+
+    <owl:Class rdf:about="#EndotrachealTubesEquipment">
+        <rdfs:label xml:lang="en"
+            >Endotracheal tubes equipment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#TubesEquipmentDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#GastrostomyTubesEquipment -->
+
+    <owl:Class rdf:about="#GastrostomyTubesEquipment">
+        <rdfs:label xml:lang="en"
+            >Gastrostomy tubes equipment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#TubesEquipmentDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#IntermittentPressureDevicesAntiEmbolicEquipment -->
+
+    <owl:Class rdf:about="#IntermittentPressureDevicesAntiEmbolicEquipment">
+        <rdfs:label xml:lang="en"
+            >Intermittent pressure devices anti-embolic equipment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Anti-embolicEquipmentDevice"/>
+        <owl:disjointWith rdf:resource="#PressureStockingAntiEmbolicEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#IntraoperativePositioningEquipmentDevice -->
+
+    <owl:Class rdf:about="#IntraoperativePositioningEquipmentDevice">
+        <rdfs:label xml:lang="en"
+            >Intraoperative positioning equipment device</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#MedicalEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#Lifter -->
+
+    <owl:Class rdf:about="#Lifter">
+        <rdfs:label xml:lang="en">Lifter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#TherapeuticEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#MagneticResonanceImagingMachine -->
+
+    <owl:Class rdf:about="#MagneticResonanceImagingMachine">
+        <rdfs:label xml:lang="en"
+            >Magnetic resonanceImaging machine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#TherapeuticEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#MedicalEquipment -->
+
+    <owl:Class rdf:about="#MedicalEquipment">
+        <rdfs:label xml:lang="en"
+            >Medical appliance</rdfs:label>
+        <rdfs:label xml:lang="en">Medical device</rdfs:label>
+        <rdfs:label xml:lang="en"
+            >Medical equipment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#NasalProngsOxygenDeliveryDevice -->
+
+    <owl:Class rdf:about="#NasalProngsOxygenDeliveryDevice">
+        <rdfs:label xml:lang="en"
+            >Nasal prongs oxygen delivery device</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OxygenDeliveryEquipmentDevice"/>
+        <owl:disjointWith rdf:resource="#OxygenMaskOxygenDeliveryDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#NasogastricTubesEquipment -->
+
+    <owl:Class rdf:about="#NasogastricTubesEquipment">
+        <rdfs:label xml:lang="en"
+            >Nasograstric tubes equipment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#TubesEquipmentDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#OperatingTheatreTable -->
+
+    <owl:Class rdf:about="#OperatingTheatreTable">
+        <rdfs:label xml:lang="en"
+            >Operating theatre table</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#TherapeuticEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#OrthopaedicApplianceEquipmentDevice -->
+
+    <owl:Class rdf:about="#OrthopaedicApplianceEquipmentDevice">
+        <rdfs:label xml:lang="en"
+            >Orthopaedic appliance equipment device</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#MedicalEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#OrthoticsOrthopaedicDevice -->
+
+    <owl:Class rdf:about="#OrthoticsOrthopaedicDevice">
+        <rdfs:label xml:lang="en"
+            >Orthotics orthopaedic device</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OrthopaedicApplianceEquipmentDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#OxygenDeliveryEquipmentDevice -->
+
+    <owl:Class rdf:about="#OxygenDeliveryEquipmentDevice">
+        <rdfs:label xml:lang="en"
+            >Oxygen delivery equipment device</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#MedicalEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#OxygenMaskOxygenDeliveryDevice -->
+
+    <owl:Class rdf:about="#OxygenMaskOxygenDeliveryDevice">
+        <rdfs:label xml:lang="en"
+            >Oxygen mask oxygen delivery device</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OxygenDeliveryEquipmentDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#ParallelBars -->
+
+    <owl:Class rdf:about="#ParallelBars">
+        <rdfs:label xml:lang="en">Parallel bars</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#TherapeuticEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#PathophysiologyFactor -->
+
+    <owl:Class rdf:about="#PathophysiologyFactor">
+        <rdfs:label xml:lang="en"
+            >Pathophysiology factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#PhysiotherapyBed -->
+
+    <owl:Class rdf:about="#PhysiotherapyBed">
+        <rdfs:label xml:lang="en"
+            >Physiotherapy bed</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#TherapeuticEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#PressureStockingAntiEmbolicEquipment -->
+
+    <owl:Class rdf:about="#PressureStockingAntiEmbolicEquipment">
+        <rdfs:label xml:lang="en"
+            >Pressure stocking anti-embolic equipment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Anti-embolicEquipmentDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#ProstheticsOrthopaedicDevice -->
+
+    <owl:Class rdf:about="#ProstheticsOrthopaedicDevice">
+        <rdfs:label xml:lang="en"
+            >Prosthetics orthopaedic device</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OrthopaedicApplianceEquipmentDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#RadiologyTable -->
+
+    <owl:Class rdf:about="#RadiologyTable">
+        <rdfs:label xml:lang="en">Radiology table</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#TherapeuticEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#SplintOrthopaedicDevice -->
+
+    <owl:Class rdf:about="#SplintOrthopaedicDevice">
+        <rdfs:label xml:lang="en"
+            >Splint orthopaedic device</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OrthopaedicApplianceEquipmentDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#TherapeuticEquipment -->
+
+    <owl:Class rdf:about="#TherapeuticEquipment">
+        <rdfs:label xml:lang="en"
+            >Therapeutic equipment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#MedicalEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#TiltTable -->
+
+    <owl:Class rdf:about="#TiltTable">
+        <rdfs:label xml:lang="en">Tilt table</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#TherapeuticEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#TracheostomyTubesEquipment -->
+
+    <owl:Class rdf:about="#TracheostomyTubesEquipment">
+        <rdfs:label xml:lang="en"
+            >Tracheostomy tubes equipment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#TubesEquipmentDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#TubesEquipmentDevice -->
+
+    <owl:Class rdf:about="#TubesEquipmentDevice">
+        <rdfs:label xml:lang="en"
+            >Tubes equipment device</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#MedicalEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#UrinaryCatheterTubesEquipment -->
+
+    <owl:Class rdf:about="#UrinaryCatheterTubesEquipment">
+        <rdfs:label xml:lang="en"
+            >Urinary catheter tubes equipment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#TubesEquipmentDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#EndotrachealTubesEquipment"/>
+            <rdf:Description rdf:about="#GastrostomyTubesEquipment"/>
+            <rdf:Description rdf:about="#NasogastricTubesEquipment"/>
+            <rdf:Description rdf:about="#TracheostomyTubesEquipment"/>
+            <rdf:Description rdf:about="#UrinaryCatheterTubesEquipment"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#CastOrthopaedicDevice"/>
+            <rdf:Description rdf:about="#CrutchesOrthopaedicDevice"/>
+            <rdf:Description rdf:about="#OrthoticsOrthopaedicDevice"/>
+            <rdf:Description rdf:about="#ProstheticsOrthopaedicDevice"/>
+            <rdf:Description rdf:about="#SplintOrthopaedicDevice"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

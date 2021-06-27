@@ -1,0 +1,462 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://carre.kmi.open.ac.uk/ontology/educational.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://carre.kmi.open.ac.uk/ontology/educational.owl"
+     versionIRI="https://carre.kmi.open.ac.uk/ontology/educational.owl/1.0.0">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#enrichment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#user"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#date_accepted"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#date_ranked"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#date_rated"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#enrichment_for_article"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#for_article"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#rank_for_article"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#rated_by_user"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#rating_for_article"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#accuracy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#alternative_title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#categories"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#comprehensiveness"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#depth_of_coverage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#educational_level"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#icd10"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#language"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mesh"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#position"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#query"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rating_criteria"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#relevancy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#snippet"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#source"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#total"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#umls"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#url"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#validity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#views"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#websource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#wordcount"/>
+    </Declaration>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#enrichment_for_article"/>
+        <ObjectProperty IRI="#for_article"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#rank_for_article"/>
+        <ObjectProperty IRI="#for_article"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#rating_for_article"/>
+        <ObjectProperty IRI="#for_article"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#date_accepted"/>
+        <Class IRI="#object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#date_ranked"/>
+        <Class IRI="#rank"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#date_rated"/>
+        <Class IRI="#rating"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#enrichment_for_article"/>
+        <Class IRI="#enrichment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#rank_for_article"/>
+        <Class IRI="#rank"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#rated_by_user"/>
+        <Class IRI="#rating"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#rating_for_article"/>
+        <Class IRI="#rating"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#date_accepted"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#date"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#date_ranked"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#date"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#date_rated"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#date"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#enrichment_for_article"/>
+        <Class IRI="#object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#for_article"/>
+        <Class IRI="#object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#rank_for_article"/>
+        <Class IRI="#object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#rated_by_user"/>
+        <Class IRI="#user"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#rating_for_article"/>
+        <Class IRI="#object"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#accuracy"/>
+        <DataProperty IRI="#rating_criteria"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#comprehensiveness"/>
+        <DataProperty IRI="#rating_criteria"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#depth_of_coverage"/>
+        <DataProperty IRI="#rating_criteria"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#educational_level"/>
+        <DataProperty IRI="#rating_criteria"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#relevancy"/>
+        <DataProperty IRI="#rating_criteria"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#validity"/>
+        <DataProperty IRI="#rating_criteria"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#accuracy"/>
+        <Class IRI="#rating"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#alternative_title"/>
+        <Class IRI="#object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#categories"/>
+        <Class IRI="#object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#comprehensiveness"/>
+        <Class IRI="#rating"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#depth_of_coverage"/>
+        <Class IRI="#rating"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#educational_level"/>
+        <Class IRI="#rating"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#icd10"/>
+        <Class IRI="#enrichment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#language"/>
+        <Class IRI="#object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mesh"/>
+        <Class IRI="#enrichment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#position"/>
+        <Class IRI="#rank"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#query"/>
+        <Class IRI="#rank"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rating_criteria"/>
+        <Class IRI="#rating"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#relevancy"/>
+        <Class IRI="#rating"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#snippet"/>
+        <Class IRI="#object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#source"/>
+        <Class IRI="#object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#title"/>
+        <Class IRI="#object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#total"/>
+        <Class IRI="#rank"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#umls"/>
+        <Class IRI="#enrichment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#url"/>
+        <Class IRI="#object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#validity"/>
+        <Class IRI="#rating"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#views"/>
+        <Class IRI="#object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#websource"/>
+        <Class IRI="#object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#wordcount"/>
+        <Class IRI="#object"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#accuracy"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#alternative_title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#categories"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#comprehensiveness"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#depth_of_coverage"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#educational_level"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#icd10"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#language"/>
+        <Datatype abbreviatedIRI="xsd:language"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mesh"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#position"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#query"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#relevancy"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#snippet"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#source"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#total"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#umls"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#url"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#validity"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#views"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#websource"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#wordcount"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DisjointDataProperties>
+        <DataProperty IRI="#icd10"/>
+        <DataProperty IRI="#mesh"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="#icd10"/>
+        <DataProperty IRI="#umls"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="#mesh"/>
+        <DataProperty IRI="#umls"/>
+    </DisjointDataProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#icd10</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">ICD10</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#mesh</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">MESH</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#object</IRI>
+        <IRI>#object</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#umls</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">UMLS</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,3147 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/shoshana/ontologies/2014/8/untitled-ontology-8"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/shoshana/ontologies/2014/8/untitled-ontology-8">
+    <Prefix name="" IRI="http://www.semanticweb.org/shoshana/ontologies/2014/8/untitled-ontology-8"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An ontology describing enzyme sequence-structure-function relationships</Literal>
+    </Annotation>
+    <Declaration>
+        <ObjectProperty IRI="#utilizedBySF"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#scheme_description"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStructure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#doi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sfd_end_num"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#alignment3"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#blast_pident"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSFDMemberOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#authors"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#classification"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#macie_id"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSFDomainOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#het_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#end_num"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#resolution"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hmm3"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFromOrganism"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#the_seed_fig_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#synonym"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#organism_name"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConservedChemicalCapability"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#active_site_desc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConservedFunctionalResidue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#volume"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cofactor_type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sfd_start_num"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#domain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FunctionalDomain"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#start_page"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#taxon_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#macie"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#journal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#struct_macie_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fd_residue_num"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rxn_scheme_e_code"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cofactor_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#assoc_e_code"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isComponentOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuperfamilyDomain"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#curation_agent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFnAssignmentRef"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#function"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nc_domain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AminoAcidResidue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReactionComponent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#amino_acid_type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Superfamily"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reaction"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#align_residue_num"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tc_domain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasChemicalCapability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMemberOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isImplementedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pubmed_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#uniprot_acc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FDStructureAssociation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#protein_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#created"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#smiles"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pdb_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ref_title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ccc_description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pdb_sequence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFDStructAssoc"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maps_via_uniprot"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConservedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#active_site_img"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#quest_for_orthologs_proteome_id"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubfam"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStructFDAssoc"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rhea_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#uniprot_protein_name"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSFECodeRef"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#enz_residue_num"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#title"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Family"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#stoichiometry"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tc_full"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reference"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fdgroup_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#uniprot_secondary_acc"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#phylum"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pdb_title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#compound_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#car_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isParticipantIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSchemeFDAssoc"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FDSchemeAssociation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hash"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#updated"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#image_file"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#directionality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#chebi_accession"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#refseq_acc"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#reaction_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#genbank_acc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReactionScheme"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#issue_num"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#start_num"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#utilizesCofactor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#kegg_id"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasReference"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ezcatdb_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#microbes_online_locus_id"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStructRef"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubSub"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fam_assgnmnt_e_code"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasImageStruct"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#blast_pct_align"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#reaction_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFunctionalDomainOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMemberOfSuprafam"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#uniprot_ec_number"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fig_id"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Enzyme"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#swissprot_id"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSFDomainOfFD"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#curator_notes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fd_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nc_full"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#active_site_session"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#uniprot_ref_proteome_id"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FDFunctionalResidue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#scheme_name"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFGDescripRef"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#swissprot_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#year"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#division"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMemberOfSub"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#curation_status"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFDSchemeAssoc"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#superfam_assgnmnt_e_code"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#compound_source"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#struct_ezcatdb_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ec"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#valid_until"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#trembl_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#kingdom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cofactor_image_file"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#patric_cid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subgroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMemberOfSuperfam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cofactor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#image_legend"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cog"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sequence"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#blast_evalue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Suprafamily"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#function_e_code"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#group_type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#end_page"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mutant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#abstract"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFamECodeRef"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FDGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organism"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ConservedFunctionalResidue"/>
+        <Class IRI="#AminoAcidResidue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FDFunctionalResidue"/>
+        <Class IRI="#AminoAcidResidue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Family"/>
+        <Class IRI="#FDGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Subgroup"/>
+        <Class IRI="#FDGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Superfamily"/>
+        <Class IRI="#FDGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Suprafamily"/>
+        <Class IRI="#FDGroup"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AminoAcidResidue"/>
+        <Class IRI="#Cofactor"/>
+        <Class IRI="#ConservedChemicalCapability"/>
+        <Class IRI="#Enzyme"/>
+        <Class IRI="#FDGroup"/>
+        <Class IRI="#FDSchemeAssociation"/>
+        <Class IRI="#FDStructureAssociation"/>
+        <Class IRI="#FunctionalDomain"/>
+        <Class IRI="#Organism"/>
+        <Class IRI="#Reaction"/>
+        <Class IRI="#ReactionComponent"/>
+        <Class IRI="#ReactionScheme"/>
+        <Class IRI="#Reference"/>
+        <Class IRI="#Structure"/>
+        <Class IRI="#SuperfamilyDomain"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ConservedFunctionalResidue"/>
+        <Class IRI="#FDFunctionalResidue"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Family"/>
+        <Class IRI="#Subgroup"/>
+        <Class IRI="#Superfamily"/>
+        <Class IRI="#Suprafamily"/>
+    </DisjointClasses>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasChemicalCapability"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasFamECodeRef"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasImageStruct"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasReference"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSFECodeRef"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isConservedBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isFunctionalDomainOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isMemberOfSub"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isMemberOfSuperfam"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isMemberOfSuprafam"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isPartOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isParticipantIn"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isSFDMemberOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isSFDomainOf"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasFDSchemeAssoc"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasFDStructAssoc"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSchemeFDAssoc"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasStructFDAssoc"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSubSub"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSubfam"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isImplementedBy"/>
+    </InverseFunctionalObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasChemicalCapability"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasFDSchemeAssoc"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasFDStructAssoc"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasFGDescripRef"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasFamECodeRef"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasFnAssignmentRef"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasImageStruct"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasReference"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSFECodeRef"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSchemeFDAssoc"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasStructFDAssoc"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasStructRef"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasStructure"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSubSub"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSubfam"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isComponentOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isConservedBy"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isFromOrganism"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isFunctionalDomainOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isImplementedBy"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isMemberOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isMemberOfSub"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isMemberOfSuperfam"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isMemberOfSuprafam"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isPartOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isParticipantIn"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isSFDMemberOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isSFDomainOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isSFDomainOfFD"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#utilizedBySF"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#utilizesCofactor"/>
+    </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasChemicalCapability"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasFDSchemeAssoc"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasFDStructAssoc"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasFGDescripRef"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasFamECodeRef"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasFnAssignmentRef"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasImageStruct"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasReference"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasSFECodeRef"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasSchemeFDAssoc"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasStructFDAssoc"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasStructRef"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasStructure"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasSubSub"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasSubfam"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isComponentOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isConservedBy"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isFromOrganism"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isFunctionalDomainOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isImplementedBy"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isMemberOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isMemberOfSub"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isMemberOfSuperfam"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isMemberOfSuprafam"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isPartOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isParticipantIn"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isSFDMemberOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isSFDomainOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isSFDomainOfFD"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#utilizedBySF"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#utilizesCofactor"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasChemicalCapability"/>
+        <Class IRI="#FDGroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFDSchemeAssoc"/>
+        <Class IRI="#FunctionalDomain"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFDStructAssoc"/>
+        <Class IRI="#FunctionalDomain"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFGDescripRef"/>
+        <Class IRI="#FDGroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFamECodeRef"/>
+        <Class IRI="#FunctionalDomain"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFnAssignmentRef"/>
+        <Class IRI="#AminoAcidResidue"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasImageStruct"/>
+        <Class IRI="#FDGroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasReference"/>
+        <Class IRI="#FDSchemeAssociation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSFECodeRef"/>
+        <Class IRI="#FunctionalDomain"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSchemeFDAssoc"/>
+        <Class IRI="#ReactionScheme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStructFDAssoc"/>
+        <Class IRI="#Structure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStructRef"/>
+        <Class IRI="#Structure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStructure"/>
+        <Class IRI="#FunctionalDomain"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubSub"/>
+        <Class IRI="#Subgroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubfam"/>
+        <Class IRI="#Family"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isComponentOf"/>
+        <Class IRI="#ConservedChemicalCapability"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConservedBy"/>
+        <Class IRI="#ConservedFunctionalResidue"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFromOrganism"/>
+        <Class IRI="#Enzyme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFunctionalDomainOf"/>
+        <Class IRI="#FunctionalDomain"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isImplementedBy"/>
+        <Class IRI="#Reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMemberOf"/>
+        <Class IRI="#FunctionalDomain"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMemberOfSub"/>
+        <Class IRI="#Family"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMemberOfSuperfam"/>
+        <Class IRI="#Subgroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMemberOfSuprafam"/>
+        <Class IRI="#Superfamily"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOf"/>
+        <Class IRI="#FDFunctionalResidue"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isParticipantIn"/>
+        <Class IRI="#ReactionComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSFDMemberOf"/>
+        <Class IRI="#SuperfamilyDomain"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSFDomainOf"/>
+        <Class IRI="#SuperfamilyDomain"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSFDomainOfFD"/>
+        <Class IRI="#SuperfamilyDomain"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#utilizedBySF"/>
+        <Class IRI="#Cofactor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#utilizesCofactor"/>
+        <Class IRI="#ReactionScheme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasChemicalCapability"/>
+        <Class IRI="#ConservedChemicalCapability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFDSchemeAssoc"/>
+        <Class IRI="#FDSchemeAssociation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFDStructAssoc"/>
+        <Class IRI="#FDStructureAssociation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFGDescripRef"/>
+        <Class IRI="#Reference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFamECodeRef"/>
+        <Class IRI="#Reference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFnAssignmentRef"/>
+        <Class IRI="#Reference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasImageStruct"/>
+        <Class IRI="#Structure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasReference"/>
+        <Class IRI="#Reference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSFECodeRef"/>
+        <Class IRI="#Reference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSchemeFDAssoc"/>
+        <Class IRI="#FDSchemeAssociation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStructFDAssoc"/>
+        <Class IRI="#FDStructureAssociation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStructRef"/>
+        <Class IRI="#Reference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStructure"/>
+        <Class IRI="#Structure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubSub"/>
+        <Class IRI="#Subgroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubfam"/>
+        <Class IRI="#Family"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isComponentOf"/>
+        <Class IRI="#ReactionScheme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConservedBy"/>
+        <Class IRI="#FDGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFromOrganism"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFunctionalDomainOf"/>
+        <Class IRI="#Enzyme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isImplementedBy"/>
+        <Class IRI="#ReactionScheme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMemberOf"/>
+        <Class IRI="#FDGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMemberOfSub"/>
+        <Class IRI="#Subgroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMemberOfSuperfam"/>
+        <Class IRI="#Superfamily"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMemberOfSuprafam"/>
+        <Class IRI="#Suprafamily"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOf"/>
+        <Class IRI="#FunctionalDomain"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isParticipantIn"/>
+        <Class IRI="#Reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSFDMemberOf"/>
+        <Class IRI="#Superfamily"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSFDomainOf"/>
+        <Class IRI="#Enzyme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSFDomainOfFD"/>
+        <Class IRI="#FunctionalDomain"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#utilizedBySF"/>
+        <Class IRI="#Superfamily"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#utilizesCofactor"/>
+        <Class IRI="#Cofactor"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#hasChemicalCapability"/>
+        <ObjectProperty IRI="#hasFDSchemeAssoc"/>
+        <ObjectProperty IRI="#hasFDStructAssoc"/>
+        <ObjectProperty IRI="#hasFGDescripRef"/>
+        <ObjectProperty IRI="#hasFamECodeRef"/>
+        <ObjectProperty IRI="#hasFnAssignmentRef"/>
+        <ObjectProperty IRI="#hasImageStruct"/>
+        <ObjectProperty IRI="#hasReference"/>
+        <ObjectProperty IRI="#hasSFECodeRef"/>
+        <ObjectProperty IRI="#hasSchemeFDAssoc"/>
+        <ObjectProperty IRI="#hasStructFDAssoc"/>
+        <ObjectProperty IRI="#hasStructRef"/>
+        <ObjectProperty IRI="#hasStructure"/>
+        <ObjectProperty IRI="#hasSubSub"/>
+        <ObjectProperty IRI="#hasSubfam"/>
+        <ObjectProperty IRI="#isComponentOf"/>
+        <ObjectProperty IRI="#isConservedBy"/>
+        <ObjectProperty IRI="#isFromOrganism"/>
+        <ObjectProperty IRI="#isFunctionalDomainOf"/>
+        <ObjectProperty IRI="#isImplementedBy"/>
+        <ObjectProperty IRI="#isMemberOf"/>
+        <ObjectProperty IRI="#isMemberOfSub"/>
+        <ObjectProperty IRI="#isMemberOfSuperfam"/>
+        <ObjectProperty IRI="#isMemberOfSuprafam"/>
+        <ObjectProperty IRI="#isPartOf"/>
+        <ObjectProperty IRI="#isParticipantIn"/>
+        <ObjectProperty IRI="#isSFDMemberOf"/>
+        <ObjectProperty IRI="#isSFDomainOf"/>
+        <ObjectProperty IRI="#isSFDomainOfFD"/>
+        <ObjectProperty IRI="#utilizedBySF"/>
+        <ObjectProperty IRI="#utilizesCofactor"/>
+    </DisjointObjectProperties>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#abstract"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#active_site_desc"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#active_site_img"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#active_site_session"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#align_residue_num"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#alignment3"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#assoc_e_code"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#authors"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#blast_evalue"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#blast_pct_align"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#blast_pident"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#car_type"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#ccc_description"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#chebi_accession"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#classification"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#cofactor_image_file"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#cofactor_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#cofactor_type"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#compound_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#compound_source"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#created"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#curation_agent"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#curation_status"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#curator_notes"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#description"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#directionality"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#division"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#doi"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#domain"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#end_num"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#end_page"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#enz_residue_num"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#ezcatdb_id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#fd_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#fdgroup_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#group_type"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hash"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#het_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hmm3"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#image_file"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#image_legend"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#issue_num"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#journal"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#kegg_id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#kingdom"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#macie"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#macie_id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#maps_via_uniprot"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#mutant"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#nc_domain"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#nc_full"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#organism_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#patric_cid"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#pdb_id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#pdb_sequence"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#pdb_title"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#phylum"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#protein_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#pubmed_id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#quest_for_orthologs_proteome_id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#reaction_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#reaction_type"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#ref_title"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#resolution"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#rhea_id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#role"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#scheme_description"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#scheme_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#sequence"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#sfd_end_num"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#sfd_start_num"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#smiles"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#start_num"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#start_page"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#stoichiometry"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#struct_ezcatdb_id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#struct_macie_id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#superfam_assgnmnt_e_code"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#taxon_id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#tc_domain"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#tc_full"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#title"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#uniprot_ref_proteome_id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#updated"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#valid_until"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#volume"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#year"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#abstract"/>
+        <Class IRI="#Reference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#active_site_desc"/>
+        <Class IRI="#FDGroup"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#active_site_img"/>
+        <Class IRI="#FDGroup"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#active_site_session"/>
+        <Class IRI="#FDGroup"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#align_residue_num"/>
+        <Class IRI="#ConservedFunctionalResidue"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#alignment3"/>
+        <Class IRI="#FDGroup"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#amino_acid_type"/>
+        <Class IRI="#AminoAcidResidue"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#assoc_e_code"/>
+        <Class IRI="#FDSchemeAssociation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#authors"/>
+        <Class IRI="#Reference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#blast_evalue"/>
+        <Class IRI="#FDStructureAssociation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#blast_pct_align"/>
+        <Class IRI="#FDStructureAssociation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#blast_pident"/>
+        <Class IRI="#FDStructureAssociation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#car_type"/>
+        <Class IRI="#FDFunctionalResidue"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ccc_description"/>
+        <Class IRI="#ConservedChemicalCapability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#chebi_accession"/>
+        <Class IRI="#ReactionComponent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#classification"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cofactor_image_file"/>
+        <Class IRI="#Cofactor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cofactor_name"/>
+        <Class IRI="#Cofactor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cofactor_type"/>
+        <Class IRI="#Cofactor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cog"/>
+        <Class IRI="#Enzyme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#compound_name"/>
+        <Class IRI="#ReactionComponent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#compound_source"/>
+        <Class IRI="#ReactionComponent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#created"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#curation_agent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#curation_status"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#curator_notes"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#FDGroup"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#directionality"/>
+        <Class IRI="#Reaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#division"/>
+        <Class IRI="#Organism"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#doi"/>
+        <Class IRI="#Reference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#domain"/>
+        <Class IRI="#Organism"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ec"/>
+        <Class IRI="#Reaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#end_num"/>
+        <Class IRI="#FunctionalDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#end_page"/>
+        <Class IRI="#Reference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#enz_residue_num"/>
+        <Class IRI="#FDFunctionalResidue"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ezcatdb_id"/>
+        <Class IRI="#Structure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fam_assgnmnt_e_code"/>
+        <Class IRI="#FunctionalDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fd_name"/>
+        <Class IRI="#FunctionalDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fd_residue_num"/>
+        <Class IRI="#FDFunctionalResidue"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fdgroup_name"/>
+        <Class IRI="#FDGroup"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fig_id"/>
+        <Class IRI="#Enzyme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#function"/>
+        <Class IRI="#AminoAcidResidue"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#function_e_code"/>
+        <Class IRI="#AminoAcidResidue"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#genbank_acc"/>
+        <Class IRI="#Enzyme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#group_type"/>
+        <Class IRI="#Superfamily"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hash"/>
+        <Class IRI="#Enzyme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#het_name"/>
+        <Class IRI="#Structure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hmm3"/>
+        <Class IRI="#FDGroup"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#image_file"/>
+        <Class IRI="#FDGroup"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#image_legend"/>
+        <Class IRI="#FDGroup"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#issue_num"/>
+        <Class IRI="#Reference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#journal"/>
+        <Class IRI="#Reference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#kegg_id"/>
+        <Class IRI="#Reaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#kingdom"/>
+        <Class IRI="#Organism"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#macie"/>
+        <Class IRI="#Family"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#macie_id"/>
+        <Class IRI="#Structure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maps_via_uniprot"/>
+        <Class IRI="#FDStructureAssociation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#microbes_online_locus_id"/>
+        <Class IRI="#Enzyme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mutant"/>
+        <Class IRI="#Structure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nc_domain"/>
+        <Class IRI="#FDGroup"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nc_full"/>
+        <Class IRI="#FDGroup"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#organism_name"/>
+        <Class IRI="#Organism"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#patric_cid"/>
+        <Class IRI="#Organism"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pdb_id"/>
+        <Class IRI="#Structure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pdb_sequence"/>
+        <Class IRI="#Structure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pdb_title"/>
+        <Class IRI="#Structure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#phylum"/>
+        <Class IRI="#Organism"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#protein_name"/>
+        <Class IRI="#Structure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pubmed_id"/>
+        <Class IRI="#Reference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#quest_for_orthologs_proteome_id"/>
+        <Class IRI="#Organism"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#reaction_name"/>
+        <Class IRI="#Reaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#reaction_type"/>
+        <Class IRI="#Reaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ref_title"/>
+        <Class IRI="#Reference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#refseq_acc"/>
+        <Class IRI="#Enzyme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#resolution"/>
+        <Class IRI="#Structure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rhea_id"/>
+        <Class IRI="#Reaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#role"/>
+        <Class IRI="#ReactionComponent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rxn_scheme_e_code"/>
+        <Class IRI="#FunctionalDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#scheme_description"/>
+        <Class IRI="#ReactionScheme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#scheme_name"/>
+        <Class IRI="#ReactionScheme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sequence"/>
+        <Class IRI="#Enzyme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sfd_end_num"/>
+        <Class IRI="#SuperfamilyDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sfd_start_num"/>
+        <Class IRI="#SuperfamilyDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#smiles"/>
+        <Class IRI="#Cofactor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#start_num"/>
+        <Class IRI="#FunctionalDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#start_page"/>
+        <Class IRI="#Reference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#stoichiometry"/>
+        <Class IRI="#ReactionComponent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#struct_ezcatdb_id"/>
+        <Class IRI="#Structure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#struct_macie_id"/>
+        <Class IRI="#Structure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#superfam_assgnmnt_e_code"/>
+        <Class IRI="#FunctionalDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#swissprot_id"/>
+        <Class IRI="#Enzyme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#swissprot_name"/>
+        <Class IRI="#Enzyme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#synonym"/>
+        <Class IRI="#Organism"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#taxon_id"/>
+        <Class IRI="#Organism"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tc_domain"/>
+        <Class IRI="#FDGroup"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tc_full"/>
+        <Class IRI="#FDGroup"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#the_seed_fig_id"/>
+        <Class IRI="#Enzyme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#title"/>
+        <Class IRI="#Reference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#trembl_id"/>
+        <Class IRI="#Enzyme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#uniprot_acc"/>
+        <Class IRI="#Enzyme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#uniprot_ec_number"/>
+        <Class IRI="#Enzyme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#uniprot_protein_name"/>
+        <Class IRI="#Enzyme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#uniprot_ref_proteome_id"/>
+        <Class IRI="#Organism"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#uniprot_secondary_acc"/>
+        <Class IRI="#Enzyme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#updated"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#valid_until"/>
+        <Class IRI="#FunctionalDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#volume"/>
+        <Class IRI="#Reference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#year"/>
+        <Class IRI="#Reference"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#abstract"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#active_site_desc"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#active_site_img"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#active_site_session"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#align_residue_num"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#alignment3"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#amino_acid_type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#assoc_e_code"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CFM</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FSM</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ICR</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ICS</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">IDA</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">IEA</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">IES</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">IGS</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">IME</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ISS</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#authors"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#blast_evalue"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#blast_pct_align"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#blast_pident"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#car_type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ccc_description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#chebi_accession"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#classification"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cofactor_image_file"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cofactor_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cofactor_type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cog"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#compound_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#compound_source"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#created"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#curation_agent"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#curation_status"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#curator_notes"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#directionality"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">backward</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">forward</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">reversible</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">unknown</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#division"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#doi"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#domain"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ec"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#end_num"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#end_page"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#enz_residue_num"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ezcatdb_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fam_assgnmnt_e_code"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fd_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fd_residue_num"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fdgroup_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fig_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#function"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#function_e_code"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#genbank_acc"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#group_type"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">extended</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">superfamily</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hash"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#het_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hmm3"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#image_file"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#image_legend"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#issue_num"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#journal"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#kegg_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#kingdom"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#macie"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#macie_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maps_via_uniprot"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#microbes_online_locus_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mutant"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nc_domain"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nc_full"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#organism_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#patric_cid"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pdb_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pdb_sequence"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pdb_title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#phylum"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#protein_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pubmed_id"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#quest_for_orthologs_proteome_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#reaction_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#reaction_type"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cognate</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">generic</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">other</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">unknown</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ref_title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#refseq_acc"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#resolution"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rhea_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#role"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">product</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">substrate</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rxn_scheme_e_code"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ICR</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">IDA</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">IEA</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">IGS</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">IMP</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ISS</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#scheme_description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#scheme_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sequence"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sfd_end_num"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sfd_start_num"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#smiles"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#start_num"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#start_page"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#stoichiometry"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#struct_ezcatdb_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#struct_macie_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#superfam_assgnmnt_e_code"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#swissprot_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#swissprot_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#synonym"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#taxon_id"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tc_domain"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tc_full"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#the_seed_fig_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#trembl_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#uniprot_acc"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#uniprot_ec_number"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#uniprot_protein_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#uniprot_ref_proteome_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#uniprot_secondary_acc"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#updated"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#valid_until"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#volume"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#year"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DisjointDataProperties>
+        <DataProperty IRI="#abstract"/>
+        <DataProperty IRI="#active_site_desc"/>
+        <DataProperty IRI="#active_site_img"/>
+        <DataProperty IRI="#active_site_session"/>
+        <DataProperty IRI="#align_residue_num"/>
+        <DataProperty IRI="#alignment3"/>
+        <DataProperty IRI="#amino_acid_type"/>
+        <DataProperty IRI="#assoc_e_code"/>
+        <DataProperty IRI="#authors"/>
+        <DataProperty IRI="#blast_evalue"/>
+        <DataProperty IRI="#blast_pct_align"/>
+        <DataProperty IRI="#blast_pident"/>
+        <DataProperty IRI="#car_type"/>
+        <DataProperty IRI="#ccc_description"/>
+        <DataProperty IRI="#chebi_accession"/>
+        <DataProperty IRI="#classification"/>
+        <DataProperty IRI="#cofactor_image_file"/>
+        <DataProperty IRI="#cofactor_name"/>
+        <DataProperty IRI="#cofactor_type"/>
+        <DataProperty IRI="#cog"/>
+        <DataProperty IRI="#compound_name"/>
+        <DataProperty IRI="#compound_source"/>
+        <DataProperty IRI="#created"/>
+        <DataProperty IRI="#curation_agent"/>
+        <DataProperty IRI="#curation_status"/>
+        <DataProperty IRI="#curator_notes"/>
+        <DataProperty IRI="#description"/>
+        <DataProperty IRI="#directionality"/>
+        <DataProperty IRI="#division"/>
+        <DataProperty IRI="#doi"/>
+        <DataProperty IRI="#domain"/>
+        <DataProperty IRI="#ec"/>
+        <DataProperty IRI="#end_num"/>
+        <DataProperty IRI="#end_page"/>
+        <DataProperty IRI="#enz_residue_num"/>
+        <DataProperty IRI="#ezcatdb_id"/>
+        <DataProperty IRI="#fam_assgnmnt_e_code"/>
+        <DataProperty IRI="#fd_name"/>
+        <DataProperty IRI="#fd_residue_num"/>
+        <DataProperty IRI="#fdgroup_name"/>
+        <DataProperty IRI="#fig_id"/>
+        <DataProperty IRI="#function"/>
+        <DataProperty IRI="#function_e_code"/>
+        <DataProperty IRI="#genbank_acc"/>
+        <DataProperty IRI="#group_type"/>
+        <DataProperty IRI="#hash"/>
+        <DataProperty IRI="#het_name"/>
+        <DataProperty IRI="#hmm3"/>
+        <DataProperty IRI="#image_file"/>
+        <DataProperty IRI="#image_legend"/>
+        <DataProperty IRI="#issue_num"/>
+        <DataProperty IRI="#journal"/>
+        <DataProperty IRI="#kegg_id"/>
+        <DataProperty IRI="#kingdom"/>
+        <DataProperty IRI="#macie"/>
+        <DataProperty IRI="#macie_id"/>
+        <DataProperty IRI="#maps_via_uniprot"/>
+        <DataProperty IRI="#microbes_online_locus_id"/>
+        <DataProperty IRI="#mutant"/>
+        <DataProperty IRI="#nc_domain"/>
+        <DataProperty IRI="#nc_full"/>
+        <DataProperty IRI="#organism_name"/>
+        <DataProperty IRI="#patric_cid"/>
+        <DataProperty IRI="#pdb_id"/>
+        <DataProperty IRI="#pdb_sequence"/>
+        <DataProperty IRI="#pdb_title"/>
+        <DataProperty IRI="#phylum"/>
+        <DataProperty IRI="#protein_name"/>
+        <DataProperty IRI="#pubmed_id"/>
+        <DataProperty IRI="#quest_for_orthologs_proteome_id"/>
+        <DataProperty IRI="#reaction_name"/>
+        <DataProperty IRI="#reaction_type"/>
+        <DataProperty IRI="#ref_title"/>
+        <DataProperty IRI="#refseq_acc"/>
+        <DataProperty IRI="#resolution"/>
+        <DataProperty IRI="#rhea_id"/>
+        <DataProperty IRI="#role"/>
+        <DataProperty IRI="#rxn_scheme_e_code"/>
+        <DataProperty IRI="#scheme_description"/>
+        <DataProperty IRI="#scheme_name"/>
+        <DataProperty IRI="#sequence"/>
+        <DataProperty IRI="#sfd_end_num"/>
+        <DataProperty IRI="#sfd_start_num"/>
+        <DataProperty IRI="#smiles"/>
+        <DataProperty IRI="#start_num"/>
+        <DataProperty IRI="#start_page"/>
+        <DataProperty IRI="#stoichiometry"/>
+        <DataProperty IRI="#struct_ezcatdb_id"/>
+        <DataProperty IRI="#struct_macie_id"/>
+        <DataProperty IRI="#superfam_assgnmnt_e_code"/>
+        <DataProperty IRI="#swissprot_id"/>
+        <DataProperty IRI="#swissprot_name"/>
+        <DataProperty IRI="#synonym"/>
+        <DataProperty IRI="#taxon_id"/>
+        <DataProperty IRI="#tc_domain"/>
+        <DataProperty IRI="#tc_full"/>
+        <DataProperty IRI="#the_seed_fig_id"/>
+        <DataProperty IRI="#title"/>
+        <DataProperty IRI="#trembl_id"/>
+        <DataProperty IRI="#uniprot_acc"/>
+        <DataProperty IRI="#uniprot_ec_number"/>
+        <DataProperty IRI="#uniprot_protein_name"/>
+        <DataProperty IRI="#uniprot_ref_proteome_id"/>
+        <DataProperty IRI="#uniprot_secondary_acc"/>
+        <DataProperty IRI="#updated"/>
+        <DataProperty IRI="#valid_until"/>
+        <DataProperty IRI="#volume"/>
+        <DataProperty IRI="#year"/>
+    </DisjointDataProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AminoAcidResidue</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describes the location and function of amino acid residue.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cofactor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describes a complex cofactor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConservedChemicalCapability</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A chemical capability common to an FDGroup. Depending on the group in question, the capability may be quite general or quite specific. For example, FunctionalDomains in the enolase superfamily all catalyze reactions involving the abstraction of a proton alpha to a carboxylic acid.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConservedFunctionalResidue</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describes the location and function of an amino acid residue found in an individual sequence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Enzyme</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describes a full-length enzyme.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FDFunctionalResidue</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describes the location and function of an amino acid residue conserved by a group of sequences.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FDGroup</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describes a group of evolutionarily-related FunctionalDomains.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FDSchemeAssociation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Associates an evidence code and Reference with a linkage between a FunctionalDomain and a ReactionScheme.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FDStructureAssociation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Associates BLAST e-value, BLAST alignment length, BLAST percent aligned, and uniprot mapping Data Properties with a linkage between a FunctionalDomain and a Structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Family</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An evolutionarily related group of FunctionalDomains thought to catalyze the same overall reaction via the same mechanism.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FunctionalDomain</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A region of an Enzyme required for catalysis of a particular reaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Organism</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An organism.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Reaction</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An overall reaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ReactionComponent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Contains information on substrate(s) / product(s) in a Reaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ReactionScheme</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A specific mechanism by which a Reaction is catalyzed, as implemented by one or more specific FunctionalDomain(s). Note that while the same Reaction may be catalyzed by FunctionalDomains from multiple FDGroups, a ReactionScheme contains the complete description of the reaction mechanism, and thus is unique to FunctionalDomains from a particular FDGroup.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Reference</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A literature reference.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Structure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A 3-dimensional protein structure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Subgroup</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An evolutionarily related group of FunctionalDomains which catalyze reactions sharing some conserved aspect of chemistry. This group of FunctionalDomains is more diverse than the associated Family(s) but less diverse than the parent Superfamily.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Superfamily</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An evolutionarily related group of FunctionalDomains which catalyze reactions sharing some conserved aspect of chemistry. This group of FunctionalDomains is more diverse than the associated Subgroup(s) and Family(s) but less diverse than the parent Suprafamily (if it exists).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SuperfamilyDomain</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A region of an Enzyme common to a particular Superfamily. This region may be identical to the associated FunctionalDomain, or it may be a subset of the FunctionalDomain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Suprafamily</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An evolutionarily related group of FunctionalDomains which share conserved active site residues, but may use these residues in different ways. This group of FunctionalDomains is more diverse than the associated Family(s), Subgroup(s), and Superfamily(s).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#abstract</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Abstract from paper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#active_site_desc</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Text description of the structure used in the active site image specified in active_site_img and active_site_session</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#active_site_img</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Name of PNG format file containing image of active site for an example member of the group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#active_site_session</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">File name for the chimera session used to create the active site image specified by active_site_img.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#align_residue_num</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An integer specifying a position within a multiple alignment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#alignment3</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Stockholm format sequence alignment for a representative set of sequences in the group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#amino_acid_type</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Amino acid type (one letter amino acid code)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#assoc_e_code</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An evidence code associated with the linkage between two classes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#authors</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A comma delimited list of authors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#blast_evalue</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BLAST e-value for the match between a FunctionalDomain sequence and a Structure sequence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#blast_pct_align</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BLAST percent aligned for the match between a FunctionalDomain sequence and a Structure sequence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#blast_pident</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BLAST e-value for the match between a FunctionalDomain sequence and a Structure sequence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#car_type</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies whether the residue is conserved across the corresponding subgroup or family. Allowed values: &quot;subgroup,&quot; or &quot;family.&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ccc_description</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string giving a text description of the ConservedChemicalCapability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#chebi_accession</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The accession number of a compound in the ChEBI database.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#classification</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Classification status of a record. Allowed values: &quot;public,&quot; &quot;private,&quot; or &quot;staff.&quot; Records with a classification of &quot;staff&quot; are only showed to members of the Babbitt lab when they are logged in to the SFLD. Records with a classification of &quot;private&quot; are only showed to users with an SFLD login when they are logged in to the SFLD. Records with a classification of &quot;public&quot; are showed to everyone.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cofactor_image_file</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying the name of a PNG or GIF format file containing an image of the corresponding cofactor&apos;s chemical structure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cofactor_name</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying the name of a cofactor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cofactor_type</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying the type of cofactor corresponding to the record. Valid entries include: &quot;coenzyme or prosthetic group,&quot; &quot;prosthetic group,&quot; &quot;complex,&quot; &quot;coenzyme,&quot; &quot;Metal,&quot; and &quot;Organic Cofactor (PTM).&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cog</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NCBI COG identifier (http://www.ncbi.nlm.nih.gov/COG/)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#compound_name</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A text string specifying the name of a compound.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#compound_source</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A text string specifying the source database from which the compound information was obtained.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#created</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The date/time a record was created</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#curation_agent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SFLD login or automated protocol name for the curator/protocol who last edited a record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#curation_status</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The curation status of a record. Allowed values: &quot;valid,&quot; &quot;invalid,&quot; and &quot;pending.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#curator_notes</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A free-text field specifying curator notes for a given record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#description</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A text description for a given group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#directionality</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying the directionality of a reaction. Accepted values are: backward, forward, reversible, unknown.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#division</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying the NCBI Taxonomy division in which the corresponding organism has been classified.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#doi</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Digital object identifier for a given literature reference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#domain</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying the NCBI Taxonomy domain in which the corresponding organism has been classified.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ec</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Enzyme commission number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#end_num</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The amino acid residue number that specifies the end of the segment corresponding to a given FunctionalDomain. This number is in reference to the corresponding full-length enzyme sequence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#end_page</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The final page of the corresponding reference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#enz_residue_num</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An integer specifying a position in an enzyme sequence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ezcatdb_id</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An identifier from the EzCatDB database (http://ezcatdb.cbrc.jp/EzCatDB/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#fam_assgnmnt_e_code</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A three letter code specifying the type of evidence used to classify a given FunctionalDomain into a given Family. Allowed values are specified here: http://sfld.rbvi.ucsf.edu/django/web/ecodes/#Family%20Assignment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#fd_name</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying the name of a Functional Domain. This name is generally based on the name of the most specific level of the Family-Subgroup-Superfamily hierarchy to which the FD has been classified.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#fd_residue_num</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An integer specifying an amino acid residue position in a Functional Domain sequence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#fdgroup_name</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying the name of an FDGroup record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#fig_id</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FIG identifier from TheSEED database (http://theseed.org/wiki/Main_Page)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#function</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A free text field specifying the function of an amino acid residue.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#function_e_code</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A three letter code specifying the type of evidence used to determine the function of a given amino acid residue. Allowed values are specified here: http://sfld.rbvi.ucsf.edu/django/web/ecodes/#Conserved%20Residue%20Assignment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#genbank_acc</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An accession number from the NCBI Genbank database (http://www.ncbi.nlm.nih.gov/genbank) for a given enzyme.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#group_type</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A text value specifying the type of superfamily. Allowed values: &quot;superfamily,&quot; &quot;extended.&quot; Records with a group_type of &quot;superfamily&quot; are part of the core SFLD, while records with a group_type of &quot;extended&quot; are part of the extended SFLD.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasChemicalCapability</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links an FDGroup to the ConservedChemicalCapability common to the FunctionalDomains in the group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasFDSchemeAssoc</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a FunctionalDomain to an FDSchemeAssociation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasFDStructAssoc</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a FunctionalDomain to an FDStructureAssociation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasFGDescripRef</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links an FDGroup to a literature Reference describing the group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasFamECodeRef</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For FunctionalDomains that are linked to a Family, this link specifies the Reference that the Family assignment was based on.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasFnAssignmentRef</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links an AminoAcidResidue to the Reference used to determine its functional importance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasImageStruct</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links an FDGroup to the Structure used to create the image in the image_file data property for that group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasReference</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links an Association to a Reference.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSFECodeRef</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This link specifies the Reference that the Superfamily assignment of the associated FunctionalDomain was based on.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSchemeFDAssoc</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a ReactionScheme to an FDSchemeAssociation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasStructFDAssoc</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a Structure to an FDStructureAssociation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasStructRef</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a Structure to the literature Reference describing it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a FunctionalDomain to a Structure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSubSub</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Relates a parent subgroup to a child subgroup, allowing an arbitrary number of subgroups to be nested (with top level subgroups more general and bottom level subgroups more specific) according to the needs of the sequence group in question.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSubfam</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Relates a subfamily to a parent family, allowing an arbitrary number of families to be nested (with top level families more general and bottom level families more specific) according to the needs of the sequence group in question.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hash</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An MD5 hash of the corresponding enzyme sequence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#het_name</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying the chemical name of a compound (from the HETNAM record of the corresponding PDB file).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hmm3</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An HMM generated with the HMMER3 package using as input the alignment in the alignment3 field.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#image_file</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying the name of a JPG or PNG format file containing an image of an example structure from the appropriate group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#image_legend</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Text description of the structure used in the image specified in the image_file field.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isComponentOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a ConservedChemicalCapability with the ReactionScheme(s) that include this capability. For example, the ConservedChemicalCapability of the Enolase Superfamily, abstraction of a proton alpha to a carboxylic acid, would be linked to all ReactionScheme(s) catalyzed by FunctionalDomains in the Enolase superfamily.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isConservedBy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links functionally important amino acids to the FDGroup the group they&apos;re conserved by.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isFromOrganism</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links an Enzyme to the Organism it&apos;s from.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isFunctionalDomainOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a FunctionalDomain to the Enzyme it&apos;s a part of.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isImplementedBy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a Reaction to a particular mechanism of that Reaction, as implemented by a specific FDGroup.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isMemberOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a FunctionalDomain to a Family, Subgroup, Superfamily, or Suprafamily to which it has been classified. FunctionalDomains can be assigned to all of these groups, some of these groups, or none of these groups. However, if a FunctionalDomain is classified into a given group, it MUST be classified into all groups above that group in the functional hierarchy. For example, if a FunctionalDomain is classified into a particular Subgroup, it must also be classified into the Superfamily to which the Subgroup belongs. However, it does not have to be assigned to a Family.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isMemberOfSub</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a Family to the Subgroup under which it is classified.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isMemberOfSuperfam</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a Subgroup to the Superfamily under which it is classified.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isMemberOfSuprafam</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a Superfamily to the Suprafamily under which it is classified.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links functionally important amino acid residues to the FunctionalDomain that they&apos;re a part of.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isParticipantIn</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a Molecule to the Reaction it participates in.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isSFDMemberOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a SuperfamilyDomain to the Superfamily to which it corresponds.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isSFDomainOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a SuperfamilyDomain to the Enzyme that it&apos;s a part of.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isSFDomainOfFD</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a SuperfamilyDomain to the FunctionalDomain its a part of.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#issue_num</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The issue number of the corresponding reference.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#journal</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The journal name for the corresponding reference.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#kegg_id</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying the identifier from the KEGG database (Kyoto Encyclopedia of Genes and Genomes) corresponding to a given Reaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#kingdom</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying the NCBI Taxonomy kingdom in which the corresponding organism has been classified.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#macie</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An identifier from the MACiE (Mechanism, Annotation and Classification In Enzymes) database (http://www.ebi.ac.uk/thornton-srv/databases/MACiE/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#macie_id</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An identifer from the MACiE database (http://www.ebi.ac.uk/thornton-srv/databases/MACiE/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#maps_via_uniprot</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TRUE if the associated FunctionalDomain has been mapped to the associated Structure by Uniprot. FALSE if not.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#microbes_online_locus_id</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A locus identifier from the Microbes OnLine database (http://www.microbesonline.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#mutant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An integer specifying whether a PDB structure is wild type or mutant. Allowed values: 0, 1. A value of 0 indicates that the structure is wild type, and a value of 1 indicates that the structure is a mutant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#nc_domain</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The noise cutoff for sequence searches using the corresponding group-specific HMM to search against domain sequences.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#nc_full</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The noise cutoff for sequence searches using the corresponding group-specific HMM to search against full-length sequences.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#organism_name</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying an organism name.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#patric_cid</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An integer specifying an identifier from the PATRIC (Pathosystems Resource Integration Center) database (http://www.patricbrc.org).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pdb_id</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An identifier from the Protein Databank (http://www.rcsb.org/pdb/home/home.do)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pdb_sequence</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying an amino acid sequence corresponding to a given structure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pdb_title</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying the title from the corresponding PDB record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#phylum</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying the NCBI Taxonomy phylum in which the corresponding organism has been classified.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#protein_name</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying the name of a protein (from the MOLECULE field of the corresponding PDB record).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pubmed_id</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An integer specifying an identifier from the NCBI PubMed database (http://www.ncbi.nlm.nih.gov/pubmed).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#quest_for_orthologs_proteome_id</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The UniProt Proteome ID for the corresponding organism for organisms that are part of the Quest for Orthologs project (http://questfororthologs.org/)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#reaction_name</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying the name of a reaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#reaction_type</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying a reaction type. Accepted values are: cognate, other, unknown, generic.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ref_title</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying the title of the corresponding reference.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#refseq_acc</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying an NCBI RefSeq accession number (http://www.ncbi.nlm.nih.gov/refseq/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#resolution</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying the resolution of a PDB structure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#rhea_id</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying an identifier from the RHEA database (http://www.rhea-db.org/home) corresponding to a given Reaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#role</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describes the role of a Compound in a Reaction. Accepted values are: substrate, product.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#rxn_scheme_e_code</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A three letter code specifying the type of evidence used to classify a given FunctionalDomain into a given Family. Allowed values are specified here: http://sfld.rbvi.ucsf.edu/django/web/ecodes/#Reaction%20Assignment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#scheme_description</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A text string describing a Reaction Scheme.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#scheme_name</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying the name of a Reaction Scheme.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sequence</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying the amino acid sequence of an enzyme in one letter code.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sfd_end_num</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An integer specifying the amino acid position on the corresponding full-length sequence at which the superfamily domain ends.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sfd_start_num</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An integer specifying the amino acid position on the corresponding full-length sequence at which the superfamily domain begins.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#smiles</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A SMILES string representing the structure of the Cofactor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#start_num</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The amino acid residue number that specifies the beginning of the segment corresponding to a given FunctionalDomain. This number is in reference to the corresponding full-length enzyme sequence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#start_page</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The initial page of the corresponding reference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#stoichiometry</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The number of copies of the Molecule used / produced in the Reaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#superfam_assgnmnt_e_code</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A three letter code specifying the type of evidence used to classify a given FunctionalDomain into a given Superfamily. Allowed values are specified here: http://sfld.rbvi.ucsf.edu/django/web/ecodes/#Superfamily Assignment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#swissprot_id</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An identifier from the Swiss-Prot section of UniProtKB (http://www.uniprot.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#swissprot_name</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A sequence name from the SwissProt database.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#synonym</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying an additional name for an organism.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#taxon_id</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An identifier from the NCBI taxon database (http://www.ncbi.nlm.nih.gov/taxonomy).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tc_domain</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The trusted cutoff for sequence searches using the corresponding group-specific HMM to search against domain sequences.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tc_full</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The trusted cutoff for sequence searches using the corresponding group-specific HMM to search against full-length sequences.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#the_seed_fig_id</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A FIG identifier from The SEED database (http://www.theseed.org/wiki/Main_Page).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#title</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying the title of the corresponding reference.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#trembl_id</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An identifier from the TrEMBL section of UniProtKB (http://www.uniprot.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#uniprot_acc</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying an accession number from UniProtKB (http://www.uniprot.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#uniprot_ec_number</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An Enzyme Commission number parsed from the UniProt record for a given enzyme.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#uniprot_protein_name</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying a protein name from UniProtKB (http://www.uniprot.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#uniprot_ref_proteome_id</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The UniProt Proteome ID for the corresponding organism for organisms that are part of the Uniprot Reference Proteomes set (http://www.uniprot.org/help/reference_proteome)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#uniprot_secondary_acc</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying a secondary accession number from UniProtKB (http://www.uniprot.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#updated</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The date/time a record was most recently updated.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#utilizedBySF</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a Cofactor to a Superfamily whose member enzymes utilize the Cofactor in catalyzing reactions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#utilizesCofactor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a ReactionScheme to the Cofactor(s) it utilizes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#valid_until</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For records that are no longer valid, the date/time the record was found to be obsolete. A NULL value indicates the record is still valid.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#volume</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string specifying the volume of the corresponding reference.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#year</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An integer specifying the year of publication of the corresponding reference.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

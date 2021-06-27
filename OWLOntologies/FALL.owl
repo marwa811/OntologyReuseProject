@@ -1,0 +1,1697 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY wban "http://www.engenoid.com/onto/TCSmartBAN/wban#" >
+    <!ENTITY nodes "http://www.engenoid.com/onto/TCSmartBAN/nodes#" >
+    <!ENTITY process "http://www.engenoid.com/onto/TCSmartBAN/process#" >
+    <!ENTITY untitled-ontology-336 "http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-336#" >
+    <!ENTITY untitled-ontology-337 "http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-337#" >
+    <!ENTITY untitled-ontology-345 "http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-345#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#"
+     xml:base="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346"
+     xmlns:process="http://www.engenoid.com/onto/TCSmartBAN/process#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-337="http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-337#"
+     xmlns:untitled-ontology-336="http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-336#"
+     xmlns:wban="http://www.engenoid.com/onto/TCSmartBAN/wban#"
+     xmlns:untitled-ontology-345="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-345#"
+     xmlns:nodes="http://www.engenoid.com/onto/TCSmartBAN/nodes#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346">
+        <owl:imports rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-336"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-337"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-338"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-345"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-336#hasServiceProcess -->
+
+    <rdf:Description rdf:about="&untitled-ontology-336;hasServiceProcess">
+        <rdfs:range rdf:resource="&process;Process"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-337#collapses -->
+
+    <rdf:Description rdf:about="&untitled-ontology-337;collapses">
+        <owl:inverseOf rdf:resource="&untitled-ontology-337;expandsTo"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-337#expandsTo -->
+
+    <rdf:Description rdf:about="&untitled-ontology-337;expandsTo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Engagedin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Engagedin">
+        <rdfs:domain rdf:resource="&wban;WSN"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#describedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#describedBy">
+        <rdfs:range rdf:resource="&untitled-ontology-337;ServiceProcess"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#describes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#describes">
+        <rdfs:domain rdf:resource="&untitled-ontology-337;ServiceProcess"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Service"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#describedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasClient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasClient">
+        <rdfs:domain rdf:resource="&untitled-ontology-337;ServiceProcess"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasConditionType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasConditionType">
+        <rdfs:domain rdf:resource="&untitled-ontology-337;Condition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#ConditionType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasConsumer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasConsumer">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasParticipant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasContactInfo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasContactInfo">
+        <rdfs:range rdf:resource="&wban;Contact"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-336;ServiceProfile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasMessageElements -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasMessageElements">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-338#MessageElements"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-338#ServiceGrouding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasMessageOptions -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasMessageOptions">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-338#MessageOption"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-338#ServiceGrouding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasParticipant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasParticipant">
+        <rdfs:domain rdf:resource="&untitled-ontology-337;ServiceProcess"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasProducer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasProducer">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasParticipant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasServiceConstraint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasServiceConstraint">
+        <rdfs:range rdf:resource="&process;Constraint"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-336;ServiceProfile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasStatus -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasStatus">
+        <rdfs:domain rdf:resource="&wban;Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Status"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#performedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#performedBy">
+        <rdfs:domain rdf:resource="&untitled-ontology-337;ServiceProcess"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#presents -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#presents">
+        <rdfs:range rdf:resource="&untitled-ontology-336;ServiceProfile"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#supportedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#supportedBy">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-338#ServiceGrouding"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#ElementLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#ElementLength">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-338#MessageElements"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-338#MessageOption"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#ElementType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#ElementType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-338#MessageElements"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-338#MessageOption"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#EntityID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#EntityID">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Entity"/>
+        <rdfs:range rdf:resource="&xsd;anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Optional -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Optional">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-338#MessageElements"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-338#MessageOption"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#ServiceID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#ServiceID">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Service"/>
+        <rdfs:range rdf:resource="&xsd;anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Text -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Text">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Effect"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#elementName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#elementName">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-338#MessageElements"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-338#MessageOption"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.engenoid.com/onto/TCSmartBAN/nodes#Node -->
+
+    <rdf:Description rdf:about="&nodes;Node">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#PhysicalEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.engenoid.com/onto/TCSmartBAN/process#Process -->
+
+    <rdf:Description rdf:about="&process;Process">
+        <owl:equivalentClass rdf:resource="&untitled-ontology-337;Atomic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.engenoid.com/onto/TCSmartBAN/wban#Person -->
+
+    <rdf:Description rdf:about="&wban;Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#PhysicalEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-336#ServiceProfile -->
+
+    <rdf:Description rdf:about="&untitled-ontology-336;ServiceProfile">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Service"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-337#Atomic -->
+
+    <rdf:Description rdf:about="&untitled-ontology-337;Atomic"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-337#Composite -->
+
+    <rdf:Description rdf:about="&untitled-ontology-337;Composite">
+        <owl:disjointWith rdf:resource="&untitled-ontology-337;Simple"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-337#ServiceProcess -->
+
+    <rdf:Description rdf:about="&untitled-ontology-337;ServiceProcess">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasClient"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Entity"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#performedBy"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Entity"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-337#Simple -->
+
+    <rdf:Description rdf:about="&untitled-ontology-337;Simple"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Effect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Alert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Alert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Effect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Application -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Application">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#VirtualEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Boolean -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Boolean">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#ConditionType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Command -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Command">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Effect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#ConditionType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#ConditionType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Display -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Display">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Effect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Effect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Effect">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-337;Result"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Entity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#PhysicalEntity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#VirtualEntity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Notification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Notification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Effect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#PhysicalEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#PhysicalEntity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Query -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Query">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Effect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#ResultValue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#ResultValue">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-337;Result"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Service"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#SocialPerson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#SocialPerson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#VirtualEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Software -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Software">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#VirtualEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Status -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Status"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#VirtualEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#VirtualEntity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#AND -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#AND">
+        <rdf:type rdf:resource="&untitled-ontology-337;ProcessRelation"/>
+        <untitled-ontology-337:RelationType rdf:datatype="&xsd;string">and between all the simple processes</untitled-ontology-337:RelationType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Acceleration -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Acceleration">
+        <rdf:type rdf:resource="&process;Process"/>
+        <untitled-ontology-337:hasInput rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#PatientID"/>
+        <untitled-ontology-337:hasInput rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#RequiredTime"/>
+        <process:hasData rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#acc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BedRoom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BedRoom">
+        <rdf:type rdf:resource="&untitled-ontology-345;External"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BedSensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BedSensor">
+        <rdf:type rdf:resource="&nodes;Sensor"/>
+        <nodes:Position rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BedRoom"/>
+        <untitled-ontology-345:usedFor rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Localization"/>
+        <nodes:hasNodeType rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#RFIDTag"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BioCluster -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BioCluster">
+        <rdf:type rdf:resource="&wban;Cluster"/>
+        <untitled-ontology-345:ComposedOf rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Lina_Accelerometer"/>
+        <untitled-ontology-345:ComposedOf rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Lina_HRSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BloodPressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BloodPressure">
+        <rdf:type rdf:resource="&untitled-ontology-336;Medical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BluetoothLEMessage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BluetoothLEMessage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-338#BluetoothLEMsg"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BodyTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BodyTemperature">
+        <rdf:type rdf:resource="&untitled-ontology-336;Medical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BuiltInMobile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BuiltInMobile">
+        <rdf:type rdf:resource="&untitled-ontology-345;External"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BulttothLE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BulttothLE">
+        <rdf:type rdf:resource="&nodes;InterfaceType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#ContactPerson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#ContactPerson">
+        <rdf:type rdf:resource="&untitled-ontology-337;Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#DecreasedAcceleration -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#DecreasedAcceleration">
+        <rdf:type rdf:resource="&untitled-ontology-337;Simple"/>
+        <untitled-ontology-337:hasProcessRelation rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#AND"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#ElderlyFallDetectionInHome -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#ElderlyFallDetectionInHome">
+        <rdf:type rdf:resource="&untitled-ontology-336;ServiceProfile"/>
+        <untitled-ontology-336:serviceDescription rdf:datatype="&xsd;string">Contact the responsible person when the patient fall down</untitled-ontology-336:serviceDescription>
+        <untitled-ontology-336:hasServiceCategory rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#FallDetection"/>
+        <describedBy rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#FallDetectionProcess"/>
+        <untitled-ontology-336:hasServiceType rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#MobileNotification"/>
+        <hasContactInfo rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Sahar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#FallDetection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#FallDetection">
+        <rdf:type rdf:resource="&untitled-ontology-336;General"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#FallDetectionProcess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#FallDetectionProcess">
+        <rdf:type rdf:resource="&untitled-ontology-337;Composite"/>
+        <hasProducer rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BedSensor"/>
+        <untitled-ontology-337:hasInput rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#ContactPerson"/>
+        <untitled-ontology-337:expandsTo rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#DecreasedAcceleration"/>
+        <untitled-ontology-337:hasPrecondition rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HROn"/>
+        <supportedBy rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HTTP"/>
+        <untitled-ontology-337:expandsTo rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#IncreasedHR"/>
+        <hasProducer rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#KitchenSensor"/>
+        <hasParticipant rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#LinaMobilePhone"/>
+        <hasProducer rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Lina_Accelerometer"/>
+        <hasProducer rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Lina_HRSensor"/>
+        <untitled-ontology-337:expandsTo rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#NotSleeping"/>
+        <untitled-ontology-337:hasResult rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#NotificationMessage"/>
+        <hasConsumer rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#NotificationServer"/>
+        <untitled-ontology-337:hasInput rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#PatientID"/>
+        <untitled-ontology-337:hasInput rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#RequiredTime"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Glucose -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Glucose">
+        <rdf:type rdf:resource="&untitled-ontology-336;Medical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#H7Polar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#H7Polar">
+        <rdf:type rdf:resource="&nodes;NodeType"/>
+        <nodes:hasInterfaceType rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BulttothLE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HR">
+        <rdf:type rdf:resource="&process;Process"/>
+        <supportedBy rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BluetoothLEMessage"/>
+        <process:hasData rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HRData"/>
+        <untitled-ontology-337:hasPrecondition rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HROn"/>
+        <untitled-ontology-337:hasInput rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#PatientID"/>
+        <untitled-ontology-337:hasInput rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#RequiredTime"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HR1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HR1">
+        <rdf:type rdf:resource="&process;Measurement"/>
+        <untitled-ontology-345:hasValue rdf:datatype="&xsd;int">100</untitled-ontology-345:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HR2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HR2">
+        <rdf:type rdf:resource="&process;Measurement"/>
+        <untitled-ontology-345:hasValue rdf:datatype="&xsd;int">110</untitled-ontology-345:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HRData -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HRData">
+        <rdf:type rdf:resource="&process;Data"/>
+        <process:hasMesurement rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HR1"/>
+        <process:hasMesurement rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HR2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HROn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HROn">
+        <rdf:type rdf:resource="&untitled-ontology-337;PreCondition"/>
+        <hasConditionType rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#True"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HTTP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HTTP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-338#HTTP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HeartRate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HeartRate">
+        <rdf:type rdf:resource="&untitled-ontology-336;Medical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#InBed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#InBed">
+        <rdf:type rdf:resource="&process;Data"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#InKitchen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#InKitchen">
+        <rdf:type rdf:resource="&process;Data"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#InLivingRoom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#InLivingRoom">
+        <rdf:type rdf:resource="&process;Data"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#IncreasedHR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#IncreasedHR">
+        <rdf:type rdf:resource="&untitled-ontology-337;Simple"/>
+        <untitled-ontology-337:hasProcessRelation rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#AND"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Kitchen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Kitchen">
+        <rdf:type rdf:resource="&untitled-ontology-345;External"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#KitchenSensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#KitchenSensor">
+        <rdf:type rdf:resource="&nodes;Sensor"/>
+        <nodes:Position rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Kitchen"/>
+        <untitled-ontology-345:usedFor rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Localization"/>
+        <nodes:hasNodeType rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#RFIDTag"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Lina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Lina">
+        <rdf:type rdf:resource="&wban;Patient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#LinaHome -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#LinaHome">
+        <rdf:type rdf:resource="&wban;WSN"/>
+        <wban:Phenomena rdf:datatype="&xsd;string">Fall Detection</wban:Phenomena>
+        <wban:ApplicationDomain rdf:datatype="&xsd;string">Home Assistance</wban:ApplicationDomain>
+        <wban:isFormedof rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BioCluster"/>
+        <Engagedin rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#FallDetection"/>
+        <wban:hasOwner rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Lina"/>
+        <wban:isFormedof rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#LocalCluster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#LinaMobilePhone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#LinaMobilePhone">
+        <rdf:type rdf:resource="&nodes;Hub"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Lina_Accelerometer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Lina_Accelerometer">
+        <rdf:type rdf:resource="&nodes;Sensor"/>
+        <untitled-ontology-345:usedFor rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Acceleration"/>
+        <nodes:Position rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BuiltInMobile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Lina_HRSensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Lina_HRSensor">
+        <rdf:type rdf:resource="&nodes;Sensor"/>
+        <nodes:hasNodeType rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#H7Polar"/>
+        <untitled-ontology-345:usedFor rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HR"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#LivingRoom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#LivingRoom">
+        <rdf:type rdf:resource="&untitled-ontology-345;External"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#LocalCluster -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#LocalCluster">
+        <rdf:type rdf:resource="&wban;Cluster"/>
+        <untitled-ontology-345:ComposedOf rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BedSensor"/>
+        <untitled-ontology-345:ComposedOf rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#KitchenSensor"/>
+        <untitled-ontology-345:ComposedOf rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#SofaSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Localization -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Localization">
+        <rdf:type rdf:resource="&process;Process"/>
+        <process:hasData rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#InBed"/>
+        <process:hasData rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#InKitchen"/>
+        <process:hasData rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#InLivingRoom"/>
+        <untitled-ontology-337:hasInput rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#PatientID"/>
+        <untitled-ontology-337:hasInput rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#RequiredTime"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Localization_Navigation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Localization_Navigation">
+        <rdf:type rdf:resource="&untitled-ontology-336;General"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#MobileNotification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#MobileNotification">
+        <rdf:type rdf:resource="&untitled-ontology-336;Notification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#NoKitchen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#NoKitchen">
+        <rdf:type rdf:resource="&process;Measurement"/>
+        <untitled-ontology-345:hasValue rdf:datatype="&xsd;boolean">false</untitled-ontology-345:hasValue>
+        <untitled-ontology-345:isMeasuredBy rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#KitchenSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#NoSofa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#NoSofa">
+        <rdf:type rdf:resource="&process;Measurement"/>
+        <untitled-ontology-345:hasValue rdf:datatype="&xsd;boolean">false</untitled-ontology-345:hasValue>
+        <untitled-ontology-345:isMeasuredBy rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#SofaSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#NotSleeping -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#NotSleeping">
+        <rdf:type rdf:resource="&untitled-ontology-337;Simple"/>
+        <untitled-ontology-337:hasProcessRelation rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#AND"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#NotificationMessage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#NotificationMessage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Notification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#NotificationServer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#NotificationServer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Software"/>
+        <EntityID rdf:datatype="&xsd;anyURI">http://192.138.3.12:2244</EntityID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#PatientID -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#PatientID">
+        <rdf:type rdf:resource="&untitled-ontology-337;Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#RFID -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#RFID">
+        <rdf:type rdf:resource="&nodes;InterfaceType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#RFIDTag -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#RFIDTag">
+        <rdf:type rdf:resource="&nodes;NodeType"/>
+        <nodes:hasInterfaceType rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#RFID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#RequiredTime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#RequiredTime">
+        <rdf:type rdf:resource="&untitled-ontology-337;Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Sahar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Sahar">
+        <rdf:type rdf:resource="&wban;Person"/>
+        <wban:Parent rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Lina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#SamsungNote3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#SamsungNote3">
+        <rdf:type rdf:resource="&nodes;NodeType"/>
+        <nodes:hasInterfaceType rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BulttothLE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#SofaSensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#SofaSensor">
+        <rdf:type rdf:resource="&nodes;Sensor"/>
+        <nodes:Position rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#LivingRoom"/>
+        <untitled-ontology-345:usedFor rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Localization"/>
+        <nodes:hasNodeType rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#RFIDTag"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Speed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Speed">
+        <rdf:type rdf:resource="&untitled-ontology-336;General"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#True -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#True">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Boolean"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#YesBed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#YesBed">
+        <rdf:type rdf:resource="&process;Measurement"/>
+        <untitled-ontology-345:hasValue rdf:datatype="&xsd;boolean">true</untitled-ontology-345:hasValue>
+        <untitled-ontology-345:isMeasuredBy rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#BedSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#acc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#acc">
+        <rdf:type rdf:resource="&process;Data"/>
+        <process:hasMesurement rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#acc1"/>
+        <process:hasMesurement rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#acc2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#acc1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#acc1">
+        <rdf:type rdf:resource="&process;Measurement"/>
+        <untitled-ontology-345:hasValue rdf:datatype="&xsd;float">8.35</untitled-ontology-345:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#acc2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#acc2">
+        <rdf:type rdf:resource="&process;Measurement"/>
+        <untitled-ontology-345:hasValue rdf:datatype="&xsd;float">8.5</untitled-ontology-345:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl#S">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#a">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#data">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#m">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#P">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#W">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#C">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#N">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#Process">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#dat">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#ServPro">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#person">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#Serv">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#Service">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#P1">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#P2">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&wban;hasContact"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#P"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#W"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&wban;hasOwner"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#P"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#W"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&process;hasInput"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#ServPro"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#person"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&wban;Patient"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#P"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&wban;WSN"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#W"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&wban;hasContact"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#P"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#W"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="&wban;isRelativeof"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#P"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#person"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#describedBy"/>
+                                                                        <swrl:argument2 rdf:resource="urn:swrl#ServPro"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#Service"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Engagedin"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl#Serv"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#W"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="&process;hasInput"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#ContactPerson"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#ServPro"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasContactInfo"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#P"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#Process"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&wban;Patient"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#P"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&wban;WSN"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#W"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="&wban;hasOwner"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#P"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#W"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&wban;isFormedof"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#C"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#W"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-345;usedFor"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#N"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl#Process"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-345;ComposedOf"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#C"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#N"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&wban;isRelativeof"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#P1"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#P2"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&wban;isRelativeof"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#P1"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#P2"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Localization"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Service"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-336;hasServiceCategory"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Localization"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Localization_Navigation"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-336;ServiceProfile"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Localization"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-336;ServiceProfile"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HR"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-336;hasServiceCategory"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HR"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HeartRate"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#HR"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Service"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-337;hasResult"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#ResultValue"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="&process;hasMesurement"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#data"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&process;hasData"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#data"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-337;Atomic"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-337;Atomic"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#Service"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-337;Atomic"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&process;hasData"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#dat"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#ResultValue"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#dat"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-337;hasResult"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#dat"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&untitled-ontology-337;Atomic"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-345;usedFor"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#S"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#a"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&nodes;Sensor"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#S"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/abed/ontologies/2015/2/untitled-ontology-346#hasProducer"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#S"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY swrlx "http://www.w3.org/2003/11/swrlx#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY ruleml "http://www.w3.org/2003/11/ruleml#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owlx "http://www.w3.org/2003/05/owl-xml#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY kaon2 "http://kaon2.semanticweb.org/internal#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY PatientOutcomes "http://www.ICPS/ontologies/PatientOutcomes#" >
+    <!ENTITY ICPSMerged "http://www.apsf.net.au/ontologies/ICPSMerged.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ICPS/ontologies/"
+     xml:base="http://www.ICPS/ontologies/PatientOutcomes"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:PatientOutcomes="http://www.ICPS/ontologies/PatientOutcomes#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:kaon2="http://kaon2.semanticweb.org/internal#"
+     xmlns:owlx="http://www.w3.org/2003/05/owl-xml#"
+     xmlns:ICPSMerged="http://www.apsf.net.au/ontologies/ICPSMerged.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrlx="http://www.w3.org/2003/11/swrlx#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ruleml="http://www.w3.org/2003/11/ruleml#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="">
+        <owl:versionInfo>2.0</owl:versionInfo>
+        <dc:creator
+            >Mari Carmen Su&#225;rez-Figueroa</dc:creator>
+        <dc:creator
+            >Elena Montiel-Ponsoda</dc:creator>
+        <dc:creator>Mar&#237;a Poveda</dc:creator>
+        <rdfs:comment xml:lang="en"
+            >Ontology network about patient outcomes.</rdfs:comment>
+        <dc:creator>Oscar Corcho</dc:creator>
+        <owl:priorVersion>1.0</owl:priorVersion>
+        <rdfs:comment xml:lang="en"
+            >This work has been carried out by the Ontological Engineering Group, using sources from the University of Saint Etienne and the Australian Patient Safety Foundation, and supported by the World Health Organisation under the International Classification for Patient Safety programme.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientOutcomes#DegreeOfHarm -->
+
+    <owl:Class rdf:about="#DegreeOfHarm">
+        <rdfs:label xml:lang="en">Degree of harm</rdfs:label>
+        <owl:disjointWith rdf:resource="#Harm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientOutcomes#Harm -->
+
+    <owl:Class rdf:about="#Harm">
+        <rdfs:label xml:lang="en">Harm</rdfs:label>
+        <owl:disjointWith rdf:resource="#PressureUlcerStage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientOutcomes#Injury -->
+
+    <owl:Class rdf:about="#Injury">
+        <rdfs:label xml:lang="en">Injury</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Harm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientOutcomes#Pathophysiology -->
+
+    <owl:Class rdf:about="#Pathophysiology">
+        <rdfs:label xml:lang="en">Pathophysiology</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Harm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientOutcomes#PressureUlcerStage -->
+
+    <owl:Class rdf:about="#PressureUlcerStage">
+        <rdfs:label xml:lang="en"
+            >Pressure ulcer stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientOutcomes#death -->
+
+    <PatientOutcomes:DegreeOfHarm rdf:about="#death">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">death</rdfs:label>
+    </PatientOutcomes:DegreeOfHarm>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientOutcomes#mildHarm -->
+
+    <PatientOutcomes:DegreeOfHarm rdf:about="#mildHarm">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">mild harm</rdfs:label>
+    </PatientOutcomes:DegreeOfHarm>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientOutcomes#moderateHarm -->
+
+    <PatientOutcomes:DegreeOfHarm rdf:about="#moderateHarm">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">moderate harm</rdfs:label>
+    </PatientOutcomes:DegreeOfHarm>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientOutcomes#noneHarm -->
+
+    <owl:Thing rdf:about="#noneHarm">
+        <rdf:type rdf:resource="#DegreeOfHarm"/>
+        <rdfs:label xml:lang="en">none harm</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientOutcomes#pressureUlcerStage1 -->
+
+    <owl:Thing rdf:about="#pressureUlcerStage1">
+        <rdf:type rdf:resource="#PressureUlcerStage"/>
+        <rdfs:label xml:lang="en"
+            >pressure ulcer stage 1</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientOutcomes#pressureUlcerStage2 -->
+
+    <PatientOutcomes:PressureUlcerStage rdf:about="#pressureUlcerStage2">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >pressure ulcer stage 2</rdfs:label>
+    </PatientOutcomes:PressureUlcerStage>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientOutcomes#pressureUlcerStage3 -->
+
+    <owl:Thing rdf:about="#pressureUlcerStage3">
+        <rdf:type rdf:resource="#PressureUlcerStage"/>
+        <rdfs:label xml:lang="en"
+            >pressure ulcer stage 3</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientOutcomes#pressureUlcerStage4 -->
+
+    <PatientOutcomes:PressureUlcerStage rdf:about="#pressureUlcerStage4">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >pressure ulcer stage 4</rdfs:label>
+    </PatientOutcomes:PressureUlcerStage>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientOutcomes#pressureUlcerStageUnstageable -->
+
+    <owl:Thing rdf:about="#pressureUlcerStageUnstageable">
+        <rdf:type rdf:resource="#PressureUlcerStage"/>
+        <rdfs:label xml:lang="en"
+            >pressure ulcer stage unstageable</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientOutcomes#severeHarm -->
+
+    <owl:Thing rdf:about="#severeHarm">
+        <rdf:type rdf:resource="#DegreeOfHarm"/>
+        <rdfs:label xml:lang="en">servera harm</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientOutcomes#suspectedDeepTissueInjury -->
+
+    <owl:Thing rdf:about="#suspectedDeepTissueInjury">
+        <rdf:type rdf:resource="#PressureUlcerStage"/>
+        <rdfs:label xml:lang="en"
+            >suspected deep tissue injury</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="#pressureUlcerStage1"/>
+            <rdf:Description rdf:about="#moderateHarm"/>
+            <rdf:Description rdf:about="#pressureUlcerStageUnstageable"/>
+            <rdf:Description rdf:about="#pressureUlcerStage3"/>
+            <rdf:Description rdf:about="#mildHarm"/>
+            <rdf:Description rdf:about="#death"/>
+            <rdf:Description rdf:about="#noneHarm"/>
+            <rdf:Description rdf:about="#pressureUlcerStage2"/>
+            <rdf:Description rdf:about="#severeHarm"/>
+            <rdf:Description rdf:about="#suspectedDeepTissueInjury"/>
+            <rdf:Description rdf:about="#pressureUlcerStage4"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

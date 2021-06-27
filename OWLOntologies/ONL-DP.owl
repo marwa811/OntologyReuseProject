@@ -1,0 +1,1602 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY dataset "http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#" >
+    <!ENTITY dolce-particular "http://neurolog.unice.fr/ontoneurolog/v3.0/dolce-particular.owl#" >
+    <!ENTITY medical-dataset-expression "http://neurolog.unice.fr/ontoneurolog/v3.0/medical-dataset-expression.owl#" >
+    <!ENTITY core-ontology-programs-software "http://neurolog.unice.fr/ontoneurolog/v3.0/core-ontology-programs-software.owl#" >
+    <!ENTITY ontoneurolog-extension-of-dolce "http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-extension-of-dolce.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#"
+     xml:base="http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:dataset="http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dolce-particular="http://neurolog.unice.fr/ontoneurolog/v3.0/dolce-particular.owl#"
+     xmlns:medical-dataset-expression="http://neurolog.unice.fr/ontoneurolog/v3.0/medical-dataset-expression.owl#"
+     xmlns:core-ontology-programs-software="http://neurolog.unice.fr/ontoneurolog/v3.0/core-ontology-programs-software.owl#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:ontoneurolog-extension-of-dolce="http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-extension-of-dolce.owl#">
+    <owl:Ontology rdf:about="http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl">
+        <dc:contributor rdf:datatype="&rdfs;Literal">Farooq Ahmad, Michel Dojat, Bernard Gibaud, Gilles Kassel, Lynda Temal, bernard.gibaud@univ-rennes1.fr</dc:contributor>
+        <dc:date>2009-11-20</dc:date>
+        <owl:imports rdf:resource="http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    <owl:AnnotationProperty rdf:about="&dc;date"/>
+    <owl:AnnotationProperty rdf:about="&skos;definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#has-for-floating-dataset-at -->
+
+    <owl:ObjectProperty rdf:about="#has-for-floating-dataset-at">
+        <rdfs:domain rdf:resource="#registration"/>
+        <rdfs:range rdf:resource="&dataset;floating-dataset"/>
+        <rdfs:subPropertyOf rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#has-for-reference-dataset-at -->
+
+    <owl:ObjectProperty rdf:about="#has-for-reference-dataset-at">
+        <rdfs:domain rdf:resource="#registration"/>
+        <rdfs:range rdf:resource="&dataset;reference-dataset"/>
+        <rdfs:subPropertyOf rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dolce-particular.owl#has-for-part -->
+
+    <owl:ObjectProperty rdf:about="&dolce-particular;has-for-part"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-extension-of-dolce.owl#has-for-data-at -->
+
+    <owl:ObjectProperty rdf:about="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-extension-of-dolce.owl#has-for-result-at -->
+
+    <owl:ObjectProperty rdf:about="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-extension-of-dolce.owl#is-a-result-of-at -->
+
+    <owl:ObjectProperty rdf:about="&ontoneurolog-extension-of-dolce;is-a-result-of-at"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#absolute-metabolite-concentration-estimation -->
+
+    <owl:Class rdf:about="#absolute-metabolite-concentration-estimation">
+        <rdfs:subClassOf rdf:resource="#quantitative-parameter-estimation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+                <owl:allValuesFrom rdf:resource="&dataset;H1-chemical-shift-imaging-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:someValuesFrom rdf:resource="&dataset;absolute-metabolite-concentration-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] Based on a spectrum measured in a single voxel or set of voxels, the absolute concentration of metabolite is estimated from the peak at the corresponding Lamor frequency (f0= γB0/2π) where g the gyromagnetic ratio depends of the considered metabolite (11.27 MHz/T for Na, 11.25 Mhz/T for P, and 40.08 fro F for B0=1T). The absolute metabolite concentration ratio is estimated by a specific fitting of the spectrum data relative to the considered metabolite. A calibration or the use of a model is required to access to the absolute value of the metabolite concentration.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#absolute-proton-density-estimation -->
+
+    <owl:Class rdf:about="#absolute-proton-density-estimation">
+        <rdfs:subClassOf rdf:resource="#quantitative-parameter-estimation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:someValuesFrom rdf:resource="&dataset;absolute-proton-density-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+                <owl:onClass rdf:resource="&dataset;proton-density-weighted-MR-dataset"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] The specific procedure that leads to the quantitative estimation of the proton density defined tissue or structure.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#affine-non-rigid-registration -->
+
+    <owl:Class rdf:about="#affine-non-rigid-registration">
+        <rdfs:subClassOf rdf:resource="#affine-registration"/>
+        <owl:disjointWith rdf:resource="#rigid-registration"/>
+        <skos:definition>[DEF] An AFFINE NON-RIGID REGISTRATION is an affine registration that estimates an affine but non-rigid geometrical transformation.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#affine-registration -->
+
+    <owl:Class rdf:about="#affine-registration">
+        <rdfs:subClassOf rdf:resource="#registration"/>
+        <owl:disjointWith rdf:resource="#non-affine-registration"/>
+        <skos:definition>[DEF] An AFFINE REGISTRATION is a registration that estimates an affine geometrical transformation, usually represented by a 4 x 4 matrix.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#bias-correction -->
+
+    <owl:Class rdf:about="#bias-correction">
+        <rdfs:subClassOf rdf:resource="#calibration-model-application"/>
+        <rdfs:subClassOf rdf:resource="#intensity-normalization"/>
+        <rdfs:subClassOf rdf:resource="#restoration"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+                <owl:onClass rdf:resource="&dataset;bias-field-dataset"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] A BIAS-CORRECTION is a RESTORATION that focuses on the compensation of bias.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#bias-field-estimation -->
+
+    <owl:Class rdf:about="#bias-field-estimation">
+        <rdfs:subClassOf rdf:resource="#calibration-model-estimation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:onClass rdf:resource="&dataset;bias-field-dataset"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] The measured magnetic resonance image is usually degraded by a bias field or intensity inhomogeneity (nonuniformity), which is induced primarily by the sensitivity profile of the radio frequency coil. The bias field is characterized by multiplicative smooth spatial variations that modulate the intensity of the true image data. (…) Because independent measurement of the bias field is very difficult and time-consuming, most of the reported correction techniques are postprocessing or retrospective methods, in which the bias field is estimated from the image itself after acquisition. Source: [Ji et al., 2007]. The estimation of a bias field may concern any kind of MR data.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#blood-oxygen-level-dependent-signal-changes-estimation -->
+
+    <owl:Class rdf:about="#blood-oxygen-level-dependent-signal-changes-estimation">
+        <rdfs:subClassOf rdf:resource="#quantitative-parameter-estimation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+                <owl:allValuesFrom rdf:resource="&dataset;T2-star-weighted-MR-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:someValuesFrom rdf:resource="&dataset;bold-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] BLOOD OXYGEN LEVEL DEPENDENT SIGNAL CHANGES ESTIMATION is a method for determining which areas of brain are active under varying neurological stimulus conditions based on the magnetic property of the de-oxygenation of blood haemoglobin. The concentration variations of deoxyhaemoglobin due to neuron activation locally modifies the magnetic field.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#boundary-surface-and-region-based-segmentation -->
+
+    <owl:Class rdf:about="#boundary-surface-and-region-based-segmentation">
+        <rdfs:subClassOf rdf:resource="#segmentation"/>
+        <skos:definition>[DEF] Boundary surface and region based segmentations are segmentations that involve a fusion of region- and boundary / surface based techniques, such as level sets fused with Bayesian classifications.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#boundary-surface-based-segmentation -->
+
+    <owl:Class rdf:about="#boundary-surface-based-segmentation">
+        <rdfs:subClassOf rdf:resource="#segmentation"/>
+        <skos:definition>[DEF] Boundary based segmentations are segmentations that segment the image/volume based on edge or surfaces algorithms (Suri et al., 2002a,b). Such contours or surfaces may, correspond to sulci, cortex ribbon etc...</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#brain-segmentation -->
+
+    <owl:Class rdf:about="#brain-segmentation">
+        <rdfs:subClassOf rdf:resource="#segmentation"/>
+        <skos:definition>[DEF] A brain segmentation (also called skull-stripping, or brain extraction) is a segmentation that separates the brain from the other tissues such as skin, fat, bone etc.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#calibration-model-application -->
+
+    <owl:Class rdf:about="#calibration-model-application">
+        <rdfs:subClassOf rdf:resource="#dataset-processing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+                <owl:onClass rdf:resource="&dataset;calibration-dataset"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] A Calibration model application is the final stage of a calibration process, by which non-calibrated data are transformed into calibrated data by means of a calibration model, usually derived from calibration measurements obtained, e.g. from a phantom.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#calibration-model-estimation -->
+
+    <owl:Class rdf:about="#calibration-model-estimation">
+        <rdfs:subClassOf rdf:resource="#dataset-processing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+                <owl:onClass rdf:resource="&dataset;quality-procedure-dataset"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:someValuesFrom rdf:resource="&dataset;calibration-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] “Calibration is measuring the response of the instrument to a stimulus of known value, with the purpose of then being able to apply that knowledge to in vivo measurements.” (Tofts, 2004). Calibration measurements may be carried out in phantoms and in subjects. Calibration can be performed by measuring the response of the instrument in a specific situation (e.g. &quot;resting state&quot;) without a specific stimulation as input.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#closing -->
+
+    <owl:Class rdf:about="#closing">
+        <rdfs:subClassOf rdf:resource="#mathematical-morphology-filtering"/>
+        <skos:definition>[DEF] A CLOSING is A MATHEMATICAL MORPHOLOGY FILTERING, in which the closing of A by B is obtained by the dilation of A by B, followed by erosion of the resulting structure by B. (Source: Wikipedia).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#coefficient-of-variation-calculation -->
+
+    <owl:Class rdf:about="#coefficient-of-variation-calculation">
+        <rdfs:subClassOf rdf:resource="#statistical-analysis"/>
+        <skos:definition>[DEF] A COEFFICIENT OF VARIATION CALCULATION is a STATISTICAL ANALYSIS in which the values taken by the mathematical function associated to the output dataset are calculated as the coefficient of variation of the values taken by the functions associated to the input dataset(s). The input datasets (“to be averaged”) must be associated with mathematical functions sharing the same domain and range. The COEFFICIENT OF VARIATION (CV) is a normalized measure of dispersion. It is defined as the ratio of the standard deviation to the mean.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#convolution -->
+
+    <owl:Class rdf:about="#convolution">
+        <rdfs:subClassOf rdf:resource="#filtering"/>
+        <skos:definition>[DEF] A CONVOLUTION is a FILTERING in which the “Filtered dataset” is obtained by convolution of the “dataset to be filtered” by a convolution kernel.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#cropping -->
+
+    <owl:Class rdf:about="#cropping">
+        <rdfs:subClassOf rdf:resource="#resampling"/>
+        <skos:definition>[DEF] A CROPPING is a resampling that affects only the domain of the mathematical function associated to the dataset “to be cropped”, by defining a subset of this domain, more precisely by reducing the number of samples and changing the upper and lower limit of one or more intervals of this domain. The values taken by the function associated to the dataset are not changed.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#dataset-arithmetical-operation -->
+
+    <owl:Class rdf:about="#dataset-arithmetical-operation">
+        <rdfs:subClassOf rdf:resource="#dataset-processing"/>
+        <skos:definition>[DEF] A DATASET ARITHMETICAL OPERATION is a DATASET PROCESSING is which the values taken by the mathematical function associated to the output dataset are calculated using an arithmetic operation applied to the values taken by the functions associated to the input dataset(s), e.g. sum, subtraction, etc. When the arithmetic operation has several operands, the datasets associated with each operand must be associated with mathematical functions sharing the same domain.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#dataset-processing -->
+
+    <owl:Class rdf:about="#dataset-processing">
+        <rdfs:subClassOf rdf:resource="&ontoneurolog-extension-of-dolce;conceptual-action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:onClass rdf:resource="&dataset;dataset"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+                <owl:onClass rdf:resource="&dataset;dataset"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#dataset-transformation -->
+
+    <owl:Class rdf:about="#dataset-transformation">
+        <rdfs:subClassOf rdf:resource="#dataset-processing"/>
+        <skos:definition>[DEF] A DATASET TRANSFORMATION is a DATASET PROCESSING that creates a “transformed dataset” from a “to be transformed dataset” (e.g. a Fourier Transform). The mathematical function associated to the “transformed dataset” is derived from the mathematical function associated to the “to be transformed dataset”: especially, its domain intervals are defined in the transformed space, i.e. the frequency domain.
+“In mathematics, transform theory is the study of transforms. The essence of transform theory is that by a suitable choice of basis for a vector space a problem may be simplified — or diagonalized as in spectral theory”. (Source: Wikipedia).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#datasets-addition -->
+
+    <owl:Class rdf:about="#datasets-addition">
+        <rdfs:subClassOf rdf:resource="#dataset-arithmetical-operation"/>
+        <skos:definition>[DEF] A DATASETS ADDITION is a DATASET ARITHMETICAL OPERATION in which the arithmetic operation to be applied to the input datasets is an addition.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#datasets-blending -->
+
+    <owl:Class rdf:about="#datasets-blending">
+        <rdfs:subClassOf rdf:resource="#dataset-arithmetical-operation"/>
+        <skos:definition>[DEF] A DATASETS BLENDING is a DATASET ARITHMETICAL OPERATION in which the arithmetic operation to be applied to the input datasets is a blending operation (usually a linear combination of the input operands).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#datasets-division -->
+
+    <owl:Class rdf:about="#datasets-division">
+        <rdfs:subClassOf rdf:resource="#dataset-arithmetical-operation"/>
+        <skos:definition>[DEF] A DATASETS DIVISION is a DATASET ARITHMETICAL OPERATION in which the arithmetic operation to be applied to the input datasets (namely a “DIVIDEND DATASET”, and a “DIVISOR DATASET”), is a division.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#datasets-logical-operation -->
+
+    <owl:Class rdf:about="#datasets-logical-operation">
+        <rdfs:subClassOf rdf:resource="#dataset-arithmetical-operation"/>
+        <skos:definition>[DEF] A DATASETS LOGICAL OPERATION is a DATASET ARITHMETICAL OPERATION in which the arithmetic operation to be applied to the input datasets is a logical operation.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#datasets-multiplication -->
+
+    <owl:Class rdf:about="#datasets-multiplication">
+        <rdfs:subClassOf rdf:resource="#dataset-arithmetical-operation"/>
+        <skos:definition>[DEF] A DATASETS MULTIPLICATION is a DATASET ARITHMETICAL OPERATION in which the arithmetic operation to be applied to the input datasets is a multiplication.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#datasets-subtraction -->
+
+    <owl:Class rdf:about="#datasets-subtraction">
+        <rdfs:subClassOf rdf:resource="#dataset-arithmetical-operation"/>
+        <skos:definition>[DEF] A DATASETS SUBTRACTION is a DATASET ARITHMETICAL OPERATION in which the arithmetic operation to be applied to the input datasets (namely a “A DATASET”, and a “B DATASET TO BE SUBTRACTED FROM A”), is a subtraction.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#de-noising -->
+
+    <owl:Class rdf:about="#de-noising">
+        <rdfs:subClassOf rdf:resource="#restoration"/>
+        <skos:definition>[DEF] A DENOISING is a RESTORATION that focuses on the compensation of noise.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#diffusion-tensor-calculation -->
+
+    <owl:Class rdf:about="#diffusion-tensor-calculation">
+        <rdfs:subClassOf rdf:resource="#quantitative-parameter-estimation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:someValuesFrom rdf:resource="&dataset;diffusion-tensor-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+                <owl:allValuesFrom rdf:resource="&dataset;diffusion-weighted-MR-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] A DIFFUSION TENSOR is calculated from a nondiffusion-weighted image plus six or more diffusion-weighted measurements along noncollinear directions. (Tofts, 2004)</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#dilation -->
+
+    <owl:Class rdf:about="#dilation">
+        <rdfs:subClassOf rdf:resource="#mathematical-morphology-filtering"/>
+        <skos:definition>[DEF] Dilation, in general, causes objects to dilate or grow in size. The amount and the way that they grow depend upon the choice of the structuring element. The operation of dilation is based on the maximum value among the neighboring pixels.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#distance-transform-processing -->
+
+    <owl:Class rdf:about="#distance-transform-processing">
+        <rdfs:subClassOf rdf:resource="#mathematical-morphology-filtering"/>
+        <skos:definition>[DEF] A DISTANCE TRANSFORM PROCESSING is a MATHEMATICAL MORPHOLOGY FILTERING transforming a binary image into a non-binary image that “highlights at each pixel of the image the distance to the nearest obstacle pixel. A most common type “obstacle pixel” is a boundary pixel in a binary image”. (Source: Wikipedia).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#distortion-correction -->
+
+    <owl:Class rdf:about="#distortion-correction">
+        <rdfs:subClassOf rdf:resource="#calibration-model-application"/>
+        <rdfs:subClassOf rdf:resource="#restoration"/>
+        <skos:definition>[DEF] A DISTORTION-CORRECTION is a RESTORATION that focuses on the compensation of a distortion, based on a calibration model.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#erosion -->
+
+    <owl:Class rdf:about="#erosion">
+        <rdfs:subClassOf rdf:resource="#mathematical-morphology-filtering"/>
+        <skos:definition>[DEF] Erosion, in general, causes objects to shrink. The amount and the way that they shrink depend upon the choice of the structuring element. Erosion is defined as a minimum operator, which assigns to every image pixel a minimum value from among their neighbors. The neighborhood is defined in mathematical morphology using a structuring element.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#field-map-estimation -->
+
+    <owl:Class rdf:about="#field-map-estimation">
+        <rdfs:subClassOf rdf:resource="#calibration-model-estimation"/>
+        <rdfs:subClassOf rdf:resource="#quantitative-parameter-estimation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:someValuesFrom rdf:resource="&dataset;field-map-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+                <owl:onClass rdf:resource="&dataset;magnetic-field-quality-dataset-long-echo-time"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+                <owl:onClass rdf:resource="&dataset;magnetic-field-quality-dataset-short-echo-time"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] Variations in the main magnetic field B0, due to inhomogeneity, the presence of a body in the magnetic field etc…, provoke corresponding proton frequency variations (following the dependence of the proton precession frequency and the strength of the magnetic field, f0= γB0/2π where γ the gyromagnetic ratio egal 42.58 Mhz/T for H at B0=1T). These frequency variations can be estimated via a specific calibration procedure (including the measurement of two long and short time images), the field map estimation. Knowing the variations, corresponding spatial displacement i.e spatial image distortion can be corrected.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#filtering -->
+
+    <owl:Class rdf:about="#filtering">
+        <rdfs:subClassOf rdf:resource="#dataset-processing"/>
+        <skos:definition>[DEF] A FILTERING is a DATASET PROCESSING applied to a “dataset to be filtered” and resulting in a “filtered dataset”. The transformation applied may be linear or non-linear. The domain of the mathematical functions associated to the “dataset to be filtered” and “filtered dataset” coincide.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#fourier-transformation -->
+
+    <owl:Class rdf:about="#fourier-transformation">
+        <rdfs:subClassOf rdf:resource="#dataset-transformation"/>
+        <owl:disjointWith rdf:resource="#wavelet-transformation"/>
+        <skos:definition>[DEF] A FOURIER TRANSFORMATION is a DATASET TRANSFORMATION based on the Fourier Transform.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#fractional-anisotropy-calculation -->
+
+    <owl:Class rdf:about="#fractional-anisotropy-calculation">
+        <rdfs:subClassOf rdf:resource="#quantitative-parameter-estimation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+                <owl:allValuesFrom rdf:resource="&dataset;diffusion-tensor-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:someValuesFrom rdf:resource="&dataset;fractional-anisotropy-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] FA = SQRT ( (λ1 – MD)2 + (λ2 – MD)2 + (λ3 – MD)2 ) / SQRT (λ12 + λ22 + λ32)
+With MD: Mean diffusivity
+λ1, λ2, λ3 are the eigenvalues of the diffusion tensor
+(Tofts, 2004)</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#high-pass-filtering -->
+
+    <owl:Class rdf:about="#high-pass-filtering">
+        <rdfs:subClassOf rdf:resource="#convolution"/>
+        <owl:disjointWith rdf:resource="#low-pass-filtering"/>
+        <skos:definition>[DEF] A HIGH-PASS FILTERING is a CONVOLUTION “that passes high-frequency signals but attenuates (reduces the amplitude of) signals with frequencies lower than the cutoff frequency”. (Source: Wikipedia).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#intensity-normalization -->
+
+    <owl:Class rdf:about="#intensity-normalization">
+        <rdfs:subClassOf rdf:resource="#resampling"/>
+        <skos:definition>[DEF] An INTENSITY MODIFICATION is a resampling that affects only the range of the values taken by the mathematical function associated to the dataset “to be intensity-normalized”.
+[EX] Examples are: Bias field correction (with respect to an estimated bias); Histogram equalization; Intensity normalization (with respect to a reference); Image contrast adjustment (window / level); Image inversion.
+</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#lesion-segmentation -->
+
+    <owl:Class rdf:about="#lesion-segmentation">
+        <rdfs:subClassOf rdf:resource="#segmentation"/>
+        <skos:definition>[DEF] A lesion segmentation is a segmentation that extracts structures such as tumours, or multiple sclerosis white matter lesions.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#low-pass-filtering -->
+
+    <owl:Class rdf:about="#low-pass-filtering">
+        <rdfs:subClassOf rdf:resource="#convolution"/>
+        <skos:definition>[DEF] A LOW-PASS FILTERING is a DATASET CONVOLUTION “that passes low-frequency signals but attenuates (reduces the amplitude of) signals with frequencies higher than the cutoff frequency”. (Source: Wikipedia).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#magnetization-transfer-ratio-calculation -->
+
+    <owl:Class rdf:about="#magnetization-transfer-ratio-calculation">
+        <rdfs:subClassOf rdf:resource="#quantitative-parameter-estimation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:someValuesFrom rdf:resource="&dataset;magnetization-transfer-ratio-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF &amp; CIT] “The Magnetization Transfer Ratio may be defined as MTR=100x(M0-Ms)/M0 pu, where M0 represents the signal measured in absence of saturation, and Ms the signal in the presence of saturation applied to the bound proton pool. It is expressed as percentage units (pu). “ (Tofts, 2004).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#mathematical-morphology-filtering -->
+
+    <owl:Class rdf:about="#mathematical-morphology-filtering">
+        <rdfs:subClassOf rdf:resource="#filtering"/>
+        <skos:definition>[DEF] Morphological image processing is a collection of techniques for digital image processing based on mathematical morphology. Since these techniques rely only on the relative ordering of pixel values, not on their numerical values, they are especially suited to the processing of binary images and greyscale images whose light transfer function is not known. (Source: Wikipedia).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#mean-calculation -->
+
+    <owl:Class rdf:about="#mean-calculation">
+        <rdfs:subClassOf rdf:resource="#statistical-analysis"/>
+        <skos:definition>[DEF] A MEAN CALCULATION is a STATISTICAL ANALYSIS in which the values taken by the mathematical function associated to the output dataset are calculated using an arithmetic mean of the values taken by the functions associated to the input dataset(s). The input datasets (“to be averaged”) must be associated with mathematical functions sharing the same domain and range.
+[DIV] MEAN CALCULATION is used for building templates for inter-subject registration, i.e. datasets used to perform spatial normalization (alignment with respect to a common spatial reference, provided by a specific subject) by averaging image data obtained (using the same kind of imaging equipment) from a population of subjects. (Source: [Temal et al., 2006]).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#mean-diffusivity-calculation -->
+
+    <owl:Class rdf:about="#mean-diffusivity-calculation">
+        <rdfs:subClassOf rdf:resource="#quantitative-parameter-estimation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:someValuesFrom rdf:resource="&dataset;mean-diffusivity-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+                <owl:allValuesFrom rdf:resource="&dataset;diffusion-weighted-MR-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] “The most robust estimate of the diffusion properties of a voxel is given by the average of the eigenvectors of the Diffusion Tensor”.
+MD = (λ1 + λ2+ λ3) / 3
+(Tofts, 2004)</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#mesh-generation -->
+
+    <owl:Class rdf:about="#mesh-generation">
+        <rdfs:subClassOf rdf:resource="#dataset-processing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+                <owl:allValuesFrom rdf:resource="&dataset;segmentation-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] A MESH GENERATION IS A DATASET PROCESSING that transforms a list of points in 2D or 3D space into a MESH, e.g. a list of polygons (resp. tetrahedrons) modelling the contour, or the surface, or the volume of the objects represented by these points. The input list of points may be specified as a particular ROI of a SEGMENTATION DATASET.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#metabolite-concentration-ratio-estimation -->
+
+    <owl:Class rdf:about="#metabolite-concentration-ratio-estimation">
+        <rdfs:subClassOf rdf:resource="#quantitative-parameter-estimation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+                <owl:allValuesFrom rdf:resource="&dataset;MR-spectroscopy-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:someValuesFrom rdf:resource="&dataset;metabolite-concentration-ratio-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] Based on a spectrum measured in a single voxel or set of voxels, the absolute concentration of metabolite is estimated from the peak at the corresponding Lamor frequency (f0= γB0/2π) where g the gyromagnetic ratio depends of the considered metabolite (11.27 MHz/T for Na, 11.25 Mhz/T for P, and 40.08 fro F for B0=1T). The metabolite concentration ratio is estimated by a specific fitting of the spectrum data relative to the considered metabolites (lactate, choline ect …).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#mono-modality-affine-non-rigid-registration -->
+
+    <owl:Class rdf:about="#mono-modality-affine-non-rigid-registration">
+        <rdfs:subClassOf rdf:resource="#affine-non-rigid-registration"/>
+        <owl:disjointWith rdf:resource="#multi-modality-affine-non-rigid-registration"/>
+        <skos:definition>[DEF] A MONO MODALITY AFFINE NON-RIGID REGISTRATION is an affine registration which estimates an affine but non-rigid geometrical transformation, in which the reference and the floating image have the same modality, which means that they represent the same kind of information, e.g. a T1-weighted MR signal.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#mono-modality-non-affine-registration -->
+
+    <owl:Class rdf:about="#mono-modality-non-affine-registration">
+        <rdfs:subClassOf rdf:resource="#non-affine-registration"/>
+        <owl:disjointWith rdf:resource="#multi-modality-non-affine-registration"/>
+        <skos:definition>[DEF] A MONO MODALITY NON-AFFINE REGISTRATION is a non-affine registration, in which the reference and the floating image have the same modality, which means that they represent the same kind of information, e.g. a T1-weighted MR signal.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#mono-modality-rigid-registration -->
+
+    <owl:Class rdf:about="#mono-modality-rigid-registration">
+        <rdfs:subClassOf rdf:resource="#rigid-registration"/>
+        <owl:disjointWith rdf:resource="#multi-modality-rigid-coregistration"/>
+        <skos:definition>[DEF] A mono modality rigid registration is a rigid registration in which the reference and the floating image have the same modality, which means that they represent the same kind of information, e.g. a T1-weighted MR signal.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#multi-modality-affine-non-rigid-registration -->
+
+    <owl:Class rdf:about="#multi-modality-affine-non-rigid-registration">
+        <rdfs:subClassOf rdf:resource="#affine-non-rigid-registration"/>
+        <skos:definition>[DEF] A MULTI MODALITY AFFINE NON-RIGID REGISTRATION is an affine registration which estimates an affine but non-rigid geometrical transformation, in which the reference and the floating image represent different kinds of information, e.g. a T1-weighted MR signal and a T2-weighted MR signal, or a T1-weighted MR signal and a FDG tracer concentration (PET information).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#multi-modality-non-affine-registration -->
+
+    <owl:Class rdf:about="#multi-modality-non-affine-registration">
+        <rdfs:subClassOf rdf:resource="#non-affine-registration"/>
+        <skos:definition>[DEF] A MULTI MODALITY NON-AFFINE REGISTRATION is a non-affine registration, in which the reference and the floating image represent different kinds of information, e.g. a T1-weighted MR signal and a T2-weighted MR signal, or a T1-weighted MR signal and a FDG tracer concentration (PET information).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#multi-modality-rigid-coregistration -->
+
+    <owl:Class rdf:about="#multi-modality-rigid-coregistration">
+        <rdfs:subClassOf rdf:resource="#rigid-registration"/>
+        <skos:definition>[DEF] A multi modality rigid registration is a rigid registration in which the reference and the floating image have different modalities, which means that they represent different kinds of information, e.g. a T1-weighted MR signal and a T2-weighted MR signal, or a T1-weighted MR signal and a FDG tracer concentration (PET information).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#non-affine-registration -->
+
+    <owl:Class rdf:about="#non-affine-registration">
+        <rdfs:subClassOf rdf:resource="#registration"/>
+        <skos:definition>[DEF] A NON-AFFINE REGISTRATION is a registration that estimates a non-affine geometrical transformation, usually represented by a 3D displacement field.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#normalization -->
+
+    <owl:Class rdf:about="#normalization">
+        <rdfs:subClassOf rdf:resource="#registration"/>
+        <skos:definition>[DEF] A NORMALIZATION is a registration in which the reference and the floating image correspond, either to two different subjects, or to a subject and a template.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#opening -->
+
+    <owl:Class rdf:about="#opening">
+        <rdfs:subClassOf rdf:resource="#mathematical-morphology-filtering"/>
+        <skos:definition>[DEF] An OPENING is A MATHEMATICAL MORPHOLOGY FILTERING, in which “the opening of A by B is obtained by the erosion of A by B, followed by dilation of the resulting image by B”. (Source: Wikipedia).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#permutation -->
+
+    <owl:Class rdf:about="#permutation">
+        <rdfs:subClassOf rdf:resource="#resampling"/>
+        <skos:definition>[DEF] A PERMUTATION is a RESAMPLING that affects only the domain of the mathematical function associated to the dataset “to be re-permutated”. This permutation consists in applying a re-ordering of the samples along a specific interval, e.g.: x1, x2, …, x255 being re-ordered as x’1, x’2,…, x’255 based on the transformation x’1 = 256-x1.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#quantitative-T1-estimation -->
+
+    <owl:Class rdf:about="#quantitative-T1-estimation">
+        <rdfs:subClassOf rdf:resource="#quantitative-parameter-estimation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:someValuesFrom rdf:resource="&dataset;quantitative-T1-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+                <owl:onClass rdf:resource="&dataset;T1-weighted-MR-dataset"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] Several methods can be used for the quantitative estimation of T1 in a defined tissue or structure. The most common method is based of the inversion of the MR signal (using a 180° pulse) and the acquisition of several T1-weighted images at different echo time during the recovery of the longitudinal magnetic component.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#quantitative-T2-estimation -->
+
+    <owl:Class rdf:about="#quantitative-T2-estimation">
+        <rdfs:subClassOf rdf:resource="#quantitative-parameter-estimation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+                <owl:onClass rdf:resource="&dataset;T2-weighted-MR-dataset"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:someValuesFrom rdf:resource="&dataset;quantitative-T2-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] Several methods can be used for the quantitative estimation of T2 in a defined tissue or structure. based on the use of a spin echo sequence and the acquisition of several T2-weighted images at different echo time during the recovery of the transverse magnetic component.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#quantitative-T2-star-estimation -->
+
+    <owl:Class rdf:about="#quantitative-T2-star-estimation">
+        <rdfs:subClassOf rdf:resource="#quantitative-parameter-estimation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:someValuesFrom rdf:resource="&dataset;quantitative-T2-star-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+                <owl:onClass rdf:resource="&dataset;T2-star-weighted-MR-dataset"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] Several methods can be used for the quantitative estimation of T2star in a defined tissue or structure. The most common method is based on the use of a gradient echo sequence and the acquisition of several T2star-weighted images at different echo time during the recovery of the transverse magnetic component.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#quantitative-parameter-estimation -->
+
+    <owl:Class rdf:about="#quantitative-parameter-estimation">
+        <rdfs:subClassOf rdf:resource="#dataset-processing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:someValuesFrom rdf:resource="&dataset;parameter-quantification-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] Quantitative parameter estimation is the procedure that leads to the quantitative estimation of a specific physiological parameter.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#re-orientation -->
+
+    <owl:Class rdf:about="#re-orientation">
+        <rdfs:subClassOf rdf:resource="#resampling"/>
+        <skos:definition>[DEF] A RE-ORIENTATION is a resampling that affects only the domain of the mathematical function associated to the dataset “to be re-oriented”. This re-orientation can be specified in a 4x4 matrix.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#reconstruction -->
+
+    <owl:Class rdf:about="#reconstruction">
+        <rdfs:subClassOf rdf:resource="#dataset-processing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+                <owl:onClass rdf:resource="&dataset;non-reconstructed-dataset"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:onClass rdf:resource="&dataset;reconstructed-dataset"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] A RECONSTRUCTION is a dataset processing by which one or more images are generated, based on measurements acquired by imaging equipment. Numerous very different kinds of reconstruction exist, depending on the different imaging modalities: CT, MR, PET, SPECT, MEG etc. Some of the reconstruction problems are: reconstruction from projections (e.g. CT, PET, SPECT), reconstruction from k-space acquisitions (MR), reconstruction of sources in MEG/EEG, reconstruction from radiofrequency data in ultrasound. Reconstruction algorithms are included in data acquisition software.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#region-based-segmentation -->
+
+    <owl:Class rdf:about="#region-based-segmentation">
+        <rdfs:subClassOf rdf:resource="#segmentation"/>
+        <skos:definition>[DEF] Region based segmentations are segmentations that segment the image/volume into different regions/sub-volumes (Suri et al., 2002a,b). Such regions may, e.g., correspond to white matter, grey matter and cerebrospinal fluid. Expectation Maximization techniques are examples of such techniques.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#regional-cerebral-blood-flow-estimation -->
+
+    <owl:Class rdf:about="#regional-cerebral-blood-flow-estimation">
+        <rdfs:subClassOf rdf:resource="#quantitative-parameter-estimation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:someValuesFrom rdf:resource="&dataset;regional-cerebral-blood-flow-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] Regional cerebral blood flow is estimated from specific MR sequences using invasive method (a tracer plus a T2star sequence) or non-invasive method via a spin tagging sequence. The principle of this measurement depends of the method used. For instance, the invasive method currently used in clinic determines the blood flow from the estimation of the cerebral blood volume divided by the estimation of the mean transit time. Cerebral blood volume and mean transit time are obtained from the gamma-fit on the T2* signal as a function of time.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#regional-cerebral-blood-volume-estimation -->
+
+    <owl:Class rdf:about="#regional-cerebral-blood-volume-estimation">
+        <rdfs:subClassOf rdf:resource="#quantitative-parameter-estimation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:someValuesFrom rdf:resource="&dataset;regional-cerebral-blood-volume-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] Regional cerebral blood volume is estimated from specific MR sequences using invasive method (a tracer plus a T2star sequence). The cerebral blood volume corresponds to area under the curve of the signal evolution during the bolus of the contrast agent.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#regional-mean-transit-time-calculation -->
+
+    <owl:Class rdf:about="#regional-mean-transit-time-calculation">
+        <rdfs:subClassOf rdf:resource="#quantitative-parameter-estimation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+                <owl:onClass rdf:resource="&dataset;regional-cerebral-blood-flow-dataset"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:someValuesFrom rdf:resource="&dataset;regional-mean-transit-time-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+                <owl:onClass rdf:resource="&dataset;regional-cerebral-blood-volume-dataset"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] The transit time is classically estimated from specific MR sequences using invasive method (a tracer plus a T2star sequence). The method currently used in clinic determines the mean transit time by measuring the FWHM of the gamma-variate fit on the T2star signal measured during the injection.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#registration -->
+
+    <owl:Class rdf:about="#registration">
+        <rdfs:subClassOf rdf:resource="#dataset-processing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#has-for-reference-dataset-at"/>
+                <owl:onClass rdf:resource="&dataset;reference-dataset"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#has-for-floating-dataset-at"/>
+                <owl:onClass rdf:resource="&dataset;floating-dataset"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:someValuesFrom rdf:resource="&dataset;registration-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF &amp; CIT] “A REGISTRATION is the process of transforming the different sets of data into one coordinate system. REGISTRATION is necessary in order to be able to compare or integrate the data obtained from different measurements. Medical imaging registration (e.g. for data of the same patient taken at different points in time) often additionally involves elastic (or nonrigid) registration to cope with elastic deformations of the body parts imaged. Nonrigid registration of medical images can also be used to register a patient&#39;s data to an anatomical atlas, such as the Talairach atlas for neuroimaging”. (Source: Wikipedia).
+“There are two steps involved in registering a pair of images together. There is the registration itself, whereby the set of parameters describing a transformation is estimated. Then there is a transformation, where one of the images is transformed according to the estimated parameters”. (Tofts, 2004).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#registration-with-distortion-correction -->
+
+    <owl:Class rdf:about="#registration-with-distortion-correction">
+        <rdfs:subClassOf rdf:resource="#registration"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dolce-particular;has-for-part"/>
+                <owl:someValuesFrom rdf:resource="#distortion-correction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] A REGISTRATION WITH DISTORTION CORRECTION is a registration in which the reference or the floating image (or both) undergoes a distortion correction, prior to the registration itself (e.g. based on a voxel displacement map derived from a field map).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#relative-anisotropy-calculation -->
+
+    <owl:Class rdf:about="#relative-anisotropy-calculation">
+        <rdfs:subClassOf rdf:resource="#quantitative-parameter-estimation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+                <owl:allValuesFrom rdf:resource="&dataset;diffusion-tensor-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:someValuesFrom rdf:resource="&dataset;relative-anisotropy-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] The relative anisotropy is a normalized standard deviation representing the ratio of the anisotropic part of the tensor to its isotropic part.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#resampling -->
+
+    <owl:Class rdf:about="#resampling">
+        <rdfs:subClassOf rdf:resource="#dataset-processing"/>
+        <skos:definition>[DEF] A RESAMPLING is a dataset processing that creates a « resampled » dataset from a dataset « to be resampled », by changing the sampling grid, or the range of dataset values, or both. The characteristics of the domain of the mathematical function associated to the « resampled » dataset are derived from those of the mathematical function associated to the dataset « to be resampled ». The number of intervals and their semantics remain unchanged, while the sampling characteristics of one or several of these intervals may be changed. The values taken by the function at each point of the new domain is derived from the values taken by the function associated to the dataset to be resampled, using a transformation function (e.g. closest pixel/voxel, interpolation). Moreover an additional transformation of those values may be applied, such as a linear windowing.
+A RESAMPLING does not change the nature of the information represented in the image: e.g. a T1weighted MR Dataset remains a T1-weighted MR Dataset.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#resolution-modification -->
+
+    <owl:Class rdf:about="#resolution-modification">
+        <rdfs:subClassOf rdf:resource="#resampling"/>
+        <skos:definition>[DEF] A RESOLUTION MODIFICATION is a resampling that affects only the domain of the mathematical function associated to the dataset whose resolution has to be changed. The new resolution is specified using specific parameters or using a reference dataset which will provide the required sampling characteristics.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#restoration -->
+
+    <owl:Class rdf:about="#restoration">
+        <rdfs:subClassOf rdf:resource="#dataset-processing"/>
+        <skos:definition>[DEF] A RESTORATION is a DATASET PROCESSING that consists is generating a “restored dataset” from a “to be restored dataset”, by compensating defects which degrade an image. Degradation comes in many forms such as motion blur, noise, and other specific acquisition equipment-related defects. The domain and range of the mathematical functions associated to the “restored dataset” and “to be restored dataset” coincide.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#rigid-registration -->
+
+    <owl:Class rdf:about="#rigid-registration">
+        <rdfs:subClassOf rdf:resource="#affine-registration"/>
+        <skos:definition>[DEF] A RIGID REGISTRATION estimates a particular kind of linear geometrical transformation, with 3 rotations, 3 translations only, usually represented by a 4 x 4 matrix.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#segmentation -->
+
+    <owl:Class rdf:about="#segmentation">
+        <rdfs:subClassOf rdf:resource="#dataset-processing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:onClass rdf:resource="&dataset;segmentation-dataset"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF &amp; CIT] “Segmentation refers to the process of partitioning a digital image into multiple regions (sets of pixels). The goal of segmentation is to simplify and/or change the representation of an image into something that is more meaningful and easier to analyze. Image segmentation is typically used to locate objects and boundaries (lines, curves, etc.) in images. The result of image segmentation is a set of regions that collectively cover the entire image, or a set of contours extracted from the image (see edge detection). Each of the pixels in a region are similar with respect to some characteristic or computed property, such as colour, intensity, or texture. Adjacent regions are significantly different with respect to the same characteristic(s)”. (Source: Wikipedia).
+[DIV] The segmentation dataset that is the result of a segmentation can be superimposed with the dataset « to be segmented ». If a segmentation has for data several datasets, then they must all be superimposed together. Segmentations can be categorised according to several semantic axis: the first focuses on the kind of approach being used, e.g. boundary-based or region-based; the second focuses on the anatomical structures being segmented, e.g. lesions, brain etc. A third axis will be added later, focusing on the dimensionality of the Segmentation dataset produced.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#skeletonizing -->
+
+    <owl:Class rdf:about="#skeletonizing">
+        <rdfs:subClassOf rdf:resource="#mathematical-morphology-filtering"/>
+        <skos:definition>[DEF] A SKELETONIZING is a MATHEMATICAL MORPHOLOGY FILTERING transforming a binary image into another binary image that highlights “the skeleton of the shape represented in the input binary image. The skeleton of a shape is a thin version of that shape that is equidistant to its boundaries”. (Source: Wikipedia).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#smoothing -->
+
+    <owl:Class rdf:about="#smoothing">
+        <rdfs:subClassOf rdf:resource="#convolution"/>
+        <skos:definition>[DEF] In statistics and image processing, to smooth a data set is to create a function that attempts to capture important patterns in the data, while leaving out noise. (Source: Wikipedia).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#standard-deviation-calculation -->
+
+    <owl:Class rdf:about="#standard-deviation-calculation">
+        <rdfs:subClassOf rdf:resource="#statistical-analysis"/>
+        <skos:definition>[DEF] A STANDARD DEVIATION CALCULATION is a STATISTICAL ANALYSIS in which the values taken by the mathematical function associated to the output dataset are calculated as the standard deviation of the values taken by the functions associated to the input dataset(s). The input datasets (“to be averaged”) must be associated with mathematical functions sharing the same domain and range.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#statistical-analysis -->
+
+    <owl:Class rdf:about="#statistical-analysis">
+        <rdfs:subClassOf rdf:resource="#dataset-processing"/>
+        <skos:definition>[DEF] A STATISTICAL ANALYSIS consists on producing statistical information from one or several datasets obtained from one or more individuals (e.g. functional brain maps derived from MRI data). (Source: [Temal et al., 2006]).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#structured-mesh-generation -->
+
+    <owl:Class rdf:about="#structured-mesh-generation">
+        <rdfs:subClassOf rdf:resource="#mesh-generation"/>
+        <owl:disjointWith rdf:resource="#unstructured-mesh-generation"/>
+        <skos:definition>[DEF] A STRUCTURED MESH GENERATION is a MESH GENERATION in which the resulting MESH is a structured mesh.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#subcortical-segmentation -->
+
+    <owl:Class rdf:about="#subcortical-segmentation">
+        <rdfs:subClassOf rdf:resource="#segmentation"/>
+        <skos:definition>[DEF] A subcortical segmentation is a segmentation that extracts structures such as ventricles, corpus callosum, hippocampus and basal ganglia (thalamus, pallidum, caudate nucleus etc.)</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#thickening -->
+
+    <owl:Class rdf:about="#thickening">
+        <rdfs:subClassOf rdf:resource="#mathematical-morphology-filtering"/>
+        <skos:definition>[DEF] A Thickening is a MATHEMATICAL MORPHOLOGY FILTERING used to grow selected regions of foreground pixels in binary images. Thickening is normally only applied to binary images, and it produces another binary image as output.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#thinning -->
+
+    <owl:Class rdf:about="#thinning">
+        <rdfs:subClassOf rdf:resource="#mathematical-morphology-filtering"/>
+        <skos:definition>[DEF] A THINNING is A MATHEMATICAL MORPHOLOGY FILTERING, which “transforms the input image into a simplified, but topologically equivalent image”. (Source: Wikipedia).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#thresholding -->
+
+    <owl:Class rdf:about="#thresholding">
+        <rdfs:subClassOf rdf:resource="#filtering"/>
+        <skos:definition>[DEF] A THRESHOLDING consist on marking Individual pixels in a grey scale image as “object” pixels if their value is greater than some threshold value (assuming an object to be brighter than the background) and as “background” pixels otherwise. Typically, an object pixel is given a value of “1” while a background pixel is given a value of “0.” The key parameter in thresholding is obviously the choice of the threshold. (Source: Wikipedia).
+</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#tissues-segmentation -->
+
+    <owl:Class rdf:about="#tissues-segmentation">
+        <rdfs:subClassOf rdf:resource="#segmentation"/>
+        <skos:definition>[DEF] A tissues segmentation is a segmentation that extracts the tissues such as grey matter, white matter, cerebro-spinal fluid.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#unstructured-mesh-generation -->
+
+    <owl:Class rdf:about="#unstructured-mesh-generation">
+        <rdfs:subClassOf rdf:resource="#mesh-generation"/>
+        <skos:definition>[DEF] AN UNSTRUCTURED MESH GENERATION is a MESH GENERATION in which the resulting MESH is an unstructured mesh.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#voxel-displacement-map-calculation -->
+
+    <owl:Class rdf:about="#voxel-displacement-map-calculation">
+        <rdfs:subClassOf rdf:resource="#calibration-model-estimation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-data-at"/>
+                <owl:onClass rdf:resource="&dataset;field-map-dataset"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;has-for-result-at"/>
+                <owl:someValuesFrom rdf:resource="&dataset;voxel-displacement-map-dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>[DEF] The principle of MR image acquisition is to encode the space by controlled frequency variations using the application of additional gradients of magnetic field. Then, not mastered variations in frequency due to B0 inhomogeneity lead to spatial distortions. These spatial distortions can be corrected if frequency variations are known. The voxel displacement calculation, to correct for spatial distortions, is based on the estimation of the field map.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-dataset-processing.owl#wavelet-transformation -->
+
+    <owl:Class rdf:about="#wavelet-transformation">
+        <rdfs:subClassOf rdf:resource="#dataset-transformation"/>
+        <skos:definition>[DEF] A WAVELET TRANSFORMATION is a DATASET TRANSFORMATION based on the Wavelet Transform.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#H1-chemical-shift-imaging-dataset -->
+
+    <owl:Class rdf:about="&dataset;H1-chemical-shift-imaging-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#MR-spectroscopy-dataset -->
+
+    <owl:Class rdf:about="&dataset;MR-spectroscopy-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#T1-weighted-MR-dataset -->
+
+    <owl:Class rdf:about="&dataset;T1-weighted-MR-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#T2-star-weighted-MR-dataset -->
+
+    <owl:Class rdf:about="&dataset;T2-star-weighted-MR-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#T2-weighted-MR-dataset -->
+
+    <owl:Class rdf:about="&dataset;T2-weighted-MR-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#absolute-metabolite-concentration-dataset -->
+
+    <owl:Class rdf:about="&dataset;absolute-metabolite-concentration-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#absolute-proton-density-dataset -->
+
+    <owl:Class rdf:about="&dataset;absolute-proton-density-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#bias-field-dataset -->
+
+    <owl:Class rdf:about="&dataset;bias-field-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#bold-dataset -->
+
+    <owl:Class rdf:about="&dataset;bold-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#calibration-dataset -->
+
+    <owl:Class rdf:about="&dataset;calibration-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#dataset -->
+
+    <owl:Class rdf:about="&dataset;dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#diffusion-tensor-dataset -->
+
+    <owl:Class rdf:about="&dataset;diffusion-tensor-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#diffusion-weighted-MR-dataset -->
+
+    <owl:Class rdf:about="&dataset;diffusion-weighted-MR-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#field-map-dataset -->
+
+    <owl:Class rdf:about="&dataset;field-map-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#floating-dataset -->
+
+    <owl:Class rdf:about="&dataset;floating-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#fractional-anisotropy-dataset -->
+
+    <owl:Class rdf:about="&dataset;fractional-anisotropy-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#magnetic-field-quality-dataset-long-echo-time -->
+
+    <owl:Class rdf:about="&dataset;magnetic-field-quality-dataset-long-echo-time"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#magnetic-field-quality-dataset-short-echo-time -->
+
+    <owl:Class rdf:about="&dataset;magnetic-field-quality-dataset-short-echo-time"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#magnetization-transfer-ratio-dataset -->
+
+    <owl:Class rdf:about="&dataset;magnetization-transfer-ratio-dataset">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontoneurolog-extension-of-dolce;is-a-result-of-at"/>
+                <owl:someValuesFrom rdf:resource="#magnetization-transfer-ratio-calculation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#mean-diffusivity-dataset -->
+
+    <owl:Class rdf:about="&dataset;mean-diffusivity-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#metabolite-concentration-ratio-dataset -->
+
+    <owl:Class rdf:about="&dataset;metabolite-concentration-ratio-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#non-reconstructed-dataset -->
+
+    <owl:Class rdf:about="&dataset;non-reconstructed-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#parameter-quantification-dataset -->
+
+    <owl:Class rdf:about="&dataset;parameter-quantification-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#proton-density-weighted-MR-dataset -->
+
+    <owl:Class rdf:about="&dataset;proton-density-weighted-MR-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#quality-procedure-dataset -->
+
+    <owl:Class rdf:about="&dataset;quality-procedure-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#quantitative-T1-dataset -->
+
+    <owl:Class rdf:about="&dataset;quantitative-T1-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#quantitative-T2-dataset -->
+
+    <owl:Class rdf:about="&dataset;quantitative-T2-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#quantitative-T2-star-dataset -->
+
+    <owl:Class rdf:about="&dataset;quantitative-T2-star-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#reconstructed-dataset -->
+
+    <owl:Class rdf:about="&dataset;reconstructed-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#reference-dataset -->
+
+    <owl:Class rdf:about="&dataset;reference-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#regional-cerebral-blood-flow-dataset -->
+
+    <owl:Class rdf:about="&dataset;regional-cerebral-blood-flow-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#regional-cerebral-blood-volume-dataset -->
+
+    <owl:Class rdf:about="&dataset;regional-cerebral-blood-volume-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#regional-mean-transit-time-dataset -->
+
+    <owl:Class rdf:about="&dataset;regional-mean-transit-time-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#registration-dataset -->
+
+    <owl:Class rdf:about="&dataset;registration-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#relative-anisotropy-dataset -->
+
+    <owl:Class rdf:about="&dataset;relative-anisotropy-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#segmentation-dataset -->
+
+    <owl:Class rdf:about="&dataset;segmentation-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/dataset.owl#voxel-displacement-map-dataset -->
+
+    <owl:Class rdf:about="&dataset;voxel-displacement-map-dataset"/>
+    
+
+
+    <!-- http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-extension-of-dolce.owl#conceptual-action -->
+
+    <owl:Class rdf:about="&ontoneurolog-extension-of-dolce;conceptual-action"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#convolution"/>
+            <rdf:Description rdf:about="#mathematical-morphology-filtering"/>
+            <rdf:Description rdf:about="#thresholding"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#dataset-arithmetical-operation"/>
+            <rdf:Description rdf:about="#dataset-transformation"/>
+            <rdf:Description rdf:about="#filtering"/>
+            <rdf:Description rdf:about="#mesh-generation"/>
+            <rdf:Description rdf:about="#reconstruction"/>
+            <rdf:Description rdf:about="#registration"/>
+            <rdf:Description rdf:about="#resampling"/>
+            <rdf:Description rdf:about="#segmentation"/>
+            <rdf:Description rdf:about="#statistical-analysis"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#bias-correction"/>
+            <rdf:Description rdf:about="#de-noising"/>
+            <rdf:Description rdf:about="#distortion-correction"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#datasets-addition"/>
+            <rdf:Description rdf:about="#datasets-blending"/>
+            <rdf:Description rdf:about="#datasets-division"/>
+            <rdf:Description rdf:about="#datasets-logical-operation"/>
+            <rdf:Description rdf:about="#datasets-multiplication"/>
+            <rdf:Description rdf:about="#datasets-subtraction"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#absolute-metabolite-concentration-estimation"/>
+            <rdf:Description rdf:about="#absolute-proton-density-estimation"/>
+            <rdf:Description rdf:about="#blood-oxygen-level-dependent-signal-changes-estimation"/>
+            <rdf:Description rdf:about="#diffusion-tensor-calculation"/>
+            <rdf:Description rdf:about="#field-map-estimation"/>
+            <rdf:Description rdf:about="#fractional-anisotropy-calculation"/>
+            <rdf:Description rdf:about="#magnetization-transfer-ratio-calculation"/>
+            <rdf:Description rdf:about="#mean-diffusivity-calculation"/>
+            <rdf:Description rdf:about="#metabolite-concentration-ratio-estimation"/>
+            <rdf:Description rdf:about="#quantitative-T1-estimation"/>
+            <rdf:Description rdf:about="#quantitative-T2-estimation"/>
+            <rdf:Description rdf:about="#quantitative-T2-star-estimation"/>
+            <rdf:Description rdf:about="#regional-cerebral-blood-flow-estimation"/>
+            <rdf:Description rdf:about="#regional-cerebral-blood-volume-estimation"/>
+            <rdf:Description rdf:about="#regional-mean-transit-time-calculation"/>
+            <rdf:Description rdf:about="#relative-anisotropy-calculation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#closing"/>
+            <rdf:Description rdf:about="#dilation"/>
+            <rdf:Description rdf:about="#distance-transform-processing"/>
+            <rdf:Description rdf:about="#erosion"/>
+            <rdf:Description rdf:about="#opening"/>
+            <rdf:Description rdf:about="#skeletonizing"/>
+            <rdf:Description rdf:about="#thickening"/>
+            <rdf:Description rdf:about="#thinning"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#bias-field-estimation"/>
+            <rdf:Description rdf:about="#field-map-estimation"/>
+            <rdf:Description rdf:about="#voxel-displacement-map-calculation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#cropping"/>
+            <rdf:Description rdf:about="#intensity-normalization"/>
+            <rdf:Description rdf:about="#permutation"/>
+            <rdf:Description rdf:about="#re-orientation"/>
+            <rdf:Description rdf:about="#resolution-modification"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#boundary-surface-and-region-based-segmentation"/>
+            <rdf:Description rdf:about="#boundary-surface-based-segmentation"/>
+            <rdf:Description rdf:about="#region-based-segmentation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#coefficient-of-variation-calculation"/>
+            <rdf:Description rdf:about="#mean-calculation"/>
+            <rdf:Description rdf:about="#standard-deviation-calculation"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.22702) http://owlapi.sourceforge.net -->
+

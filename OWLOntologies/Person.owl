@@ -1,0 +1,651 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY swrlx "http://www.w3.org/2003/11/swrlx#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY ruleml "http://www.w3.org/2003/11/ruleml#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owlx "http://www.w3.org/2003/05/owl-xml#" >
+    <!ENTITY Person "http://www.ICPS/ontologies/Person#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY kaon2 "http://kaon2.semanticweb.org/internal#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY ICPSMerged "http://www.apsf.net.au/ontologies/ICPSMerged.owl#" >
+    <!ENTITY PatientSafetyIncident "http://www.ICPS/ontologies/PatientSafetyIncident#" >
+    <!ENTITY PatientCharacteristics "http://www.ICPS/ontologies/PatientCharacteristics.owl#" >
+    <!ENTITY agentrole "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#" >
+    <!ENTITY objectrole "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#" >
+    <!ENTITY classification "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ICPS/ontologies/"
+     xml:base="http://www.ICPS/ontologies/Person"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:objectrole="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#"
+     xmlns:classification="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:kaon2="http://kaon2.semanticweb.org/internal#"
+     xmlns:owlx="http://www.w3.org/2003/05/owl-xml#"
+     xmlns:ICPSMerged="http://www.apsf.net.au/ontologies/ICPSMerged.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:PatientSafetyIncident="http://www.ICPS/ontologies/PatientSafetyIncident#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Person="http://www.ICPS/ontologies/Person#"
+     xmlns:swrlx="http://www.w3.org/2003/11/swrlx#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:PatientCharacteristics="http://www.ICPS/ontologies/PatientCharacteristics.owl#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:agentrole="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#"
+     xmlns:ruleml="http://www.w3.org/2003/11/ruleml#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="">
+        <dc:creator>Mar&#237;a Poveda</dc:creator>
+        <owl:priorVersion>1.0</owl:priorVersion>
+        <dc:creator>Oscar Corcho</dc:creator>
+        <dc:creator
+            >Mari Carmen Su&#225;rez-Figueroa</dc:creator>
+        <dc:creator
+            >Elena Montiel-Ponsoda</dc:creator>
+        <owl:versionInfo>2.0</owl:versionInfo>
+        <rdfs:comment xml:lang="en"
+            >Ontology about people in a hospital</rdfs:comment>
+        <rdfs:comment xml:lang="en"
+            >This work has been carried out by the Ontological Engineering Group, using sources from the University of Saint Etienne and the Australian Patient Safety Foundation, and supported by the World Health Organisation under the International Classification for Patient Safety programme.</rdfs:comment>
+        <owl:imports rdf:resource="http://www.ICPS/ontologies/PatientCharacteristics.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#hasGender -->
+
+    <owl:ObjectProperty rdf:about="#hasGender">
+        <rdfs:label xml:lang="en">has gender</rdfs:label>
+        <rdfs:range rdf:resource="#Gender"/>
+        <rdfs:domain rdf:resource="#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#hasPrimaryDiagnosis -->
+
+    <owl:ObjectProperty rdf:about="#hasPrimaryDiagnosis">
+        <rdfs:label xml:lang="en"
+            >has primary diagnosis</rdfs:label>
+        <rdfs:range rdf:resource="&PatientCharacteristics;PrimaryDiagnosis"/>
+        <rdfs:domain rdf:resource="&PatientSafetyIncident;HealthCareFacilityStay"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole -->
+
+    <owl:ObjectProperty rdf:about="&objectrole;hasRole"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#birthYear -->
+
+    <owl:DatatypeProperty rdf:about="#birthYear">
+        <rdfs:label xml:lang="en">birth year</rdfs:label>
+        <rdfs:domain rdf:resource="#Person"/>
+        <rdfs:range rdf:resource="&xsd;gYear"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#PrimaryDiagnosis -->
+
+    <owl:Class rdf:about="&PatientCharacteristics;PrimaryDiagnosis">
+        <rdfs:label xml:lang="en"
+            >Primary diagnosis</rdfs:label>
+        <owl:disjointWith rdf:resource="#Gender"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#HealthCareFacilityStay -->
+
+    <owl:Class rdf:about="&PatientSafetyIncident;HealthCareFacilityStay"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#EmergencyServicePersonnel -->
+
+    <owl:Class rdf:about="#EmergencyServicePersonnel">
+        <rdfs:label xml:lang="en"
+            >Emergency service personnel</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&objectrole;Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#Gender -->
+
+    <owl:Class rdf:about="#Gender">
+        <rdfs:label xml:lang="en">Gender</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#female"/>
+                    <rdf:Description rdf:about="#male"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#HealthcareProfessional -->
+
+    <owl:Class rdf:about="#HealthcareProfessional">
+        <rdfs:label xml:lang="en"
+            >Healthcare professional</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&objectrole;Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#HealthcareWorker -->
+
+    <owl:Class rdf:about="#HealthcareWorker">
+        <rdfs:label xml:lang="en"
+            >Healthcare worker</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&objectrole;Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#Patient -->
+
+    <owl:Class rdf:about="#Patient">
+        <rdfs:label xml:lang="en">Patient</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&objectrole;hasRole"/>
+                <owl:hasValue rdf:resource="#patient"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#Person -->
+
+    <owl:Class rdf:about="#Person">
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&agentrole;Agent"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasGender"/>
+                        <owl:allValuesFrom rdf:resource="#Gender"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasGender"/>
+                        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#birthYear"/>
+                        <owl:allValuesFrom rdf:resource="&xsd;gYear"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#birthYear"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;gYear"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent -->
+
+    <owl:Class rdf:about="&agentrole;Agent"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role -->
+
+    <owl:Class rdf:about="&objectrole;Role"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#alliedHealthPersonnel -->
+
+    <Person:HealthcareProfessional rdf:about="#alliedHealthPersonnel">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >allied health personnel</rdfs:label>
+    </Person:HealthcareProfessional>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#assistant -->
+
+    <objectrole:Role rdf:about="#assistant">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">assistant</rdfs:label>
+    </objectrole:Role>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#biomedicalEngineer -->
+
+    <Person:HealthcareWorker rdf:about="#biomedicalEngineer">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >biomedical engineer</rdfs:label>
+    </Person:HealthcareWorker>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#carer -->
+
+    <owl:Thing rdf:about="#carer">
+        <rdf:type rdf:resource="&objectrole;Role"/>
+        <rdfs:label xml:lang="en">carer</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#clericalPersonnel -->
+
+    <owl:Thing rdf:about="#clericalPersonnel">
+        <rdf:type rdf:resource="#HealthcareWorker"/>
+        <rdfs:label xml:lang="en"
+            >Administrative personnel</rdfs:label>
+        <rdfs:label xml:lang="en"
+            >clerical personnel</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#dentist -->
+
+    <owl:Thing rdf:about="#dentist">
+        <rdf:type rdf:resource="#HealthcareProfessional"/>
+        <rdfs:label xml:lang="en">dentist</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#doctor -->
+
+    <Person:HealthcareProfessional rdf:about="#doctor">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">doctor</rdfs:label>
+    </Person:HealthcareProfessional>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#domesticPersonnel -->
+
+    <owl:Thing rdf:about="#domesticPersonnel">
+        <rdf:type rdf:resource="#HealthcareWorker"/>
+        <rdfs:label xml:lang="en"
+            >domestic personnel</rdfs:label>
+        <rdfs:label xml:lang="en"
+            >hotel service personnel</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#female -->
+
+    <Person:Gender rdf:about="#female">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">female</rdfs:label>
+    </Person:Gender>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#fireFighter -->
+
+    <Person:EmergencyServicePersonnel rdf:about="#fireFighter">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">fire fighter</rdfs:label>
+    </Person:EmergencyServicePersonnel>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#friend -->
+
+    <objectrole:Role rdf:about="#friend">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">friend</rdfs:label>
+    </objectrole:Role>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#guardian -->
+
+    <objectrole:Role rdf:about="#guardian">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">guardian</rdfs:label>
+    </objectrole:Role>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#healthCareStudent -->
+
+    <Person:HealthcareProfessional rdf:about="#healthCareStudent">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >health care student</rdfs:label>
+        <rdfs:label xml:lang="en"
+            >healthcare trainee</rdfs:label>
+    </Person:HealthcareProfessional>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#healthcareAssistant -->
+
+    <Person:HealthcareWorker rdf:about="#healthcareAssistant">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >healthcare assistant</rdfs:label>
+        <rdfs:label xml:lang="en">orderly</rdfs:label>
+    </Person:HealthcareWorker>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#homeAid -->
+
+    <owl:Thing rdf:about="#homeAid">
+        <rdf:type rdf:resource="&objectrole;Role"/>
+        <rdfs:label xml:lang="en">home aid</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#interpreter -->
+
+    <Person:HealthcareWorker rdf:about="#interpreter">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">interpreter</rdfs:label>
+        <rdfs:label xml:lang="en">translator</rdfs:label>
+    </Person:HealthcareWorker>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#liaisonOfficer -->
+
+    <owl:Thing rdf:about="#liaisonOfficer">
+        <rdf:type rdf:resource="#HealthcareWorker"/>
+        <rdfs:label xml:lang="en">liaison officer</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#male -->
+
+    <Person:Gender rdf:about="#male">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">male</rdfs:label>
+    </Person:Gender>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#nurse -->
+
+    <Person:HealthcareProfessional rdf:about="#nurse">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">nurse</rdfs:label>
+    </Person:HealthcareProfessional>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#nursePractitioner -->
+
+    <Person:HealthcareProfessional rdf:about="#nursePractitioner">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >nurse practitioner</rdfs:label>
+    </Person:HealthcareProfessional>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#paramedic -->
+
+    <owl:Thing rdf:about="#paramedic">
+        <rdf:type rdf:resource="#HealthcareProfessional"/>
+        <rdfs:label xml:lang="en">paramedic</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#pastoralCarePersonnel -->
+
+    <owl:Thing rdf:about="#pastoralCarePersonnel">
+        <rdf:type rdf:resource="#HealthcareWorker"/>
+        <rdfs:label xml:lang="en"
+            >pastoral care personnel</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#patient -->
+
+    <owl:Thing rdf:about="#patient">
+        <rdf:type rdf:resource="&objectrole;Role"/>
+        <rdfs:label xml:lang="en">patient</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#patientTransport -->
+
+    <Person:HealthcareWorker rdf:about="#patientTransport">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >patient transport</rdfs:label>
+        <rdfs:label xml:lang="en"
+            >retrieval personnnel</rdfs:label>
+    </Person:HealthcareWorker>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#pharmacist -->
+
+    <owl:Thing rdf:about="#pharmacist">
+        <rdf:type rdf:resource="#HealthcareProfessional"/>
+        <rdfs:label xml:lang="en">pharmacist</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#physicianAssistant -->
+
+    <owl:Thing rdf:about="#physicianAssistant">
+        <rdf:type rdf:resource="#HealthcareProfessional"/>
+        <rdfs:label xml:lang="en"
+            >physician assistant</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#policeOfficer -->
+
+    <Person:EmergencyServicePersonnel rdf:about="#policeOfficer">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">police officer</rdfs:label>
+    </Person:EmergencyServicePersonnel>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#relative -->
+
+    <objectrole:Role rdf:about="#relative">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">relative</rdfs:label>
+    </objectrole:Role>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#technicalPersonnel -->
+
+    <Person:HealthcareWorker rdf:about="#technicalPersonnel">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >laboratory personnel</rdfs:label>
+        <rdfs:label xml:lang="en"
+            >technical personnel</rdfs:label>
+    </Person:HealthcareWorker>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#visitor -->
+
+    <objectrole:Role rdf:about="#visitor">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">visitor</rdfs:label>
+    </objectrole:Role>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#volunteer -->
+
+    <owl:Thing rdf:about="#volunteer">
+        <rdf:type rdf:resource="&objectrole;Role"/>
+        <rdfs:label xml:lang="en">volunteer</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="#nurse"/>
+            <rdf:Description rdf:about="#physicianAssistant"/>
+            <rdf:Description rdf:about="#volunteer"/>
+            <rdf:Description rdf:about="#guardian"/>
+            <rdf:Description rdf:about="#domesticPersonnel"/>
+            <rdf:Description rdf:about="#interpreter"/>
+            <rdf:Description rdf:about="#relative"/>
+            <rdf:Description rdf:about="#dentist"/>
+            <rdf:Description rdf:about="#clericalPersonnel"/>
+            <rdf:Description rdf:about="#pastoralCarePersonnel"/>
+            <rdf:Description rdf:about="#patient"/>
+            <rdf:Description rdf:about="#male"/>
+            <rdf:Description rdf:about="#homeAid"/>
+            <rdf:Description rdf:about="#visitor"/>
+            <rdf:Description rdf:about="#healthCareStudent"/>
+            <rdf:Description rdf:about="#patientTransport"/>
+            <rdf:Description rdf:about="#liaisonOfficer"/>
+            <rdf:Description rdf:about="#fireFighter"/>
+            <rdf:Description rdf:about="#technicalPersonnel"/>
+            <rdf:Description rdf:about="#pharmacist"/>
+            <rdf:Description rdf:about="#nursePractitioner"/>
+            <rdf:Description rdf:about="#female"/>
+            <rdf:Description rdf:about="#carer"/>
+            <rdf:Description rdf:about="#alliedHealthPersonnel"/>
+            <rdf:Description rdf:about="#paramedic"/>
+            <rdf:Description rdf:about="#biomedicalEngineer"/>
+            <rdf:Description rdf:about="#healthcareAssistant"/>
+            <rdf:Description rdf:about="#friend"/>
+            <rdf:Description rdf:about="#doctor"/>
+            <rdf:Description rdf:about="#policeOfficer"/>
+            <rdf:Description rdf:about="#assistant"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="#female"/>
+            <rdf:Description rdf:about="#male"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

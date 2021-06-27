@@ -1,0 +1,73 @@
+Prefix(:=<urn:absolute:Experiment01#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:absolute:Experiment01>
+
+Declaration(Class(:Agar_medium))
+Declaration(Class(:Broth_medium))
+Declaration(Class(:Culture_medium))
+Declaration(Class(:Other_medium))
+Declaration(Class(:Trypticase_soy_agar_and_derivatives))
+Declaration(NamedIndividual(:Brain-heart_infusion_agar))
+Declaration(NamedIndividual(:Malt_extrat_agar))
+Declaration(NamedIndividual(:Potato_dextrose_agar))
+Declaration(NamedIndividual(:Trypticase_soy_agar))
+Declaration(NamedIndividual(:Trypticase_soy_agar_plus_yeast_extract))
+
+
+############################
+#   Classes
+############################
+
+# Class: :Agar_medium (:Agar_medium)
+
+SubClassOf(:Agar_medium :Culture_medium)
+
+# Class: :Broth_medium (:Broth_medium)
+
+SubClassOf(:Broth_medium :Culture_medium)
+
+# Class: :Other_medium (:Other_medium)
+
+SubClassOf(:Other_medium :Culture_medium)
+
+# Class: :Trypticase_soy_agar_and_derivatives (:Trypticase_soy_agar_and_derivatives)
+
+SubClassOf(:Trypticase_soy_agar_and_derivatives :Agar_medium)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :Brain-heart_infusion_agar (:Brain-heart_infusion_agar)
+
+ClassAssertion(:Agar_medium :Brain-heart_infusion_agar)
+
+# Individual: :Malt_extrat_agar (:Malt_extrat_agar)
+
+ClassAssertion(:Agar_medium :Malt_extrat_agar)
+
+# Individual: :Potato_dextrose_agar (:Potato_dextrose_agar)
+
+ClassAssertion(:Agar_medium :Potato_dextrose_agar)
+
+# Individual: :Trypticase_soy_agar (Trypticase soy agar)
+
+AnnotationAssertion(rdfs:isDefinedBy :Trypticase_soy_agar "Tripticase agar original")
+AnnotationAssertion(rdfs:label :Trypticase_soy_agar "Trypticase soy agar")
+ClassAssertion(:Trypticase_soy_agar_and_derivatives :Trypticase_soy_agar)
+
+# Individual: :Trypticase_soy_agar_plus_yeast_extract (Trypticase soy agar plus yeast extract)
+
+AnnotationAssertion(rdfs:isDefinedBy :Trypticase_soy_agar_plus_yeast_extract "Agar con yema de huevo")
+AnnotationAssertion(rdfs:label :Trypticase_soy_agar_plus_yeast_extract "Trypticase soy agar plus yeast extract")
+ClassAssertion(:Trypticase_soy_agar_and_derivatives :Trypticase_soy_agar_plus_yeast_extract)
+
+
+)

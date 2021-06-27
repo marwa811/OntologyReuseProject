@@ -1,0 +1,3218 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Activities_of_Daily_Living_(ADLs)_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Activity_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Activity_Intolerance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Activity_Intolerance_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Acute_Pain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adjustment_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airway_Clearance_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alcohol_Abuse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anticipatory_Grieving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anxiety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aspiration_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Auditory_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Autonomic_Dysreflexia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bathing/Hygiene_Deficit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bleeding_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blood_Pressure_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Body_Image_Disturbance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Body_Nutrition_Deficit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Body_Nutrition_Deficit_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Body_Nutrition_Excess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Body_Nutrition_Excess_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bowel/Gastric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bowel_Elimination_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bowel_Incontinence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Breastfeeding_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Breathing_Pattern_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CCC_Ontology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cardiac"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cardiac_Output_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cardiovascular_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Caregiver_Role_Strain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cerebral_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chronic_Low_Self-Esteem_Disturbance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chronic_Pain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cognitive/Neuro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comfort_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Communication_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Community_Coping_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Confusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Constipation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Contraception_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decisional_Conflict"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Defensive_Coping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Delivery_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Denial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diarrhea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disabled_Family_Coping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disuse_Syndrome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diversional_Activity_Deficit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dressing/Grooming_Deficit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drug_Abuse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dying_Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dysfunctional_Grieving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electrolyte_Imbalance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Endocrine_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Failure_to_Thrive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fall_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Family_Coping_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Family_Processes_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fatigue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fecal_Impaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Feeding_Deficit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fertility_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fluid_Volume"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fluid_Volume_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fluid_Volume_Deficit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fluid_Volume_Deficit_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fluid_Volume_Excess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fluid_Volume_Excess_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Functional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Functional_Urinary_Incontinence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gas_Exchange_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gastrointestinal_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grieving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Growth_and_Development_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gustatory_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Health_Behavior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Health_Behavioral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Health_Maintenance_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Health_Seeking_Behavior_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Home_Maintenance_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hopelessness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hyperthermia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hypothermia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Immunologic_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Individual_Coping_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infant_Feeding_Pattern_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infection_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infertility_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Injury_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Instrumental_Activities_of_Daily_Living_(IADLs)_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intracranial_Adaptive_Capacity_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kinesthetic_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Knowledge_Deficit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Knowledge_Deficit_of_Diagnostic_Test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Knowledge_Deficit_of_Dietary_Regimen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Knowledge_Deficit_of_Disease_Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Knowledge_Deficit_of_Fluid_Volume"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Knowledge_Deficit_of_Medication_Regimen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Knowledge_Deficit_of_Safety_Precautions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Knowledge_Deficit_of_Therapeutic_Regimen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Labor_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Latex_Allergy_Response"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Life_Cycle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meaningfulness_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medication_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Memory_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metabolic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Musculoskeletal_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nausea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Noncompliance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Noncompliance_of_Diagnostic_Test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Noncompliance_of_Dietary_Regimen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Noncompliance_of_Fluid_Volume"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Noncompliance_of_Medication_Regimen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Noncompliance_of_Safety_Precautions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Noncompliance_of_Therapeutic_Regimen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nursing_Diagnoses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nursing_Interventions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nutrition_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nutritional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Olfactory_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oral_Mucous_Membranes_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parental_Role_Conflict"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parenting_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Perceived_Constipation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Perinatal_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Perioperative_Injury_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Perioperative_Positioning_Injury"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Peripheral_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Personal_Identity_Disturbance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_Mobility_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_Regulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_Regulation_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physiological"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poisoning_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Polypharmacy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Post-Trauma_Response"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Postpartum_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Powerlessness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pregnancy_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Psychological"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rape_Trauma_Syndrome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reflex_Urinary_Incontinence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Relocation_Stress_Syndrome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Renal_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reproductive_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Respiration_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Respiratory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role_Performance_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role_Relationship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Safety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Self-Care"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Self_Care_Deficit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Self_Concept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Self_Concept_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Self_mutilation_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensory_Perceptual_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sexual_Dysfuncti"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sexuality_Patterns_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Situational_Self-Esteem_Disturbance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skin_Incision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skin_Integrity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skin_Integrity_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skin_Integrity_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skin_Integrity_Impairment_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sleep_Deprivation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sleep_Pattern_Disturbance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Social_Interaction_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Social_Isolation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Socialization_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spiritual_Distress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spiritual_State_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stress_Urinary_Incontinence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Substance_Abuse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Suffocation_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Suicide_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Surgical_Recovery_Delay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Swallowing_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tactile_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thermoregulation_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thought_Processes_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tissue_Perfusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tissue_Perfusion_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tobacco_Abuse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Toileting_Deficit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trauma_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unilateral_Neglect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Urge_Urinary_Incontinence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Urinary_Elimination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Urinary_Elimination_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Urinary_Retention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ventilatory_Weaning_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Verbal_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Violence_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Visual_Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vomiting"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_code"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Activities_of_Daily_Living_(ADLs)_Alteration"/>
+        <Class IRI="#Self-Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Activity"/>
+        <Class IRI="#Functional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Activity_Alteration"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Activity_Intolerance"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Activity_Intolerance_Risk"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Acute_Pain"/>
+        <Class IRI="#Sensory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adjustment_Impairment"/>
+        <Class IRI="#Coping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airway_Clearance_Impairment"/>
+        <Class IRI="#Respiratory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alcohol_Abuse"/>
+        <Class IRI="#Safety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anticipatory_Grieving"/>
+        <Class IRI="#Coping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anxiety"/>
+        <Class IRI="#Self_Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aspiration_Risk"/>
+        <Class IRI="#Safety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Auditory_Alteration"/>
+        <Class IRI="#Sensory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Autonomic_Dysreflexia"/>
+        <Class IRI="#Physical_Regulation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bathing/Hygiene_Deficit"/>
+        <Class IRI="#Self-Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bleeding_Risk"/>
+        <Class IRI="#Cardiac"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blood_Pressure_Alteration"/>
+        <Class IRI="#Cardiac"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Body_Image_Disturbance"/>
+        <Class IRI="#Self_Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Body_Nutrition_Deficit"/>
+        <Class IRI="#Nutritional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Body_Nutrition_Deficit_Risk"/>
+        <Class IRI="#Nutritional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Body_Nutrition_Excess"/>
+        <Class IRI="#Nutritional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Body_Nutrition_Excess_Risk"/>
+        <Class IRI="#Nutritional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bowel/Gastric"/>
+        <Class IRI="#Physiological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bowel_Elimination_Alteration"/>
+        <Class IRI="#Bowel/Gastric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bowel_Incontinence"/>
+        <Class IRI="#Bowel/Gastric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Breastfeeding_Impairment"/>
+        <Class IRI="#Nutritional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Breathing_Pattern_Impairment"/>
+        <Class IRI="#Respiratory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cardiac"/>
+        <Class IRI="#Physiological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cardiac_Output_Alteration"/>
+        <Class IRI="#Cardiac"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cardiovascular_Alteration"/>
+        <Class IRI="#Cardiac"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caregiver_Role_Strain"/>
+        <Class IRI="#Role_Relationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cerebral_Alteration"/>
+        <Class IRI="#Cognitive/Neuro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chronic_Low_Self-Esteem_Disturbance"/>
+        <Class IRI="#Self_Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chronic_Pain"/>
+        <Class IRI="#Sensory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cognitive/Neuro"/>
+        <Class IRI="#Psychological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comfort_Alteration"/>
+        <Class IRI="#Sensory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communication_Impairment"/>
+        <Class IRI="#Role_Relationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Community_Coping_Impairment"/>
+        <Class IRI="#Coping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Confusion"/>
+        <Class IRI="#Cognitive/Neuro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Constipation"/>
+        <Class IRI="#Bowel/Gastric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contraception_Risk"/>
+        <Class IRI="#Life_Cycle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coping"/>
+        <Class IRI="#Psychological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decisional_Conflict"/>
+        <Class IRI="#Coping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Defensive_Coping"/>
+        <Class IRI="#Coping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Delivery_Risk"/>
+        <Class IRI="#Life_Cycle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Denial"/>
+        <Class IRI="#Coping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diarrhea"/>
+        <Class IRI="#Bowel/Gastric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disabled_Family_Coping"/>
+        <Class IRI="#Coping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disuse_Syndrome"/>
+        <Class IRI="#Safety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diversional_Activity_Deficit"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dressing/Grooming_Deficit"/>
+        <Class IRI="#Self-Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drug_Abuse"/>
+        <Class IRI="#Safety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dying_Process"/>
+        <Class IRI="#Coping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dysfunctional_Grieving"/>
+        <Class IRI="#Coping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electrolyte_Imbalance"/>
+        <Class IRI="#Fluid_Volume"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Endocrine_Alteration"/>
+        <Class IRI="#Metabolic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Failure_to_Thrive"/>
+        <Class IRI="#Health_Behavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fall_Risk"/>
+        <Class IRI="#Safety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Family_Coping_Impairment"/>
+        <Class IRI="#Coping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Family_Processes_Alteration"/>
+        <Class IRI="#Role_Relationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fatigue"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fear"/>
+        <Class IRI="#Self_Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fecal_Impaction"/>
+        <Class IRI="#Bowel/Gastric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Feeding_Deficit"/>
+        <Class IRI="#Self-Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fertility_Risk"/>
+        <Class IRI="#Life_Cycle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fluid_Volume"/>
+        <Class IRI="#Functional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fluid_Volume_Alteration"/>
+        <Class IRI="#Fluid_Volume"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fluid_Volume_Deficit"/>
+        <Class IRI="#Fluid_Volume"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fluid_Volume_Deficit_Risk"/>
+        <Class IRI="#Fluid_Volume"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fluid_Volume_Excess"/>
+        <Class IRI="#Fluid_Volume"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fluid_Volume_Excess_Risk"/>
+        <Class IRI="#Fluid_Volume"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Functional"/>
+        <Class IRI="#Nursing_Diagnoses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Functional_Urinary_Incontinence"/>
+        <Class IRI="#Urinary_Elimination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gas_Exchange_Impairment"/>
+        <Class IRI="#Respiratory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gastrointestinal_Alteration"/>
+        <Class IRI="#Bowel/Gastric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grieving"/>
+        <Class IRI="#Coping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Growth_and_Development_Alteration"/>
+        <Class IRI="#Life_Cycle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gustatory_Alteration"/>
+        <Class IRI="#Sensory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Health_Behavior"/>
+        <Class IRI="#Health_Behavioral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Health_Behavioral"/>
+        <Class IRI="#Nursing_Diagnoses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Health_Maintenance_Alteration"/>
+        <Class IRI="#Health_Behavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Health_Seeking_Behavior_Alteration"/>
+        <Class IRI="#Health_Behavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Home_Maintenance_Alteration"/>
+        <Class IRI="#Health_Behavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hopelessness"/>
+        <Class IRI="#Self_Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hyperthermia"/>
+        <Class IRI="#Physical_Regulation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hypothermia"/>
+        <Class IRI="#Physical_Regulation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Immunologic_Alteration"/>
+        <Class IRI="#Metabolic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Individual_Coping_Impairment"/>
+        <Class IRI="#Coping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infant_Feeding_Pattern_Impairment"/>
+        <Class IRI="#Nutritional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infection"/>
+        <Class IRI="#Physical_Regulation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infection_Risk"/>
+        <Class IRI="#Physical_Regulation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infertility_Risk"/>
+        <Class IRI="#Life_Cycle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Injury_Risk"/>
+        <Class IRI="#Safety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Instrumental_Activities_of_Daily_Living_(IADLs)_Alteration"/>
+        <Class IRI="#Self-Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intracranial_Adaptive_Capacity_Impairment"/>
+        <Class IRI="#Physical_Regulation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kinesthetic_Alteration"/>
+        <Class IRI="#Sensory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Knowledge_Deficit"/>
+        <Class IRI="#Cognitive/Neuro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Knowledge_Deficit_of_Diagnostic_Test"/>
+        <Class IRI="#Cognitive/Neuro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Knowledge_Deficit_of_Dietary_Regimen"/>
+        <Class IRI="#Cognitive/Neuro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Knowledge_Deficit_of_Disease_Process"/>
+        <Class IRI="#Cognitive/Neuro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Knowledge_Deficit_of_Fluid_Volume"/>
+        <Class IRI="#Cognitive/Neuro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Knowledge_Deficit_of_Medication_Regimen"/>
+        <Class IRI="#Cognitive/Neuro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Knowledge_Deficit_of_Safety_Precautions"/>
+        <Class IRI="#Cognitive/Neuro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Knowledge_Deficit_of_Therapeutic_Regimen"/>
+        <Class IRI="#Cognitive/Neuro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Labor_Risk"/>
+        <Class IRI="#Life_Cycle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Latex_Allergy_Response"/>
+        <Class IRI="#Skin_Integrity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Life_Cycle"/>
+        <Class IRI="#Physiological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meaningfulness_Alteration"/>
+        <Class IRI="#Self_Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medication"/>
+        <Class IRI="#Health_Behavioral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medication_Risk"/>
+        <Class IRI="#Medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Memory_Impairment"/>
+        <Class IRI="#Cognitive/Neuro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metabolic"/>
+        <Class IRI="#Physiological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Musculoskeletal_Alteration"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nausea"/>
+        <Class IRI="#Bowel/Gastric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Noncompliance"/>
+        <Class IRI="#Health_Behavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Noncompliance_of_Diagnostic_Test"/>
+        <Class IRI="#Health_Behavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Noncompliance_of_Dietary_Regimen"/>
+        <Class IRI="#Health_Behavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Noncompliance_of_Fluid_Volume"/>
+        <Class IRI="#Health_Behavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Noncompliance_of_Medication_Regimen"/>
+        <Class IRI="#Health_Behavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Noncompliance_of_Safety_Precautions"/>
+        <Class IRI="#Health_Behavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Noncompliance_of_Therapeutic_Regimen"/>
+        <Class IRI="#Health_Behavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nursing_Diagnoses"/>
+        <Class IRI="#CCC_Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nursing_Interventions"/>
+        <Class IRI="#CCC_Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nutrition_Alteration"/>
+        <Class IRI="#Nutritional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nutritional"/>
+        <Class IRI="#Functional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Olfactory_Alteration"/>
+        <Class IRI="#Sensory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oral_Mucous_Membranes_Impairment"/>
+        <Class IRI="#Skin_Integrity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pain"/>
+        <Class IRI="#Sensory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parental_Role_Conflict"/>
+        <Class IRI="#Role_Relationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parenting_Alteration"/>
+        <Class IRI="#Role_Relationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Perceived_Constipation"/>
+        <Class IRI="#Bowel/Gastric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Perinatal_Risk"/>
+        <Class IRI="#Life_Cycle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Perioperative_Injury_Risk"/>
+        <Class IRI="#Safety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Perioperative_Positioning_Injury"/>
+        <Class IRI="#Safety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Peripheral_Alteration"/>
+        <Class IRI="#Skin_Integrity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Personal_Identity_Disturbance"/>
+        <Class IRI="#Self_Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_Mobility_Impairment"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_Regulation"/>
+        <Class IRI="#Physiological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_Regulation_Alteration"/>
+        <Class IRI="#Physical_Regulation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physiological"/>
+        <Class IRI="#Nursing_Diagnoses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poisoning_Risk"/>
+        <Class IRI="#Safety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Polypharmacy"/>
+        <Class IRI="#Medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Post-Trauma_Response"/>
+        <Class IRI="#Coping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Postpartum_Risk"/>
+        <Class IRI="#Life_Cycle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Powerlessness"/>
+        <Class IRI="#Self_Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pregnancy_Risk"/>
+        <Class IRI="#Life_Cycle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Psychological"/>
+        <Class IRI="#Nursing_Diagnoses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rape_Trauma_Syndrome"/>
+        <Class IRI="#Coping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reflex_Urinary_Incontinence"/>
+        <Class IRI="#Urinary_Elimination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Relocation_Stress_Syndrome"/>
+        <Class IRI="#Role_Relationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Renal_Alteration"/>
+        <Class IRI="#Urinary_Elimination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reproductive_Risk"/>
+        <Class IRI="#Life_Cycle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Respiration_Alteration"/>
+        <Class IRI="#Respiratory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Respiratory"/>
+        <Class IRI="#Physiological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Role_Performance_Alteration"/>
+        <Class IRI="#Role_Relationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Role_Relationship"/>
+        <Class IRI="#Psychological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Safety"/>
+        <Class IRI="#Health_Behavioral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Self-Care"/>
+        <Class IRI="#Functional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Self_Care_Deficit"/>
+        <Class IRI="#Self-Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Self_Concept"/>
+        <Class IRI="#Psychological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Self_Concept_Alteration"/>
+        <Class IRI="#Self_Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Self_mutilation_Risk"/>
+        <Class IRI="#Safety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensory"/>
+        <Class IRI="#Functional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensory_Perceptual_Alteration"/>
+        <Class IRI="#Sensory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sexual_Dysfuncti"/>
+        <Class IRI="#Role_Relationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sexuality_Patterns_Alteration"/>
+        <Class IRI="#Role_Relationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Situational_Self-Esteem_Disturbance"/>
+        <Class IRI="#Self_Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skin_Incision"/>
+        <Class IRI="#Skin_Integrity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skin_Integrity"/>
+        <Class IRI="#Physiological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skin_Integrity_Alteration"/>
+        <Class IRI="#Skin_Integrity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skin_Integrity_Impairment"/>
+        <Class IRI="#Skin_Integrity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skin_Integrity_Impairment_Risk"/>
+        <Class IRI="#Skin_Integrity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sleep_Deprivation"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sleep_Pattern_Disturbance"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Social_Interaction_Alteration"/>
+        <Class IRI="#Role_Relationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Social_Isolation"/>
+        <Class IRI="#Role_Relationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Socialization_Alteration"/>
+        <Class IRI="#Role_Relationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spiritual_Distress"/>
+        <Class IRI="#Coping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spiritual_State_Alteration"/>
+        <Class IRI="#Coping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stress_Urinary_Incontinence"/>
+        <Class IRI="#Urinary_Elimination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Substance_Abuse"/>
+        <Class IRI="#Safety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Suffocation_Risk"/>
+        <Class IRI="#Safety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Suicide_Risk"/>
+        <Class IRI="#Safety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Surgical_Recovery_Delay"/>
+        <Class IRI="#Safety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Swallowing_Impairment"/>
+        <Class IRI="#Nutritional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tactile_Alteration"/>
+        <Class IRI="#Sensory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thermoregulation_Impairment"/>
+        <Class IRI="#Physical_Regulation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thought_Processes_Alteration"/>
+        <Class IRI="#Cognitive/Neuro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tissue_Perfusion"/>
+        <Class IRI="#Physiological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tissue_Perfusion_Alteration"/>
+        <Class IRI="#Tissue_Perfusion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tobacco_Abuse"/>
+        <Class IRI="#Safety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Toileting_Deficit"/>
+        <Class IRI="#Self-Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trauma_Risk"/>
+        <Class IRI="#Safety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unilateral_Neglect"/>
+        <Class IRI="#Sensory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Urge_Urinary_Incontinence"/>
+        <Class IRI="#Urinary_Elimination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Urinary_Elimination"/>
+        <Class IRI="#Physiological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Urinary_Elimination_Alteration"/>
+        <Class IRI="#Urinary_Elimination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Urinary_Retention"/>
+        <Class IRI="#Urinary_Elimination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ventilatory_Weaning_Impairment"/>
+        <Class IRI="#Respiratory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Verbal_Impairment"/>
+        <Class IRI="#Role_Relationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Violence_Risk"/>
+        <Class IRI="#Safety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Visual_Alteration"/>
+        <Class IRI="#Sensory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vomiting"/>
+        <Class IRI="#Bowel/Gastric"/>
+    </SubClassOf>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid13416697592333"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">01.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid13585129836403"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">01.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid13619161854604"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">01.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid13644296705935"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">01.3
+
+</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid13669008384487"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">01.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid13688681412456"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">01.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid13715471111408"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">01.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid13731268649676"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">01.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid13749341970428"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">02.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid13777068570609"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">03.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid13797332611363"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">03.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3329927879985"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">41.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3354850785213"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">40.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3367970661743"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">42.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3383114177605"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">42.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3397994107717"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">42.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3414554352029"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">43.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid34276109915034"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">03.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid34294445317942"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">03.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3430777489451"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">43.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid34323500357769"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">03.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid34341955986365"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">03.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid34358411102631"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">04.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid34395994359026"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">04.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid34422513691502"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">04.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3480024344615"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">43.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3490099049303"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">43.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3505194506091"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">43.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3549617575941"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">44.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35608343665881"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">05.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35625462127559"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">06.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35654125070660"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">06.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35671526420947"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">06.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3572385549394"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">44.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35725699261923"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">07.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35746818506465"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">07.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35762986616183"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">08.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35787977945562"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">08.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35811728696713"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">8.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35827360400783"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">08.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3584329854534"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">44.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35855479580463"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">08.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35874071534573"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">08.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3596824956135"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">44.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35969061585999"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">08.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35988659582163"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">08.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3612960851398"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">44.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3627360563948"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">44.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3638856442264"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">44.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3654904179895"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">44.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3671495643085"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">45.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3699903393738"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">46.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3734702464963"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">46.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3749606083259"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">46.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3763158068194"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">46.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3777302000740"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">46.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3793029206066"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">46.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3807436795793"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">47.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4051648853112"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">48.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4104303662140"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">49.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4119079379760"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">49.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4133335509532"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">49.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4148759085971"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">49.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4161462121156"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">49.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4184598528345"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">49.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4203478087752"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">50.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4230677662200"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">52.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4245469661291"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">53.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4264029177740"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">53.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4276620951698"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">53.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4336092028483"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">54.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4356747723837"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">55.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4382658701226"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">56.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4420921961018"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">57.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4454777872061"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">57.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4483305186424"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">57.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4499801043393"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">58.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4518416693145"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">58.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4530544022368"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">58.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4544215958549"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">58.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4562880055322"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">59.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4577166206056"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">59.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4594415521503"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">59.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4608271292147"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">59.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4624406947253"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">60.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4638454563368"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">60.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4653742150122"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">60.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4668318090084"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">60.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4681526019151"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">60.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4707909515505"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">61.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4732909119347"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">62.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4749741075775"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">63.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4766412407662"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">63.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4782660108920"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">63.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid47976325858287"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">09.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid47999621451710"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">09.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48021827943530"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48046011512249"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">11.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48059539684481"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">11.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48073395607503"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">12.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48088922282974"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">12.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48100697890371"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">12.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48116361049407"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">12.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48131049875878"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">12.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48147392643539"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">13.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48173296622189"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">13.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48198822628510"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">14.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48214575203608"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">14.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48238142065833"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">15.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48254221462301"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">15.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48269541198073"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">15.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48283436835750"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">15.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48307308073682"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">15.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48425664826573"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">17.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48445680631644"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">17.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48463008774893"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">18.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48490494817373"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">19.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48514485552317"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">20.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48527205798860"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">20.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48541429276000"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">20.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48562435865688"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">20.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48574820393221"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">20.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48591868326513"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">20.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48606667156692"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">20.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48771727029176"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">21.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48801501517081"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">21.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48829773109785"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">22.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48842133758934"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">23.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48871115711185"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">24.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48887547516818"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">24.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48904274956105"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">24.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48920986239324"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">24.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48932306206220"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">24.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48952384754551"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">24.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48981969765924"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">25.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48993880307579"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">25.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49013799827745"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">25.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49032790951452"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">25.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49045606149937"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">25.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49058198530990"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">25.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49072373957840"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">25.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49094157113493"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">25.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49124716433210"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">26.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49152203109945"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">26.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49163364638184"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">26.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49175155129033"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">26.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49206274115767"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">27.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49217978879908"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">27.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49236552459494"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">27.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49249600426449"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">27.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49264336166888"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">27.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49285311368115"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">28.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49297496041958"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">28.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49310310900942"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">29.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49327054048417"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">31.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49340822547637"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">32.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49356325492512"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">32.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49367572904278"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">32.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49382644911362"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">32.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49407100149142"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">33.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49417580643015"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">33.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49427596408677"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">33.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49444843084788"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">33.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49455699196240"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">33.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49466345968085"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">33.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49479177823062"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">33.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49494426902776"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">34.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49511552729617"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">34.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49523440250056"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">34.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49561688425392"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">35.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49578750789740"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">36.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49598430607321"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">37.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49615277563736"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">38.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49631301211817"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">38.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49649524824019"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">38.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49669716194286"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">39.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_code"/>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid7832915053283"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">01.0</Literal>
+    </DataPropertyAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Activities_of_Daily_Living_(ADLs)_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49631301211817"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Activity_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid13416697592333"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Activity_Intolerance_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid13619161854604"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Acute_Pain</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4766412407662"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Adjustment_Impairment</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48088922282974"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Airway_Clearance_Impairment</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49152203109945"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Alcohol_Abuse</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4530544022368"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Anticipatory_Grieving</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4264029177740"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Anxiety</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3354850785213"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Aspiration_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49417580643015"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Auditory_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3572385549394"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Autonomic_Dysreflexia</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48993880307579"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Bathing/Hygiene_Deficit</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49561688425392"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Bleeding_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35671526420947"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Blood_Pressure_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35654125070660"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Body_Image_Disturbance</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3430777489451"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Body_Nutrition_Deficit</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48887547516818"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Body_Nutrition_Deficit_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48904274956105"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Body_Nutrition_Excess</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48920986239324"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Body_Nutrition_Excess_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48932306206220"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Bowel_Elimination_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid13777068570609"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Bowel_Incontinence</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid13797332611363"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Breastfeeding_Impairment</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4356747723837"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Breathing_Pattern_Impairment</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49163364638184"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Cardiac_Output_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35608343665881"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Cardiovascular_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35625462127559"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Caregiver_Role_Strain</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49264336166888"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Cerebral_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35725699261923"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Chronic_Low_Self-Esteem_Disturbance</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3490099049303"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Chronic_Pain</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4782660108920"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Comfort_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3671495643085"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Communication_Impairment</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49285311368115"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Community_Coping_Impairment</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4230677662200"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Confusion</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35746818506465"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Constipation</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid34341955986365"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Contraception_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4608271292147"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Decisional_Conflict</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48100697890371"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Defensive_Coping</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48116361049407"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Delivery_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4668318090084"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Denial</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48131049875878"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Diarrhea</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid34276109915034"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Disabled_Family_Coping</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48059539684481"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Disuse_Syndrome</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49427596408677"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Diversional_Activity_Deficit</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid13644296705935"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Dressing/Grooming_Deficit</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49578750789740"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Drug_Abuse</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4544215958549"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Dying_Process</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48021827943530"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Dysfunctional_Grieving</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4276620951698"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Electrolyte_Imbalance</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4732909119347"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Endocrine_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48829773109785"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Failure_to_Thrive</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48445680631644"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Fall_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49479177823062"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Family_Coping_Impairment</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48046011512249"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Family_Processes_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49310310900942"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Fatigue</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid13669008384487"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Fear</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3329927879985"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Fecal_Impaction</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid34294445317942"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Feeding_Deficit</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49598430607321"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Fertility_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4577166206056"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Fluid_Volume_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48238142065833"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Fluid_Volume_Deficit</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48254221462301"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Fluid_Volume_Deficit_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48269541198073"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Fluid_Volume_Excess</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48283436835750"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Fluid_Volume_Excess_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48307308073682"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Functional_Urinary_Incontinence</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4119079379760"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Gas_Exchange_Impairment</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49175155129033"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Gastrointestinal_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid34358411102631"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Grieving</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4245469661291"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Growth_and_Development_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4707909515505"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Gustatory_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3584329854534"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Health_Maintenance_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48425664826573"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Health_Seeking_Behavior_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48463008774893"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Home_Maintenance_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48490494817373"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Hopelessness</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3383114177605"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Hyperthermia</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49013799827745"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Hypothermia</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49032790951452"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Immunologic_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48842133758934"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Individual_Coping_Impairment</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48073395607503"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Infant_Feeding_Pattern_Impairment</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4336092028483"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Infection</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49072373957840"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Infection_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49058198530990"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Infertility_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4594415521503"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Injury_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49407100149142"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Instrumental_Activities_of_Daily_Living_(IADLs)_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49649524824019"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Intracranial_Adaptive_Capacity_Impairment</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49094157113493"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Kinesthetic_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3596824956135"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Knowledge_Deficit</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35762986616183"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Knowledge_Deficit_of_Diagnostic_Test</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35787977945562"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Knowledge_Deficit_of_Dietary_Regimen</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35811728696713"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Knowledge_Deficit_of_Disease_Process</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35827360400783"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Knowledge_Deficit_of_Fluid_Volume</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35855479580463"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Knowledge_Deficit_of_Medication_Regimen</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35874071534573"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Knowledge_Deficit_of_Safety_Precautions</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35969061585999"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Knowledge_Deficit_of_Therapeutic_Regimen</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid35988659582163"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Labor_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4653742150122"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Latex_Allergy_Response</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3793029206066"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Meaningfulness_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3367970661743"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Medication_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48771727029176"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Memory_Impairment</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid47999621451710"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Musculoskeletal_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid13749341970428"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Nausea</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid34395994359026"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Noncompliance</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48514485552317"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Noncompliance_of_Diagnostic_Test</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48527205798860"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Noncompliance_of_Dietary_Regimen</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48541429276000"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Noncompliance_of_Fluid_Volume</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48562435865688"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Noncompliance_of_Medication_Regimen</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48574820393221"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Noncompliance_of_Safety_Precautions</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48591868326513"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Noncompliance_of_Therapeutic_Regimen</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48606667156692"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Nutrition_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48871115711185"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Olfactory_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3612960851398"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Oral_Mucous_Membranes_Impairment</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3734702464963"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Pain</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4749741075775"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Parental_Role_Conflict</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49217978879908"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Parenting_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49236552459494"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Perceived_Constipation</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid34323500357769"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Perinatal_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4624406947253"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Perioperative_Injury_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4420921961018"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Perioperative_Positioning_Injury</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4454777872061"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Peripheral_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3807436795793"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Personal_Identity_Disturbance</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3480024344615"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Physical_Mobility_Impairment</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid13688681412456"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Physical_Regulation_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48981969765924"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Poisoning_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49444843084788"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Polypharmacy</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48801501517081"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Post-Trauma_Response</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48147392643539"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Postpartum_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4681526019151"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Powerlessness</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3397994107717"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Pregnancy_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4638454563368"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Rape_Trauma_Syndrome</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48173296622189"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Reflex_Urinary_Incontinence</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4133335509532"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Relocation_Stress_Syndrome</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49382644911362"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Renal_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4203478087752"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Reproductive_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4562880055322"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Respiration_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49124716433210"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Role_Performance_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49206274115767"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Self_Care_Deficit</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49615277563736"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Self_Concept_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3414554352029"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Self_mutilation_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49523440250056"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Sensory_Perceptual_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3549617575941"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Sexual_Dysfuncti</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49249600426449"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Sexuality_Patterns_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49327054048417"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Situational_Self-Esteem_Disturbance</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3505194506091"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Skin_Incision</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3777302000740"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Skin_Integrity_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3699903393738"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Skin_Integrity_Impairment</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3749606083259"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Skin_Integrity_Impairment_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3763158068194"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Sleep_Deprivation</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid13731268649676"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Sleep_Pattern_Disturbance</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid13715471111408"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Social_Interaction_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49356325492512"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Social_Isolation</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49367572904278"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Socialization_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49340822547637"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Spiritual_Distress</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48214575203608"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Spiritual_State_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48198822628510"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Stress_Urinary_Incontinence</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4148759085971"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Substance_Abuse</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4499801043393"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Suffocation_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49455699196240"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Suicide_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49511552729617"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Surgical_Recovery_Delay</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4483305186424"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Swallowing_Impairment</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid48952384754551"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Tactile_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3627360563948"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Thermoregulation_Impairment</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49045606149937"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Thought_Processes_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid47976325858287"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Tissue_Perfusion_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4051648853112"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Tobacco_Abuse</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4518416693145"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Toileting_Deficit</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49669716194286"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Trauma_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49466345968085"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Unilateral_Neglect</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3638856442264"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Urge_Urinary_Incontinence</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4161462121156"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Urinary_Elimination_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4104303662140"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Urinary_Retention</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4184598528345"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Ventilatory_Weaning_Impairment</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid4382658701226"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Verbal_Impairment</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49297496041958"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Violence_Risk</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid49494426902776"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Visual_Alteration</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid3654904179895"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Vomiting</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/hll/ontologies/2013/8/untitled-ontology-2#genid34422513691502"/>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

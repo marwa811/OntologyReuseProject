@@ -1,0 +1,531 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY swrlx "http://www.w3.org/2003/11/swrlx#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY ruleml "http://www.w3.org/2003/11/ruleml#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owlx "http://www.w3.org/2003/05/owl-xml#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY kaon2 "http://kaon2.semanticweb.org/internal#" >
+    <!ENTITY Activity "http://www.ICPS/ontologies/Activity.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ICPS/ontologies/Activity.owl#"
+     xml:base="http://www.ICPS/ontologies/Activity.owl"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:kaon2="http://kaon2.semanticweb.org/internal#"
+     xmlns:owlx="http://www.w3.org/2003/05/owl-xml#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:owl2="http://www.w3.org/2006/12/owl2#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrlx="http://www.w3.org/2003/11/swrlx#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:Activity="http://www.ICPS/ontologies/Activity.owl#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ruleml="http://www.w3.org/2003/11/ruleml#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="">
+        <dc:creator>Mar&#237;a Poveda</dc:creator>
+        <dc:creator>Oscar Corcho</dc:creator>
+        <dc:creator
+            >Mari Carmen Su&#225;rez-Figueroa</dc:creator>
+        <owl:priorVersion>1.0</owl:priorVersion>
+        <dc:creator
+            >Elena Montiel-Ponsoda</dc:creator>
+        <owl:versionInfo>2.0</owl:versionInfo>
+        <rdfs:comment xml:lang="en"
+            >Ontology about activities involved in a incident.</rdfs:comment>
+        <rdfs:comment xml:lang="en"
+            >This work has been carried out by the Ontological Engineering Group, using sources from the University of Saint Etienne and the Australian Patient Safety Foundation, and supported by the World Health Organisation under the International Classification for Patient Safety programme.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#ActivitiesOfDailyLiving -->
+
+    <owl:Class rdf:about="#ActivitiesOfDailyLiving">
+        <rdfs:label xml:lang="en"
+            >Activities of daily living</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#MovingActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#Activity -->
+
+    <owl:Class rdf:about="#Activity">
+        <rdfs:label xml:lang="en">Activiy</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#InvoluntaryActivity"/>
+                    <rdf:Description rdf:about="#MovingActivity"/>
+                    <rdf:Description rdf:about="#StationaryActivity"/>
+                    <rdf:Description rdf:about="#VoluntaryActivity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#Climbing -->
+
+    <owl:Class rdf:about="#Climbing">
+        <rdfs:label xml:lang="en">Climbing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#MovingActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#InvoluntaryActivity -->
+
+    <owl:Class rdf:about="#InvoluntaryActivity">
+        <rdfs:label xml:lang="en"
+            >Involuntary activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Activity"/>
+        <owl:disjointWith rdf:resource="#VoluntaryActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#MovingActivity -->
+
+    <owl:Class rdf:about="#MovingActivity">
+        <rdfs:label xml:lang="en">Moving activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Activity"/>
+        <owl:disjointWith rdf:resource="#StationaryActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#MovingInBed -->
+
+    <owl:Class rdf:about="#MovingInBed">
+        <rdfs:label xml:lang="en">Moving in bed</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#MovingActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#StationaryActivity -->
+
+    <owl:Class rdf:about="#StationaryActivity">
+        <rdfs:label xml:lang="en"
+            >Satationary activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#VoluntaryActivity -->
+
+    <owl:Class rdf:about="#VoluntaryActivity">
+        <rdfs:label xml:lang="en"
+            >Voluntary activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#attemptingToSitDown -->
+
+    <VoluntaryActivity rdf:about="#attemptingToSitDown">
+        <rdf:type rdf:resource="#MovingActivity"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >attempting to sit down</rdfs:label>
+    </VoluntaryActivity>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#attemptingToStand -->
+
+    <owl:Thing rdf:about="#attemptingToStand">
+        <rdf:type rdf:resource="#MovingActivity"/>
+        <rdf:type rdf:resource="#VoluntaryActivity"/>
+        <rdfs:label xml:lang="en"
+            >attempting to stand</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#attendingOralHygiene -->
+
+    <owl:Thing rdf:about="#attendingOralHygiene">
+        <rdf:type rdf:resource="#ActivitiesOfDailyLiving"/>
+        <rdf:type rdf:resource="#VoluntaryActivity"/>
+        <rdfs:label xml:lang="en"
+            >attending oral hygiene</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#bathing -->
+
+    <ActivitiesOfDailyLiving rdf:about="#bathing">
+        <rdf:type rdf:resource="#VoluntaryActivity"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">bathing</rdfs:label>
+    </ActivitiesOfDailyLiving>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#beingCarriedLifted -->
+
+    <InvoluntaryActivity rdf:about="#beingCarriedLifted">
+        <rdf:type rdf:resource="#MovingActivity"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >being carried lifted</rdfs:label>
+    </InvoluntaryActivity>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#bending -->
+
+    <MovingActivity rdf:about="#bending">
+        <rdf:type rdf:resource="#VoluntaryActivity"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">bending</rdfs:label>
+    </MovingActivity>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#climbingAroundBedrails -->
+
+    <VoluntaryActivity rdf:about="#climbingAroundBedrails">
+        <rdf:type rdf:resource="#Climbing"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >climbing around bedrails</rdfs:label>
+    </VoluntaryActivity>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#climbingOverArroundBedrails -->
+
+    <Climbing rdf:about="#climbingOverArroundBedrails">
+        <rdf:type rdf:resource="#VoluntaryActivity"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >climbing over arround bedrails</rdfs:label>
+    </Climbing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#dressing -->
+
+    <VoluntaryActivity rdf:about="#dressing">
+        <rdf:type rdf:resource="#ActivitiesOfDailyLiving"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">dressing</rdfs:label>
+    </VoluntaryActivity>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#gettingFromTheToilet -->
+
+    <ActivitiesOfDailyLiving rdf:about="#gettingFromTheToilet">
+        <rdf:type rdf:resource="#VoluntaryActivity"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >getting from the toilet</rdfs:label>
+    </ActivitiesOfDailyLiving>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#gettingIntoBed -->
+
+    <owl:Thing rdf:about="#gettingIntoBed">
+        <rdf:type rdf:resource="#MovingInBed"/>
+        <rdf:type rdf:resource="#VoluntaryActivity"/>
+        <rdfs:label xml:lang="en"
+            >getting into bed</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#gettingOutBed -->
+
+    <owl:Thing rdf:about="#gettingOutBed">
+        <rdf:type rdf:resource="#MovingInBed"/>
+        <rdf:type rdf:resource="#VoluntaryActivity"/>
+        <rdfs:label xml:lang="en">getting out bed</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#gettingToTheToilet -->
+
+    <owl:Thing rdf:about="#gettingToTheToilet">
+        <rdf:type rdf:resource="#ActivitiesOfDailyLiving"/>
+        <rdf:type rdf:resource="#VoluntaryActivity"/>
+        <rdfs:label xml:lang="en"
+            >getting to the toilet</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#leaning -->
+
+    <MovingActivity rdf:about="#leaning">
+        <rdf:type rdf:resource="#VoluntaryActivity"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">leaning</rdfs:label>
+    </MovingActivity>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#movingBetweenCloseObjects -->
+
+    <MovingActivity rdf:about="#movingBetweenCloseObjects">
+        <rdf:type rdf:resource="#VoluntaryActivity"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >moving between close objects</rdfs:label>
+    </MovingActivity>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#playing -->
+
+    <VoluntaryActivity rdf:about="#playing">
+        <rdf:type rdf:resource="#MovingActivity"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">playing</rdfs:label>
+    </VoluntaryActivity>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#reachingOver -->
+
+    <owl:Thing rdf:about="#reachingOver">
+        <rdf:type rdf:resource="#MovingActivity"/>
+        <rdf:type rdf:resource="#VoluntaryActivity"/>
+        <rdfs:label xml:lang="en">reaching over</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#rollOutFromLowBed -->
+
+    <VoluntaryActivity rdf:about="#rollOutFromLowBed">
+        <rdf:type rdf:resource="#MovingInBed"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >roll out from low bed</rdfs:label>
+    </VoluntaryActivity>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#rollingOverInBed -->
+
+    <MovingInBed rdf:about="#rollingOverInBed">
+        <rdf:type rdf:resource="#VoluntaryActivity"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >rolling over in bed</rdfs:label>
+    </MovingInBed>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#running -->
+
+    <owl:Thing rdf:about="#running">
+        <rdf:type rdf:resource="#MovingActivity"/>
+        <rdf:type rdf:resource="#VoluntaryActivity"/>
+        <rdfs:label xml:lang="en">running</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#showering -->
+
+    <VoluntaryActivity rdf:about="#showering">
+        <rdf:type rdf:resource="#ActivitiesOfDailyLiving"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">showering</rdfs:label>
+    </VoluntaryActivity>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#sitting -->
+
+    <owl:Thing rdf:about="#sitting">
+        <rdf:type rdf:resource="#StationaryActivity"/>
+        <rdf:type rdf:resource="#VoluntaryActivity"/>
+        <rdfs:label xml:lang="en">sitting</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#standing -->
+
+    <StationaryActivity rdf:about="#standing">
+        <rdf:type rdf:resource="#VoluntaryActivity"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">standing</rdfs:label>
+    </StationaryActivity>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#stepping -->
+
+    <MovingActivity rdf:about="#stepping">
+        <rdf:type rdf:resource="#VoluntaryActivity"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">stepping</rdfs:label>
+    </MovingActivity>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#transferring -->
+
+    <owl:Thing rdf:about="#transferring">
+        <rdf:type rdf:resource="#MovingActivity"/>
+        <rdf:type rdf:resource="#VoluntaryActivity"/>
+        <rdfs:label xml:lang="en">transferring</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#turning -->
+
+    <VoluntaryActivity rdf:about="#turning">
+        <rdf:type rdf:resource="#MovingActivity"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">turning</rdfs:label>
+    </VoluntaryActivity>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#undergoingAProcedure -->
+
+    <owl:Thing rdf:about="#undergoingAProcedure">
+        <rdf:type rdf:resource="#InvoluntaryActivity"/>
+        <rdfs:label xml:lang="en"
+            >undergoing a procedure</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#undressing -->
+
+    <owl:Thing rdf:about="#undressing">
+        <rdf:type rdf:resource="#ActivitiesOfDailyLiving"/>
+        <rdf:type rdf:resource="#VoluntaryActivity"/>
+        <rdfs:label xml:lang="en">undressing</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#walking -->
+
+    <VoluntaryActivity rdf:about="#walking">
+        <rdf:type rdf:resource="#MovingActivity"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">walking</rdfs:label>
+    </VoluntaryActivity>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="#undergoingAProcedure"/>
+            <rdf:Description rdf:about="#standing"/>
+            <rdf:Description rdf:about="#gettingIntoBed"/>
+            <rdf:Description rdf:about="#bending"/>
+            <rdf:Description rdf:about="#stepping"/>
+            <rdf:Description rdf:about="#bathing"/>
+            <rdf:Description rdf:about="#dressing"/>
+            <rdf:Description rdf:about="#gettingToTheToilet"/>
+            <rdf:Description rdf:about="#reachingOver"/>
+            <rdf:Description rdf:about="#transferring"/>
+            <rdf:Description rdf:about="#beingCarriedLifted"/>
+            <rdf:Description rdf:about="#rollOutFromLowBed"/>
+            <rdf:Description rdf:about="#running"/>
+            <rdf:Description rdf:about="#rollingOverInBed"/>
+            <rdf:Description rdf:about="#undressing"/>
+            <rdf:Description rdf:about="#climbingOverArroundBedrails"/>
+            <rdf:Description rdf:about="#attendingOralHygiene"/>
+            <rdf:Description rdf:about="#turning"/>
+            <rdf:Description rdf:about="#attemptingToSitDown"/>
+            <rdf:Description rdf:about="#attemptingToStand"/>
+            <rdf:Description rdf:about="#movingBetweenCloseObjects"/>
+            <rdf:Description rdf:about="#walking"/>
+            <rdf:Description rdf:about="#gettingFromTheToilet"/>
+            <rdf:Description rdf:about="#leaning"/>
+            <rdf:Description rdf:about="#sitting"/>
+            <rdf:Description rdf:about="#gettingOutBed"/>
+            <rdf:Description rdf:about="#playing"/>
+            <rdf:Description rdf:about="#showering"/>
+            <rdf:Description rdf:about="#climbingAroundBedrails"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

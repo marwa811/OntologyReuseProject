@@ -1,0 +1,572 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/chen/ontologies/2015/8/untitled-ontology-72"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/chen/ontologies/2015/8/untitled-ontology-72">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assessment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AssistiveDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blood-BloodProduct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeOfInstrument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CheckDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClinicalAdministration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClinicalProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContributingFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Defect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DegreeOfHarm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Delay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Device/Equipment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeviceAvailability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeviceCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeviceFailure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeviceName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeviceType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Documentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ErrorType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthcareAssociatedInfection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImmediateAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InappropriateUse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IncidentCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IncidentHistory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IncidentType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infrastructure-Building-Fixture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InjuryAssessment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MedicalDevice-Equipment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medication-IVFluid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MentalStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MissingInstrument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MitigatingFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MonitoringDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NotifyManufacturer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nutrition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oxigen-GasVapour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pathology-Laboratory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PatientAccident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PatientActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PatientBehaviour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PatientCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PatientOutcome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicianActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PressureUlcer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resource-OrganizationalManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiskAssessment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiskFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SkinTear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Social/EconomicalImpact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Solution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StateOfCare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StopUse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StuffActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemporalInfo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Therapy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Timing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Treatment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TypeOfHarm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UseError"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#causes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOutcome"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParticipant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involvesActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fracture"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#patient_fall"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#skin_tear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#slip_down"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Fall"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOutcome"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasParticipant"/>
+                <Class IRI="#Patient"/>
+            </ObjectSomeValuesFrom>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Fall"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesActivity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasParticipant"/>
+                <Class IRI="#Patient"/>
+            </ObjectSomeValuesFrom>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AssistiveDevice"/>
+        <Class IRI="#Device/Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blood-BloodProduct"/>
+        <Class IRI="#IncidentType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeOfInstrument"/>
+        <Class IRI="#MitigatingFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CheckDevice"/>
+        <Class IRI="#StuffActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClinicalAdministration"/>
+        <Class IRI="#IncidentType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClinicalProcess"/>
+        <Class IRI="#IncidentType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Defect"/>
+        <Class IRI="#ErrorType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DegreeOfHarm"/>
+        <Class IRI="#PatientOutcome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Delay"/>
+        <Class IRI="#ErrorType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeviceAvailability"/>
+        <Class IRI="#ErrorType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeviceFailure"/>
+        <Class IRI="#ErrorType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeviceName"/>
+        <Class IRI="#DeviceCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeviceType"/>
+        <Class IRI="#DeviceCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Documentation"/>
+        <Class IRI="#IncidentType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ErrorType"/>
+        <Class IRI="#IncidentCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fall"/>
+        <Class IRI="#IncidentType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HealthcareAssociatedInfection"/>
+        <Class IRI="#IncidentType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImmediateAction"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InappropriateUse"/>
+        <Class IRI="#ErrorType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IncidentHistory"/>
+        <Class IRI="#PatientCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infrastructure-Building-Fixture"/>
+        <Class IRI="#IncidentType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InjuryAssessment"/>
+        <Class IRI="#Assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Management"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MedicalDevice-Equipment"/>
+        <Class IRI="#IncidentType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medication-IVFluid"/>
+        <Class IRI="#IncidentType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MentalStatus"/>
+        <Class IRI="#PatientCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MissingInstrument"/>
+        <Class IRI="#ErrorType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MonitoringDevice"/>
+        <Class IRI="#Device/Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NotifyManufacturer"/>
+        <Class IRI="#MitigatingFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nutrition"/>
+        <Class IRI="#IncidentType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oxigen-GasVapour"/>
+        <Class IRI="#IncidentType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pathology-Laboratory"/>
+        <Class IRI="#IncidentType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PatientAccident"/>
+        <Class IRI="#IncidentType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PatientActivity"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PatientBehaviour"/>
+        <Class IRI="#IncidentType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalCondition"/>
+        <Class IRI="#PatientCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicianActivity"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PressureUlcer"/>
+        <Class IRI="#IncidentType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process"/>
+        <Class IRI="#IncidentCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resource-OrganizationalManagement"/>
+        <Class IRI="#IncidentType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiskAssessment"/>
+        <Class IRI="#Assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Site"/>
+        <Class IRI="#PatientOutcome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SkinTear"/>
+        <Class IRI="#TypeOfHarm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Social/EconomicalImpact"/>
+        <Class IRI="#PatientOutcome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StateOfCare"/>
+        <Class IRI="#TemporalInfo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StopUse"/>
+        <Class IRI="#MitigatingFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StuffActivity"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Therapy"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Time"/>
+        <Class IRI="#TemporalInfo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Timing"/>
+        <Class IRI="#TemporalInfo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Treatment"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TypeOfHarm"/>
+        <Class IRI="#PatientOutcome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UseError"/>
+        <Class IRI="#ErrorType"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#TypeOfHarm"/>
+        <NamedIndividual IRI="#fracture"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IncidentType"/>
+        <NamedIndividual IRI="#patient_fall"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patient"/>
+        <NamedIndividual IRI="#pt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SkinTear"/>
+        <NamedIndividual IRI="#skin_tear"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TypeOfHarm"/>
+        <NamedIndividual IRI="#skin_tear"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PatientActivity"/>
+        <NamedIndividual IRI="#slip_down"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasParticipant"/>
+        <NamedIndividual IRI="#fracture"/>
+        <NamedIndividual IRI="#pt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#patient_fall"/>
+        <NamedIndividual IRI="#skin_tear"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#patient_fall"/>
+        <NamedIndividual IRI="#fracture"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesActivity"/>
+        <NamedIndividual IRI="#patient_fall"/>
+        <NamedIndividual IRI="#slip_down"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasParticipant"/>
+        <NamedIndividual IRI="#skin_tear"/>
+        <NamedIndividual IRI="#pt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causes"/>
+        <NamedIndividual IRI="#slip_down"/>
+        <NamedIndividual IRI="#skin_tear"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causes"/>
+        <NamedIndividual IRI="#slip_down"/>
+        <NamedIndividual IRI="#fracture"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasParticipant"/>
+        <NamedIndividual IRI="#slip_down"/>
+        <NamedIndividual IRI="#pt"/>
+    </ObjectPropertyAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

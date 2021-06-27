@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/marwa/ontologies/2021/5/untitled-ontology-74"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/marwa/ontologies/2021/5/untitled-ontology-74">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Physicochemical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chemical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Health"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subcellular"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Protein"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cell"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animal_Development"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human_Developmental_Anatomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vocabularies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#All_Organisms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neurological_Disorder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Taxonomic_Classification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Other"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Immunology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Imaging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Upper_Level_Ontology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dysfunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animal_Gross_Anatomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ethology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biological_Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Microbial_Anatomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Development"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neurologic_Disease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cellular_anatomy_"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Molecule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gene_Product"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gross_Anatomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arabadopsis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subcellular_anatomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biomedical_Resources"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anatomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yeast"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plant_Anatomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Genomic_and_Proteomic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Phenotype"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mouse_Anatomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Experimental_Conditions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fish_Anatomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plant_Development"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Animal_Development"/>
+        <Class IRI="#Development"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Animal_Gross_Anatomy"/>
+        <Class IRI="#Gross_Anatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cellular_anatomy_"/>
+        <Class IRI="#Anatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fish_Anatomy"/>
+        <Class IRI="#Anatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fish_Anatomy"/>
+        <Class IRI="#Animal_Gross_Anatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gene_Product"/>
+        <Class IRI="#Genomic_and_Proteomic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gross_Anatomy"/>
+        <Class IRI="#Anatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human_Developmental_Anatomy"/>
+        <Class IRI="#Anatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human_Developmental_Anatomy"/>
+        <Class IRI="#Animal_Gross_Anatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human_Developmental_Anatomy"/>
+        <Class IRI="#Human"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Microbial_Anatomy"/>
+        <Class IRI="#Gross_Anatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mouse_Anatomy"/>
+        <Class IRI="#Animal_Gross_Anatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neurologic_Disease"/>
+        <Class IRI="#Neurological_Disorder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plant_Anatomy"/>
+        <Class IRI="#Gross_Anatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plant_Anatomy"/>
+        <Class IRI="#Plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plant_Development"/>
+        <Class IRI="#Development"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plant_Development"/>
+        <Class IRI="#Plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Protein"/>
+        <Class IRI="#Gene_Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Subcellular_anatomy"/>
+        <Class IRI="#Anatomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Subcellular_anatomy"/>
+        <Class IRI="#Subcellular"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

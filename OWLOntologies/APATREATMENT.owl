@@ -1,0 +1,1949 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2015/0/treatmentcluster.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/ontologies/2015/0/treatmentcluster.owl"
+     versionIRI="http://www.semanticweb.org/ontologies/2015/0/treatmentcluster.owl">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Import>http://alexandergarcia.name/ontos/treatment/BehaviorModificationTherapy.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/treatment/counseling.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/treatment/TreatmentGeneral.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/treatment/HospitalizationInstitutionalization.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/treatment/MedicalPhysicalTreatment.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/treatment/Rehabilitation.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/treatment/AlternativeTherapies.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/treatment/TreatmentFacilities.owl</Import>
+    <Import>http://alexandergarcia.name/ontos/treatment/Psychotherapy.owl</Import>
+    <Declaration>
+        <Class IRI="#AlternativeTherapies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Counseling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Psychotherapy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rehabilitation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TreatmentFacilities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TreatmentGeneral"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#AIDS_Prevention"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Acceptance_and_Commitment_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Activities_of_Daily_Living"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Acupuncture"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Adaptive_Behavior"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Adjunctive_Treatment"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Adlerian_Psychotherapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Adolescent_Psychiatry"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Adolescent_Psychotherapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Adrenalectomy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Adult_Day_Care"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Advance_Directives"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Adventure_Therapy"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Aerobic_Exercise"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Aftercare"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Age_Regression_(Hypnotic)"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Aging_in_Place"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Alcohol_Rehabilitation"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Alcoholics_Anonymous"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Alternative_Medicine"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Amputation"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Analytical_Psychotherapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Anger_Control"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Animal_Assisted_Therapy"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Anxiety_Management"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Aromatherapy"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Art_Therapy"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Artificial_Pacemakers"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Artificial_Respiration"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Assertiveness_Training"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Assisted_Living"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Assisted_Suicide"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Assistive_Technology"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Augmentative_Communication"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Autogenic_Training"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Autohypnosis"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Aversion_Therapy"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Bariatric_Surgery"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Behavior_Contracting"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Behavior_Modification"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Behavior_Therapy"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Bibliotherapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Biofeedback_Training"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Biological_Psychiatry"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Biopsy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Biopsychosocial_Approach"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Blood_Transfusion"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Brief_Psychotherapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Brief_Relational_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#CPR"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Caregiver_Burden"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Caregivers"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Case_Management"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Castration"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Catheterization"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Centering"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Chemotherapy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Child_Guidance_Clinics"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Child_Psychiatry"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Child_Psychology"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Child_Psychotherapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Childbirth_Training"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Circumcision"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Client_Centered_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Client_Education"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Client_Participation"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Client_Records"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Client_Rights"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Client_Transfer"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Client_Treatment_Matching"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Clinical_Audits"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Clinical_Governance"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Clinical_Practice"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Clinical_Psychology"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Clinics"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cochlear_Implants"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cognitive_Behavior_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cognitive_Rehabilitation"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cognitive_Restructuring"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cognitive_Techniques"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cognitive_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Colostomy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Commissurotomy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Commitment_(Psychiatric)"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Communication_Skills_Training"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Community_Facilities"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Community_Mental_Health_Centers"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Community_Mental_Health_Services"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Community_Psychiatry"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Computer_Assisted_Therapy"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Conditioning"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Conjoint_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Consultation_Liaison_Psychiatry"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Contingency_Management"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Continuum_of_Care"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Conversion_Therapy"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cotherapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Counseling"/>
+        <Class IRI="#Counseling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Counseling_Psychology"/>
+        <Class IRI="#Counseling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Counterconditioning"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Countertransference"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Couples_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Covert_Sensitization"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Creative_Arts_Therapy"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Criminal_Rehabilitation"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Crisis_Intervention"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Crisis_Intervention_Services"/>
+        <Class IRI="#Counseling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cross_Cultural_Counseling"/>
+        <Class IRI="#Counseling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cross_Cultural_Treatment"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dance_Therapy"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Day_Care_Centers"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Debriefing_(Psychological)"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Deinstitutionalization"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dental_Surgery"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dental_Treatment"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Detoxification"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dialysis"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dietary_Supplements"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Differential_Reinforcement"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Disability_Management"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Discharge_Planning"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Disease_Management"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Dream_Analysis"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Drug_Abuse_Prevention"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Drug_Augmentation"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Drug_Education"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Drug_Rehabilitation"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Drug_Self_Administration"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Drug_Therapy"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Early_Intervention"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Eclectic_Psychotherapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Elder_Care"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Electroconvulsive_Shock_Therapy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Electrosleep_Treatment"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Emergency_Services"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Emotion_Focused_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Empty_Chair_Technique"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Enactments"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Encounter_Group_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Endocrine_Gland_Surgery"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Ericksonian_Psychotherapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Euthanasia"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Evidence_Based_Practice"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Existential_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Experiential_Psychotherapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Exposure_Therapy"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Expressive_Psychotherapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Eye_Movement_Desensitization_Therapy"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Facility_Admission"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Facility_Discharge"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Facility_Environment"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Fading_(Conditioning)"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Faith_Healing"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Family_Intervention"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Family_Medicine"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Family_Planning"/>
+        <Class IRI="#Counseling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Family_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Fee_for_Service"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Feminist_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Fertility_Enhancement"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Folk_Medicine"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Free_Association"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Functional_Analysis"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Gene_Therapy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Genetic_Counseling"/>
+        <Class IRI="#Counseling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Geriatric_Patients"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Geriatric_Psychiatry"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Geriatric_Psychotherapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Gestalt_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Group_Counseling"/>
+        <Class IRI="#Counseling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Group_Homes"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Group_Intervention"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Group_Psychotherapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Guided_Imagery"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Habilitation"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Halfway_Houses"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Harm_Reduction"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Health_Care_Costs"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Health_Care_Delivery"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Health_Care_Policy"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Health_Care_Psychology"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Health_Care_Seeking_Behavior"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Health_Care_Services"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Health_Care_Utilization"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Health_Disparities"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Health_Education"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Health_Insurance"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Health_Maintenance_Organizations"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Health_Promotion"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Health_Service_Needs"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Heart_Surgery"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Help_Seeking_Behavior"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hemispherectomy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hemodialysis"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Holistic_Health"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Home_Care"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Home_Visiting_Programs"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hormone_Therapy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Horticulture_Therapy"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hospice"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hospital_Admission"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hospital_Discharge"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hospital_Environment"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hospital_Programs"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hospitalization"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hospitalized_Patients"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hospitals"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hot_Line_Services"/>
+        <Class IRI="#Counseling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Human_Relations_Training"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Humanistic_Psychotherapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hypericum_Perforatum"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hypnosis"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hypnotherapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hypophysectomy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Hysterectomy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Imagery"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Immunization"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Immunotherapy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Implosive_Therapy"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Independent_Living_Programs"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Individual_Psychotherapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Induced_Abortion"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Informed_Consent"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Insight_(Psychotherapeutic_Process)"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Insight_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Institution_Visitation"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Institutional_Release"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Institutional_Schools"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Institutionalization"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Insulin_Shock_Therapy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Integrated_Services"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Integrative_Psychotherapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Intensive_Care"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Interdisciplinary_Treatment_Approach"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Interpersonal_Psychotherapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Intervention"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Involuntary_Treatment"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Language_Therapy"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Laser_Irradiation"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Life_Sustaining_Treatment"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Logotherapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Long_Term_Care"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mainstreaming"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Maintenance_Therapy"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Male_Castration"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Managed_Care"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Marathon_Group_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Marriage_Counseling"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Massage"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mastectomy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Maximum_Security_Facilities"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Medicaid"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Medical_Patients"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Medical_Psychology"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Medical_Records"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Medical_Therapeutic_Devices"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Medical_Treatment_(General)"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Medicare"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Medicinal_Herbs_and_Plants"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Meditation"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Memory_Training"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mental_Health_Programs"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mental_Health_Services"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Methadone_Maintenance"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Microcounseling"/>
+        <Class IRI="#Counseling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Milieu_Therapy"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mind_Body_Therapy"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mirroring"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mobility_Aids"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mood_Stabilizers"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Morita_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Motivation_Training"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Motivational_Interviewing"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Movement_Therapy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Multimodal_Treatment_Approach"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Music_Therapy"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Mutual_Storytelling_Technique"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Narcoanalysis"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Narrative_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Needle_Exchange_Programs"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Negative_Therapeutic_Reaction"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neonatal_Intensive_Care"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Network_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neural_Transplantation"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neuropsychological_Rehabilitation"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurorehabilitation"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Neurosurgery"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Nonprescription_Drugs"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Nursing_Homes"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Occupational_Therapy"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Omission_Training"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Oncology"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Online_Therapy"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Operant_Conditioning"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Optical_Aids"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Organ_Transplantation"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Orphanages"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Orthopsychiatry"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Osteopathic_Medicine"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Outpatient_Commitment"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Outpatient_Treatment"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Outpatients"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Outreach_Programs"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Ovariectomy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Overcorrection"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Pain_Management"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Palliative_Care"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Paradoxical_Techniques"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Partial_Hospitalization"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Pastoral_Counseling"/>
+        <Class IRI="#Counseling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Patient_Abuse"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Patient_History"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Patient_Seclusion"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Patient_Selection"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Patients"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Peer_Counseling"/>
+        <Class IRI="#Counseling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Personal_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Persuasion_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Phototherapy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Physical_Examination"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Physical_Therapy"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Physical_Treatment_Methods"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Pinealectomy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Plastic_Surgery"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Play_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Poetry_Therapy"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Polypharmacy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Postsurgical_Complications"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Posttreatment_Followup"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Premarital_Counseling"/>
+        <Class IRI="#Counseling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Prenatal_Care"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Prescribing_(Drugs)"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Prescription_Drugs"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Prescription_Privileges"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Preventive_Medicine"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Primal_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Primary_Health_Care"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Primary_Mental_Health_Prevention"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Private_Practice"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Progressive_Relaxation_Therapy"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Prostheses"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychiatric_Clinics"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychiatric_Hospital_Admission"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychiatric_Hospital_Discharge"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychiatric_Hospital_Programs"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychiatric_Hospital_Readmission"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychiatric_Hospitalization"/>
+        <Class IRI="#HospitalizationInstitutionalization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychiatric_Hospitals"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychiatric_Patients"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychiatric_Units"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychiatry"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychoanalysis"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychodrama"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychodynamic_Psychotherapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychoeducation"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychosocial_Rehabilitation"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychosomatic_Medicine"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychosurgery"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychotherapeutic_Breakthrough"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychotherapeutic_Counseling"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychotherapeutic_Neutrality"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychotherapeutic_Outcomes"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychotherapeutic_Processes"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychotherapeutic_Resistance"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychotherapeutic_Techniques"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychotherapeutic_Transference"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Psychotherapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Public_Health_Services"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Quality_of_Care"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Quality_of_Services"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Radiation_Therapy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Rational_Emotive_Behavior_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Readiness_to_Change"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Reality_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Reciprocal_Inhibition_Therapy"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Recreation_Therapy"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Rehabilitation"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Rehabilitation_Centers"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Rehabilitation_Counseling"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Relapse_Prevention"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Relationship_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Relaxation_Therapy"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Residential_Care_Institutions"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Respite_Care"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Response_Cost"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Right_to_Treatment"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Role_Playing"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sanatoriums"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Self_Analysis"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Self_Care_Skills"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Self_Examination_(Medical)"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Self_Help_Techniques"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Self_Management"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Self_Medication"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Self_Monitoring"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Self_Referral"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sensitivity_Training"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sensitization"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sex_Change"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sex_Education"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sex_Therapy"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sheltered_Workshops"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Shelters"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Shock_Therapy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Side_Effects_(Treatment)"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sleep_Treatment"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Smoking_Cessation"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Social_Casework"/>
+        <Class IRI="#Counseling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Social_Group_Work"/>
+        <Class IRI="#Counseling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Social_Psychiatry"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Social_Services"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Social_Skills_Training"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sociotherapy"/>
+        <Class IRI="#AlternativeTherapies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Solution_Focused_Therapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Speech_Therapy"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sports_Medicine"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Stages_of_Change"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Statins"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Stem_Cells"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Stereotaxic_Techniques"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Strategic_Family_Therapy"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Stress_Management"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Structural_Family_Therapy"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Suicide_Prevention"/>
+        <Class IRI="#Counseling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Suicide_Prevention_Centers"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Support_Groups"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Supportive_Psychotherapy"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Surgery"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Surgical_Patients"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Sympathectomy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Symptoms_Based_Treatment"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Systematic_Desensitization_Therapy"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Telemedicine"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Thalamotomy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Therapeutic_Alliance"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Therapeutic_Camps"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Therapeutic_Community"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Therapeutic_Environment"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Therapeutic_Processes"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Therapeutic_Social_Clubs"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Therapist_Selection"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Thyroidectomy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Time_Out"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Token_Economy_Programs"/>
+        <Class IRI="#BehaviorModificationTherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Tractotomy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Transactional_Analysis"/>
+        <Class IRI="#Psychotherapy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Transcranial_Magnetic_Stimulation"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Treatment"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Treatment_Barriers"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Treatment_Compliance"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Treatment_Dropouts"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Treatment_Duration"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Treatment_Effectiveness_Evaluation"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Treatment_Facilities"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Treatment_Guidelines"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Treatment_Outcomes"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Treatment_Planning"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Treatment_Refusal"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Treatment_Termination"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Treatment_Withholding"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Tubal_Ligation"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Twelve_Step_Programs"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Utilization_Reviews"/>
+        <Class IRI="#TreatmentGeneral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Vagotomy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Vasectomy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Vitamin_Therapy"/>
+        <Class IRI="#MedicalPhysicalTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Vocational_Evaluation"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Vocational_Rehabilitation"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Walk_In_Clinics"/>
+        <Class IRI="#TreatmentFacilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Wilderness_Experience"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Work_Adjustment_Training"/>
+        <Class IRI="#Rehabilitation"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

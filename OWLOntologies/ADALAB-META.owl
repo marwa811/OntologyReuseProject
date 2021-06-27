@@ -1,0 +1,623 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://rdf.adalab-project.org/ontology/adalab-meta/"
+     xml:base="http://rdf.adalab-project.org/ontology/adalab-meta/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:DMOP="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:model-qualifiers="http://biomodels.net/model-qualifiers#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:biology-qualifiers="http://biomodels.net/biology-qualifiers#"
+     xmlns:provo="http://www.w3.org/ns/prov-o#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:biomodels="http://identifiers.org/biomodels.vocabulary#">
+    <owl:Ontology rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/">
+        <owl:imports rdf:resource="https://bitbucket.org/jgrzebyta/adalab-ontologies/raw/master/AdaMeta/biomodels_import.owl"/>
+        <owl:imports rdf:resource="https://bitbucket.org/jgrzebyta/adalab-ontologies/raw/master/AdaMeta/DMOP_import.owl"/>
+        <owl:imports rdf:resource="https://bitbucket.org/jgrzebyta/adalab-ontologies/raw/master/AdaMeta/dc_import.owl"/>
+        <owl:imports rdf:resource="https://bitbucket.org/jgrzebyta/adalab-ontologies/raw/master/AdaMeta/provo_import.owl#"/>
+        <owl:versionInfo>0.9.2</owl:versionInfo>
+        <skos:definition>Adaptive Automated Scientific Laboratory meta ontology</skos:definition>
+        <dct:creator>Jacek Grzebyta, Larisa Soldatova</dct:creator>
+        <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">28-06-2017</dct:date>
+        <skos:prefLabel>adalab-meta</skos:prefLabel>
+        <skos:altLabel>adm</skos:altLabel>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/cardLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/cardLabel">
+        <rdfs:label>index card label</rdfs:label>
+        <skos:definition xml:lang="en">Label of the index card key</skos:definition>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/dataDomainType -->
+
+    <owl:AnnotationProperty rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/dataDomainType">
+        <cardLabel>data domain type</cardLabel>
+        <rdfs:range rdf:resource="http://rdf.adalab-project.org/ontology/adalab-meta/DataDomainType"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/descriptionLocation -->
+
+    <owl:AnnotationProperty rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/descriptionLocation">
+        <cardLabel>description location</cardLabel>
+        <rdfs:label>Description location</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/metadataCreator -->
+
+    <owl:AnnotationProperty rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/metadataCreator">
+        <cardLabel>metadata author</cardLabel>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/numberOfItems -->
+
+    <owl:AnnotationProperty rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/numberOfItems">
+        <cardLabel>number of items</cardLabel>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/originalResurce -->
+
+    <owl:AnnotationProperty rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/originalResurce">
+        <cardLabel>original model</cardLabel>
+        <rdfs:label>Original resource</rdfs:label>
+        <skos:definition>Points the original resource which is inherited by the annotated one</skos:definition>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/references"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#definition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <cardLabel>comment</cardLabel>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+        <rdfs:label>alternative label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+        <rdfs:label>preferred label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/annotatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/annotatedBy">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:label xml:lang="en">annotated by</rdfs:label>
+        <skos:definition>prov-o:Agent which made an annotation</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/annotatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/annotatedWith">
+        <rdfs:range rdf:resource="http://rdf.adalab-project.org/ontology/adalab-meta/AnnotationStatement"/>
+        <rdfs:label>annotated with</rdfs:label>
+        <skos:definition>relates a thing with an annotation resource. It might be an annotation statement.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/columns -->
+
+    <owl:ObjectProperty rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/columns">
+        <rdfs:label>columns</rdfs:label>
+        <skos:definition>number of columns in the dataset</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/dataFormat -->
+
+    <owl:ObjectProperty rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/dataFormat">
+        <rdfs:range rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DataFormat"/>
+        <cardLabel>data format</cardLabel>
+        <rdfs:label xml:lang="en">Data format</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/dataTable -->
+
+    <owl:ObjectProperty rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/dataTable">
+        <rdfs:range rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DataTable"/>
+        <cardLabel>datatable</cardLabel>
+        <rdfs:label>data table</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/dataType -->
+
+    <owl:ObjectProperty rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/dataType">
+        <cardLabel>data type</cardLabel>
+        <rdfs:label xml:lang="en">Data type</rdfs:label>
+        <skos:definition>Type of data defined by XSD standard (W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes).
+
+The list of types is available here https://www.w3.org/TR/xmlschema11-2/ .</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/generationMethod -->
+
+    <owl:ObjectProperty rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/generationMethod">
+        <cardLabel>method</cardLabel>
+        <rdfs:label>generation method</rdfs:label>
+        <skos:definition>The controlled vocabulary to describe how the model was produced</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/hasDataDomain -->
+
+    <owl:ObjectProperty rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/hasDataDomain">
+        <rdfs:range rdf:resource="http://rdf.adalab-project.org/ontology/adalab-meta/DataDomainType"/>
+        <cardLabel>data domain type</cardLabel>
+        <rdfs:label>has data domain type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/hasTime -->
+
+    <owl:ObjectProperty rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/hasTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasFeature"/>
+        <rdfs:comment>Links DataSet ot DataTable with values where values are collected in time series.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/resourceLocation -->
+
+    <owl:ObjectProperty rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/resourceLocation">
+        <cardLabel>location</cardLabel>
+        <cardLabel>resource location</cardLabel>
+        <rdfs:label xml:lang="en">resource Location</rdfs:label>
+        <rdfs:label>resource location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/rows -->
+
+    <owl:ObjectProperty rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/rows">
+        <rdfs:label>rows</rdfs:label>
+        <skos:definition>number of rows in the dataset</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/wasMemberOf -->
+
+    <owl:ObjectProperty rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/wasMemberOf">
+        <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#hadMember"/>
+        <rdfs:label>was member of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#object -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+        <rdfs:label xml:lang="en">object</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+        <rdfs:label xml:lang="en">predicate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#subject -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+        <rdfs:label xml:lang="en">subject</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadMember -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#hadMember"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://identifiers.org/biomodels.vocabulary#name -->
+
+    <rdf:Description rdf:about="http://identifiers.org/biomodels.vocabulary#name">
+        <rdfs:subPropertyOf rdf:resource="http://rdf.adalab-project.org/ontology/adalab/name"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/quality -->
+
+    <owl:DatatypeProperty rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/quality">
+        <cardLabel>quality</cardLabel>
+        <skos:definition>Describes accuracy of prediction</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab/name -->
+
+    <owl:DatatypeProperty rdf:about="http://rdf.adalab-project.org/ontology/adalab/name">
+        <cardLabel>name</cardLabel>
+        <skos:definition xml:lang="en">a language unit by which a person or thing is known.</skos:definition>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://rdf.adalab-project.org/ontology/adalab/name"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="en">a language unit by which a person or thing is known.</owl:annotatedTarget>
+        <dc:source>WordNet</dc:source>
+    </owl:Axiom>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://identifiers.org/biomodels.vocabulary#Model -->
+
+    <owl:Class rdf:about="http://identifiers.org/biomodels.vocabulary#Model">
+        <cardLabel>model</cardLabel>
+        <rdfs:comment>Wordnet: a hypothetical description of a complex entity or process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/Algorithm -->
+
+    <owl:Class rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/Algorithm">
+        <rdfs:comment xml:lang="en">Wordnet: a precise rule (or set of rules) specifying how to solve some problem</rdfs:comment>
+        <rdfs:label>Algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/AnnotationStatement -->
+
+    <owl:Class rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/AnnotationStatement">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdf.adalab-project.org/ontology/adalab-meta/annotatedBy"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">annotation statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/DataDomainType -->
+
+    <owl:Class rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/DataDomainType">
+        <rdfs:label xml:lang="en">data domain type</rdfs:label>
+        <skos:definition>Type of dataset domain.</skos:definition>
+        <skos:definition>Type of experiment to which the dataset is related</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/ModelGenerationMethod -->
+
+    <owl:Class rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/ModelGenerationMethod">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Plan"/>
+        <rdfs:label>model generation method</rdfs:label>
+        <skos:definition>Controlled vocabulary describing how the model was produced</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement -->
+
+    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Generation -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Generation">
+        <cardLabel>construction</cardLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Plan -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Plan"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/ComputationalModel -->
+
+    <owl:NamedIndividual rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/ComputationalModel">
+        <rdf:type rdf:resource="http://rdf.adalab-project.org/ontology/adalab-meta/DataDomainType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/ExperimentRequest -->
+
+    <owl:NamedIndividual rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/ExperimentRequest">
+        <rdf:type rdf:resource="http://rdf.adalab-project.org/ontology/adalab-meta/DataDomainType"/>
+        <rdfs:label>experiment request</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/ExperimentResult -->
+
+    <owl:NamedIndividual rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/ExperimentResult">
+        <rdf:type rdf:resource="http://rdf.adalab-project.org/ontology/adalab-meta/DataDomainType"/>
+        <rdfs:label>experiment result</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/GeneExpression -->
+
+    <owl:NamedIndividual rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/GeneExpression">
+        <rdf:type rdf:resource="http://rdf.adalab-project.org/ontology/adalab-meta/DataDomainType"/>
+        <rdfs:label xml:lang="en">gene expression</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/GeneRegulationNetwork -->
+
+    <owl:NamedIndividual rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/GeneRegulationNetwork">
+        <rdf:type rdf:resource="http://rdf.adalab-project.org/ontology/adalab-meta/DataDomainType"/>
+        <rdfs:label xml:lang="en">gene regulation network</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/Hemostat -->
+
+    <owl:NamedIndividual rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/Hemostat">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#CategoricalFeature"/>
+        <rdfs:label>hemostat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/YeastGrowthData -->
+
+    <owl:NamedIndividual rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/YeastGrowthData">
+        <rdf:type rdf:resource="http://rdf.adalab-project.org/ontology/adalab-meta/DataDomainType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/computationally -->
+
+    <owl:NamedIndividual rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/computationally">
+        <rdf:type rdf:resource="http://rdf.adalab-project.org/ontology/adalab-meta/ModelGenerationMethod"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://rdf.adalab-project.org/ontology/adalab-meta/computationally"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://rdf.adalab-project.org/ontology/adalab-meta/ModelGenerationMethod"/>
+        <rdfs:label>computationally</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/literatureAnnotation -->
+
+    <owl:NamedIndividual rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/literatureAnnotation">
+        <rdf:type rdf:resource="http://rdf.adalab-project.org/ontology/adalab-meta/ModelGenerationMethod"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://rdf.adalab-project.org/ontology/adalab-meta/literatureAnnotation"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://rdf.adalab-project.org/ontology/adalab-meta/ModelGenerationMethod"/>
+        <rdfs:label>literature annotation</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://rdf.adalab-project.org/ontology/adalab-meta/manually -->
+
+    <owl:NamedIndividual rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/manually">
+        <rdf:type rdf:resource="http://rdf.adalab-project.org/ontology/adalab-meta/ModelGenerationMethod"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://rdf.adalab-project.org/ontology/adalab-meta/manually"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://rdf.adalab-project.org/ontology/adalab-meta/ModelGenerationMethod"/>
+        <rdfs:label>manually</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/abstract">
+        <cardLabel>abstract</cardLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/DataDomaintype">
+        <rdfs:label xml:lang="en">data domain type</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/YeastGrowth">
+        <rdfs:label xml:lang="en">yeast growth</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/data">
+        <rdfs:label>Data</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://rdf.adalab-project.org/ontology/adalab-meta/publicationIdentifier">
+        <rdfs:label xml:lang="en">Publication Identifier</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

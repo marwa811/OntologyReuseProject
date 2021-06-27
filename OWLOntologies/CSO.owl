@@ -1,0 +1,357 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://webprotege.stanford.edu/project/9h3YLKYo5AEx5tLXEXroVP#"
+     xml:base="http://webprotege.stanford.edu/project/9h3YLKYo5AEx5tLXEXroVP"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://webprotege.stanford.edu/project/9h3YLKYo5AEx5tLXEXroVP"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/R2mqSloObGQfHdTEgJBZGy -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R2mqSloObGQfHdTEgJBZGy">
+        <rdfs:label>Race</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7OCvlhWDjemzqZTF7UHFDP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7LnKb8FEBLolvJNY0jpUeC -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7LnKb8FEBLolvJNY0jpUeC">
+        <rdfs:label>Family History</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7OCvlhWDjemzqZTF7UHFDP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7OCvlhWDjemzqZTF7UHFDP -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7OCvlhWDjemzqZTF7UHFDP">
+        <rdfs:label>Patient Population</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCLzqKLfZsKSjej7uyqDlUf"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7aw9ILaNRJefJDO2OOi1mu -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7aw9ILaNRJefJDO2OOi1mu">
+        <rdfs:label>Deviations - Violations</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7OCvlhWDjemzqZTF7UHFDP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7zYZ09VryhYhIsCxsApFz4 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7zYZ09VryhYhIsCxsApFz4">
+        <rdfs:label>Condition to be Studied</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RsldniaSkrb5cCJj1mY0Gq"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8HzoDOkQKjEAvOqircXUAc -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8HzoDOkQKjEAvOqircXUAc">
+        <rdfs:label>Adverse Events</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7OCvlhWDjemzqZTF7UHFDP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8JCl12AnqW5liIRSYj9NAz -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8JCl12AnqW5liIRSYj9NAz">
+        <rdfs:label>Physical History</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7OCvlhWDjemzqZTF7UHFDP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8KvkdCIV0gPaJ4cpfZHT1S -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8KvkdCIV0gPaJ4cpfZHT1S">
+        <rdfs:label>Study Title</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RwowXWAQ3oP7sLVwGZmDad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8MD7VkOUwCoNF6xx9Vcw5A -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8MD7VkOUwCoNF6xx9Vcw5A">
+        <rdfs:label>IRB Review</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RwowXWAQ3oP7sLVwGZmDad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8XDDtVvXdIhIXLOnDEK0JK -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8XDDtVvXdIhIXLOnDEK0JK">
+        <rdfs:label>Hospital Informatics Services</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RD1DMic1jLK19VviCpjfF1d"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8kqUrv8Pwi6F7wuOLnC50n -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8kqUrv8Pwi6F7wuOLnC50n">
+        <rdfs:label>Study Plan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RsldniaSkrb5cCJj1mY0Gq"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R90E745NOZL4JI5ksXFQXQo -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R90E745NOZL4JI5ksXFQXQo">
+        <rdfs:label>IRB Expiration</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RwowXWAQ3oP7sLVwGZmDad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9NKT9QTFldW9v3Qz6jpB2a -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9NKT9QTFldW9v3Qz6jpB2a">
+        <rdfs:label>Risk Assessment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RwowXWAQ3oP7sLVwGZmDad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9ebvcQhIVmPFecfV7KFoAD -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9ebvcQhIVmPFecfV7KFoAD">
+        <rdfs:label>Social History</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7OCvlhWDjemzqZTF7UHFDP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBKSndR0So4whekYPtLbQsO -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBKSndR0So4whekYPtLbQsO">
+        <rdfs:label>Procedures</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RsldniaSkrb5cCJj1mY0Gq"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBYH0U3oiAisKwXhxbhjLGT -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBYH0U3oiAisKwXhxbhjLGT">
+        <rdfs:label>Ethnicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7OCvlhWDjemzqZTF7UHFDP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RC2LTqLMphrfBxSy1X9SFbZ -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RC2LTqLMphrfBxSy1X9SFbZ">
+        <rdfs:label>Bionutrition Support</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RD1DMic1jLK19VviCpjfF1d"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RC2l5tG7aT2Dy9wbw6qyC4w -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RC2l5tG7aT2Dy9wbw6qyC4w">
+        <rdfs:label>IRB Renewal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RwowXWAQ3oP7sLVwGZmDad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RC9Fvm4lJjGk3Rsw3x76fl -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RC9Fvm4lJjGk3Rsw3x76fl">
+        <rdfs:label>Biostatistics</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RWK0NPA4LpEAFyJQg4ztga"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCFAlLs0apD5NgqzgHelRMa -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCFAlLs0apD5NgqzgHelRMa">
+        <rdfs:label>Pharmacy Services</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RD1DMic1jLK19VviCpjfF1d"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCLzqKLfZsKSjej7uyqDlUf -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCLzqKLfZsKSjej7uyqDlUf">
+        <rdfs:label>Clinical Study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCW2ekj1PPiSwMNutNcoRNh -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCW2ekj1PPiSwMNutNcoRNh">
+        <rdfs:label>Date of Birth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7OCvlhWDjemzqZTF7UHFDP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RChIchSXORxy4cggun00tTQ -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RChIchSXORxy4cggun00tTQ">
+        <rdfs:label>Clinical Values Measured</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RsldniaSkrb5cCJj1mY0Gq"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RChJqOUItJsb1icheikVWJR -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RChJqOUItJsb1icheikVWJR">
+        <rdfs:label>Visits - Dates of Observation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RsldniaSkrb5cCJj1mY0Gq"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RChrVVhs5fpnmw8cjUJEtqo -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RChrVVhs5fpnmw8cjUJEtqo">
+        <rdfs:label>Number of Subjects</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7OCvlhWDjemzqZTF7UHFDP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RD1DMic1jLK19VviCpjfF1d -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RD1DMic1jLK19VviCpjfF1d">
+        <rdfs:label>Study Support</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCLzqKLfZsKSjej7uyqDlUf"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDIkRBVFoRYmawYnCmUTAfR -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDIkRBVFoRYmawYnCmUTAfR">
+        <rdfs:label>IRB Approval</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RwowXWAQ3oP7sLVwGZmDad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDsz9LofkHpZ7LoyQ3kaflX -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDsz9LofkHpZ7LoyQ3kaflX">
+        <rdfs:label>Nursing Support</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RD1DMic1jLK19VviCpjfF1d"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDuYKk8ue4cDYeimbzoxQH8 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDuYKk8ue4cDYeimbzoxQH8">
+        <rdfs:label>Biological Specimen Collected</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RsldniaSkrb5cCJj1mY0Gq"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDv8rUwfEnCRaPbmlu3omts -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDv8rUwfEnCRaPbmlu3omts">
+        <rdfs:label>IRB Number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RwowXWAQ3oP7sLVwGZmDad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/ROjkbE0qUkO54h8Dp6i6A9 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/ROjkbE0qUkO54h8Dp6i6A9">
+        <rdfs:label>Surgical History</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7OCvlhWDjemzqZTF7UHFDP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RVHMOVIC2Oted8YJNIuZi8 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RVHMOVIC2Oted8YJNIuZi8">
+        <rdfs:label>Devices used</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RsldniaSkrb5cCJj1mY0Gq"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RWK0NPA4LpEAFyJQg4ztga -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RWK0NPA4LpEAFyJQg4ztga">
+        <rdfs:label>Post-Study Analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCLzqKLfZsKSjej7uyqDlUf"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RifDg6mzvyWqFyITmYrEFQ -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RifDg6mzvyWqFyITmYrEFQ">
+        <rdfs:label>Sex</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7OCvlhWDjemzqZTF7UHFDP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RsldniaSkrb5cCJj1mY0Gq -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RsldniaSkrb5cCJj1mY0Gq">
+        <rdfs:label>Scientific Investigation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCLzqKLfZsKSjej7uyqDlUf"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Rwdihhpc7xM8enS7jpWAdc -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Rwdihhpc7xM8enS7jpWAdc">
+        <rdfs:label>Bioinformatics</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RWK0NPA4LpEAFyJQg4ztga"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RwowXWAQ3oP7sLVwGZmDad -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RwowXWAQ3oP7sLVwGZmDad">
+        <rdfs:label>IRB Oversight</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCLzqKLfZsKSjej7uyqDlUf"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

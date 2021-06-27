@@ -1,0 +1,1324 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://iris.med.duth.gr/research/ecp/ontology/eCP.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://iris.med.duth.gr/research/ecp/ontology/eCP.owl">
+    <Prefix name="" IRI="http://iris.med.duth.gr/research/ecp/ontology/eCP.owl#"/>
+    <Prefix name="hl7" IRI="http://purl.bioontology.org/ontology/HL7/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="sty" IRI="http://purl.bioontology.org/ontology/STY/"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="bibo" IRI="http://purl.org/ontology/bibo/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrc" IRI="http://swrc.ontoware.org/ontology#"/>
+    <Prefix name="carre" IRI="http://carre.kmi.open.ac.uk/ontology/risk.owl#"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="elements" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">If you want to visualize the ontology, please visit the following URL:
+
+http://vowl.visualdataweb.org/webvowl/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="elements:contributor"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Allan Third</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Formal Care Plan Metadata Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="elements:description"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The proposed ontology is useful for managing (as metadata) formal care plans (such as clinical guidelines, clinical protocols and clinical pathways) in a much more beneficial way than they are currently used.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="elements:creator"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Nick Portokallidis, George Drosatos and Eleni Kaldoudi</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="elements:title"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Electronic Care Plan Ontology (eCP)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="elements:source"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">School of Medicine (MED), Democritus University of Thrace (DUTh)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="&xsd;decimal">0.6</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="carre:observable"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="carre:observable_expression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#classification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#classification_genre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#classification_type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#deviation_reason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#drug"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#evidence_source"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#formal_care_plan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#general_description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#general_information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#general_title"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#health_issue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#human"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#infrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#instruction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#issuing_body"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#observable_condition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#outcome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#quality_and_level_of_recommendation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#quality_of_evidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#related_health_issue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#resource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#source_file"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#strength_of_recommendation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="hl7:C1137110"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sty:T074"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sty:T090"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sty:T200"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="terms:LicenseDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bibo:Document"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="swrc:Organization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_deviation_reason"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_genre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_outcome"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_quality_of_evidence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_related_health_issue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_source_file"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_strength_of_recommendation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_deviation_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_endorsed_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_initiated_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_issued_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_part_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requires_resource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="terms:description"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="terms:license"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="terms:title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#copyright"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#file"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#format"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#reason"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#url"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="terms:created"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="terms:date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="terms:issued"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#clinical_guideline"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#clinical_pathway"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#clinical_protocol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#high_quality_of_evidence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#low_quality_of_evidence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#moderate_quality_of_evidence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#strong_strength_of_recommendation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#type_diagnostic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#type_management"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#type_preventive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#type_treatment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#very_low_quality_of_evidence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#weak_strength_of_recommendation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="elements:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="elements:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="elements:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="elements:source"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="elements:title"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="carre:observable_expression"/>
+        <Class IRI="#observable_condition"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#drug"/>
+        <Class abbreviatedIRI="sty:T200"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#evidence_source"/>
+        <Class abbreviatedIRI="bibo:Document"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#health_issue"/>
+        <Class abbreviatedIRI="hl7:C1137110"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#human"/>
+        <Class abbreviatedIRI="sty:T090"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#infrastructure"/>
+        <Class abbreviatedIRI="sty:T074"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#issuing_body"/>
+        <Class abbreviatedIRI="swrc:Organization"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#related_health_issue"/>
+        <Class abbreviatedIRI="hl7:C1137110"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="carre:observable"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#is_part_of"/>
+            <Class IRI="#observable_condition"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="carre:observable_expression"/>
+        <Class IRI="#formal_care_plan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#classification"/>
+        <Class IRI="#formal_care_plan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#classification_genre"/>
+        <Class IRI="#classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#classification_type"/>
+        <Class IRI="#classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#deviation_reason"/>
+        <Class IRI="#formal_care_plan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#deviation_reason"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="terms:created"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#drug"/>
+        <Class IRI="#resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#formal_care_plan"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_outcome"/>
+            <Class IRI="#formal_care_plan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#formal_care_plan"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_outcome"/>
+            <Class IRI="#health_issue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#formal_care_plan"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_outcome"/>
+            <Class IRI="#instruction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#formal_care_plan"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_type"/>
+            <Class IRI="#classification_type"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#formal_care_plan"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_a_deviation_of"/>
+            <Class IRI="#formal_care_plan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#formal_care_plan"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#requires_resource"/>
+            <Class IRI="#drug"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#formal_care_plan"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#requires_resource"/>
+            <Class IRI="#human"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#formal_care_plan"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#requires_resource"/>
+            <Class IRI="#infrastructure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#formal_care_plan"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#has_related_health_issue"/>
+            <Class IRI="#related_health_issue"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#formal_care_plan"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#has_source_file"/>
+            <Class IRI="#source_file"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#formal_care_plan"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#is_endorsed_by"/>
+            <Class IRI="#evidence_source"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#formal_care_plan"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#is_initiated_by"/>
+            <Class IRI="#observable_condition"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#formal_care_plan"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has_genre"/>
+            <Class IRI="#classification_genre"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#formal_care_plan"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#is_issued_by"/>
+            <Class IRI="#issuing_body"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#formal_care_plan"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="terms:title"/>
+            <Class IRI="#general_title"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#formal_care_plan"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#has_deviation_reason"/>
+            <Class IRI="#deviation_reason"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#formal_care_plan"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#has_quality_of_evidence"/>
+            <Class IRI="#quality_of_evidence"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#formal_care_plan"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#has_strength_of_recommendation"/>
+            <Class IRI="#strength_of_recommendation"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#formal_care_plan"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="terms:description"/>
+            <Class IRI="#general_description"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#general_description"/>
+        <Class IRI="#general_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#general_description"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#value"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#general_information"/>
+        <Class IRI="#formal_care_plan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#general_title"/>
+        <Class IRI="#general_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#general_title"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#value"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#health_issue"/>
+        <Class IRI="#outcome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#human"/>
+        <Class IRI="#resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#infrastructure"/>
+        <Class IRI="#resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#instruction"/>
+        <Class IRI="#outcome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#instruction"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#value"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#issuing_body"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="terms:issued"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#observable_condition"/>
+        <Class IRI="#formal_care_plan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#outcome"/>
+        <Class IRI="#formal_care_plan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#quality_and_level_of_recommendation"/>
+        <Class IRI="#formal_care_plan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#quality_of_evidence"/>
+        <Class IRI="#quality_and_level_of_recommendation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#related_health_issue"/>
+        <Class IRI="#classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#source_file"/>
+        <Class IRI="#formal_care_plan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#source_file"/>
+        <ObjectUnionOf>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="#file"/>
+                <Datatype abbreviatedIRI="xsd:hexBinary"/>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="#url"/>
+                <Datatype abbreviatedIRI="xsd:anyURI"/>
+            </DataExactCardinality>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#source_file"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="terms:license"/>
+            <Class abbreviatedIRI="terms:LicenseDocument"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#source_file"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#format"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#source_file"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#location"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#source_file"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#copyright"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#strength_of_recommendation"/>
+        <Class IRI="#quality_and_level_of_recommendation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sty:T074"/>
+        <Class IRI="#resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sty:T090"/>
+        <Class IRI="#resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sty:T200"/>
+        <Class IRI="#resource"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#classification_genre"/>
+        <NamedIndividual IRI="#clinical_guideline"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#classification_genre"/>
+        <NamedIndividual IRI="#clinical_pathway"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#classification_genre"/>
+        <NamedIndividual IRI="#clinical_protocol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#quality_of_evidence"/>
+        <NamedIndividual IRI="#high_quality_of_evidence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#quality_of_evidence"/>
+        <NamedIndividual IRI="#low_quality_of_evidence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#quality_of_evidence"/>
+        <NamedIndividual IRI="#moderate_quality_of_evidence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#strength_of_recommendation"/>
+        <NamedIndividual IRI="#strong_strength_of_recommendation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#classification_type"/>
+        <NamedIndividual IRI="#type_diagnostic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#classification_type"/>
+        <NamedIndividual IRI="#type_management"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#classification_type"/>
+        <NamedIndividual IRI="#type_preventive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#classification_type"/>
+        <NamedIndividual IRI="#type_treatment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#quality_of_evidence"/>
+        <NamedIndividual IRI="#very_low_quality_of_evidence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#strength_of_recommendation"/>
+        <NamedIndividual IRI="#weak_strength_of_recommendation"/>
+    </ClassAssertion>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#has_deviation_reason"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#has_genre"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#has_outcome"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#has_quality_of_evidence"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#has_related_health_issue"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#has_source_file"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#has_strength_of_recommendation"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#has_type"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#is_a_deviation_of"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#is_endorsed_by"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#is_initiated_by"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#is_issued_by"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#requires_resource"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="terms:description"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="terms:license"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="terms:title"/>
+    </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_deviation_reason"/>
+        <Class IRI="#formal_care_plan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_genre"/>
+        <Class IRI="#formal_care_plan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_outcome"/>
+        <Class IRI="#formal_care_plan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_quality_of_evidence"/>
+        <Class IRI="#formal_care_plan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_related_health_issue"/>
+        <Class IRI="#formal_care_plan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_source_file"/>
+        <Class IRI="#formal_care_plan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_strength_of_recommendation"/>
+        <Class IRI="#formal_care_plan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_type"/>
+        <Class IRI="#formal_care_plan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_deviation_of"/>
+        <Class IRI="#formal_care_plan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_endorsed_by"/>
+        <Class IRI="#formal_care_plan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_initiated_by"/>
+        <Class IRI="#formal_care_plan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_issued_by"/>
+        <Class IRI="#formal_care_plan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_part_of"/>
+        <Class abbreviatedIRI="carre:observable"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requires_resource"/>
+        <Class IRI="#formal_care_plan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="terms:description"/>
+        <Class IRI="#formal_care_plan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="terms:license"/>
+        <Class IRI="#source_file"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="terms:title"/>
+        <Class IRI="#formal_care_plan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_deviation_reason"/>
+        <Class IRI="#deviation_reason"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_genre"/>
+        <Class IRI="#classification_genre"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_outcome"/>
+        <Class IRI="#formal_care_plan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_outcome"/>
+        <Class IRI="#health_issue"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_outcome"/>
+        <Class IRI="#instruction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_quality_of_evidence"/>
+        <Class IRI="#quality_of_evidence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_related_health_issue"/>
+        <Class IRI="#related_health_issue"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_source_file"/>
+        <Class IRI="#source_file"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_strength_of_recommendation"/>
+        <Class IRI="#strength_of_recommendation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_type"/>
+        <Class IRI="#classification_type"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_deviation_of"/>
+        <Class IRI="#formal_care_plan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_endorsed_by"/>
+        <Class IRI="#evidence_source"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_initiated_by"/>
+        <Class IRI="#observable_condition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_issued_by"/>
+        <Class IRI="#issuing_body"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_part_of"/>
+        <Class IRI="#observable_condition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requires_resource"/>
+        <Class IRI="#drug"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requires_resource"/>
+        <Class IRI="#human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requires_resource"/>
+        <Class IRI="#infrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="terms:description"/>
+        <Class IRI="#general_description"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="terms:license"/>
+        <Class abbreviatedIRI="terms:LicenseDocument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="terms:title"/>
+        <Class IRI="#general_title"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="terms:created"/>
+        <DataProperty abbreviatedIRI="terms:date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="terms:issued"/>
+        <DataProperty abbreviatedIRI="terms:date"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#copyright"/>
+        <Class IRI="#source_file"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#file"/>
+        <Class IRI="#source_file"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#format"/>
+        <Class IRI="#source_file"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#location"/>
+        <Class IRI="#source_file"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#reason"/>
+        <Class IRI="#deviation_reason"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#url"/>
+        <Class IRI="#source_file"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#value"/>
+        <Class IRI="#general_description"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#value"/>
+        <Class IRI="#general_title"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#value"/>
+        <Class IRI="#instruction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="terms:created"/>
+        <Class IRI="#deviation_reason"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="terms:date"/>
+        <Class IRI="#source_file"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="terms:issued"/>
+        <Class IRI="#issuing_body"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#copyright"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#file"/>
+        <Datatype abbreviatedIRI="xsd:hexBinary"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#format"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#location"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#reason"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#url"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#value"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="terms:created"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="terms:date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="terms:issued"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#classification</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">classification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#classification_genre</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">genre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#classification_type</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#clinical_guideline</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">clinical guideline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#clinical_pathway</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">clinical pathway</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#clinical_protocol</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">clinical protocol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#copyright</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">copyright</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#deviation_reason</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">deviation reason</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#drug</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">drug</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#evidence_source</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">evidence source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#file</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">file</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#formal_care_plan</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">formal care plan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#format</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#general_description</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#general_information</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">general information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#general_title</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_deviation_reason</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has deviation reason</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_genre</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has genre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_outcome</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has outcome</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_quality_of_evidence</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has quality of evidence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_related_health_issue</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has related health issue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_source_file</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has source file</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_strength_of_recommendation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has strength of recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_type</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#health_issue</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">health issue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#high_quality_of_evidence</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">high</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#human</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#infrastructure</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">infrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#instruction</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">instruction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#is_a_deviation_of</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">is a deviation of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#is_endorsed_by</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">is endorsed by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#is_initiated_by</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">is initiated by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#is_issued_by</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">is issued by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#is_part_of</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">is part of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#issuing_body</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">issuing body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#location</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#low_quality_of_evidence</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">low</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#moderate_quality_of_evidence</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">moderate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#observable_condition</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">observable condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#outcome</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">outcome</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#quality_and_level_of_recommendation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">quality and level of recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#quality_of_evidence</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">quality of evidence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#reason</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">reason</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#related_health_issue</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">related health issue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#requires_resource</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">requires resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#resource</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#source_file</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">source file</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#strength_of_recommendation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">strength of recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#strong_strength_of_recommendation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">strong</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#type_diagnostic</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">diagnostic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#type_management</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">management</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#type_preventive</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">preventive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#type_treatment</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">treatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#url</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">url</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#value</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#very_low_quality_of_evidence</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">very low</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#weak_strength_of_recommendation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">weak</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>hl7:C1137110</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ICD-10 code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sty:T074</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Medical Device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sty:T090</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Occupation or Discipline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sty:T200</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Clinical Drug</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>terms:created</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">created date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>terms:date</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>terms:description</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>terms:issued</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">issued date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>terms:license</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has license</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>terms:title</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has title</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

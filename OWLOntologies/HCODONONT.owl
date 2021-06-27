@@ -1,0 +1,1218 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl#"
+     xml:base="http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl"
+     xmlns:Drug="http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl">
+        <owl:imports rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#Cobocistat -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#Cobocistat">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_12a47173_16f7_45b4_a361_128738d2a003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_22d28b86_3ddf_4f43_9b40_8cbeede8d2e5"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_61875009_e9eb_42d6_b362_32f282fdfd64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_998c598c_7752_42ce_9929_c915bee59e64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_f44fdaeb_7c80_4a05_b61c_9e1c3f50b70e"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000002810983140594 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000002810983140594">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLObjectProperty_00000014158303678609"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_48f7ab9c_35ec_4b7d_b3e9_8cc124df6406"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLObjectProperty_00000014158303678609"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_578d227e_044c_4184_b5da_0edd67661097"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLObjectProperty_00000014158303678609"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_727b8093_89c9_4fee_a104_2cf25e56ae92"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLObjectProperty_00000014158303678609"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_a4e8540e_649f_477f_8115_1b0bad4b8c73"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLObjectProperty_00000014158303678609"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_b618efcd_255b_4c05_8a87_3514dc253b96"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLObjectProperty_00000014158303678609"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_b9ebb90a_2461_4fd6_8983_80d4de12c4f2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLObjectProperty_00000014158303678609"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_ba131072_c102_45ec_946e_4ea73ba96066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLObjectProperty_00000014158303678609"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_d51a1a91_4663_4ad8_ae17_506e16b9c316"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLObjectProperty_00000014158303678609"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_fc899510_6b59_4ab1_888a_3bcb5bc7ee8e"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000002845655527518 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000002845655527518">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_361594d5_4ce0_4b4e_acd0_79e1a28c6db0"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_61875009_e9eb_42d6_b362_32f282fdfd64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_a4e8540e_649f_477f_8115_1b0bad4b8c73"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_aa5e68dc_6c7c_4cd7_86e1_609eb9f8e16b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_f44fdaeb_7c80_4a05_b61c_9e1c3f50b70e"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000002947544878399 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000002947544878399">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_361594d5_4ce0_4b4e_acd0_79e1a28c6db0"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_5acec3d5_5899_40fa_bff2_3f66c38107b3"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_61875009_e9eb_42d6_b362_32f282fdfd64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_a4e8540e_649f_477f_8115_1b0bad4b8c73"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_aa5e68dc_6c7c_4cd7_86e1_609eb9f8e16b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_abca7b92_ff11_4d24_81d9_f213076391cb"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_ba131072_c102_45ec_946e_4ea73ba96066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_f44fdaeb_7c80_4a05_b61c_9e1c3f50b70e"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000002989923319514 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000002989923319514">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLObjectProperty_00000014158303678609"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_a4e8540e_649f_477f_8115_1b0bad4b8c73"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLObjectProperty_00000014158303678609"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_b7e088c3_190f_48fc_bf00_3944c8149856"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000003019770365297 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000003019770365297">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_031330c9_dd0f_4db7_a859_d7071eeaabfe"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_9dea247d_b1c7_46e4_b96e_eeea7ae758f3"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_a4e8540e_649f_477f_8115_1b0bad4b8c73"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_b618efcd_255b_4c05_8a87_3514dc253b96"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000006804717547530 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000006804717547530">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_0fe2a0f0_a45c_4692_9b40_1cfcae0cb9aa"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_30a861ec_f105_479f_a969_3b79ed2121f7"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_5b09bc6d_29a1_44b4_b8e4_407b15dd7f37"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_f44fdaeb_7c80_4a05_b61c_9e1c3f50b70e"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000009668277997291 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000009668277997291">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_361594d5_4ce0_4b4e_acd0_79e1a28c6db0"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_61875009_e9eb_42d6_b362_32f282fdfd64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_998c598c_7752_42ce_9929_c915bee59e64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_a4e8540e_649f_477f_8115_1b0bad4b8c73"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_f44fdaeb_7c80_4a05_b61c_9e1c3f50b70e"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_fef542d2_68e5_4d00_a4a2_1debfa859336"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000010497151035816 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000010497151035816">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_2e66de4c_93e8_43fe_afe7_9d22d3ab5b41"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_33522a90_6faa_4fb7_ba26_d81c959b24bd"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_361594d5_4ce0_4b4e_acd0_79e1a28c6db0"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_61875009_e9eb_42d6_b362_32f282fdfd64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_69bd2819_a7c4_4a5d_9df9_8ab2b5b4f215"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_8f0405db_2c65_46c5_8736_5bb58556b2b9"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_998c598c_7752_42ce_9929_c915bee59e64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_a6ba70ad_406b_4ecf_89ec_2d98cda98fc6"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_aa5e68dc_6c7c_4cd7_86e1_609eb9f8e16b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_fc376ed6_b483_401a_856b_01efdb9f1b8f"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000010521384710905 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000010521384710905">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_361594d5_4ce0_4b4e_acd0_79e1a28c6db0"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_61875009_e9eb_42d6_b362_32f282fdfd64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_69bd2819_a7c4_4a5d_9df9_8ab2b5b4f215"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_998c598c_7752_42ce_9929_c915bee59e64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_b78bf819_ffa9_4892_96b9_3ddd6bd351c5"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_b7e088c3_190f_48fc_bf00_3944c8149856"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_f44fdaeb_7c80_4a05_b61c_9e1c3f50b70e"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_fc376ed6_b483_401a_856b_01efdb9f1b8f"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_fe03dc13_223e_4dce_be0c_cd12361f79a6"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000010566150546298 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000010566150546298">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_998c598c_7752_42ce_9929_c915bee59e64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_e5f52074_8dc5_4aca_8b5a_72a0a9def30b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000010647204888121 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000010647204888121">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_5715e9d7_7623_4d67_a65f_bed05abb1263"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_578d227e_044c_4184_b5da_0edd67661097"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_61875009_e9eb_42d6_b362_32f282fdfd64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_998c598c_7752_42ce_9929_c915bee59e64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000010686302773187 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000010686302773187">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_4d52eeeb_9aad_4251_9a86_491c3d708fbd"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_51f939b8_da3f_46dc_a361_73913fbb7de5"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_61875009_e9eb_42d6_b362_32f282fdfd64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_7f4d148a_9163_4896_a4c1_abbfce67be31"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_b3c8c39a_2052_4656_a11f_a84b4c3257d3"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_e86a3742_c855_4e22_af4d_5a76cf9177b2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_f44fdaeb_7c80_4a05_b61c_9e1c3f50b70e"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_fffaf049_1efd_4c8b_b52a_315155a056dd"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000011667033120550 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000011667033120550">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_2bff05d8_012f_4ae1_86a0_867b81d4171d"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_33337344_d220_451d_8672_f86828eb5665"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_4ffb28ca_28a6_4f63_add4_a1ca6566e211"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_5fdb796f_3d55_4737_9264_8c9ab39184e4"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_61875009_e9eb_42d6_b362_32f282fdfd64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_998c598c_7752_42ce_9929_c915bee59e64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_a4e8540e_649f_477f_8115_1b0bad4b8c73"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_aa5e68dc_6c7c_4cd7_86e1_609eb9f8e16b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_b6327a8d_0f6e_477e_9261_b9faf0adb871"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_f25f57d4_046f_4caa_9768_b9b2482b4ac7"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_f44fdaeb_7c80_4a05_b61c_9e1c3f50b70e"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000012105948160590 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000012105948160590">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_0adb9696_6d6a_4d6d_97c7_9ff7b8b2e41d"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_a4e8540e_649f_477f_8115_1b0bad4b8c73"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_f25f57d4_046f_4caa_9768_b9b2482b4ac7"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000012169468636027 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000012169468636027">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_1b6c09b4_7d3a_4a84_951e_e2d82abcfdcc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_33337344_d220_451d_8672_f86828eb5665"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_3867b48e_b7b8_4d7f_82d4_8ba95841709e"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_6327e4d1_38e6_4e55_a31e_fa0b7005eb70"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_a4e8540e_649f_477f_8115_1b0bad4b8c73"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_c3e0ffb7_cd8f_49f9_9f9a_53b7cd3da08e"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_f6c311ae_903c_4624_92ca_e3a1b9620cd1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000012296616137386 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000012296616137386">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_a4e8540e_649f_477f_8115_1b0bad4b8c73"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000012489125268993 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000012489125268993">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_12a47173_16f7_45b4_a361_128738d2a003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_578d227e_044c_4184_b5da_0edd67661097"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_8f547272_d090_4e39_8221_2b706c3f5356"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_a4e8540e_649f_477f_8115_1b0bad4b8c73"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000014520555095270 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000014520555095270">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_1b6c09b4_7d3a_4a84_951e_e2d82abcfdcc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_33337344_d220_451d_8672_f86828eb5665"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_3fb740cd_b7d5_401e_a88f_d141b711ebd8"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_4d52eeeb_9aad_4251_9a86_491c3d708fbd"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_61875009_e9eb_42d6_b362_32f282fdfd64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_964ee5d3_8bff_462c_a384_714614f7eb8c"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_998c598c_7752_42ce_9929_c915bee59e64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_a4e8540e_649f_477f_8115_1b0bad4b8c73"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_aa5e68dc_6c7c_4cd7_86e1_609eb9f8e16b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_b6327a8d_0f6e_477e_9261_b9faf0adb871"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_b7e088c3_190f_48fc_bf00_3944c8149856"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_f44fdaeb_7c80_4a05_b61c_9e1c3f50b70e"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000017727981930315 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000017727981930315">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_30a861ec_f105_479f_a969_3b79ed2121f7"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_5b09bc6d_29a1_44b4_b8e4_407b15dd7f37"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_61875009_e9eb_42d6_b362_32f282fdfd64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_f44fdaeb_7c80_4a05_b61c_9e1c3f50b70e"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000017974604189673 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000017974604189673">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_61875009_e9eb_42d6_b362_32f282fdfd64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_a4e8540e_649f_477f_8115_1b0bad4b8c73"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_aa5e68dc_6c7c_4cd7_86e1_609eb9f8e16b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_f25f57d4_046f_4caa_9768_b9b2482b4ac7"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_f44fdaeb_7c80_4a05_b61c_9e1c3f50b70e"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000018672345688278 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000018672345688278">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_33522a90_6faa_4fb7_ba26_d81c959b24bd"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_9a34bc0d_0b51_4ced_ae74_a561a53d043f"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_a09cf7cc_4640_4d14_9aec_26de7368a945"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_b4034cb4_ead9_444f_b8d9_c101eff46b8f"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_e351b7a2_7ad4_4cf7_b256_3801efc7bbab"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_040acc90_598e_40ac_9203_258a984d813e -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_040acc90_598e_40ac_9203_258a984d813e">
+        <owl:equivalentClass rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_9a34bc0d_0b51_4ced_ae74_a561a53d043f"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_2de0d31a_427e_49d2_ab02_b131475f3fd6 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_2de0d31a_427e_49d2_ab02_b131475f3fd6">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_1b6c09b4_7d3a_4a84_951e_e2d82abcfdcc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_578d227e_044c_4184_b5da_0edd67661097"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_b7e088c3_190f_48fc_bf00_3944c8149856"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_443cba8b_88a7_48fb_8b21_5b447b732c79 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_443cba8b_88a7_48fb_8b21_5b447b732c79">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_0fda3ad7_c8b3_49ce_84b9_7b1c18c187a3"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_361594d5_4ce0_4b4e_acd0_79e1a28c6db0"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_61875009_e9eb_42d6_b362_32f282fdfd64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_a4e8540e_649f_477f_8115_1b0bad4b8c73"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_b7e088c3_190f_48fc_bf00_3944c8149856"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_d2daa074_3bfd_4051_88c9_1fd607bf0270"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_f44fdaeb_7c80_4a05_b61c_9e1c3f50b70e"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_9a34bc0d_0b51_4ced_ae74_a561a53d043f -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_9a34bc0d_0b51_4ced_ae74_a561a53d043f"/>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_dfed1977_347d_4fd3_98d6_6ca0c3e2310d -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_dfed1977_347d_4fd3_98d6_6ca0c3e2310d">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_361594d5_4ce0_4b4e_acd0_79e1a28c6db0"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_61875009_e9eb_42d6_b362_32f282fdfd64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_a4e8540e_649f_477f_8115_1b0bad4b8c73"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_ba131072_c102_45ec_946e_4ea73ba96066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_f44fdaeb_7c80_4a05_b61c_9e1c3f50b70e"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_f6c311ae_903c_4624_92ca_e3a1b9620cd1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_fa6cbc69_b380_40ee_9e99_d00697984e11 -->
+
+    <rdf:Description rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_fa6cbc69_b380_40ee_9e99_d00697984e11">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_361594d5_4ce0_4b4e_acd0_79e1a28c6db0"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_61875009_e9eb_42d6_b362_32f282fdfd64"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_a4e8540e_649f_477f_8115_1b0bad4b8c73"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_b7e088c3_190f_48fc_bf00_3944c8149856"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_f44fdaeb_7c80_4a05_b61c_9e1c3f50b70e"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLObjectProperty_2ac5572d_278b_414c_b969_7c5aea56b6d8"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_f6c311ae_903c_4624_92ca_e3a1b9620cd1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl#CellularInhibitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl#CellularInhibitor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>CellularInhibitor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl#EntryInhibitorOrFusionInhibitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl#EntryInhibitorOrFusionInhibitor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>EntryInhibitorOrFusionInhibitor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl#IntegraseInhibitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl#IntegraseInhibitor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>IntegraseInhibitor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl#MaturationInhibitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl#MaturationInhibitor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>MaturationInhibitor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl#Non-NucleosideReverseTranscriptaseInhibitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl#Non-NucleosideReverseTranscriptaseInhibitor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl#ReverseTranscriptaseInhibitor"/>
+        <rdfs:comment>Abbr:NNRTI</rdfs:comment>
+        <rdfs:label>Non-NucleosideReverseTranscriptaseInhibitor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl#NucleosideOrNucleotideReverseTranscriptaseInhibitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl#NucleosideOrNucleotideReverseTranscriptaseInhibitor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl#ReverseTranscriptaseInhibitor"/>
+        <rdfs:comment>Abbr:NRTI</rdfs:comment>
+        <rdfs:label>NucleosideOrNucleotideReverseTranscriptaseInhibitor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl#ProteaseInhibitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl#ProteaseInhibitor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Abbr:PI</rdfs:comment>
+        <rdfs:label>ProteaseInhibitor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl#ReverseTranscriptaseInhibitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl#ReverseTranscriptaseInhibitor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>ReverseTranscriptaseInhibitor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl#TranscriptionInhibitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2014/6/Drug.owl#TranscriptionInhibitor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Abbr:TI</rdfs:comment>
+        <rdfs:label>TranscriptionInhibitor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.3.20160319-0906) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hanfei/ontologies/2017/2/untitled-ontology-287#"
+     xml:base="http://www.semanticweb.org/hanfei/ontologies/2017/2/untitled-ontology-287"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hanfei/ontologies/2017/2/untitled-ontology-287">
+        <owl:imports rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hanfei/ontologies/2017/2/untitled-ontology-287#hasTransformationFromRelationToEntity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hanfei/ontologies/2017/2/untitled-ontology-287#hasTransformationFromRelationToEntity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLObjectProperty_00000004282526657228"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasTransformationHereFromRelationToEntity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLObjectProperty_00000004282526657228 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLObjectProperty_00000004282526657228"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_6f95ce9d_26ff_4672_9b4a_581fa6c2c25b -->
+
+    <owl:Class rdf:about="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_6f95ce9d_26ff_4672_9b4a_581fa6c2c25b"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hanfei/ontologies/2017/2/untitled-ontology-287#ConceptTransformedFromRelation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hanfei/ontologies/2017/2/untitled-ontology-287#ConceptTransformedFromRelation">
+        <rdfs:subClassOf rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_6f95ce9d_26ff_4672_9b4a_581fa6c2c25b"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hanfei/ontologies/2017/2/untitled-ontology-287#RelationLikeEntity1From-p55 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hanfei/ontologies/2017/2/untitled-ontology-287#RelationLikeEntity1From-p55">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hanfei/ontologies/2017/2/untitled-ontology-287#ConceptTransformedFromRelation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLObjectProperty_00000005361995367637"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_40d7f865_309a_4751_a95d_e432bf11a44b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RelationNaturedEntity1From-p55</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hanfei/ontologies/2017/2/untitled-ontology-287#RelationLikeEntity1FromPolPolyProtein -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hanfei/ontologies/2017/2/untitled-ontology-287#RelationLikeEntity1FromPolPolyProtein">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hanfei/ontologies/2017/2/untitled-ontology-287#ConceptTransformedFromRelation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLObjectProperty_00000005361995367637"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLClass_00000002155213205169"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RelationNaturedEntity1FromPolPolyProtein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hanfei/ontologies/2017/2/untitled-ontology-287#RelationLikeEntityFrom-gp160 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hanfei/ontologies/2017/2/untitled-ontology-287#RelationLikeEntityFrom-gp160">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hanfei/ontologies/2017/2/untitled-ontology-287#ConceptTransformedFromRelation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLObjectProperty_00000005361995367637"/>
+                <owl:someValuesFrom rdf:resource="http://bioportal/bioontology.org/ontologies/HIVO0004#OWLClass_00000001838321060218"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RelationNaturedEntity1From-gp160</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.3.20160319-0906) https://github.com/owlcs/owlapi -->
+

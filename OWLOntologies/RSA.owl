@@ -1,0 +1,222 @@
+@prefix : <http://rdf.biosemantics.org/ontologies/referencesequence#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rsa: <http://rdf.biosemantics.org/ontologies/rsa#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://rdf.biosemantics.org/ontologies/rsa> .
+
+<http://rdf.biosemantics.org/ontologies/rsa> rdf:type owl:Ontology ;
+                                              dc:contributor "Andrew P. Gibson"^^xsd:string ,
+                                                             "Jeroen F.J. Laros"^^xsd:string ;
+                                              dc:created "2012-10-08T00:00:00"^^xsd:dateTime ;
+                                              dc:creator "Zuotian Tatum"^^xsd:string ;
+                                              dc:modified "2014-01-31T00:00:00"^^xsd:dateTime ;
+                                              owl:versionInfo "0.6" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+dc:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/created
+dc:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/modified
+dc:modified rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://rdf.biosemantics.org/ontologies/rsa#hasOrientation
+rsa:hasOrientation rdf:type owl:ObjectProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain rsa:AnnotationLocation ;
+                   rdfs:range rsa:Orientation ;
+                   rdfs:comment "a transcript annotation may have forward orientation on the reference sequence of a chromosome."@en .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#isAnnotatedAt
+rsa:isAnnotatedAt rdf:type owl:ObjectProperty ;
+                  rdfs:domain rsa:SequenceAnnotation ;
+                  rdfs:range rsa:AnnotationLocation ;
+                  rdfs:comment "an annotation is annotated at a location on a reference sequence."@en .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#mapsTo
+rsa:mapsTo rdf:type owl:ObjectProperty ;
+           rdfs:domain rsa:SequenceAnnotation ;
+           rdfs:range rsa:AnnotationLocation ;
+           rdfs:comment "how an annotation can be places and orientated on a reference sequence."@en .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#regionOf
+rsa:regionOf rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf rsa:mapsTo ;
+             rdfs:domain rsa:AnnotationLocation ;
+             rdfs:range rsa:ReferenceSequence .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://rdf.biosemantics.org/ontologies/rsa#after
+rsa:after rdf:type owl:DatatypeProperty ;
+          rdfs:domain rsa:Junction .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#at
+rsa:at rdf:type owl:DatatypeProperty ;
+       rdfs:domain rsa:Point .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#before
+rsa:before rdf:type owl:DatatypeProperty ;
+           rdfs:domain rsa:Junction .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#end
+rsa:end rdf:type owl:DatatypeProperty ;
+        rdfs:domain rsa:Region .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#genBankID
+rsa:genBankID rdf:type owl:DatatypeProperty ;
+              rdfs:domain rsa:ReferenceSequence .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#geneBankAssemblyID
+rsa:geneBankAssemblyID rdf:type owl:DatatypeProperty .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#refSeqID
+rsa:refSeqID rdf:type owl:DatatypeProperty ;
+             rdfs:domain rsa:ReferenceSequence .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#start
+rsa:start rdf:type owl:DatatypeProperty ;
+          rdfs:domain rsa:Region .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://rdf.biosemantics.org/ontologies/rsa#AnnotationLocation
+rsa:AnnotationLocation rdf:type owl:Class ;
+                       rdfs:comment "A location is considered as an instance separate from the annotation. A single annotation can be associated with multiple locations and a single location can be associated with multiple annotations. "@en ,
+                                    "Similar to annotation constraint in OA. Not a BFO:spacial_region."@en ,
+                                    "The location of an annotated sequence feature on a reference sequence."@en ;
+                       rdfs:label "annotation location"^^xsd:string .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#FeatureAnnotation
+rsa:FeatureAnnotation rdf:type owl:Class ;
+                      rdfs:subClassOf rsa:SequenceAnnotation ;
+                      rdfs:comment "Place holder." ,
+                                   "feature annotation"^^xsd:string .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#GenomeAssembly
+rsa:GenomeAssembly rdf:type owl:Class ;
+                   rdfs:comment "An information entity encapsulating a set of RSA:ReferenceSequences that are often used together to represent the total sequence content of an organism. "@en ,
+                                "Its version number (in some cases, the timestamp) is crucial for data integration."@en ,
+                                "RSA:ReferenceSequence is RO:proper_part_of RSA:ReferenceAssembly. "@en ;
+                   rdfs:label "reference assembly"^^xsd:string .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#Junction
+rsa:Junction rdf:type owl:Class ;
+             rdfs:subClassOf rsa:AnnotationLocation .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#Orientation
+rsa:Orientation rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Class ;
+                                  owl:oneOf ( rsa:bidirectional
+                                              rsa:forward
+                                              rsa:none
+                                              rsa:reverse
+                                            )
+                                ] ;
+                rdfs:comment "example: gene DMD has reverse orientation on the reference sequence representing chromosome X."@en ,
+                             "model the stranded-ness in double strand sequences and how annotations can be interpreted on single strand sequences."@en ;
+                rdfs:label "orientation"^^xsd:string .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#Point
+rsa:Point rdf:type owl:Class ;
+          rdfs:subClassOf rsa:AnnotationLocation .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#ReferenceSequence
+rsa:ReferenceSequence rdf:type owl:Class ;
+                      rdfs:comment "Both transcript sequences and chromosome sequences can be used as reference sequences, so instances of RSA:ReferenceSequence can be ro:proper_part_of another instance. This part of relationship is important for data integration scenarios, and this part of relationship works only if RSA:SequenceAnnotation is defined by the sequence content, as the sequence content of a transcript can be part of the sequence content of a chromosome, but not by the physical bearer of the sequence (a file)."@en ,
+                                   "It can represent sequential information captured by a biological molecule, but may represent a (possibly empty) set of molecules."@en ,
+                                   "Syntactic sequences that has a role as reference of an annotation. Instances of this class are sequence representations such as a FASTA file."@en ;
+                      rdfs:label "reference sequence"^^xsd:string .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#Region
+rsa:Region rdf:type owl:Class ;
+           rdfs:subClassOf rsa:AnnotationLocation .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#SequenceAnnotation
+rsa:SequenceAnnotation rdf:type owl:Class ;
+                       rdfs:comment "a narrower concept than SO:sequence_feature. Only represent the abstract sequences that represent molecular sequences."@en ;
+                       rdfs:label "sequence annotation"^^xsd:string .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#VariationAnnotation
+rsa:VariationAnnotation rdf:type owl:Class ;
+                        rdfs:subClassOf rsa:SequenceAnnotation ;
+                        rdfs:comment "Place holder." ;
+                        rdfs:label "variation annotation"^^xsd:string .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://rdf.biosemantics.org/ontologies/rsa#bidirectional
+rsa:bidirectional rdf:type owl:NamedIndividual ,
+                           rsa:Orientation .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#forward
+rsa:forward rdf:type owl:NamedIndividual ,
+                     rsa:Orientation ;
+            rdfs:label "forward"^^rdfs:Literal .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#none
+rsa:none rdf:type owl:NamedIndividual ,
+                  rsa:Orientation .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#reverse
+rsa:reverse rdf:type owl:NamedIndividual ,
+                     rsa:Orientation ;
+            rdfs:label "reverse"^^rdfs:Literal .
+
+
+###  http://rdf.biosemantics.org/ontologies/rsa#test
+rsa:test rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY ontologies "http://www.ICPS/ontologies/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY swrlx "http://www.w3.org/2003/11/swrlx#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY ruleml "http://www.w3.org/2003/11/ruleml#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owlx "http://www.w3.org/2003/05/owl-xml#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY kaon2 "http://kaon2.semanticweb.org/internal#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY OrganizationalOutcomes "http://www.ICPS/ontologies/OrganizationalOutcomes#" >
+    <!ENTITY ontologies2 "http://www.ICPS/ontologies/OrganizationalOutcomes#http://www.ICPS/ontologies/" >
+]>
+
+
+<rdf:RDF xmlns="&ontologies;OrganizationalOutcomes#"
+     xml:base="&ontologies;OrganizationalOutcomes"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:kaon2="http://kaon2.semanticweb.org/internal#"
+     xmlns:owlx="http://www.w3.org/2003/05/owl-xml#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:owl2="http://www.w3.org/2006/12/owl2#"
+     xmlns:ontologies2="&ontologies;OrganizationalOutcomes#&ontologies;"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrlx="http://www.w3.org/2003/11/swrlx#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:OrganizationalOutcomes="&ontologies;OrganizationalOutcomes#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ruleml="http://www.w3.org/2003/11/ruleml#"
+     xmlns:ontologies="http://www.ICPS/ontologies/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="">
+        <dc:creator
+            >Mari Carmen Su&#225;rez-Figueroa</dc:creator>
+        <dc:creator>Oscar Corcho</dc:creator>
+        <owl:versionInfo>1.0</owl:versionInfo>
+        <dc:creator
+            >Elena Montiel-Ponsoda</dc:creator>
+        <dc:creator>Mar&#237;a Poveda</dc:creator>
+        <rdfs:comment xml:lang="en"
+            >Ontology network about organizational outcomes.</rdfs:comment>
+        <rdfs:comment xml:lang="en"
+            >This work has been carried out by the Ontological Engineering Group, using sources from the University of Saint Etienne and the Australian Patient Safety Foundation, and supported by the World Health Organisation under the International Classification for Patient Safety programme.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/OrganizationalOutcomes#AdditionalEquipmentRequired -->
+
+    <owl:Class rdf:about="#AdditionalEquipmentRequired">
+        <rdfs:label xml:lang="en"
+            >Additional equipment required</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#IncreaseInRequiredResourceAllocationForPatient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/OrganizationalOutcomes#AdditionalStaffRequired -->
+
+    <owl:Class rdf:about="#AdditionalStaffRequired">
+        <rdfs:label xml:lang="en"
+            >Additional staff required</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#IncreaseInRequiredResourceAllocationForPatient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/OrganizationalOutcomes#AdditionalTest -->
+
+    <owl:Class rdf:about="#AdditionalTest">
+        <rdfs:label xml:lang="en">Additional test</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#IncreaseInRequiredResourceAllocationForPatient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/OrganizationalOutcomes#AdditionalTreatment -->
+
+    <owl:Class rdf:about="#AdditionalTreatment">
+        <rdfs:label xml:lang="en"
+            >Additional treatment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#IncreaseInRequiredResourceAllocationForPatient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/OrganizationalOutcomes#AdmissionToSpecialCareArea -->
+
+    <owl:Class rdf:about="#AdmissionToSpecialCareArea">
+        <rdfs:label xml:lang="en"
+            >Admission to special care area</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#IncreaseInRequiredResourceAllocationForPatient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/OrganizationalOutcomes#DamagedReputation -->
+
+    <owl:Class rdf:about="#DamagedReputation">
+        <rdfs:label xml:lang="en"
+            >Damaged reputation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OrganizationalOutcome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/OrganizationalOutcomes#DisruptedDelaysForOtherPatients -->
+
+    <owl:Class rdf:about="#DisruptedDelaysForOtherPatients">
+        <rdfs:label xml:lang="en"
+            >Disrupted delays for other patients</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#IncreaseInRequiredResourceAllocationForPatient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/OrganizationalOutcomes#DisruptedWorkflowForOtherPatients -->
+
+    <owl:Class rdf:about="#DisruptedWorkflowForOtherPatients">
+        <rdfs:label xml:lang="en"
+            >Disrupted workflow for other patients</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#IncreaseInRequiredResourceAllocationForPatient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/OrganizationalOutcomes#FormalComplaint -->
+
+    <owl:Class rdf:about="#FormalComplaint">
+        <rdfs:label xml:lang="en"
+            >Formal complaint</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OrganizationalOutcome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/OrganizationalOutcomes#IncreaseInRequiredResourceAllocationForPatient -->
+
+    <owl:Class rdf:about="#IncreaseInRequiredResourceAllocationForPatient">
+        <rdfs:label xml:lang="en"
+            >Increase in required resource allocation for patient</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OrganizationalOutcome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/OrganizationalOutcomes#IncreasedLengthOfStay -->
+
+    <owl:Class rdf:about="#IncreasedLengthOfStay">
+        <rdfs:label xml:lang="en"
+            >Increased length of stay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#IncreaseInRequiredResourceAllocationForPatient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/OrganizationalOutcomes#LegalRamification -->
+
+    <owl:Class rdf:about="#LegalRamification">
+        <rdfs:label xml:lang="en"
+            >Legal ramification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OrganizationalOutcome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/OrganizationalOutcomes#MediaAttention -->
+
+    <owl:Class rdf:about="#MediaAttention">
+        <rdfs:label xml:lang="en">Media attention</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OrganizationalOutcome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/OrganizationalOutcomes#OrganizationalOutcome -->
+
+    <owl:Class rdf:about="#OrganizationalOutcome">
+        <rdfs:label xml:lang="en"
+            >Organizational outcome</rdfs:label>
+        <rdfs:label xml:lang="en-AU"
+            >Organisational outcome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/OrganizationalOutcomes#PropertyDamage -->
+
+    <owl:Class rdf:about="#PropertyDamage">
+        <rdfs:label xml:lang="en">Property damage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OrganizationalOutcome"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

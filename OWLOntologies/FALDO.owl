@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:spin="http://spinrdf.org/spin#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xmlns="http://biohackathon.org/resource/faldo#">
+  <owl:Ontology rdf:about="http://biohackathon.org/resource/faldo">
+    <ns1:license xmlns:ns1="http://purl.org/dc/terms/"
+       rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+    <spin:imports rdf:resource="http://topbraid.org/spin/owlrl-all"/>
+    <spin:imports rdf:resource="http://topbraid.org/spin/rdfsplus"/>
+    <spin:imports rdf:resource="http://topbraid.org/spin/spinowl"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Created at the Biohackathon 2012 and 2013</owl:versionInfo>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://biohackathon.org/resource/faldo#BagOfRegions">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Used to describe a location that consists of a number of Regions but where the order is not known. e.g. the oddly named order() keyword in a INSDC file.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bag of regions</rdfs:label>
+    <rdfs:seeAlso rdf:resource="http://www.insdc.org/files/feature_table.html"/>
+    <rdfs:subClassOf rdf:resource="http://biohackathon.org/resource/faldo#CollectionOfRegions"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://biohackathon.org/resource/faldo#BothStrandsPosition">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The 'both strands position' indicates a region that is best described as being on 'both' strands of a double-stranded sequence, rather than one or the other.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Both strands position</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://biohackathon.org/resource/faldo#StrandedPosition"/>
+    <owl:disjointWith rdf:resource="http://biohackathon.org/resource/faldo#ForwardStrandPosition"/>
+    <owl:disjointWith rdf:resource="http://biohackathon.org/resource/faldo#ReverseStrandPosition"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://biohackathon.org/resource/faldo#C-TerminalPosition">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The C-terminus is the end of an amino acid chain (protein or polypeptide), terminated by a free carboxyl group (-COOH).</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C-Terminal position</rdfs:label>
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/C-terminus"/>
+    <rdfs:subClassOf rdf:resource="http://biohackathon.org/resource/faldo#ExactPosition"/>
+    <owl:disjointWith rdf:resource="http://biohackathon.org/resource/faldo#N-TerminalPosition"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://biohackathon.org/resource/faldo#CollectionOfRegions">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sometimes a location of a feature is defined by a collection of regions e.g. join() and order() in INSDC records. One should always try to model the semantics more accurately than this, these are fallback options to encode legacy data.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collection of regions</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class>
+            <owl:unionOf>
+              <rdf:Description>
+                <rdf:first rdf:resource="http://biohackathon.org/resource/faldo#Region"/>
+                <rdf:rest>
+                  <rdf:Description>
+                    <rdf:first rdf:resource="http://biohackathon.org/resource/faldo#CollectionOfRegions"/>
+                    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                  </rdf:Description>
+                </rdf:rest>
+              </rdf:Description>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:allValuesFrom>
+        <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://biohackathon.org/resource/faldo#ExactPosition">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A position that is exactly known.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exact position</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://biohackathon.org/resource/faldo#Position"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+        <owl:onProperty rdf:resource="http://biohackathon.org/resource/faldo#position"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="http://biohackathon.org/resource/faldo#InBetweenPosition"/>
+    <owl:disjointWith rdf:resource="http://biohackathon.org/resource/faldo#InRangePosition"/>
+    <owl:disjointWith rdf:resource="http://biohackathon.org/resource/faldo#OneOfPosition"/>
+    <owl:hasKey>
+      <rdf:Description>
+        <rdf:first rdf:resource="http://biohackathon.org/resource/faldo#position"/>
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first rdf:resource="http://biohackathon.org/resource/faldo#reference"/>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </rdf:Description>
+        </rdf:rest>
+      </rdf:Description>
+    </owl:hasKey>
+  </owl:Class>
+  <owl:Class rdf:about="http://biohackathon.org/resource/faldo#ForwardStrandPosition">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The position is on the forward (positive, 5' to 3') strand. Shown as a '+' in GFF3 and GTF.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward/positive strand position</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://biohackathon.org/resource/faldo#StrandedPosition"/>
+    <owl:disjointWith rdf:resource="http://biohackathon.org/resource/faldo#BothStrandsPosition"/>
+    <owl:disjointWith rdf:resource="http://biohackathon.org/resource/faldo#ReverseStrandPosition"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://biohackathon.org/resource/faldo#FuzzyPosition">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A position that lacks exact data.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuzzy position</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://biohackathon.org/resource/faldo#Position"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://biohackathon.org/resource/faldo#InBetweenPosition">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This indicates that a feature is between two other positions that are both known exactly and that are next to each other. An example is a restriction enzyme cutting site. The cut is after one position and before the other position (hence, in between).</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In between positions</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://biohackathon.org/resource/faldo#Position"/>
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:intersectionOf>
+          <rdf:Description>
+            <rdf:first>
+              <owl:Restriction>
+                <owl:onClass rdf:resource="http://biohackathon.org/resource/faldo#ExactPosition"/>
+                <owl:onProperty rdf:resource="http://biohackathon.org/resource/faldo#before"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+              </owl:Restriction>
+            </rdf:first>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first>
+                  <owl:Restriction>
+                    <owl:onClass rdf:resource="http://biohackathon.org/resource/faldo#ExactPosition"/>
+                    <owl:onProperty rdf:resource="http://biohackathon.org/resource/faldo#after"/>
+                    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                  </owl:Restriction>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+          </rdf:Description>
+        </owl:intersectionOf>
+      </owl:Class>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="http://biohackathon.org/resource/faldo#ExactPosition"/>
+    <owl:disjointWith rdf:resource="http://biohackathon.org/resource/faldo#InRangePosition"/>
+    <owl:disjointWith rdf:resource="http://biohackathon.org/resource/faldo#OneOfPosition"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://biohackathon.org/resource/faldo#InRangePosition">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use when you have an idea of the range in which you can find the position, but you cannot be sure about the exact position.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indeterminate position within a range</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://biohackathon.org/resource/faldo#FuzzyPosition"/>
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:intersectionOf>
+          <rdf:Description>
+            <rdf:first>
+              <owl:Restriction>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://biohackathon.org/resource/faldo#Position"/>
+                <owl:onProperty rdf:resource="http://biohackathon.org/resource/faldo#begin"/>
+              </owl:Restriction>
+            </rdf:first>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first>
+                  <owl:Restriction>
+                    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                    <owl:onClass rdf:resource="http://biohackathon.org/resource/faldo#Position"/>
+                    <owl:onProperty rdf:resource="http://biohackathon.org/resource/faldo#end"/>
+                  </owl:Restriction>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+          </rdf:Description>
+        </owl:intersectionOf>
+      </owl:Class>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="http://biohackathon.org/resource/faldo#ExactPosition"/>
+    <owl:disjointWith rdf:resource="http://biohackathon.org/resource/faldo#InBetweenPosition"/>
+    <owl:disjointWith rdf:resource="http://biohackathon.org/resource/faldo#OneOfPosition"/>
+    <owl:disjointWith rdf:resource="http://biohackathon.org/resource/faldo#StrandedPosition"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://biohackathon.org/resource/faldo#ListOfRegions">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">As an ordered list of regions (but the list might not be complete).</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Should be used when the location of a region is defined by an ordered list of Regions. However, try to avoid using these types in favor of using more explicit semantics about why the order is important.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of regions</rdfs:label>
+    <rdfs:seeAlso rdf:resource="http://www.insdc.org/files/feature_table.html"/>
+    <rdfs:subClassOf rdf:resource="http://biohackathon.org/resource/faldo#CollectionOfRegions"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://biohackathon.org/resource/faldo#N-TerminalPosition">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The position of the starting amino-acid a protein or polypeptide terminated by an amino acid with a free amine group (-NH2). The convention for writing peptide sequences is to put the N-terminus on the left and write the sequence from N- to C-terminus. Instances of this class are often used when the reference sequence is not complete </rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/N-terminus"/>
+    <rdfs:subClassOf rdf:resource="http://biohackathon.org/resource/faldo#ExactPosition"/>
+    <owl:disjointWith rdf:resource="http://biohackathon.org/resource/faldo#C-TerminalPosition"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://biohackathon.org/resource/faldo#OneOfPosition">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The position is known to be one of the more detailed positions listed by the location predicate.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of positions</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://biohackathon.org/resource/faldo#FuzzyPosition"/>
+    <owl:disjointWith rdf:resource="http://biohackathon.org/resource/faldo#ExactPosition"/>
+    <owl:disjointWith rdf:resource="http://biohackathon.org/resource/faldo#InBetweenPosition"/>
+    <owl:disjointWith rdf:resource="http://biohackathon.org/resource/faldo#InRangePosition"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://biohackathon.org/resource/faldo#Position">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Superclass for the general concept of a position on a sequence. The sequence is designated with the reference predicate.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Position</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+        <owl:onProperty rdf:resource="http://biohackathon.org/resource/faldo#reference"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://biohackathon.org/resource/faldo#Region">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A region describes a length of sequence with a start position and end position that represents a feature on a sequence, e.g. a gene.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Region</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:intersectionOf>
+          <rdf:Description>
+            <rdf:first>
+              <owl:Restriction>
+                <owl:onClass rdf:resource="http://biohackathon.org/resource/faldo#Position"/>
+                <owl:onProperty rdf:resource="http://biohackathon.org/resource/faldo#begin"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+              </owl:Restriction>
+            </rdf:first>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first>
+                  <owl:Restriction>
+                    <owl:onClass rdf:resource="http://biohackathon.org/resource/faldo#Position"/>
+                    <owl:onProperty rdf:resource="http://biohackathon.org/resource/faldo#end"/>
+                    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                  </owl:Restriction>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+          </rdf:Description>
+        </owl:intersectionOf>
+      </owl:Class>
+    </rdfs:subClassOf>
+    <owl:hasKey>
+      <rdf:Description>
+        <rdf:first rdf:resource="http://biohackathon.org/resource/faldo#begin"/>
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first rdf:resource="http://biohackathon.org/resource/faldo#end"/>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </rdf:Description>
+        </rdf:rest>
+      </rdf:Description>
+    </owl:hasKey>
+  </owl:Class>
+  <owl:Class rdf:about="http://biohackathon.org/resource/faldo#ReverseStrandPosition">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The position is on the reverse (complement, 3' to 5') strand of the sequence. Shown as '-' in GTF and GFF3.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Negative/reverse strand position</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://biohackathon.org/resource/faldo#StrandedPosition"/>
+    <owl:disjointWith rdf:resource="http://biohackathon.org/resource/faldo#BothStrandsPosition"/>
+    <owl:disjointWith rdf:resource="http://biohackathon.org/resource/faldo#ForwardStrandPosition"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://biohackathon.org/resource/faldo#StrandedPosition">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Part of the coordinate system denoting on which strand the feature can be found. If you do not yet know which stand the feature is on, you should tag the position with just this class. If you know more you should use one of the subclasses. This means a region described with a '.' in GFF3. A GFF3 unstranded position does not have this type in FALDO -- those are just a 'position'.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stranded position</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://biohackathon.org/resource/faldo#Position"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://biohackathon.org/resource/faldo#after">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This predicate is used when you want to describe a non-inclusive range. Only used in the InBetweenPosition to say it is after a nucleotide, but before the next one.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://biohackathon.org/resource/faldo#InBetweenPosition"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">after</rdfs:label>
+    <rdfs:range rdf:resource="http://biohackathon.org/resource/faldo#ExactPosition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://biohackathon.org/resource/faldo#before">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This predicate is used to indicate that the feature is found before the exact position. Use to indicate, for example, a cleavage site. The cleavage happens between two amino acids before one and after the other.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://biohackathon.org/resource/faldo#InBetweenPosition"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">before</rdfs:label>
+    <rdfs:range rdf:resource="http://biohackathon.org/resource/faldo#ExactPosition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://biohackathon.org/resource/faldo#begin">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The inclusive beginning of a position. Also known as start.</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf>
+          <rdf:Description>
+            <rdf:first rdf:resource="http://biohackathon.org/resource/faldo#Region"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first rdf:resource="http://biohackathon.org/resource/faldo#InRangePosition"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+          </rdf:Description>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">begin</rdfs:label>
+    <rdfs:range rdf:resource="http://biohackathon.org/resource/faldo#Position"/>
+    <owl:inverseOf rdf:resource="http://biohackathon.org/resource/faldo#beginOf"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://biohackathon.org/resource/faldo#beginOf">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is the inverse of the begin:property. It is included to make it easier to write a number of OWL axioms. You should rarely use this in your raw data.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beginOf</rdfs:label>
+    <owl:inverseOf rdf:resource="http://biohackathon.org/resource/faldo#begin"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://biohackathon.org/resource/faldo#end">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The inclusive end of the position.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">end</rdfs:label>
+    <rdfs:range rdf:resource="http://biohackathon.org/resource/faldo#Position"/>
+    <owl:inverseOf rdf:resource="http://biohackathon.org/resource/faldo#endOf"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://biohackathon.org/resource/faldo#endOf">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is the inverse of the begin:end. It is included to make it easier to write a number of OWL axioms. You should rarely use this in your raw data.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endOf</rdfs:label>
+    <owl:inverseOf rdf:resource="http://biohackathon.org/resource/faldo#end"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://biohackathon.org/resource/faldo#location">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is the link between the concept whose location you are annotating and its range or position. For example, when annotating the region that describes an exon, the exon would be the subject and the region would be the object of the triple or: 'active site' 'location' [is] 'position 3'.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">location</rdfs:label>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf>
+          <rdf:Description>
+            <rdf:first rdf:resource="http://biohackathon.org/resource/faldo#CollectionOfRegions"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first rdf:resource="http://biohackathon.org/resource/faldo#Region"/>
+                <rdf:rest>
+                  <rdf:Description>
+                    <rdf:first rdf:resource="http://biohackathon.org/resource/faldo#Position"/>
+                    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                  </rdf:Description>
+                </rdf:rest>
+              </rdf:Description>
+            </rdf:rest>
+          </rdf:Description>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://biohackathon.org/resource/faldo#position">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denoted in 1-based closed coordinates, i.e. the position on the first amino acid or nucleotide of a sequence has the value 1. For nucleotide sequences we count from the 5'end of the sequence, while for Aminoacid sequences we start counting from the N-Terminus.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The position value is the offset along the reference where this position is found. Thus the only the position value in combination with the reference determines where a position is.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://biohackathon.org/resource/faldo#ExactPosition"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">position</rdfs:label>
+    <rdfs:range>
+      <rdfs:Datatype>
+        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <owl:withRestrictions>
+          <rdf:Description>
+            <rdf:first>
+              <rdf:Description>
+                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+              </rdf:Description>
+            </rdf:first>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </rdf:Description>
+        </owl:withRestrictions>
+      </rdfs:Datatype>
+    </rdfs:range>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://biohackathon.org/resource/faldo#possiblePosition">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the possible positions listed for a OneOfPosition element.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">possiblePosition</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://biohackathon.org/resource/faldo#reference">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The reference is the resource that the position value is anchored to.  For example, a contig or chromosome in a genome assembly.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reference</rdfs:label>
+  </owl:ObjectProperty>
+</rdf:RDF>

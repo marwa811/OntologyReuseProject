@@ -1,0 +1,2710 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/philshields/ontologies/2015/4/Administrator.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/philshields/ontologies/2015/4/Administrator.owl">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&xsd;string">system</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&xsd;string">This ontology was generated from an administrator care graph from a domain expert.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&xsd;string">This ontology was generated from an ontology revision in WebProtégé http://webprotege.stanford.edu</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&xsd;string">shielphi</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <Literal datatypeIRI="&xsd;dateTime">Oct 28, 2013 9:03:53 PM</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#ACAS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#ACAT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Care_Plan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Case_Conference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Doctor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#External_Agencies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Hospital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#IIMS_Reporting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Dependent_Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Independent_Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_interdependent_Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Policies_and_Procedures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#WH&amp;S"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Audit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bed_Occupancy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Budget"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clinical_Hand_Over"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clinical_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Commonwealth_Health"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drug_Theraputics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Falls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Family_Meeting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Full_time_Equivalent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Health_District"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KPI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manual_handeling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medicare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meetings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Models_of_Care"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Multi_Disciplinary_Teams"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NSW_Health"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nurse_Administrator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nurses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nutrition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Occupancy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Operational_Manager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Planning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recruitment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rosters"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Staff_Meetings"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#adjusts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#advises"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#affects"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#attend"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#careFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#chairs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#communicateWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#determines"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fills"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#guides"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasARole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAffect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#initiates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inputsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAdjustedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDeterminedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGuidedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSubjectOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#liaisesWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#makes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#manages"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measures"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#reports"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#shapes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#suggestsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#templates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#toMeet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ultimatelyAffects"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#Morphene_Injection_IV"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#dependent_role_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#diagnosis_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#employee_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#independent_role_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#interdependent_role_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#medication_generic_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_designation_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_education_level_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_registration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#patient_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#physician_initiated_treatment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Ipratropium_bromide/salbutamol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Agency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Bachelor_of_Nursing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Bachelor_of_Nursing_Honours"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Blart_Versenwald"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Case_Management"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Casual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Cetirizine_Hydrochloride"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Clinical_Nurse_Consultant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Clinical_Nurse_Specialist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Clinical_Symptom_Control"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Coordination_of_Care"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Dan_Streetmentioner"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Disease_Education"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Eccentrica_Gallumbits"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Emergency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Enalapril"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Enrolled_Nurse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Esomeprazole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Execution_of_medical_orders"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Ford_Prefect"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Freedom_From_Complication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Full_Time"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Functional_Status"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Gag_Halfrunt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Gastric_reflux"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Gogrilla_Mincefriend"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Googleplex_Starthinker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Gout"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Graduate_RN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/High_Blood_Pressure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Hyoscine_Butylbromide"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Jane_Arkleseizure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Joe_Bleu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/John_Smith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Masters_degree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Mavis_Garkbit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Medical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nosocomial_Infection"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nurse_Administrator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nurse_Assessment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nurse_Educator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nurse_Follow_up_Care"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nurse_Intervention"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nurse_Researcher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nursing_Certificate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nursing_Diagnosis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nursing_Diploma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/PhD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Physician_initiated_Treatment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Post_graduate_diploma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Registered_Nurse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Salbutamol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Slarty_Bartfast"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Surgical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Ulcer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/fall"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/hypothetical_ward.owl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/interdisciplinary_communications"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Zaphod_Beeblebrox/Zaphod_Beeblebrox.rdf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/transitional.owl#Insufficient_Gas_Exchange"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.icn.ch/icnp#ActualNegativeGaseousExchange"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://xmlns.com/foaf/0.1/knows"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#ACAS"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Hospital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#ACAT"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Hospital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Care_Plan"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Case_Conference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Case_Conference"/>
+        <Class IRI="#Multi_Disciplinary_Teams"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Doctor"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#External_Agencies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#External_Agencies"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Independent_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Hospital"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#External_Agencies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Patient"/>
+        <Class IRI="http://www.semanticweb.org/philshields/ontologies/2015/1/untitled-ontology-30#Family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#WH&amp;S"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Policies_and_Procedures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bed_Occupancy"/>
+        <Class IRI="#Meetings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Budget"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Independent_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clinical_Hand_Over"/>
+        <Class IRI="#Clinical_Risk"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clinical_Risk"/>
+        <Class IRI="#Meetings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Commonwealth_Health"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#External_Agencies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drug_Theraputics"/>
+        <Class IRI="#Clinical_Risk"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Falls"/>
+        <Class IRI="#Clinical_Risk"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Family_Meeting"/>
+        <Class IRI="#Meetings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Full_time_Equivalent"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Independent_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Health_District"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#External_Agencies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KPI"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Independent_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manual_handeling"/>
+        <Class IRI="#Clinical_Risk"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medicare"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#External_Agencies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meetings"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_interdependent_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Multi_Disciplinary_Teams"/>
+        <Class IRI="#Meetings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NSW_Health"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#External_Agencies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nutrition"/>
+        <Class IRI="#Clinical_Risk"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Occupancy"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Independent_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operational_Manager"/>
+        <Class IRI="#Meetings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Planning"/>
+        <Class IRI="#Meetings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quality"/>
+        <Class IRI="#Meetings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recruitment"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Independent_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rosters"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Independent_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Staff_Meetings"/>
+        <Class IRI="#Meetings"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Dependent_Role"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Independent_Role"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_interdependent_Role"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Agency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Bachelor_of_Nursing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Bachelor_of_Nursing_Honours"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Blart_Versenwald"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_interdependent_Role"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Case_Management"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Case_Management"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Casual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Cetirizine_Hydrochloride"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Clinical_Nurse_Consultant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Clinical_Nurse_Specialist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Clinical_Symptom_Control"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_interdependent_Role"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Coordination_of_Care"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Coordination_of_Care"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Dan_Streetmentioner"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Disease_Education"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Eccentrica_Gallumbits"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Emergency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Enalapril"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Enrolled_Nurse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Esomeprazole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Dependent_Role"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Execution_of_medical_orders"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Execution_of_medical_orders"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Ford_Prefect"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Freedom_From_Complication"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Full_Time"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Functional_Status"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Patient"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Gag_Halfrunt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Gag_Halfrunt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Gastric_reflux"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Patient"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Gogrilla_Mincefriend"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Gogrilla_Mincefriend"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Patient"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Googleplex_Starthinker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Googleplex_Starthinker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Gout"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Graduate_RN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/High_Blood_Pressure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Hyoscine_Butylbromide"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Jane_Arkleseizure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Joe_Bleu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/John_Smith"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Masters_degree"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Patient"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Mavis_Garkbit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Mavis_Garkbit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Medical"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nosocomial_Infection"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nurse_Administrator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Independent_Role"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nurse_Assessment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nurse_Assessment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nurse_Educator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Independent_Role"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nurse_Follow_up_Care"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nurse_Follow_up_Care"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Independent_Role"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nurse_Intervention"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nurse_Intervention"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nurse_Researcher"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nursing_Certificate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Independent_Role"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nursing_Diagnosis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nursing_Diagnosis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nursing_Diploma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/PhD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Dependent_Role"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Physician_initiated_Treatment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Physician_initiated_Treatment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Post_graduate_diploma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Registered_Nurse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Salbutamol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Slarty_Bartfast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Surgical"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Ulcer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/fall"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/hypothetical_ward.owl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_interdependent_Role"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/interdisciplinary_communications"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/interdisciplinary_communications"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Zaphod_Beeblebrox/Zaphod_Beeblebrox.rdf"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Ipratropium_bromide/salbutamol"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Hyoscine_Butylbromide"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Ipratropium_bromide/salbutamol"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Salbutamol"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://purl.bioontology.org/ontology/SNOMEDCT/70944005"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/transitional.owl#Insufficient_Gas_Exchange"/>
+    </SameIndividual>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_education_level_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Bachelor_of_Nursing"/>
+        <Literal datatypeIRI="&xsd;string">Nursing Certificate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_education_level_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Bachelor_of_Nursing_Honours"/>
+        <Literal datatypeIRI="&xsd;string">Nursing Diploma</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#employee_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Blart_Versenwald"/>
+        <Literal datatypeIRI="&xsd;string">Blart Versenwald</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#interdependent_role_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Case_Management"/>
+        <Literal datatypeIRI="&xsd;string">Case management</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#medication_generic_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Cetirizine_Hydrochloride"/>
+        <Literal datatypeIRI="&xsd;string">Cetirizine Hydrochloride</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_designation_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Clinical_Nurse_Consultant"/>
+        <Literal datatypeIRI="&xsd;string">Clinical Nurse Consultant</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_designation_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Clinical_Nurse_Specialist"/>
+        <Literal datatypeIRI="&xsd;string">Clinical Nurse Specialist</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#interdependent_role_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Coordination_of_Care"/>
+        <Literal datatypeIRI="&xsd;string">coordination of care</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#employee_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Dan_Streetmentioner"/>
+        <Literal datatypeIRI="&xsd;string">Dan Streetmentioner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#employee_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Eccentrica_Gallumbits"/>
+        <Literal datatypeIRI="&xsd;string">Eccentrica Gallumbits</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#medication_generic_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Enalapril"/>
+        <Literal datatypeIRI="&xsd;string">Enalapril</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_designation_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Enrolled_Nurse"/>
+        <Literal datatypeIRI="&xsd;string">Enrolled Nurse</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#medication_generic_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Esomeprazole"/>
+        <Literal datatypeIRI="&xsd;string">Esomeprazole</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#dependent_role_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Execution_of_medical_orders"/>
+        <Literal datatypeIRI="&xsd;string">Execution of medical orders</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#employee_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Ford_Prefect"/>
+        <Literal datatypeIRI="&xsd;string">Ford Prefect</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#patient_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Gag_Halfrunt"/>
+        <Literal datatypeIRI="&xsd;string">Gag Halfrunt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#diagnosis_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Gastric_reflux"/>
+        <Literal datatypeIRI="&xsd;string">Gastric reflux</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#patient_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Gogrilla_Mincefriend"/>
+        <Literal datatypeIRI="&xsd;string">Gogrilla Mincefriend</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#patient_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Googleplex_Starthinker"/>
+        <Literal datatypeIRI="&xsd;string">Googleplex Starthinker</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#diagnosis_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Gout"/>
+        <Literal datatypeIRI="&xsd;string">Gout</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_designation_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Graduate_RN"/>
+        <Literal datatypeIRI="&xsd;string">Graduate RN</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#diagnosis_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/High_Blood_Pressure"/>
+        <Literal datatypeIRI="&xsd;string">High Blood Pressure</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#medication_generic_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Hyoscine_Butylbromide"/>
+        <Literal datatypeIRI="&xsd;string">hyoscine Butylbromide</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#employee_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Jane_Arkleseizure"/>
+        <Literal datatypeIRI="&xsd;string">Jane Arkleseizure</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#employee_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Joe_Bleu"/>
+        <Literal datatypeIRI="&xsd;string">Joe Bleu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#employee_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/John_Smith"/>
+        <Literal datatypeIRI="&xsd;string">John Smith</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_education_level_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Masters_degree"/>
+        <Literal datatypeIRI="&xsd;string">Bachelor of Nursing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#patient_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Mavis_Garkbit"/>
+        <Literal datatypeIRI="&xsd;string">Mavis Garkbit</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_designation_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nurse_Administrator"/>
+        <Literal datatypeIRI="&xsd;string">Nurse Administrator</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#independent_role_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nurse_Assessment"/>
+        <Literal datatypeIRI="&xsd;string">nurse assessment</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_designation_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nurse_Educator"/>
+        <Literal datatypeIRI="&xsd;string">Nurse Educator</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#independent_role_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nurse_Follow_up_Care"/>
+        <Literal datatypeIRI="&xsd;string">nurse follow up care</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#independent_role_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nurse_Intervention"/>
+        <Literal datatypeIRI="&xsd;string">nurse intervention</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_designation_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nurse_Researcher"/>
+        <Literal datatypeIRI="&xsd;string">Nurse Researcher</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_education_level_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nursing_Certificate"/>
+        <Literal datatypeIRI="&xsd;string">Nursing Certificate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#independent_role_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nursing_Diagnosis"/>
+        <Literal datatypeIRI="&xsd;string">nursing diagnosis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_education_level_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Nursing_Diploma"/>
+        <Literal datatypeIRI="&xsd;string">Nursing Diploma</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_education_level_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/PhD"/>
+        <Literal datatypeIRI="&xsd;string">PhD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#Morphene_Injection_IV"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Physician_initiated_Treatment"/>
+        <Literal datatypeIRI="&xsd;string">Zaphod_BeebleBrox
+Mavis_Garkbit
+2 Mg
+20/12/2013 09:20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_education_level_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Post_graduate_diploma"/>
+        <Literal datatypeIRI="&xsd;string">Post graduate diploma</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_designation_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Registered_Nurse"/>
+        <Literal datatypeIRI="&xsd;string">Registered Nurse</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#employee_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Slarty_Bartfast"/>
+        <Literal datatypeIRI="&xsd;string">Slarty Bartfast</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#interdependent_role_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/interdisciplinary_communications"/>
+        <Literal datatypeIRI="&xsd;string">interdisciplinary communications</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#employee_name"/>
+        <NamedIndividual IRI="http://www.cablesat.com.au/research/Zaphod_Beeblebrox/Zaphod_Beeblebrox.rdf"/>
+        <Literal datatypeIRI="&xsd;string">Zaphod Beeblebrox</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#attend"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAffect"/>
+        <ObjectProperty IRI="#affects"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAdjustedBy"/>
+        <ObjectProperty IRI="#adjusts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isDeterminedBy"/>
+        <ObjectProperty IRI="#determines"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isGuidedBy"/>
+        <ObjectProperty IRI="#guides"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#adjusts"/>
+        <ObjectProperty IRI="#isAdjustedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAffect"/>
+        <ObjectProperty IRI="#affects"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#determines"/>
+        <ObjectProperty IRI="#isDeterminedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isGuidedBy"/>
+        <ObjectProperty IRI="#guides"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#adjusts"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#advises"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#affects"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#attend"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#careFor"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#chairs"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#communicateWith"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#determines"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#fills"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#guides"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasARole"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasAffect"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#initiates"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#inputsTo"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isAdjustedBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isGuidedBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isSubjectOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#liaisesWith"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#makes"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#manages"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#measures"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#reports"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#shapes"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#suggestsTo"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#templates"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#toMeet"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#ultimatelyAffects"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#adjusts"/>
+        <Class IRI="#Occupancy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#advises"/>
+        <Class IRI="#Clinical_Risk"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#affects"/>
+        <Class IRI="#Budget"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#attend"/>
+        <Class IRI="http://www.semanticweb.org/philshields/ontologies/2015/1/untitled-ontology-30#Family"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#chairs"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_interdependent_Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#communicateWith"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#determines"/>
+        <Class IRI="#Budget"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#fills"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#guides"/>
+        <Class IRI="#Planning"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasARole"/>
+        <Class IRI="#Nurse_Administrator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#initiates"/>
+        <Class IRI="#Rosters"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDeterminedBy"/>
+        <Class IRI="#Recruitment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubjectOf"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#liaisesWith"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Independent_Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#makes"/>
+        <Class IRI="#Recruitment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#manages"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Independent_Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#measures"/>
+        <Class IRI="#Audit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#reports"/>
+        <Class IRI="#Occupancy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#shapes"/>
+        <Class IRI="#Clinical_Risk"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#shapes"/>
+        <Class IRI="#Falls"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#shapes"/>
+        <Class IRI="#Health_District"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#shapes"/>
+        <Class IRI="#Manual_handeling"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#shapes"/>
+        <Class IRI="#NSW_Health"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#shapes"/>
+        <Class IRI="#Quality"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#suggestsTo"/>
+        <Class IRI="#Multi_Disciplinary_Teams"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#templates"/>
+        <Class IRI="#Commonwealth_Health"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#toMeet"/>
+        <Class IRI="#Recruitment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ultimatelyAffects"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Policies_and_Procedures"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#adjusts"/>
+        <Class IRI="#KPI"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#adjusts"/>
+        <Class IRI="#Rosters"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#advises"/>
+        <Class IRI="#Drug_Theraputics"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#advises"/>
+        <Class IRI="#Falls"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#advises"/>
+        <Class IRI="#Manual_handeling"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#advises"/>
+        <Class IRI="#Quality"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#affects"/>
+        <Class IRI="#Bed_Occupancy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#affects"/>
+        <Class IRI="#Occupancy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#affects"/>
+        <Class IRI="#Rosters"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#careFor"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Patient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#chairs"/>
+        <Class IRI="#Meetings"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#communicateWith"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Patient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#determines"/>
+        <Class IRI="#Full_time_Equivalent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#determines"/>
+        <Class IRI="#KPI"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#determines"/>
+        <Class IRI="#Recruitment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fills"/>
+        <Class IRI="#Occupancy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#guides"/>
+        <Class IRI="#Meetings"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#guides"/>
+        <Class IRI="#Models_of_Care"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasARole"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Dependent_Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasARole"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Independent_Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasARole"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_interdependent_Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inputsTo"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Case_Conference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inputsTo"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#IIMS_Reporting"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inputsTo"/>
+        <Class IRI="#Bed_Occupancy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inputsTo"/>
+        <Class IRI="#Clinical_Hand_Over"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inputsTo"/>
+        <Class IRI="#Clinical_Risk"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inputsTo"/>
+        <Class IRI="#Falls"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inputsTo"/>
+        <Class IRI="#Manual_handeling"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inputsTo"/>
+        <Class IRI="#Quality"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inputsTo"/>
+        <Class IRI="#Staff_Meetings"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDeterminedBy"/>
+        <Class IRI="#Full_time_Equivalent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSubjectOf"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#IIMS_Reporting"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSubjectOf"/>
+        <Class IRI="#Meetings"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#liaisesWith"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#External_Agencies"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#manages"/>
+        <Class IRI="#Budget"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#manages"/>
+        <Class IRI="#Planning"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#measures"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#IIMS_Reporting"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#measures"/>
+        <Class IRI="#Clinical_Risk"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#measures"/>
+        <Class IRI="#Falls"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#measures"/>
+        <Class IRI="#KPI"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#measures"/>
+        <Class IRI="#Planning"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#measures"/>
+        <Class IRI="#Quality"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#reports"/>
+        <Class IRI="#Bed_Occupancy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#shapes"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Policies_and_Procedures"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#templates"/>
+        <Class IRI="#Models_of_Care"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#toMeet"/>
+        <Class IRI="#KPI"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ultimatelyAffects"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Patient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ultimatelyAffects"/>
+        <Class IRI="#Meetings"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ultimatelyAffects"/>
+        <Class IRI="#Models_of_Care"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#Morphene_Injection_IV"/>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#physician_initiated_treatment"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#dependent_role_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#diagnosis_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#employee_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#independent_role_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#interdependent_role_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#medication_generic_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_designation_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_education_level_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_registration"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#patient_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#physician_initiated_treatment"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#dependent_role_name"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Dependent_Role"/>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#independent_role_name"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_Independent_Role"/>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#interdependent_role_name"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Nurses_interdependent_Role"/>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#patient_name"/>
+        <Class IRI="http://www.cablesat.com.au/research/transitional.owl#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#dependent_role_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#diagnosis_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#employee_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#independent_role_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#interdependent_role_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#medication_generic_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_designation_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_education_level_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#nurse_registration"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#patient_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.cablesat.com.au/research/transitional.owl#physician_initiated_treatment"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Agency</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Employed through an external agency
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Agency</IRI>
+        <Literal datatypeIRI="&xsd;string">Agency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Bachelor_of_Nursing</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing educational qualification
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Bachelor_of_Nursing</IRI>
+        <Literal datatypeIRI="&xsd;string">Bachelor of Nursing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Bachelor_of_Nursing_Honours</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing educational qualification
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Bachelor_of_Nursing_Honours</IRI>
+        <Literal datatypeIRI="&xsd;string">Bachelor of Nursing Honours</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Blart_Versenwald</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      A Doctor
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Blart_Versenwald</IRI>
+        <Literal datatypeIRI="&xsd;string">Blart Versenwald</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Case_Management</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing role carried out in cooperation with allied health and other 
+      health workers
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Case_Management</IRI>
+        <Literal datatypeIRI="&xsd;string">Case Management</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Casual</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Employed through the casual bank
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Casual</IRI>
+        <Literal datatypeIRI="&xsd;string">Casual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Cetirizine_Hydrochloride</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Zyrtec
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Cetirizine_Hydrochloride</IRI>
+        <Literal datatypeIRI="&xsd;string">Cetirizine Hydrochloride</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Clinical_Nurse_Consultant</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing level in hierarchy
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Clinical_Nurse_Consultant</IRI>
+        <Literal datatypeIRI="&xsd;string">Clinical Nurse Consultant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Clinical_Nurse_Specialist</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing level in hierarchy
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Clinical_Nurse_Specialist</IRI>
+        <Literal datatypeIRI="&xsd;string">Clinical Nurse Specialist</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Clinical_Symptom_Control</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Patient Outcome that is expected as a result of intervention
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Clinical_Symptom_Control</IRI>
+        <Literal datatypeIRI="&xsd;string">Clinical Symptom Control</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Coordination_of_Care</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing role carried out in cooperation with allied health and other 
+      health workers
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Coordination_of_Care</IRI>
+        <Literal datatypeIRI="&xsd;string">Coordination of Care</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Dan_Streetmentioner</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      A doctor
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Dan_Streetmentioner</IRI>
+        <Literal datatypeIRI="&xsd;string">Dan Streetmentioner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Disease_Education</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Patient Outcome that is expected as a result of intervention
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Disease_Education</IRI>
+        <Literal datatypeIRI="&xsd;string">Disease Education</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Eccentrica_Gallumbits</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      A doctor
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Eccentrica_Gallumbits</IRI>
+        <Literal datatypeIRI="&xsd;string">Eccentrica Gallumbits</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Emergency</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Type of ward
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Emergency</IRI>
+        <Literal datatypeIRI="&xsd;string">Emergency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Enalapril</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Enalapril
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Enalapril</IRI>
+        <Literal datatypeIRI="&xsd;string">Enalapril</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://www.cablesat.com.au/research/Enalapril</IRI>
+        <IRI>http://purl.bioontology.org/ontology/MSH/D064098</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Enrolled_Nurse</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing level in hierarchy
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Enrolled_Nurse</IRI>
+        <Literal datatypeIRI="&xsd;string">Enrolled Nurse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Esomeprazole</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nexium
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Esomeprazole</IRI>
+        <Literal datatypeIRI="&xsd;string">Esomeprazole</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://www.cablesat.com.au/research/Esomeprazole</IRI>
+        <IRI>http://purl.bioontology.org/ontology/MSH/D064098</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Execution_of_medical_orders</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing role dependent on a physician
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Execution_of_medical_orders</IRI>
+        <Literal datatypeIRI="&xsd;string">Execution of medical orders</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Ford_Prefect</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      A doctor
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Ford_Prefect</IRI>
+        <Literal datatypeIRI="&xsd;string">Ford Prefect</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Freedom_From_Complication</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Patient Outcome that is expected as a result of intervention
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Freedom_From_Complication</IRI>
+        <Literal datatypeIRI="&xsd;string">Freedom From Complication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Full_Time</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Employed on a permanent contract
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Full_Time</IRI>
+        <Literal datatypeIRI="&xsd;string">Full Time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Functional_Status</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Patient Outcome that is expected as a result of intervention
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Functional_Status</IRI>
+        <Literal datatypeIRI="&xsd;string">Functional Status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://www.cablesat.com.au/research/Functional_Status</IRI>
+        <IRI>http://purl.bioontology.org/ontology/ICNP/AbilityStatus</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Gag_Halfrunt</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      A patient in a ward
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Gag_Halfrunt</IRI>
+        <Literal datatypeIRI="&xsd;string">Gag Halfrunt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Gastric_reflux</IRI>
+        <Literal datatypeIRI="&xsd;string">Gastric reflux</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://www.cablesat.com.au/research/Gastric_reflux</IRI>
+        <IRI>http://purl.bioontology.org/ontology/SNOMEDCT/139302007</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Gogrilla_Mincefriend</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      A patient in a ward
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Gogrilla_Mincefriend</IRI>
+        <Literal datatypeIRI="&xsd;string">Gogrilla Mincefriend</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Googleplex_Starthinker</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      A patient in a ward
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Googleplex_Starthinker</IRI>
+        <Literal datatypeIRI="&xsd;string">Googleplex Starthinker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Gout</IRI>
+        <Literal datatypeIRI="&xsd;string">Gout</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://www.cablesat.com.au/research/Gout</IRI>
+        <IRI>http://purl.bioontology.org/ontology/SNOMEDCT/90560007</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Graduate_RN</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing level in hierarchy
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Graduate_RN</IRI>
+        <Literal datatypeIRI="&xsd;string">Graduate RN</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/High_Blood_Pressure</IRI>
+        <Literal datatypeIRI="&xsd;string">High Blood Pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://www.cablesat.com.au/research/High_Blood_Pressure</IRI>
+        <IRI>http://purl.bioontology.org/ontology/SNOMEDCT/148440000</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Hyoscine_Butylbromide</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Buscopan
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Hyoscine_Butylbromide</IRI>
+        <Literal datatypeIRI="&xsd;string">Buscopan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://www.cablesat.com.au/research/Hyoscine_Butylbromide</IRI>
+        <IRI>http://purl.bioontology.org/ontology/MSH/D002086</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Jane_Arkleseizure</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      A nurse
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Jane_Arkleseizure</IRI>
+        <Literal datatypeIRI="&xsd;string">Jane Arkleseizure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Joe_Bleu</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      An Allied health worker
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Joe_Bleu</IRI>
+        <Literal datatypeIRI="&xsd;string">Joe Bleu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/John_Smith</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      An allied health worker
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/John_Smith</IRI>
+        <Literal datatypeIRI="&xsd;string">John Smith</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Masters_degree</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing educational qualification
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Masters_degree</IRI>
+        <Literal datatypeIRI="&xsd;string">Masters degree</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Mavis_Garkbit</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      A patient in a ward
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Mavis_Garkbit</IRI>
+        <Literal datatypeIRI="&xsd;string">Mavis Garkbit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Medical</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Type of ward
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Medical</IRI>
+        <Literal datatypeIRI="&xsd;string">Medical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Nosocomial_Infection</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      An adverse event which occured to a patient
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Nosocomial_Infection</IRI>
+        <Literal datatypeIRI="&xsd;string">Nosocomial Infection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Nurse_Administrator</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing level in hierarchy
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Nurse_Administrator</IRI>
+        <Literal datatypeIRI="&xsd;string">Nurse Administrator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Nurse_Assessment</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Role carried out autonomously by a nurse
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Nurse_Assessment</IRI>
+        <Literal datatypeIRI="&xsd;string">Nurse Assessment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Nurse_Educator</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing level in hierarchy
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Nurse_Educator</IRI>
+        <Literal datatypeIRI="&xsd;string">Nurse educator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Nurse_Follow_up_Care</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Role carried out autonomously by a nurse
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Nurse_Follow_up_Care</IRI>
+        <Literal datatypeIRI="&xsd;string">Nurse Follow up Care</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Nurse_Intervention</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Role carried out autonomously by a nurse
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Nurse_Intervention</IRI>
+        <Literal datatypeIRI="&xsd;string">Nurse Intervention</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Nurse_Researcher</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing level in hierarchy
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Nurse_Researcher</IRI>
+        <Literal datatypeIRI="&xsd;string">Nurse researcher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Nursing_Certificate</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing educational qualification
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Nursing_Certificate</IRI>
+        <Literal datatypeIRI="&xsd;string">Nursing Certificate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Nursing_Diagnosis</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Role carried out autonomously by a nurse
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Nursing_Diagnosis</IRI>
+        <Literal datatypeIRI="&xsd;string">Nursing Diagnosis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Nursing_Diploma</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing educational qualification
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Nursing_Diploma</IRI>
+        <Literal datatypeIRI="&xsd;string">Nursing Diploma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/PhD</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing educational qualification
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/PhD</IRI>
+        <Literal datatypeIRI="&xsd;string">PhD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Physician_initiated_Treatment</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing role dependent on a physician
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Physician_initiated_Treatment</IRI>
+        <Literal datatypeIRI="&xsd;string">Physician initiated Treatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Post_graduate_diploma</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing educational qualification
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Post_graduate_diploma</IRI>
+        <Literal datatypeIRI="&xsd;string">Post graduate diploma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Registered_Nurse</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing level in hierarchy
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Registered_Nurse</IRI>
+        <Literal datatypeIRI="&xsd;string">Registered Nurse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Salbutamol</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Ventolin
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Salbutamol</IRI>
+        <Literal datatypeIRI="&xsd;string">Salbutamol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://www.cablesat.com.au/research/Salbutamol</IRI>
+        <IRI>http://dbpedia.org/resource/Ipratropium_bromide/salbutamol</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://www.cablesat.com.au/research/Salbutamol</IRI>
+        <IRI>http://purl.bioontology.org/ontology/MSH/D000420</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://www.cablesat.com.au/research/Salbutamol</IRI>
+        <IRI>http://purl.bioontology.org/ontology/SNOMEDCT/372897005</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Slarty_Bartfast</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      A nurse
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Slarty_Bartfast</IRI>
+        <Literal datatypeIRI="&xsd;string">Slarty Bartfast</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Surgical</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Type of ward
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Surgical</IRI>
+        <Literal datatypeIRI="&xsd;string">Surgical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Ulcer</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      An adverse event which occured to a patient
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Ulcer</IRI>
+        <Literal datatypeIRI="&xsd;string">Ulcer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/fall</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      An adverse event which occured to a patient
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/fall</IRI>
+        <Literal datatypeIRI="&xsd;string">Fall</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/interdisciplinary_communications</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Nursing role carried out in cooperation with allied health and other 
+      health workers
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/interdisciplinary_communications</IRI>
+        <Literal datatypeIRI="&xsd;string">interdisciplinary communications</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/Zaphod_Beeblebrox/Zaphod_Beeblebrox.rdf</IRI>
+        <Literal datatypeIRI="&xsd;string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      A nurse
+    &lt;/p&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/Zaphod_Beeblebrox/Zaphod_Beeblebrox.rdf</IRI>
+        <Literal datatypeIRI="&xsd;string">Zaphod Beeblebrox</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://www.cablesat.com.au/research/Zaphod_Beeblebrox/Zaphod_Beeblebrox.rdf</IRI>
+        <IRI>http://dbpedia.org/resource/Zaphod_Beeblebrox</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://xmlns.com/foaf/0.1/knows"/>
+        <IRI>http://www.cablesat.com.au/research/Zaphod_Beeblebrox/Zaphod_Beeblebrox.rdf</IRI>
+        <IRI>http://www.cablesat.com.au/research/Slarty_Bartfast</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#ACAS</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The Aged Care Assessment Service.Frail aged assessment body for the state of Victoria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#ACAT</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aged Care Assessment Team. Frail aged assessment body for the state of NSW/ACT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#Care_Plan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The plan of patient&apos;s care determined at the case conference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#Case_Conference</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A meeting of all stake holders about changes to care</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#Doctor</IRI>
+        <Literal datatypeIRI="&xsd;string">A Doctor of medicine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#External_Agencies</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Agencies external to the facility which provide goods and services for the patient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#Hospital</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An external hospital </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#IIMS_Reporting</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Incident Information Management System. Computerised adverse event reporting system in the facility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#Insufficient_Gas_Exchange</IRI>
+        <IRI>http://www.icn.ch/icnp#ActualNegativeGaseousExchange</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#Nurses_Dependent_Role</IRI>
+        <Literal datatypeIRI="&xsd;string">NREM Processes that a nurse can carry out authorised by a doctor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#Nurses_Independent_Role</IRI>
+        <Literal datatypeIRI="&xsd;string">NREM processes that a nurse can carry out autonomously</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#Nurses_interdependent_Role</IRI>
+        <Literal datatypeIRI="&xsd;string">NREM Process a nurse can carry out in conjunction with allied health and other employees of the hospital</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#Patient</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a person who is being cared for in this facility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#Policies_and_Procedures</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Policies and procedures governing the operation of the facility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#WH&amp;S</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Work Health and Safety procedures and auditing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#dependent_role_name</IRI>
+        <Literal datatypeIRI="&xsd;string">dependent_role_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#diagnosis_name</IRI>
+        <Literal datatypeIRI="&xsd;string">diagnosis_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#employee_name</IRI>
+        <Literal datatypeIRI="&xsd;string">employee_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#independent_role_name</IRI>
+        <Literal datatypeIRI="&xsd;string">independent_role_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#interdependent_role_name</IRI>
+        <Literal datatypeIRI="&xsd;string">interdependent_role_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#medication_generic_name</IRI>
+        <Literal datatypeIRI="&xsd;string">medication_generic_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#nurse_designation_name</IRI>
+        <Literal datatypeIRI="&xsd;string">nurse_designation_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#nurse_education_level_name</IRI>
+        <Literal datatypeIRI="&xsd;string">nurse_education_level_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#nurse_name</IRI>
+        <Literal datatypeIRI="&xsd;string">nurse_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#patient_name</IRI>
+        <Literal datatypeIRI="&xsd;string">patient_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cablesat.com.au/research/transitional.owl#physician_initiated_treatment</IRI>
+        <Literal datatypeIRI="&xsd;string">physician_initiated_treatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/philshields/ontologies/2015/1/untitled-ontology-30#Family</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Relatives identified by the patient </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Audit</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An external audit of key aspects of facility operation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bed_Occupancy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The number flow of patients in and out of the facility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Budget</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The amount of money allocated to varying aspects of facility operation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Clinical_Hand_Over</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The handing over of personal patient clinical information from the preceding shift  to the next</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Clinical_Risk</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Identifying risk factors associated with patient and staff safety</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Commonwealth_Health</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">National Health agencies which provide amongst other things key Performance Indicators linked to funding</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Drug_Theraputics</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Concerned with patient&apos;s medications</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Falls</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Patient falls prevention </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Family_Meeting</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A meeting with the patient&apos;s family to discuss treatment and the care plan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Full_time_Equivalent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Full-time equivalence (FTE) is a measure of the amount of time an individual works. Consider an organisation where a full-time employee is required to work 40 hours a week. An individual working 40 hours has an FTE of 1.0.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Health_District</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A geographic district of hospitals and other medical facilities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KPI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Key Performance Indicators which are linked to federal and State funding. The facility also has its own KPIs linked to occupancy funding
+  </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Manual_handeling</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Safe patient lifting and moving within the facility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Medicare</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Provide indirect funding to the facility after receiving patient admission and discharge data.
+ </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Meetings</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Meetings</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Meetings with key stakeholders of patient care in the facility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Models_of_Care</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Commonwealth patient demographics data. Concerned with sufficiently addressing catchment patient base.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Multi_Disciplinary_Teams</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Prioritises admission and discharge and appropriate care</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NSW_Health</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Supplies state funding linked to state Key Performance indicators</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Nurse_Administrator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nursing middle management</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Nutrition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Patient Meals </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Occupancy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The number of patients in beds +admissions -discharges</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Operational_Manager</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Senior planning meeting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Planning</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Facility forward operational requirements planning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Quality</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">KPI planning meeting linked to quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Recruitment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Interview panels and recruitment of nurses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Rosters</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The time and date dictating a nurse&apos;s working shift</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Staff_Meetings</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Meeting to exchange information for nursing staff</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

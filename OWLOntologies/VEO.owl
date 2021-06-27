@@ -1,0 +1,2487 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://sbmi.uth.tmc.edu/ontology/VEO"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://sbmi.uth.tmc.edu/ontology/VEO">
+    <Prefix name="" IRI="http://sbmi.uth.tmc.edu/ontology/VEO#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.obolibrary.org/obo/MFOEM.owl</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Visual Emotion Ontology (VEO) is an ontology that links visualizations with specific emotions from the Ortony, Clore, and Collins&apos; description of human emotions.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cui Tao</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rebecca Lin</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Muhammad &quot;Tuan&quot; Amith</Literal>
+    </Annotation>
+    <Declaration>
+        <NamedIndividual IRI="#hate_visualization"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#remorse_visualization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#disconfirms"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#admiration_visualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brown_Downward_Pointing_Triangle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_an_image"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Orange_Circle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Admiration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grey"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#confirms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Displeased"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blue_Downward_Pointing_Triangle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#relief_visualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Approving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gloating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Surprise"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gratitude_visualization"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#joy_visualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gratification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fears_Confirmed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Curved_Lines"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yellow_Upward_Pointing_Triangle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consequence_Desirable_For_Other"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Remorse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Triangle"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Happy_For"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#concernsAspect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#White_Circle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Downward_Pointing_Triangle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Green"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resentment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Red_Circle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Actual_Consequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pride"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Positive_Emotion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Red_Sharp_Line"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasShape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Curved_Line"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Black_Sharp_Line"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Black_Sharp_Lines_Doubled"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Red"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#love_visualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Visualization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLines"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disgust"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#resentment_visualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yellow_Circle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Purple"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Green_Downward_Pointing_Triangle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Color"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pink"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#interest_visualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blue_Curved_Line"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Familiar_Aspect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Composite_Visualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unfamiliar_Aspect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Joy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Confirmed_Undesirable_Consequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Circle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blue_Sharp_Line"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#disgust_visualization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#concernsConsequence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pity_visualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reproach"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gratitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disliking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Orange_Curved_Line"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Red_Downward_Pointing_Triangle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Emotion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gloating_visualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Confirmed_Desirable_Consequence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#anger_visualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Upward_Pointing_Triangle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#shame_visualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shame"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Black_Curved_Line"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Love"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumberOfLines"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sharp_Line"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Black"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fear_visualization"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#surprise_visualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Confirmed_Consequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Black_Downward_Pointing_Triangle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disconfirmed_Undesirable_Consequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Purple_Sharp_Lines_Doubled"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Orange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pleased"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasColor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#happy-for_visualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disconfirmed_Desirable_Consequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prospective_Consequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consequence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pride_visualization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#concernsActionsOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consequence_Undesirable_For_Other"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pink_Curved_Line"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Green_Circle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hope_visualization"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disapproving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Negative_Emotion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lines"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Curved_Lines_Doubled"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Relief"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prospective_Undesirable_Consequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brown_Sharp_Lines_Doubled"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Orange_Curved_Lines_Doubled"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grey_Sharp_Line"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Satisfaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Purple_Sharp_Line"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Purple_Curved_Line"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/abstract"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pink_Circle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disconfirmed_Consequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hope"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aspect"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#distress_visualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Red_Curved_Line"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCompositeVisualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sharp_Lines_Doubled"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fears-confirmed_visualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yellow_Curved_Line"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sharp_Lines"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#disappointment_visualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yellow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grey_Downward_Pointing_Triangle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Purple_Circle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#satisfaction_visualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action_Of_Self_Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#White"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blue_Sharp_Lines_Doubled"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#reproach_visualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disappointment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action_Of_Other_Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Liking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prospective_Desirable_Consequence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gratification_visualization"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/GO_0007610"/>
+        <Class IRI="#Action"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/MFOEM_000001"/>
+        <Class IRI="#Emotion"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/MFOEM_000009"/>
+        <Class IRI="#Anger"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/MFOEM_000019"/>
+        <Class IRI="#Disgust"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/MFOEM_000026"/>
+        <Class IRI="#Fear"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/MFOEM_000032"/>
+        <Class IRI="#Surprise"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/MFOEM_000033"/>
+        <Class IRI="#Interest"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/MFOEM_000035"/>
+        <Class IRI="#Pleased"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/MFOEM_000041"/>
+        <Class IRI="#Pride"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/MFOEM_000042"/>
+        <Class IRI="#Joy"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/MFOEM_000051"/>
+        <Class IRI="#Disappointment"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/MFOEM_000055"/>
+        <Class IRI="#Shame"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/MFOEM_000056"/>
+        <Class IRI="#Distress"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/MFOEM_000177"/>
+        <Class IRI="#Hope"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/MFOEM_000211"/>
+        <Class IRI="#Positive_Emotion"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/MFOEM_000212"/>
+        <Class IRI="#Negative_Emotion"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Action_Of_Other_Agent"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action_Of_Self_Agent"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actual_Consequence"/>
+        <Class IRI="#Consequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Admiration"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Approving"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsActionsOf"/>
+                <Class IRI="#Action_Of_Other_Agent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anger"/>
+        <Class IRI="#Distress"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anger"/>
+        <Class IRI="#Reproach"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Approving"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Positive_Emotion"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsActionsOf"/>
+                <Class IRI="#Action"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Black"/>
+        <Class IRI="#Color"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Black_Curved_Line"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Black"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasLines"/>
+                <Class IRI="#Curved_Line"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Black_Downward_Pointing_Triangle"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Black"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#Downward_Pointing_Triangle"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Black_Sharp_Line"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Black"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasLines"/>
+                <Class IRI="#Sharp_Line"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Black_Sharp_Lines_Doubled"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Black"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasLines"/>
+                <Class IRI="#Sharp_Lines_Doubled"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blue"/>
+        <Class IRI="#Color"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blue_Curved_Line"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Blue"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasLines"/>
+                <Class IRI="#Curved_Line"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blue_Downward_Pointing_Triangle"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Blue"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#Downward_Pointing_Triangle"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blue_Sharp_Line"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Blue"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasLines"/>
+                <Class IRI="#Sharp_Line"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blue_Sharp_Lines_Doubled"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Blue"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasLines"/>
+                <Class IRI="#Sharp_Lines_Doubled"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brown"/>
+        <Class IRI="#Color"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brown_Downward_Pointing_Triangle"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Brown"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#Downward_Pointing_Triangle"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brown_Sharp_Lines_Doubled"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Brown"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasLines"/>
+                <Class IRI="#Sharp_Lines_Doubled"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Circle"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Color"/>
+        <Class IRI="#Visualization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Composite_Visualization"/>
+        <Class IRI="#Visualization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Confirmed_Consequence"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Actual_Consequence"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#confirms"/>
+                <Class IRI="#Prospective_Consequence"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Confirmed_Desirable_Consequence"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Confirmed_Consequence"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#confirms"/>
+                <Class IRI="#Prospective_Desirable_Consequence"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Confirmed_Undesirable_Consequence"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Confirmed_Consequence"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#confirms"/>
+                <Class IRI="#Prospective_Undesirable_Consequence"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consequence_Desirable_For_Other"/>
+        <Class IRI="#Actual_Consequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consequence_Undesirable_For_Other"/>
+        <Class IRI="#Actual_Consequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Curved_Line"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Curved_Lines"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasNumberOfLines"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Curved_Lines"/>
+        <Class IRI="#Lines"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Curved_Lines_Doubled"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Curved_Lines"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasNumberOfLines"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disappointment"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Distress"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsConsequence"/>
+                <Class IRI="#Disconfirmed_Desirable_Consequence"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disapproving"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Negative_Emotion"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsActionsOf"/>
+                <Class IRI="#Action"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disconfirmed_Consequence"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Actual_Consequence"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#disconfirms"/>
+                <Class IRI="#Prospective_Consequence"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disconfirmed_Desirable_Consequence"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Disconfirmed_Consequence"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#disconfirms"/>
+                <Class IRI="#Prospective_Desirable_Consequence"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disconfirmed_Undesirable_Consequence"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Disconfirmed_Consequence"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#disconfirms"/>
+                <Class IRI="#Prospective_Undesirable_Consequence"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disgust"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Disliking"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsAspect"/>
+                <Class IRI="#Unfamiliar_Aspect"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disliking"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Negative_Emotion"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsAspect"/>
+                <Class IRI="#Aspect"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Displeased"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Negative_Emotion"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsConsequence"/>
+                <Class IRI="#Consequence"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Distress"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Displeased"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsConsequence"/>
+                <Class IRI="#Actual_Consequence"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Downward_Pointing_Triangle"/>
+        <Class IRI="#Triangle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Familiar_Aspect"/>
+        <Class IRI="#Aspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fear"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Displeased"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsConsequence"/>
+                <Class IRI="#Prospective_Consequence"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fears_Confirmed"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Distress"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsConsequence"/>
+                <Class IRI="#Confirmed_Undesirable_Consequence"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gloating"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Joy"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsConsequence"/>
+                <Class IRI="#Consequence_Undesirable_For_Other"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gratification"/>
+        <Class IRI="#Joy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gratification"/>
+        <Class IRI="#Pride"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gratitude"/>
+        <Class IRI="#Admiration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gratitude"/>
+        <Class IRI="#Joy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Green"/>
+        <Class IRI="#Color"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Green_Circle"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Green"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#Circle"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Green_Downward_Pointing_Triangle"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Green"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#Downward_Pointing_Triangle"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grey"/>
+        <Class IRI="#Color"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grey_Downward_Pointing_Triangle"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Grey"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#Downward_Pointing_Triangle"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grey_Sharp_Line"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Grey"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasLines"/>
+                <Class IRI="#Sharp_Line"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Happy_For"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Joy"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsConsequence"/>
+                <Class IRI="#Consequence_Desirable_For_Other"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hate"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Disliking"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsAspect"/>
+                <Class IRI="#Familiar_Aspect"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hope"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pleased"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsConsequence"/>
+                <Class IRI="#Prospective_Consequence"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interest"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Liking"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsAspect"/>
+                <Class IRI="#Unfamiliar_Aspect"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Joy"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pleased"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsConsequence"/>
+                <Class IRI="#Actual_Consequence"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Liking"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Positive_Emotion"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsAspect"/>
+                <Class IRI="#Aspect"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lines"/>
+        <Class IRI="#Visualization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Love"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Liking"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsAspect"/>
+                <Class IRI="#Familiar_Aspect"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Negative_Emotion"/>
+        <Class IRI="#Emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Orange"/>
+        <Class IRI="#Color"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Orange_Circle"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Orange"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#Circle"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Orange_Curved_Line"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Orange"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasLines"/>
+                <Class IRI="#Curved_Line"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Orange_Curved_Lines_Doubled"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Orange"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasLines"/>
+                <Class IRI="#Curved_Lines_Doubled"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pink"/>
+        <Class IRI="#Color"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pink_Circle"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Pink"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#Circle"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pink_Curved_Line"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Pink"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasLines"/>
+                <Class IRI="#Curved_Line"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pity"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Distress"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsConsequence"/>
+                <Class IRI="#Consequence_Undesirable_For_Other"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pleased"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Positive_Emotion"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsConsequence"/>
+                <Class IRI="#Consequence"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Positive_Emotion"/>
+        <Class IRI="#Emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pride"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Approving"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsActionsOf"/>
+                <Class IRI="#Action_Of_Self_Agent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prospective_Consequence"/>
+        <Class IRI="#Consequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prospective_Desirable_Consequence"/>
+        <Class IRI="#Prospective_Consequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prospective_Undesirable_Consequence"/>
+        <Class IRI="#Prospective_Consequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Purple"/>
+        <Class IRI="#Color"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Purple_Circle"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Purple"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#Circle"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Purple_Curved_Line"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Purple"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasLines"/>
+                <Class IRI="#Curved_Line"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Purple_Sharp_Line"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Purple"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasLines"/>
+                <Class IRI="#Sharp_Line"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Purple_Sharp_Lines_Doubled"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Purple"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasLines"/>
+                <Class IRI="#Sharp_Lines_Doubled"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Red"/>
+        <Class IRI="#Color"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Red_Circle"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Red"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#Circle"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Red_Curved_Line"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Red"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasLines"/>
+                <Class IRI="#Curved_Line"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Red_Downward_Pointing_Triangle"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Red"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#Downward_Pointing_Triangle"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Red_Sharp_Line"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Red"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasLines"/>
+                <Class IRI="#Sharp_Line"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Relief"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Joy"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsConsequence"/>
+                <Class IRI="#Disconfirmed_Undesirable_Consequence"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Remorse"/>
+        <Class IRI="#Distress"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Remorse"/>
+        <Class IRI="#Shame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reproach"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Disapproving"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsActionsOf"/>
+                <Class IRI="#Action_Of_Other_Agent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resentment"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Distress"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsConsequence"/>
+                <Class IRI="#Consequence_Desirable_For_Other"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Satisfaction"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Joy"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsConsequence"/>
+                <Class IRI="#Confirmed_Desirable_Consequence"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shame"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Disapproving"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsActionsOf"/>
+                <Class IRI="#Action_Of_Self_Agent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shape"/>
+        <Class IRI="#Visualization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sharp_Line"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Sharp_Lines"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasNumberOfLines"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sharp_Lines"/>
+        <Class IRI="#Lines"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sharp_Lines_Doubled"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Sharp_Lines"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasNumberOfLines"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Surprise"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Distress"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsConsequence"/>
+                <Class IRI="#Disconfirmed_Consequence"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Surprise"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Joy"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#concernsConsequence"/>
+                <Class IRI="#Disconfirmed_Consequence"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Triangle"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unfamiliar_Aspect"/>
+        <Class IRI="#Aspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Upward_Pointing_Triangle"/>
+        <Class IRI="#Triangle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#White"/>
+        <Class IRI="#Color"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#White_Circle"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#White"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#Circle"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yellow"/>
+        <Class IRI="#Color"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yellow_Circle"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Yellow"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#Circle"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yellow_Curved_Line"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Yellow"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasLines"/>
+                <Class IRI="#Curved_Line"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yellow_Upward_Pointing_Triangle"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Composite_Visualization"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Yellow"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#Upward_Pointing_Triangle"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Action"/>
+        <Class IRI="#Aspect"/>
+        <Class IRI="#Consequence"/>
+        <Class IRI="#Emotion"/>
+        <Class IRI="#Visualization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Downward_Pointing_Triangle"/>
+        <Class IRI="#Upward_Pointing_Triangle"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Pink_Circle"/>
+                <Class IRI="#Red_Curved_Line"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Admiration"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#admiration_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Black_Sharp_Lines_Doubled"/>
+                <Class IRI="#Red_Downward_Pointing_Triangle"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Anger"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#anger_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Blue_Sharp_Line"/>
+                <Class IRI="#Red_Downward_Pointing_Triangle"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Disappointment"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#disappointment_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Brown_Sharp_Lines_Doubled"/>
+                <Class IRI="#Green_Downward_Pointing_Triangle"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Disgust"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#disgust_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Blue_Downward_Pointing_Triangle"/>
+                <Class IRI="#Purple_Sharp_Lines_Doubled"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Distress"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#distress_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Black_Downward_Pointing_Triangle"/>
+                <Class IRI="#Purple_Sharp_Lines_Doubled"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Fear"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#fear_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Black_Downward_Pointing_Triangle"/>
+                <Class IRI="#Purple_Sharp_Line"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Fears_Confirmed"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#fears-confirmed_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Black_Curved_Line"/>
+                <Class IRI="#Purple_Circle"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Gloating"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#gloating_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Purple_Curved_Line"/>
+                <Class IRI="#Yellow_Circle"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Gratification"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#gratification_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Pink_Curved_Line"/>
+                <Class IRI="#Yellow_Circle"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Gratitude"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#gratitude_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Orange_Curved_Line"/>
+                <Class IRI="#Yellow_Circle"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Happy_For"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#happy-for_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Black_Downward_Pointing_Triangle"/>
+                <Class IRI="#Red_Sharp_Line"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Hate"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#hate_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#White_Circle"/>
+                <Class IRI="#Yellow_Curved_Line"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Hope"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#hope_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Orange_Circle"/>
+                <Class IRI="#Yellow_Curved_Line"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Interest"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#interest_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Orange_Curved_Lines_Doubled"/>
+                <Class IRI="#Yellow_Circle"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Joy"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#joy_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Pink_Curved_Line"/>
+                <Class IRI="#Red_Circle"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Love"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#love_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Blue_Sharp_Line"/>
+                <Class IRI="#Brown_Downward_Pointing_Triangle"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Pity"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#pity_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Purple_Circle"/>
+                <Class IRI="#Yellow_Curved_Line"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Pride"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#pride_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Blue_Curved_Line"/>
+                <Class IRI="#Green_Circle"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Relief"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#relief_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Blue_Downward_Pointing_Triangle"/>
+                <Class IRI="#Grey_Sharp_Line"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Remorse"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#remorse_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Black_Sharp_Line"/>
+                <Class IRI="#Green_Downward_Pointing_Triangle"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Reproach"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#reproach_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Black_Sharp_Line"/>
+                <Class IRI="#Blue_Downward_Pointing_Triangle"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Resentment"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#resentment_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Green_Circle"/>
+                <Class IRI="#Yellow_Curved_Line"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Satisfaction"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#satisfaction_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Blue_Curved_Line"/>
+                <Class IRI="#Grey_Downward_Pointing_Triangle"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Shame"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#shame_visualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Blue_Sharp_Lines_Doubled"/>
+                <Class IRI="#Yellow_Upward_Pointing_Triangle"/>
+            </ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+                <Class IRI="#Surprise"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#surprise_visualization"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#concernsActionsOf"/>
+        <Class IRI="#Emotion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#concernsAspect"/>
+        <Class IRI="#Emotion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#concernsConsequence"/>
+        <Class IRI="#Emotion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#confirms"/>
+        <Class IRI="#Actual_Consequence"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#disconfirms"/>
+        <Class IRI="#Actual_Consequence"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasColor"/>
+        <ObjectUnionOf>
+            <Class IRI="#Lines"/>
+            <Class IRI="#Shape"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCompositeVisualization"/>
+        <Class IRI="#Composite_Visualization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLines"/>
+        <Class IRI="#Composite_Visualization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasShape"/>
+        <Class IRI="#Composite_Visualization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+        <Class IRI="#Composite_Visualization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#concernsActionsOf"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#concernsAspect"/>
+        <Class IRI="#Aspect"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#concernsConsequence"/>
+        <Class IRI="#Consequence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#confirms"/>
+        <Class IRI="#Prospective_Consequence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#disconfirms"/>
+        <Class IRI="#Prospective_Consequence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasColor"/>
+        <Class IRI="#Color"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCompositeVisualization"/>
+        <Class IRI="#Composite_Visualization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLines"/>
+        <Class IRI="#Lines"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasShape"/>
+        <Class IRI="#Shape"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isEmotionallyLinkedTo"/>
+        <Class IRI="#Emotion"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#confirms"/>
+        <ObjectProperty IRI="#disconfirms"/>
+    </DisjointObjectProperties>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasNumberOfLines"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#has_an_image"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumberOfLines"/>
+        <Class IRI="#Lines"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_an_image"/>
+        <Class IRI="#Visualization"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNumberOfLines"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_an_image"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Action</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">something done or performed; act; deed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Action</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.dictionary.com/browse/action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Action_Of_Other_Agent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">something done or performed by another person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Action_Of_Self_Agent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">something done or performed by oneself</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Actual_Consequence</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">an effect, result, or outcome that did happen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Admiration</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">approving of someone else&apos;s action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Admiration</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">pink circle surrounded by curved red lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Admiration</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=14OMyADQ0sQ4VpW7_pKDBGg8OTle5JFUT4fg1xNekJ9w</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Anger</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">reproach about an action and distress about a related consequence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Anger</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">red triangle pointing down surrounded by double sharp black lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Anger</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=1COGqrwCvnrr70KY45CC84t0c77pRNgwjfDRLdnP71h4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Approving</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">being positive about an action (of an agent)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Aspect</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">nature; quality; character</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Aspect</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.dictionary.com/browse/aspect</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Consequence</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">the effect, result, or outcome of something occurring earlier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Consequence</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.dictionary.com/browse/consequence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Consequence_Desirable_For_Other</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a good effect, result, or outcome that did happen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Consequence_Undesirable_For_Other</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a bad effect, result, or outcome that did happen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Disappointment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">distress about the disconfirmation of a prospective desirable consequence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Disappointment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">red triangle pointing down surrounded by sharp blue lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Disappointment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=1B1MFhQxQkzKEBJeDdx7G5sxlXcugbiRzaUC4tmoQcZ0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Disapproving</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">being negative about an action (of an agent)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Disgust</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">disliking an unfamiliar aspect (of an object)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Disgust</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">green triangle pointing down surrounded by double sharp brown lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Disgust</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=1fHTHEwUv2VcmBhLbOooBdPllAhF1BkelqHhji1Q4VfA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Disliking</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">being negative about an aspect (of an object)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Displeased</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">being negative about a consequence (of an event)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Distress</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">being displeased about an actual consequence (of an event)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Distress</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">blue triangle pointing down surrounded by double sharp purple lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Distress</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=1FMOB3FRZ57jOzckqfKPMQPYH0Ku4GjrqUvLknZatDyo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Emotion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">an affective state of consciousness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Emotion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.dictionary.com/browse/emotion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Familiar_Aspect</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">characteristic of a well-known object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Fear</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">being displeased about a prospective consequence (of an event)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Fear</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">black triangle pointing down surrounded by double sharp purple lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Fear</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=16aRMCe6wQHnxtdE1X8i9yuLgIEVGgzDh8cu2agpfNSc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Fears_Confirmed</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">distress about the confirmation of a prospective undesirable consequence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Fears_Confirmed</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">black triangle pointing down surrounded by sharp purple lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Fears_Confirmed</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=1Kc2WsRZIbkjHQFR02guhe0q5OZJqUtnneftwCeC1sAU</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Gloating</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">joy about a consequence (of an event) presumed to be undesirable for someone else</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Gloating</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">purple circle surrounded by curved black lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Gloating</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=1AFRTmWHYvXB3YIxBh33ZVdEAVkCVgf9SFLvjZ-VivdI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Gratification</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">pride about an action and joy about a related consequence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Gratification</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">yellow circle surrounded by curved purple lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Gratification</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=1IxWn4kTWjO17kTiZshyVDMTCvfwjzlGgS8Gvi9n40G4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Gratitude</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Yellow circle surrounded by curved pink lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Gratitude</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=1Q18Qb_aVcRG5PxzajfIXdHhzBVIe4PjmJ-riFVXZf9Y</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Happy_For</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">joy about a consequence (of an event) presumed to be desirable for someone else</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Happy_For</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">yellow circle surrounded by curved orange lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Happy_For</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=1umUPYC1lmfX_0dcinA_L_BFqBP14LLDUZcuKVViFNA4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Hate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">disliking a familiar aspect (of an object)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Hate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">black triangle pointing down surrounded by sharp red lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Hate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=1oQq1xXqvQQmxf7nX9ngJcZWtHbGkY0K3sUJ9zj2w9JI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Hope</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">being pleased about a prospective consequence (of an event)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Hope</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">white circle surrounded by curved yellow lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Hope</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=1ZroClB5MXNcxZS8Blk_8Db6QJNKJPHWbyPZQxRmDm_k</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Interest</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">liking an unfamiliar aspect (of an object)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Interest</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">orange circle surrounded by curved yellow lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Interest</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=1fWji5_lGwPFAVNaRdU-1pQeTkZjh91QrZs8Z8TWe-vA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Joy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">being pleased about an actual consequence (of an event)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Joy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">yellow circle surrounded by double curved orange lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Joy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=1c0ybAzh2QXH8BsoZSiYNneQIaXiHkCHpEgnvPfXcaMo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Liking</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">being positive about an aspect (of an object)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Love</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">liking a familiar aspect (of an object)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Love</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">red circle surrounded by curved pink lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Love</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=15akfIdJzzv01u7KVCpSfrW2liX-r4mMLW-is57B-amA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Negative_Emotion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">valenced reaction (to &quot;something&quot;)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Pity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">distress about a consequence (of an event) presumed to be undesirable for someone else</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Pity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">brown triangle pointing down surrounded by sharp blue lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Pity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=1Iy4Is6iFTsP1EoetPOwI_0xKMzPH-hWGOFZE7EHTR_o</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Pleased</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">being positive about a consequence (of an event)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Positive_Emotion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">valenced reaction (to &quot;something&quot;)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Pride</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">approving of one&apos;s own action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Pride</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">purple circle surrounded by curved yellow lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Pride</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=1bFyJFV-VbNwlIAzaXI5Q6OvcPsOjpoUTXvwLL-tEANw</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Prospective_Consequence</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">an effect, result, or outcome that could happen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Prospective_Desirable_Consequence</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a good effect, result, or outcome that could happen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Prospective_Undesirable_Consequence</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a bad effect, result, or outcome that could happen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Relief</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">joy about the disconfirmation of a prospective undesirable consequence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Relief</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">green circle surrounded by curved blue lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Relief</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=1zXrDMfL6IqYz8CJ7paXa7601sARfCZWPRPjoINAbOl0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Remorse</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Blue triangle pointing down surrounded by sharp grey lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Remorse</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=1C4vWt3h1EKp2RQkMSD3FJi5nBJeetIwQXilO3CuM8_g</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Reproach</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">disapproving of someone else&apos;s action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Reproach</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">green triangle pointing down surrounded by sharp black lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Reproach</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=1BVNln9ST9TXKhu-Pyd1P-hhA_qgolrpHsJOU-tcFPck</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Resentment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">distress about a consequence (of an event) presumed to be desirable for someone else</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Resentment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">blue triangle pointing down surrounded by sharp black lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Resentment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=1NJ4IZwQSakkp5K5FsJrieHNueWwA__65srhL5SCUIvk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Satisfaction</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">joy about the confirmation of a prospective desirable consequence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Satisfaction</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">green circle surrounded by curved yellow lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Satisfaction</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=1eC79XtPUGO6kNku0DNdRi0aCKxVh72AsIgAJiYRh9N8</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Shame</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">disapproving of one&apos;s own action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Shame</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">grey triangle pointing down surrounded by sharp blue lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Shame</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=19sT-Kkavn-6Y4vCyOFprqzWjtZYC0T7C7rrBejMC8ZI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Surprise</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">joy or distress about the disconfirmation of a prospective consequence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Surprise</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">yellow triangle pointing up surrounded by double sharp blue lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>#Surprise</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://drive.google.com/open?id=169Smnp0Uqqcb3wzECXUejpWBqtbyr9-qdLmmD-nY1w0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Unfamiliar_Aspect</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">characteristic of a not well-known object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#concernsActionsOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">an emotion concerns the actions of an agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#concernsAspect</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">an emotion concerns the aspect of an object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#concernsConsequence</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">an emotion concerns the consequence of an event</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,371 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY PatientCharacteristics "http://www.ICPS/ontologies/PatientCharacteristics.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ICPS/ontologies/PatientCharacteristics.owl#"
+     xml:base="http://www.ICPS/ontologies/PatientCharacteristics.owl"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:PatientCharacteristics="http://www.ICPS/ontologies/PatientCharacteristics.owl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:Ontology rdf:about="">
+        <dc:creator
+            >Mari Carmen Su&#225;rez-Figueroa</dc:creator>
+        <dc:creator
+            >Elena Montiel-Ponsoda</dc:creator>
+        <owl:priorVersion>1.0</owl:priorVersion>
+        <owl:versionInfo>2.0</owl:versionInfo>
+        <dc:creator xml:lang="en">Mar&#237;a Poveda</dc:creator>
+        <rdfs:comment xml:lang="en"
+            >Ontology about patient characteristics.</rdfs:comment>
+        <dc:creator>Oscar Corcho</dc:creator>
+        <rdfs:comment xml:lang="en"
+            >This work has been carried out by the Ontological Engineering Group, using sources from the University of Saint Etienne and the Australian Patient Safety Foundation, and supported by the World Health Organisation under the International Classification for Patient Safety programme.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#AbnormalClinicalLaboratoryFindingNotElsewhereClassified -->
+
+    <owl:Class rdf:about="#AbnormalClinicalLaboratoryFindingNotElsewhereClassified">
+        <rdfs:label xml:lang="en"
+            >Abnormal clinical laboratory finding not elsewhere classified</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#Adnexa -->
+
+    <owl:Class rdf:about="#Adnexa">
+        <rdfs:label xml:lang="en">Adnexa</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#BehavioralDisorder -->
+
+    <owl:Class rdf:about="#BehavioralDisorder">
+        <rdfs:label xml:lang="en"
+            >Behavioral disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#CertainInfectious -->
+
+    <owl:Class rdf:about="#CertainInfectious">
+        <rdfs:label xml:lang="en"
+            >Certain infectious</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#ChildbirthCondition -->
+
+    <owl:Class rdf:about="#ChildbirthCondition">
+        <rdfs:label xml:lang="en"
+            >Childbirth condition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#ChromosomalAbnormality -->
+
+    <owl:Class rdf:about="#ChromosomalAbnormality">
+        <rdfs:label xml:lang="en"
+            >Chromosomal abnormality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#ConditionOriginatingInThePerinatalPeriod -->
+
+    <owl:Class rdf:about="#ConditionOriginatingInThePerinatalPeriod">
+        <rdfs:label xml:lang="en"
+            >Condition originating in the perinatal period</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#CongenitalMalformationDeformation -->
+
+    <owl:Class rdf:about="#CongenitalMalformationDeformation">
+        <rdfs:label xml:lang="en"
+            >Congenital malformation deformation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#DiseaseOfBlood -->
+
+    <owl:Class rdf:about="#DiseaseOfBlood">
+        <rdfs:label xml:lang="en"
+            >Blood Forming Organs</rdfs:label>
+        <rdfs:label xml:lang="en"
+            >Disease of blood</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#DiseaseOfTheCirculatorySystem -->
+
+    <owl:Class rdf:about="#DiseaseOfTheCirculatorySystem">
+        <rdfs:label xml:lang="en"
+            >Disease of the circulatory system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#DiseaseOfTheConnectiveTissue -->
+
+    <owl:Class rdf:about="#DiseaseOfTheConnectiveTissue">
+        <rdfs:label xml:lang="en"
+            >Disease of the connective tissue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#DiseaseOfTheDigestiveSystem -->
+
+    <owl:Class rdf:about="#DiseaseOfTheDigestiveSystem">
+        <rdfs:label xml:lang="en"
+            >Disease of the digestive system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#DiseaseOfTheGenitourinarySystem -->
+
+    <owl:Class rdf:about="#DiseaseOfTheGenitourinarySystem">
+        <rdfs:label xml:lang="en"
+            >Disease of the genitourinary system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#DiseaseOfTheMastoidProcess -->
+
+    <owl:Class rdf:about="#DiseaseOfTheMastoidProcess">
+        <rdfs:label xml:lang="en"
+            >Disease of the mastoid process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#DiseaseOfTheMusculoskeletalSystem -->
+
+    <owl:Class rdf:about="#DiseaseOfTheMusculoskeletalSystem">
+        <rdfs:label xml:lang="en"
+            >Disease of the musculoskeletal system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#DiseaseOfTheNervousSystem -->
+
+    <owl:Class rdf:about="#DiseaseOfTheNervousSystem">
+        <rdfs:label xml:lang="en"
+            >Disease of the nervous system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#DiseaseOfTheRespiratorySystem -->
+
+    <owl:Class rdf:about="#DiseaseOfTheRespiratorySystem">
+        <rdfs:label xml:lang="en"
+            >Disease of the respiratory system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#DiseaseOfTheSkin -->
+
+    <owl:Class rdf:about="#DiseaseOfTheSkin">
+        <rdfs:label xml:lang="en"
+            >Disease of the skin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#DiseaseOfTheSubcutaneousTissue -->
+
+    <owl:Class rdf:about="#DiseaseOfTheSubcutaneousTissue">
+        <rdfs:label xml:lang="en"
+            >Disease of the subcutaneous tissue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#DiseasesOfTheEar -->
+
+    <owl:Class rdf:about="#DiseasesOfTheEar">
+        <rdfs:label xml:lang="en"
+            >Disease of the ear</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#DiseasesOfTheEye -->
+
+    <owl:Class rdf:about="#DiseasesOfTheEye">
+        <rdfs:label xml:lang="en"
+            >Disease of the eye</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#DisorderInvolvingImmuneMechanisms -->
+
+    <owl:Class rdf:about="#DisorderInvolvingImmuneMechanisms">
+        <rdfs:label xml:lang="en"
+            >Disorders Involving Immune Mechanisms</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#EndocrineDisease -->
+
+    <owl:Class rdf:about="#EndocrineDisease">
+        <rdfs:label xml:lang="en"
+            >Endocrine disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#MentalDisorder -->
+
+    <owl:Class rdf:about="#MentalDisorder">
+        <rdfs:label xml:lang="en">Mental disordre</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#MetabolicDisease -->
+
+    <owl:Class rdf:about="#MetabolicDisease">
+        <rdfs:label xml:lang="en"
+            >Metabolic disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#Neoplasm -->
+
+    <owl:Class rdf:about="#Neoplasm">
+        <rdfs:label xml:lang="en">Neoplasm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#NutritionalDisease -->
+
+    <owl:Class rdf:about="#NutritionalDisease">
+        <rdfs:label xml:lang="en"
+            >Nutritional disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#ParasiticDisease -->
+
+    <owl:Class rdf:about="#ParasiticDisease">
+        <rdfs:label xml:lang="en"
+            >Parasitic disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#PeurperiumCondition -->
+
+    <owl:Class rdf:about="#PeurperiumCondition">
+        <rdfs:label xml:lang="en"
+            >Peurperium condition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#PregnancyCondition -->
+
+    <owl:Class rdf:about="#PregnancyCondition">
+        <rdfs:label xml:lang="en"
+            >Pregnancy condition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PrimaryDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#PrimaryDiagnosis -->
+
+    <owl:Class rdf:about="#PrimaryDiagnosis"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

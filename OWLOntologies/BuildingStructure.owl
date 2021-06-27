@@ -1,0 +1,507 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY ontologies "http://www.ICPS/ontologies/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY swrlx "http://www.w3.org/2003/11/swrlx#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY ruleml "http://www.w3.org/2003/11/ruleml#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owlx "http://www.w3.org/2003/05/owl-xml#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY kaon2 "http://kaon2.semanticweb.org/internal#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY BuildingStructure "http://www.ICPS/ontologies/BuildingStructure#" >
+    <!ENTITY ICPSMerged "http://www.apsf.net.au/ontologies/ICPSMerged.owl#" >
+]>
+
+
+<rdf:RDF xmlns="&ontologies;BuildingStructure#"
+     xml:base="&ontologies;BuildingStructure"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:BuildingStructure="&ontologies;BuildingStructure#"
+     xmlns:kaon2="http://kaon2.semanticweb.org/internal#"
+     xmlns:owlx="http://www.w3.org/2003/05/owl-xml#"
+     xmlns:ICPSMerged="http://www.apsf.net.au/ontologies/ICPSMerged.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:owl2="http://www.w3.org/2006/12/owl2#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrlx="http://www.w3.org/2003/11/swrlx#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ruleml="http://www.w3.org/2003/11/ruleml#"
+     xmlns:ontologies="http://www.ICPS/ontologies/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="">
+        <dc:creator>Oscar Corcho</dc:creator>
+        <dc:creator
+            >Mari Carmen Su&#225;rez-Figueroa</dc:creator>
+        <owl:priorVersion>1.0</owl:priorVersion>
+        <dc:creator
+            >Elena Montiel-Ponsoda</dc:creator>
+        <dc:creator>Mar&#237;a Poveda</dc:creator>
+        <owl:versionInfo>2.0</owl:versionInfo>
+        <rdfs:comment xml:lang="en"
+            >Ontology about building structures.</rdfs:comment>
+        <rdfs:comment xml:lang="en"
+            >This work has been carried out by the Ontological Engineering Group, using sources from the University of Saint Etienne and the Australian Patient Safety Foundation, and supported by the World Health Organisation under the International Classification for Patient Safety programme.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#hasFloorSurface -->
+
+    <owl:ObjectProperty rdf:about="#hasFloorSurface">
+        <rdfs:label xml:lang="en"
+            >has floor surface</rdfs:label>
+        <rdfs:range rdf:resource="#FloorSurface"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Balcony"/>
+                    <rdf:Description rdf:about="#Bridge"/>
+                    <rdf:Description rdf:about="#FlagPole"/>
+                    <rdf:Description rdf:about="#Floor"/>
+                    <rdf:Description rdf:about="#Ladder"/>
+                    <rdf:Description rdf:about="#Scaffolding"/>
+                    <rdf:Description rdf:about="#Stairs"/>
+                    <rdf:Description rdf:about="#Tower"/>
+                    <rdf:Description rdf:about="#Turret"/>
+                    <rdf:Description rdf:about="#Viaduct"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#Balcony -->
+
+    <owl:Class rdf:about="#Balcony">
+        <rdfs:label xml:lang="en">Balcony</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#BuildingStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#Bridge -->
+
+    <owl:Class rdf:about="#Bridge">
+        <rdfs:label xml:lang="en">Bridge</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#BuildingStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#BuildingStructure -->
+
+    <owl:Class rdf:about="#BuildingStructure">
+        <rdfs:label xml:lang="en"
+            >Building structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#FlagPole -->
+
+    <owl:Class rdf:about="#FlagPole">
+        <rdfs:label xml:lang="en">Flag pole</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#BuildingStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#Floor -->
+
+    <owl:Class rdf:about="#Floor">
+        <rdfs:label xml:lang="en">Floor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#BuildingStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#FloorSurface -->
+
+    <owl:Class rdf:about="#FloorSurface">
+        <rdfs:label xml:lang="en">Floor surface</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#Ladder -->
+
+    <owl:Class rdf:about="#Ladder">
+        <rdfs:label xml:lang="en">Ladder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#BuildingStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#Railing -->
+
+    <owl:Class rdf:about="#Railing">
+        <rdfs:label xml:lang="en">Railing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#BuildingStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#Roof -->
+
+    <owl:Class rdf:about="#Roof">
+        <rdfs:label xml:lang="en">Roof</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#BuildingStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#Scaffolding -->
+
+    <owl:Class rdf:about="#Scaffolding">
+        <rdfs:label xml:lang="en">Scaffolding</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#BuildingStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#Stairs -->
+
+    <owl:Class rdf:about="#Stairs">
+        <rdfs:label xml:lang="en">Stairs</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#BuildingStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#Tower -->
+
+    <owl:Class rdf:about="#Tower">
+        <rdfs:label xml:lang="en">Tower</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#BuildingStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#Turret -->
+
+    <owl:Class rdf:about="#Turret">
+        <rdfs:label xml:lang="en">Turret</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#BuildingStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#Viaduct -->
+
+    <owl:Class rdf:about="#Viaduct">
+        <rdfs:label xml:lang="en">Viaduct</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#BuildingStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#Wall -->
+
+    <owl:Class rdf:about="#Wall">
+        <rdfs:label xml:lang="en">Wall</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#BuildingStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#asphalt -->
+
+    <owl:Thing rdf:about="#asphalt">
+        <rdf:type rdf:resource="#FloorSurface"/>
+        <rdfs:label xml:lang="en">asphalt</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#balcony -->
+
+    <owl:Thing rdf:about="#balcony">
+        <rdfs:label xml:lang="en">balcony</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#bridge -->
+
+    <owl:Thing rdf:about="#bridge">
+        <rdfs:label xml:lang="en">bridge</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#carpet -->
+
+    <FloorSurface rdf:about="#carpet">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">carpet</rdfs:label>
+    </FloorSurface>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#cork -->
+
+    <FloorSurface rdf:about="#cork">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">cork</rdfs:label>
+    </FloorSurface>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#flagPole -->
+
+    <owl:Thing rdf:about="#flagPole">
+        <rdfs:label xml:lang="en">flag pole</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#floor -->
+
+    <owl:Thing rdf:about="#floor">
+        <rdfs:label xml:lang="en">floor</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#floorBoards -->
+
+    <FloorSurface rdf:about="#floorBoards">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">floor boards</rdfs:label>
+    </FloorSurface>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#grass -->
+
+    <owl:Thing rdf:about="#grass">
+        <rdf:type rdf:resource="#FloorSurface"/>
+        <rdfs:label xml:lang="en">grass</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#ladder -->
+
+    <owl:Thing rdf:about="#ladder">
+        <rdfs:label xml:lang="en">ladder</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#railing -->
+
+    <owl:Thing rdf:about="#railing">
+        <rdfs:label xml:lang="en">railing</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#roof -->
+
+    <owl:Thing rdf:about="#roof">
+        <rdfs:label xml:lang="en">roof</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#rubber -->
+
+    <FloorSurface rdf:about="#rubber">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">rubber</rdfs:label>
+    </FloorSurface>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#scaffolding -->
+
+    <owl:Thing rdf:about="#scaffolding">
+        <rdfs:label xml:lang="en">scaffolding</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#slate -->
+
+    <owl:Thing rdf:about="#slate">
+        <rdf:type rdf:resource="#FloorSurface"/>
+        <rdfs:label xml:lang="en">slate</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#stairs -->
+
+    <owl:Thing rdf:about="#stairs">
+        <rdfs:label xml:lang="en">stairs</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#terrazo -->
+
+    <owl:Thing rdf:about="#terrazo">
+        <rdf:type rdf:resource="#FloorSurface"/>
+        <rdfs:label xml:lang="en">terrazo</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#tiles -->
+
+    <owl:Thing rdf:about="#tiles">
+        <rdf:type rdf:resource="#FloorSurface"/>
+        <rdfs:label xml:lang="en">tiles</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#tower -->
+
+    <owl:Thing rdf:about="#tower">
+        <rdfs:label xml:lang="en">tower</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#turret -->
+
+    <owl:Thing rdf:about="#turret">
+        <rdfs:label xml:lang="en">turret</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#viaduct -->
+
+    <owl:Thing rdf:about="#viaduct">
+        <rdfs:label xml:lang="en">viaduct</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#vinyl -->
+
+    <FloorSurface rdf:about="#vinyl">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">vinyl</rdfs:label>
+    </FloorSurface>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#wall -->
+
+    <owl:Thing rdf:about="#wall">
+        <rdfs:label xml:lang="en">wall</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="#wall"/>
+            <rdf:Description rdf:about="#floor"/>
+            <rdf:Description rdf:about="#tiles"/>
+            <rdf:Description rdf:about="#stairs"/>
+            <rdf:Description rdf:about="#scaffolding"/>
+            <rdf:Description rdf:about="#balcony"/>
+            <rdf:Description rdf:about="#flagPole"/>
+            <rdf:Description rdf:about="#roof"/>
+            <rdf:Description rdf:about="#asphalt"/>
+            <rdf:Description rdf:about="#tower"/>
+            <rdf:Description rdf:about="#railing"/>
+            <rdf:Description rdf:about="#cork"/>
+            <rdf:Description rdf:about="#grass"/>
+            <rdf:Description rdf:about="#floorBoards"/>
+            <rdf:Description rdf:about="#carpet"/>
+            <rdf:Description rdf:about="#turret"/>
+            <rdf:Description rdf:about="#viaduct"/>
+            <rdf:Description rdf:about="#terrazo"/>
+            <rdf:Description rdf:about="#ladder"/>
+            <rdf:Description rdf:about="#bridge"/>
+            <rdf:Description rdf:about="#vinyl"/>
+            <rdf:Description rdf:about="#rubber"/>
+            <rdf:Description rdf:about="#slate"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

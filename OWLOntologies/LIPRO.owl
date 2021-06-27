@@ -1,0 +1,1927 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rss "http://purl.org/rss/1.0/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY resource "http://semanticscience.org/resource/" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY lipro "http://semanticscience.org/sadi/ontology/leo.owl#" >
+    <!ENTITY lipro2 "http://www.lipidprofiles.com/LipidOntology/lipro.owl#" >
+    <!ENTITY lipid-maps-ontology "http://unbsj.biordf.net/lipids/lipid-maps-ontology.owl#" >
+    <!ENTITY lipid_subclass_union "http://unbsj.biordf.net/lipids/lipid_subclass_union.owl#" >
+    <!ENTITY organic_group_subclass_union "http://unbsj.biordf.net/lipids/organic_group_subclass_union.owl#" >
+    <!ENTITY lipid-classification-service-ontology "http://unbsj.biordf.net/lipids/lipid-classification-service-ontology.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://unbsj.biordf.net/lipids/lipid-classification-service-ontology.owl#"
+     xml:base="http://unbsj.biordf.net/lipids/lipid-classification-service-ontology.owl"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:resource="http://semanticscience.org/resource/"
+     xmlns:lipid-maps-ontology="http://unbsj.biordf.net/lipids/lipid-maps-ontology.owl#"
+     xmlns:lipro2="http://www.lipidprofiles.com/LipidOntology/lipro.owl#"
+     xmlns:lipid_subclass_union="http://unbsj.biordf.net/lipids/lipid_subclass_union.owl#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:lipid-classification-service-ontology="http://unbsj.biordf.net/lipids/lipid-classification-service-ontology.owl#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:lipro="http://semanticscience.org/sadi/ontology/leo.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rss="http://purl.org/rss/1.0/"
+     xmlns:organic_group_subclass_union="http://unbsj.biordf.net/lipids/organic_group_subclass_union.owl#">
+    <owl:Ontology rdf:about="http://unbsj.biordf.net/lipids/lipid-classification-service-ontology.owl">
+<!--
+        <owl:imports rdf:resource="http://semanticscience.org/ontology/cheminf.owl"/>
+        <owl:imports rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+-->
+     <owl:imports rdf:resource="http://unbsj.biordf.net/lipids/lipid-maps-ontology.owl"/>
+     <owl:imports rdf:resource="http://unbsj.biordf.net/lipids/organic_group_subclass_union.owl"/>
+        <owl:imports rdf:resource="http://semanticscience.org/sadi/ontology/leo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="&obo;IAO_0000136">
+        <owl:equivalentProperty rdf:resource="&foaf;topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/rss/1.0/link -->
+
+    <owl:ObjectProperty rdf:about="&rss;link">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000008 -->
+
+    <owl:ObjectProperty rdf:about="&resource;SIO_000008"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000053 -->
+
+    <owl:ObjectProperty rdf:about="&resource;SIO_000053">
+        <owl:equivalentProperty rdf:resource="&lipro;hasProperPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#hasProperPart -->
+
+    <owl:ObjectProperty rdf:about="&lipro;hasProperPart"/>
+    
+
+
+    <!-- http://unbsj.biordf.net/lipids/lipid-classification-service-ontology.owl#LiProClassContainsLipid -->
+
+    <owl:ObjectProperty rdf:about="&lipid-classification-service-ontology;LiProClassContainsLipid">
+        <rdfs:label>LiPro class contains lipid</rdfs:label>
+        <owl:inverseOf rdf:resource="&lipid-classification-service-ontology;lipidHasLiProClass"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://unbsj.biordf.net/lipids/lipid-classification-service-ontology.owl#lipidHasLiProClass -->
+
+    <owl:ObjectProperty rdf:about="&lipid-classification-service-ontology;lipidHasLiProClass">
+        <rdfs:label>lipid has LiPro class</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://unbsj.biordf.net/lipids/lipid-maps-ontology.owl#lipidHasLMClass -->
+
+    <owl:ObjectProperty rdf:about="&lipid-maps-ontology;lipidHasLMClass"/>
+    
+
+
+    <!-- http://www.lipidprofiles.com/LipidOntology/lipro.owl#hasProperPart -->
+
+    <owl:ObjectProperty rdf:about="&lipro2;hasProperPart"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:ObjectProperty rdf:about="&rdf;value">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/topic -->
+
+    <owl:ObjectProperty rdf:about="&foaf;topic">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/rss/1.0/link -->
+
+    <owl:DatatypeProperty rdf:about="&rss;link"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:DatatypeProperty rdf:about="&rdf;value"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://semanticscience.org/resource/CHEMINF_000068 -->
+
+    <owl:Class rdf:about="&resource;CHEMINF_000068"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000148 -->
+
+    <owl:Class rdf:about="&resource;SIO_000148">
+        <owl:equivalentClass rdf:resource="&foaf;Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Acyl_Chain -->
+
+    <owl:Class rdf:about="&lipro;Acyl_Chain"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Acyl_Ester_Chain -->
+
+    <owl:Class rdf:about="&lipro;Acyl_Ester_Chain"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Acyl_Estolide_Chain -->
+
+    <owl:Class rdf:about="&lipro;Acyl_Estolide_Chain"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Alcohol -->
+
+    <owl:Class rdf:about="&lipro;Alcohol"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Aldehyde -->
+
+    <owl:Class rdf:about="&lipro;Aldehyde"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Alicyclic_Carbon_Group -->
+
+    <owl:Class rdf:about="&lipro;Alicyclic_Carbon_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Aliphatic_Carbon_Group -->
+
+    <owl:Class rdf:about="&lipro;Aliphatic_Carbon_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Alkenyl_Group -->
+
+    <owl:Class rdf:about="&lipro;Alkenyl_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Alkyl_Chain -->
+
+    <owl:Class rdf:about="&lipro;Alkyl_Chain"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Alkyl_Chain_Derivative -->
+
+    <owl:Class rdf:about="&lipro;Alkyl_Chain_Derivative"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Alkyl_Ether_Chain -->
+
+    <owl:Class rdf:about="&lipro;Alkyl_Ether_Chain"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Alkyl_Group -->
+
+    <owl:Class rdf:about="&lipro;Alkyl_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Alkyl_Halide_Group -->
+
+    <owl:Class rdf:about="&lipro;Alkyl_Halide_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Alkynyl_Group -->
+
+    <owl:Class rdf:about="&lipro;Alkynyl_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Allyl_Ether_Chain -->
+
+    <owl:Class rdf:about="&lipro;Allyl_Ether_Chain"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Alpha-Hydroxy_Acid_Group -->
+
+    <owl:Class rdf:about="&lipro;Alpha-Hydroxy_Acid_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Amine_Group -->
+
+    <owl:Class rdf:about="&lipro;Amine_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Amino_Acid -->
+
+    <owl:Class rdf:about="&lipro;Amino_Acid"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Androstane -->
+
+    <owl:Class rdf:about="&lipro;Androstane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Aromatic_Carbon_Group -->
+
+    <owl:Class rdf:about="&lipro;Aromatic_Carbon_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Arthro_series -->
+
+    <owl:Class rdf:about="&lipro;Arthro_series"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Bicyclic_5_membered_Heterocyclic_Group -->
+
+    <owl:Class rdf:about="&lipro;Bicyclic_5_membered_Heterocyclic_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Bicyclic_6_membered_Heterocyclic_Group -->
+
+    <owl:Class rdf:about="&lipro;Bicyclic_6_membered_Heterocyclic_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Bicyclic_Heterocycle_System -->
+
+    <owl:Class rdf:about="&lipro;Bicyclic_Heterocycle_System"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Bicyclic_Terpenoid -->
+
+    <owl:Class rdf:about="&lipro;Bicyclic_Terpenoid"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Bicyclic_Tetrahydropyran-Oxetane_Group -->
+
+    <owl:Class rdf:about="&lipro;Bicyclic_Tetrahydropyran-Oxetane_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Bufanolide -->
+
+    <owl:Class rdf:about="&lipro;Bufanolide"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Butyl_Derivative -->
+
+    <owl:Class rdf:about="&lipro;Butyl_Derivative"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Campestane -->
+
+    <owl:Class rdf:about="&lipro;Campestane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Campestane_fissile_variant -->
+
+    <owl:Class rdf:about="&lipro;Campestane_fissile_variant"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Campestano-lactone -->
+
+    <owl:Class rdf:about="&lipro;Campestano-lactone"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Carbon_Chain_Group -->
+
+    <owl:Class rdf:about="&lipro;Carbon_Chain_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Carbon_Group -->
+
+    <owl:Class rdf:about="&lipro;Carbon_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Carbonyl_Compound_Group -->
+
+    <owl:Class rdf:about="&lipro;Carbonyl_Compound_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Carboxylic_Acid -->
+
+    <owl:Class rdf:about="&lipro;Carboxylic_Acid"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Carboxylic_Acid-ACP -->
+
+    <owl:Class rdf:about="&lipro;Carboxylic_Acid-ACP"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Carboxylic_Acid-Adenosine_Monophosphate -->
+
+    <owl:Class rdf:about="&lipro;Carboxylic_Acid-Adenosine_Monophosphate"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Carboxylic_Acid-Carnitine -->
+
+    <owl:Class rdf:about="&lipro;Carboxylic_Acid-Carnitine"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Carboxylic_Acid-CoA -->
+
+    <owl:Class rdf:about="&lipro;Carboxylic_Acid-CoA"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Carboxylic_Acid_Amide_Group -->
+
+    <owl:Class rdf:about="&lipro;Carboxylic_Acid_Amide_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Carboxylic_Acid_Ester -->
+
+    <owl:Class rdf:about="&lipro;Carboxylic_Acid_Ester"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Carboxylic_Acid_Ester_Group -->
+
+    <owl:Class rdf:about="&lipro;Carboxylic_Acid_Ester_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Carboxylic_Acid_Ethanolamine -->
+
+    <owl:Class rdf:about="&lipro;Carboxylic_Acid_Ethanolamine"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Carboxylic_Acid_Homoserine_Lactone -->
+
+    <owl:Class rdf:about="&lipro;Carboxylic_Acid_Homoserine_Lactone"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Carboxylic_Acid_Primary_Amide -->
+
+    <owl:Class rdf:about="&lipro;Carboxylic_Acid_Primary_Amide"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Carboxylic_Acid_Secondary_Amide -->
+
+    <owl:Class rdf:about="&lipro;Carboxylic_Acid_Secondary_Amide"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Carboxylic_Acid_derivative_Group -->
+
+    <owl:Class rdf:about="&lipro;Carboxylic_Acid_derivative_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Cardanolide -->
+
+    <owl:Class rdf:about="&lipro;Cardanolide"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Chain_Group -->
+
+    <owl:Class rdf:about="&lipro;Chain_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Charged_Glycan_series -->
+
+    <owl:Class rdf:about="&lipro;Charged_Glycan_series"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Cholane -->
+
+    <owl:Class rdf:about="&lipro;Cholane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Cholane_fissile_variant -->
+
+    <owl:Class rdf:about="&lipro;Cholane_fissile_variant"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Cholestane -->
+
+    <owl:Class rdf:about="&lipro;Cholestane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Cholestane_fissile_variant -->
+
+    <owl:Class rdf:about="&lipro;Cholestane_fissile_variant"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Complex_Organic_Group -->
+
+    <owl:Class rdf:about="&lipro;Complex_Organic_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Cyclic_Ether_Group -->
+
+    <owl:Class rdf:about="&lipro;Cyclic_Ether_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Cyclo-lanostane -->
+
+    <owl:Class rdf:about="&lipro;Cyclo-lanostane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Cyclo-stigmastane -->
+
+    <owl:Class rdf:about="&lipro;Cyclo-stigmastane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Cycloalkane_Group -->
+
+    <owl:Class rdf:about="&lipro;Cycloalkane_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Cycloalkene_Group -->
+
+    <owl:Class rdf:about="&lipro;Cycloalkene_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Cyclobutane -->
+
+    <owl:Class rdf:about="&lipro;Cyclobutane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Cyclopenta-a-Phenanthrene_Ring -->
+
+    <owl:Class rdf:about="&lipro;Cyclopenta-a-Phenanthrene_Ring"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Cyclopenta-a-Phenanthrene_Ring_System -->
+
+    <owl:Class rdf:about="&lipro;Cyclopenta-a-Phenanthrene_Ring_System"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Cyclopenta-a-Phenanthrene_fissile_variant -->
+
+    <owl:Class rdf:about="&lipro;Cyclopenta-a-Phenanthrene_fissile_variant"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Cyclopentane_Group -->
+
+    <owl:Class rdf:about="&lipro;Cyclopentane_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Cyclopentanone -->
+
+    <owl:Class rdf:about="&lipro;Cyclopentanone"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Cyclopentenone -->
+
+    <owl:Class rdf:about="&lipro;Cyclopentenone"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Cyclopropane -->
+
+    <owl:Class rdf:about="&lipro;Cyclopropane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Cyclopropanoyl-Iso-Octyl -->
+
+    <owl:Class rdf:about="&lipro;Cyclopropanoyl-Iso-Octyl"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Cyclopropene -->
+
+    <owl:Class rdf:about="&lipro;Cyclopropene"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Cytidine_Diphosphate_Glycerol -->
+
+    <owl:Class rdf:about="&lipro;Cytidine_Diphosphate_Glycerol"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Cytidine_Phosphate_Glycerol_Group -->
+
+    <owl:Class rdf:about="&lipro;Cytidine_Phosphate_Glycerol_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Decanoyl_Derivative -->
+
+    <owl:Class rdf:about="&lipro;Decanoyl_Derivative"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Dehydrophytosphingosine_Chain -->
+
+    <owl:Class rdf:about="&lipro;Dehydrophytosphingosine_Chain"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Di-hydroxy_Cyclopentane -->
+
+    <owl:Class rdf:about="&lipro;Di-hydroxy_Cyclopentane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Dimeric_Glycan_Group -->
+
+    <owl:Class rdf:about="&lipro;Dimeric_Glycan_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Epoxy -->
+
+    <owl:Class rdf:about="&lipro;Epoxy"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Ergocalciferol -->
+
+    <owl:Class rdf:about="&lipro;Ergocalciferol"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Ergostane -->
+
+    <owl:Class rdf:about="&lipro;Ergostane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Ergostane_fissile_variant -->
+
+    <owl:Class rdf:about="&lipro;Ergostane_fissile_variant"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Estrane -->
+
+    <owl:Class rdf:about="&lipro;Estrane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Ether -->
+
+    <owl:Class rdf:about="&lipro;Ether"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Ethyl -->
+
+    <owl:Class rdf:about="&lipro;Ethyl"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Ethyl-Iso-Octyl -->
+
+    <owl:Class rdf:about="&lipro;Ethyl-Iso-Octyl"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Furospirostane -->
+
+    <owl:Class rdf:about="&lipro;Furospirostane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Furostane -->
+
+    <owl:Class rdf:about="&lipro;Furostane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Galactose -->
+
+    <owl:Class rdf:about="&lipro;Galactose"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Ganglio_series -->
+
+    <owl:Class rdf:about="&lipro;Ganglio_series"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Ganglioside_series -->
+
+    <owl:Class rdf:about="&lipro;Ganglioside_series"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Globo_series -->
+
+    <owl:Class rdf:about="&lipro;Globo_series"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glucose -->
+
+    <owl:Class rdf:about="&lipro;Glucose"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glucuronic_acid -->
+
+    <owl:Class rdf:about="&lipro;Glucuronic_acid"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycan_Group -->
+
+    <owl:Class rdf:about="&lipro;Glycan_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycan_series -->
+
+    <owl:Class rdf:about="&lipro;Glycan_series"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycerol -->
+
+    <owl:Class rdf:about="&lipro;Glycerol"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycerol-nonitol -->
+
+    <owl:Class rdf:about="&lipro;Glycerol-nonitol"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycerol_derivative_Group -->
+
+    <owl:Class rdf:about="&lipro;Glycerol_derivative_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycerolglycan -->
+
+    <owl:Class rdf:about="&lipro;Glycerolglycan"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycerophosphate_Group -->
+
+    <owl:Class rdf:about="&lipro;Glycerophosphate_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycerophosphatidic_acid -->
+
+    <owl:Class rdf:about="&lipro;Glycerophosphatidic_acid"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycerophosphatidylcholine -->
+
+    <owl:Class rdf:about="&lipro;Glycerophosphatidylcholine"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycerophosphatidylethanolamine -->
+
+    <owl:Class rdf:about="&lipro;Glycerophosphatidylethanolamine"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycerophosphatidylinositol -->
+
+    <owl:Class rdf:about="&lipro;Glycerophosphatidylinositol"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycerophosphatidylinositol_Diphosphates -->
+
+    <owl:Class rdf:about="&lipro;Glycerophosphatidylinositol_Diphosphates"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycerophosphatidylinositol_Glycans -->
+
+    <owl:Class rdf:about="&lipro;Glycerophosphatidylinositol_Glycans"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycerophosphatidylinositol_Group -->
+
+    <owl:Class rdf:about="&lipro;Glycerophosphatidylinositol_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycerophosphatidylinositol_Monophosphate -->
+
+    <owl:Class rdf:about="&lipro;Glycerophosphatidylinositol_Monophosphate"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycerophosphatidylinositol_Triphosphates -->
+
+    <owl:Class rdf:about="&lipro;Glycerophosphatidylinositol_Triphosphates"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycerophosphatidylserine -->
+
+    <owl:Class rdf:about="&lipro;Glycerophosphatidylserine"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycerophosphoglycerol_Group -->
+
+    <owl:Class rdf:about="&lipro;Glycerophosphoglycerol_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycerophosphono_Group -->
+
+    <owl:Class rdf:about="&lipro;Glycerophosphono_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycerophosphonotidylcholine -->
+
+    <owl:Class rdf:about="&lipro;Glycerophosphonotidylcholine"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycerophosphonotidylethanolamine -->
+
+    <owl:Class rdf:about="&lipro;Glycerophosphonotidylethanolamine"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycerophosphotidylglycerol -->
+
+    <owl:Class rdf:about="&lipro;Glycerophosphotidylglycerol"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycerophosphotidylglycerophosphate -->
+
+    <owl:Class rdf:about="&lipro;Glycerophosphotidylglycerophosphate"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycerophosphotidylglycerophosphoglycerol -->
+
+    <owl:Class rdf:about="&lipro;Glycerophosphotidylglycerophosphoglycerol"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glyceropyrophosphatidic_acid -->
+
+    <owl:Class rdf:about="&lipro;Glyceropyrophosphatidic_acid"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycine -->
+
+    <owl:Class rdf:about="&lipro;Glycine"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Glycosylglycerophosphate_Group -->
+
+    <owl:Class rdf:about="&lipro;Glycosylglycerophosphate_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Gonane -->
+
+    <owl:Class rdf:about="&lipro;Gonane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Gorgostane -->
+
+    <owl:Class rdf:about="&lipro;Gorgostane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Halogenated_Hydroxy_Cyclopentenone -->
+
+    <owl:Class rdf:about="&lipro;Halogenated_Hydroxy_Cyclopentenone"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Hepthyl_Derivative -->
+
+    <owl:Class rdf:about="&lipro;Hepthyl_Derivative"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Heptyl -->
+
+    <owl:Class rdf:about="&lipro;Heptyl"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Heterocyclic_Group -->
+
+    <owl:Class rdf:about="&lipro;Heterocyclic_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Heterocyclic_Ring_System -->
+
+    <owl:Class rdf:about="&lipro;Heterocyclic_Ring_System"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Hexanoyl_Derivative -->
+
+    <owl:Class rdf:about="&lipro;Hexanoyl_Derivative"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Hexyl -->
+
+    <owl:Class rdf:about="&lipro;Hexyl"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Hopanoid_ring_system -->
+
+    <owl:Class rdf:about="&lipro;Hopanoid_ring_system"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Hydroperoxide -->
+
+    <owl:Class rdf:about="&lipro;Hydroperoxide"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Hydroxy_Compound -->
+
+    <owl:Class rdf:about="&lipro;Hydroxy_Compound"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Hydroxy_Cyclopentane_Group -->
+
+    <owl:Class rdf:about="&lipro;Hydroxy_Cyclopentane_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Hydroxy_Cyclopentanone -->
+
+    <owl:Class rdf:about="&lipro;Hydroxy_Cyclopentanone"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Iso-Octyl_Derivative -->
+
+    <owl:Class rdf:about="&lipro;Iso-Octyl_Derivative"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Iso-Penthyl_Derivative -->
+
+    <owl:Class rdf:about="&lipro;Iso-Penthyl_Derivative"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Iso-Propyl_Derivative -->
+
+    <owl:Class rdf:about="&lipro;Iso-Propyl_Derivative"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Isoglobo_series -->
+
+    <owl:Class rdf:about="&lipro;Isoglobo_series"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Isoprene_Chain -->
+
+    <owl:Class rdf:about="&lipro;Isoprene_Chain"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Isoprene_Chain_derivative -->
+
+    <owl:Class rdf:about="&lipro;Isoprene_Chain_derivative"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Isoprenoid_derivative -->
+
+    <owl:Class rdf:about="&lipro;Isoprenoid_derivative"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Isoprenoid_ring_derivative -->
+
+    <owl:Class rdf:about="&lipro;Isoprenoid_ring_derivative"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Ketone -->
+
+    <owl:Class rdf:about="&lipro;Ketone"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Lacto_series -->
+
+    <owl:Class rdf:about="&lipro;Lacto_series"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Lactone_Group -->
+
+    <owl:Class rdf:about="&lipro;Lactone_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Lactose -->
+
+    <owl:Class rdf:about="&lipro;Lactose"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Lipid -->
+
+    <owl:Class rdf:about="&lipro;Lipid">
+        <owl:equivalentClass rdf:resource="&lipid-maps-ontology;Lipid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Menaquinone_ring -->
+
+    <owl:Class rdf:about="&lipro;Menaquinone_ring"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Meromycolic_Chain -->
+
+    <owl:Class rdf:about="&lipro;Meromycolic_Chain"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Methoxy_Group -->
+
+    <owl:Class rdf:about="&lipro;Methoxy_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Methyl -->
+
+    <owl:Class rdf:about="&lipro;Methyl"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Methyl-Iso-Octyl -->
+
+    <owl:Class rdf:about="&lipro;Methyl-Iso-Octyl"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Methyl_Derivative -->
+
+    <owl:Class rdf:about="&lipro;Methyl_Derivative"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Mollu_series -->
+
+    <owl:Class rdf:about="&lipro;Mollu_series"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Monocyclic_Ring_Group -->
+
+    <owl:Class rdf:about="&lipro;Monocyclic_Ring_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Monocyclic_Terpenoid -->
+
+    <owl:Class rdf:about="&lipro;Monocyclic_Terpenoid"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Monomeric_Glycan_Group -->
+
+    <owl:Class rdf:about="&lipro;Monomeric_Glycan_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Neo-lacto_series -->
+
+    <owl:Class rdf:about="&lipro;Neo-lacto_series"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Neutral_Glycan_series -->
+
+    <owl:Class rdf:about="&lipro;Neutral_Glycan_series"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Nitrile_Group -->
+
+    <owl:Class rdf:about="&lipro;Nitrile_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Nitro_Group -->
+
+    <owl:Class rdf:about="&lipro;Nitro_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Nucleoside -->
+
+    <owl:Class rdf:about="&lipro;Nucleoside"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Octyl_Derivative -->
+
+    <owl:Class rdf:about="&lipro;Octyl_Derivative"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Organic_Group -->
+
+    <owl:Class rdf:about="&lipro;Organic_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Organic_Nitrogen_Group -->
+
+    <owl:Class rdf:about="&lipro;Organic_Nitrogen_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Organic_Phosphate_Group -->
+
+    <owl:Class rdf:about="&lipro;Organic_Phosphate_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Organic_Sugar_Group -->
+
+    <owl:Class rdf:about="&lipro;Organic_Sugar_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Organic_Sulfur_Group -->
+
+    <owl:Class rdf:about="&lipro;Organic_Sulfur_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Penthyl -->
+
+    <owl:Class rdf:about="&lipro;Penthyl"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Penthyl_Derivative -->
+
+    <owl:Class rdf:about="&lipro;Penthyl_Derivative"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Pentose -->
+
+    <owl:Class rdf:about="&lipro;Pentose"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Peroxide -->
+
+    <owl:Class rdf:about="&lipro;Peroxide"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Phosphate_Group -->
+
+    <owl:Class rdf:about="&lipro;Phosphate_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Phospho_Group -->
+
+    <owl:Class rdf:about="&lipro;Phospho_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Phosphocholine -->
+
+    <owl:Class rdf:about="&lipro;Phosphocholine"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Phosphoethanolamine -->
+
+    <owl:Class rdf:about="&lipro;Phosphoethanolamine"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Phosphoinositol -->
+
+    <owl:Class rdf:about="&lipro;Phosphoinositol"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Phosphonic_Acid -->
+
+    <owl:Class rdf:about="&lipro;Phosphonic_Acid"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Phosphonic_Acid_Diester -->
+
+    <owl:Class rdf:about="&lipro;Phosphonic_Acid_Diester"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Phosphono_Group -->
+
+    <owl:Class rdf:about="&lipro;Phosphono_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Phosphonocholine -->
+
+    <owl:Class rdf:about="&lipro;Phosphonocholine"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Phosphonoethanolamine -->
+
+    <owl:Class rdf:about="&lipro;Phosphonoethanolamine"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Phosphoric_Acid -->
+
+    <owl:Class rdf:about="&lipro;Phosphoric_Acid"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Phosphoric_Acid_Diester -->
+
+    <owl:Class rdf:about="&lipro;Phosphoric_Acid_Diester"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Phytyl -->
+
+    <owl:Class rdf:about="&lipro;Phytyl"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Phytylmenaquinone_ring -->
+
+    <owl:Class rdf:about="&lipro;Phytylmenaquinone_ring"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Polycyclic_Ring_System -->
+
+    <owl:Class rdf:about="&lipro;Polycyclic_Ring_System"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Polycyclic_Terpenoid -->
+
+    <owl:Class rdf:about="&lipro;Polycyclic_Terpenoid"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Poriferastane -->
+
+    <owl:Class rdf:about="&lipro;Poriferastane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Poriferastane_fissile_variant -->
+
+    <owl:Class rdf:about="&lipro;Poriferastane_fissile_variant"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Pregnane -->
+
+    <owl:Class rdf:about="&lipro;Pregnane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Pregnane_fissile_variant -->
+
+    <owl:Class rdf:about="&lipro;Pregnane_fissile_variant"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Prenyl -->
+
+    <owl:Class rdf:about="&lipro;Prenyl"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Prenylmenaquinone_ring -->
+
+    <owl:Class rdf:about="&lipro;Prenylmenaquinone_ring"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Primary_Acyl_Chain -->
+
+    <owl:Class rdf:about="&lipro;Primary_Acyl_Chain"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Primary_Amine -->
+
+    <owl:Class rdf:about="&lipro;Primary_Amine"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Primary_Iso-Octyl -->
+
+    <owl:Class rdf:about="&lipro;Primary_Iso-Octyl"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Primary_Iso-Propyl -->
+
+    <owl:Class rdf:about="&lipro;Primary_Iso-Propyl"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Propyl -->
+
+    <owl:Class rdf:about="&lipro;Propyl"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Propyl-Iso-Octyl -->
+
+    <owl:Class rdf:about="&lipro;Propyl-Iso-Octyl"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Propyl_Derivative -->
+
+    <owl:Class rdf:about="&lipro;Propyl_Derivative"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Quarternary_Ammonium_Salt -->
+
+    <owl:Class rdf:about="&lipro;Quarternary_Ammonium_Salt"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Quinone_ring_system -->
+
+    <owl:Class rdf:about="&lipro;Quinone_ring_system"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Ring_System -->
+
+    <owl:Class rdf:about="&lipro;Ring_System"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Seco-Campestatriene -->
+
+    <owl:Class rdf:about="&lipro;Seco-Campestatriene"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Seco-Choladiene -->
+
+    <owl:Class rdf:about="&lipro;Seco-Choladiene"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Seco-Cholatriene -->
+
+    <owl:Class rdf:about="&lipro;Seco-Cholatriene"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Seco-Cholestapentaene -->
+
+    <owl:Class rdf:about="&lipro;Seco-Cholestapentaene"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Seco-Cholestatetraene -->
+
+    <owl:Class rdf:about="&lipro;Seco-Cholestatetraene"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Seco-Cholestatriene -->
+
+    <owl:Class rdf:about="&lipro;Seco-Cholestatriene"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Seco-Ergostatriene -->
+
+    <owl:Class rdf:about="&lipro;Seco-Ergostatriene"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Seco-Poriferastatetraene -->
+
+    <owl:Class rdf:about="&lipro;Seco-Poriferastatetraene"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Seco-Poriferastatriene -->
+
+    <owl:Class rdf:about="&lipro;Seco-Poriferastatriene"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Seco-Pregnatriene -->
+
+    <owl:Class rdf:about="&lipro;Seco-Pregnatriene"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Secondary_Amine -->
+
+    <owl:Class rdf:about="&lipro;Secondary_Amine"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Simple_Organic_Group -->
+
+    <owl:Class rdf:about="&lipro;Simple_Organic_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Solanidane -->
+
+    <owl:Class rdf:about="&lipro;Solanidane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Sphing-4-nine_par_Sphingosine_par_Chain -->
+
+    <owl:Class rdf:about="&lipro;Sphing-4-nine_par_Sphingosine_par_Chain"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Sphinganine_par_Dihydrosphingosine_par_Chain -->
+
+    <owl:Class rdf:about="&lipro;Sphinganine_par_Dihydrosphingosine_par_Chain"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Sphingoid_Base_Chain_Group -->
+
+    <owl:Class rdf:about="&lipro;Sphingoid_Base_Chain_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Spirosolane -->
+
+    <owl:Class rdf:about="&lipro;Spirosolane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Spirostane -->
+
+    <owl:Class rdf:about="&lipro;Spirostane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Stigmastane -->
+
+    <owl:Class rdf:about="&lipro;Stigmastane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Sulfonic_Acid_Derivative -->
+
+    <owl:Class rdf:about="&lipro;Sulfonic_Acid_Derivative"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Sulfonic_Acid_Group -->
+
+    <owl:Class rdf:about="&lipro;Sulfonic_Acid_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Sulfuric_Acid -->
+
+    <owl:Class rdf:about="&lipro;Sulfuric_Acid"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Sulfuric_Acid_Diester -->
+
+    <owl:Class rdf:about="&lipro;Sulfuric_Acid_Diester"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Sulfuric_Acid_Monoester -->
+
+    <owl:Class rdf:about="&lipro;Sulfuric_Acid_Monoester"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Sulfuric_Acid_derivative_Group -->
+
+    <owl:Class rdf:about="&lipro;Sulfuric_Acid_derivative_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Taurine -->
+
+    <owl:Class rdf:about="&lipro;Taurine"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Terminal_Acyl_Group -->
+
+    <owl:Class rdf:about="&lipro;Terminal_Acyl_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Terminal_Cyclobutane -->
+
+    <owl:Class rdf:about="&lipro;Terminal_Cyclobutane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Terminal_Cyclopentane -->
+
+    <owl:Class rdf:about="&lipro;Terminal_Cyclopentane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Terminal_Cyclopropane -->
+
+    <owl:Class rdf:about="&lipro;Terminal_Cyclopropane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Terminal_Methoxy -->
+
+    <owl:Class rdf:about="&lipro;Terminal_Methoxy"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Tert-Butyl -->
+
+    <owl:Class rdf:about="&lipro;Tert-Butyl"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Tertiary_Amine -->
+
+    <owl:Class rdf:about="&lipro;Tertiary_Amine"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Tetrahydropyran_Group -->
+
+    <owl:Class rdf:about="&lipro;Tetrahydropyran_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Thiol_Group -->
+
+    <owl:Class rdf:about="&lipro;Thiol_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Tocopherol_ring -->
+
+    <owl:Class rdf:about="&lipro;Tocopherol_ring"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Tocopherolquinone_ring -->
+
+    <owl:Class rdf:about="&lipro;Tocopherolquinone_ring"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Tocoquinone_ring -->
+
+    <owl:Class rdf:about="&lipro;Tocoquinone_ring"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Trehalose -->
+
+    <owl:Class rdf:about="&lipro;Trehalose"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Ubiquinone_ring -->
+
+    <owl:Class rdf:about="&lipro;Ubiquinone_ring"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Uridine -->
+
+    <owl:Class rdf:about="&lipro;Uridine"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#Vinyl_Ether_Chain -->
+
+    <owl:Class rdf:about="&lipro;Vinyl_Ether_Chain"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#alpha-lactone -->
+
+    <owl:Class rdf:about="&lipro;alpha-lactone"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#beta-lactone -->
+
+    <owl:Class rdf:about="&lipro;beta-lactone"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#distal_Alkenyl -->
+
+    <owl:Class rdf:about="&lipro;distal_Alkenyl"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#gamma-lactone -->
+
+    <owl:Class rdf:about="&lipro;gamma-lactone"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#homo-Cholestane -->
+
+    <owl:Class rdf:about="&lipro;homo-Cholestane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#non-terminal_Methoxy -->
+
+    <owl:Class rdf:about="&lipro;non-terminal_Methoxy"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#non_Heterocyclic_Ring_System -->
+
+    <owl:Class rdf:about="&lipro;non_Heterocyclic_Ring_System"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#nor-Cholane -->
+
+    <owl:Class rdf:about="&lipro;nor-Cholane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#nor-Cholestane -->
+
+    <owl:Class rdf:about="&lipro;nor-Cholestane"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#num3_membered_Heterocyclic_Group -->
+
+    <owl:Class rdf:about="&lipro;num3_membered_Heterocyclic_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#num4-hydroxysphinganine_par_Phytosphingosine_par_Chain -->
+
+    <owl:Class rdf:about="&lipro;num4-hydroxysphinganine_par_Phytosphingosine_par_Chain"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#num5_membered_Cycloketone_Group -->
+
+    <owl:Class rdf:about="&lipro;num5_membered_Cycloketone_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#num5_membered_Heterocyclic_Group -->
+
+    <owl:Class rdf:about="&lipro;num5_membered_Heterocyclic_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#num6_membered_Heterocyclic_Group -->
+
+    <owl:Class rdf:about="&lipro;num6_membered_Heterocyclic_Group"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#proximal_Alkenyl -->
+
+    <owl:Class rdf:about="&lipro;proximal_Alkenyl"/>
+    
+
+
+    <!-- http://semanticscience.org/sadi/ontology/leo.owl#undecanolactone -->
+
+    <owl:Class rdf:about="&lipro;undecanolactone"/>
+    
+
+
+    <!-- http://unbsj.biordf.net/lipids/lipid-classification-service-ontology.owl#LiProLipidClass -->
+
+    <owl:Class rdf:about="&lipid-classification-service-ontology;LiProLipidClass">
+        <rdfs:label>LiPro lipid class</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&lipid-maps-ontology;LipidClass"/>
+        <rdfs:comment>Instances of this class are lipid classes in the LiPro ontology.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://unbsj.biordf.net/lipids/lipid-classification-service-ontology.owl#classifyLipid_Input -->
+
+    <owl:Class rdf:about="&lipid-classification-service-ontology;classifyLipid_Input">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&resource;SIO_000053"/>
+                        <owl:someValuesFrom rdf:resource="&organic_group_subclass_union;OrganicGroupSubclassUnion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&lipro2;hasProperPart"/>
+                        <owl:someValuesFrom rdf:resource="&organic_group_subclass_union;OrganicGroupSubclassUnion"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://unbsj.biordf.net/lipids/lipid-classification-service-ontology.owl#classifyLipid_Output -->
+
+    <owl:Class rdf:about="&lipid-classification-service-ontology;classifyLipid_Output">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&lipid-classification-service-ontology;lipidHasLiProClass"/>
+                <owl:someValuesFrom rdf:resource="&lipid-classification-service-ontology;LiProLipidClass"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://unbsj.biordf.net/lipids/lipid-classification-service-ontology.owl#getLMLipidClassByLiProClass_Input -->
+
+    <owl:Class rdf:about="&lipid-classification-service-ontology;getLMLipidClassByLiProClass_Input">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&lipid-classification-service-ontology;lipidHasLiProClass"/>
+                <owl:someValuesFrom rdf:resource="&lipid-classification-service-ontology;LiProLipidClass"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://unbsj.biordf.net/lipids/lipid-classification-service-ontology.owl#getLMLipidClassByLiProClass_Output -->
+
+    <owl:Class rdf:about="&lipid-classification-service-ontology;getLMLipidClassByLiProClass_Output">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&lipid-maps-ontology;lipidHasLMClass"/>
+                <owl:someValuesFrom rdf:resource="&lipid-maps-ontology;LMLipidClass"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://unbsj.biordf.net/lipids/lipid-classification-service-ontology.owl#mineTextForLipidInfo_Input -->
+
+    <owl:Class rdf:about="&lipid-classification-service-ontology;mineTextForLipidInfo_Input">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&resource;SIO_000148"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&rss;link"/>
+                        <owl:someValuesFrom rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://unbsj.biordf.net/lipids/lipid-classification-service-ontology.owl#mineTextForLipidInfo_Output -->
+
+    <owl:Class rdf:about="&lipid-classification-service-ontology;mineTextForLipidInfo_Output">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&lipid-classification-service-ontology;LiProLipidClass"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://unbsj.biordf.net/lipids/lipid-maps-ontology.owl#LMLipidClass -->
+
+    <owl:Class rdf:about="&lipid-maps-ontology;LMLipidClass"/>
+    
+
+
+    <!-- http://unbsj.biordf.net/lipids/lipid-maps-ontology.owl#Lipid -->
+
+    <owl:Class rdf:about="&lipid-maps-ontology;Lipid"/>
+    
+
+
+    <!-- http://unbsj.biordf.net/lipids/lipid-maps-ontology.owl#LipidClass -->
+
+    <owl:Class rdf:about="&lipid-maps-ontology;LipidClass"/>
+    
+
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+    <owl:Class rdf:about="&xsd;string"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Document -->
+
+    <owl:Class rdf:about="&foaf;Document"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.0.0.1451) http://owlapi.sourceforge.net -->
+

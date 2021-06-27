@@ -1,0 +1,1128 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY envo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ccon "http://cerrado.linkeddata.es/ecology/ccon#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+    <!ENTITY oboe-s "http://ecoinformatics.org/oboe/oboe.1.0/oboe-spatial.owl#" >
+    <!ENTITY oboe-t "http://ecoinformatics.org/oboe/oboe.1.0/oboe-temporal.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboe-s="http://ecoinformatics.org/oboe/oboe.1.0/oboe-spatial.owl#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:ccon="http://cerrado.linkeddata.es/ecology/ccon#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:envo="http://purl.obolibrary.org/obo/"
+     xmlns:oboe-t="http://ecoinformatics.org/oboe/oboe.1.0/oboe-temporal.owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <Ontology rdf:about="http://cerrado.linkeddata.es/ecology/fire#">
+        <terms:creator rdf:datatype="&xsd;anyURI">http://lattes.cnpq.es/3259677468745429</terms:creator>
+        <terms:created>2013-10-31</terms:created>
+        <terms:modified>2013-12-03</terms:modified>
+        <vann:preferredNamespaceUri>http://cerrado.linkeddata.es/ecology/fire#</vann:preferredNamespaceUri>
+        <vann:preferredNamespacePrefix>Fire</vann:preferredNamespacePrefix>
+        <versionInfo>0.8</versionInfo>
+        <rdfs:comment xml:lang="en">Fire Ontology aims to represent some concepts of fire ecology in the Cerrado, a Brazilian savanna.</rdfs:comment>
+        <terms:title xml:lang="en">The Fire Ontology</terms:title>
+        <terms:description xml:lang="en">The Fire Ontology was developed to represent the scientific knowledge about fire behave focused to describe the characteristics, causes and effects of fire on wood plants in the Brazilian Cerrado Domain. This ontology will be part of the GeoLinked Data Ontology network to enrich the web of data with geospatial data of the Cerrado Domain, especially with regard the wood plant dynamics.</terms:description>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <AnnotationProperty rdf:about="&terms;created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <AnnotationProperty rdf:about="&terms;creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <AnnotationProperty rdf:about="&terms;description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <AnnotationProperty rdf:about="&terms;license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <AnnotationProperty rdf:about="&terms;modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <AnnotationProperty rdf:about="&terms;title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <AnnotationProperty rdf:about="&vann;preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <AnnotationProperty rdf:about="&vann;preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <AnnotationProperty rdf:about="&oboInOwl;created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <AnnotationProperty rdf:about="&oboInOwl;creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <AnnotationProperty rdf:about="&oboInOwl;hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <AnnotationProperty rdf:about="&oboInOwl;id"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/ccon#hasComponent -->
+
+    <ObjectProperty rdf:about="&ccon;hasComponent">
+        <rdfs:label>has component</rdfs:label>
+        <inverseOf rdf:resource="&ccon;isPartOf"/>
+        <rdfs:domain rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireRisk"/>
+        <rdfs:range rdf:resource="&envo;EnvironmentalCondition"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/ccon#isPartOf -->
+
+    <ObjectProperty rdf:about="&ccon;isPartOf">
+        <rdfs:range rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireRisk"/>
+        <rdfs:domain rdf:resource="&envo;EnvironmentalCondition"/>
+        <equivalentProperty rdf:resource="http://www.fao.org/aims/aos/cwr.owl#isPartOf"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#hasCause -->
+
+    <ObjectProperty rdf:about="http://cerrado.linkeddata.es/ecology/fire#hasCause">
+        <rdfs:label>has cause</rdfs:label>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#hasCause</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Cause"/>
+        <rdfs:domain rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#hasCharacteristic -->
+
+    <ObjectProperty rdf:about="http://cerrado.linkeddata.es/ecology/fire#hasCharacteristic">
+        <rdfs:label>has characteristic</rdfs:label>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#hasCharacteristic</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+        <rdfs:range rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireCharacteristic"/>
+        <inverseOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#isCharacteristicOf"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#hasDuration -->
+
+    <ObjectProperty rdf:about="http://cerrado.linkeddata.es/ecology/fire#hasDuration">
+        <rdfs:label>has duration</rdfs:label>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#hasDuration</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+        <rdfs:range rdf:resource="&oboe-t;TemporalEntity"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#hasEffect -->
+
+    <ObjectProperty rdf:about="http://cerrado.linkeddata.es/ecology/fire#hasEffect">
+        <rdfs:label>has effect</rdfs:label>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#hasEffect</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Effect"/>
+        <rdfs:domain rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#hasFrequency -->
+
+    <ObjectProperty rdf:about="http://cerrado.linkeddata.es/ecology/fire#hasFrequency">
+        <rdfs:label xml:lang="en">has frequency</rdfs:label>
+        <rdfs:domain rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+        <rdfs:range rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireFrequency"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#hasIgnition -->
+
+    <ObjectProperty rdf:about="http://cerrado.linkeddata.es/ecology/fire#hasIgnition">
+        <rdfs:label>has ignition</rdfs:label>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#hasIgnition</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+        <rdfs:range rdf:resource="http://cerrado.linkeddata.es/ecology/fire#IgnitionProbabilityFactor"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#hasLocation -->
+
+    <ObjectProperty rdf:about="http://cerrado.linkeddata.es/ecology/fire#hasLocation">
+        <rdfs:label>has location</rdfs:label>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#hasLocation</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+        <rdfs:range rdf:resource="&oboe-s;SpatialEntity"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#hasRisk -->
+
+    <ObjectProperty rdf:about="http://cerrado.linkeddata.es/ecology/fire#hasRisk">
+        <rdfs:label xml:lang="en">has risk</rdfs:label>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#hasRisk</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+        <rdfs:range rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireRisk"/>
+        <inverseOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#isRiskOf"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#hasSeverity -->
+
+    <ObjectProperty rdf:about="http://cerrado.linkeddata.es/ecology/fire#hasSeverity">
+        <rdfs:label xml:lang="en">has severity</rdfs:label>
+        <rdfs:domain rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+        <rdfs:range rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireSeverity"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#ignites -->
+
+    <ObjectProperty rdf:about="http://cerrado.linkeddata.es/ecology/fire#ignites">
+        <rdfs:label>ignites</rdfs:label>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#ignites</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+        <rdfs:domain rdf:resource="http://cerrado.linkeddata.es/ecology/fire#IgnitionProbabilityFactor"/>
+        <inverseOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#hasIgnition"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#isCausedBy -->
+
+    <ObjectProperty rdf:about="http://cerrado.linkeddata.es/ecology/fire#isCausedBy">
+        <rdfs:label>is caused by</rdfs:label>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#isCausedBy</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Cause"/>
+        <rdfs:range rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+        <inverseOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#hasCause"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#isCharacteristicOf -->
+
+    <ObjectProperty rdf:about="http://cerrado.linkeddata.es/ecology/fire#isCharacteristicOf">
+        <rdfs:label>is characteristic of</rdfs:label>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#isCharacteristicOf</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+        <rdfs:domain rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireCharacteristic"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#isDurationOf -->
+
+    <ObjectProperty rdf:about="http://cerrado.linkeddata.es/ecology/fire#isDurationOf">
+        <rdfs:label>is duration of</rdfs:label>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#isDurationOf</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+        <inverseOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#hasDuration"/>
+        <rdfs:domain rdf:resource="&oboe-t;TemporalEntity"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#isEffectOf -->
+
+    <ObjectProperty rdf:about="http://cerrado.linkeddata.es/ecology/fire#isEffectOf">
+        <rdfs:label>is effect of</rdfs:label>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#isEffectOf</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Effect"/>
+        <rdfs:range rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+        <inverseOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#hasEffect"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#isLocationOf -->
+
+    <ObjectProperty rdf:about="http://cerrado.linkeddata.es/ecology/fire#isLocationOf">
+        <rdfs:label>is location of</rdfs:label>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#isLocationOf</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+        <inverseOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#hasLocation"/>
+        <rdfs:domain rdf:resource="&oboe-s;SpatialEntity"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#isRiskOf -->
+
+    <ObjectProperty rdf:about="http://cerrado.linkeddata.es/ecology/fire#isRiskOf">
+        <rdfs:label xml:lang="en">is risk of</rdfs:label>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#isRiskOf</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+        <rdfs:domain rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireRisk"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.fao.org/aims/aos/cwr.owl#isPartOf -->
+
+    <ObjectProperty rdf:about="http://www.fao.org/aims/aos/cwr.owl#isPartOf">
+        <rdfs:label>is part of</rdfs:label>
+        <inverseOf rdf:resource="&ccon;hasComponent"/>
+        <rdfs:range rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireRisk"/>
+        <rdfs:domain rdf:resource="&envo;EnvironmentalCondition"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/ccon#Mortality -->
+
+    <Class rdf:about="&ccon;Mortality">
+        <rdfs:label rdf:datatype="&xsd;string">death rate</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">mortality</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">mortality rate</rdfs:label>
+        <equivalentClass rdf:resource="http://cerrado.linkeddata.es/ecology/fire#PlantMortality"/>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#EffectOnPlant"/>
+        <rdfs:comment xml:lang="en">It&apos;s the number of individuals dead over time.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/ccon#Precipitation -->
+
+    <Class rdf:about="&ccon;Precipitation">
+        <rdfs:label rdf:datatype="&xsd;string">Precipitation</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Rainfall</rdfs:label>
+        <rdfs:label>average annual precipitation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&envo;EnvironmentalCondition"/>
+        <rdfs:comment xml:lang="en">Any product of the condensation of atmospheric water vapour that falls under gravity (http://en.wikipedia.org/wiki/Precipitation)</rdfs:comment>
+        <rdfs:comment xml:lang="pt">Qualquer produto da condensação do vapor de água atmosférico que cai sob efeito da gravidade.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#AnthropogenicCause -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#AnthropogenicCause">
+        <rdfs:label rdf:datatype="&xsd;string">Anthropogenic cause</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Cause"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Causa antrópica</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fire set by human action</rdfs:comment>
+        <rdfs:comment xml:lang="pt">Ações humanas que provocam queimadas</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#AreaBurned -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#AreaBurned">
+        <rdfs:label>Area burned</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireCharacteristic"/>
+        <rdfs:comment xml:lang="en">It&apos;s the total area affected by fire in a burn event.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#BrushFire -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#BrushFire">
+        <rdfs:label rdf:datatype="&xsd;string">Brush fire</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+        <disjointWith rdf:resource="http://cerrado.linkeddata.es/ecology/fire#ForestFire"/>
+        <disjointWith rdf:resource="http://cerrado.linkeddata.es/ecology/fire#ScrubFire"/>
+        <rdfs:comment xml:lang="en">A fire in low-growing and brush</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#Cause -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#Cause">
+        <rdfs:label>Cause</rdfs:label>
+        <rdfs:comment xml:lang="en">It represents the set of causes that together or separately can lead to an event of fire</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#ConsecutiveRainlessDays -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#ConsecutiveRainlessDays">
+        <rdfs:label xml:lang="en">Consecutive rainless days</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&envo;EnvironmentalCondition"/>
+        <rdfs:comment xml:lang="en">Number of consecutive days without precipitation</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#CoolSeasonFire -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#CoolSeasonFire">
+        <rdfs:label rdf:datatype="&xsd;string">Cool-season fire</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#HarzardReductionFire"/>
+        <rdfs:comment xml:lang="en">It&apos;s a fire set during the cool season, to avoid the fire to achieve very high temperatures or to make it easy to stop it.</rdfs:comment>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#CoolSeasonFire</rdfs:isDefinedBy>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#Duration -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#Duration">
+        <rdfs:label>Duration</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oboe-t;TemporalEntity"/>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#EcosystemEffect -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#EcosystemEffect">
+        <rdfs:label>Ecosystem effect</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Effect"/>
+        <rdfs:comment xml:lang="en">The changes on the ecosystem structure and/or functioning after an event of fire.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#Effect -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#Effect">
+        <rdfs:label>Effect</rdfs:label>
+        <rdfs:comment xml:lang="en">It represents the consequences of the fire in ecosystems and individual organims.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#EffectOnPlant -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#EffectOnPlant">
+        <rdfs:label>Effect on plant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Effect"/>
+        <rdfs:comment xml:lang="en">The changes on plant communities or on plant individuals after an event of fire.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#EndingPoint -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#EndingPoint">
+        <rdfs:label>Ending point</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oboe-s;SpatialEntity"/>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#EndingTime -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#EndingTime">
+        <rdfs:label>Ending time</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oboe-t;TemporalEntity"/>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#Establishment -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#Establishment">
+        <rdfs:label rdf:datatype="&xsd;string">Establishment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#EffectOnPlant"/>
+        <rdfs:comment xml:lang="en">The process by which a plant becomes established in a new habitat.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#Extension -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#Extension">
+        <rdfs:label>Extension</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oboe-s;SpatialEntity"/>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#Fire -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#Fire">
+        <rdfs:label rdf:datatype="&xsd;string">Fire</rdfs:label>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://cerrado.linkeddata.es/ecology/fire#hasRisk"/>
+                <someValuesFrom rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireRisk"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://cerrado.linkeddata.es/ecology/fire#hasIgnition"/>
+                <someValuesFrom rdf:resource="http://cerrado.linkeddata.es/ecology/fire#IgnitionProbabilityFactor"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">It&apos;s the rapid oxidation of a material in the exothermic chemical process of combustion, releasing heat, light, and various reaction products.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#FireCharacteristic -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#FireCharacteristic">
+        <rdfs:label>Fire characteristic</rdfs:label>
+        <rdfs:comment xml:lang="en">Stands for those parameters used to describe the characteristics or behavior of a fire event.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#FireFrequency -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#FireFrequency">
+        <rdfs:label>Fire frequency</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireCharacteristic"/>
+        <rdfs:comment xml:lang="en"> The average time interval between successive fires or the number of fires within a specific period of time.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#FireHistory -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#FireHistory">
+        <rdfs:label rdf:datatype="&xsd;string">Fire history</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&envo;EnvironmentalCondition"/>
+        <rdfs:comment xml:lang="en">Tells the occurrence of previous fire events and the patterns of its behavior.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#FireIntensity -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#FireIntensity">
+        <rdfs:label rdf:datatype="&xsd;string">Fire Intensity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireCharacteristic"/>
+        <rdfs:comment xml:lang="en">Energy output from fire.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#FireRisk -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#FireRisk">
+        <rdfs:label>Fire risk</rdfs:label>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ccon;hasComponent"/>
+                <someValuesFrom rdf:resource="http://cerrado.linkeddata.es/ecology/fire#ConsecutiveRainlessDays"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://cerrado.linkeddata.es/ecology/fire#isRiskOf"/>
+                <someValuesFrom rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ccon;hasComponent"/>
+                <someValuesFrom rdf:resource="http://cerrado.linkeddata.es/ecology/fire#ObservedRisk"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ccon;hasComponent"/>
+                <someValuesFrom rdf:resource="http://cerrado.linkeddata.es/ecology/fire#MaximumTemperature"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ccon;hasComponent"/>
+                <someValuesFrom rdf:resource="http://cerrado.linkeddata.es/ecology/fire#MinimumRelativeHumidity"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ccon;hasComponent"/>
+                <someValuesFrom rdf:resource="http://cerrado.linkeddata.es/ecology/fire#VegetationType"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#FireSeverity -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#FireSeverity">
+        <rdfs:label rdf:datatype="&xsd;string">Burn Severity</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Fire Severity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireCharacteristic"/>
+        <rdfs:comment xml:lang="en">Aboveground and belowground organic matter consumption from fire.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#FireSpeed -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#FireSpeed">
+        <rdfs:label>Speed</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireCharacteristic"/>
+        <rdfs:comment xml:lang="en">it&apos;s the average speed of the fire front.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#FireSpread -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#FireSpread">
+        <rdfs:label>Spread</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireCharacteristic"/>
+        <rdfs:comment xml:lang="en">It&apos;s how the fire event is spreading, the directions.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#FlameHeight -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#FlameHeight">
+        <rdfs:label>Flame height</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireCharacteristic"/>
+        <rdfs:comment xml:lang="en">Its the maximum height a flame achieve in a fire event.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#Flowering -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#Flowering">
+        <rdfs:label xml:lang="en">Flowering</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#EffectOnPlant"/>
+        <rdfs:comment xml:lang="en">It is the production of flowers, i.e., when a  sexual mature plant starts to produce flowers.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#ForestFire -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#ForestFire">
+        <rdfs:label rdf:datatype="&xsd;string">Forest fire</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+        <rdfs:comment xml:lang="en">A fire that occurs in a wooded area.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#FruitAndSeedProduction -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#FruitAndSeedProduction">
+        <rdfs:label>Fruit and Seed Production</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#EffectOnPlant"/>
+        <rdfs:comment xml:lang="en">It is the amount of fruit or seeds produced. In this usage, it reflects how the fire affects the production of fruits and seed.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#Fuel -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#Fuel">
+        <rdfs:label>Fuel</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&envo;EnvironmentalCondition"/>
+        <rdfs:comment xml:lang="en">The amount of fuel available for fire to burn.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#Germination -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#Germination">
+        <rdfs:label>Germination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#EffectOnPlant"/>
+        <rdfs:comment xml:lang="en">It is the process by which plants, fungi and bacteria emerge from seeds and spores, and begin growth. The most common example of germination is the sprouting of a seedling from a seed of an angiosperm or gymnosperm.
+Source: wikipedia.org</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#HarzardReductionFire -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#HarzardReductionFire">
+        <rdfs:label rdf:datatype="&xsd;string">Harzard-reduction fire</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#PrescriptionFire"/>
+        <rdfs:comment xml:lang="en">It&apos;s a fire set in order to prevent large and severe events of burning.</rdfs:comment>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#HarzardReductionFire</rdfs:isDefinedBy>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#HighIntensityFire -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#HighIntensityFire">
+        <rdfs:label rdf:datatype="&xsd;string">High-intensity fire</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#HarzardReductionFire"/>
+        <rdfs:comment xml:lang="en">The high-intensity fires are set in order to clear a certain area, that is, to remove all fuel material.</rdfs:comment>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#HighIntensityFire</rdfs:isDefinedBy>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#IgnitionProbabilityFactor -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#IgnitionProbabilityFactor">
+        <rdfs:label rdf:datatype="&xsd;string">Ignition probability factor</rdfs:label>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://cerrado.linkeddata.es/ecology/fire#ignites"/>
+                <someValuesFrom rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represents the factors that together affect the likelihood of a certain are to burn or to start a fire event.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#MaximumTemperature -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#MaximumTemperature">
+        <rdfs:label>Maximum temperature</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&envo;EnvironmentalCondition"/>
+        <rdfs:comment xml:lang="en">It is a measure of the thermal energy per particle of matter or radiation; it is measured by a thermometer, which may be calibrated in any of various temperature scales, Celsius, Fahrenheit, Kelvin, etc (http://en.wikipedia.org/wiki/Temperature).</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#MinimumRelativeHumidity -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#MinimumRelativeHumidity">
+        <rdfs:label>Minimum relative humidity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&envo;EnvironmentalCondition"/>
+        <rdfs:comment xml:lang="en">The minimum relative amount of whater vapour in the atmosphere</rdfs:comment>
+        <rdfs:comment xml:lang="pt">Quantidade relativa mínima de vapor de água na atmosfera</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#NaturalCause -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#NaturalCause">
+        <rdfs:label xml:lang="en">Natural cause</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Cause"/>
+        <rdfs:comment xml:lang="en">Natural agents that cause fire on vegetation</rdfs:comment>
+        <rdfs:comment xml:lang="pt">Fatores naturais que provocam queimadas</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#ObservedRisk -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#ObservedRisk">
+        <rdfs:label xml:lang="en">Observed risk</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&envo;EnvironmentalCondition"/>
+        <rdfs:comment xml:lang="en">It is based on data observed on meteorological stations and combined with occurrence of burning outbreaks detected by INPES&apos;s satelite monitoring system.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#PlantMortality -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#PlantMortality">
+        <rdfs:label rdf:datatype="&xsd;string">Plant Mortality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#EffectOnPlant"/>
+        <rdfs:comment xml:lang="en">The death of plants caused by fire.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#PlantResprout -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#PlantResprout">
+        <rdfs:label rdf:datatype="&xsd;string">Plant resprout</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#EffectOnPlant"/>
+        <rdfs:comment xml:lang="en">It&apos;s when the fire event influence the plant individuals to resprout, that is, the fire can induce the growth of new branches as well the vegetative reproduction of some fire resistant species.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#PrescriptionFire -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#PrescriptionFire">
+        <rdfs:label rdf:datatype="&xsd;string">Controlled fire</rdfs:label>
+        <rdfs:label>Prescription fire</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+        <disjointWith rdf:resource="http://cerrado.linkeddata.es/ecology/fire#UncontrolledFire"/>
+        <rdfs:comment xml:lang="en">A fire set under controlled and planned situation.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#ScrubFire -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#ScrubFire">
+        <rdfs:label rdf:datatype="&xsd;string">Scrub fire</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+        <rdfs:comment xml:lang="en">A fire in scrubby trees.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#StartingPoint -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#StartingPoint">
+        <rdfs:label>Starting point</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oboe-s;SpatialEntity"/>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#StartingTime -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#StartingTime">
+        <rdfs:label>Starting time</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oboe-t;TemporalEntity"/>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#TopKill -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#TopKill">
+        <rdfs:label rdf:datatype="&xsd;string">Top kill</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#EffectOnPlant"/>
+        <rdfs:comment xml:lang="en">It&apos;s the death of only the above ground biomass of a plant. </rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#Topography -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#Topography">
+        <rdfs:label>Topography</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&envo;EnvironmentalCondition"/>
+        <rdfs:comment xml:lang="en">Certain topography features are more likely to burn than others.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The study of surface shape and features of the Earth. The topography of an area can also mean the surface shape and features themselves.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#UncontrolledFire -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#UncontrolledFire">
+        <rdfs:label rdf:datatype="&xsd;string">Out of control fire</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Uncontrolled fire</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#Fire"/>
+        <rdfs:comment xml:lang="en">Fires that were not planned, but were started by arson, accident or lightning and burn out-of-control.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#VegetationType -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#VegetationType">
+        <rdfs:label xml:lang="en">Vegetation type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&envo;EnvironmentalCondition"/>
+        <rdfs:comment xml:lang="en">It is the type of vegetation to be considered in the calculation of fire risk.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#Weather -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#Weather">
+        <rdfs:label>Weather</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&envo;EnvironmentalCondition"/>
+        <rdfs:comment xml:lang="en">Weather is the state of the atmosphere, to the degree that it is hot or cold, wet or dry, calm or stormy, clear or cloudy. Generally refers to day-to-day temperature and precipitation activity.
+Source: wikipedia.org</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#Wildfire -->
+
+    <Class rdf:about="http://cerrado.linkeddata.es/ecology/fire#Wildfire">
+        <rdfs:label>Wildfire</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#UncontrolledFire"/>
+        <rdfs:comment xml:lang="en">A fire burning in wildland fuel.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://ecoinformatics.org/oboe/oboe.1.0/oboe-spatial.owl#SpatialEntity -->
+
+    <Class rdf:about="&oboe-s;SpatialEntity">
+        <rdfs:label>Spatial Entity</rdfs:label>
+        <rdfs:comment xml:lang="en">It&apos;s the entity used to describe the spatial reations between entities or other elements.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://ecoinformatics.org/oboe/oboe.1.0/oboe-temporal.owl#TemporalEntity -->
+
+    <Class rdf:about="&oboe-t;TemporalEntity">
+        <rdfs:label xml:lang="en">Temporal Entity</rdfs:label>
+        <rdfs:comment xml:lang="en">It&apos;s the entity used to describe the temporal relationships between entities or other elements.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EnvironmentalCondition -->
+
+    <Class rdf:about="&envo;EnvironmentalCondition">
+        <rdfs:label rdf:datatype="&xsd;string">environmental condition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cerrado.linkeddata.es/ecology/fire#NaturalCause"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2013-04-07T14:35:18Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ENVO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">ENVO:01000203</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">Experimental class created in EnvO. A condition defines a restricted range of a given quality or combination of qualities. If an environment class, E, has_condition C, then all qualities listed in C are restricted to the ranges defined in C in E. This is not intended as a logical conditional.</rdfs:comment>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">pbuttigi</oboInOwl:created_by>
+        <rdfs:comment xml:lang="en">An abiotic environmental factor that influences the functioning of living organisms (Begon et al., 2006).</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#Biennial -->
+
+    <NamedIndividual rdf:about="http://cerrado.linkeddata.es/ecology/fire#Biennial">
+        <rdf:type rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireFrequency"/>
+        <rdfs:label>Biennial</rdfs:label>
+        <rdfs:comment>Fire happening once in two years interval</rdfs:comment>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#Biennial</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#Critical -->
+
+    <NamedIndividual rdf:about="http://cerrado.linkeddata.es/ecology/fire#Critical">
+        <rdf:type rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireRisk"/>
+        <rdf:type rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireSeverity"/>
+        <rdfs:label xml:lang="en">Critical</rdfs:label>
+        <rdfs:label xml:lang="pt">Crítico</rdfs:label>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#Critical</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">The worse condition of fire risk. The probability of burn outbreaks are very high. </rdfs:comment>
+    </NamedIndividual>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#FireProtected -->
+
+    <NamedIndividual rdf:about="http://cerrado.linkeddata.es/ecology/fire#FireProtected">
+        <rdf:type rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireFrequency"/>
+        <rdfs:label>Fire protected</rdfs:label>
+        <rdfs:comment>No occurrences of fire, or only accidental uncontrolled fire </rdfs:comment>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#FireProtected</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#High -->
+
+    <NamedIndividual rdf:about="http://cerrado.linkeddata.es/ecology/fire#High">
+        <rdf:type rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireRisk"/>
+        <rdf:type rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireSeverity"/>
+        <rdfs:label xml:lang="en">High</rdfs:label>
+        <rdfs:label xml:lang="pt">Alto</rdfs:label>
+        <rdfs:comment>It is a condition with high probability of burn outbreaks</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://cerrado.linkeddata.es/ecology/fire#High</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#Low -->
+
+    <NamedIndividual rdf:about="http://cerrado.linkeddata.es/ecology/fire#Low">
+        <rdf:type rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireRisk"/>
+        <rdf:type rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireSeverity"/>
+        <rdfs:label xml:lang="en">Low</rdfs:label>
+        <rdfs:label xml:lang="pt">Baixo</rdfs:label>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#Low</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">It represents a low risk of burn outbreaks</rdfs:comment>
+    </NamedIndividual>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#LowFrequency -->
+
+    <NamedIndividual rdf:about="http://cerrado.linkeddata.es/ecology/fire#LowFrequency">
+        <rdf:type rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireFrequency"/>
+        <rdfs:label>Low frequency</rdfs:label>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#LowFrequency</rdfs:isDefinedBy>
+        <rdfs:comment>I represents a rate of burn about once every 10 years</rdfs:comment>
+    </NamedIndividual>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#Medium -->
+
+    <NamedIndividual rdf:about="http://cerrado.linkeddata.es/ecology/fire#Medium">
+        <rdf:type rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireRisk"/>
+        <rdf:type rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireSeverity"/>
+        <rdfs:label xml:lang="en">Medium</rdfs:label>
+        <rdfs:label xml:lang="pt">Médio</rdfs:label>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#Medium</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">It represents a medium risk of burn outbreaks.</rdfs:comment>
+    </NamedIndividual>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#Minimum -->
+
+    <NamedIndividual rdf:about="http://cerrado.linkeddata.es/ecology/fire#Minimum">
+        <rdf:type rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireRisk"/>
+        <rdf:type rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireSeverity"/>
+        <rdfs:label xml:lang="en">Minimum</rdfs:label>
+        <rdfs:label xml:lang="pt">Mínimo</rdfs:label>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#Minimum</rdfs:isDefinedBy>
+        <rdfs:comment>The conditions with the minimal probability of a burn outbreaks.</rdfs:comment>
+    </NamedIndividual>
+    
+
+
+    <!-- http://cerrado.linkeddata.es/ecology/fire#Quadrennial -->
+
+    <NamedIndividual rdf:about="http://cerrado.linkeddata.es/ecology/fire#Quadrennial">
+        <rdf:type rdf:resource="http://cerrado.linkeddata.es/ecology/fire#FireFrequency"/>
+        <rdfs:label xml:lang="en">Quadrennial</rdfs:label>
+        <rdfs:label xml:lang="pt">Quadrianual</rdfs:label>
+        <rdfs:isDefinedBy>http://cerrado.linkeddata.es/ecology/fire#Quadrennial</rdfs:isDefinedBy>
+        <rdfs:comment>It represents the frequency of about one fire event every four years.</rdfs:comment>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://cerrado.linkeddata.es/ecology/concepts#Pluviosity">
+        <rdfs:label>Pluviosity</rdfs:label>
+        <rdfs:label>Rainfall</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://cerrado.linkeddata.es/ecology/fire#Critical"/>
+            <rdf:Description rdf:about="http://cerrado.linkeddata.es/ecology/fire#High"/>
+            <rdf:Description rdf:about="http://cerrado.linkeddata.es/ecology/fire#Low"/>
+            <rdf:Description rdf:about="http://cerrado.linkeddata.es/ecology/fire#Medium"/>
+            <rdf:Description rdf:about="http://cerrado.linkeddata.es/ecology/fire#Minimum"/>
+        </distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://cerrado.linkeddata.es/ecology/fire#Biennial"/>
+            <rdf:Description rdf:about="http://cerrado.linkeddata.es/ecology/fire#FireProtected"/>
+            <rdf:Description rdf:about="http://cerrado.linkeddata.es/ecology/fire#LowFrequency"/>
+            <rdf:Description rdf:about="http://cerrado.linkeddata.es/ecology/fire#Quadrennial"/>
+        </distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

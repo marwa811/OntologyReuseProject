@@ -1,0 +1,3794 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://druggablegenome.net/#"
+     xml:base="http://druggablegenome.net/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:life="http://www.lifekb.org/life#"
+     xmlns:core="http://purl.obolibrary.org/obo/uberon/core#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:bto="http://purl.obolibrary.org/obo/bto#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://druggablegenome.net/IDGGeneList.owl">
+        <owl:versionIRI rdf:resource="http://druggablegenome.net/IDGGeneList.owl"/>
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:contributor>John Turner,Dusica Vidovic,Daniel Cooper,Stephan C. Schürer*</dc:contributor>
+        <dc:date>Mar 20 2019</dc:date>
+        <rdfs:label>IDGeneList</rdfs:label>
+        <rdfs:label>IDGene</rdfs:label>
+        <owl:versionInfo>1.0</owl:versionInfo>
+        <rdfs:comment xml:lang="en">contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
+    </owl:Ontology>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://druggablegenome.net/Gene -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/Gene">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADCK1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADCK1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADCK1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADCK2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADCK2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADCK2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADCK5 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADCK5">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADCK5</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRA1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRA1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRA1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRA2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRA2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRA2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRA3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRA3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRA3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRB1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRB1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRB1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRB2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRB2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRB2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRB3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRB3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRB3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRD1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRD1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRD1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRD2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRD2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRD2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRE1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRE1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRE1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRE2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRE2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRE2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRE3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRE3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRE3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRF1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRF1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRF1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRF2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRF2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRF2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRF3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRF3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRF3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRF4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRF4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRF4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRF5 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRF5">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRF5</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRG2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRG2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRG2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRG3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRG3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRG3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRG4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRG4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRG4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRG5 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRG5">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRG5</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRG6 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRG6">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRG6</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRG7 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRG7">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRG7</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ADGRL4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ADGRL4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRL4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ALPK2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ALPK2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALPK2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ALPK3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ALPK3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALPK3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ASIC4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ASIC4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ASIC4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/BCKDK -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/BCKDK">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCKDK</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/BEST4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/BEST4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BEST4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/BRSK1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/BRSK1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BRSK1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/BRSK2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/BRSK2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BRSK2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CACNA2D2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CACNA2D2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CACNA2D2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CACNA2D3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CACNA2D3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CACNA2D3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CACNA2D4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CACNA2D4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CACNA2D4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CACNB1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CACNB1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CACNB1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CACNB2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CACNB2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CACNB2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CACNB3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CACNB3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CACNB3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CACNB4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CACNB4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CACNB4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CACNG1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CACNG1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CACNG1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CACNG3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CACNG3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CACNG3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CACNG4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CACNG4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CACNG4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CACNG5 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CACNG5">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CACNG5</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CACNG6 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CACNG6">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CACNG6</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CACNG7 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CACNG7">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CACNG7</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CACNG8 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CACNG8">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CACNG8</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CAMK1D -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CAMK1D">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAMK1D</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CAMK1G -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CAMK1G">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAMK1G</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CAMKK1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CAMKK1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAMKK1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CAMKK2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CAMKK2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAMKK2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CAMKV -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CAMKV">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAMKV</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CATSPER2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CATSPER2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CATSPER2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CDC42BPA -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CDC42BPA">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDC42BPA</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CDC42BPB -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CDC42BPB">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDC42BPB</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CDC42BPG -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CDC42BPG">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDC42BPG</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CDK10 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CDK10">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDK10</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CDK11A -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CDK11A">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDK11A</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CDK11B -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CDK11B">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDK11B</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CDK12 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CDK12">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDK12</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CDK13 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CDK13">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDK13</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CDK14 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CDK14">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDK14</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CDK15 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CDK15">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDK15</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CDK16 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CDK16">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDK16</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CDK17 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CDK17">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDK17</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CDK18 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CDK18">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDK18</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CDK19 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CDK19">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDK19</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CDK20 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CDK20">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDK20</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CDKL1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CDKL1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDKL1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CDKL2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CDKL2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDKL2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CDKL3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CDKL3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDKL3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CDKL4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CDKL4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDKL4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CDKL5 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CDKL5">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDKL5</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CHRM5 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CHRM5">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHRM5</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CHRNA10 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CHRNA10">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHRNA10</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CHRNA2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CHRNA2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHRNA2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CHRNB1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CHRNB1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHRNB1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CHRND -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CHRND">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHRND</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CLCA2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CLCA2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLCA2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CLCA4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CLCA4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLCA4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CLCC1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CLCC1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLCC1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CLCN6 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CLCN6">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLCN6</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CLCNKA -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CLCNKA">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLCNKA</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CLIC2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CLIC2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLIC2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CLIC3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CLIC3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLIC3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CLIC5 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CLIC5">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLIC5</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CLIC6 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CLIC6">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLIC6</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CLK3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CLK3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLK3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CLK4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CLK4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLK4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CNGA4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CNGA4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CNGA4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/COQ8A -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/COQ8A">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COQ8A</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/COQ8B -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/COQ8B">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COQ8B</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CSNK1A1L -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CSNK1A1L">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CSNK1A1L</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CSNK1G1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CSNK1G1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CSNK1G1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CSNK1G2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CSNK1G2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CSNK1G2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CSNK1G3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CSNK1G3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CSNK1G3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CSNK2A2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CSNK2A2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CSNK2A2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/CSNK2A3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/CSNK2A3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CSNK2A3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/DCLK3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/DCLK3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DCLK3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/DSTYK -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/DSTYK">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DSTYK</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/DYRK1B -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/DYRK1B">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DYRK1B</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/DYRK2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/DYRK2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DYRK2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/DYRK3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/DYRK3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DYRK3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/DYRK4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/DYRK4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DYRK4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/EEF2K -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/EEF2K">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EEF2K</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ERN2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ERN2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ERN2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/FAM26D -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/FAM26D">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAM26D</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/FAM26E -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/FAM26E">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAM26E</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/FAM26F -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/FAM26F">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAM26F</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/FXYD3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/FXYD3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FXYD3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/FXYD7 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/FXYD7">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FXYD7</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/FZD10 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/FZD10">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FZD10</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GABRA5 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GABRA5">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GABRA5</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GABRG1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GABRG1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GABRG1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GABRP -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GABRP">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GABRP</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GABRR1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GABRR1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GABRR1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GLRA3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GLRA3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GLRA3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GLRA4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GLRA4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GLRA4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GLRB -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GLRB">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GLRB</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GNRHR2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GNRHR2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GNRHR2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR101 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR101">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR101</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR12 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR12">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR12</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR132 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR132">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR132</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR135 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR135">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR135</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR137 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR137">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR137</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR139 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR139">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR139</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR142 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR142">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR142</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR143 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR143">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR143</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR146 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR146">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR146</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR148 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR148">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR148</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR149 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR149">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR149</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR15 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR15">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR15</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR150 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR150">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR150</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR151 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR151">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR151</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR152 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR152">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR152</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR153 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR153">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR153</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR156 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR156">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR156</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR157 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR157">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR157</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR160 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR160">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR160</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR161 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR161">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR161</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR162 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR162">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR162</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR17 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR17">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR17</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR171 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR171">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR171</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR173 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR173">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR173</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR174 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR174">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR174</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR18 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR18">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR18</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR182 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR182">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR182</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR183 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR183">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR183</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR19 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR19">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR19</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR20 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR20">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR20</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR21 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR21">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR21</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR22 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR22">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR22</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR25 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR25">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR25</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR26 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR26">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR26</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR27 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR27">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR27</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR31 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR31">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR31</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR32 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR32">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR32</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR32P1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR32P1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR32P1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR34 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR34">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR34</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR35 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR35">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR35</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR37 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR37">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR37</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR37L1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR37L1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR37L1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR39 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR39">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR39</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR45 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR45">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR45</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR50 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR50">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR50</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR52 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR52">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR52</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR55 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR55">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR55</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR6 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR6">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR6</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR61 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR61">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR61</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR62 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR62">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR62</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR63 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR63">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR63</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR65 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR65">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR65</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR68 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR68">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR68</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR75 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR75">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR75</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR78 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR78">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR78</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR82 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR82">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR82</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR83 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR83">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR83</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR84 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR84">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR84</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR85 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR85">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR85</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR87 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR87">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR87</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR88 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR88">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR88</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR89A -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR89A">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR89A</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPR89B -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPR89B">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR89B</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPRC5A -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPRC5A">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPRC5A</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPRC5B -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPRC5B">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPRC5B</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPRC5C -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPRC5C">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPRC5C</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GPRC5D -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GPRC5D">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPRC5D</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GRID1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GRID1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRID1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/GRIK3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/GRIK3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRIK3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/Gene_12 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/Gene_12">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADGRE5</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/Gene_34 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/Gene_34">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPR141</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/HCAR1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/HCAR1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HCAR1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/HCAR3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/HCAR3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HCAR3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/HIPK1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/HIPK1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HIPK1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/HIPK3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/HIPK3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HIPK3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/HIPK4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/HIPK4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HIPK4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/HTR1E -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/HTR1E">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTR1E</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/HTR3C -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/HTR3C">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTR3C</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/HTR3D -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/HTR3D">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTR3D</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/HTR3E -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/HTR3E">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTR3E</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/HTR5A -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/HTR5A">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTR5A</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ICK -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ICK">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICK</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNA6 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNA6">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNA6</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNA7 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNA7">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNA7</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNAB2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNAB2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNAB2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNAB3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNAB3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNAB3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNC4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNC4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNC4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCND1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCND1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCND1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNG2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNG2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNG2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNG3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNG3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNG3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNG4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNG4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNG4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNH4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNH4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNH4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNH6 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNH6">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNH6</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNH8 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNH8">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNH8</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNIP1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNIP1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNIP1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNIP4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNIP4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNIP4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNJ14 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNJ14">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNJ14</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNJ15 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNJ15">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNJ15</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNJ18 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNJ18">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNJ18</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNK12 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNK12">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNK12</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNK4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNK4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNK4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNK7 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNK7">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNK7</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNMB3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNMB3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNMB3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNMB4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNMB4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNMB4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNN1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNN1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNN1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNS1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNS1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNS1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNS2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNS2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNS2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNS3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNS3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNS3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNT1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNT1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNT1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNT2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNT2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNT2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/KCNV1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/KCNV1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KCNV1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/LMTK2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/LMTK2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LMTK2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/LMTK3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/LMTK3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LMTK3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/LPAR6 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/LPAR6">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LPAR6</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/LRRC38 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/LRRC38">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LRRC38</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/LRRC55 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/LRRC55">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LRRC55</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/LRRK1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/LRRK1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LRRK1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/LTK -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/LTK">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LTK</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MAP3K10 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MAP3K10">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAP3K10</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MAP3K14 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MAP3K14">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAP3K14</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MAP3K15 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MAP3K15">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAP3K15</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MAP3K21 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MAP3K21">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAP3K21</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MAPK15 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MAPK15">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAPK15</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MAPK4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MAPK4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAPK4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MARK1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MARK1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MARK1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MARK3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MARK3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MARK3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MARK4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MARK4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MARK4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MAS1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MAS1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAS1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MAS1L -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MAS1L">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAS1L</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MAST2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MAST2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAST2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MAST3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MAST3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAST3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MAST4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MAST4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAST4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MKNK1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MKNK1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MKNK1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MKNK2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MKNK2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MKNK2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MRGPRE -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MRGPRE">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MRGPRE</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MRGPRF -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MRGPRF">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MRGPRF</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MRGPRG -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MRGPRG">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MRGPRG</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MRGPRX1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MRGPRX1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MRGPRX1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MRGPRX2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MRGPRX2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MRGPRX2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MRGPRX3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MRGPRX3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MRGPRX3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MRGPRX4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MRGPRX4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MRGPRX4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MTNR1A -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MTNR1A">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MTNR1A</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/MTNR1B -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/MTNR1B">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MTNR1B</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/NEK1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/NEK1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEK1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/NEK10 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/NEK10">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEK10</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/NEK11 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/NEK11">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEK11</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/NEK3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/NEK3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEK3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/NEK4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/NEK4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEK4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/NEK5 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/NEK5">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEK5</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/NEK6 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/NEK6">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEK6</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/NEK7 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/NEK7">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEK7</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/NEK8 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/NEK8">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEK8</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/NEK9 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/NEK9">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEK9</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/NIM1K -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/NIM1K">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIM1K</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/NPBWR1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/NPBWR1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPBWR1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/NPBWR2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/NPBWR2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPBWR2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/NPY2R -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/NPY2R">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPY2R</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/NPY5R -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/NPY5R">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPY5R</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/NRBP2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/NRBP2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NRBP2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/NRK -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/NRK">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NRK</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/NUAK2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/NUAK2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NUAK2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/OBSCN -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/OBSCN">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBSCN</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/OXER1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/OXER1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OXER1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/OXGR1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/OXGR1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OXGR1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/P2RY10 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/P2RY10">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P2RY10</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/P2RY11 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/P2RY11">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P2RY11</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PAK3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PAK3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PAK3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PAK5 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PAK5">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PAK5</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PAK6 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PAK6">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PAK6</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PAN3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PAN3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PAN3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PANX2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PANX2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PANX2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PDIK1L -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PDIK1L">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PDIK1L</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PHKG1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PHKG1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PHKG1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PHKG2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PHKG2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PHKG2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PI4KA -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PI4KA">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PI4KA</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PIK3C2B -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PIK3C2B">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PIK3C2B</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PIK3C2G -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PIK3C2G">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PIK3C2G</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PIP4K2C -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PIP4K2C">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PIP4K2C</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PIP5K1A -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PIP5K1A">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PIP5K1A</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PIP5K1B -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PIP5K1B">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PIP5K1B</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PIP5K1C -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PIP5K1C">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PIP5K1C</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PKD1L2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PKD1L2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PKD1L2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PKD1L3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PKD1L3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PKD1L3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PKD2L2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PKD2L2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PKD2L2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PKMYT1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PKMYT1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PKMYT1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PKN3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PKN3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PKN3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PLLP -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PLLP">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PLLP</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PNCK -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PNCK">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PNCK</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/POMK -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/POMK">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POMK</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PRAG1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PRAG1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRAG1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PRKACB -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PRKACB">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRKACB</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PRKACG -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PRKACG">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRKACG</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PRKCQ -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PRKCQ">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRKCQ</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PROKR1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PROKR1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PROKR1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PRPF4B -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PRPF4B">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRPF4B</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PSKH1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PSKH1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSKH1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PSKH2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PSKH2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSKH2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/PXK -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/PXK">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PXK</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/QRFPR -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/QRFPR">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QRFPR</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/RIOK1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/RIOK1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RIOK1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/RIOK2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/RIOK2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RIOK2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/RIOK3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/RIOK3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RIOK3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/RNASEL -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/RNASEL">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNASEL</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/RPS6KC1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/RPS6KC1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RPS6KC1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/RPS6KL1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/RPS6KL1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RPS6KL1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/RXFP3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/RXFP3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RXFP3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/RXFP4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/RXFP4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RXFP4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/SBK1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/SBK1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBK1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/SBK2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/SBK2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBK2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/SBK3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/SBK3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBK3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/SCN2B -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/SCN2B">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCN2B</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/SCN3B -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/SCN3B">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCN3B</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/SCN7A -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/SCN7A">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCN7A</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/SCNN1B -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/SCNN1B">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCNN1B</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/SCNN1D -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/SCNN1D">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCNN1D</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/SCYL1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/SCYL1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCYL1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/SCYL2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/SCYL2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCYL2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/SCYL3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/SCYL3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCYL3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/SGK494 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/SGK494">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGK494</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/SLC26A1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/SLC26A1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLC26A1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/SRPK3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/SRPK3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SRPK3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/STK17A -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/STK17A">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STK17A</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/STK17B -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/STK17B">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STK17B</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/STK19 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/STK19">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STK19</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/STK3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/STK3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STK3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/STK31 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/STK31">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STK31</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/STK32A -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/STK32A">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STK32A</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/STK32B -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/STK32B">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STK32B</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/STK32C -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/STK32C">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STK32C</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/STK33 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/STK33">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STK33</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/STK36 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/STK36">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STK36</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/STK38L -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/STK38L">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STK38L</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/STK40 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/STK40">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STK40</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/STKLD1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/STKLD1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STKLD1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/SUCNR1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/SUCNR1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUCNR1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAAR2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAAR2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAAR2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAAR3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAAR3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAAR3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAAR8 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAAR8">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAAR8</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAAR9 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAAR9">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAAR9</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAOK1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAOK1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAOK1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAOK2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAOK2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAOK2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R10 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R10">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R10</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R13 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R13">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R13</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R14 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R14">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R14</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R16 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R16">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R16</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R19 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R19">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R19</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R20 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R20">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R20</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R30 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R30">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R30</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R31 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R31">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R31</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R39 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R39">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R39</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R40 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R40">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R40</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R41 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R41">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R41</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R42 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R42">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R42</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R43 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R43">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R43</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R46 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R46">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R46</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R5 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R5">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R5</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R50 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R50">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R50</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R60 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R60">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R60</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R7 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R7">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R7</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R8 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R8">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R8</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TAS2R9 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TAS2R9">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAS2R9</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TBCK -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TBCK">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TBCK</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TESK1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TESK1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TESK1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TESK2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TESK2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TESK2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TLK1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TLK1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TLK1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TLK2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TLK2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TLK2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TMC3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TMC3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMC3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TMC4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TMC4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMC4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TMC5 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TMC5">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMC5</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TMC7 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TMC7">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMC7</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TMEM38B -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TMEM38B">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMEM38B</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TMEM63A -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TMEM63A">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMEM63A</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TMEM63B -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TMEM63B">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMEM63B</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TMEM63C -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TMEM63C">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMEM63C</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TP53RK -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TP53RK">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TP53RK</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TPRA1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TPRA1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TPRA1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TSSK1B -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TSSK1B">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TSSK1B</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TSSK2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TSSK2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TSSK2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TSSK3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TSSK3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TSSK3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TSSK4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TSSK4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TSSK4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TSSK6 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TSSK6">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TSSK6</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TTBK1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TTBK1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTBK1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TTBK2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TTBK2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTBK2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TTYH1 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TTYH1">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTYH1</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/TTYH2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/TTYH2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTYH2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/ULK4 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/ULK4">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ULK4</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/VRK2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/VRK2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VRK2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/VRK3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/VRK3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VRK3</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/WEE2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/WEE2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEE2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/WNK2 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/WNK2">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WNK2</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://druggablegenome.net/WNK3 -->
+
+    <owl:Class rdf:about="http://druggablegenome.net/WNK3">
+        <rdfs:subClassOf rdf:resource="http://druggablegenome.net/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WNK3</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->

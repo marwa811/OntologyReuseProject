@@ -1,0 +1,2460 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY ontologies "http://www.semanticweb.org/ontologies/2014/10/" >
+    <!ENTITY AllergyDetector "file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2014/10/"
+     xml:base="http://www.semanticweb.org/ontologies/2014/10/"
+     xmlns:AllergyDetector="file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontologies="http://www.semanticweb.org/ontologies/2014/10/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about=""/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;identifier"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#ContemIngrediente -->
+
+    <owl:ObjectProperty rdf:about="&AllergyDetector;ContemIngrediente">
+        <rdfs:comment
+            >Informa o ingrediente que o prato tem.</rdfs:comment>
+        <owl:inverseOf rdf:resource="&AllergyDetector;ContidoNoPrato"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&AllergyDetector;ContemIngrediente"/>
+                <owl:someValuesFrom rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&AllergyDetector;ContemIngrediente"/>
+                <owl:someValuesFrom rdf:resource="&AllergyDetector;Pratos_Restaurante"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#ContemProteina -->
+
+    <owl:ObjectProperty rdf:about="&AllergyDetector;ContemProteina">
+        <owl:inverseOf rdf:resource="&AllergyDetector;ProteinaContida"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&AllergyDetector;ContemProteina"/>
+                <owl:someValuesFrom rdf:resource="&AllergyDetector;Oito_Principais_Alergenicos"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&AllergyDetector;ContemProteina"/>
+                <owl:someValuesFrom rdf:resource="&AllergyDetector;Proteinas"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#ContidoNoPrato -->
+
+    <owl:ObjectProperty rdf:about="&AllergyDetector;ContidoNoPrato">
+        <rdfs:comment
+            >Funcao inversa da propriedade TemIngrediente.Informa os pratos que possuem aquele ingrediente(s).</rdfs:comment>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&AllergyDetector;ContidoNoPrato"/>
+                <owl:someValuesFrom rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&AllergyDetector;ContidoNoPrato"/>
+                <owl:someValuesFrom rdf:resource="&AllergyDetector;Pratos_Restaurante"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#DerivaDe -->
+
+    <owl:ObjectProperty rdf:about="&AllergyDetector;DerivaDe">
+        <rdfs:comment
+            >Mostra os derivados de um ingrediente.</rdfs:comment>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&AllergyDetector;DerivaDe"/>
+                <owl:someValuesFrom rdf:resource="&AllergyDetector;Oito_Principais_Alergenicos"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&AllergyDetector;DerivaDe"/>
+                <owl:someValuesFrom rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#ProteinaContida -->
+
+    <owl:ObjectProperty rdf:about="&AllergyDetector;ProteinaContida">
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&AllergyDetector;ProteinaContida"/>
+                <owl:someValuesFrom rdf:resource="&AllergyDetector;Oito_Principais_Alergenicos"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&AllergyDetector;ProteinaContida"/>
+                <owl:someValuesFrom rdf:resource="&AllergyDetector;Proteinas"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#ServePrato -->
+
+    <owl:ObjectProperty rdf:about="&AllergyDetector;ServePrato">
+        <rdfs:comment
+            >Informa os pratos que o restaurante tem.</rdfs:comment>
+        <owl:inverseOf rdf:resource="&AllergyDetector;ServidoPor"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&AllergyDetector;ServePrato"/>
+                <owl:someValuesFrom rdf:resource="Restaurante"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&AllergyDetector;ServePrato"/>
+                <owl:someValuesFrom rdf:resource="&AllergyDetector;Pratos_Restaurante"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#ServidoPor -->
+
+    <owl:ObjectProperty rdf:about="&AllergyDetector;ServidoPor">
+        <rdfs:comment
+            >Funcao inversa da propriedade TemPrato.Informa os restaurantes que servem aquele prato(s).</rdfs:comment>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&AllergyDetector;ServidoPor"/>
+                <owl:someValuesFrom rdf:resource="Restaurante"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&AllergyDetector;ServidoPor"/>
+                <owl:someValuesFrom rdf:resource="&AllergyDetector;Pratos_Restaurante"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Deriva -->
+
+    <owl:ObjectProperty rdf:about="Deriva">
+        <owl:inverseOf rdf:resource="&AllergyDetector;DerivaDe"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="Deriva"/>
+                <owl:someValuesFrom rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="Deriva"/>
+                <owl:someValuesFrom rdf:resource="&AllergyDetector;Oito_Principais_Alergenicos"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#EnderecoFisico -->
+
+    <owl:DatatypeProperty rdf:about="&AllergyDetector;EnderecoFisico"/>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Endere&#231;oFisico -->
+
+    <owl:DatatypeProperty rdf:about="&AllergyDetector;Endere&#231;oFisico"/>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#LocalCoordenadas -->
+
+    <owl:DatatypeProperty rdf:about="&AllergyDetector;LocalCoordenadas">
+        <rdfs:comment
+            >Coordenadas Geograficas do local.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#LocalWebSite -->
+
+    <owl:DatatypeProperty rdf:about="&AllergyDetector;LocalWebSite">
+        <rdfs:comment
+            >Site do restaurante.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Nome -->
+
+    <owl:DatatypeProperty rdf:about="&AllergyDetector;Nome"/>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#NomePrato -->
+
+    <owl:DatatypeProperty rdf:about="&AllergyDetector;NomePrato"/>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#NomeRestaurante -->
+
+    <owl:DatatypeProperty rdf:about="&AllergyDetector;NomeRestaurante"/>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#UsuarioCoordenadas -->
+
+    <owl:DatatypeProperty rdf:about="&AllergyDetector;UsuarioCoordenadas">
+        <rdfs:comment
+            >Coordenadas  onde o usuario se encontra.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Nome -->
+
+    <owl:DatatypeProperty rdf:about="Nome"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/NomeCientifico -->
+
+    <owl:DatatypeProperty rdf:about="NomeCientifico"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/NomeComum -->
+
+    <owl:DatatypeProperty rdf:about="NomeComum"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/NomeEmIngles -->
+
+    <owl:DatatypeProperty rdf:about="NomeEmIngles"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Derivados_Dos_Oito_Principais_Alergenicos -->
+
+    <owl:Class rdf:about="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos">
+        <rdfs:subClassOf rdf:resource="&AllergyDetector;Ingredientes"/>
+        <rdfs:comment
+            >S&#227;o todos ingredientes que derivam de um dos oito principais alerg&#234;nicos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Ingredientes -->
+
+    <owl:Class rdf:about="&AllergyDetector;Ingredientes">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment
+            >Ingredientes que causam alergia alimentar.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Oito_Principais_Alergenicos -->
+
+    <owl:Class rdf:about="&AllergyDetector;Oito_Principais_Alergenicos">
+        <rdfs:subClassOf rdf:resource="&AllergyDetector;Ingredientes"/>
+        <rdfs:comment
+            >Sao responsaveis por mais de 90% das causas de alergias alimentares.As fontes alerg&#234;nicas Amendoas_Oriundas_De_Arvores e Crustaceo s&#227;o compostas de outros ingredientes alerg&#234;nicos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Pratos_Restaurante -->
+
+    <owl:Class rdf:about="&AllergyDetector;Pratos_Restaurante">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Proteinas -->
+
+    <owl:Class rdf:about="&AllergyDetector;Proteinas">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Ingredientes_Derivados_Oito_Principais_Servidos_Prato_Especifico -->
+
+    <owl:Class rdf:about="Ingredientes_Derivados_Oito_Principais_Servidos_Prato_Especifico">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&AllergyDetector;DerivaDe"/>
+                        <owl:someValuesFrom rdf:resource="&AllergyDetector;Oito_Principais_Alergenicos"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&AllergyDetector;ContidoNoPrato"/>
+                        <owl:hasValue rdf:resource="Angus_Deluxe"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="Ingredientes_Servidos_Prato_Especifico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Ingredientes_Oito_Principais_Servidos_Prato_Especifico -->
+
+    <owl:Class rdf:about="Ingredientes_Oito_Principais_Servidos_Prato_Especifico">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="Deriva"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&AllergyDetector;ContemIngrediente"/>
+                                        <owl:someValuesFrom rdf:resource="&AllergyDetector;Oito_Principais_Alergenicos"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&AllergyDetector;DerivaDe"/>
+                                        <owl:someValuesFrom rdf:resource="&AllergyDetector;Oito_Principais_Alergenicos"/>
+                                    </owl:Restriction>
+                                </owl:unionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&AllergyDetector;ContidoNoPrato"/>
+                                <owl:hasValue rdf:resource="Angus_Deluxe"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="Ingredientes_Servidos_Prato_Especifico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Ingredientes_Servidos_Prato_Especifico -->
+
+    <owl:Class rdf:about="Ingredientes_Servidos_Prato_Especifico">
+        <rdfs:subClassOf rdf:resource="&AllergyDetector;Ingredientes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Pratos_Restaurante_Espec&#237;fico -->
+
+    <owl:Class rdf:about="Pratos_Restaurante_Espec&#237;fico">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&AllergyDetector;ServidoPor"/>
+                <owl:hasValue rdf:resource="McDonalds"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&AllergyDetector;Pratos_Restaurante"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Proteinas_Prato_Especifico -->
+
+    <owl:Class rdf:about="Proteinas_Prato_Especifico">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&AllergyDetector;ProteinaContida"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="Deriva"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&AllergyDetector;ContemIngrediente"/>
+                                                <owl:someValuesFrom rdf:resource="&AllergyDetector;Oito_Principais_Alergenicos"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&AllergyDetector;DerivaDe"/>
+                                                <owl:someValuesFrom rdf:resource="&AllergyDetector;Oito_Principais_Alergenicos"/>
+                                            </owl:Restriction>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&AllergyDetector;ContidoNoPrato"/>
+                                        <owl:hasValue rdf:resource="Angus_Deluxe"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&AllergyDetector;Proteinas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Restaurante -->
+
+    <owl:Class rdf:about="Restaurante"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#-29.849309,-51.164982 -->
+
+    <owl:Thing rdf:about="&AllergyDetector;-29.849309,-51.164982">
+        <AllergyDetector:Nome></AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Alaminuta -->
+
+    <AllergyDetector:Pratos_Restaurante rdf:about="&AllergyDetector;Alaminuta">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Alaminuta</AllergyDetector:Nome>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Ovo"/>
+    </AllergyDetector:Pratos_Restaurante>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Amendoas_Oriundas_De_Arvores -->
+
+    <AllergyDetector:Oito_Principais_Alergenicos rdf:about="&AllergyDetector;Amendoas_Oriundas_De_Arvores">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome
+            >Amendoas_Oriundas_De_Arvores</AllergyDetector:Nome>
+    </AllergyDetector:Oito_Principais_Alergenicos>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Amendoim -->
+
+    <AllergyDetector:Oito_Principais_Alergenicos rdf:about="&AllergyDetector;Amendoim">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Arachis Hypogaea</NomeCientifico>
+        <NomeEmIngles rdf:datatype="&xsd;string">Peanut</NomeEmIngles>
+        <AllergyDetector:Nome>Amendoim</AllergyDetector:Nome>
+    </AllergyDetector:Oito_Principais_Alergenicos>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Atum_Sardinha_Enlatada -->
+
+    <AllergyDetector:Ingredientes rdf:about="&AllergyDetector;Atum_Sardinha_Enlatada">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome
+            >Atum_Sardinha_Enlatada</AllergyDetector:Nome>
+    </AllergyDetector:Ingredientes>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Barras_de_Cereais -->
+
+    <AllergyDetector:Ingredientes rdf:about="&AllergyDetector;Barras_de_Cereais">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome
+            >Barras_de_Cereais</AllergyDetector:Nome>
+    </AllergyDetector:Ingredientes>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Biscoitos_Recheados -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Biscoitos_Recheados">
+        <rdf:type rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+        <AllergyDetector:Nome
+            >Biscoitos_Recheados</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Leite"/>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Caldo_de_Carne -->
+
+    <AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos rdf:about="&AllergyDetector;Caldo_de_Carne">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Caldo_de_Carne</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Trigo"/>
+    </AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Camarao -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Camarao">
+        <rdf:type rdf:resource="&AllergyDetector;Oito_Principais_Alergenicos"/>
+        <NomeEmIngles rdf:datatype="&xsd;string"
+            >Black Tiger Shrimp</NomeEmIngles>
+        <NomeCientifico rdf:datatype="&xsd;string">Penaeus Monodon</NomeCientifico>
+        <AllergyDetector:Nome>Camarao</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Crustaceo"/>
+        <AllergyDetector:ContemProteina rdf:resource="Pen_m_1"/>
+        <AllergyDetector:ContemProteina rdf:resource="Pen_m_2"/>
+        <AllergyDetector:ContemProteina rdf:resource="Pen_m_3"/>
+        <AllergyDetector:ContemProteina rdf:resource="Pen_m_4"/>
+        <AllergyDetector:ContemProteina rdf:resource="Pen_m_6"/>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Caranguejo -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Caranguejo">
+        <rdf:type rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Charybdis Feriatus</NomeCientifico>
+        <NomeEmIngles rdf:datatype="&xsd;string">Crab</NomeEmIngles>
+        <AllergyDetector:Nome>Caranguejo</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Crustaceo"/>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Carne_Vermelha -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Carne_Vermelha">
+        <rdf:type rdf:resource="&AllergyDetector;Ingredientes"/>
+        <AllergyDetector:Nome>Carne_Vermelha</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Carnes_Processadas -->
+
+    <AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos rdf:about="&AllergyDetector;Carnes_Processadas">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome
+            >Carnes_Processadas</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Trigo"/>
+    </AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Catchup -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Catchup">
+        <rdf:type rdf:resource="&AllergyDetector;Ingredientes"/>
+        <AllergyDetector:Nome>Catchup</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Cebola -->
+
+    <AllergyDetector:Ingredientes rdf:about="&AllergyDetector;Cebola">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Cebola</AllergyDetector:Nome>
+    </AllergyDetector:Ingredientes>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Cereais_Matinais -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Cereais_Matinais">
+        <rdf:type rdf:resource="&AllergyDetector;Ingredientes"/>
+        <AllergyDetector:Nome
+            >Cereais_Matinais</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Cereal -->
+
+    <AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos rdf:about="&AllergyDetector;Cereal">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Cereal</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Trigo"/>
+    </AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Champignon -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Champignon">
+        <rdf:type rdf:resource="&AllergyDetector;Ingredientes"/>
+        <AllergyDetector:Nome>Champignon</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Chocolate -->
+
+    <AllergyDetector:Ingredientes rdf:about="&AllergyDetector;Chocolate">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Chocolate</AllergyDetector:Nome>
+    </AllergyDetector:Ingredientes>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Churrasco -->
+
+    <AllergyDetector:Pratos_Restaurante rdf:about="&AllergyDetector;Churrasco">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:NomePrato rdf:datatype="&xsd;string">Churrasco</AllergyDetector:NomePrato>
+        <AllergyDetector:Nome>Churrasco</AllergyDetector:Nome>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Carne_Vermelha"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Linguica"/>
+    </AllergyDetector:Pratos_Restaurante>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Corante_Saborizante_Caramelo -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Corante_Saborizante_Caramelo">
+        <rdf:type rdf:resource="&AllergyDetector;Ingredientes"/>
+        <AllergyDetector:Nome
+            >Corante_Saborizante_Caramelo</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Creme_de_Leite -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Creme_de_Leite">
+        <rdf:type rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+        <AllergyDetector:Nome>Creme_de_Leite</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Leite"/>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Creme_para_Cafe -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Creme_para_Cafe">
+        <rdf:type rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+        <AllergyDetector:Nome>Creme_para_Cafe</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Leite"/>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Cremor_de_Tartaro -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Cremor_de_Tartaro">
+        <rdf:type rdf:resource="&AllergyDetector;Ingredientes"/>
+        <AllergyDetector:Nome
+            >Cremor_de_Tartaro</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Crustaceo -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Crustaceo">
+        <rdf:type rdf:resource="&AllergyDetector;Oito_Principais_Alergenicos"/>
+        <AllergyDetector:Nome>Crustaceo</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Curry_em_Po -->
+
+    <AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos rdf:about="&AllergyDetector;Curry_em_Po">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Curry_em_Po</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Trigo"/>
+    </AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#DomicilioPais -->
+
+    <owl:Thing rdf:about="&AllergyDetector;DomicilioPais">
+        <AllergyDetector:Nome>DomicilioPais</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#DomicilioParentes -->
+
+    <owl:Thing rdf:about="&AllergyDetector;DomicilioParentes">
+        <AllergyDetector:Nome
+            >DomicilioParentes</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#DomicilioUsuario -->
+
+    <owl:Thing rdf:about="&AllergyDetector;DomicilioUsuario">
+        <AllergyDetector:EnderecoFisico rdf:datatype="&xsd;string"
+            >EC-55-F9-37-02-38</AllergyDetector:EnderecoFisico>
+        <AllergyDetector:Nome
+            >DomicilioUsuario</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Empanados -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Empanados">
+        <rdf:type rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+        <AllergyDetector:Nome>Empanados</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Trigo"/>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Estearoil -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Estearoil">
+        <rdf:type rdf:resource="&AllergyDetector;Ingredientes"/>
+        <AllergyDetector:Nome>Estearoil</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Farinha_de_Trigo -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Farinha_de_Trigo">
+        <rdf:type rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+        <AllergyDetector:Nome
+            >Farinha_de_Trigo</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Trigo"/>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Fermento_em_Po -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Fermento_em_Po">
+        <rdf:type rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+        <AllergyDetector:Nome>Fermento_em_Po</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Trigo"/>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Frios -->
+
+    <AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos rdf:about="&AllergyDetector;Frios">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Frios</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Trigo"/>
+    </AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Guisado -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Guisado">
+        <rdf:type rdf:resource="&AllergyDetector;Ingredientes"/>
+        <AllergyDetector:Nome>Guisado</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Hamburguer -->
+
+    <AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos rdf:about="&AllergyDetector;Hamburguer">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Hamburguer</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Soja"/>
+    </AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Iogurte -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Iogurte">
+        <rdf:type rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+        <AllergyDetector:Nome>Iogurte</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Leite"/>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Lactato_de_Calcio -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Lactato_de_Calcio">
+        <rdf:type rdf:resource="&AllergyDetector;Ingredientes"/>
+        <AllergyDetector:Nome
+            >Lactato_de_Calcio</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Lactato_de_Sodio -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Lactato_de_Sodio">
+        <rdf:type rdf:resource="&AllergyDetector;Ingredientes"/>
+        <AllergyDetector:Nome
+            >Lactato_de_Sodio</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Lactilato_de_Calcio -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Lactilato_de_Calcio">
+        <rdf:type rdf:resource="&AllergyDetector;Ingredientes"/>
+        <AllergyDetector:Nome
+            >Lactilato_de_Calcio</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Lactilato_de_Sodio -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Lactilato_de_Sodio">
+        <rdf:type rdf:resource="&AllergyDetector;Ingredientes"/>
+        <AllergyDetector:Nome
+            >Lactilato_de_Sodio</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Lagosta -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Lagosta">
+        <rdf:type rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Panulirus Stimpsoni</NomeCientifico>
+        <NomeEmIngles rdf:datatype="&xsd;string">Spiny Lobster</NomeEmIngles>
+        <AllergyDetector:Nome>Lagosta</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Crustaceo"/>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Lasanha -->
+
+    <AllergyDetector:Pratos_Restaurante rdf:about="&AllergyDetector;Lasanha">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:NomePrato rdf:datatype="&xsd;string">Lasanha</AllergyDetector:NomePrato>
+        <AllergyDetector:Nome>Lasanha</AllergyDetector:Nome>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Guisado"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Queijo"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Sal"/>
+    </AllergyDetector:Pratos_Restaurante>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Leite -->
+
+    <AllergyDetector:Oito_Principais_Alergenicos rdf:about="&AllergyDetector;Leite">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeCientifico rdf:datatype="&xsd;string">Bos Domesticus</NomeCientifico>
+        <NomeEmIngles rdf:datatype="&xsd;string">Domestic Cattle</NomeEmIngles>
+        <AllergyDetector:Nome>Leite</AllergyDetector:Nome>
+    </AllergyDetector:Oito_Principais_Alergenicos>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Leite_de_Coco -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Leite_de_Coco">
+        <rdf:type rdf:resource="&AllergyDetector;Ingredientes"/>
+        <AllergyDetector:Nome>Leite_de_Coco</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Linguica -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Linguica">
+        <rdf:type rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+        <AllergyDetector:Nome>Linguica</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Trigo"/>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#LocalTrabalho -->
+
+    <owl:Thing rdf:about="&AllergyDetector;LocalTrabalho">
+        <AllergyDetector:Nome>LocalTrabalho</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Maionese_Industrializada -->
+
+    <AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos rdf:about="&AllergyDetector;Maionese_Industrializada">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome
+            >Maionese_Industrializada</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Leite"/>
+    </AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Manteiga -->
+
+    <AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos rdf:about="&AllergyDetector;Manteiga">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Manteiga</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Leite"/>
+    </AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Manteiga_de_Cacau -->
+
+    <AllergyDetector:Ingredientes rdf:about="&AllergyDetector;Manteiga_de_Cacau">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome
+            >Manteiga_de_Cacau</AllergyDetector:Nome>
+    </AllergyDetector:Ingredientes>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Margarina -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Margarina">
+        <rdf:type rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+        <AllergyDetector:Nome>Margarina</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Leite"/>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Massa -->
+
+    <AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos rdf:about="&AllergyDetector;Massa">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Massa</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Trigo"/>
+    </AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Molho_Pronto -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Molho_Pronto">
+        <rdf:type rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+        <AllergyDetector:Nome>Molho_Pronto</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Trigo"/>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Molhos_Cremosos -->
+
+    <AllergyDetector:Ingredientes rdf:about="&AllergyDetector;Molhos_Cremosos">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Molhos_Cremosos</AllergyDetector:Nome>
+    </AllergyDetector:Ingredientes>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Mostarda -->
+
+    <AllergyDetector:Ingredientes rdf:about="&AllergyDetector;Mostarda">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Mostarda</AllergyDetector:Nome>
+    </AllergyDetector:Ingredientes>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Nata -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Nata">
+        <rdf:type rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+        <AllergyDetector:Nome>Nata</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Leite"/>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Nelson -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Nelson">
+        <AllergyDetector:Nome>Nelson</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Nougat -->
+
+    <AllergyDetector:Ingredientes rdf:about="&AllergyDetector;Nougat">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Nougat</AllergyDetector:Nome>
+    </AllergyDetector:Ingredientes>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Ovo -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Ovo">
+        <rdf:type rdf:resource="&AllergyDetector;Oito_Principais_Alergenicos"/>
+        <NomeEmIngles rdf:datatype="&xsd;string">Chicken</NomeEmIngles>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Gallus Domesticus</NomeCientifico>
+        <AllergyDetector:Nome>Ovo</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Ovo_Frito -->
+
+    <AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos rdf:about="&AllergyDetector;Ovo_Frito">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Ovo_Frito</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Ovo"/>
+    </AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Pao -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Pao">
+        <rdf:type rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+        <AllergyDetector:Nome>Pao</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Pasta_para_Pao -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Pasta_para_Pao">
+        <rdf:type rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+        <AllergyDetector:Nome>Pasta_para_Pao</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Trigo"/>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Pate -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Pate">
+        <rdf:type rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+        <AllergyDetector:Nome>Pate</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Trigo"/>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Pates -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Pates">
+        <rdf:type rdf:resource="&AllergyDetector;Ingredientes"/>
+        <AllergyDetector:Nome>Pates</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Peixe -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Peixe">
+        <rdf:type rdf:resource="&AllergyDetector;Oito_Principais_Alergenicos"/>
+        <AllergyDetector:Nome>Peixe</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Pimenta -->
+
+    <AllergyDetector:Ingredientes rdf:about="&AllergyDetector;Pimenta">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Pimenta</AllergyDetector:Nome>
+    </AllergyDetector:Ingredientes>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Queijo -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Queijo">
+        <rdf:type rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+        <AllergyDetector:Nome>Queijo</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Leite"/>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Requeijao -->
+
+    <AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos rdf:about="&AllergyDetector;Requeijao">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Requeijao</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Leite"/>
+    </AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Risoles -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Risoles">
+        <rdf:type rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+        <AllergyDetector:Nome>Risoles</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Trigo"/>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Sabor_Artificial_de_Manteiga -->
+
+    <AllergyDetector:Ingredientes rdf:about="&AllergyDetector;Sabor_Artificial_de_Manteiga">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome
+            >Sabor_Artificial_de_Manteiga</AllergyDetector:Nome>
+    </AllergyDetector:Ingredientes>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Sabor_de_Acucar_Mascavo -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Sabor_de_Acucar_Mascavo">
+        <rdf:type rdf:resource="&AllergyDetector;Ingredientes"/>
+        <AllergyDetector:Nome
+            >Sabor_de_Acucar_Mascavo</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Saborizantes_Naturais_Ou_Artificiais -->
+
+    <AllergyDetector:Ingredientes rdf:about="&AllergyDetector;Saborizantes_Naturais_Ou_Artificiais">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome
+            >Saborizantes_Naturais_Ou_Artificiais</AllergyDetector:Nome>
+    </AllergyDetector:Ingredientes>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Sal -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Sal">
+        <rdf:type rdf:resource="&AllergyDetector;Ingredientes"/>
+        <AllergyDetector:Nome>Sal</AllergyDetector:Nome>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Salame -->
+
+    <AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos rdf:about="&AllergyDetector;Salame">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Salame</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Trigo"/>
+    </AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Salsicha -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Salsicha">
+        <rdf:type rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+        <AllergyDetector:Nome>Salsicha</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Trigo"/>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Siri -->
+
+    <AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos rdf:about="&AllergyDetector;Siri">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeEmIngles rdf:datatype="&xsd;string"
+            >Blue Swimmer Crab</NomeEmIngles>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Portunus Pelagicus</NomeCientifico>
+        <AllergyDetector:Nome>Siri</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Crustaceo"/>
+    </AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Soja -->
+
+    <AllergyDetector:Oito_Principais_Alergenicos rdf:about="&AllergyDetector;Soja">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeCientifico rdf:datatype="&xsd;string">Glycine Max</NomeCientifico>
+        <AllergyDetector:Nome>Soja</AllergyDetector:Nome>
+        <NomeEmIngles>Soybean</NomeEmIngles>
+    </AllergyDetector:Oito_Principais_Alergenicos>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Sopas_Prontas -->
+
+    <AllergyDetector:Ingredientes rdf:about="&AllergyDetector;Sopas_Prontas">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Sopas_Prontas</AllergyDetector:Nome>
+    </AllergyDetector:Ingredientes>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Strogonoff -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Strogonoff">
+        <rdf:type rdf:resource="&AllergyDetector;Pratos_Restaurante"/>
+        <AllergyDetector:NomePrato rdf:datatype="&xsd;string">Strogonoff</AllergyDetector:NomePrato>
+        <AllergyDetector:Nome>Strogonoff</AllergyDetector:Nome>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Carne_Vermelha"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Champignon"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Creme_de_Leite"/>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Subway -->
+
+    <owl:Thing rdf:about="&AllergyDetector;Subway">
+        <rdf:type rdf:resource="Restaurante"/>
+        <AllergyDetector:LocalCoordenadas rdf:datatype="&xsd;string"
+            >-29.849309,-51.164982</AllergyDetector:LocalCoordenadas>
+        <AllergyDetector:NomeRestaurante rdf:datatype="&xsd;string">Subway</AllergyDetector:NomeRestaurante>
+        <AllergyDetector:LocalWebSite rdf:datatype="&xsd;string"
+            >http://www.subway.com.br/lista-alergenicos</AllergyDetector:LocalWebSite>
+        <AllergyDetector:Nome>Subway</AllergyDetector:Nome>
+        <AllergyDetector:ServePrato rdf:resource="&AllergyDetector;Strogonoff"/>
+    </owl:Thing>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Tofu -->
+
+    <AllergyDetector:Ingredientes rdf:about="&AllergyDetector;Tofu">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Tofu</AllergyDetector:Nome>
+    </AllergyDetector:Ingredientes>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Tomate -->
+
+    <AllergyDetector:Ingredientes rdf:about="&AllergyDetector;Tomate">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Tomate</AllergyDetector:Nome>
+    </AllergyDetector:Ingredientes>
+    
+
+
+    <!-- file://C:/Users/Nelson/workspace/JenaTutorial/src/br/com/allergydetector/resources/AllergyDetector.owl#Trigo -->
+
+    <AllergyDetector:Oito_Principais_Alergenicos rdf:about="&AllergyDetector;Trigo">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Triticum Aestivum</NomeCientifico>
+        <NomeEmIngles rdf:datatype="&xsd;string">Wheat</NomeEmIngles>
+        <AllergyDetector:Nome>Trigo</AllergyDetector:Nome>
+    </AllergyDetector:Oito_Principais_Alergenicos>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Alface -->
+
+    <AllergyDetector:Ingredientes rdf:about="Alface">
+        <rdf:type rdf:resource="&owl;Thing"/>
+    </AllergyDetector:Ingredientes>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Amendoa -->
+
+    <AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos rdf:about="Amendoa">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeEmIngles rdf:datatype="&xsd;string">Almond</NomeEmIngles>
+        <NomeCientifico rdf:datatype="&xsd;string">Prunus Dulcis</NomeCientifico>
+        <AllergyDetector:Nome>Amendoa</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Amendoas_Oriundas_De_Arvores"/>
+    </AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Angus_Bacon -->
+
+    <owl:Thing rdf:about="Angus_Bacon">
+        <rdf:type rdf:resource="&AllergyDetector;Pratos_Restaurante"/>
+        <Nome>Angus_Bacon</Nome>
+        <AllergyDetector:NomePrato>Angus_Bacon</AllergyDetector:NomePrato>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Catchup"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Cebola"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Hamburguer"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Mostarda"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Pao"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Queijo"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="Bacon"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="Picles"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Angus_Deluxe -->
+
+    <owl:Thing rdf:about="Angus_Deluxe">
+        <rdf:type rdf:resource="&AllergyDetector;Pratos_Restaurante"/>
+        <AllergyDetector:Nome>Angus_Deluxe</AllergyDetector:Nome>
+        <AllergyDetector:NomePrato>Angus_Deluxe</AllergyDetector:NomePrato>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Cebola"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Hamburguer"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Maionese_Industrializada"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Mostarda"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Pao"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Queijo"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Tomate"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="Alface"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="Picles"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Ara_h_1 -->
+
+    <owl:Thing rdf:about="Ara_h_1">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Cupin (Vicillin-type, 7S globulin)</NomeCientifico>
+        <NomeComum rdf:datatype="&xsd;string">Vicilina</NomeComum>
+        <AllergyDetector:Nome>Ara_h_1</AllergyDetector:Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Arachis Hypogaea, nome cientifico do amendoim.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Amendoim"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Ara_h_10 -->
+
+    <AllergyDetector:Proteinas rdf:about="Ara_h_10">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeCientifico rdf:datatype="&xsd;string">16 kDa oleosin</NomeCientifico>
+        <NomeComum>Oleosina</NomeComum>
+        <AllergyDetector:Nome>Ara_h_10</AllergyDetector:Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Arachis Hypogaea, nome cientifico do amendoim.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Amendoim"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Ara_h_11 -->
+
+    <owl:Thing rdf:about="Ara_h_11">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico rdf:datatype="&xsd;string">14 kDa oleosin</NomeCientifico>
+        <NomeComum rdf:datatype="&xsd;string">Oleosina</NomeComum>
+        <rdfs:comment
+            >Proteina relacionada a especie Arachis Hypogaea, nome cientifico do amendoim.</rdfs:comment>
+        <AllergyDetector:Nome>Ara_h_11</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Amendoim"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Ara_h_12 -->
+
+    <owl:Thing rdf:about="Ara_h_12">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico rdf:datatype="&xsd;string">Defensin</NomeCientifico>
+        <NomeComum rdf:datatype="&xsd;string">Defensina</NomeComum>
+        <rdfs:comment
+            >Proteina relacionada a especie Arachis Hypogaea, nome cientifico do amendoim.</rdfs:comment>
+        <AllergyDetector:Nome>Ara_h_12</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Amendoim"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Ara_h_13 -->
+
+    <owl:Thing rdf:about="Ara_h_13">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico rdf:datatype="&xsd;string">Defensin</NomeCientifico>
+        <NomeComum rdf:datatype="&xsd;string">Defensina</NomeComum>
+        <AllergyDetector:Nome>Ara_h_13</AllergyDetector:Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Arachis Hypogaea, nome cientifico do amendoim.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Amendoim"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Avelas -->
+
+    <owl:Thing rdf:about="Avelas">
+        <rdf:type rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Corylus Avellana</NomeCientifico>
+        <NomeEmIngles rdf:datatype="&xsd;string">Hazel</NomeEmIngles>
+        <AllergyDetector:Nome>Avelas</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Amendoas_Oriundas_De_Arvores"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Bacon -->
+
+    <AllergyDetector:Ingredientes rdf:about="Bacon">
+        <rdf:type rdf:resource="&owl;Thing"/>
+    </AllergyDetector:Ingredientes>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Big_Mac -->
+
+    <AllergyDetector:Pratos_Restaurante rdf:about="Big_Mac">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Big_Mac</AllergyDetector:Nome>
+        <AllergyDetector:NomePrato>Big_Mac</AllergyDetector:NomePrato>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Cebola"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Hamburguer"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Molhos_Cremosos"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Pao"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Pimenta"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Queijo"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Sal"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="Alface"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="Picles"/>
+    </AllergyDetector:Pratos_Restaurante>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Bos_d_10 -->
+
+    <owl:Thing rdf:about="Bos_d_10">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico>AlphaS2-Casein</NomeCientifico>
+        <NomeComum>Caseina</NomeComum>
+        <rdfs:comment
+            >Proteina relacionada a especie Bos Domesticus, nome cientifico da vaca que fornece a fonte de alergia que &#233; o leite.</rdfs:comment>
+        <AllergyDetector:Nome>Bos_d_10</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Leite"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Bos_d_11 -->
+
+    <AllergyDetector:Proteinas rdf:about="Bos_d_11">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:comment
+            >Proteina relacionada a especie Bos Domesticus, nome cientifico da vaca que fornece a fonte de alergia que &#233; o leite.</rdfs:comment>
+        <NomeComum>Caseina</NomeComum>
+        <AllergyDetector:Nome>Bos_d_11</AllergyDetector:Nome>
+        <NomeCientifico>Beta-Casein</NomeCientifico>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Leite"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Bos_d_12 -->
+
+    <AllergyDetector:Proteinas rdf:about="Bos_d_12">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeComum>Caseina</NomeComum>
+        <rdfs:comment
+            >Proteina relacionada a especie Bos Domesticus, nome cientifico da vaca que fornece a fonte de alergia que &#233; o leite.</rdfs:comment>
+        <NomeCientifico>Kappa-Casein</NomeCientifico>
+        <AllergyDetector:Nome>Bos_d_12</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Leite"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Bos_d_4 -->
+
+    <AllergyDetector:Proteinas rdf:about="Bos_d_4">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Bos_d_4</AllergyDetector:Nome>
+        <NomeComum>Albumina</NomeComum>
+        <NomeCientifico
+            >Alpha-Lactalbumin</NomeCientifico>
+        <rdfs:comment
+            >Proteina relacionada a especie Bos Domesticus, nome cientifico da vaca que fornece a fonte de alergia que &#233; o leite.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Leite"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Bos_d_5 -->
+
+    <owl:Thing rdf:about="Bos_d_5">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <rdfs:comment
+            >Proteina relacionada a especie Bos Domesticus, nome cientifico da vaca que fornece a fonte de alergia que &#233; o leite.</rdfs:comment>
+        <NomeComum>Globulina</NomeComum>
+        <NomeCientifico
+            >Beta-Lactoglobulin</NomeCientifico>
+        <AllergyDetector:Nome>Bos_d_5</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Leite"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Bos_d_6 -->
+
+    <AllergyDetector:Proteinas rdf:about="Bos_d_6">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeCientifico>Serum Albumin</NomeCientifico>
+        <AllergyDetector:Nome>Bos_d_6</AllergyDetector:Nome>
+        <NomeComum>Albumina</NomeComum>
+        <rdfs:comment
+            >Proteina relacionada a especie Bos Domesticus, nome cientifico da vaca que fornece a fonte de alergia que &#233; o leite.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Leite"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Bos_d_7 -->
+
+    <AllergyDetector:Proteinas rdf:about="Bos_d_7">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Bos_d_7</AllergyDetector:Nome>
+        <NomeCientifico>Immunoglobulin</NomeCientifico>
+        <rdfs:comment
+            >Proteina relacionada a especie Bos Domesticus, nome cientifico da vaca que fornece a fonte de alergia que &#233; o leite.</rdfs:comment>
+        <NomeComum>Imunoglobulina</NomeComum>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Leite"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Bos_d_8 -->
+
+    <owl:Thing rdf:about="Bos_d_8">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <rdfs:comment
+            >Proteina relacionada a especie Bos Domesticus, nome cientifico da vaca que fornece a fonte de alergia que &#233; o leite.</rdfs:comment>
+        <AllergyDetector:Nome>Bos_d_8</AllergyDetector:Nome>
+        <NomeComum>Caseina</NomeComum>
+        <NomeCientifico
+            >Caseins (for individual components see Bos d 9-Bos d 12)</NomeCientifico>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Leite"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Bos_d_9 -->
+
+    <AllergyDetector:Proteinas rdf:about="Bos_d_9">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeComum>Caseina</NomeComum>
+        <rdfs:comment
+            >Proteina relacionada a especie Bos Domesticus, nome cientifico da vaca que fornece a fonte de alergia que &#233; o leite.</rdfs:comment>
+        <NomeCientifico>AlphaS1-Casein</NomeCientifico>
+        <AllergyDetector:Nome>Bos_d_9</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Leite"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Camarao_com_Creme_de_Leite -->
+
+    <owl:Thing rdf:about="Camarao_com_Creme_de_Leite">
+        <rdf:type rdf:resource="&AllergyDetector;Pratos_Restaurante"/>
+        <AllergyDetector:Nome
+            >Camarao_com_Creme_de_Leite</AllergyDetector:Nome>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Camarao"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Cebola"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Sal"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Cas_s_5 -->
+
+    <AllergyDetector:Proteinas rdf:about="Cas_s_5">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>Cas_s_5</AllergyDetector:Nome>
+        <NomeCientifico>Chitinase</NomeCientifico>
+        <rdfs:comment
+            >Proteina relacionada a especie Castanea Sativa, nome cientifico da Castanha.</rdfs:comment>
+        <NomeComum>Quitinases</NomeComum>
+        <AllergyDetector:ProteinaContida rdf:resource="Castanha"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Cas_s_8 -->
+
+    <AllergyDetector:Proteinas rdf:about="Cas_s_8">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeComum>LTP</NomeComum>
+        <AllergyDetector:Nome>Cas_s_8</AllergyDetector:Nome>
+        <NomeCientifico
+            >Non-specific lipid transfer protein type 1</NomeCientifico>
+        <AllergyDetector:ProteinaContida rdf:resource="Castanha"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Cas_s_9 -->
+
+    <owl:Thing rdf:about="Cas_s_9">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <AllergyDetector:Nome>Cas_s_9</AllergyDetector:Nome>
+        <NomeCientifico
+            >Cytosolic class I small heat shock protein</NomeCientifico>
+        <NomeComum>HSP-20</NomeComum>
+        <AllergyDetector:ProteinaContida rdf:resource="Castanha"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Castanha -->
+
+    <AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos rdf:about="Castanha">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeCientifico rdf:datatype="&xsd;string">Castanea Sativa</NomeCientifico>
+        <NomeEmIngles rdf:datatype="&xsd;string">Chestnut</NomeEmIngles>
+        <AllergyDetector:Nome>Castanha</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Amendoas_Oriundas_De_Arvores"/>
+    </AllergyDetector:Derivados_Dos_Oito_Principais_Alergenicos>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Cha_f_1 -->
+
+    <AllergyDetector:Proteinas rdf:about="Cha_f_1">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeComum rdf:datatype="&xsd;string">Tropomiosina</NomeComum>
+        <NomeCientifico rdf:datatype="&xsd;string">Tropomyosin</NomeCientifico>
+        <AllergyDetector:Nome>Cha_f_1</AllergyDetector:Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Charybdis Feriatus, nome cientifico da Caranguejo.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Caranguejo"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Cor_a_1 -->
+
+    <owl:Thing rdf:about="Cor_a_1">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Pathogenesis-related protein, PR-10, Bet v 1 family member</NomeCientifico>
+        <NomeComum>PR-10</NomeComum>
+        <AllergyDetector:Nome>Cor_a_1</AllergyDetector:Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Corylus Avellana, nome cientifico da Avela.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="Avelas"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Cor_a_11 -->
+
+    <owl:Thing rdf:about="Cor_a_11">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >7S seed storage globulin (vicilin-like)</NomeCientifico>
+        <AllergyDetector:Nome>Cor_a_11</AllergyDetector:Nome>
+        <NomeComum
+            >Globulina 7S (Vicilinas)</NomeComum>
+        <rdfs:comment
+            >Proteina relacionada a especie Corylus Avellana, nome cientifico da Avela.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="Avelas"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Cor_a_12 -->
+
+    <AllergyDetector:Proteinas rdf:about="Cor_a_12">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeCientifico rdf:datatype="&xsd;string">17 kDa oelosin</NomeCientifico>
+        <rdfs:comment
+            >Proteina relacionada a especie Corylus Avellana, nome cientifico da Avela.</rdfs:comment>
+        <NomeComum>Oleosina</NomeComum>
+        <AllergyDetector:Nome>Cor_a_12</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="Avelas"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Cor_a_13 -->
+
+    <owl:Thing rdf:about="Cor_a_13">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >14-16 kDa oleosin</NomeCientifico>
+        <NomeComum>Oleosina</NomeComum>
+        <AllergyDetector:Nome>Cor_a_13</AllergyDetector:Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Corylus Avellana, nome cientifico da Avela.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="Avelas"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Cor_a_14 -->
+
+    <owl:Thing rdf:about="Cor_a_14">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico rdf:datatype="&xsd;string">2S albumin</NomeCientifico>
+        <AllergyDetector:Nome>Cor_a_14</AllergyDetector:Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Corylus Avellana, nome cientifico da Avela.</rdfs:comment>
+        <NomeComum>2S Albuminas</NomeComum>
+        <AllergyDetector:ProteinaContida rdf:resource="Avelas"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Gad_m_1 -->
+
+    <owl:Thing rdf:about="Gad_m_1">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <rdfs:comment
+            >Proteina relacionada a especie Gadus morhua, nome cientifico do Bacalhau.</rdfs:comment>
+        <NomeCientifico
+            >Beta-parvalbumin</NomeCientifico>
+        <AllergyDetector:Nome>Gad_m_1</AllergyDetector:Nome>
+        <NomeComum>Parvalbumina</NomeComum>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Peixe"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Gad_m_2 -->
+
+    <AllergyDetector:Proteinas rdf:about="Gad_m_2">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeCientifico>Beta_Enolase</NomeCientifico>
+        <Nome>Gad_m_2</Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Gadus morhua, nome cientifico do Bacalhau.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Peixe"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Gad_m_3 -->
+
+    <AllergyDetector:Proteinas rdf:about="Gad_m_3">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Nome>Gad_m_3</Nome>
+        <NomeCientifico>Aldolase_A</NomeCientifico>
+        <rdfs:comment
+            >Proteina relacionada a especie Gadus morhua, nome cientifico do Bacalhau.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Peixe"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Gal_d_1 -->
+
+    <owl:Thing rdf:about="Gal_d_1">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico rdf:datatype="&xsd;string">Ovomucoid</NomeCientifico>
+        <NomeComum rdf:datatype="&xsd;string">Ovomucoide</NomeComum>
+        <AllergyDetector:Nome>Gal_d_1</AllergyDetector:Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Gallus Domesticus, nome cientifico da galinha que produz o ovo.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Ovo"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Gal_d_2 -->
+
+    <owl:Thing rdf:about="Gal_d_2">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico rdf:datatype="&xsd;string">Ovalbumin</NomeCientifico>
+        <NomeComum rdf:datatype="&xsd;string">Ovoalbumina</NomeComum>
+        <AllergyDetector:Nome>Gal_d_2</AllergyDetector:Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Gallus Domesticus, nome cientifico da galinha que produz o ovo.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Ovo"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Gal_d_3 -->
+
+    <AllergyDetector:Proteinas rdf:about="Gal_d_3">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeCientifico rdf:datatype="&xsd;string">Ovotransferrin</NomeCientifico>
+        <NomeComum rdf:datatype="&xsd;string">Ovotransferrina</NomeComum>
+        <rdfs:comment
+            >Proteina relacionada a especie Gallus Domesticus, nome cientifico da galinha que produz o ovo.</rdfs:comment>
+        <AllergyDetector:Nome>Gal_d_3</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Ovo"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Gal_d_4 -->
+
+    <AllergyDetector:Proteinas rdf:about="Gal_d_4">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeComum rdf:datatype="&xsd;string">Lisozima</NomeComum>
+        <NomeCientifico rdf:datatype="&xsd;string">Lysozyme C</NomeCientifico>
+        <AllergyDetector:Nome>Gal_d_4</AllergyDetector:Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Gallus Domesticus, nome cientifico da galinha que produz o ovo.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Ovo"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Gal_d_5 -->
+
+    <owl:Thing rdf:about="Gal_d_5">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeComum rdf:datatype="&xsd;string"
+            >Albumina Serica (Livetina)</NomeComum>
+        <NomeCientifico rdf:datatype="&xsd;string">Serum albumin</NomeCientifico>
+        <AllergyDetector:Nome>Gal_d_5</AllergyDetector:Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Gallus Domesticus, nome cientifico da galinha que produz o ovo.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Ovo"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Gal_d_6 -->
+
+    <owl:Thing rdf:about="Gal_d_6">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico rdf:datatype="&xsd;string">YGP42</NomeCientifico>
+        <NomeComum rdf:datatype="&xsd;string"
+            >YGP42 (Vitelogenina)</NomeComum>
+        <rdfs:comment
+            >Proteina relacionada a especie Gallus Domesticus, nome cientifico da galinha que produz o ovo.</rdfs:comment>
+        <AllergyDetector:Nome>Gal_d_6</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Ovo"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Gly_m_1 -->
+
+    <owl:Thing rdf:about="Gly_m_1">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeComum rdf:datatype="&xsd;string">HPS</NomeComum>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Hydrophobic protein from soybean</NomeCientifico>
+        <AllergyDetector:Nome>Gly_m_1</AllergyDetector:Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Glycyne Max, nome cientifico da soja.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Soja"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Gly_m_2 -->
+
+    <owl:Thing rdf:about="Gly_m_2">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico rdf:datatype="&xsd;string">Defensin</NomeCientifico>
+        <NomeComum rdf:datatype="&xsd;string">Defensina</NomeComum>
+        <AllergyDetector:Nome>Gly_m_2</AllergyDetector:Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Glycyne Max, nome cientifico da soja.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Soja"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Gly_m_3 -->
+
+    <AllergyDetector:Proteinas rdf:about="Gly_m_3">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeComum rdf:datatype="&xsd;string">Profilin</NomeComum>
+        <NomeCientifico rdf:datatype="&xsd;string">Profilin</NomeCientifico>
+        <rdfs:comment
+            >Proteina relacionada a especie Glycyne Max, nome cientifico da soja.</rdfs:comment>
+        <AllergyDetector:Nome>Gly_m_3</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Soja"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Gly_m_4 -->
+
+    <AllergyDetector:Proteinas rdf:about="Gly_m_4">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeComum rdf:datatype="&xsd;string">PR-10</NomeComum>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Pathogenesis-related protein, PR-10, Bet v 1 family member</NomeCientifico>
+        <rdfs:comment
+            >Proteina relacionada a especie Glycyne Max, nome cientifico da soja.</rdfs:comment>
+        <AllergyDetector:Nome>Gly_m_4</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Soja"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Gly_m_5 -->
+
+    <owl:Thing rdf:about="Gly_m_5">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Beta-conglycinin (vicilin, 7S globulin)</NomeCientifico>
+        <NomeComum rdf:datatype="&xsd;string">Conglicinina</NomeComum>
+        <AllergyDetector:Nome>Gly_m_5</AllergyDetector:Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Glycyne Max, nome cientifico da soja.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Soja"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Gly_m_6 -->
+
+    <owl:Thing rdf:about="Gly_m_6">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeComum rdf:datatype="&xsd;string">Glicinina</NomeComum>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Glycinin (legumin, 11S globulin)</NomeCientifico>
+        <AllergyDetector:Nome>Gly_m_6</AllergyDetector:Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Glycyne Max, nome cientifico da soja.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Soja"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Gly_m_7 -->
+
+    <owl:Thing rdf:about="Gly_m_7">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Seed biotinylated protein</NomeCientifico>
+        <rdfs:comment
+            >Proteina relacionada a especie Glycyne Max, nome cientifico da soja.</rdfs:comment>
+        <AllergyDetector:Nome>Gly_m_7</AllergyDetector:Nome>
+        <NomeComum
+            >Proteina da semente biotinilidado</NomeComum>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Soja"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Gly_m_8 -->
+
+    <AllergyDetector:Proteinas rdf:about="Gly_m_8">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeComum rdf:datatype="&xsd;string">2S Albuminas</NomeComum>
+        <NomeCientifico rdf:datatype="&xsd;string">2S albumin</NomeCientifico>
+        <AllergyDetector:Nome>Gly_m_8</AllergyDetector:Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Glycyne Max, nome cientifico da soja.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Soja"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Jug_r_1 -->
+
+    <owl:Thing rdf:about="Jug_r_1">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >2S albumin seed storage protein</NomeCientifico>
+        <rdfs:comment
+            >Proteina relacionada a especie Juglans Regia, nome cientifico da Nozes.</rdfs:comment>
+        <AllergyDetector:Nome>Jug_r_1</AllergyDetector:Nome>
+        <NomeComum>2S Albuminas</NomeComum>
+        <AllergyDetector:ProteinaContida rdf:resource="Nozes"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Jug_r_2 -->
+
+    <owl:Thing rdf:about="Jug_r_2">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Vicilin seed storage protein</NomeCientifico>
+        <AllergyDetector:Nome>Jug_r_2</AllergyDetector:Nome>
+        <NomeComum>Vicilina</NomeComum>
+        <rdfs:comment
+            >Proteina relacionada a especie Juglans Regia, nome cientifico da Nozes</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="Nozes"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Jug_r_3 -->
+
+    <AllergyDetector:Proteinas rdf:about="Jug_r_3">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Non-specific lipid transfer protein type 1 (nsLTP1)</NomeCientifico>
+        <rdfs:comment
+            >Proteina relacionada a especie Juglans Regia, nome cientifico da Nozes</rdfs:comment>
+        <NomeComum>LTP</NomeComum>
+        <AllergyDetector:Nome>Jug_r_3</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="Nozes"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Jug_r_4 -->
+
+    <owl:Thing rdf:about="Jug_r_4">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >11S globulin seed storage protein</NomeCientifico>
+        <rdfs:comment
+            >Proteina relacionada a especie Juglans Regia, nome cientifico da Nozes</rdfs:comment>
+        <NomeComum>Globulina 11S</NomeComum>
+        <AllergyDetector:Nome>Jug_r_4</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="Nozes"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/McChicken -->
+
+    <owl:Thing rdf:about="McChicken">
+        <rdf:type rdf:resource="&AllergyDetector;Pratos_Restaurante"/>
+        <AllergyDetector:Nome>McChicken</AllergyDetector:Nome>
+        <AllergyDetector:NomePrato>McChicken</AllergyDetector:NomePrato>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Hamburguer"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Molhos_Cremosos"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Pao"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="Alface"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/McDonalds -->
+
+    <owl:Thing rdf:about="McDonalds">
+        <rdf:type rdf:resource="Restaurante"/>
+        <AllergyDetector:Nome>McDonalds</AllergyDetector:Nome>
+        <AllergyDetector:NomeRestaurante>McDonalds</AllergyDetector:NomeRestaurante>
+        <AllergyDetector:ServePrato rdf:resource="Angus_Bacon"/>
+        <AllergyDetector:ServePrato rdf:resource="Angus_Deluxe"/>
+        <AllergyDetector:ServePrato rdf:resource="Big_Mac"/>
+        <AllergyDetector:ServePrato rdf:resource="McChicken"/>
+        <AllergyDetector:ServePrato rdf:resource="McFish"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/McFish -->
+
+    <AllergyDetector:Pratos_Restaurante rdf:about="McFish">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <AllergyDetector:Nome>McFish</AllergyDetector:Nome>
+        <AllergyDetector:NomePrato>McFish</AllergyDetector:NomePrato>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Molhos_Cremosos"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Pao"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Peixe"/>
+        <AllergyDetector:ContemIngrediente rdf:resource="&AllergyDetector;Queijo"/>
+    </AllergyDetector:Pratos_Restaurante>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/NaBrasa -->
+
+    <owl:Thing rdf:about="NaBrasa">
+        <rdf:type rdf:resource="Restaurante"/>
+        <Nome>NaBrasa</Nome>
+        <AllergyDetector:NomeRestaurante>NaBrasa</AllergyDetector:NomeRestaurante>
+        <AllergyDetector:ServePrato rdf:resource="&AllergyDetector;Alaminuta"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Nozes -->
+
+    <owl:Thing rdf:about="Nozes">
+        <rdf:type rdf:resource="&AllergyDetector;Derivados_Dos_Oito_Principais_Alergenicos"/>
+        <NomeEmIngles rdf:datatype="&xsd;string">English Walnut</NomeEmIngles>
+        <NomeCientifico rdf:datatype="&xsd;string">Juglans Regia</NomeCientifico>
+        <AllergyDetector:Nome>Nozes</AllergyDetector:Nome>
+        <AllergyDetector:DerivaDe rdf:resource="&AllergyDetector;Amendoas_Oriundas_De_Arvores"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Pan_s_1 -->
+
+    <owl:Thing rdf:about="Pan_s_1">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeComum rdf:datatype="&xsd;string">Tropomiosina</NomeComum>
+        <NomeCientifico rdf:datatype="&xsd;string">Tropomyosin</NomeCientifico>
+        <rdfs:comment
+            >Proteina relacionada a especie Panulirus stimpsoni, nome cientifico da Lagosta.</rdfs:comment>
+        <AllergyDetector:Nome>Pan_s_1</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Lagosta"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Pen_m_1 -->
+
+    <owl:Thing rdf:about="Pen_m_1">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeComum rdf:datatype="&xsd;string">Tropomiosina</NomeComum>
+        <NomeCientifico rdf:datatype="&xsd;string">Tropomyosin</NomeCientifico>
+        <rdfs:comment
+            >Proteina relacionada a especie Penaeus Monodon, nome cientifico do Camarao.</rdfs:comment>
+        <AllergyDetector:Nome>Pen_m_1</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Camarao"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Pen_m_2 -->
+
+    <owl:Thing rdf:about="Pen_m_2">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeComum rdf:datatype="&xsd;string">Arginina-kinase</NomeComum>
+        <NomeCientifico rdf:datatype="&xsd;string">Arginine Kinase</NomeCientifico>
+        <AllergyDetector:Nome>Pen_m_2</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Camarao"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Pen_m_3 -->
+
+    <AllergyDetector:Proteinas rdf:about="Pen_m_3">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeComum rdf:datatype="&xsd;string"
+            >Miosina de Cadeia Leve</NomeComum>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Myosin light chain 2</NomeCientifico>
+        <AllergyDetector:Nome>Pen_m_3</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Camarao"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Pen_m_4 -->
+
+    <owl:Thing rdf:about="Pen_m_4">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Sarcoplasmic calcium binding protein</NomeCientifico>
+        <NomeComum rdf:datatype="&xsd;string">Sarcoplasm&#225;tica</NomeComum>
+        <AllergyDetector:Nome>Pen_m_4</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Camarao"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Pen_m_6 -->
+
+    <AllergyDetector:Proteinas rdf:about="Pen_m_6">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeCientifico rdf:datatype="&xsd;string">Troponin C</NomeCientifico>
+        <NomeComum rdf:datatype="&xsd;string">Troponina C</NomeComum>
+        <AllergyDetector:Nome>Pen_m_6</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Camarao"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Picles -->
+
+    <AllergyDetector:Ingredientes rdf:about="Picles">
+        <rdf:type rdf:resource="&owl;Thing"/>
+    </AllergyDetector:Ingredientes>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Por_p_1 -->
+
+    <AllergyDetector:Proteinas rdf:about="Por_p_1">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeComum rdf:datatype="&xsd;string">Tropomiosina</NomeComum>
+        <NomeCientifico rdf:datatype="&xsd;string">Tropomyosin</NomeCientifico>
+        <AllergyDetector:Nome>Por_p_1</AllergyDetector:Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Portunus Pelagicus, nome cientifico do Siri.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Siri"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Pru_du_3 -->
+
+    <AllergyDetector:Proteinas rdf:about="Pru_du_3">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeComum rdf:datatype="&xsd;string">LTP</NomeComum>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Non-specific lipid transfer protein 1 (nsLTP1)</NomeCientifico>
+        <AllergyDetector:Nome>Pru_du_3</AllergyDetector:Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Prunus Dulcis, nome cient&#237;fico da amendoa.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="Amendoa"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Pru_du_4 -->
+
+    <AllergyDetector:Proteinas rdf:about="Pru_du_4">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeCientifico rdf:datatype="&xsd;string">Profilin</NomeCientifico>
+        <NomeComum rdf:datatype="&xsd;string">Profilin</NomeComum>
+        <AllergyDetector:Nome>Pru_du_4</AllergyDetector:Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Prunus Dulcis, nome cient&#237;fico da amendoa.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="Amendoa"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Pru_du_5 -->
+
+    <owl:Thing rdf:about="Pru_du_5">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >60s acidic ribosomal prot. P2</NomeCientifico>
+        <NomeComum rdf:datatype="&xsd;string">60sRP</NomeComum>
+        <rdfs:comment
+            >Proteina relacionada a especie Prunus Dulcis, nome cient&#237;fico da amendoa.</rdfs:comment>
+        <AllergyDetector:Nome>Pru_du_5</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="Amendoa"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Pru_du_6 -->
+
+    <AllergyDetector:Proteinas rdf:about="Pru_du_6">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Amandin, 11S globulin legumin-like protein</NomeCientifico>
+        <rdfs:comment
+            >Proteina relacionada a especie Prunus Dulcis, nome cient&#237;fico da amendoa.</rdfs:comment>
+        <NomeComum>Amandina</NomeComum>
+        <AllergyDetector:Nome>Pru_du_6</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="Amendoa"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Tri_a_12 -->
+
+    <owl:Thing rdf:about="Tri_a_12">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeComum rdf:datatype="&xsd;string">Profilin</NomeComum>
+        <NomeCientifico rdf:datatype="&xsd;string">Profilin</NomeCientifico>
+        <AllergyDetector:Nome>Tri_a_12</AllergyDetector:Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Triticum Aestivum, nome cient&#237;fico da Trigo.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Trigo"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Tri_a_14 -->
+
+    <AllergyDetector:Proteinas rdf:about="Tri_a_14">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeComum rdf:datatype="&xsd;string">LTP</NomeComum>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Non-specific lipid transfer protein 1</NomeCientifico>
+        <AllergyDetector:Nome>Tri_a_14</AllergyDetector:Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Triticum Aestivum, nome cient&#237;fico da Trigo.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Trigo"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Tri_a_18 -->
+
+    <owl:Thing rdf:about="Tri_a_18">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Agglutinin isolectin 1</NomeCientifico>
+        <NomeComum rdf:datatype="&xsd;string">Aglutinina</NomeComum>
+        <rdfs:comment
+            >Proteina relacionada a especie Triticum Aestivum, nome cient&#237;fico da Trigo.</rdfs:comment>
+        <AllergyDetector:Nome>Tri_a_18</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Trigo"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Tri_a_19 -->
+
+    <AllergyDetector:Proteinas rdf:about="Tri_a_19">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeComum rdf:datatype="&xsd;string">Gliadina</NomeComum>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Omega-5 gliadin, seed storage protein</NomeCientifico>
+        <rdfs:comment
+            >Proteina relacionada a especie Triticum Aestivum, nome cient&#237;fico da Trigo.</rdfs:comment>
+        <AllergyDetector:Nome>Tri_a_19</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Trigo"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Tri_a_20 -->
+
+    <owl:Thing rdf:about="Tri_a_20">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico rdf:datatype="&xsd;string">Gamma gliadin.</NomeCientifico>
+        <NomeComum rdf:datatype="&xsd;string">Gliadina</NomeComum>
+        <rdfs:comment
+            >Proteina relacionada a especie Triticum Aestivum, nome cient&#237;fico da Trigo.</rdfs:comment>
+        <AllergyDetector:Nome>Tri_a_20</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Trigo"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Tri_a_25 -->
+
+    <AllergyDetector:Proteinas rdf:about="Tri_a_25">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeComum rdf:datatype="&xsd;string">Thioredoxin</NomeComum>
+        <NomeCientifico rdf:datatype="&xsd;string">Thioredoxin</NomeCientifico>
+        <rdfs:comment
+            >Proteina relacionada a especie Triticum Aestivum, nome cient&#237;fico da Trigo.</rdfs:comment>
+        <AllergyDetector:Nome>Tri_a_25</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Trigo"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Tri_a_26 -->
+
+    <AllergyDetector:Proteinas rdf:about="Tri_a_26">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <NomeCientifico rdf:datatype="&xsd;string">Glutenina</NomeCientifico>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >High molecular weight glutenin</NomeCientifico>
+        <rdfs:comment
+            >Proteina relacionada a especie Triticum Aestivum, nome cient&#237;fico da Trigo.</rdfs:comment>
+        <AllergyDetector:Nome>Tri_a_26</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Trigo"/>
+    </AllergyDetector:Proteinas>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Tri_a_36 -->
+
+    <owl:Thing rdf:about="Tri_a_36">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeComum rdf:datatype="&xsd;string">Glutenina</NomeComum>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Low molecular weight glutenin GluB3-23</NomeCientifico>
+        <rdfs:comment
+            >Proteina relacionada a especie Triticum Aestivum, nome cient&#237;fico da Trigo.</rdfs:comment>
+        <AllergyDetector:Nome>Tri_a_36</AllergyDetector:Nome>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Trigo"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/10/Tri_a_37 -->
+
+    <owl:Thing rdf:about="Tri_a_37">
+        <rdf:type rdf:resource="&AllergyDetector;Proteinas"/>
+        <NomeCientifico rdf:datatype="&xsd;string"
+            >Alpha purothionin</NomeCientifico>
+        <NomeComum rdf:datatype="&xsd;string">Purothionin</NomeComum>
+        <AllergyDetector:Nome>Tri_a_37</AllergyDetector:Nome>
+        <rdfs:comment
+            >Proteina relacionada a especie Triticum Aestivum, nome cient&#237;fico da Trigo.</rdfs:comment>
+        <AllergyDetector:ProteinaContida rdf:resource="&AllergyDetector;Trigo"/>
+    </owl:Thing>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

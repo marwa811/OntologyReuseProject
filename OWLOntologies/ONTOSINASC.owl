@@ -1,0 +1,923 @@
+Prefix(:=<http://www.semanticweb.org/DIASUS/OntoSINASC#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(obda:=<https://w3id.org/obda/vocabulary#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(SINASC:=<http://www.semanticweb.org/DIASUS/OntoSINASC#>)
+
+
+Ontology(<http://www.semanticweb.org/DIASUS/OntoSINASC>
+Import(<http://purl.org/NET/dc_owl2dl/elements>)
+Annotation(<http://purl.org/dc/elements/1.1/contributor> "Alexandre Pessoa"@pt)
+Annotation(<http://purl.org/dc/elements/1.1/contributor> "Lais Salvador")
+Annotation(<http://purl.org/dc/elements/1.1/contributor> "Renata Wassermann"@pt)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Debora Lina Ciriaco"@pt)
+Annotation(<http://purl.org/dc/elements/1.1/language> "en"@en)
+Annotation(<http://purl.org/dc/elements/1.1/language> "pt"@pt)
+Annotation(<http://purl.org/dc/elements/1.1/license> "https://creativecommons.org/licenses/by-sa/4.0/"@pt)
+Annotation(<http://purl.org/dc/elements/1.1/source> "https://gitlab.com/beliefchangetools/diasus/-/tree/master/OF_SINASC"@pt)
+Annotation(rdfs:comment "A Ontologia do SINASC foi desenvolvida no contexto do projeto DIASUS. Ela buscou resgatar a estrutura presente na ficha de preenchimento da Declaração de Nascido Vivo - DN, do Sistema de Informação de Nascidos Vivos - SINASC, do Sistema Único de Saúde, do Brasil. As classes são os blocos de preenchimento e as propriedades de dados, os campos da ficha. Um exemplo da DN é apresentado em: https://gitlab.com/beliefchangetools/diasus/-/blob/master/OF_SINASC/Ficha_SINASC.pdf"@pt)
+Annotation(rdfs:comment "The SINASC Ontology was developed in the context of DIASUS project. This ontology intent to rescue the data structure presented in Live Birth Certificate form, from Information System on Live Births - SINASC, from Brazilian Public Health System - SUS. Live Birth Certificate form is represented here: https://gitlab.com/beliefchangetools/diasus/-/blob/master/OF_SINASC/Ficha_SINASC.pdf"@en)
+Annotation(rdfs:label "A Ontologia do Sistema de Nascidos Vivos - OntoSINASC, do Sistema Único de Saúde - SUS, do Brasil"@pt)
+Annotation(rdfs:label "The Ontology of Information System on Live Births - OntoSINASC, from Brazilian Public Health System - SUS"@en)
+
+Declaration(Class(SINASC:AnomaliaCongenita))
+Declaration(Class(SINASC:GestacaoEParto))
+Declaration(Class(SINASC:Local))
+Declaration(Class(SINASC:Mae))
+Declaration(Class(SINASC:Pai))
+Declaration(Class(SINASC:PreenchimentoCadastral))
+Declaration(Class(SINASC:RN))
+Declaration(ObjectProperty(SINASC:deuLuzA))
+Declaration(ObjectProperty(SINASC:diagnosticoDo))
+Declaration(ObjectProperty(SINASC:eGenitor))
+Declaration(ObjectProperty(SINASC:eLocalDeOcorrencia))
+Declaration(ObjectProperty(SINASC:eMae))
+Declaration(ObjectProperty(SINASC:ePai))
+Declaration(ObjectProperty(SINASC:entregaNascido))
+Declaration(ObjectProperty(SINASC:geraGestacao))
+Declaration(ObjectProperty(SINASC:geradaPela))
+Declaration(ObjectProperty(SINASC:levaAoPreenchimento))
+Declaration(ObjectProperty(SINASC:nasceNoParto))
+Declaration(ObjectProperty(SINASC:ocorreEmLocal))
+Declaration(ObjectProperty(SINASC:preencheDocumentacao))
+Declaration(ObjectProperty(SINASC:temDiagnostico))
+Declaration(ObjectProperty(SINASC:temGenitor))
+Declaration(ObjectProperty(SINASC:temMae))
+Declaration(ObjectProperty(SINASC:temPai))
+Declaration(DataProperty(SINASC:apgar1))
+Declaration(DataProperty(SINASC:apgar5))
+Declaration(DataProperty(SINASC:baiNasc))
+Declaration(DataProperty(SINASC:baiRes))
+Declaration(DataProperty(SINASC:cepNasc))
+Declaration(DataProperty(SINASC:cepRes))
+Declaration(DataProperty(SINASC:coMunEstab))
+Declaration(DataProperty(SINASC:codAnomal))
+Declaration(DataProperty(SINASC:codBaiNasc))
+Declaration(DataProperty(SINASC:codBaiRes))
+Declaration(DataProperty(SINASC:codCRM))
+Declaration(DataProperty(SINASC:codDisNasc))
+Declaration(DataProperty(SINASC:codDisRes))
+Declaration(DataProperty(SINASC:codEndNasc))
+Declaration(DataProperty(SINASC:codEndRes))
+Declaration(DataProperty(SINASC:codEstOcor))
+Declaration(DataProperty(SINASC:codEstRes))
+Declaration(DataProperty(SINASC:codEstab))
+Declaration(DataProperty(SINASC:codMunNasc))
+Declaration(DataProperty(SINASC:codMunRes))
+Declaration(DataProperty(SINASC:codOcupMae))
+Declaration(DataProperty(SINASC:codPaisRes))
+Declaration(DataProperty(SINASC:codRegOcor))
+Declaration(DataProperty(SINASC:codRegRes))
+Declaration(DataProperty(SINASC:complNasc))
+Declaration(DataProperty(SINASC:complRes))
+Declaration(DataProperty(SINASC:consPrenat))
+Declaration(DataProperty(SINASC:consultas))
+Declaration(DataProperty(SINASC:dtCadastro))
+Declaration(DataProperty(SINASC:dtDeclarac))
+Declaration(DataProperty(SINASC:dtNasc))
+Declaration(DataProperty(SINASC:dtNascMae))
+Declaration(DataProperty(SINASC:dtUltMenst))
+Declaration(DataProperty(SINASC:endNasc))
+Declaration(DataProperty(SINASC:endRes))
+Declaration(DataProperty(SINASC:escMae))
+Declaration(DataProperty(SINASC:estCivMae))
+Declaration(DataProperty(SINASC:gestacao))
+Declaration(DataProperty(SINASC:gravidez))
+Declaration(DataProperty(SINASC:horaNasc))
+Declaration(DataProperty(SINASC:idAnomal))
+Declaration(DataProperty(SINASC:idadeMae))
+Declaration(DataProperty(SINASC:idadePai))
+Declaration(DataProperty(SINASC:locNasc))
+Declaration(DataProperty(SINASC:mesPrenat))
+Declaration(DataProperty(SINASC:nomeMae))
+Declaration(DataProperty(SINASC:nomePai))
+Declaration(DataProperty(SINASC:nomeReNasc))
+Declaration(DataProperty(SINASC:nuDocResp))
+Declaration(DataProperty(SINASC:numEndNasc))
+Declaration(DataProperty(SINASC:numRes))
+Declaration(DataProperty(SINASC:numSusMae))
+Declaration(DataProperty(SINASC:numeroDN))
+Declaration(DataProperty(SINASC:numeroDV))
+Declaration(DataProperty(SINASC:orgEmissor))
+Declaration(DataProperty(SINASC:parto))
+Declaration(DataProperty(SINASC:peso))
+Declaration(DataProperty(SINASC:prefixoDN))
+Declaration(DataProperty(SINASC:qtdFilMort))
+Declaration(DataProperty(SINASC:qtdFilVivo))
+Declaration(DataProperty(SINASC:qtdGestAnt))
+Declaration(DataProperty(SINASC:qtdPartCes))
+Declaration(DataProperty(SINASC:qtdPartNor))
+Declaration(DataProperty(SINASC:racaCorMae))
+Declaration(DataProperty(SINASC:semaGestac))
+Declaration(DataProperty(SINASC:seriEscMae))
+Declaration(DataProperty(SINASC:sexo))
+Declaration(DataProperty(SINASC:stCesParto))
+Declaration(DataProperty(SINASC:stTrabPart))
+Declaration(DataProperty(SINASC:tpApresent))
+Declaration(DataProperty(SINASC:tpMetEstim))
+Declaration(DataProperty(SINASC:tpNascAssi))
+Declaration(DataProperty(SINASC:tpRobson))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(SINASC:defaultLanguage))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: SINASC:deuLuzA (gave birth to)
+
+AnnotationAssertion(rdfs:label SINASC:deuLuzA "deu a luz a"@pt)
+AnnotationAssertion(rdfs:label SINASC:deuLuzA "gave birth to"@en)
+SubObjectPropertyOf(SINASC:deuLuzA SINASC:eMae)
+ObjectPropertyDomain(SINASC:deuLuzA SINASC:Mae)
+ObjectPropertyRange(SINASC:deuLuzA SINASC:RN)
+
+# Object Property: SINASC:diagnosticoDo (diagnóstico do)
+
+AnnotationAssertion(rdfs:label SINASC:diagnosticoDo "diagnosis of"@en)
+AnnotationAssertion(rdfs:label SINASC:diagnosticoDo "diagnóstico do"@pt)
+SubObjectPropertyOf(SINASC:diagnosticoDo owl:topObjectProperty)
+InverseObjectProperties(SINASC:diagnosticoDo SINASC:temDiagnostico)
+ObjectPropertyDomain(SINASC:diagnosticoDo SINASC:AnomaliaCongenita)
+ObjectPropertyRange(SINASC:diagnosticoDo SINASC:RN)
+
+# Object Property: SINASC:eGenitor (é genitor de)
+
+AnnotationAssertion(rdfs:label SINASC:eGenitor "is parent"@en)
+AnnotationAssertion(rdfs:label SINASC:eGenitor "é genitor de"@pt)
+SubObjectPropertyOf(SINASC:eGenitor owl:topObjectProperty)
+InverseObjectProperties(SINASC:eGenitor SINASC:temGenitor)
+ObjectPropertyDomain(SINASC:eGenitor ObjectUnionOf(SINASC:Mae SINASC:Pai))
+ObjectPropertyRange(SINASC:eGenitor SINASC:RN)
+
+# Object Property: SINASC:eLocalDeOcorrencia (is the location of the occurrence)
+
+AnnotationAssertion(rdfs:label SINASC:eLocalDeOcorrencia "is the location of the occurrence"@en)
+AnnotationAssertion(rdfs:label SINASC:eLocalDeOcorrencia "é local de ocorrência"@pt)
+SubObjectPropertyOf(SINASC:eLocalDeOcorrencia owl:topObjectProperty)
+InverseObjectProperties(SINASC:eLocalDeOcorrencia SINASC:ocorreEmLocal)
+ObjectPropertyDomain(SINASC:eLocalDeOcorrencia SINASC:Local)
+ObjectPropertyRange(SINASC:eLocalDeOcorrencia SINASC:GestacaoEParto)
+
+# Object Property: SINASC:eMae (é mãe de)
+
+AnnotationAssertion(rdfs:label SINASC:eMae "is mother"@en)
+AnnotationAssertion(rdfs:label SINASC:eMae "é mãe de"@pt)
+SubObjectPropertyOf(SINASC:eMae SINASC:eGenitor)
+InverseFunctionalObjectProperty(SINASC:eMae)
+ObjectPropertyDomain(SINASC:eMae SINASC:Mae)
+ObjectPropertyRange(SINASC:eMae SINASC:RN)
+
+# Object Property: SINASC:ePai (é pai)
+
+AnnotationAssertion(rdfs:label SINASC:ePai "is father"@en)
+AnnotationAssertion(rdfs:label SINASC:ePai "é pai"@pt)
+SubObjectPropertyOf(SINASC:ePai SINASC:eGenitor)
+InverseFunctionalObjectProperty(SINASC:ePai)
+ObjectPropertyDomain(SINASC:ePai SINASC:Pai)
+ObjectPropertyRange(SINASC:ePai SINASC:RN)
+
+# Object Property: SINASC:entregaNascido (delivery neonate)
+
+AnnotationAssertion(rdfs:label SINASC:entregaNascido "delivery neonate"@en)
+AnnotationAssertion(rdfs:label SINASC:entregaNascido "entrega nascido"@pt)
+SubObjectPropertyOf(SINASC:entregaNascido owl:topObjectProperty)
+InverseObjectProperties(SINASC:entregaNascido SINASC:nasceNoParto)
+ObjectPropertyDomain(SINASC:entregaNascido SINASC:GestacaoEParto)
+ObjectPropertyRange(SINASC:entregaNascido SINASC:RN)
+
+# Object Property: SINASC:geraGestacao (gera gestação)
+
+AnnotationAssertion(rdfs:label SINASC:geraGestacao "generates pregnancy"@en)
+AnnotationAssertion(rdfs:label SINASC:geraGestacao "gera gestação"@pt)
+SubObjectPropertyOf(SINASC:geraGestacao owl:topObjectProperty)
+InverseObjectProperties(SINASC:geraGestacao SINASC:geradaPela)
+ObjectPropertyDomain(SINASC:geraGestacao SINASC:Mae)
+ObjectPropertyRange(SINASC:geraGestacao SINASC:GestacaoEParto)
+
+# Object Property: SINASC:geradaPela (generated by)
+
+AnnotationAssertion(rdfs:label SINASC:geradaPela "generated by"@en)
+AnnotationAssertion(rdfs:label SINASC:geradaPela "gerada pela"@pt)
+SubObjectPropertyOf(SINASC:geradaPela owl:topObjectProperty)
+ObjectPropertyDomain(SINASC:geradaPela SINASC:GestacaoEParto)
+ObjectPropertyRange(SINASC:geradaPela SINASC:Mae)
+
+# Object Property: SINASC:levaAoPreenchimento (leva ao preenchimento)
+
+AnnotationAssertion(rdfs:label SINASC:levaAoPreenchimento "leads to filling"@en)
+AnnotationAssertion(rdfs:label SINASC:levaAoPreenchimento "leva ao preenchimento"@pt)
+SubObjectPropertyOf(SINASC:levaAoPreenchimento owl:topObjectProperty)
+InverseObjectProperties(SINASC:levaAoPreenchimento SINASC:preencheDocumentacao)
+ObjectPropertyDomain(SINASC:levaAoPreenchimento SINASC:GestacaoEParto)
+ObjectPropertyRange(SINASC:levaAoPreenchimento SINASC:PreenchimentoCadastral)
+
+# Object Property: SINASC:nasceNoParto (born in childbirth)
+
+AnnotationAssertion(rdfs:label SINASC:nasceNoParto "born in childbirth"@en)
+AnnotationAssertion(rdfs:label SINASC:nasceNoParto "nasce no parto"@pt)
+SubObjectPropertyOf(SINASC:nasceNoParto owl:topObjectProperty)
+ObjectPropertyDomain(SINASC:nasceNoParto SINASC:RN)
+ObjectPropertyRange(SINASC:nasceNoParto SINASC:GestacaoEParto)
+
+# Object Property: SINASC:ocorreEmLocal (it occurs in local)
+
+AnnotationAssertion(rdfs:label SINASC:ocorreEmLocal "it occurs in local"@en)
+AnnotationAssertion(rdfs:label SINASC:ocorreEmLocal "ocorre em local"@pt)
+SubObjectPropertyOf(SINASC:ocorreEmLocal owl:topObjectProperty)
+ObjectPropertyDomain(SINASC:ocorreEmLocal SINASC:GestacaoEParto)
+ObjectPropertyRange(SINASC:ocorreEmLocal SINASC:Local)
+
+# Object Property: SINASC:preencheDocumentacao (preenche documentação)
+
+AnnotationAssertion(rdfs:label SINASC:preencheDocumentacao "fills documentation"@en)
+AnnotationAssertion(rdfs:label SINASC:preencheDocumentacao "preenche documentação"@pt)
+SubObjectPropertyOf(SINASC:preencheDocumentacao owl:topObjectProperty)
+ObjectPropertyDomain(SINASC:preencheDocumentacao SINASC:PreenchimentoCadastral)
+ObjectPropertyRange(SINASC:preencheDocumentacao SINASC:GestacaoEParto)
+
+# Object Property: SINASC:temDiagnostico (tem diagnóstico)
+
+AnnotationAssertion(rdfs:label SINASC:temDiagnostico "has diagnosis"@en)
+AnnotationAssertion(rdfs:label SINASC:temDiagnostico "tem diagnóstico"@pt)
+SubObjectPropertyOf(SINASC:temDiagnostico owl:topObjectProperty)
+ObjectPropertyDomain(SINASC:temDiagnostico SINASC:RN)
+ObjectPropertyRange(SINASC:temDiagnostico SINASC:AnomaliaCongenita)
+
+# Object Property: SINASC:temGenitor (has parents)
+
+AnnotationAssertion(rdfs:label SINASC:temGenitor "has parents"@en)
+AnnotationAssertion(rdfs:label SINASC:temGenitor "tem genitor"@pt)
+SubObjectPropertyOf(SINASC:temGenitor owl:topObjectProperty)
+ObjectPropertyDomain(SINASC:temGenitor SINASC:RN)
+ObjectPropertyRange(SINASC:temGenitor ObjectUnionOf(SINASC:Mae SINASC:Pai))
+
+# Object Property: SINASC:temMae (has mother)
+
+AnnotationAssertion(rdfs:label SINASC:temMae "has mother"@pt)
+AnnotationAssertion(rdfs:label SINASC:temMae "tem mãe"@en)
+SubObjectPropertyOf(SINASC:temMae SINASC:temGenitor)
+FunctionalObjectProperty(SINASC:temMae)
+ObjectPropertyDomain(SINASC:temMae SINASC:RN)
+ObjectPropertyRange(SINASC:temMae SINASC:Mae)
+
+# Object Property: SINASC:temPai (tem pai)
+
+AnnotationAssertion(rdfs:label SINASC:temPai "has father"@en)
+AnnotationAssertion(rdfs:label SINASC:temPai "tem pai"@pt)
+SubObjectPropertyOf(SINASC:temPai SINASC:temGenitor)
+FunctionalObjectProperty(SINASC:temPai)
+ObjectPropertyDomain(SINASC:temPai SINASC:RN)
+ObjectPropertyRange(SINASC:temPai SINASC:Pai)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: SINASC:apgar1 (Apgar Score 1 min. after birth)
+
+AnnotationAssertion(rdfs:comment SINASC:apgar1 "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:apgar1 "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:apgar1 "Apgar Score 1 min. after birth"@en)
+AnnotationAssertion(rdfs:label SINASC:apgar1 "Apgar no 1º minuto após o nascimento"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> SINASC:apgar1 "APGAR 1"@pt)
+DataPropertyDomain(SINASC:apgar1 SINASC:RN)
+
+# Data Property: SINASC:apgar5 (Apgar Score 5 min. after birth)
+
+AnnotationAssertion(rdfs:comment SINASC:apgar5 "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:apgar5 "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:apgar5 "Apgar Score 5 min. after birth"@en)
+AnnotationAssertion(rdfs:label SINASC:apgar5 "Apgar no 5º minuto após o nascimento"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> SINASC:apgar5 "APGAR 5"@pt)
+DataPropertyDomain(SINASC:apgar5 SINASC:RN)
+
+# Data Property: SINASC:baiNasc (Birth district)
+
+AnnotationAssertion(rdfs:label SINASC:baiNasc "Bairro de nascimento"@pt)
+AnnotationAssertion(rdfs:label SINASC:baiNasc "Birth district"@en)
+DataPropertyDomain(SINASC:baiNasc SINASC:Local)
+
+# Data Property: SINASC:baiRes (Bairro de residência)
+
+AnnotationAssertion(rdfs:label SINASC:baiRes "Bairro de residência"@pt)
+AnnotationAssertion(rdfs:label SINASC:baiRes "Residence district"@en)
+SubDataPropertyOf(SINASC:baiRes owl:topDataProperty)
+DataPropertyDomain(SINASC:baiRes SINASC:Mae)
+
+# Data Property: SINASC:cepNasc (Birth Zip code)
+
+AnnotationAssertion(rdfs:label SINASC:cepNasc "Birth Zip code"@en)
+AnnotationAssertion(rdfs:label SINASC:cepNasc "CEP do endereço de nascimento"@pt)
+DataPropertyDomain(SINASC:cepNasc SINASC:Local)
+
+# Data Property: SINASC:cepRes (CEP da residência)
+
+AnnotationAssertion(rdfs:label SINASC:cepRes "CEP da residência"@pt)
+AnnotationAssertion(rdfs:label SINASC:cepRes "Residence Zip code"@en)
+DataPropertyDomain(SINASC:cepRes SINASC:Mae)
+
+# Data Property: SINASC:coMunEstab (Municipality code of the healthcare facility)
+
+AnnotationAssertion(rdfs:label SINASC:coMunEstab "Código do município do estabelecimento de saúde"@pt)
+AnnotationAssertion(rdfs:label SINASC:coMunEstab "Municipality code of the healthcare facility"@en)
+DataPropertyDomain(SINASC:coMunEstab SINASC:Local)
+
+# Data Property: SINASC:codAnomal (Código da anomalia congênita)
+
+AnnotationAssertion(rdfs:comment SINASC:codAnomal "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:codAnomal "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:codAnomal "Congenital anomalies code"@en)
+AnnotationAssertion(rdfs:label SINASC:codAnomal "Código da anomalia congênita"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:codAnomal "Valores em CID-10"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:codAnomal "Values in ICD-10"@en)
+DataPropertyDomain(SINASC:codAnomal SINASC:AnomaliaCongenita)
+
+# Data Property: SINASC:codBaiNasc (Código do bairro de nascimento)
+
+AnnotationAssertion(rdfs:comment SINASC:codBaiNasc "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:codBaiNasc "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:codBaiNasc "Birth district's code"@en)
+AnnotationAssertion(rdfs:label SINASC:codBaiNasc "Código do bairro de nascimento"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:codBaiNasc "Codificação do IBGE"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:codBaiNasc "IBGE's codification"@en)
+DataPropertyDomain(SINASC:codBaiNasc SINASC:Local)
+
+# Data Property: SINASC:codBaiRes (Residence district code)
+
+AnnotationAssertion(rdfs:comment SINASC:codBaiRes "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:codBaiRes "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:codBaiRes "Código do bairro de residência"@pt)
+AnnotationAssertion(rdfs:label SINASC:codBaiRes "Residence district code"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:codBaiRes "Codificação do IBGE"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:codBaiRes "IBGE's codification"@en)
+DataPropertyDomain(SINASC:codBaiRes SINASC:Mae)
+
+# Data Property: SINASC:codCRM (Medical Register code)
+
+AnnotationAssertion(rdfs:label SINASC:codCRM "Código do CRM do médico"@pt)
+AnnotationAssertion(rdfs:label SINASC:codCRM "Medical Register code"@en)
+DataPropertyDomain(SINASC:codCRM SINASC:GestacaoEParto)
+
+# Data Property: SINASC:codDisNasc (Birth sanitary district code)
+
+AnnotationAssertion(rdfs:label SINASC:codDisNasc "Birth sanitary district code"@en)
+AnnotationAssertion(rdfs:label SINASC:codDisNasc "Código do distrito de saúde de nascimento"@pt)
+DataPropertyDomain(SINASC:codDisNasc SINASC:Local)
+
+# Data Property: SINASC:codDisRes (Código do distrito de saúde de residência)
+
+AnnotationAssertion(rdfs:label SINASC:codDisRes "Código do distrito de saúde de residência"@pt)
+AnnotationAssertion(rdfs:label SINASC:codDisRes "Residence sanitary district code"@en)
+DataPropertyDomain(SINASC:codDisRes SINASC:Mae)
+
+# Data Property: SINASC:codEndNasc (Birth address code)
+
+AnnotationAssertion(rdfs:label SINASC:codEndNasc "Birth address code"@en)
+AnnotationAssertion(rdfs:label SINASC:codEndNasc "Código do endereço de nascimento"@pt)
+DataPropertyDomain(SINASC:codEndNasc SINASC:Local)
+
+# Data Property: SINASC:codEndRes (Código do endereço de residência)
+
+AnnotationAssertion(rdfs:label SINASC:codEndRes "Código do endereço de residência"@pt)
+AnnotationAssertion(rdfs:label SINASC:codEndRes "Residence address code"@en)
+DataPropertyDomain(SINASC:codEndRes SINASC:Mae)
+
+# Data Property: SINASC:codEstOcor (Occurrence State code)
+
+AnnotationAssertion(rdfs:comment SINASC:codEstOcor "Codificação do IBGE"@pt)
+AnnotationAssertion(rdfs:label SINASC:codEstOcor "Código do estado/UF de ocorrência"@pt)
+AnnotationAssertion(rdfs:label SINASC:codEstOcor "Occurrence State code"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:codEstOcor "IBGE's codification"@en)
+DataPropertyDomain(SINASC:codEstOcor SINASC:Local)
+
+# Data Property: SINASC:codEstRes (Código do estado/UF de residência)
+
+AnnotationAssertion(rdfs:label SINASC:codEstRes "Código do estado/UF de residência"@pt)
+AnnotationAssertion(rdfs:label SINASC:codEstRes "Residence State code"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:codEstRes "Codificação do IBGE"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:codEstRes "IBGE's codification"@en)
+DataPropertyDomain(SINASC:codEstRes SINASC:Mae)
+
+# Data Property: SINASC:codEstab (Healthcare facility code)
+
+AnnotationAssertion(rdfs:comment SINASC:codEstab "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:codEstab "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:codEstab "Código do estabelecimento de saúde"@pt)
+AnnotationAssertion(rdfs:label SINASC:codEstab "Healthcare facility code"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:codEstab ""@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:codEstab "CNES codification"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:codEstab "Codificação CNES"@pt)
+DataPropertyDomain(SINASC:codEstab SINASC:Local)
+
+# Data Property: SINASC:codMunNasc (City of Birth's code)
+
+AnnotationAssertion(rdfs:comment SINASC:codMunNasc "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:codMunNasc "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:codMunNasc "City of Birth's code"@en)
+AnnotationAssertion(rdfs:label SINASC:codMunNasc "Código do município de nascimento"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:codMunNasc "Codificação do IBGE"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:codMunNasc "IBGE's codification"@en)
+DataPropertyDomain(SINASC:codMunNasc SINASC:Local)
+
+# Data Property: SINASC:codMunRes (Código do município de residência)
+
+AnnotationAssertion(rdfs:comment SINASC:codMunRes "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:codMunRes "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:codMunRes "City of Residence's code"@en)
+AnnotationAssertion(rdfs:label SINASC:codMunRes "Código do município de residência"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:codMunRes "Codificação do IBGE"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:codMunRes "IBGE's codification"@en)
+DataPropertyDomain(SINASC:codMunRes SINASC:Mae)
+
+# Data Property: SINASC:codOcupMae (Código de ocupação da mãe)
+
+AnnotationAssertion(rdfs:comment SINASC:codOcupMae "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:codOcupMae "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:codOcupMae "Código de ocupação da mãe"@pt)
+AnnotationAssertion(rdfs:label SINASC:codOcupMae "Mother's occupation code"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:codOcupMae "Valores conforme tabela do CBO (Código Brasileiro de Ocupações)"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:codOcupMae "Values according to CBO table (Brazilian Occupations Code)"@en)
+DataPropertyDomain(SINASC:codOcupMae SINASC:Mae)
+
+# Data Property: SINASC:codPaisRes (Código do país de residência)
+
+AnnotationAssertion(rdfs:comment SINASC:codPaisRes "Codificação do IBGE"@pt)
+AnnotationAssertion(rdfs:label SINASC:codPaisRes "Country of residence code"@en)
+AnnotationAssertion(rdfs:label SINASC:codPaisRes "Código do país de residência"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:codPaisRes "IBGE's codification"@en)
+DataPropertyDomain(SINASC:codPaisRes SINASC:Mae)
+
+# Data Property: SINASC:codRegOcor (Código da regional de saúde de ocorrência)
+
+AnnotationAssertion(rdfs:label SINASC:codRegOcor "Código da regional de saúde de ocorrência"@pt)
+AnnotationAssertion(rdfs:label SINASC:codRegOcor "Regional health district code of occurrence"@en)
+DataPropertyDomain(SINASC:codRegOcor SINASC:Local)
+
+# Data Property: SINASC:codRegRes (Código da região de residência)
+
+AnnotationAssertion(rdfs:label SINASC:codRegRes "Código da região de residência"@pt)
+AnnotationAssertion(rdfs:label SINASC:codRegRes "Region of residence code"@en)
+DataPropertyDomain(SINASC:codRegRes SINASC:Mae)
+
+# Data Property: SINASC:complNasc (Complement of birth address)
+
+AnnotationAssertion(rdfs:label SINASC:complNasc "Complement of birth address"@en)
+AnnotationAssertion(rdfs:label SINASC:complNasc "Complemento do endereço de nascimento"@pt)
+DataPropertyDomain(SINASC:complNasc SINASC:Local)
+
+# Data Property: SINASC:complRes (Complement of residence address)
+
+AnnotationAssertion(rdfs:label SINASC:complRes "Complement of residence address"@en)
+AnnotationAssertion(rdfs:label SINASC:complRes "Complemento do endereço de residência"@pt)
+DataPropertyDomain(SINASC:complRes SINASC:Mae)
+
+# Data Property: SINASC:consPrenat (Number of prenatal appointments)
+
+AnnotationAssertion(rdfs:label SINASC:consPrenat "Number of prenatal appointments"@en)
+AnnotationAssertion(rdfs:label SINASC:consPrenat "Número de consultas pré‐natal"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> SINASC:consPrenat SINASC:consultas)
+DataPropertyDomain(SINASC:consPrenat SINASC:GestacaoEParto)
+
+# Data Property: SINASC:consultas (Número de consultas pré‐natal)
+
+AnnotationAssertion(rdfs:comment SINASC:consultas "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:consultas "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:consultas "Number of prenatal appointments"@en)
+AnnotationAssertion(rdfs:label SINASC:consultas "Número de consultas pré‐natal"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> SINASC:consultas SINASC:consPrenat)
+DataPropertyDomain(SINASC:consultas SINASC:GestacaoEParto)
+
+# Data Property: SINASC:dtCadastro (Date of registration of the Live Birth Certificate in the system)
+
+AnnotationAssertion(rdfs:comment SINASC:dtCadastro "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:dtCadastro "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:dtCadastro "Data do cadastro da Declaração de Nascido Vivo no sistema"@pt)
+AnnotationAssertion(rdfs:label SINASC:dtCadastro "Date of registration of the Live Birth Certificate in the system"@en)
+DataPropertyDomain(SINASC:dtCadastro SINASC:PreenchimentoCadastral)
+
+# Data Property: SINASC:dtDeclarac (Data do preenchimento da declaração de nascido vivo)
+
+AnnotationAssertion(rdfs:label SINASC:dtDeclarac "Data do preenchimento da declaração de nascido vivo"@pt)
+AnnotationAssertion(rdfs:label SINASC:dtDeclarac "Date of filling in the Live Birth Certification"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:dtDeclarac "Valores no formato: ddmmaaaa"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:dtDeclarac "Values in the format: ddmmyyyy"@en)
+DataPropertyDomain(SINASC:dtDeclarac SINASC:PreenchimentoCadastral)
+
+# Data Property: SINASC:dtNasc (Date of birth)
+
+AnnotationAssertion(rdfs:comment SINASC:dtNasc "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:dtNasc "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:dtNasc "Data de nascimento"@pt)
+AnnotationAssertion(rdfs:label SINASC:dtNasc "Date of birth"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:dtNasc "Valores no formato: ddmmaaaa"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:dtNasc "Values in the format: ddmmyyyy"@en)
+DataPropertyDomain(SINASC:dtNasc SINASC:RN)
+
+# Data Property: SINASC:dtNascMae (Data de nascimento da mãe)
+
+AnnotationAssertion(rdfs:label SINASC:dtNascMae "Data de nascimento da mãe"@pt)
+AnnotationAssertion(rdfs:label SINASC:dtNascMae "Mother's date of birth"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:dtNascMae "Valores no formato: ddmmaaaa"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:dtNascMae "Values in the format: ddmmyyyy"@en)
+DataPropertyDomain(SINASC:dtNascMae SINASC:Mae)
+
+# Data Property: SINASC:dtUltMenst (Date of last menstrual period)
+
+AnnotationAssertion(rdfs:label SINASC:dtUltMenst "Data da última menstruação (DUM)"@pt)
+AnnotationAssertion(rdfs:label SINASC:dtUltMenst "Date of last menstrual period"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:dtUltMenst "Valores no formato: ddmmaaaa"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:dtUltMenst "Values in the format: ddmmyyyy"@en)
+DataPropertyDomain(SINASC:dtUltMenst SINASC:GestacaoEParto)
+
+# Data Property: SINASC:endNasc (Endereço do local de nascimento)
+
+AnnotationAssertion(rdfs:label SINASC:endNasc "Endereço do local de nascimento"@pt)
+AnnotationAssertion(rdfs:label SINASC:endNasc "Place of birth address"@en)
+DataPropertyDomain(SINASC:endNasc SINASC:Local)
+
+# Data Property: SINASC:endRes (Residence address)
+
+AnnotationAssertion(rdfs:label SINASC:endRes "Endereço de residência"@pt)
+AnnotationAssertion(rdfs:label SINASC:endRes "Residence address"@en)
+DataPropertyDomain(SINASC:endRes SINASC:Mae)
+
+# Data Property: SINASC:escMae (Escolaridade da mãe)
+
+AnnotationAssertion(rdfs:comment SINASC:escMae "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:escMae "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:escMae "Escolaridade da mãe"@pt)
+AnnotationAssertion(rdfs:label SINASC:escMae "Mother's education level"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:escMae "Valores em anos de estudo concluídos: 1 – Nenhuma; 2 – 1 a 3 anos; 3 – 4 a 7 anos; 4 – 8 a 11 anos; 5 – 12 e mais; 9 – Ignorado"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:escMae "Values in years of study completed: 1 - None; 2 - 1 to 3 years; 3 - 4 to 7 years; 4 - 8 to 11 years; 5 - 12 and more; 9 - Ignored"@en)
+DataPropertyDomain(SINASC:escMae SINASC:Mae)
+
+# Data Property: SINASC:estCivMae (Mother's marital status)
+
+AnnotationAssertion(rdfs:comment SINASC:estCivMae "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:estCivMae "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:estCivMae "Estado civil da mãe"@pt)
+AnnotationAssertion(rdfs:label SINASC:estCivMae "Mother's marital status"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:estCivMae "Valores: 1– Solteira; 2– Casada; 3– Viúva; 4– Separada judicialmente/divorciada; 5– União estável; 9– Ignorada"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:estCivMae "Values: 1– Single; 2 - Married; 3– Widow; 4 - Judicially separated / divorced; 5– Stable union; 9– Ignored"@en)
+DataPropertyDomain(SINASC:estCivMae SINASC:Mae)
+
+# Data Property: SINASC:gestacao (Semanas de gestação)
+
+AnnotationAssertion(rdfs:comment SINASC:gestacao "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:gestacao "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:gestacao "Semanas de gestação"@pt)
+AnnotationAssertion(rdfs:label SINASC:gestacao "Weeks of pregnancy"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:gestacao "Valores: 1– Menos de 22 semanas; 2– 22 a 27 semanas; 3– 28 a 31 semanas; 4– 32 a 36 semanas; 5– 37 a 41 semanas; 6– 42 semanas e mais; 9– Ignorado"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:gestacao "Values: 1– Less than 22 weeks; 2– 22 to 27 weeks; 3– 28 to 31 weeks; 4– 32 to 36 weeks; 5– 37 to 41 weeks; 6– 42 weeks and more; 9– Ignored"@en)
+DataPropertyDomain(SINASC:gestacao SINASC:GestacaoEParto)
+
+# Data Property: SINASC:gravidez (Type of pregnancy)
+
+AnnotationAssertion(rdfs:comment SINASC:gravidez "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:gravidez "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:gravidez "Tipo de gravidez"@pt)
+AnnotationAssertion(rdfs:label SINASC:gravidez "Type of pregnancy"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:gravidez "Valores: 1– Única; 2– Dupla; 3– Tripla ou mais; 9– Ignorado"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:gravidez "Values: 1– Single; 2– Double; 3 - Triple or more; 9– Ignored"@en)
+DataPropertyDomain(SINASC:gravidez SINASC:GestacaoEParto)
+
+# Data Property: SINASC:horaNasc (Horário de nascimento)
+
+AnnotationAssertion(rdfs:comment SINASC:horaNasc "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:horaNasc "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:horaNasc "Birth time"@en)
+AnnotationAssertion(rdfs:label SINASC:horaNasc "Horário de nascimento"@pt)
+DataPropertyDomain(SINASC:horaNasc SINASC:RN)
+
+# Data Property: SINASC:idAnomal (Congenital anomaly identified)
+
+AnnotationAssertion(rdfs:comment SINASC:idAnomal "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:idAnomal "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:idAnomal "Anomalia congênita identificada"@pt)
+AnnotationAssertion(rdfs:label SINASC:idAnomal "Congenital anomaly identified"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:idAnomal "Valores: 1– Sim; 2– Não; 9– Ignorado"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:idAnomal "Values: 1– Yes; 2– No; 9– Ignored"@en)
+DataPropertyDomain(SINASC:idAnomal SINASC:RN)
+
+# Data Property: SINASC:idadeMae (Idade da mãe)
+
+AnnotationAssertion(rdfs:comment SINASC:idadeMae "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:idadeMae "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:idadeMae "Idade da mãe"@pt)
+AnnotationAssertion(rdfs:label SINASC:idadeMae "Mother's age"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:idadeMae "Valores em anos"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:idadeMae "Values in years"@en)
+DataPropertyDomain(SINASC:idadeMae SINASC:Mae)
+
+# Data Property: SINASC:idadePai (Idade do pai)
+
+AnnotationAssertion(rdfs:label SINASC:idadePai "Father's age"@en)
+AnnotationAssertion(rdfs:label SINASC:idadePai "Idade do pai"@pt)
+DataPropertyDomain(SINASC:idadePai SINASC:Pai)
+
+# Data Property: SINASC:locNasc (Place of birth)
+
+AnnotationAssertion(rdfs:comment SINASC:locNasc "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:locNasc "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:locNasc "Local de nascimento"@pt)
+AnnotationAssertion(rdfs:label SINASC:locNasc "Place of birth"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:locNasc "Valores: 1 – Hospital; 2 – Outros estabelecimentos de saúde; 3 – Domicílio; 4 – Outros"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:locNasc "Values: 1 - Hospital; 2 - Other healthcare facility; 3 - Home; 4 - Others"@en)
+DataPropertyDomain(SINASC:locNasc SINASC:Local)
+
+# Data Property: SINASC:mesPrenat (Mês de gestação em que iniciou o pré‐natal)
+
+AnnotationAssertion(rdfs:label SINASC:mesPrenat "Month of pregnancy when prenatal care started"@en)
+AnnotationAssertion(rdfs:label SINASC:mesPrenat "Mês de gestação em que iniciou o pré‐natal"@pt)
+DataPropertyDomain(SINASC:mesPrenat SINASC:GestacaoEParto)
+
+# Data Property: SINASC:nomeMae (Mother's name)
+
+AnnotationAssertion(rdfs:label SINASC:nomeMae "Mother's name"@en)
+AnnotationAssertion(rdfs:label SINASC:nomeMae "Nome da mãe"@pt)
+DataPropertyDomain(SINASC:nomeMae SINASC:Mae)
+
+# Data Property: SINASC:nomePai (Father's name)
+
+AnnotationAssertion(rdfs:label SINASC:nomePai "Father's name"@en)
+AnnotationAssertion(rdfs:label SINASC:nomePai "Nome do pai"@pt)
+DataPropertyDomain(SINASC:nomePai SINASC:Pai)
+
+# Data Property: SINASC:nomeReNasc (Nome do recém‐nascido)
+
+AnnotationAssertion(rdfs:label SINASC:nomeReNasc "Newborn's name"@en)
+AnnotationAssertion(rdfs:label SINASC:nomeReNasc "Nome do recém‐nascido"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> SINASC:nomeReNasc "nomeRNasc"@pt)
+DataPropertyDomain(SINASC:nomeReNasc SINASC:RN)
+
+# Data Property: SINASC:nuDocResp (Número do documento do responsável pelo preenchimento)
+
+AnnotationAssertion(rdfs:label SINASC:nuDocResp "Document number who filled"@en)
+AnnotationAssertion(rdfs:label SINASC:nuDocResp "Número do documento do responsável pelo preenchimento"@pt)
+DataPropertyDomain(SINASC:nuDocResp SINASC:PreenchimentoCadastral)
+
+# Data Property: SINASC:numEndNasc (Número do endereço de nascimento)
+
+AnnotationAssertion(rdfs:label SINASC:numEndNasc "Birth address number"@en)
+AnnotationAssertion(rdfs:label SINASC:numEndNasc "Número do endereço de nascimento"@pt)
+DataPropertyDomain(SINASC:numEndNasc SINASC:Local)
+
+# Data Property: SINASC:numRes (Residence address number)
+
+AnnotationAssertion(rdfs:label SINASC:numRes "Número do endereço de residência"@pt)
+AnnotationAssertion(rdfs:label SINASC:numRes "Residence address number"@en)
+DataPropertyDomain(SINASC:numRes SINASC:Mae)
+
+# Data Property: SINASC:numSusMae (Número do cartão SUS da mãe)
+
+AnnotationAssertion(rdfs:label SINASC:numSusMae "Mother's SUS card number"@en)
+AnnotationAssertion(rdfs:label SINASC:numSusMae "Número do cartão SUS da mãe"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#note> SINASC:numSusMae "Cartão SUS, Cartão Nacional de Saúde, CNS"@pt)
+DataPropertyDomain(SINASC:numSusMae SINASC:Mae)
+
+# Data Property: SINASC:numeroDN (Live Birth Certification number)
+
+AnnotationAssertion(rdfs:comment SINASC:numeroDN "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:numeroDN "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:numeroDN "Live Birth Certification number"@en)
+AnnotationAssertion(rdfs:label SINASC:numeroDN "Número da Declaração de Nascido Vivo"@pt)
+DataPropertyDomain(SINASC:numeroDN SINASC:PreenchimentoCadastral)
+
+# Data Property: SINASC:numeroDV (Check Digit Number)
+
+AnnotationAssertion(rdfs:label SINASC:numeroDV "Check Digit Number"@en)
+AnnotationAssertion(rdfs:label SINASC:numeroDV "Número do Dígito Verificador"@pt)
+DataPropertyDomain(SINASC:numeroDV SINASC:PreenchimentoCadastral)
+
+# Data Property: SINASC:orgEmissor (Issuing authority of the document)
+
+AnnotationAssertion(rdfs:label SINASC:orgEmissor "Descrição do órgão emissor do documento do responsável pelo preenchimento"@pt)
+AnnotationAssertion(rdfs:label SINASC:orgEmissor "Issuing authority of the document"@en)
+DataPropertyDomain(SINASC:orgEmissor SINASC:PreenchimentoCadastral)
+
+# Data Property: SINASC:parto (Type of delivery)
+
+AnnotationAssertion(rdfs:comment SINASC:parto "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:parto "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:parto "Tipo de parto"@pt)
+AnnotationAssertion(rdfs:label SINASC:parto "Type of delivery"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:parto "Valores: 1– Vaginal; 2– Cesário; 9– Ignorado"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:parto "Values: 1- Vaginal; 2-Cesarean; 9-Ignored"@en)
+DataPropertyDomain(SINASC:parto SINASC:GestacaoEParto)
+
+# Data Property: SINASC:peso (Weight in birth)
+
+AnnotationAssertion(rdfs:comment SINASC:peso "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:peso "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:peso "Peso ao nascer"@pt)
+AnnotationAssertion(rdfs:label SINASC:peso "Weight in birth"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:peso "Valores em gramas"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:peso "Value in grams"@en)
+DataPropertyDomain(SINASC:peso SINASC:RN)
+
+# Data Property: SINASC:prefixoDN (Live Birth Certification prefix number)
+
+AnnotationAssertion(rdfs:label SINASC:prefixoDN "Live Birth Certification prefix number"@en)
+AnnotationAssertion(rdfs:label SINASC:prefixoDN "Prefixo do número da Declaração de Nascido Vivo"@pt)
+DataPropertyDomain(SINASC:prefixoDN SINASC:PreenchimentoCadastral)
+
+# Data Property: SINASC:qtdFilMort (Number of fetal losses and abortions prior to this pregnancy)
+
+AnnotationAssertion(rdfs:comment SINASC:qtdFilMort "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:qtdFilMort "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:qtdFilMort "Number of fetal losses and abortions prior to this pregnancy"@en)
+AnnotationAssertion(rdfs:label SINASC:qtdFilMort "Número de perdas fetais e abortos anteriores a esta gestação"@pt)
+DataPropertyDomain(SINASC:qtdFilMort SINASC:GestacaoEParto)
+
+# Data Property: SINASC:qtdFilVivo (Number of live children prior to this pregnancy)
+
+AnnotationAssertion(rdfs:comment SINASC:qtdFilVivo "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:qtdFilVivo "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:qtdFilVivo "Number of live children prior to this pregnancy"@en)
+AnnotationAssertion(rdfs:label SINASC:qtdFilVivo "Número de filhos vivos anteriores a esta gestação"@pt)
+DataPropertyDomain(SINASC:qtdFilVivo SINASC:GestacaoEParto)
+
+# Data Property: SINASC:qtdGestAnt (Número de gestações anteriores a esta gestação)
+
+AnnotationAssertion(rdfs:label SINASC:qtdGestAnt "Number of pregnancies prior to this pregnancy"@en)
+AnnotationAssertion(rdfs:label SINASC:qtdGestAnt "Número de gestações anteriores a esta gestação"@pt)
+DataPropertyDomain(SINASC:qtdGestAnt SINASC:GestacaoEParto)
+
+# Data Property: SINASC:qtdPartCes (Número de partos cesáreos anteriores a esta gestação)
+
+AnnotationAssertion(rdfs:label SINASC:qtdPartCes "Number of cesarean deliveries prior to this pregnancy"@en)
+AnnotationAssertion(rdfs:label SINASC:qtdPartCes "Número de partos cesáreos anteriores a esta gestação"@pt)
+DataPropertyDomain(SINASC:qtdPartCes SINASC:GestacaoEParto)
+
+# Data Property: SINASC:qtdPartNor (Número de partos vaginais anteriores a esta gestação)
+
+AnnotationAssertion(rdfs:label SINASC:qtdPartNor "Number of vaginal deliveries prior to this pregnancy"@en)
+AnnotationAssertion(rdfs:label SINASC:qtdPartNor "Número de partos vaginais anteriores a esta gestação"@pt)
+DataPropertyDomain(SINASC:qtdPartNor SINASC:GestacaoEParto)
+
+# Data Property: SINASC:racaCorMae (Raça e cor da mãe)
+
+AnnotationAssertion(rdfs:comment SINASC:racaCorMae "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:racaCorMae "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:racaCorMae "Race and color of mother"@en)
+AnnotationAssertion(rdfs:label SINASC:racaCorMae "Raça e cor da mãe"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:racaCorMae "Valores: 1– Branca; 2– Preta; 3– Amarela; 4– Parda; 5– Indígena"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:racaCorMae "Values: 1– White; 2– Black; 3– Yellow; 4– Parda/mixed; 5– Indigenous"@en)
+DataPropertyDomain(SINASC:racaCorMae SINASC:Mae)
+
+# Data Property: SINASC:semaGestac (Número de semanas de gestação)
+
+AnnotationAssertion(rdfs:label SINASC:semaGestac "Número de semanas de gestação"@pt)
+AnnotationAssertion(rdfs:label SINASC:semaGestac "Weeks of pregnancy"@en)
+DataPropertyDomain(SINASC:semaGestac SINASC:GestacaoEParto)
+
+# Data Property: SINASC:seriEscMae (Mother's education level)
+
+AnnotationAssertion(rdfs:label SINASC:seriEscMae "Mother's education level"@en)
+AnnotationAssertion(rdfs:label SINASC:seriEscMae "Série escolar da mãe"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:seriEscMae "Valores de 1 a 8"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:seriEscMae "Values: From 1 to 8"@en)
+DataPropertyDomain(SINASC:seriEscMae SINASC:Mae)
+
+# Data Property: SINASC:sexo (Gender)
+
+AnnotationAssertion(rdfs:comment SINASC:sexo "Campo disponível nos dados públicos"@pt)
+AnnotationAssertion(rdfs:comment SINASC:sexo "Field available in public data"@en)
+AnnotationAssertion(rdfs:label SINASC:sexo "Gender"@en)
+AnnotationAssertion(rdfs:label SINASC:sexo "Sexo"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:sexo "M – Male; F – Female; I – Ignored OR 0 - Ignored; 1 - Male; 2 - Female"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:sexo "M – Masculino; F – Feminino; I – Ignorado OU 0 - Ignorado; 1 - Masculino; 2 - Feminino"@pt)
+DataPropertyDomain(SINASC:sexo SINASC:RN)
+
+# Data Property: SINASC:stCesParto (Cesarean section prior to labor)
+
+AnnotationAssertion(rdfs:label SINASC:stCesParto "Cesarean section prior to labor"@en)
+AnnotationAssertion(rdfs:label SINASC:stCesParto "Cesárea ocorreu antes do trabalho de parto iniciar"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:stCesParto "Valores: 1– Sim; 2– Não; 3– Não se aplica; 9– Ignorado"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:stCesParto "Values: 1– Yes; 2– No; 3– Not applicable; 9– Ignored"@en)
+DataPropertyDomain(SINASC:stCesParto SINASC:GestacaoEParto)
+
+# Data Property: SINASC:stTrabPart (Induction of Labor)
+
+AnnotationAssertion(rdfs:label SINASC:stTrabPart "Induction of Labor"@en)
+AnnotationAssertion(rdfs:label SINASC:stTrabPart "Trabalho de parto induzido"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:stTrabPart "Valores: 1– Sim; 2– Não; 3– Não se aplica; 9– Ignorado"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:stTrabPart "Values: 1– Yes; 2– No; 3– Not applicable; 9– Ignored"@en)
+DataPropertyDomain(SINASC:stTrabPart SINASC:GestacaoEParto)
+
+# Data Property: SINASC:tpApresent (Fetal Presentation)
+
+AnnotationAssertion(rdfs:label SINASC:tpApresent "Fetal Presentation"@en)
+AnnotationAssertion(rdfs:label SINASC:tpApresent "Tipo de apresentação do recém-nascido"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:tpApresent "Valores: 1– Cefálico; 2– Pélvica ou podálica; 3– Transversa; 9– Ignorado"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:tpApresent "Values: 1– Cephalic; 2 - Pelvic or podalic; 3 - Transversal; 9– Ignored"@en)
+DataPropertyDomain(SINASC:tpApresent SINASC:GestacaoEParto)
+
+# Data Property: SINASC:tpMetEstim (Method used to estimate number of weeks of pregnancy)
+
+AnnotationAssertion(rdfs:label SINASC:tpMetEstim "Method used to estimate number of weeks of pregnancy"@en)
+AnnotationAssertion(rdfs:label SINASC:tpMetEstim "Método utilizado para estimar número de semanas de gestação"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:tpMetEstim "Valores: 1– Exame físico; 2– Outro método; 9– Ignorado"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:tpMetEstim "Values: 1– Physical examination; 2– Another method; 9– Ignored"@en)
+DataPropertyDomain(SINASC:tpMetEstim SINASC:GestacaoEParto)
+
+# Data Property: SINASC:tpNascAssi (Profissional que assistiu o nascimento)
+
+AnnotationAssertion(rdfs:label SINASC:tpNascAssi "Professional who attended the labor"@en)
+AnnotationAssertion(rdfs:label SINASC:tpNascAssi "Profissional que assistiu o nascimento"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:tpNascAssi "Valores: 1– Médico; 2– Enfermeira/obstetriz; 3– Parteira; 4– Outros; 9– Ignorado"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:tpNascAssi "Values: 1– Physician; 2– Nurse / obstetrician; 3 - Midwife; 4– Others; 9– Ignored"@en)
+DataPropertyDomain(SINASC:tpNascAssi SINASC:GestacaoEParto)
+
+# Data Property: SINASC:tpRobson (Código do Grupo de Robson)
+
+AnnotationAssertion(rdfs:label SINASC:tpRobson "Código do Grupo de Robson"@pt)
+AnnotationAssertion(rdfs:label SINASC:tpRobson "Robson Group Code"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:tpRobson "Valores: 1 - Nulípara, único, cefálico, ≥37 semanas, Trabalho de parto - TP espontâneo; 2 - Nulípara, único, cefálico, ≥37 semanas, TP induzido OU cesária antes do TP; 3 - Multipara, sem cesária anterior, único, cefálico, ≥37 semanas, TP espontâneo; 4 -  Multipara, sem cesária anterior, único, cefálico, ≥37 semanas, parto induzido OU Cesaria antes do TP; 5 - Multipara, com 1 OU mais cesárias anteriores, único, cefálico, ≥37 semanas; 6 - Todas as nulíparas, com apresentação pélvica; 7 - Todas as multíparas, com apresentação pélvica, inclusive com histórico de cesária anterior; 8 - Todas gestações múltiplas, inclusive com histórico de cesária anterior; 9 - Todas córmicas ou oblíquas, inclusive com histórico de cesária anterior; 10 - Todas com feto único e cefálico, <37 sem, inclusive com histórico de cesária anterior"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:tpRobson "Values: 1 - Nulliparous, single, cephalic, ≥37 weeks, Labor - Spontaneous labor; 2 - Nulliparous, single, cephalic, ≥37 weeks, induced labor OR cesarean section before labor; 3 - Multipara, without previous cesarean, single, cephalic, ≥37 weeks, spontaneous PT; 4 - Multipara, without previous cesarean, single, cephalic, ≥37 weeks, induced delivery OR Cesarean before PT; 5 - Multipara, with 1 OR more previous cesarean sections, single, cephalic, ≥37 weeks; 6 - All nulliparous women, with breech presentation; 7 - All multiparous women, with breech presentation, including a history of previous cesarean section; 8 - All multiple pregnancies, including a history of previous cesarean section; 9 - All conical or oblique, including a history of previous cesarean section; 10 - All with single and cephalic fetus, <37 without, including history of previous cesarean"@en)
+DataPropertyDomain(SINASC:tpRobson SINASC:GestacaoEParto)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: SINASC:AnomaliaCongenita (Congenital Anomalies)
+
+AnnotationAssertion(rdfs:label SINASC:AnomaliaCongenita "Anomalia Congênita"@pt)
+AnnotationAssertion(rdfs:label SINASC:AnomaliaCongenita "Congenital Anomalies"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:AnomaliaCongenita "Anomalias congênitas observadas"@pt)
+SubClassOf(SINASC:AnomaliaCongenita owl:Thing)
+DisjointClasses(SINASC:AnomaliaCongenita SINASC:GestacaoEParto)
+DisjointClasses(SINASC:AnomaliaCongenita SINASC:Local)
+DisjointClasses(SINASC:AnomaliaCongenita SINASC:Mae)
+DisjointClasses(SINASC:AnomaliaCongenita SINASC:Pai)
+DisjointClasses(SINASC:AnomaliaCongenita SINASC:PreenchimentoCadastral)
+DisjointClasses(SINASC:AnomaliaCongenita SINASC:RN)
+
+# Class: SINASC:GestacaoEParto (Pregnancy and Childbirth)
+
+AnnotationAssertion(rdfs:label SINASC:GestacaoEParto "Gestação e Parto"@pt)
+AnnotationAssertion(rdfs:label SINASC:GestacaoEParto "Pregnancy and Childbirth"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:GestacaoEParto "Informações sobre a gestação e o parto"@pt)
+SubClassOf(SINASC:GestacaoEParto owl:Thing)
+DisjointClasses(SINASC:GestacaoEParto SINASC:Local)
+DisjointClasses(SINASC:GestacaoEParto SINASC:Mae)
+DisjointClasses(SINASC:GestacaoEParto SINASC:Pai)
+DisjointClasses(SINASC:GestacaoEParto SINASC:PreenchimentoCadastral)
+DisjointClasses(SINASC:GestacaoEParto SINASC:RN)
+
+# Class: SINASC:Local (Place of birth)
+
+AnnotationAssertion(rdfs:label SINASC:Local "Local de ocorrência"@pt)
+AnnotationAssertion(rdfs:label SINASC:Local "Place of birth"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:Local "Local de ocorrência do nascimento"@pt)
+SubClassOf(SINASC:Local owl:Thing)
+DisjointClasses(SINASC:Local SINASC:Mae)
+DisjointClasses(SINASC:Local SINASC:Pai)
+DisjointClasses(SINASC:Local SINASC:PreenchimentoCadastral)
+DisjointClasses(SINASC:Local SINASC:RN)
+
+# Class: SINASC:Mae (Mother)
+
+AnnotationAssertion(rdfs:label SINASC:Mae "Mother"@en)
+AnnotationAssertion(rdfs:label SINASC:Mae "Mãe"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:Mae "Informações sobre a mãe do recém nascido"@pt)
+SubClassOf(SINASC:Mae owl:Thing)
+DisjointClasses(SINASC:Mae SINASC:Pai)
+DisjointClasses(SINASC:Mae SINASC:PreenchimentoCadastral)
+
+# Class: SINASC:Pai (Pai)
+
+AnnotationAssertion(rdfs:label SINASC:Pai "Father"@en)
+AnnotationAssertion(rdfs:label SINASC:Pai "Pai"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:Pai "Informações sobre o pai do recém nascido"@pt)
+SubClassOf(SINASC:Pai owl:Thing)
+DisjointClasses(SINASC:Pai SINASC:PreenchimentoCadastral)
+
+# Class: SINASC:PreenchimentoCadastral (Preenchimento da ficha de Declaração de Nascido Vivo)
+
+AnnotationAssertion(rdfs:label SINASC:PreenchimentoCadastral "Filling in the Live Birth Certification form"@en)
+AnnotationAssertion(rdfs:label SINASC:PreenchimentoCadastral "Preenchimento da ficha de Declaração de Nascido Vivo"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:PreenchimentoCadastral "Informações sobre o preenchimento da declaração de nascido vivo"@pt)
+SubClassOf(SINASC:PreenchimentoCadastral owl:Thing)
+DisjointClasses(SINASC:PreenchimentoCadastral SINASC:RN)
+
+# Class: SINASC:RN (Identificação do recém-nascido - RN)
+
+AnnotationAssertion(rdfs:label SINASC:RN "Identificação do recém-nascido - RN"@pt)
+AnnotationAssertion(rdfs:label SINASC:RN "Neonate identification"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> SINASC:RN "Identificação do recém nascido"@pt)
+SubClassOf(SINASC:RN owl:Thing)
+
+
+)

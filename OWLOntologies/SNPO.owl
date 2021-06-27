@@ -1,0 +1,2080 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl/"
+     xml:base="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:AAO="http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#"
+     xmlns:SOFA="http://purl.org/obo/owl/obo#"
+     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:elements="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl/default:_http://purl.org/dc/elements/1.1/"
+     xmlns:SO="http://purl.org/obo/owl/SO#"
+     xmlns:SNPO="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl">
+        <owl:imports rdf:resource="http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl"/>
+        <owl:imports rdf:resource="http://purl.org/obo/owl/SO"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A domain representation of genomic variations.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNP-Ontology full</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">version: full 1.6
+release: 14/03/2017</owl:versionInfo>
+        <elements:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">author: Adrien Coulet
+contact: adrien dot coulet at loria dot fr
+Loria - Inria NGE, University of Lorraine</elements:creator>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: Take into account alternative splicing.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consistency checked by Pellet 2.0</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modifications 03/03/2017: 
+- repair of the missing link to Sequence Ontology</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl/default:_http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl/default:_http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#codesFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#codesFor">
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isCodedBy"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#cds"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#composesSequence -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#composesSequence">
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isASequenceComposedOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#amino_acid"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasAASequence -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasAASequence">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasSequence"/>
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isAASequenceOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasAAVariation -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasAAVariation">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasVariation"/>
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isAAVariationOf"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#aa_variation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasDNASequence -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasDNASequence">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasSequence"/>
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isDnaSequenceOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasDnaVariant -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasDnaVariant">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#regionHasVariant"/>
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isDnaVariantIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasGenome -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasGenome">
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isTheGenomeOf"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#organism"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasHaplotypeMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasHaplotypeMember">
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isHaplotypeMemberOf"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype_member"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasNucleotideVariation -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasNucleotideVariation">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasVariation"/>
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isNucleotideVariationOf"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide_variation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasPosition -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasPosition">
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasVariant"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence_position"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasProteinVariant -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasProteinVariant">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#regionHasVariant"/>
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isProteinVariant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasRNASequence -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasRNASequence">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasSequence"/>
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isRnaSequenceOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasRnaVariant -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasRnaVariant">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#regionHasVariant"/>
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isRnaVariant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasSequence -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasSequence">
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isSequenceIn"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#observed_variation"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein_region"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence_position"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasSnpCapturedByProxy -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasSnpCapturedByProxy">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasHaplotypeMember"/>
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isNonTagOf"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#snp_captured_by_proxy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasSubSequence -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasSubSequence">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasSequence"/>
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isSubSequenceOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence_position"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasVariant -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasVariant">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence_position"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasVariantAASequence -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasVariantAASequence">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasVariantSequence"/>
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isOneObservedAASequenceIn"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#observed_variation"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#aa_sequence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasVariantAlleleSequence -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasVariantAlleleSequence">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasVariantSequence"/>
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isOneObservedAlleleIn"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#observed_variation"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide_sequence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasVariantSequence -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasVariantSequence">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasSequence"/>
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isOneObservedVariantIn"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#observed_variation"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasVariation -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasVariation">
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isObservedIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#observed_allele"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#observed_variation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isAASequenceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isAASequenceOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isSequenceIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isAAVariationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isAAVariationOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isObservedIn"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#aa_variation"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isASequenceComposedOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isASequenceComposedOf">
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#amino_acid"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isCodedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isCodedBy">
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#cds"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isComposedOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isComposedOf">
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isPartOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype_block"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein_region"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype_block"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein_region"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isDnaSequenceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isDnaSequenceOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isSequenceIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isDnaVariantIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isDnaVariantIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isVariantIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isHaplotypeForPeopleOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isHaplotypeForPeopleOf">
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#presentsHapoltype"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#population"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isHaplotypeMemberOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isHaplotypeMemberOf">
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype_member"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isNonTagOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isNonTagOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isHaplotypeMemberOf"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#snp_captured_by_proxy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isNucleotideVariationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isNucleotideVariationOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isObservedIn"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide_variation"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isObservedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isObservedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#observed_allele"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#observed_variation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isOneObservedAASequenceIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isOneObservedAASequenceIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isOneObservedVariantIn"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#aa_sequence"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#observed_variation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isOneObservedAlleleIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isOneObservedAlleleIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isOneObservedVariantIn"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide_sequence"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#observed_variation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isOneObservedVariantIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isOneObservedVariantIn">
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#observed_variation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isPartOf">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype_block"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein_region"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype_block"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein_region"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isPositionIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isPositionIn">
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#presentsPosition"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence_position"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isProteinVariant -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isProteinVariant">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isVariantIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isRnaSequenceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isRnaSequenceOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isSequenceIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isRnaVariant -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isRnaVariant">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isVariantIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isSequenceIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isSequenceIn">
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#observed_variation"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein_region"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence_position"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isStatisticallyConnected -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isStatisticallyConnected">
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isStatisticallyConnected"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype_block"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype_block"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isStored -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isStored">
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#stores"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#database"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isStoredInSeqDb -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isStoredInSeqDb">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isStored"/>
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#storesSequence"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence_database"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isStoredInVarDb -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isStoredInVarDb">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isStored"/>
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#storesVariant"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant_database"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isSubSequenceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isSubSequenceOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isSequenceIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence_position"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isTaggedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isTaggedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasHaplotypeMember"/>
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#tagsHaplotype"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#tag_snp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isTheGenomeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isTheGenomeOf">
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genome"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#organism"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isTheMatureProductOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isTheMatureProductOf">
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#maturesIn"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isTheTraductionProductOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isTheTraductionProductOf">
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isTranslatedIn"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein_region"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isTheTranscritpionProductOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isTheTranscritpionProductOf">
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isTranscriptedIn"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isTranscriptedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isTranscriptedIn">
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isTranslatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isTranslatedIn">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein_region"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isVariantIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isVariantIn">
+        <owl:inverseOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#regionHasVariant"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein_region"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A variant belongs to a region.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#maturesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#maturesIn">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#presentsHapoltype -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#presentsHapoltype">
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#population"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#presentsPosition -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#presentsPosition">
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence_position"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#regionHasVariant -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#regionHasVariant">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein_region"/>
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#stores -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#stores">
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#database"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#storesSequence -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#storesSequence">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#stores"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence_database"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#storesVariant -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#storesVariant">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#stores"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant_database"/>
+        <rdfs:range rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#tagsHaplotype -->
+
+    <owl:ObjectProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#tagsHaplotype">
+        <rdfs:subPropertyOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isHaplotypeMemberOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#tag_snp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#db_local_pathway -->
+
+    <owl:DatatypeProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#db_local_pathway">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#database"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#db_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#db_name">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#database"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#db_url -->
+
+    <owl:DatatypeProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#db_url">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#database"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#db_version -->
+
+    <owl:DatatypeProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#db_version">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#database"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#identifierInRelatedSeqDb -->
+
+    <owl:DatatypeProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#identifierInRelatedSeqDb">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#identifierInRelatedVarDb -->
+
+    <owl:DatatypeProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#identifierInRelatedVarDb">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#length -->
+
+    <owl:DatatypeProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#length">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#populationSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#populationSize">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#population"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number of person included in the population.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#start_position -->
+
+    <owl:DatatypeProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#start_position">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence_position"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#stop_position -->
+
+    <owl:DatatypeProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#stop_position">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence_position"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#strand -->
+
+    <owl:DatatypeProperty rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#strand">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide_variation"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward (+ or from 5&apos; to 3&apos; ) or backward (- or from 3&apos; to 5&apos;).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0000141 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0000141">
+        <owl:equivalentClass rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#terminator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0000147 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0000147">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#exon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0000149 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0000149">
+        <owl:equivalentClass rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#contig"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0000167 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0000167">
+        <owl:equivalentClass rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#promotor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0000188 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0000188">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#intron"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0000315 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0000315">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#codon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0000340 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0000340">
+        <owl:equivalentClass rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#chromosome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0000353 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0000353">
+        <owl:equivalentClass rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#assembly"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0000355 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0000355">
+        <owl:equivalentClass rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype_block"/>
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0000409 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0000409">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0000462 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0000462">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0000605 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0000605">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0000616 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0000616">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#codon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0000657 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0000657">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#repeated_segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0000673 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0000673">
+        <owl:equivalentClass rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0000704 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0000704">
+        <owl:equivalentClass rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#gene"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0000771 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0000771">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0000830 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0000830">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0000833 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0000833">
+        <owl:equivalentClass rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0001019 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0001019">
+        <owl:equivalentClass rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#cnvr"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0001024 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0001024">
+        <owl:equivalentClass rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0001026 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0001026">
+        <owl:equivalentClass rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/SO#SO_0005836 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/SO#SO_0005836">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid">
+        <owl:equivalentClass rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#amino_acid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#aa_sequence -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#aa_sequence">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isASequenceComposedOf"/>
+                        <owl:allValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#amino_acid"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide_sequence"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sequence composed of one or several amino-acids. 
+Ex: a protein</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#aa_variation -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#aa_variation">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#observed_variation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasVariantSequence"/>
+                <owl:allValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#aa_sequence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide_variation"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is the variation of residues observed between the 2 patients (reference sequence  and the alternative sequence - if it&apos;s possible to talk about a &quot;reference&quot;) when a genomic variation is described at the proteic level. 
+Ex: Ser&gt;Thr</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#amino_acid -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#amino_acid"/>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#assembly -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#assembly">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sequence of nucleotides that has been algorithmically derived from an alignment of two or more different sequences.
+Source: SO</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#cds -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#cds">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It&apos;s the coding DNA sequence, starting from ATG (translation start) to the stop codon.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#chromosome -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#chromosome">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chromosome is a large macromolecule into which DNA is normally packaged in a cell. Minimally, it is a very long, continuous piece of DNA (a single DNA molecule), which contains many genes, regulatory elements and other intervening nucleotide sequences.
+Defintion from http://en.wikipedia.org/wiki/Chromosome</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#cnvr -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#cnvr">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#repeated_segment"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">copy number variable region
+Cf. Redon et al. Nature, 444, 23 Nov. 2006</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#coding_variant -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#coding_variant">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasPosition"/>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isPositionIn"/>
+                                <owl:allValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isSequenceIn"/>
+                                        <owl:allValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#cds"/>
+                                    </owl:Restriction>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#non_coding_variant"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Their are variants located in coding sequence ie in cds. 
+= variants located in translated codons. 
+NB: Coding sequence can not be simplify to exons. It is exon minus 5&apos;UTR and 3&apos;UTR.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#codon -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#codon">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A codon is a sequence of three nucleotides that codes for an amino acid residue in a protein depending to the genetic code.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#contig -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#contig">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#assembly"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In shotgun DNA sequencing projects, a contig (from contiguous) is a set of overlapping DNA segments derived from a single genetic source. A contig in this sense can be used to deduce the original DNA sequence of the source. This meaning of contig is in accordance with the original definition by Staden [1979].
+Defintion from http://en.wikipedia.org/wiki/Contig</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#database -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#database">
+        <owl:disjointWith rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#observed_variation"/>
+        <owl:disjointWith rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence"/>
+        <owl:disjointWith rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence_position"/>
+        <owl:disjointWith rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Databases are biological data sources publicly available or not.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#dbsnp -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#dbsnp">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#generic_variant_db"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dbSNP is the SNP database of the NCBI. Any individual is a particular version of dbSNP. Query it at http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=snp  ;
+also downloadable at ftp://ftp.ncbi.nih.gov/snp/</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#dna_sequence -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#dna_sequence">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide_sequence"/>
+        <owl:disjointWith rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#rna_sequence"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A DNA sequence i.e. an ACTG composed nucleotide sequence (at least one nucleotide).
+Ex: a chromosome, a gene, an exon, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#exon -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#exon">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An exon is any region of DNA within a gene, that is transcribed to the final messenger RNA (mRNA) molecule, rather than being spliced out from the transcribed RNA molecule. Exons of many eukaryotic genes interleave with segments of non-coding DNA (introns). The term &quot;exon&quot; was coined by Walter Gilbert in 1978.
+Definition from http://en.wikipedia.org/wiki/Exon</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#gene -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#gene">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#generic_variant_db -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#generic_variant_db">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant_database"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">There are generic (not specialized) databases on genomic variations.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genome -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genome">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A whole genome.
+Ex: The human genome
+The whole hereditary information of an organism that is encoded in the DNA (or, for some viruses, RNA). This includes both the genes and the non-coding sequences of the DNA.
+Definition from http://en.wikipedia.org/wiki/Genome</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasSequence"/>
+                <owl:allValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide_sequence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isPartOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein_region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is one portion of a, or the whole, genome.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasHaplotypeMember"/>
+                        <owl:allValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype_member"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isHaplotypeForPeopleOf"/>
+                        <owl:allValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#population"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Haplotype is a set of single nucleotide polymorphisms (SNPs) on a single chromatid that are statistically associated.
+Source: wikipedia</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype_block -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype_block">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isASequenceComposedOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype_member"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of consecutive sites between which there is little or no evidence of historical recombination.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">haplotype block</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype_member -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype_member">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isHaplotypeMemberOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+        <owl:disjointWith rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#uncaptured_snp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hapmap -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hapmap">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#generic_variant_db"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A public resource that will help researchers find genes associated with human disease and response to pharmaceuticals by providing data about human haplotypes.
+http://www.hapmap.org/</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hgvbase -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hgvbase">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#generic_variant_db"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A catalog of normal human gene and genome variation, useful as a research tool to help define the genetic component of human phenotypic variation.
+http://hgvbase.cgb.ki.se/</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#inserm_mut -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#inserm_mut">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#locus_specific_variant_db"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A private database owned by the INSERM embedding mutation located on the LDLR gene (Chr19) known to be involved in familial hypercholesterolemia.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#inserm_snp -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#inserm_snp">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#locus_specific_variant_db"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A private database owned by the INSERM embedding genomic variation (with no known effect) located on the LDLR gene (Chr19).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#intron -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#intron">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introns are sections of DNA that will be spliced out after transcription, but before the RNA is used.
+Definition from http://en.wikipedia.org/wiki/Intron</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#locus_specific_variant_db -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#locus_specific_variant_db">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant_database"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">There are specialized databases on genomic variations. i.e. specialized on one specific locus, on one specific disease, etc..</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#mature_mrna -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#mature_mrna">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Messenger Ribonucleic Acid (mRNA) is RNA that encodes and carries information from DNA during transcription to sites of protein synthesis to undergo translation in order to yield a gene product.  
+Mature messenger RNA, often abbreviated as mature mRNA is a eukaryotic RNA transcript that has been spliced and processed and is ready for translation in the course of protein synthesis.
+Defintions from http://en.wikipedia.org/wiki/Mrna</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#ncbi_nucleotide -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#ncbi_nucleotide">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence_database"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Its the subdivision of GenBank embedding nucleotide sequences. Query it from NCBI web site at http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=Nucleotide</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#non_coding_variant -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#non_coding_variant">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#coding_variant"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#composesSequence"/>
+                <owl:allValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide_sequence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The monomeric units from which DNA or RNA polymers are constructed. They consist of a purine or pyrimidine base, a pentose sugar, and a phosphate group. (From King &amp; Stansfield, A Dictionary of Genetics, 4th ed)
+MESH:D.09.203.408.620</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide_sequence -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide_sequence">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isASequenceComposedOf"/>
+                        <owl:allValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sequence composed of one or several nucleotides. 
+Ex: a chromosome, a gene, an exon, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide_variation -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide_variation">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#observed_variation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasVariantSequence"/>
+                <owl:allValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide_sequence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is the variation of nucleotides observed between the 2 patients (reference sequence  and the alternative sequence - if it&apos;s possible to talk about a &quot;reference&quot;) when a genomic variation is described at the nucleotide level. 
+Ex: A&gt;C</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#observed_allele -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#observed_allele">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasVariantAlleleSequence"/>
+                        <owl:allValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide_sequence"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isObservedIn"/>
+                        <owl:allValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An allele observed in someone, or ina group for an identified variant.
+Used to distinguish variant definition (observed_variation) from genotyping in patient or in haplotype.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">observed allele</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#observed_variation -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#observed_variation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#aa_variation"/>
+                            <rdf:Description rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide_variation"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasVariantSequence"/>
+                        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:cardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isObservedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence"/>
+        <owl:disjointWith rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence_position"/>
+        <owl:disjointWith rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is the variation (of nucleotides or of residues) observed between the 2 patients (reference sequence  and the alternative sequence - if it&apos;s possible to talk about a &quot;reference&quot;) when a genomic variation is described. 
+Ex: A&gt;C, CT&gt;A, Ser&gt;Thr, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#omim -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#omim">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#generic_variant_db"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This database is a catalog of human genes and genetic disorders. It embeds information about allelic variations involved in this disorders.
+http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=OMIM</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#organism -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#organism">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organism.
+Ex: Homo spaiens, Escherischia Coli, Arabidopsis Thaliana, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#pharmgkb -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#pharmgkb">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#generic_variant_db"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PharmGKB curates information that establishes knowledge about the relationships among drugs, diseases and genes, including their variations and gene products. 
+http://www.pharmgkb.org/</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#population -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#population">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#presentsHapoltype"/>
+                <owl:allValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A group of indivdual.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#promotor -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#promotor">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#regulatory_region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A promoter is a DNA sequence that enables a gene to be transcribed. The promoter is recognized by RNA polymerase, which then initiates transcription.
+Defintion from http://en.wikipedia.org/wiki/Promotor</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein_region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proteins are large organic compounds made of amino acids arranged in a linear chain.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein_conserved_domain -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein_conserved_domain">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein_region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proteins can be grouped together in families where all members have the same, or similar, function and are descended from a common ancestor. Proteins from the same family are usually composed of highly conserved sequence segments separated by regions of different lengths and little sequence similarity. These conserved sequence segments, called motifs, are typically 6-30 aa long and correspond to active sites, substrate or ligand binding sites, and structurally important segments of proteins.
+Defintion from Shmuel Pietrokovski</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein_domain -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein_domain">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein_region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A structural domain (&quot;domain&quot;) is an element of overall structure that is self-stabilizing and often folds independently of the rest of the protein chain.
+Definition from http://en.wikipedia.org/wiki/Structural_domain</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein_region -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein_region">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasSequence"/>
+                <owl:allValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#aa_sequence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isPartOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#protein_region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is one portion of a, or an entire protein.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#reference_variant -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#reference_variant">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasPosition"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasSubSequence"/>
+                        <owl:someValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide_sequence"/>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasPosition"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasSubSequence"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#aa_sequence"/>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasAAVariation"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasNucleotideVariation"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasPosition"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Because one genomic variation could be represented in diferrent way (e.g.  positionnned on different sequence, represented at the nucleotide or proteic level, etc.), several variant may refer to the same entity ; tit is interesting to have a reference variant. In our point of view, the reference variant is the one described at the genomic level on the complete chromosome sequence (of the current genome assembly).
+Ex: on the NC_000019.8 sequence</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#regulatory_region -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#regulatory_region">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A DNA sequence that controls the expression of a gene. Source: SO</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#repeated_segment -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#repeated_segment">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A repeated segment is a genome portion where the sequence displays some repeatitve patterns (repeatitive sequences as satellites, microsatellites, ALU repeats, etc.)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#rna_sequence -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#rna_sequence">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide_sequence"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A RNA sequence i.e. an ACTU composed nucleotide sequence (at least one nucleotide).
+Ex: an mRNA</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence">
+        <owl:disjointWith rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence_position"/>
+        <owl:disjointWith rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The sequence concept represents something that could be a organized succession of nucleotide or amino-acid and then could be divided in nucleotide sequences and amino-acid sequences. A sequence could be associated  to its corresponding entry in a sequence database.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence_database -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence_database">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#database"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">There are biological databases embedding data about sequences (nucleotide or proteic sequences).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence_position -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence_position">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasSubSequence"/>
+                        <owl:allValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasVariant"/>
+                        <owl:allValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isPositionIn"/>
+                <owl:allValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#sequence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is a position on a sequence. Then it embeds a begin start position and an end. It should be describing the position of a subsequence in a larger sequence or the position of a variation in a sequence.
+NB: for a SNP the start and the stop position are the same.
+The start position is the first nucleotide (respectivly residue) after the 5&apos; flanking sequence, and the stop position is the position before the first nucleotide of the 3&apos; flanking sequence.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#snp_captured_by_proxy -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#snp_captured_by_proxy">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype_member"/>
+        <owl:disjointWith rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#tag_snp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#tag_snp -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#tag_snp">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#tagsHaplotype"/>
+                <owl:someValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#haplotype_member"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#terminator -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#terminator">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#regulatory_region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A terminator marks the end of a gene on the DNA for transcription.
+Defintition from http://en.wikipedia.org/wiki/Terminator</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">There are first products of transcription, before the splicing.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasSequence"/>
+                <owl:allValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide_sequence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#isPartOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is one portion of a, or an enire, transcript (unmature) or mRNA (mature).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#translation_start -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#translation_start">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#codon"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The first codon translated: ATG.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#translation_stop -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#translation_stop">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#codon"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The stop codon: UAA or UAG or UAA for the human genetic code.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#ucl_ldlr -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#ucl_ldlr">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#locus_specific_variant_db"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A public database on mutations and polymorphisms of the LDLR gene.
+http://www.ucl.ac.uk/fh/</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#umd_ldlr -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#umd_ldlr">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#locus_specific_variant_db"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A public database on mutations and polymorphisms of the LDLR gene.
+http://www.umd.be:2078/</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#uncaptured_snp -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#uncaptured_snp">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#utr_3_prime -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#utr_3_prime">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3&apos;UTR
+transcripted untranslated region in 3&apos;
+In mRNA, anything beyond this stop codon is part of the three prime untranslated region.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#utr_5_prime -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#utr_5_prime">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#genomic_region"/>
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#transcript_region"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5&apos; UTR: The five prime untranslated region (5&apos; UTR) is a particular section of messenger RNA (mRNA). It precedes the translation initiation site of the gene, bounded on the 5&apos; end by the start of transcription and on the 3&apos; end by the start codon. 
+Definition from http://en.wikipedia.org/wiki/5%27_UTR</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasPosition"/>
+                                <owl:allValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasSubSequence"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#aa_sequence"/>
+                                    </owl:Restriction>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasAAVariation"/>
+                                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasPosition"/>
+                                <owl:allValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasSubSequence"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#nucleotide_sequence"/>
+                                    </owl:Restriction>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#hasNucleotideVariation"/>
+                                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A variant is a genomic variation description at the nucleotide or proteic level. It is defined by a position on a sequence.  This sequence could be either a nucleotide sequence if the observed variation is a nucleotide variation, either a residue change if the observed variation is an residue variation. At the precised position is observed a variation (the observed variation) in the sequence respectively to a &quot;reference&quot; (or &quot;known&quot;) sequence.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant_database -->
+
+    <owl:Class rdf:about="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#variant_database">
+        <rdfs:subClassOf rdf:resource="http://www.loria.fr/~coulet/ontology/snpontology/version1.6/snpontology_full.owl#database"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">There are biological databases embedding data about genomic variations.</rdfs:comment>
+    </owl:Class>
+    <rdf:Description>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unnecessary</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasPosition only sequence_position
+AND 
+hasVariation only observed_variation
+[new definition make it unecessary]</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unnecessary</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unnecessary</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,3697 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/vanessa/ontologies/2012/7/untitled-ontology-33"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/vanessa/ontologies/2012/7/untitled-ontology-33">
+    <Prefix name="" IRI="http://www.semanticweb.org/vanessa/ontologies/2012/7/untitled-ontology-33#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Ability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ability_Assessment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Access"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aches"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Activities_of_Daily_Living"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Address"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adherence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adjust"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Administer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Admit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Advance_Directives"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agreement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Air_Conditioning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ambulance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antibiotics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anxiety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Apartment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Appointment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Appropriateness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arrange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assistive_Devices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Attempt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aunt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Authorize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Back_pain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Basic_Metabolic_Panel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bathe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bathroom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bedroom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Benefit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blister"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blood_Pressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blood_Pressure_Machine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blood_Sugar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Boot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bowel_Function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bowel_Program"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bruise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Call"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cancel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cardiovascular_Status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Care"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Care_Coordinator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Care_plan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Caregiver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Case_Manager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Caseworker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cast"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Catheter_care"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cellulitis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Certification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Change"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Check"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chemotherapy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chest_pain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Child"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clean"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Client"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clinic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clutter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coagulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cognitive_Status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cold"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Commode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Communicate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Concern"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Confirm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Confuse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Confusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Constipation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Continue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conversation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coordination_Activities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coordination_Focus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cope"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Copy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Costs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cough"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coverage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Culture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Daughter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decrease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dehydration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Deliver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dementia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dentures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Depression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Details"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diabetes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dialysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diarrhea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dining_Room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Discharge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Discomfort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Discontinue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dizziness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Do_Not_Resuscitate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Doctor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Documentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dosage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drainage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dressing_Change"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Duoderm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Durable_Medical_Equipment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ED"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Edema"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Elder_Care"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Elimination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Emergency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Endurance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Environment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Equipment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Establish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evaluate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exercises"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exertion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Family"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Father"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fax"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fecal_Incontinence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fever"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Finances"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Finger_Stick"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fix_meals"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fluids"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Follow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Follow-up"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Food"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Foot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Forget"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fracture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Free"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Friend"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Funding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gait"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gait_Training"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gastrointestinal_Problems"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gastrostomy_Tube"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gauze"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Glasses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Glucometer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Goal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Granddaughter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grandson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grooming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hearing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#History"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Home"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Homemaker_Chore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hospice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hospital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hospital_Bed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hospitalization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hospitalize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#House"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Housekeeping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Husband"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#INR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Idea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Identify"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Impaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Impaired_Skin_Integrity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Incision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Income"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Incontinence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Increase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Indwelling_Catheter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inhaler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Initiate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Injection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Injury"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Instruct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Instrumental_Acitvities_of_Daily_Living"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Insulin_Syringes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Insurance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Job"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kitchen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Knee_pain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laboratory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laboratory_Results"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laboratory_Tests"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laundry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Leave_Message"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Leg_pain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lesion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Licensed_Practical_Nurse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#List"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Log"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MSW"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maintain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medicaid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medical_Devices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medicare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mediplanner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mental_Status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mental_problems"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Money"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mouth_Care"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nausea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nebulizer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neighbor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nephew"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Niece"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Note"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nurse_Practitioner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nursing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nutrition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#O2_Saturation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oats_bus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Observe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Obtain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Occuptional_Therapist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Office"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ointment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Option"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oral_medication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Order"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ostomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Outcome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Outpatient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oxygen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Page"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pain_Management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Paratransit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Payment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#People"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Permission"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Personal_Care"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Personal_Vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pharmacist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pharmacy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Phenytoin_Level"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_Ability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_Care"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_Therapist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_problems"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physician&apos;s_Office"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Placement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Places"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plug"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pneumonia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Potassium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Potassium_Level"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pressure_Ulcer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prevent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Primary_Care_Physician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Primary_Caregiver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Primary_Physician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Private_Pay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Problem_Assessment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Problem_Evaluation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Problem_Intervention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Problem_Management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Problems"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Progress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Protime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Provide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Psychiatrist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Psychological_Care"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Purpose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Qualify"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ramp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recommend"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Record"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Refer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Registered_Nurse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Relatives"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Relief"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reminder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Replace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Report"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Respiratory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Respiratory_Status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Respite_Care"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Review"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Safety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sample"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Satisfaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Schedule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Self_Care_Monitoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Send"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Services"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shower_Chair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sibling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Signature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Significant_Other"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sister"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skilled_Nursing_Facility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Social_Services"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Social_Work"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Social_Worker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Son"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Speech_Therapist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Staff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Staples"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Strength"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Suggest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Summary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Supervision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Supervisor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Supplies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Surgeon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TED_Hose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Take"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Talk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Taxi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Team"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Telephone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Therapist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Therapy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Toe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Toilet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transportation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Treatment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tube_Feeding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UTI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Uncle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Understanding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Update"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Urgent_Care"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Urinalysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Urine_Incontinence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Urologist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vital_Signs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Volunteer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vomiting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Walker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wash"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weakness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weight_Gain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weight_Loss"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wheel_Chair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wheeled_walker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wife"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Worker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wound_Care"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wound_Clinic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wound_Infection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cognition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#collect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#grandchild"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#list"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#nurse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#skilled_services"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#venipuncture"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Ability"/>
+        <Class IRI="#Coordination_Focus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ability_Assessment"/>
+        <Class IRI="#Problem_Assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Access"/>
+        <Class IRI="#Coordination_Focus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aches"/>
+        <Class IRI="#Pain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Activities_of_Daily_Living"/>
+        <Class IRI="#Ability_Assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Address"/>
+        <Class IRI="#House"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adherence"/>
+        <Class IRI="#Coordination_Focus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adjust"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Administer"/>
+        <Class IRI="#Coordination_Activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Admit"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Advance_Directives"/>
+        <Class IRI="#Documentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Agency"/>
+        <Class IRI="#Places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Agreement"/>
+        <Class IRI="#Documentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aide"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Air_Conditioning"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ambulance"/>
+        <Class IRI="#Emergency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antibiotics"/>
+        <Class IRI="#Medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anxiety"/>
+        <Class IRI="#Mental_problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Apartment"/>
+        <Class IRI="#Places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Appointment"/>
+        <Class IRI="#Coordination_Focus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Appropriateness"/>
+        <Class IRI="#Coordination_Focus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Arrange"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ask"/>
+        <Class IRI="#Communicate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assess"/>
+        <Class IRI="#Coordination_Activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assign"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assist"/>
+        <Class IRI="#Coordination_Activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assistive_Devices"/>
+        <Class IRI="#Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Attempt"/>
+        <Class IRI="#Coordination_Activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aunt"/>
+        <Class IRI="#Relatives"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Authorize"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Back_pain"/>
+        <Class IRI="#Pain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Basic_Metabolic_Panel"/>
+        <Class IRI="#Laboratory_Tests"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bathe"/>
+        <Class IRI="#Personal_Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bathroom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bedroom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Benefit"/>
+        <Class IRI="#Finances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blister"/>
+        <Class IRI="#Impaired_Skin_Integrity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blood_Pressure"/>
+        <Class IRI="#Physical_Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blood_Pressure_Machine"/>
+        <Class IRI="#Medical_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blood_Sugar"/>
+        <Class IRI="#Finger_Stick"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boot"/>
+        <Class IRI="#Medical_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bowel_Function"/>
+        <Class IRI="#Elimination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bowel_Program"/>
+        <Class IRI="#Problem_Intervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brace"/>
+        <Class IRI="#Medical_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brother"/>
+        <Class IRI="#Sibling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bruise"/>
+        <Class IRI="#Impaired_Skin_Integrity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Call"/>
+        <Class IRI="#Communicate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cancel"/>
+        <Class IRI="#Adjust"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cane"/>
+        <Class IRI="#Assistive_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cardiovascular_Status"/>
+        <Class IRI="#Problem_Assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Care"/>
+        <Class IRI="#Coordination_Focus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Care_Coordinator"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Care_plan"/>
+        <Class IRI="#Documentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caregiver"/>
+        <Class IRI="#Primary_Caregiver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Case_Manager"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caseworker"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cast"/>
+        <Class IRI="#Medical_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Catheter_care"/>
+        <Class IRI="#Physical_Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cellulitis"/>
+        <Class IRI="#Wound_Infection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Certification"/>
+        <Class IRI="#Documentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chair"/>
+        <Class IRI="#Assistive_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Change"/>
+        <Class IRI="#Adjust"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chart"/>
+        <Class IRI="#Documentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Check"/>
+        <Class IRI="#Monitor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chemotherapy"/>
+        <Class IRI="#Medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chest_pain"/>
+        <Class IRI="#Pain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Child"/>
+        <Class IRI="#Family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clean"/>
+        <Class IRI="#Homemaker_Chore"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Client"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clinic"/>
+        <Class IRI="#Office"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clutter"/>
+        <Class IRI="#Safety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coagulation"/>
+        <Class IRI="#Laboratory_Tests"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cognitive_Status"/>
+        <Class IRI="#Problem_Assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cold"/>
+        <Class IRI="#Respiratory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Commode"/>
+        <Class IRI="#Durable_Medical_Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communicate"/>
+        <Class IRI="#Coordination_Activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Concern"/>
+        <Class IRI="#Problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conference"/>
+        <Class IRI="#Communicate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Confirm"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Confuse"/>
+        <Class IRI="#cognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Confusion"/>
+        <Class IRI="#Cognitive_Status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Constipation"/>
+        <Class IRI="#Bowel_Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Continue"/>
+        <Class IRI="#Adjust"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conversation"/>
+        <Class IRI="#Communicate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cope"/>
+        <Class IRI="#Mental_Status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Copy"/>
+        <Class IRI="#Documentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Costs"/>
+        <Class IRI="#Finances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cough"/>
+        <Class IRI="#Respiratory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coverage"/>
+        <Class IRI="#Services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Culture"/>
+        <Class IRI="#Sample"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Daughter"/>
+        <Class IRI="#Child"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decrease"/>
+        <Class IRI="#Adjust"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dehydration"/>
+        <Class IRI="#Physical_problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Deliver"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dementia"/>
+        <Class IRI="#Mental_problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dentures"/>
+        <Class IRI="#Mouth_Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Depression"/>
+        <Class IRI="#Mental_problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Depression"/>
+        <Class IRI="#Mood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Details"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diabetes"/>
+        <Class IRI="#Physical_problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dialysis"/>
+        <Class IRI="#Problem_Intervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diarrhea"/>
+        <Class IRI="#Gastrointestinal_Problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diet"/>
+        <Class IRI="#Nutrition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dining_Room"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Discharge"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Discomfort"/>
+        <Class IRI="#Pain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Discontinue"/>
+        <Class IRI="#Adjust"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dizziness"/>
+        <Class IRI="#Physical_problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Do_Not_Resuscitate"/>
+        <Class IRI="#Documentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Doctor"/>
+        <Class IRI="#Physician"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Documentation"/>
+        <Class IRI="#Coordination_Focus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dosage"/>
+        <Class IRI="#Medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drainage"/>
+        <Class IRI="#Physical_problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dress"/>
+        <Class IRI="#Personal_Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dressing_Change"/>
+        <Class IRI="#Problem_Intervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Duoderm"/>
+        <Class IRI="#Dressing_Change"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Durable_Medical_Equipment"/>
+        <Class IRI="#Services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ED"/>
+        <Class IRI="#Emergency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Edema"/>
+        <Class IRI="#Physical_problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Elder_Care"/>
+        <Class IRI="#Services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Elimination"/>
+        <Class IRI="#Physical_problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Emergency"/>
+        <Class IRI="#Problem_Intervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Endurance"/>
+        <Class IRI="#Physical_Ability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Environment"/>
+        <Class IRI="#Services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Equipment"/>
+        <Class IRI="#Durable_Medical_Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Establish"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evaluate"/>
+        <Class IRI="#Assess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exercises"/>
+        <Class IRI="#Physical_Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exertion"/>
+        <Class IRI="#Physical_Ability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fall"/>
+        <Class IRI="#Physical_problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fall"/>
+        <Class IRI="#Risk"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Family"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Father"/>
+        <Class IRI="#Family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fax"/>
+        <Class IRI="#Communicate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fecal_Incontinence"/>
+        <Class IRI="#Incontinence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fever"/>
+        <Class IRI="#Physical_problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fill"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Finances"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Finger_Stick"/>
+        <Class IRI="#Self_Care_Monitoring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fire"/>
+        <Class IRI="#Risk"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fix_meals"/>
+        <Class IRI="#Homemaker_Chore"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fluids"/>
+        <Class IRI="#Intake"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Follow"/>
+        <Class IRI="#Monitor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Follow-up"/>
+        <Class IRI="#Coordination_Focus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Food"/>
+        <Class IRI="#Nutrition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Foot"/>
+        <Class IRI="#Physical_Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Forget"/>
+        <Class IRI="#cognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fracture"/>
+        <Class IRI="#Physical_problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Free"/>
+        <Class IRI="#Finances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Friend"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function"/>
+        <Class IRI="#Ability_Assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Funding"/>
+        <Class IRI="#Finances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gait"/>
+        <Class IRI="#Physical_Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gait_Training"/>
+        <Class IRI="#Gait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gastrointestinal_Problems"/>
+        <Class IRI="#Physical_problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gastrostomy_Tube"/>
+        <Class IRI="#Medical_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gauze"/>
+        <Class IRI="#Supplies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Glasses"/>
+        <Class IRI="#Assistive_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Glucometer"/>
+        <Class IRI="#Finger_Stick"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Goal"/>
+        <Class IRI="#Outcome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Granddaughter"/>
+        <Class IRI="#grandchild"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grandson"/>
+        <Class IRI="#grandchild"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grooming"/>
+        <Class IRI="#Personal_Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hearing"/>
+        <Class IRI="#Physical_Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heat"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heel"/>
+        <Class IRI="#Foot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#History"/>
+        <Class IRI="#Documentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Home"/>
+        <Class IRI="#House"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Homemaker_Chore"/>
+        <Class IRI="#Services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hospice"/>
+        <Class IRI="#Services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hospital"/>
+        <Class IRI="#Places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hospital_Bed"/>
+        <Class IRI="#Durable_Medical_Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hospitalization"/>
+        <Class IRI="#Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hospitalize"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#House"/>
+        <Class IRI="#Places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Housekeeping"/>
+        <Class IRI="#Homemaker_Chore"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Husband"/>
+        <Class IRI="#Spouse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INR"/>
+        <Class IRI="#Coagulation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Idea"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Identify"/>
+        <Class IRI="#Coordination_Activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Impaction"/>
+        <Class IRI="#Constipation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Impaired_Skin_Integrity"/>
+        <Class IRI="#Physical_problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Incision"/>
+        <Class IRI="#Impaired_Skin_Integrity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Income"/>
+        <Class IRI="#Finances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Incontinence"/>
+        <Class IRI="#Elimination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Increase"/>
+        <Class IRI="#Adjust"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Indwelling_Catheter"/>
+        <Class IRI="#Problem_Intervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infection"/>
+        <Class IRI="#Bowel_Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inform"/>
+        <Class IRI="#Communicate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Information"/>
+        <Class IRI="#Coordination_Focus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infusion"/>
+        <Class IRI="#Physical_Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inhaler"/>
+        <Class IRI="#Medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Initiate"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Injection"/>
+        <Class IRI="#Medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Injury"/>
+        <Class IRI="#Physical_problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Instruct"/>
+        <Class IRI="#Coordination_Activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Instrumental_Acitvities_of_Daily_Living"/>
+        <Class IRI="#Ability_Assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Insulin_Syringes"/>
+        <Class IRI="#Injection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Insurance"/>
+        <Class IRI="#Finances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intake"/>
+        <Class IRI="#Physical_Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Job"/>
+        <Class IRI="#Finances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kitchen"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Knee_pain"/>
+        <Class IRI="#Pain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laboratory"/>
+        <Class IRI="#Physical_Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laboratory_Results"/>
+        <Class IRI="#Laboratory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laboratory_Tests"/>
+        <Class IRI="#Laboratory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laundry"/>
+        <Class IRI="#Homemaker_Chore"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Leave_Message"/>
+        <Class IRI="#Communicate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Leg_pain"/>
+        <Class IRI="#Pain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lesion"/>
+        <Class IRI="#Impaired_Skin_Integrity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Licensed_Practical_Nurse"/>
+        <Class IRI="#nurse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#List"/>
+        <Class IRI="#Communicate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Log"/>
+        <Class IRI="#Documentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MSW"/>
+        <Class IRI="#Social_Worker"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mail"/>
+        <Class IRI="#Communicate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maintain"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manage"/>
+        <Class IRI="#Coordination_Activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meal"/>
+        <Class IRI="#Nutrition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measure"/>
+        <Class IRI="#Assess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medicaid"/>
+        <Class IRI="#Finances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medical_Devices"/>
+        <Class IRI="#Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medicare"/>
+        <Class IRI="#Finances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medication"/>
+        <Class IRI="#Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mediplanner"/>
+        <Class IRI="#Medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meet"/>
+        <Class IRI="#Communicate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mental_Status"/>
+        <Class IRI="#Psychological_Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mental_problems"/>
+        <Class IRI="#Problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Money"/>
+        <Class IRI="#Finances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monitor"/>
+        <Class IRI="#Coordination_Activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mood"/>
+        <Class IRI="#Mental_Status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mother"/>
+        <Class IRI="#Family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mouth_Care"/>
+        <Class IRI="#Personal_Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nail"/>
+        <Class IRI="#Foot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nausea"/>
+        <Class IRI="#Gastrointestinal_Problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nebulizer"/>
+        <Class IRI="#Medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neighbor"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nephew"/>
+        <Class IRI="#Relatives"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Niece"/>
+        <Class IRI="#Relatives"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Note"/>
+        <Class IRI="#Documentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nurse_Practitioner"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nursing"/>
+        <Class IRI="#skilled_services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nutrition"/>
+        <Class IRI="#Physical_Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#O2_Saturation"/>
+        <Class IRI="#Self_Care_Monitoring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oats_bus"/>
+        <Class IRI="#Transportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Observation"/>
+        <Class IRI="#Problem_Evaluation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Observe"/>
+        <Class IRI="#Monitor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Obtain"/>
+        <Class IRI="#Coordination_Activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Occuptional_Therapist"/>
+        <Class IRI="#Therapist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Office"/>
+        <Class IRI="#Places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ointment"/>
+        <Class IRI="#Medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Option"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oral_medication"/>
+        <Class IRI="#Medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Order"/>
+        <Class IRI="#Coordination_Activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ostomy"/>
+        <Class IRI="#Bowel_Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Outcome"/>
+        <Class IRI="#Problem_Evaluation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Outpatient"/>
+        <Class IRI="#Clinic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oxygen"/>
+        <Class IRI="#Physical_Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pack"/>
+        <Class IRI="#Treatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Page"/>
+        <Class IRI="#Communicate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pain"/>
+        <Class IRI="#Problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pain_Management"/>
+        <Class IRI="#Pain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paratransit"/>
+        <Class IRI="#Transportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patch"/>
+        <Class IRI="#Medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Payment"/>
+        <Class IRI="#Finances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Permission"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Personal_Care"/>
+        <Class IRI="#Physical_Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Personal_Vehicle"/>
+        <Class IRI="#Transportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pharmacist"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pharmacy"/>
+        <Class IRI="#Places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Phenytoin_Level"/>
+        <Class IRI="#Laboratory_Tests"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_Ability"/>
+        <Class IRI="#Physical_problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_Care"/>
+        <Class IRI="#Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_Therapist"/>
+        <Class IRI="#Therapist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_problems"/>
+        <Class IRI="#Problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physician"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physician&apos;s_Office"/>
+        <Class IRI="#Office"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Placement"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plan"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plug"/>
+        <Class IRI="#Pack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pneumonia"/>
+        <Class IRI="#Respiratory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Potassium"/>
+        <Class IRI="#Oral_medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Potassium_Level"/>
+        <Class IRI="#Laboratory_Tests"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prescription"/>
+        <Class IRI="#Medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pressure_Ulcer"/>
+        <Class IRI="#Impaired_Skin_Integrity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prevent"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Primary_Care_Physician"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Primary_Caregiver"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Primary_Physician"/>
+        <Class IRI="#Physician"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Private_Pay"/>
+        <Class IRI="#Services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Problem_Assessment"/>
+        <Class IRI="#Problem_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Problem_Evaluation"/>
+        <Class IRI="#Problem_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Problem_Intervention"/>
+        <Class IRI="#Problem_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Problem_Management"/>
+        <Class IRI="#Problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Progress"/>
+        <Class IRI="#Outcome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Protime"/>
+        <Class IRI="#Laboratory_Tests"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Provide"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Psychiatrist"/>
+        <Class IRI="#Physician"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Psychological_Care"/>
+        <Class IRI="#Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Purpose"/>
+        <Class IRI="#Problem_Evaluation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Qualify"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ramp"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recommend"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Record"/>
+        <Class IRI="#Communicate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refer"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Registered_Nurse"/>
+        <Class IRI="#nurse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Relatives"/>
+        <Class IRI="#Family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Relief"/>
+        <Class IRI="#Problem_Evaluation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reminder"/>
+        <Class IRI="#Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Replace"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Report"/>
+        <Class IRI="#Communicate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resource"/>
+        <Class IRI="#Coordination_Focus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Respiratory"/>
+        <Class IRI="#Infection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Respiratory_Status"/>
+        <Class IRI="#Problem_Assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Respite_Care"/>
+        <Class IRI="#Services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Review"/>
+        <Class IRI="#Monitor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Risk"/>
+        <Class IRI="#Safety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Room"/>
+        <Class IRI="#House"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Safety"/>
+        <Class IRI="#Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sample"/>
+        <Class IRI="#collect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Satisfaction"/>
+        <Class IRI="#Problem_Evaluation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scale"/>
+        <Class IRI="#Medical_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Schedule"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Self_Care_Monitoring"/>
+        <Class IRI="#Laboratory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Send"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Services"/>
+        <Class IRI="#Coordination_Focus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shop"/>
+        <Class IRI="#Homemaker_Chore"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shower"/>
+        <Class IRI="#Bathe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shower_Chair"/>
+        <Class IRI="#Durable_Medical_Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sibling"/>
+        <Class IRI="#Family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Signature"/>
+        <Class IRI="#Documentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Significant_Other"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sister"/>
+        <Class IRI="#Sibling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skilled_Nursing_Facility"/>
+        <Class IRI="#Places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Social_Services"/>
+        <Class IRI="#Services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Social_Work"/>
+        <Class IRI="#skilled_services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Social_Worker"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Son"/>
+        <Class IRI="#Child"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Speech_Therapist"/>
+        <Class IRI="#Therapist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spouse"/>
+        <Class IRI="#Family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Staff"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stair"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Staples"/>
+        <Class IRI="#Supplies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strength"/>
+        <Class IRI="#Physical_Ability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Suggest"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Summary"/>
+        <Class IRI="#Problem_Evaluation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supervision"/>
+        <Class IRI="#Coordination_Focus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supervisor"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supplies"/>
+        <Class IRI="#Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Surgeon"/>
+        <Class IRI="#Physician"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Symptom"/>
+        <Class IRI="#Problem_Assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TED_Hose"/>
+        <Class IRI="#Medical_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Take"/>
+        <Class IRI="#Manage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Talk"/>
+        <Class IRI="#Communicate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taxi"/>
+        <Class IRI="#Transportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Team"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Telephone"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Test"/>
+        <Class IRI="#Assess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Therapist"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Therapy"/>
+        <Class IRI="#skilled_services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Toe"/>
+        <Class IRI="#Foot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Toilet"/>
+        <Class IRI="#Personal_Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transportation"/>
+        <Class IRI="#Coordination_Focus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Treatment"/>
+        <Class IRI="#Problem_Intervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tube_Feeding"/>
+        <Class IRI="#Problem_Intervention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UTI"/>
+        <Class IRI="#Infection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Uncle"/>
+        <Class IRI="#Relatives"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Understanding"/>
+        <Class IRI="#Coordination_Focus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Update"/>
+        <Class IRI="#Communicate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Urgent_Care"/>
+        <Class IRI="#Clinic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Urinalysis"/>
+        <Class IRI="#Sample"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Urine_Incontinence"/>
+        <Class IRI="#Incontinence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Urologist"/>
+        <Class IRI="#Physician"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vital_Signs"/>
+        <Class IRI="#Problem_Assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Volunteer"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vomiting"/>
+        <Class IRI="#Gastrointestinal_Problems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Walker"/>
+        <Class IRI="#Assistive_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wash"/>
+        <Class IRI="#Bathe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weakness"/>
+        <Class IRI="#Physical_Ability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weight"/>
+        <Class IRI="#Problem_Assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weight_Gain"/>
+        <Class IRI="#Weight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weight_Loss"/>
+        <Class IRI="#Weight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wheel_Chair"/>
+        <Class IRI="#Durable_Medical_Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wheeled_walker"/>
+        <Class IRI="#Durable_Medical_Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wife"/>
+        <Class IRI="#Spouse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Worker"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wound_Care"/>
+        <Class IRI="#Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wound_Clinic"/>
+        <Class IRI="#Clinic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wound_Infection"/>
+        <Class IRI="#Infection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cognition"/>
+        <Class IRI="#Mental_Status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#collect"/>
+        <Class IRI="#Physical_Care"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#grandchild"/>
+        <Class IRI="#Family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hair"/>
+        <Class IRI="#Grooming"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#list"/>
+        <Class IRI="#Documentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nurse"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#skilled_services"/>
+        <Class IRI="#Services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#venipuncture"/>
+        <Class IRI="#collect"/>
+    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Activities_of_Daily_Living</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ADL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Adherence</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Compliance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Adjust</IRI>
+        <Literal datatypeIRI="&xsd;string">Adjusted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Administer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Associated with medications or treatments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Administer</IRI>
+        <Literal datatypeIRI="&xsd;string">Adminstered, administration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Admit</IRI>
+        <Literal datatypeIRI="&xsd;string">Admission, admitted,start_of_care</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Advance_Directives</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Living_Will, AHCD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Aide</IRI>
+        <Literal datatypeIRI="&xsd;string">aid, home health aide, CNA
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Anxiety</IRI>
+        <Literal datatypeIRI="&xsd;string">Anxious</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Appointment</IRI>
+        <Literal datatypeIRI="&xsd;string">appt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Appropriateness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Med-Appropriateness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Arrange</IRI>
+        <Literal datatypeIRI="&xsd;string">Arranged, arrangement, setup, make
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ask</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Obtaining information to make a judgment or asking/requesting for something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Assess</IRI>
+        <Literal datatypeIRI="&xsd;string">Assessed, assessment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Assign</IRI>
+        <Literal datatypeIRI="&xsd;string">Assigned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Assist</IRI>
+        <Literal datatypeIRI="&xsd;string">Describes offerings of forms of support (physical, emotional, spiritual)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Attempt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Attempty to contact or explain. Attempt is more relevant to care coordination when it is related to communication.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Authorize</IRI>
+        <Literal datatypeIRI="&xsd;string">Authorized, authorization, approve
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Basic_Metabolic_Panel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BMP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Bathe</IRI>
+        <Literal datatypeIRI="&xsd;string">Bathing, bath</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Benefit</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Healthcare service availablity, also used to descibe a position outcome for the patient.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Blood_Pressure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BP, Pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Blood_Pressure_Machine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Blood Pressure Cuff</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Bowel_Function</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Stool</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Bruise</IRI>
+        <Literal datatypeIRI="&xsd;string">Bruises
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Call</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Calling used in terms of phone call to people or organizations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Call</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">contact</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Care_Coordinator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Coordinator, CC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Care_plan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">POC, plan of care</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Caregiver</IRI>
+        <Literal datatypeIRI="&xsd;string">Care giver, caregivers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Caseworker</IRI>
+        <Literal datatypeIRI="&xsd;string">DSS, Division of Senior Services, DA, Division of Aging
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Catheter_care</IRI>
+        <Literal datatypeIRI="&xsd;string">Care of catheter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Catheter_care</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Foley</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Change</IRI>
+        <Literal datatypeIRI="&xsd;string">Changes
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Chemotherapy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Chemo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Clean</IRI>
+        <Literal datatypeIRI="&xsd;string">Cleansed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Client</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">patient, resident</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Coagulation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">coag</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Cold</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Upper Respiratory Illness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Communicate</IRI>
+        <Literal datatypeIRI="&xsd;string">Communicated, Communication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Concern</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">complaint</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Conference</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Confirm</IRI>
+        <Literal datatypeIRI="&xsd;string">Confirmed, verified</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Confuse</IRI>
+        <Literal datatypeIRI="&xsd;string">Confused, confusion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Conversation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Discussion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Coordination_Activities</IRI>
+        <Literal datatypeIRI="&xsd;string">Actions that people engage in during care coordination.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Coordination_Focus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The focus of the activities of care coordination</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Cope</IRI>
+        <Literal datatypeIRI="&xsd;string">Coping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Copy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Obtaining or providing a document.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Copy</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Deliver</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Depression</IRI>
+        <Literal datatypeIRI="&xsd;string">Depressed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Diabetes</IRI>
+        <Literal datatypeIRI="&xsd;string">Diabetic, DM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Diet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Discharge</IRI>
+        <Literal datatypeIRI="&xsd;string">Discharge home
+Discharge plans
+Discharge summary
+Discharged from hospital
+Discharged from services</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Discontinue</IRI>
+        <Literal datatypeIRI="&xsd;string">Discontinued, end, stop
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Do_Not_Resuscitate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DNR, No Code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Doctor</IRI>
+        <Literal datatypeIRI="&xsd;string">Doctors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Dosage</IRI>
+        <Literal datatypeIRI="&xsd;string">Dose, Med-Dose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Drainage</IRI>
+        <Literal datatypeIRI="&xsd;string">Drainage amount</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Durable_Medical_Equipment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DME</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Edema</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">swelling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Establish</IRI>
+        <Literal datatypeIRI="&xsd;string">initiate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Fall</IRI>
+        <Literal datatypeIRI="&xsd;string">Falls</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Family</IRI>
+        <Literal datatypeIRI="&xsd;string">Family members, related</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Fecal_Incontinence</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bowel Incontinence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Fever</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Temperature, Temp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Fill</IRI>
+        <Literal datatypeIRI="&xsd;string">Refill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Fix_meals</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">prepare_meals, cook_meals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Fluids</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Liquids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Follow</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Fracture</IRI>
+        <Literal datatypeIRI="&xsd;string">Fractures, FX</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Friend</IRI>
+        <Literal datatypeIRI="&xsd;string">Friends</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Function</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Physical Function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Gastrointestinal_Problems</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Gastrostomy_Tube</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">G Tube</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Goal</IRI>
+        <Literal datatypeIRI="&xsd;string">Goals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Heel</IRI>
+        <Literal datatypeIRI="&xsd;string">Heels</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Hospitalize</IRI>
+        <Literal datatypeIRI="&xsd;string">Hospitalized</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#House</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Home</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Idea</IRI>
+        <Literal datatypeIRI="&xsd;string">Ideas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Identify</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">detecting a problem and/or need for new or different services.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Identify</IRI>
+        <Literal datatypeIRI="&xsd;string">Identified, discover</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Incontinence</IRI>
+        <Literal datatypeIRI="&xsd;string">Incontinent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Increase</IRI>
+        <Literal datatypeIRI="&xsd;string">Increased, add</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Inform</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Communicating to other care providers and patients.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Inform</IRI>
+        <Literal datatypeIRI="&xsd;string">notify</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Information</IRI>
+        <Literal datatypeIRI="&xsd;string">info</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Injection</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Shot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Instruct</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Teach,Educate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Instrumental_Acitvities_of_Daily_Living</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IADL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Laboratory_Results</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lab results</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Laboratory_Tests</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lab Tests</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Leave_Message</IRI>
+        <Literal datatypeIRI="&xsd;string">send message</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Lesion</IRI>
+        <Literal datatypeIRI="&xsd;string">Lesions
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Licensed_Practical_Nurse</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LPN</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#List</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A way for organizing data to communicate with people.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Manage</IRI>
+        <Literal datatypeIRI="&xsd;string">Managing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Measure</IRI>
+        <Literal datatypeIRI="&xsd;string">Measuring</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Nurse_Practitioner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NP, FNP, CNS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Observation</IRI>
+        <Literal datatypeIRI="&xsd;string">Observations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Observe</IRI>
+        <Literal datatypeIRI="&xsd;string">Observed, watch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Obtain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A request for something</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Occuptional_Therapist</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Option</IRI>
+        <Literal datatypeIRI="&xsd;string">Options</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Oral_medication</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Order</IRI>
+        <Literal datatypeIRI="&xsd;string">Ordered, physician order, IPO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Ostomy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Colostomy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Oxygen</IRI>
+        <Literal datatypeIRI="&xsd;string">O2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Page</IRI>
+        <Literal datatypeIRI="&xsd;string">Pages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Pain_Management</IRI>
+        <Literal datatypeIRI="&xsd;string">Pain control</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#People</IRI>
+        <Literal datatypeIRI="&xsd;string">Any person involved in the act of care coordination.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#People</IRI>
+        <Literal datatypeIRI="&xsd;string">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Personal_Vehicle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Car</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Phenytoin_Level</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dilantin_Level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Physical_Therapist</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Places</IRI>
+        <Literal datatypeIRI="&xsd;string">Care delivery place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Places</IRI>
+        <Literal datatypeIRI="&xsd;string">Location where people involved in care coordination work or recieve services.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Plan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">POC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Plug</IRI>
+        <Literal datatypeIRI="&xsd;string">Plugged</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Pneumonia</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lower Resipiratory Infection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Prescription</IRI>
+        <Literal datatypeIRI="&xsd;string">Prescriptions, scripts
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Pressure_Ulcer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Decubitus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Prevent</IRI>
+        <Literal datatypeIRI="&xsd;string">
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Primary_Care_Physician</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PCP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Problem_Assessment</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Problem_Evaluation</IRI>
+        <Literal datatypeIRI="&xsd;string">Eval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Problems</IRI>
+        <Literal datatypeIRI="&xsd;string">Issue, patient need</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Provide</IRI>
+        <Literal datatypeIRI="&xsd;string">Provide or bring food, supply, medicines.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Provide</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">give, supply</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Psychological_Care</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">mental healthcare, mental health care</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Recommend</IRI>
+        <Literal datatypeIRI="&xsd;string">suggestion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Record</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Documenting information either by member of healthcare team or by the patient.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Record</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">write</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Refer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">referral</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Registered_Nurse</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RN</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Replace</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Report</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A way of informing about something between patient, patient&apos;s family and healthcare team.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Report</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">relay, tell, state</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Resource</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Resources</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Review</IRI>
+        <Literal datatypeIRI="&xsd;string">Reviewed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Schedule</IRI>
+        <Literal datatypeIRI="&xsd;string">Reschedule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Shop</IRI>
+        <Literal datatypeIRI="&xsd;string">Shopping
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Shower</IRI>
+        <Literal datatypeIRI="&xsd;string">Showers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Significant_Other</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Skilled_Nursing_Facility</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SNF, Facility, Nursing Home</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Social_Worker</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Speech_Therapist</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ST</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Stair</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Steps</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Suggest</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Advise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Supervision</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">oversight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Symptom</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#TED_Hose</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TED Stockings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Talk</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Verbally communicating with another person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Talk</IRI>
+        <Literal datatypeIRI="&xsd;string">speak, say, address</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Telephone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Phone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Test</IRI>
+        <Literal datatypeIRI="&xsd;string">Testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Therapist</IRI>
+        <Literal datatypeIRI="&xsd;string">Therapists</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Therapy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rehabilitation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Toe</IRI>
+        <Literal datatypeIRI="&xsd;string">Toes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Update</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Record a change in something either verbally or in writing. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Urinalysis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Urologist</IRI>
+        <Literal datatypeIRI="&xsd;string">Urologists</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Vital_Signs</IRI>
+        <Literal datatypeIRI="&xsd;string">VS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Vomiting</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Emesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Wash</IRI>
+        <Literal datatypeIRI="&xsd;string">Washing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Weight_Gain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Weight Increase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Weight_Loss</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Weight Down</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Wheel_Chair</IRI>
+        <Literal datatypeIRI="&xsd;string">WC, wheelchair, chair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#collect</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Acquiring a speciman for lab test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#collect</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#venipuncture</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">draw</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>rdfs:seeAlso</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">request</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

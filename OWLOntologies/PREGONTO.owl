@@ -1,0 +1,442 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.clininf.eu/pregnancy#"
+     xml:base="http://www.clininf.eu/pregnancy"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:pregnancy="http://www.clininf.eu/pregnancy#">
+    <owl:Ontology rdf:about="http://www.clininf.eu/pregnancy">
+        <dc:creator>Harshana Liyanage</dc:creator>
+        <dc:creator>John Williams</dc:creator>
+        <dc:creator>Simon de Lusignan</dc:creator>
+        <dc:date rdf:resource="http://creativecommons.org/licenses/by/3.0"/>
+        <dc:date>October 1, 2018</dc:date>
+        <dc:description>The pregnancy ontology is a biomedical ontology used for identifying pregnancies in routine health databases. The ontology was primarily developed for conducting surveillance of vaccine uptake in pregnant women in the UK.</dc:description>
+        <dc:subject rdf:resource="An ontology in the domain of pregnancy in primary care"/>
+        <dc:subject>en</dc:subject>
+        <rdfs:comment>Pregnancy Ontology</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000109 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.clininf.eu/pregnancy#mdo000109">
+        <rdfs:label>defaultLanguage</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000069 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000069">
+        <rdfs:label>pregnancy indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000070 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000070">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000069"/>
+        <rdfs:label>current pregnancy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000071 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000071">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000069"/>
+        <rdfs:label>performance of antenatal examination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000072 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000072">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000069"/>
+        <rdfs:label>provision of antenatal care</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000073 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000073">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000069"/>
+        <rdfs:label>referral relating to current pregnancy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000074 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000074">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000069"/>
+        <rdfs:label>length of gestation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000075 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000075">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000069"/>
+        <rdfs:label>pregnancy test result positive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000076 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000076">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000069"/>
+        <rdfs:label>threatened abortion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000077 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000077">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000069"/>
+        <rdfs:label>performance of antenatal tests investigations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000078 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000078">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000069"/>
+        <rdfs:label>fetal observations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000079 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000079">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000069"/>
+        <rdfs:label>diagnosis of gestational diabetes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000080 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000080">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000069"/>
+        <rdfs:label>vomiting in pregnancy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000081 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000081">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000069"/>
+        <rdfs:label>maternity booking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000082 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000082">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000069"/>
+        <rdfs:label>issue of pregnancy claim form</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000083 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000083">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000069"/>
+        <rdfs:label>record of antenatal data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000084 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000084">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000069"/>
+        <rdfs:label>record of pre-eclampsia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000085 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000085">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000069"/>
+        <rdfs:label>complications of later pregnancy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000086 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000086">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000069"/>
+        <rdfs:label>recording of fetal position</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000087 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000087">
+        <rdfs:label>pregnancy outcome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000088 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000088">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000087"/>
+        <rdfs:label>term pregnancy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000089 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000089">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000087"/>
+        <rdfs:label>non-term pregnancy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000090 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000090">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000088"/>
+        <rdfs:label>delivery of potentially viable baby</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000091 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000091">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000088"/>
+        <rdfs:label>performance of postnatal examination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000092 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000092">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000088"/>
+        <rdfs:label>provision of postnatal care</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000093 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000093">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000088"/>
+        <rdfs:label>recording of current breast feeding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000094 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000094">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000088"/>
+        <rdfs:label>issue of completed maternity services claim</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000095 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000095">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000088"/>
+        <rdfs:label>puerperal findings</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000096 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000096">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000088"/>
+        <rdfs:label>obstetric wound problems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000097 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000097">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000088"/>
+        <rdfs:label>depression post partum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000098 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000098">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000088"/>
+        <rdfs:label>presentation at delivery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000099 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000099">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000089"/>
+        <rdfs:label>occurrence of miscarriage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000100 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000100">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000089"/>
+        <rdfs:label>occurrence of abortion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000101 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000101">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000089"/>
+        <rdfs:label>removal of products of conception</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000102 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000102">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000089"/>
+        <rdfs:label>current ectopic pregnancy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000103 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000103">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000089"/>
+        <rdfs:label>occurrence of termination of pregnancy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000104 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000104">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000089"/>
+        <rdfs:label>occurrence of intrauterine death</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000105 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000105">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000089"/>
+        <rdfs:label>presence of mole</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000106 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000106">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000089"/>
+        <rdfs:label>occurrence of blighted ovum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clininf.eu/pregnancy#mdo000107 -->
+
+    <owl:Class rdf:about="http://www.clininf.eu/pregnancy#mdo000107">
+        <rdfs:subClassOf rdf:resource="http://www.clininf.eu/pregnancy#mdo000089"/>
+        <rdfs:label>post miscarriage counselling</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+

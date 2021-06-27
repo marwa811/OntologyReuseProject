@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY swrlx "http://www.w3.org/2003/11/swrlx#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY ruleml "http://www.w3.org/2003/11/ruleml#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owlx "http://www.w3.org/2003/05/owl-xml#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY kaon2 "http://kaon2.semanticweb.org/internal#" >
+    <!ENTITY Clothing "http://www.ICPS/ontologies/Clothing.owl#" >
+    <!ENTITY Activity "http://www.ICPS/ontologies/Activity.owl#" >
+    <!ENTITY Furniture "http://www.ICPS/ontologies/Furniture.owl#" >
+    <!ENTITY Medication "http://www.ICPS/ontologies/Medication.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY BuildingStructure "http://www.ICPS/ontologies/BuildingStructure#" >
+    <!ENTITY HospitalEquipment "http://www.ICPS/ontologies/HospitalEquipment.owl#" >
+    <!ENTITY ICPSMerged "http://www.apsf.net.au/ontologies/ICPSMerged.owl#" >
+    <!ENTITY ContributingFactorHazards "http://www.ICPS/ontologies/ContributingFactorHazards.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ICPS/ontologies/"
+     xml:base="http://www.ICPS/ontologies/ContributingFactors-Hazards"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:ContributingFactorHazards="http://www.ICPS/ontologies/ContributingFactorHazards.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:BuildingStructure="http://www.ICPS/ontologies/BuildingStructure#"
+     xmlns:kaon2="http://kaon2.semanticweb.org/internal#"
+     xmlns:owlx="http://www.w3.org/2003/05/owl-xml#"
+     xmlns:ICPSMerged="http://www.apsf.net.au/ontologies/ICPSMerged.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:Furniture="http://www.ICPS/ontologies/Furniture.owl#"
+     xmlns:swrlx="http://www.w3.org/2003/11/swrlx#"
+     xmlns:Activity="http://www.ICPS/ontologies/Activity.owl#"
+     xmlns:Medication="http://www.ICPS/ontologies/Medication.owl#"
+     xmlns:HospitalEquipment="http://www.ICPS/ontologies/HospitalEquipment.owl#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ruleml="http://www.w3.org/2003/11/ruleml#"
+     xmlns:Clothing="http://www.ICPS/ontologies/Clothing.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="">
+        <owl:versionInfo>2.0</owl:versionInfo>
+        <dc:creator
+            >Elena Montiel-Ponsoda</dc:creator>
+        <dc:creator>Oscar Corcho</dc:creator>
+        <dc:creator
+            >Mari Carmen Su&#225;rez-Figueroa</dc:creator>
+        <dc:creator>Mar&#237;a Poveda</dc:creator>
+        <owl:priorVersion>1.0</owl:priorVersion>
+        <rdfs:comment xml:lang="en"
+            >Ontology about contributing factors or hazards.</rdfs:comment>
+        <rdfs:comment xml:lang="en"
+            >This work has been carried out by the Ontological Engineering Group, using sources from the University of Saint Etienne and the Australian Patient Safety Foundation, and supported by the World Health Organisation under the International Classification for Patient Safety programme.</rdfs:comment>
+        <owl:imports rdf:resource="http://www.ICPS/ontologies/Activity.owl"/>
+        <owl:imports rdf:resource="http://www.ICPS/ontologies/BuildingStructure"/>
+        <owl:imports rdf:resource="http://www.ICPS/ontologies/Clothing.owl"/>
+        <owl:imports rdf:resource="http://www.ICPS/ontologies/Furniture.owl"/>
+        <owl:imports rdf:resource="http://www.ICPS/ontologies/HospitalEquipment.owl"/>
+        <owl:imports rdf:resource="http://www.ICPS/ontologies/Medication.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#Activity -->
+
+    <owl:Class rdf:about="&Activity;Activity">
+        <owl:disjointWith rdf:resource="&HospitalEquipment;MedicalEquipment"/>
+        <owl:disjointWith rdf:resource="&HospitalEquipment;PathophysiologyFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#BuildingStructure -->
+
+    <owl:Class rdf:about="&BuildingStructure;BuildingStructure">
+        <owl:disjointWith rdf:resource="&HospitalEquipment;MedicalEquipment"/>
+        <owl:disjointWith rdf:resource="&HospitalEquipment;PathophysiologyFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#FloorSurface -->
+
+    <owl:Class rdf:about="&BuildingStructure;FloorSurface"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Clothing.owl#BedLinen -->
+
+    <owl:Class rdf:about="&Clothing;BedLinen">
+        <owl:disjointWith rdf:resource="&HospitalEquipment;MedicalEquipment"/>
+        <owl:disjointWith rdf:resource="&HospitalEquipment;PathophysiologyFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Clothing.owl#Clothing -->
+
+    <owl:Class rdf:about="&Clothing;Clothing">
+        <owl:disjointWith rdf:resource="&HospitalEquipment;MedicalEquipment"/>
+        <owl:disjointWith rdf:resource="&HospitalEquipment;PathophysiologyFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Furniture.owl#PieceOfFurniture -->
+
+    <owl:Class rdf:about="&Furniture;PieceOfFurniture">
+        <owl:disjointWith rdf:resource="&HospitalEquipment;MedicalEquipment"/>
+        <owl:disjointWith rdf:resource="&HospitalEquipment;PathophysiologyFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#MedicalEquipment -->
+
+    <owl:Class rdf:about="&HospitalEquipment;MedicalEquipment">
+        <owl:disjointWith rdf:resource="&Medication;Medication"/>
+        <owl:disjointWith rdf:resource="&Medication;Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#PathophysiologyFactor -->
+
+    <owl:Class rdf:about="&HospitalEquipment;PathophysiologyFactor">
+        <owl:disjointWith rdf:resource="&Medication;Medication"/>
+        <owl:disjointWith rdf:resource="&Medication;Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Medication.owl#Medication -->
+
+    <owl:Class rdf:about="&Medication;Medication"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Medication.owl#Treatment -->
+
+    <owl:Class rdf:about="&Medication;Treatment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&Activity;Activity"/>
+            <rdf:Description rdf:about="&BuildingStructure;BuildingStructure"/>
+            <rdf:Description rdf:about="&BuildingStructure;FloorSurface"/>
+            <rdf:Description rdf:about="&Clothing;BedLinen"/>
+            <rdf:Description rdf:about="&Clothing;Clothing"/>
+            <rdf:Description rdf:about="&Furniture;PieceOfFurniture"/>
+            <rdf:Description rdf:about="&Medication;Medication"/>
+            <rdf:Description rdf:about="&Medication;Treatment"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

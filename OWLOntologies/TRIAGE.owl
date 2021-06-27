@@ -1,0 +1,856 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/philshields/ontologies/2015/4/untitled-ontology-59"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/philshields/ontologies/2015/4/untitled-ontology-59">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Analgesia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clinical_Initiatives_Nurse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dependent_Nursing_Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diagnosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Doctor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Does_Not_Wait"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#High_Probability_Of_Admission"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Home"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hospital_Units"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Independent_Nursing_Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Initial_Treatment/Investigation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interdependent_Nursing_Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mental_Health_Team"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nurse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nurse_Practitioner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nurse_Supervisor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ortho"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Outside_Scope_Of_Practice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pathology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Radiology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Registrar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Requires_Bed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shift_in_charge_nurse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Short_Stay_Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Surgical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trauma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trauma_Team"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Triage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Triage_Nurse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Waiting_room"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EDMO_Review"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#PatientTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#activateTraumaLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#activates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#admission"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#assesses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#authorises"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#availableBeds"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fastTrack"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#formulates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#headsUp"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ifRequiresMoreThanPanadol"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#initialPresentation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDiagnosed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#just"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#leavesAgainstMedicalAdvice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#liaiseWithTreatmentPlan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#liaisesWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#makesDecision"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mustHave"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#notifies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#outsideScopeOfPractice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#paeds_ortho_distal_limbs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#pathways"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#phoneReport"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requests"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#results"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Analgesia"/>
+        <Class IRI="#Dependent_Nursing_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clinical_Initiatives_Nurse"/>
+        <Class IRI="#Independent_Nursing_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dependent_Nursing_Role"/>
+        <Class IRI="#Triage_Nurse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diagnosis"/>
+        <Class IRI="#Patient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Doctor"/>
+        <Class IRI="#Dependent_Nursing_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Does_Not_Wait"/>
+        <Class IRI="#Patient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#High_Probability_Of_Admission"/>
+        <Class IRI="#Independent_Nursing_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Home"/>
+        <Class IRI="#Patient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hospital_Units"/>
+        <Class IRI="#Nurse_Supervisor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Independent_Nursing_Role"/>
+        <Class IRI="#Triage_Nurse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Initial_Treatment/Investigation"/>
+        <Class IRI="#Independent_Nursing_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interdependent_Nursing_Role"/>
+        <Class IRI="#Triage_Nurse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medical"/>
+        <Class IRI="#Registrar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mental_Health_Team"/>
+        <Class IRI="#Shift_in_charge_nurse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nurse_Practitioner"/>
+        <Class IRI="#Independent_Nursing_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nurse_Supervisor"/>
+        <Class IRI="#Shift_in_charge_nurse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ortho"/>
+        <Class IRI="#Registrar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Outside_Scope_Of_Practice"/>
+        <Class IRI="#Dependent_Nursing_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pathology"/>
+        <Class IRI="#Patient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Radiology"/>
+        <Class IRI="#Patient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Registrar"/>
+        <Class IRI="#Doctor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Requires_Bed"/>
+        <Class IRI="#Independent_Nursing_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shift_in_charge_nurse"/>
+        <Class IRI="#Independent_Nursing_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Short_Stay_Unit"/>
+        <Class IRI="#Shift_in_charge_nurse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Surgical"/>
+        <Class IRI="#Registrar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trauma"/>
+        <Class IRI="#Shift_in_charge_nurse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trauma_Team"/>
+        <Class IRI="#Trauma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Triage"/>
+        <Class IRI="#Independent_Nursing_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Waiting_room"/>
+        <Class IRI="#Independent_Nursing_Role"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Doctor"/>
+        <Class IRI="#Nurse"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Nurse"/>
+        <Class IRI="#Patient"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EDMO_Review"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#liaiseWithTreatmentPlan"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#makesDecision"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#notifies"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#EDMO_Review"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#PatientTo"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#activateTraumaLevel"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#activates"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#admission"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#assesses"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#authorises"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#availableBeds"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#fastTrack"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#has"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#headsUp"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#ifRequiresMoreThanPanadol"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#initialPresentation"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isDiagnosed"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#leavesAgainstMedicalAdvice"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#liaiseWithTreatmentPlan"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#liaisesWith"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#makesDecision"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#mustHave"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#notifies"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#outsideScopeOfPractice"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#paeds_ortho_distal_limbs"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#pathways"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#phoneReport"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#requests"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#results"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EDMO_Review"/>
+        <Class IRI="#Shift_in_charge_nurse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#PatientTo"/>
+        <Class IRI="#Shift_in_charge_nurse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#activateTraumaLevel"/>
+        <Class IRI="#Shift_in_charge_nurse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#activates"/>
+        <Class IRI="#Trauma"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#admission"/>
+        <Class IRI="#Registrar"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#assesses"/>
+        <Class IRI="#Triage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#authorises"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#availableBeds"/>
+        <Class IRI="#Nurse_Supervisor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#fastTrack"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#fastTrack"/>
+        <Class IRI="#Initial_Treatment/Investigation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#formulates"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#Triage_Nurse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#headsUp"/>
+        <Class IRI="#High_Probability_Of_Admission"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ifRequiresMoreThanPanadol"/>
+        <Class IRI="#Initial_Treatment/Investigation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#initialPresentation"/>
+        <Class IRI="#Independent_Nursing_Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDiagnosed"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#just"/>
+        <Class IRI="#Waiting_room"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#leavesAgainstMedicalAdvice"/>
+        <Class IRI="#Does_Not_Wait"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#liaiseWithTreatmentPlan"/>
+        <Class IRI="#Shift_in_charge_nurse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#liaisesWith"/>
+        <Class IRI="#Requires_Bed"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#makesDecision"/>
+        <Class IRI="#Waiting_room"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#mustHave"/>
+        <Class IRI="#Nurse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#notifies"/>
+        <Class IRI="#Shift_in_charge_nurse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#outsideScopeOfPractice"/>
+        <Class IRI="#Initial_Treatment/Investigation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#paeds_ortho_distal_limbs"/>
+        <Class IRI="#Dependent_Nursing_Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#pathways"/>
+        <Class IRI="#Shift_in_charge_nurse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#phoneReport"/>
+        <Class IRI="#Initial_Treatment/Investigation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requests"/>
+        <Class IRI="#Clinical_Initiatives_Nurse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requests"/>
+        <Class IRI="#Nurse_Practitioner"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#results"/>
+        <Class IRI="#Pathology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#results"/>
+        <Class IRI="#Radiology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EDMO_Review"/>
+        <Class IRI="#Registrar"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#PatientTo"/>
+        <Class IRI="#Short_Stay_Unit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#activateTraumaLevel"/>
+        <Class IRI="#Trauma"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#activates"/>
+        <Class IRI="#Trauma_Team"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#admission"/>
+        <Class IRI="#Hospital_Units"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assesses"/>
+        <Class IRI="#High_Probability_Of_Admission"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assesses"/>
+        <Class IRI="#Requires_Bed"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assesses"/>
+        <Class IRI="#Waiting_room"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#authorises"/>
+        <Class IRI="#Analgesia"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#availableBeds"/>
+        <Class IRI="#Hospital_Units"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fastTrack"/>
+        <Class IRI="#Clinical_Initiatives_Nurse"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fastTrack"/>
+        <Class IRI="#Nurse_Practitioner"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fastTrack"/>
+        <Class IRI="#Outside_Scope_Of_Practice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fastTrack"/>
+        <Class IRI="#Pathology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fastTrack"/>
+        <Class IRI="#Radiology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#formulates"/>
+        <Class IRI="#Diagnosis"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#Dependent_Nursing_Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#Independent_Nursing_Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#Interdependent_Nursing_Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#headsUp"/>
+        <Class IRI="#Nurse_Supervisor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ifRequiresMoreThanPanadol"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#initialPresentation"/>
+        <Class IRI="#Triage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDiagnosed"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isDiagnosed"/>
+            <Class IRI="#Diagnosis"/>
+        </ObjectAllValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#just"/>
+        <Class IRI="#Does_Not_Wait"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#leavesAgainstMedicalAdvice"/>
+        <Class IRI="#Home"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#liaiseWithTreatmentPlan"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#liaisesWith"/>
+        <Class IRI="#Shift_in_charge_nurse"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#makesDecision"/>
+        <Class IRI="#Does_Not_Wait"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#notifies"/>
+        <Class IRI="#Nurse_Supervisor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#outsideScopeOfPractice"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#paeds_ortho_distal_limbs"/>
+        <Class IRI="#Outside_Scope_Of_Practice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#pathways"/>
+        <Class IRI="#Mental_Health_Team"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#pathways"/>
+        <Class IRI="#Short_Stay_Unit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#phoneReport"/>
+        <Class IRI="#Registrar"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requests"/>
+        <Class IRI="#Pathology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requests"/>
+        <Class IRI="#Radiology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#results"/>
+        <Class IRI="#Registrar"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Analgesia</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alleviates pain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Clinical_Initiatives_Nurse</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Initiates treatment and care with-in guide lines to expediate treatment and patient flow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dependent_Nursing_Role</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A nursing role dependent on a doctor’s instructions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Diagnosis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A label given to set of symptoms that require treatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Doctor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Medical practitioner that directs treatment and investigations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Does_Not_Wait</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Patient leaves the emergency department before medical intervention</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#High_Probability_Of_Admission</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A patient who has a presentation such as chest pain that has a high likely hood of admission. This includes many factors and clinical judgment based on age, duration, extensiveness and co-morbidities for example</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Home</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Place of residence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hospital_Units</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Specialist areas of care for specific presentations under specialist teams ie medical team, surgical team, orthopaedic team.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Independent_Nursing_Role</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An autonomous nursing role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Initial_Treatment/Investigation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pathology, xray or pain relief</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Interdependent_Nursing_Role</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An interdisciplinary nursing role </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Medical</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Assess and admit patients who are deamed to have a medical issues- cardiac issues etc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mental_Health_Team</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Mental health specialist nurses who assess risk and direct care and admission</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Nurse_Practitioner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Initiates care, treatment and referral of patients with assistance of doctors to provide a very high level of care and treatment within the guide lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Nurse_Supervisor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">In charge of hospital, controls all beds on all wards. Allocates admitted patients to the wards</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ortho</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Assess and admit patienst who are deamed to have orthopaedic issues-broken bones etc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Outside_Scope_Of_Practice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A patient&apos;s treatment that is deemed outside the practice scope of the nurse Such as distal limb damage, paediatrics and ortho</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pathology</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Blood tests</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Radiology</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Xrays, CT </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Registrar</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Specialist team medical representation who assess and admit for each specialist team</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Requires_Bed</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Patient Will be admitted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Shift_in_charge_nurse</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Senior nurse who is in charge of all nursing staff and directs all flow incoming and out going patient flow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Short_Stay_Unit</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Patient deemed likely to go home post simple results such as blood tests or treatable illnesses such as migraine. The end result means discharge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Surgical</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Assess and admit patienst who are deemed to have surgical issues- ie require surgery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Trauma</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Multi system issues/damage to the body that requires a team approach such as car accident</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Trauma_Team</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Specialist team made up of surgical, anesthetic, ED and ICU doctors as well as senior nurse resuscitation team</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Triage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A scaled based on the priorities of life and limb cat 1,2,3,4,5 that require the patient to be seen within a given time frame</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Triage_Nurse</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Assess ALL patients who present to emergency to give them a numer from Cat 1 (immediate intervention) to cat 5 (seen within 2 hours) assesses on the basis of the priroities of life airway,breathing,circulation and limb</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Waiting_room</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Area out side of the emergency department where people wait to be seen by a doctor or triaged</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

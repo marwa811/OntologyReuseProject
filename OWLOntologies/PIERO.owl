@@ -1,0 +1,1992 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://reactionontology.org/piero/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://reactionontology.org/piero/">
+    <Prefix name="rdm" IRI="http://reactionontology.org/piero/rdm#"/>
+    <Prefix name="kegg" IRI="http://www.kegg.jp/entry/"/>
+    <Prefix name="gene_product" IRI="http://reactionontology.org/piero/gene_product/"/>
+    <Prefix name="substructure_conversion" IRI="http://reactionontology.org/piero/substructure_conversion/"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="transformation" IRI="http://reactionontology.org/piero/transformation/"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="ids" IRI="http://identifiers.org/"/>
+    <Prefix name="ro" IRI="http://purl.org/obo/owl/ro#"/>
+    <Prefix name="iubmb" IRI="http://reactionontology.org/piero/iubmb#"/>
+    <Prefix name="kcfs" IRI="http://reactionontology.org/piero/kcfs#"/>
+    <Prefix name="go" IRI="http://identifiers.org/obo.go/GO:"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="substructure" IRI="http://reactionontology/org/piero/substructure/"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/owl/owlapi/turtle#"/>
+    <Prefix name="piero" IRI="http://reactionontology.org/piero/"/>
+    <Prefix name="reaction" IRI="http://reactionontology.org/piero/reaction/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="ec" IRI="http://identifiers.org/ec-code/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">
+PierO (Enzyme Reaction Ontology for Partial Information) intends to describe enzyme reactions even if the only partial information is available, aiming at the use for metabolomics studies.
+It contains hierarchical classification and ontology of functional groups and chemical substructures, which is originally obtained from BiSSCat database (http://bisscat.org/) and has been modified.
+</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="ids:ec-code"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ids:go"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="chemical_structure_information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="chemical_substructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ec"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="enzyme_information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="gene_product"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="go"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="iubmb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="kcfs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="molecular_function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="rdm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="reaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="reaction_information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="reaction_ontology_information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="substructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="substructure_conversion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="transformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="kcfs#atom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="kcfs#bond"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="kcfs#inorganic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="kcfs#ring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="kcfs#skeleton"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="kcfs#triplet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="kcfs#vicinity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="kegg:compound"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="kegg:enzyme"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="kegg:ko"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="kegg:rclass"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="ro:has_part"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="ro:part_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="BackwardInRclass"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="BackwardInReaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="CofacBackwardInReaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="CofacForwardInReaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="CofacInReaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="ForwardInRclass"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="ForwardInReaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="LeaveBackwardInReaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="LeaveForwardInReaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="LeaveInReaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="LigaseBackwardInReaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="LigaseForwardInReaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="LigaseInReaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="MainBackwardInReaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="MainForwardInReaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="MainInReaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="TransBackwardInReaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="TransForwardInReaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="TransInReaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="catalyzeProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="catalyzedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="catalyzes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasBackwardRpair"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasChild"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCofacBackwardRpair"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCofacForwardRpair"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCofacRpair"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasEquation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasForwardRpair"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasGeneProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasGo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasIubmb"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasKcfs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasKeggEnzyme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasKeggReaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasLeaveBackwardRpair"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasLeaveForwardRpair"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasLeaveRpair"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasLigaseBackwardRpair"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasLigaseForwardRpair"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasLigaseRpair"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMainBackwardRpair"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMainForwardRpair"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMainRpair"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasParent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasRclass"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasRdm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasReactant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasReactantInSideA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasReactantInSideB"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasReactantKcfs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasReactantKcfsInSideA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasReactantKcfsInSideB"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasRpair"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSubstructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSubstructureInSideA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSubstructureInSideB"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasTransBackwardRpair"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasTransForwardRpair"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasTransRpair"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasTransformation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inCompound"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inConversionInSideA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inConversionInSideB"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inEc"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inKeggReaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inKo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inRclass"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inRdm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inRdmInSideA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inRdmInSideB"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inReaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inRpair"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inRpairInSideA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inRpairInSideB"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inSubstructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inSubstructureConversion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inTransformation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="mediateProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="mediatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="mediates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="reverseRdm"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="fgc_old"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="hasAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="hasClassAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="hasCommentAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="hasDefinitionAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="hasEquationAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="hasRdmAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="hasRdmCount"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="hasSysnameAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="hasTypeAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="levelInKcfs"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="levelInRdm"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="levelInReaction"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="levelInSubstructure"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="levelInSubstructureeConversion"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="levelInTransformation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="levelProperty"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="standardRdmOrientation"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="ids:ec-code"/>
+        <Class IRI="ec"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="ids:go"/>
+        <Class IRI="go"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="ec"/>
+        <Class IRI="enzyme_function"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="ids:ec-code"/>
+        <Class IRI="molecular_function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ids:go"/>
+        <Class IRI="molecular_function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="chemical_structure_information"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="chemical_substructure"/>
+        <Class IRI="object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ec"/>
+        <Class IRI="enzyme_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ec"/>
+        <Class IRI="molecular_function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="enzyme_information"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="gene_product"/>
+        <Class IRI="enzyme_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="gene_product"/>
+        <Class IRI="molecule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="go"/>
+        <Class IRI="enzyme_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="go"/>
+        <Class IRI="molecular_function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="iubmb"/>
+        <Class IRI="enzyme_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="iubmb"/>
+        <Class IRI="molecular_function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="kcfs"/>
+        <Class IRI="chemical_structure_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="kcfs"/>
+        <Class IRI="chemical_substructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="molecular_function"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="molecule"/>
+        <Class IRI="object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="object"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="process"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="rdm"/>
+        <Class IRI="process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="rdm"/>
+        <Class IRI="reaction_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="reaction"/>
+        <Class IRI="molecular_function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="reaction"/>
+        <Class IRI="reaction_ontology_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="reaction_information"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="reaction_ontology_information"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="substructure"/>
+        <Class IRI="chemical_structure_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="substructure"/>
+        <Class IRI="chemical_substructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="substructure_conversion"/>
+        <Class IRI="process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="substructure_conversion"/>
+        <Class IRI="reaction_ontology_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="transformation"/>
+        <Class IRI="molecular_function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="transformation"/>
+        <Class IRI="reaction_ontology_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="kcfs#atom"/>
+        <Class IRI="chemical_structure_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="kcfs#atom"/>
+        <Class IRI="kcfs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="kcfs#bond"/>
+        <Class IRI="chemical_structure_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="kcfs#bond"/>
+        <Class IRI="kcfs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="kcfs#inorganic"/>
+        <Class IRI="chemical_structure_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="kcfs#inorganic"/>
+        <Class IRI="kcfs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="kcfs#ring"/>
+        <Class IRI="chemical_structure_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="kcfs#ring"/>
+        <Class IRI="kcfs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="kcfs#skeleton"/>
+        <Class IRI="chemical_structure_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="kcfs#skeleton"/>
+        <Class IRI="kcfs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="kcfs#triplet"/>
+        <Class IRI="chemical_structure_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="kcfs#triplet"/>
+        <Class IRI="kcfs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="kcfs#vicinity"/>
+        <Class IRI="chemical_structure_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="kcfs#vicinity"/>
+        <Class IRI="kcfs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="kegg:compound"/>
+        <Class IRI="chemical_structure_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="kegg:compound"/>
+        <Class IRI="molecule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="kegg:enzyme"/>
+        <Class IRI="enzyme_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="kegg:enzyme"/>
+        <Class IRI="molecular_function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="kegg:ko"/>
+        <Class IRI="enzyme_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="kegg:ko"/>
+        <Class IRI="molecular_function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="kegg:rclass"/>
+        <Class IRI="process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="kegg:rclass"/>
+        <Class IRI="reaction_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="kegg:reaction"/>
+        <Class IRI="process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="kegg:reaction"/>
+        <Class IRI="reaction_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="kegg:rpair"/>
+        <Class IRI="process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="kegg:rpair"/>
+        <Class IRI="reaction_information"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="BackwardInRclass"/>
+        <ObjectProperty IRI="inRclass"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="BackwardInReaction"/>
+        <ObjectProperty IRI="inReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="CofacBackwardInReaction"/>
+        <ObjectProperty IRI="BackwardInReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="CofacBackwardInReaction"/>
+        <ObjectProperty IRI="CofacInReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="CofacForwardInReaction"/>
+        <ObjectProperty IRI="CofacInReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="CofacForwardInReaction"/>
+        <ObjectProperty IRI="ForwardInReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="CofacInReaction"/>
+        <ObjectProperty IRI="inReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="ForwardInRclass"/>
+        <ObjectProperty IRI="inRclass"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="ForwardInReaction"/>
+        <ObjectProperty IRI="inReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="LeaveBackwardInReaction"/>
+        <ObjectProperty IRI="BackwardInReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="LeaveBackwardInReaction"/>
+        <ObjectProperty IRI="LeaveInReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="LeaveForwardInReaction"/>
+        <ObjectProperty IRI="ForwardInReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="LeaveForwardInReaction"/>
+        <ObjectProperty IRI="LeaveInReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="LeaveInReaction"/>
+        <ObjectProperty IRI="inReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="LigaseBackwardInReaction"/>
+        <ObjectProperty IRI="BackwardInReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="LigaseBackwardInReaction"/>
+        <ObjectProperty IRI="LigaseInReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="LigaseForwardInReaction"/>
+        <ObjectProperty IRI="ForwardInReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="LigaseForwardInReaction"/>
+        <ObjectProperty IRI="LigaseInReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="LigaseInReaction"/>
+        <ObjectProperty IRI="inReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="MainBackwardInReaction"/>
+        <ObjectProperty IRI="BackwardInReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="MainBackwardInReaction"/>
+        <ObjectProperty IRI="MainInReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="MainForwardInReaction"/>
+        <ObjectProperty IRI="ForwardInReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="MainForwardInReaction"/>
+        <ObjectProperty IRI="MainInReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="MainInReaction"/>
+        <ObjectProperty IRI="inReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="TransBackwardInReaction"/>
+        <ObjectProperty IRI="BackwardInReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="TransBackwardInReaction"/>
+        <ObjectProperty IRI="TransInReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="TransForwardInReaction"/>
+        <ObjectProperty IRI="ForwardInReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="TransForwardInReaction"/>
+        <ObjectProperty IRI="TransInReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="TransInReaction"/>
+        <ObjectProperty IRI="inReaction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="catalyzedBy"/>
+        <ObjectProperty IRI="catalyzeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="catalyzes"/>
+        <ObjectProperty IRI="catalyzeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasBackwardRpair"/>
+        <ObjectProperty IRI="hasRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasCofacBackwardRpair"/>
+        <ObjectProperty IRI="hasBackwardRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasCofacBackwardRpair"/>
+        <ObjectProperty IRI="hasCofacRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasCofacForwardRpair"/>
+        <ObjectProperty IRI="hasCofacRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasCofacForwardRpair"/>
+        <ObjectProperty IRI="hasForwardRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasCofacRpair"/>
+        <ObjectProperty IRI="hasRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasEquation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasForwardRpair"/>
+        <ObjectProperty IRI="hasRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasLeaveBackwardRpair"/>
+        <ObjectProperty IRI="hasBackwardRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasLeaveBackwardRpair"/>
+        <ObjectProperty IRI="hasLeaveRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasLeaveForwardRpair"/>
+        <ObjectProperty IRI="hasForwardRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasLeaveForwardRpair"/>
+        <ObjectProperty IRI="hasLeaveRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasLeaveRpair"/>
+        <ObjectProperty IRI="hasRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasLigaseBackwardRpair"/>
+        <ObjectProperty IRI="hasBackwardRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasLigaseBackwardRpair"/>
+        <ObjectProperty IRI="hasLigaseRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasLigaseForwardRpair"/>
+        <ObjectProperty IRI="hasForwardRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasLigaseForwardRpair"/>
+        <ObjectProperty IRI="hasLigaseRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasLigaseRpair"/>
+        <ObjectProperty IRI="hasRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasMainBackwardRpair"/>
+        <ObjectProperty IRI="hasBackwardRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasMainBackwardRpair"/>
+        <ObjectProperty IRI="hasMainRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasMainForwardRpair"/>
+        <ObjectProperty IRI="hasForwardRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasMainForwardRpair"/>
+        <ObjectProperty IRI="hasMainRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasMainRpair"/>
+        <ObjectProperty IRI="hasRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasParent"/>
+        <ObjectProperty abbreviatedIRI="rdfs:subClassOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasReactantInSideA"/>
+        <ObjectProperty IRI="hasReactant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasReactantInSideB"/>
+        <ObjectProperty IRI="hasReactant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasReactantKcfsInSideA"/>
+        <ObjectProperty IRI="hasReactantKcfs"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasReactantKcfsInSideB"/>
+        <ObjectProperty IRI="hasReactantKcfs"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSubstructureInSideA"/>
+        <ObjectProperty IRI="hasSubstructure"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSubstructureInSideB"/>
+        <ObjectProperty IRI="hasSubstructure"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasTransBackwardRpair"/>
+        <ObjectProperty IRI="hasBackwardRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasTransBackwardRpair"/>
+        <ObjectProperty IRI="hasTransRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasTransForwardRpair"/>
+        <ObjectProperty IRI="hasForwardRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasTransForwardRpair"/>
+        <ObjectProperty IRI="hasTransRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasTransRpair"/>
+        <ObjectProperty IRI="hasRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="inConversionInSideA"/>
+        <ObjectProperty IRI="inFGC"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="inConversionInSideB"/>
+        <ObjectProperty IRI="inFGC"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="inRdmInSideA"/>
+        <ObjectProperty IRI="inRdm"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="inRdmInSideB"/>
+        <ObjectProperty IRI="inRdm"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="inRpairInSideA"/>
+        <ObjectProperty IRI="inRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="inRpairInSideB"/>
+        <ObjectProperty IRI="inRpair"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="mediatedBy"/>
+        <ObjectProperty IRI="mediateProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="mediates"/>
+        <ObjectProperty IRI="mediateProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="reverseRdm"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="catalyzes"/>
+        <ObjectProperty IRI="catalyzedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasParent"/>
+        <ObjectProperty IRI="hasChild"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasKeggReaction"/>
+        <ObjectProperty IRI="hasTransformation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="inRpair"/>
+        <ObjectProperty IRI="hasReactant"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="inRpairInSideA"/>
+        <ObjectProperty IRI="hasReactantInSideA"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="inRpairInSideB"/>
+        <ObjectProperty IRI="hasReactantInSideB"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="inRdm"/>
+        <ObjectProperty IRI="hasReactantKcfs"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasReactantKcfsInSideA"/>
+        <ObjectProperty IRI="inRdmInSideA"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasReactantKcfsInSideB"/>
+        <ObjectProperty IRI="inRdmInSideB"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="mediatedBy"/>
+        <ObjectProperty IRI="mediates"/>
+    </InverseObjectProperties>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="catalyzedBy"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="catalyzes"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="mediatedBy"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="mediates"/>
+    </AsymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="catalyzedBy"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="catalyzes"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="mediatedBy"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="mediates"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="BackwardInRclass"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="BackwardInReaction"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="CofacBackwardInReaction"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="CofacForwardInReaction"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="CofacInReaction"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="ForwardInRclass"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="ForwardInReaction"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="LeaveBackwardInReaction"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="LeaveForwardInReaction"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="LeaveInReaction"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="LigaseBackwardInReaction"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="LigaseForwardInReaction"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="LigaseInReaction"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="MainBackwardInReaction"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="MainForwardInReaction"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="MainInReaction"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="TransBackwardInReaction"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="TransForwardInReaction"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="TransInReaction"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="catalyzedBy"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="catalyzes"/>
+        <Class IRI="gene_product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasBackwardRpair"/>
+        <Class abbreviatedIRI="kegg:rclass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasBackwardRpair"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasChild"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCofacBackwardRpair"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCofacForwardRpair"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCofacRpair"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasEquation"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasForwardRpair"/>
+        <Class abbreviatedIRI="kegg:rclass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasForwardRpair"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGeneProduct"/>
+        <Class abbreviatedIRI="kegg:ko"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGo"/>
+        <Class IRI="ec"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasIubmb"/>
+        <Class IRI="ec"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasKcfs"/>
+        <Class IRI="substructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasKcfs"/>
+        <Class abbreviatedIRI="kegg:compound"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasKeggEnzyme"/>
+        <Class IRI="ec"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasKeggReaction"/>
+        <Class IRI="reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasLeaveBackwardRpair"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasLeaveForwardRpair"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasLeaveRpair"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasLigaseBackwardRpair"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasLigaseForwardRpair"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasLigaseRpair"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMainBackwardRpair"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMainForwardRpair"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMainRpair"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasParent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRclass"/>
+        <Class IRI="substructure_conversion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRclass"/>
+        <Class IRI="transformation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRdm"/>
+        <Class IRI="substructure_conversion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRdm"/>
+        <Class abbreviatedIRI="kegg:rclass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasReactant"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasReactantInSideA"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasReactantInSideB"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasReactantKcfs"/>
+        <Class IRI="rdm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasReactantKcfsInSideA"/>
+        <Class IRI="rdm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasReactantKcfsInSideB"/>
+        <Class IRI="rdm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRpair"/>
+        <Class abbreviatedIRI="kegg:rclass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRpair"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSubstructure"/>
+        <Class IRI="substructure_conversion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSubstructureInSideA"/>
+        <Class IRI="substructure_conversion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSubstructureInSideB"/>
+        <Class IRI="substructure_conversion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasTransBackwardRpair"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasTransForwardRpair"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasTransRpair"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasTransformation"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inCompound"/>
+        <Class IRI="kcfs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inConversionInSideA"/>
+        <Class IRI="substructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inConversionInSideB"/>
+        <Class IRI="substructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inEc"/>
+        <Class IRI="go"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inEc"/>
+        <Class IRI="iubmb"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inEc"/>
+        <Class IRI="molecular_function"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inKeggReaction"/>
+        <Class IRI="transformation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inKo"/>
+        <Class IRI="gene_product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inRclass"/>
+        <Class IRI="rdm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inRclass"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inRdm"/>
+        <Class IRI="kcfs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inRdmInSideA"/>
+        <Class IRI="kcfs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inRdmInSideB"/>
+        <Class IRI="kcfs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inReaction"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inReaction"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inRpair"/>
+        <Class IRI="rdm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inRpair"/>
+        <Class abbreviatedIRI="kegg:compound"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inRpairInSideA"/>
+        <Class abbreviatedIRI="kegg:compound"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inRpairInSideB"/>
+        <Class abbreviatedIRI="kegg:compound"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inSubstructure"/>
+        <Class IRI="kcfs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inSubstructureConversion"/>
+        <Class IRI="rdm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inSubstructureConversion"/>
+        <Class IRI="substructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inTransformation"/>
+        <Class IRI="substructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inTransformation"/>
+        <Class abbreviatedIRI="kegg:rclass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="mediatedBy"/>
+        <Class IRI="ec"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="mediates"/>
+        <Class IRI="gene_product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="reverseRdm"/>
+        <Class IRI="rdm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="BackwardInRclass"/>
+        <Class abbreviatedIRI="kegg:rclass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="BackwardInRclass"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="BackwardInReaction"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="CofacBackwardInReaction"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="CofacForwardInReaction"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="CofacInReaction"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="ForwardInRclass"/>
+        <Class abbreviatedIRI="kegg:rclass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="ForwardInRclass"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="ForwardInReaction"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="LeaveBackwardInReaction"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="LeaveForwardInReaction"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="LeaveInReaction"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="LigaseBackwardInReaction"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="LigaseForwardInReaction"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="LigaseInReaction"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="MainBackwardInReaction"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="MainForwardInReaction"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="MainInReaction"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="TransBackwardInReaction"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="TransForwardInReaction"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="TransInReaction"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="catalyzedBy"/>
+        <Class IRI="gene_product"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="catalyzes"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasBackwardRpair"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasChild"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCofacBackwardRpair"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCofacForwardRpair"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCofacRpair"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasForwardRpair"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGeneProduct"/>
+        <Class IRI="gene_product"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGo"/>
+        <Class IRI="go"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasIubmb"/>
+        <Class IRI="iubmb"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasKcfs"/>
+        <Class IRI="kcfs"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasKeggEnzyme"/>
+        <Class abbreviatedIRI="kegg:enzyme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasKeggReaction"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasLeaveBackwardRpair"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasLeaveForwardRpair"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasLeaveRpair"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasLigaseBackwardRpair"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasLigaseForwardRpair"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasLigaseRpair"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMainBackwardRpair"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMainForwardRpair"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMainRpair"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasParent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasRclass"/>
+        <Class abbreviatedIRI="kegg:rclass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasRdm"/>
+        <Class IRI="rdm"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasReactant"/>
+        <Class abbreviatedIRI="kegg:compound"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasReactantInSideA"/>
+        <Class abbreviatedIRI="kegg:compound"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasReactantInSideB"/>
+        <Class abbreviatedIRI="kegg:compound"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasReactantKcfs"/>
+        <Class IRI="kcfs"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasReactantKcfsInSideA"/>
+        <Class IRI="kcfs"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasReactantKcfsInSideB"/>
+        <Class IRI="kcfs"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasRpair"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSubstructure"/>
+        <Class IRI="substructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSubstructureInSideA"/>
+        <Class IRI="substructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSubstructureInSideB"/>
+        <Class IRI="substructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasTransBackwardRpair"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasTransForwardRpair"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasTransRpair"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasTransformation"/>
+        <Class IRI="transformation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="inCompound"/>
+        <Class abbreviatedIRI="kegg:compound"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="inConversionInSideA"/>
+        <Class IRI="substructure_conversion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="inConversionInSideB"/>
+        <Class IRI="substructure_conversion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="inEc"/>
+        <Class IRI="ec"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="inKeggReaction"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="inKo"/>
+        <Class abbreviatedIRI="kegg:ko"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="inRclass"/>
+        <Class abbreviatedIRI="kegg:rclass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="inRdm"/>
+        <Class IRI="rdm"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="inRdmInSideA"/>
+        <Class IRI="rdm"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="inRdmInSideB"/>
+        <Class IRI="rdm"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="inReaction"/>
+        <Class IRI="reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="inReaction"/>
+        <Class abbreviatedIRI="kegg:reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="inRpair"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="inRpairInSideA"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="inRpairInSideB"/>
+        <Class abbreviatedIRI="kegg:rpair"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="inSubstructure"/>
+        <Class IRI="substructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="inSubstructureConversion"/>
+        <Class IRI="substructure_conversion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="inTransformation"/>
+        <Class IRI="transformation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="mediatedBy"/>
+        <Class IRI="gene_product"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="mediates"/>
+        <Class IRI="ec"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="reverseRdm"/>
+        <Class IRI="rdm"/>
+    </ObjectPropertyRange>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="hasClassAnnotation"/>
+        <AnnotationProperty IRI="hasAnnotation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="hasCommentAnnotation"/>
+        <AnnotationProperty IRI="hasAnnotation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="hasDefinitionAnnotation"/>
+        <AnnotationProperty IRI="hasAnnotation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="hasEquationAnnotation"/>
+        <AnnotationProperty IRI="hasAnnotation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="hasRdmAnnotation"/>
+        <AnnotationProperty IRI="hasAnnotation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="hasRdmCount"/>
+        <AnnotationProperty IRI="hasAnnotation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="hasSysnameAnnotation"/>
+        <AnnotationProperty IRI="hasAnnotation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="hasTypeAnnotation"/>
+        <AnnotationProperty IRI="hasAnnotation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="levelInKcfs"/>
+        <AnnotationProperty IRI="levelProperty"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="levelInRdm"/>
+        <AnnotationProperty IRI="levelProperty"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="levelInReaction"/>
+        <AnnotationProperty IRI="levelProperty"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="levelInSubstructure"/>
+        <AnnotationProperty IRI="levelProperty"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="levelInSubstructureeConversion"/>
+        <AnnotationProperty IRI="levelProperty"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="levelInTransformation"/>
+        <AnnotationProperty IRI="levelProperty"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="standardRdmOrientation"/>
+        <AnnotationProperty IRI="hasAnnotation"/>
+    </SubAnnotationPropertyOf>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="hasAnnotation"/>
+        <AbbreviatedIRI>rdfs:Container</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="hasAnnotation"/>
+        <AbbreviatedIRI>rdfs:Literal</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="hasAnnotation"/>
+        <AbbreviatedIRI>xsd:integer</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="hasClassAnnotation"/>
+        <AbbreviatedIRI>rdfs:Container</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="hasCommentAnnotation"/>
+        <AbbreviatedIRI>rdfs:Container</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="hasDefinitionAnnotation"/>
+        <AbbreviatedIRI>rdfs:Literal</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="hasEquationAnnotation"/>
+        <AbbreviatedIRI>rdfs:Literal</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="hasRdmAnnotation"/>
+        <AbbreviatedIRI>rdfs:Container</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="hasRdmCount"/>
+        <AbbreviatedIRI>xsd:integer</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="hasSysnameAnnotation"/>
+        <AbbreviatedIRI>rdfs:Container</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="hasTypeAnnotation"/>
+        <AbbreviatedIRI>rdfs:Container</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="levelInKcfs"/>
+        <AbbreviatedIRI>xsd:integer</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="levelInRdm"/>
+        <AbbreviatedIRI>xsd:integer</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="levelInReaction"/>
+        <AbbreviatedIRI>xsd:integer</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="levelInSubstructure"/>
+        <AbbreviatedIRI>xsd:integer</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="levelInSubstructureeConversion"/>
+        <AbbreviatedIRI>xsd:integer</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="levelInTransformation"/>
+        <AbbreviatedIRI>xsd:integer</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="levelProperty"/>
+        <AbbreviatedIRI>xsd:integer</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="standardRdmOrientation"/>
+        <AbbreviatedIRI>xsd:Literal</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="hasAnnotation"/>
+        <AbbreviatedIRI>kegg:compound</AbbreviatedIRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="hasAnnotation"/>
+        <AbbreviatedIRI>kegg:enzyme</AbbreviatedIRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="hasAnnotation"/>
+        <AbbreviatedIRI>kegg:ko</AbbreviatedIRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="hasAnnotation"/>
+        <AbbreviatedIRI>kegg:rclass</AbbreviatedIRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="hasAnnotation"/>
+        <AbbreviatedIRI>kegg:reaction</AbbreviatedIRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="hasAnnotation"/>
+        <AbbreviatedIRI>kegg:rpair</AbbreviatedIRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="hasClassAnnotation"/>
+        <AbbreviatedIRI>kegg:enzyme</AbbreviatedIRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="hasCommentAnnotation"/>
+        <AbbreviatedIRI>kegg:enzyme</AbbreviatedIRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="hasCommentAnnotation"/>
+        <AbbreviatedIRI>kegg:reaction</AbbreviatedIRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="hasDefinitionAnnotation"/>
+        <AbbreviatedIRI>kegg:ko</AbbreviatedIRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="hasDefinitionAnnotation"/>
+        <AbbreviatedIRI>kegg:reaction</AbbreviatedIRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="hasEquationAnnotation"/>
+        <AbbreviatedIRI>kegg:reaction</AbbreviatedIRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="hasRdmAnnotation"/>
+        <AbbreviatedIRI>kegg:rpair</AbbreviatedIRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="hasRdmCount"/>
+        <AbbreviatedIRI>kegg:rpair</AbbreviatedIRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="hasSysnameAnnotation"/>
+        <AbbreviatedIRI>kegg:enzyme</AbbreviatedIRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="hasTypeAnnotation"/>
+        <AbbreviatedIRI>kegg:rpair</AbbreviatedIRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="levelInKcfs"/>
+        <IRI>kcfs</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="levelInRdm"/>
+        <IRI>rdm</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="levelInReaction"/>
+        <IRI>reaction</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="levelInSubstructure"/>
+        <IRI>substructure</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="levelInSubstructureeConversion"/>
+        <IRI>substructure_conversion</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="levelInTransformation"/>
+        <IRI>transformation</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="levelProperty"/>
+        <AbbreviatedIRI>owl:Class</AbbreviatedIRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="standardRdmOrientation"/>
+        <AbbreviatedIRI>kegg:rpair</AbbreviatedIRI>
+    </AnnotationPropertyDomain>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.5.1912) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:dc="http://purl.org/dc/terms/">
+
+  <owl:Ontology rdf:about="http://protozoadb.biowebdb.org/22/ogroup">
+    <rdfs:label>ogroup</rdfs:label>
+    <dc:title>Orthologous groups ontology</dc:title>
+    <rdfs:comment>An ontology for supporting annotation transfer among members of homologous groups.</rdfs:comment>
+    <dc:description>An ontology for supporting annotation transfer among members of homologous groups.</dc:description>
+    <owl:versionInfo>1.0</owl:versionInfo>
+    <owl:versionIRI rdf:resource="http://protozoadb.biowebdb.org/22/1.0/ogroup"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="http://protozoadb.biowebdb.org/22/ogroup#SequenceCluster">
+    <rdfs:label>SequenceCluster</rdfs:label>
+    <rdfs:comment>Homologous group class. Instance of this class is a resource that identifies a set of sequences that are homologs.</rdfs:comment>
+    <rdf:subClassOf rdf:resource="http://purl.jp/bio/11/orth#Group"/>
+    <rdfs:isDefinedBy rdf:resource="http://protozoadb.biowebdb.org/22/ogroup"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://protozoadb.biowebdb.org/22/ogroup#Sequence">
+    <rdfs:label>Sequence</rdfs:label>
+    <rdf:subClassOf rdf:resource="http://purl.jp/bio/11/orth#SequenceUnit"/>
+    <rdfs:isDefinedBy rdf:resource="http://protozoadb.biowebdb.org/22/ogroup"/>
+  </owl:Class>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#GO-Term">
+    <rdf:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>GO-Term</rdfs:label>
+    <rdfs:comment>This is a meta class for all the Gene Ontology terms. Each Gene Ontology term is a class and is also an instance of this class.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://protozoadb.biowebdb.org/22/ogroup"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#GO-Term-MF">
+    <rdf:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:subClassOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#GO-Term"/>
+    <rdfs:label>GO-Term-Molecular-Function</rdfs:label>
+    <rdfs:comment>This is a meta class for all the Gene Ontology Molecular Function terms. Each Gene Ontology Molecular Function term is a class and is also an instance of this class.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://protozoadb.biowebdb.org/22/ogroup"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0003674">
+    <rdf:type rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#GO-Term-MF"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+    <rdf:type rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#GO-Term"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0005575">
+    <rdf:type rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#GO-Term"/>
+  </rdf:Description>
+
+  <owl:ObjectProperty rdf:about="http://protozoadb.biowebdb.org/22/ogroup#has-go">
+    <rdfs:label>has-go</rdfs:label>
+    <rdfs:comment>Associate a sequence or homologous group with a GO term.</rdfs:comment>
+    <rdfs:range rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#GO-Term"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/11/orth#member"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://protozoadb.biowebdb.org/22/ogroup#has-go-mf">
+    <rdfs:label>has-go-mf</rdfs:label>
+    <rdfs:comment>Associate a sequence or homologous group with a Molecular Function GO term.</rdfs:comment>
+    <rdfs:range rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#GO-Term-MF"/>
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#has-go"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://protozoadb.biowebdb.org/22/ogroup#has-go-mf-ancestor">
+    <rdfs:comment>Associate a sequence or homologous group with a Molecular Function GO term that has child terms associated to the sequence.</rdfs:comment>
+    <rdfs:label>has-go-mf-ancestor</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#has-go-mf"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://protozoadb.biowebdb.org/22/ogroup#has-go-goa">
+    <rdfs:label>has-go-goa</rdfs:label>
+    <rdfs:comment>Alternative association from a sequence to a Molecular Function GO term obtained directly from GOA.</rdfs:comment>
+    <rdfs:range rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#GO-Term-MF"/>
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#has-go"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://protozoadb.biowebdb.org/22/ogroup#has-group">
+    <rdfs:label>has-group</rdfs:label>
+    <rdfs:comment>Association from a sequence to an homologous group that it is member.</rdfs:comment>
+    <rdfs:range rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#SequenceCluster"/>
+    <rdfs:domain rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#Sequence"/>
+  </owl:ObjectProperty>
+
+  <owl:DatatypeProperty rdf:about="http://protozoadb.biowebdb.org/22/ogroup#sequenceAttribute">
+    <rdfs:domain rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#Sequence"/>
+  </owl:DatatypeProperty>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#sequence-desc">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#sequenceAttribute"/>
+    <rdfs:label>sequence-desc</rdfs:label>
+    <rdfs:comment>Textual description for the sequence.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#uniprot-desc">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#sequenceAttribute"/>
+    <rdfs:label>uniprot-desc</rdfs:label>
+    <rdfs:comment>Textual description for the sequence found in the uniprot KB.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#gi">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#sequenceAttribute"/>
+    <rdfs:label>gi</rdfs:label>
+    <rdfs:comment>GI - GenBank Identification.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#uniprot-id">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#sequenceAttribute"/>
+    <rdfs:label>uniprot-id</rdfs:label>
+    <rdfs:comment>Uniprot identification.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#uniprot-resource">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#sequenceAttribute"/>
+    <rdfs:label>uniprot-resource</rdfs:label>
+    <rdfs:comment>Uniprot identification with the format: uniprotkb:{uniprot-id}</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#accession-id">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#sequenceAttribute"/>
+    <rdfs:label>accession-id</rdfs:label>
+    <rdfs:comment>Accession identification.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#organism-name-uniprot">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#sequenceAttribute"/>
+    <rdfs:label>organism-name-uniprot</rdfs:label>
+    <rdfs:comment>Organism name obtained from Uniprot KB.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#organism-name">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#sequenceAttribute"/>
+    <rdfs:label>organism-name</rdfs:label>
+    <rdfs:comment>Organism name, e.g.: Trichomonas_vaginalis_G3</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#sequence-text">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#sequenceAttribute"/>
+    <rdfs:label>sequence-text</rdfs:label>
+    <rdfs:comment>The sequence letters.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#sequence-length">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#sequenceAttribute"/>
+    <rdfs:label>sequence-length</rdfs:label>
+    <rdfs:comment>The length of the sequence.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#go-qtd">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#sequenceAttribute"/>
+    <rdfs:label>sequence-length</rdfs:label>
+    <rdfs:comment>The length of the sequence.</rdfs:comment>
+  </rdf:Description>
+
+  <owl:DatatypeProperty rdf:about="http://protozoadb.biowebdb.org/22/ogroup#orthGroupAttribute">
+    <rdfs:domain rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#SequenceCluster"/>
+  </owl:DatatypeProperty>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#group-id">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#orthGroupAttribute"/>
+    <rdfs:label>group-id</rdfs:label>
+    <rdfs:comment>Homologous group identification.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#sequence-qtd">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#orthGroupAttribute"/>
+    <rdfs:label>sequence-qtd</rdfs:label>
+    <rdfs:comment>Quantity of sequences in the group.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#taxa-qtd">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#orthGroupAttribute"/>
+    <rdfs:label>taxa-qtd</rdfs:label>
+    <rdfs:comment>Quantity of different organisms with sequences in the group.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#qtd-seq-with-go">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#orthGroupAttribute"/>
+    <rdfs:label>qtd-seq-with-go</rdfs:label>
+    <rdfs:comment>Quantity of sequences in the group that have associated GO terms.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#qtd-distinct-go">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#orthGroupAttribute"/>
+    <rdfs:label>qtd-distinct-go</rdfs:label>
+    <rdfs:comment>Quantity of different GO terms associated to sequences in the group.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#qtd-distinct-go-ancestor">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#orthGroupAttribute"/>
+    <rdfs:label>qtd-distinct-go-ancestor</rdfs:label>
+    <rdfs:comment>Quantity of different ancestor GO terms associated inferred from the original GO terms in the group.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#qtd-with-no-annotation">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#orthGroupAttribute"/>
+    <rdfs:label>qtd-with-no-annotation</rdfs:label>
+    <rdfs:comment>Quantity sequences in the group with no significant textual annotation.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#qtd-with-no-uniprot-annotation">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#orthGroupAttribute"/>
+    <rdfs:label>qtd-with-no-uniprot-annotation</rdfs:label>
+    <rdfs:comment>Quantity sequences in the group with no GO terms annotated in the Uniprot KB.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#qtd-with-no-annotation-and-no-go">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#orthGroupAttribute"/>
+    <rdfs:label>qtd-with-no-annotation-and-no-go</rdfs:label>
+    <rdfs:comment>Quantity sequences in the group with no GO terms annotated and no significant textual annotation.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#mean-go-height">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#orthGroupAttribute"/>
+    <rdfs:label>mean-go-height</rdfs:label>
+    <rdfs:comment>Mean height of the GO terms annotated to sequences in the group.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#mean-go-depth">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#orthGroupAttribute"/>
+    <rdfs:label>mean-go-depth</rdfs:label>
+    <rdfs:comment>Mean depth of the GO terms annotated to sequences in the group.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#mean-pct-specificity">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#orthGroupAttribute"/>
+    <rdfs:label>mean-pct-specificity</rdfs:label>
+    <rdfs:comment>Mean specificity of the GO terms annotated to sequences in the group.</rdfs:comment>
+  </rdf:Description>
+
+  <owl:DatatypeProperty rdf:about="http://protozoadb.biowebdb.org/22/ogroup#goAttribute">
+    <rdfs:domain rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#GO-Term"/>
+  </owl:DatatypeProperty>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#height">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#goAttribute"/>
+    <rdfs:label>height</rdfs:label>
+    <rdfs:comment>The height of the term in the GO hierarchy (values from 0 to 15). It is the largest path between the node and the leaf.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#depth">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#goAttribute"/>
+    <rdfs:label>depth</rdfs:label>
+    <rdfs:comment>The depth of the term in the GO hierarchy (values from 0 to 15). It is the largest path between the node and the root.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://protozoadb.biowebdb.org/22/ogroup#pct-specificity">
+    <rdfs:subPropertyOf rdf:resource="http://protozoadb.biowebdb.org/22/ogroup#goAttribute"/>
+    <rdfs:label>pct-specificity</rdfs:label>
+    <rdfs:comment>The specificity of the term in the GO hierarchy.</rdfs:comment>
+  </rdf:Description>
+
+  <owl:ObjectProperty rdf:about="http://protozoadb.biowebdb.org/22/ogroup#has-go-mf-tentative">
+  </owl:ObjectProperty>
+
+  <owl:DatatypeProperty rdf:about="http://protozoadb.biowebdb.org/22/ogroup#pct-agree">
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://protozoadb.biowebdb.org/22/ogroup#qtd_go_group">
+  </owl:DatatypeProperty>
+
+  <owl:ObjectProperty rdf:about="http://protozoadb.biowebdb.org/22/ogroup#has-go-mf-suggested">
+  </owl:ObjectProperty>
+
+  <owl:DatatypeProperty rdf:about="http://protozoadb.biowebdb.org/22/ogroup#pct-agree-cutoff">
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://protozoadb.biowebdb.org/22/ogroup#pct-mean-specificity-variation">
+  </owl:DatatypeProperty>
+
+  <owl:ObjectProperty rdf:about="http://protozoadb.biowebdb.org/22/ogroup#uniprot-id-goa">
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://protozoadb.biowebdb.org/22/ogroup#go_qualifier">
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://protozoadb.biowebdb.org/22/ogroup#evidence-code">
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://protozoadb.biowebdb.org/22/ogroup#with-from">
+  </owl:ObjectProperty>
+
+</rdf:RDF>

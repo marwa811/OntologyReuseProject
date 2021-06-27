@@ -1,0 +1,3229 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY ontologies "http://www.ICPS/ontologies/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY ICPS "http://www.apsf.net.au/ICPS.owl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY swrlx "http://www.w3.org/2003/11/swrlx#" >
+    <!ENTITY ruleml "http://www.w3.org/2003/11/ruleml#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY Place "http://www.ICPS/ontologies/Place#" >
+    <!ENTITY time-entry "http://www.w3.org/2006/time-entry#" >
+    <!ENTITY Person "http://www.ICPS/ontologies/Person#" >
+    <!ENTITY owlx "http://www.w3.org/2003/05/owl-xml#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY Anatomy "http://www.ICPS/ontologies/Anatomy#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY kaon2 "http://kaon2.semanticweb.org/internal#" >
+    <!ENTITY Clothing "http://www.ICPS/ontologies/Clothing.owl#" >
+    <!ENTITY Activity "http://www.ICPS/ontologies/Activity.owl#" >
+    <!ENTITY Detection "http://www.ICPS/ontologies/Detection.owl#" >
+    <!ENTITY Furniture "http://www.ICPS/ontologies/Furniture.owl#" >
+    <!ENTITY Medication "http://www.ICPS/ontologies/Medication.owl#" >
+    <!ENTITY PatientOutcomes "http://www.ICPS/ontologies/PatientOutcomes#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY MitigatingFactors "http://www.ICPS/ontologies/MitigatingFactors#" >
+    <!ENTITY BuildingStructure "http://www.ICPS/ontologies/BuildingStructure#" >
+    <!ENTITY ActionsToReduceRisk "http://www.ICPS/ontologies/ActionsToReduceRisk#" >
+    <!ENTITY HospitalEquipment "http://www.ICPS/ontologies/HospitalEquipment.owl#" >
+    <!ENTITY ICPSMerged "http://www.apsf.net.au/ontologies/ICPSMerged.owl#" >
+    <!ENTITY MitigatingFactors2 "http://www.ICPS/ontologies/MitigatingFactors.owl#" >
+    <!ENTITY PatientSafetyIncident "http://www.ICPS/ontologies/PatientSafetyIncident#" >
+    <!ENTITY OrganizationalOutcomes "http://www.ICPS/ontologies/OrganizationalOutcomes#" >
+    <!ENTITY IncidentCharacteristic "http://www.ICPS/ontologies/IncidentCharacteristic#" >
+    <!ENTITY AmelioratingActions "http://www.ICPS/ontologies/AmelioratingActions.owl#" >
+    <!ENTITY PatientCharacteristics "http://www.ICPS/ontologies/PatientCharacteristics.owl#" >
+    <!ENTITY Countries "http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#" >
+    <!ENTITY objectrole "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ICPS/ontologies/"
+     xml:base="&ontologies;PatientSafetyIncident"
+     xmlns:MitigatingFactors="&ontologies;MitigatingFactors#"
+     xmlns:AmelioratingActions="&ontologies;AmelioratingActions.owl#"
+     xmlns:PatientOutcomes="&ontologies;PatientOutcomes#"
+     xmlns:ICPS="http://www.apsf.net.au/ICPS.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:kaon2="http://kaon2.semanticweb.org/internal#"
+     xmlns:owlx="http://www.w3.org/2003/05/owl-xml#"
+     xmlns:IncidentCharacteristic="&ontologies;IncidentCharacteristic#"
+     xmlns:ICPSMerged="http://www.apsf.net.au/ontologies/ICPSMerged.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:PatientSafetyIncident="&ontologies;PatientSafetyIncident#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Person="&ontologies;Person#"
+     xmlns:Countries="http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:Furniture="&ontologies;Furniture.owl#"
+     xmlns:HospitalEquipment="&ontologies;HospitalEquipment.owl#"
+     xmlns:ruleml="http://www.w3.org/2003/11/ruleml#"
+     xmlns:Clothing="&ontologies;Clothing.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:objectrole="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#"
+     xmlns:Place="&ontologies;Place#"
+     xmlns:BuildingStructure="&ontologies;BuildingStructure#"
+     xmlns:Detection="&ontologies;Detection.owl#"
+     xmlns:time-entry="http://www.w3.org/2006/time-entry#"
+     xmlns:swrlx="http://www.w3.org/2003/11/swrlx#"
+     xmlns:OrganizationalOutcomes="&ontologies;OrganizationalOutcomes#"
+     xmlns:Activity="&ontologies;Activity.owl#"
+     xmlns:Medication="&ontologies;Medication.owl#"
+     xmlns:PatientCharacteristics="&ontologies;PatientCharacteristics.owl#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ActionsToReduceRisk="&ontologies;ActionsToReduceRisk#"
+     xmlns:ontologies="http://www.ICPS/ontologies/"
+     xmlns:Anatomy="&ontologies;Anatomy#"
+     xmlns:MitigatingFactors2="&ontologies;MitigatingFactors.owl#">
+    <owl:Ontology rdf:about="">
+        <rdfs:comment
+            >&lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/3.0/&quot;&gt;&lt;img alt=&quot;Creative Commons License&quot; style=&quot;border-width:0&quot; src=&quot;http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png&quot; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;span xmlns:dc=&quot;http://purl.org/dc/elements/1.1/&quot; href=&quot;http://purl.org/dc/dcmitype/Text&quot; property=&quot;dc:title&quot; rel=&quot;dc:type&quot;&gt;ICPS ontology network&lt;/span&gt; by &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://www.oeg-upm.net/&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Ontology Engineering Group&lt;/a&gt; is licensed under a &lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/3.0/&quot;&gt;Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License&lt;/a&gt;.</rdfs:comment>
+        <dc:creator
+            >Mari Carmen Su&#225;rez-Figueroa</dc:creator>
+        <dc:creator>Mar&#237;a Poveda</dc:creator>
+        <dc:creator>Oscar Corcho</dc:creator>
+        <dc:creator
+            >Elena Montiel-Ponsoda</dc:creator>
+        <owl:versionInfo>2.0</owl:versionInfo>
+        <owl:priorVersion>1.0</owl:priorVersion>
+        <rdfs:comment xml:lang="en"
+            >Ontology network about Patient Safety Incident.</rdfs:comment>
+        <rdfs:comment xml:lang="en"
+            >This work has been carried out by the Ontological Engineering Group, using sources from the University of Saint Etienne and the Australian Patient Safety Foundation, and supported by the World Health Organisation under the International Classification for Patient Safety programme.</rdfs:comment>
+        <owl:imports rdf:resource="file:/D:/mpoveda/ICPS/Red%20ICPS/ICPS%20Network/ActionsToReduceRisk.owl"/>
+        <owl:imports rdf:resource="http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries"/>
+        <owl:imports rdf:resource="&ontologies;Anatomy.owl"/>
+        <owl:imports rdf:resource="&ontologies;ContributingFactors-Hazards"/>
+        <owl:imports rdf:resource="&ontologies;IncidentCharacteristic"/>
+        <owl:imports rdf:resource="&ontologies;Outcomes.owl"/>
+        <owl:imports rdf:resource="&ontologies;Person"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="#ICFmapping"/>
+    <owl:AnnotationProperty rdf:about="#SNOMEDmapping"/>
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    <owl:AnnotationProperty rdf:about="#ICDmapping"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/ActionsToReduceRisk#hasRiskAssessmentResult -->
+
+    <owl:ObjectProperty rdf:about="&ontologies;ActionsToReduceRisk#hasRiskAssessmentResult"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#assists -->
+
+    <owl:ObjectProperty rdf:about="#assists">
+        <rdfs:label xml:lang="en">assits</rdfs:label>
+        <rdfs:range rdf:resource="#Fall"/>
+        <rdfs:domain rdf:resource="#PersonPlayingRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#causesAFall -->
+
+    <owl:ObjectProperty rdf:about="#causesAFall">
+        <rdfs:label xml:lang="en">causes a fall</rdfs:label>
+        <rdfs:range rdf:resource="#Fall"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#fallOccursAtTime -->
+
+    <owl:ObjectProperty rdf:about="#fallOccursAtTime">
+        <rdfs:label xml:lang="en"
+            >fall occurs at time</rdfs:label>
+        <rdfs:domain rdf:resource="#Fall"/>
+        <rdfs:subPropertyOf rdf:resource="#occursAtTime"/>
+        <rdfs:range rdf:resource="&time-entry;CalendarClockDescription"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasAmelioratingAction -->
+
+    <owl:ObjectProperty rdf:about="#hasAmelioratingAction">
+        <rdfs:label xml:lang="en"
+            >has ameliorating action</rdfs:label>
+        <rdfs:range rdf:resource="&ontologies;AmelioratingActions.owl#AmelioratingAction"/>
+        <rdfs:domain rdf:resource="#Incident"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasBeenDocumentedToBeAtGreaterRiskOfPressureUlcer -->
+
+    <owl:ObjectProperty rdf:about="#hasBeenDocumentedToBeAtGreaterRiskOfPressureUlcer">
+        <rdfs:label xml:lang="en"
+            >has been documented to be at reater risk of pressure ulcer</rdfs:label>
+        <rdfs:range rdf:resource="#PressureUlcer"/>
+        <rdfs:subPropertyOf rdf:resource="#hasBeenDocumentedToBeAtRiskOfPressureUlcer"/>
+        <rdfs:domain rdf:resource="&ontologies;Person#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasBeenDocumentedToBeAtRiskOfFall -->
+
+    <owl:ObjectProperty rdf:about="#hasBeenDocumentedToBeAtRiskOfFall">
+        <rdfs:label xml:lang="en"
+            >has been documented to be at risk of fall</rdfs:label>
+        <rdfs:range rdf:resource="#Fall"/>
+        <rdfs:subPropertyOf rdf:resource="#hasBeenDocumentedToBeAtRiskOfIncident"/>
+        <rdfs:domain rdf:resource="&ontologies;Person#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasBeenDocumentedToBeAtRiskOfIncident -->
+
+    <owl:ObjectProperty rdf:about="#hasBeenDocumentedToBeAtRiskOfIncident">
+        <rdfs:label xml:lang="en"
+            >has been documented to be at risk of incident</rdfs:label>
+        <rdfs:range rdf:resource="#Incident"/>
+        <rdfs:domain rdf:resource="&ontologies;Person#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasBeenDocumentedToBeAtRiskOfPressureUlcer -->
+
+    <owl:ObjectProperty rdf:about="#hasBeenDocumentedToBeAtRiskOfPressureUlcer">
+        <rdfs:label xml:lang="en"
+            >has been documented to be at risk of pressure ulcer</rdfs:label>
+        <rdfs:range rdf:resource="#PressureUlcer"/>
+        <rdfs:subPropertyOf rdf:resource="#hasBeenDocumentedToBeAtRiskOfIncident"/>
+        <rdfs:domain rdf:resource="&ontologies;Person#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasCareSetting -->
+
+    <owl:ObjectProperty rdf:about="#hasCareSetting">
+        <rdfs:label xml:lang="en"
+            >has care setting</rdfs:label>
+        <rdfs:range rdf:resource="#CareSetting"/>
+        <rdfs:domain rdf:resource="#Incident"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasConfirmedStatusOfFall -->
+
+    <owl:ObjectProperty rdf:about="#hasConfirmedStatusOfFall">
+        <rdfs:label xml:lang="en"
+            >has confirmed status of fall</rdfs:label>
+        <rdfs:range rdf:resource="#ConfirmedStatusOfFall"/>
+        <rdfs:domain rdf:resource="#Fall"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasDegreeOfHarm -->
+
+    <owl:ObjectProperty rdf:about="#hasDegreeOfHarm">
+        <rdfs:label xml:lang="en"
+            >has degree of harm</rdfs:label>
+        <rdfs:range rdf:resource="&ontologies;PatientOutcomes#DegreeOfHarm"/>
+        <rdfs:domain rdf:resource="&ontologies;PatientOutcomes#Harm"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasDocumentedSkinInspection -->
+
+    <owl:ObjectProperty rdf:about="#hasDocumentedSkinInspection">
+        <rdfs:label xml:lang="en"
+            >has documented skin inspection</rdfs:label>
+        <rdfs:range rdf:resource="&ontologies;ActionsToReduceRisk#SkinInspection"/>
+        <rdfs:domain rdf:resource="#PressureUlcer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasFallHeight -->
+
+    <owl:ObjectProperty rdf:about="#hasFallHeight">
+        <rdfs:label xml:lang="en">has fall height</rdfs:label>
+        <rdfs:domain rdf:resource="#Fall"/>
+        <rdfs:range rdf:resource="#FallHeight"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasFallMechanism -->
+
+    <owl:ObjectProperty rdf:about="#hasFallMechanism">
+        <rdfs:label xml:lang="en"
+            >has fall mechanism</rdfs:label>
+        <rdfs:domain rdf:resource="#Fall"/>
+        <rdfs:range rdf:resource="#FallMechanism"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasFallMinimisationStrategyOrdered -->
+
+    <owl:ObjectProperty rdf:about="#hasFallMinimisationStrategyOrdered">
+        <rdfs:label xml:lang="en"
+            >has fall minimisation strategy ordered</rdfs:label>
+        <rdfs:range rdf:resource="&ontologies;ActionsToReduceRisk#FallMinimisationStrategy"/>
+        <rdfs:domain rdf:resource="#HasMinimisationStrategyToPreventItRelation"/>
+        <rdfs:subPropertyOf rdf:resource="#hasMinimisationStrategyOrdered"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasFallMinimisationStrategyRequested -->
+
+    <owl:ObjectProperty rdf:about="#hasFallMinimisationStrategyRequested">
+        <rdfs:label xml:lang="en"
+            >has fall minimisation strategy requested</rdfs:label>
+        <rdfs:range rdf:resource="&ontologies;ActionsToReduceRisk#FallMinimisationStrategy"/>
+        <rdfs:domain rdf:resource="#HasMinimisationStrategyToPreventItRelation"/>
+        <rdfs:subPropertyOf rdf:resource="#hasMinimisationStrategyRequested"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasHealthCareFacilityStaySequence -->
+
+    <owl:ObjectProperty rdf:about="#hasHealthCareFacilityStaySequence">
+        <rdfs:label xml:lang="en"
+            >has health care facility stay sequence</rdfs:label>
+        <rdfs:range rdf:resource="#HealthCareFacilityStay"/>
+        <rdfs:domain rdf:resource="&ontologies;Person#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasMinimisationStrategy -->
+
+    <owl:ObjectProperty rdf:about="#hasMinimisationStrategy">
+        <rdfs:label xml:lang="en"
+            >has minimisation strategy</rdfs:label>
+        <rdfs:range rdf:resource="&ontologies;ActionsToReduceRisk#MinimisationStrategy"/>
+        <rdfs:domain rdf:resource="#HasMinimisationStrategyToPreventItRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasMinimisationStrategyAtTime -->
+
+    <owl:ObjectProperty rdf:about="#hasMinimisationStrategyAtTime">
+        <rdfs:label xml:lang="en"
+            >has minimisation strategy at time</rdfs:label>
+        <rdfs:domain rdf:resource="#HasMinimisationStrategyToPreventItRelation"/>
+        <rdfs:range rdf:resource="&time-entry;CalendarClockDescription"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasMinimisationStrategyOrdered -->
+
+    <owl:ObjectProperty rdf:about="#hasMinimisationStrategyOrdered">
+        <rdfs:label xml:lang="en"
+            >has minimisation strategy ordered</rdfs:label>
+        <rdfs:range rdf:resource="&ontologies;ActionsToReduceRisk#MinimisationStrategy"/>
+        <rdfs:domain rdf:resource="#HasMinimisationStrategyToPreventItRelation"/>
+        <rdfs:subPropertyOf rdf:resource="#hasMinimisationStrategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasMinimisationStrategyRequested -->
+
+    <owl:ObjectProperty rdf:about="#hasMinimisationStrategyRequested">
+        <rdfs:label xml:lang="en"
+            >has minimisation strategy requested</rdfs:label>
+        <rdfs:range rdf:resource="&ontologies;ActionsToReduceRisk#MinimisationStrategy"/>
+        <rdfs:domain rdf:resource="#HasMinimisationStrategyToPreventItRelation"/>
+        <rdfs:subPropertyOf rdf:resource="#hasMinimisationStrategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasMinimisationStrategyToPreventFallAtTime -->
+
+    <owl:ObjectProperty rdf:about="#hasMinimisationStrategyToPreventFallAtTime">
+        <rdfs:label xml:lang="en"
+            >has minimisation strategy to prevent fall at time</rdfs:label>
+        <rdfs:domain rdf:resource="#Fall"/>
+        <rdfs:range rdf:resource="#HasMinimisationStrategyToPreventItRelation"/>
+        <rdfs:subPropertyOf rdf:resource="#hasMinimisationStrategyToPreventItAtTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasMinimisationStrategyToPreventItAtTime -->
+
+    <owl:ObjectProperty rdf:about="#hasMinimisationStrategyToPreventItAtTime">
+        <rdfs:label xml:lang="en"
+            >has minimisation strategy to prevent it at time</rdfs:label>
+        <rdfs:range rdf:resource="#HasMinimisationStrategyToPreventItRelation"/>
+        <rdfs:domain rdf:resource="#Incident"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasMinimisationStrategyToPreventPressureUlcerAtTime -->
+
+    <owl:ObjectProperty rdf:about="#hasMinimisationStrategyToPreventPressureUlcerAtTime">
+        <rdfs:label xml:lang="en"
+            >has minimisation strategy to prevent pressure ulcer at time</rdfs:label>
+        <rdfs:range rdf:resource="#HasMinimisationStrategyToPreventItRelation"/>
+        <rdfs:domain rdf:resource="#PressureUlcer"/>
+        <rdfs:subPropertyOf rdf:resource="#hasMinimisationStrategyToPreventItAtTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasMitigatingFactor -->
+
+    <owl:ObjectProperty rdf:about="#hasMitigatingFactor">
+        <rdfs:label xml:lang="en"
+            >has mitigating factor</rdfs:label>
+        <rdfs:range rdf:resource="&ontologies;MitigatingFactors.owl#MitigatingFactor"/>
+        <rdfs:domain rdf:resource="#Incident"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasNextHealthCareFacilityStay -->
+
+    <owl:ObjectProperty rdf:about="#hasNextHealthCareFacilityStay">
+        <rdfs:label xml:lang="en"
+            >has next health care facility stay</rdfs:label>
+        <rdfs:range rdf:resource="#HealthCareFacilityStay"/>
+        <rdfs:domain rdf:resource="#HealthCareFacilityStay"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasNextPressureUlcerStageSequenceItem -->
+
+    <owl:ObjectProperty rdf:about="#hasNextPressureUlcerStageSequenceItem">
+        <rdfs:label xml:lang="en"
+            >has next pressure ulcer stage sequence item</rdfs:label>
+        <rdfs:range rdf:resource="#PressureUlcerStageSequenceItem"/>
+        <rdfs:domain rdf:resource="#PressureUlcerStageSequenceItem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasOrganizationalOutcome -->
+
+    <owl:ObjectProperty rdf:about="#hasOrganizationalOutcome">
+        <rdfs:label xml:lang="en"
+            >has organizational outcome</rdfs:label>
+        <rdfs:range rdf:resource="&ontologies;OrganizationalOutcomes#OrganizationalOutcome"/>
+        <rdfs:domain rdf:resource="#Incident"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasPersonReporting -->
+
+    <owl:ObjectProperty rdf:about="#hasPersonReporting">
+        <rdfs:label xml:lang="en"
+            >has person reporting</rdfs:label>
+        <rdfs:domain rdf:resource="#Incident"/>
+        <rdfs:range rdf:resource="#PersonPlayingRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasPressureUlcerMinimisationStrategyOrdered -->
+
+    <owl:ObjectProperty rdf:about="#hasPressureUlcerMinimisationStrategyOrdered">
+        <rdfs:label xml:lang="en"
+            >has pressure ulcer minimisation strategy ordered</rdfs:label>
+        <rdfs:range rdf:resource="&ontologies;ActionsToReduceRisk#PressureUlcerMinimisationStrategy"/>
+        <rdfs:domain rdf:resource="#HasMinimisationStrategyToPreventItRelation"/>
+        <rdfs:subPropertyOf rdf:resource="#hasMinimisationStrategyOrdered"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasPressureUlcerMinimisationStrategyRequested -->
+
+    <owl:ObjectProperty rdf:about="#hasPressureUlcerMinimisationStrategyRequested">
+        <rdfs:label xml:lang="en"
+            >has pressure ulcer minimisation strategy requested</rdfs:label>
+        <rdfs:range rdf:resource="&ontologies;ActionsToReduceRisk#PressureUlcerMinimisationStrategy"/>
+        <rdfs:domain rdf:resource="#HasMinimisationStrategyToPreventItRelation"/>
+        <rdfs:subPropertyOf rdf:resource="#hasMinimisationStrategyRequested"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasPressureUlcerStage -->
+
+    <owl:ObjectProperty rdf:about="#hasPressureUlcerStage">
+        <rdfs:label xml:lang="en"
+            >has pressure ulcer stage</rdfs:label>
+        <rdfs:range rdf:resource="&ontologies;PatientOutcomes#PressureUlcerStage"/>
+        <rdfs:domain rdf:resource="#PressureUlcerStageSequenceItem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasPressureUlcerStageAtTime -->
+
+    <owl:ObjectProperty rdf:about="#hasPressureUlcerStageAtTime">
+        <rdfs:label xml:lang="en"
+            >has pressure ulcer stage at time</rdfs:label>
+        <rdfs:domain rdf:resource="#PressureUlcerStageSequenceItem"/>
+        <rdfs:range rdf:resource="&time-entry;CalendarClockDescription"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasRiskAssessmentConducted -->
+
+    <owl:ObjectProperty rdf:about="#hasRiskAssessmentConducted">
+        <rdfs:label xml:lang="en"
+            >has risk assessment conducted</rdfs:label>
+        <rdfs:range rdf:resource="&ontologies;ActionsToReduceRisk#RiskAssessment"/>
+        <rdfs:domain rdf:resource="#Incident"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasSequenceOfPressureUlcerStages -->
+
+    <owl:ObjectProperty rdf:about="#hasSequenceOfPressureUlcerStages">
+        <rdfs:label xml:lang="en"
+            >has sequence of pressure ulcer stages</rdfs:label>
+        <rdfs:domain rdf:resource="#PressureUlcer"/>
+        <rdfs:range rdf:resource="#PressureUlcerStageSequenceItem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasTemporalUnitOfIntervalRepositioning -->
+
+    <owl:ObjectProperty rdf:about="#hasTemporalUnitOfIntervalRepositioning">
+        <rdfs:label xml:lang="en"
+            >has temporal unit of interval repositioning</rdfs:label>
+        <rdfs:domain rdf:resource="&ontologies;ActionsToReduceRisk#IntervalRepositioning"/>
+        <rdfs:range rdf:resource="&time-entry;TemporalUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#injures -->
+
+    <owl:ObjectProperty rdf:about="#injures">
+        <rdfs:label xml:lang="en">injures</rdfs:label>
+        <rdfs:domain rdf:resource="#Fall"/>
+        <owl:inverseOf rdf:resource="#isInjuredIn"/>
+        <rdfs:subPropertyOf rdf:resource="#isSufferedBy"/>
+        <rdfs:range rdf:resource="&ontologies;Person#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#involves -->
+
+    <owl:ObjectProperty rdf:about="#involves">
+        <rdfs:label xml:lang="en">involves</rdfs:label>
+        <rdfs:domain rdf:resource="#Fall"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#involvesContributingFactor -->
+
+    <owl:ObjectProperty rdf:about="#involvesContributingFactor">
+        <rdfs:label xml:lang="en"
+            >involves contributing factor</rdfs:label>
+        <rdfs:domain rdf:resource="#Fall"/>
+        <rdfs:subPropertyOf rdf:resource="#involves"/>
+        <owl:inverseOf rdf:resource="#isContributingFactorInvolvedInFall"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ontologies;Activity.owl#Activity"/>
+                    <rdf:Description rdf:about="&ontologies;BuildingStructure#BuildingStructure"/>
+                    <rdf:Description rdf:about="&ontologies;Clothing.owl#BedLinen"/>
+                    <rdf:Description rdf:about="&ontologies;Clothing.owl#Clothing"/>
+                    <rdf:Description rdf:about="&ontologies;Furniture.owl#PieceOfFurniture"/>
+                    <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#MedicalEquipment"/>
+                    <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+                    <rdf:Description rdf:about="&ontologies;Medication.owl#Medication"/>
+                    <rdf:Description rdf:about="&ontologies;Medication.owl#Treatment"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#involvesFailure -->
+
+    <owl:ObjectProperty rdf:about="#involvesFailure">
+        <rdfs:label xml:lang="en"
+            >involves failure</rdfs:label>
+        <rdfs:domain rdf:resource="#Fall"/>
+        <rdfs:range rdf:resource="#RestraintSafetyDeviceFailure"/>
+        <rdfs:subPropertyOf rdf:resource="#involves"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#involvesPersonPlayingRole -->
+
+    <owl:ObjectProperty rdf:about="#involvesPersonPlayingRole">
+        <rdfs:label xml:lang="en"
+            >involves person playing roles</rdfs:label>
+        <rdfs:domain rdf:resource="#Fall"/>
+        <rdfs:range rdf:resource="#PersonPlayingRole"/>
+        <rdfs:subPropertyOf rdf:resource="#involves"/>
+        <owl:inverseOf rdf:resource="#isPersonInvolvedInFall"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isAssistedByPersonPlayingRole -->
+
+    <owl:ObjectProperty rdf:about="#isAssistedByPersonPlayingRole">
+        <rdfs:label xml:lang="en"
+            >is assisted by person playing role</rdfs:label>
+        <rdfs:domain rdf:resource="#Fall"/>
+        <rdfs:range rdf:resource="#PersonPlayingRole"/>
+        <owl:inverseOf rdf:resource="#assists"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isCausedBy -->
+
+    <owl:ObjectProperty rdf:about="#isCausedBy">
+        <rdfs:label xml:lang="en">is caused by</rdfs:label>
+        <rdfs:domain rdf:resource="#Fall"/>
+        <owl:inverseOf rdf:resource="#causesAFall"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isCausedByContributingFactor -->
+
+    <owl:ObjectProperty rdf:about="#isCausedByContributingFactor">
+        <rdfs:label xml:lang="en"
+            >is caused by contributing factor</rdfs:label>
+        <rdfs:domain rdf:resource="#Fall"/>
+        <rdfs:subPropertyOf rdf:resource="#isCausedBy"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ontologies;Activity.owl#Activity"/>
+                    <rdf:Description rdf:about="&ontologies;BuildingStructure#BuildingStructure"/>
+                    <rdf:Description rdf:about="&ontologies;Clothing.owl#BedLinen"/>
+                    <rdf:Description rdf:about="&ontologies;Clothing.owl#Clothing"/>
+                    <rdf:Description rdf:about="&ontologies;Furniture.owl#PieceOfFurniture"/>
+                    <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#MedicalEquipment"/>
+                    <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+                    <rdf:Description rdf:about="&ontologies;Medication.owl#Medication"/>
+                    <rdf:Description rdf:about="&ontologies;Medication.owl#Treatment"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isCausedByFailure -->
+
+    <owl:ObjectProperty rdf:about="#isCausedByFailure">
+        <rdfs:label xml:lang="en"
+            >is caused by a failure</rdfs:label>
+        <rdfs:domain rdf:resource="#Fall"/>
+        <rdfs:range rdf:resource="#RestraintSafetyDeviceFailure"/>
+        <rdfs:subPropertyOf rdf:resource="#isCausedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isCausedByPersonPlayingRole -->
+
+    <owl:ObjectProperty rdf:about="#isCausedByPersonPlayingRole">
+        <rdfs:label xml:lang="en"
+            >is caused by person playing role</rdfs:label>
+        <rdfs:domain rdf:resource="#Fall"/>
+        <rdfs:range rdf:resource="#PersonPlayingRole"/>
+        <rdfs:subPropertyOf rdf:resource="#isCausedBy"/>
+        <owl:inverseOf rdf:resource="#isPersonWhoCauses"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isContributingFactorInvolvedInFall -->
+
+    <owl:ObjectProperty rdf:about="#isContributingFactorInvolvedInFall">
+        <rdfs:label xml:lang="en"
+            >is contributing factor involved in fall</rdfs:label>
+        <rdfs:range rdf:resource="#Fall"/>
+        <rdfs:subPropertyOf rdf:resource="#isInvolvedInFall"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ontologies;Activity.owl#Activity"/>
+                    <rdf:Description rdf:about="&ontologies;BuildingStructure#BuildingStructure"/>
+                    <rdf:Description rdf:about="&ontologies;Clothing.owl#BedLinen"/>
+                    <rdf:Description rdf:about="&ontologies;Clothing.owl#Clothing"/>
+                    <rdf:Description rdf:about="&ontologies;Furniture.owl#PieceOfFurniture"/>
+                    <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#MedicalEquipment"/>
+                    <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+                    <rdf:Description rdf:about="&ontologies;Medication.owl#Medication"/>
+                    <rdf:Description rdf:about="&ontologies;Medication.owl#Treatment"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isContributingFactorThatCauses -->
+
+    <owl:ObjectProperty rdf:about="#isContributingFactorThatCauses">
+        <rdfs:label xml:lang="en"
+            >is contributing factor that causes</rdfs:label>
+        <rdfs:range rdf:resource="#Fall"/>
+        <rdfs:subPropertyOf rdf:resource="#causesAFall"/>
+        <owl:inverseOf rdf:resource="#isCausedByContributingFactor"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ontologies;Activity.owl#Activity"/>
+                    <rdf:Description rdf:about="&ontologies;BuildingStructure#BuildingStructure"/>
+                    <rdf:Description rdf:about="&ontologies;Clothing.owl#BedLinen"/>
+                    <rdf:Description rdf:about="&ontologies;Clothing.owl#Clothing"/>
+                    <rdf:Description rdf:about="&ontologies;Furniture.owl#PieceOfFurniture"/>
+                    <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#MedicalEquipment"/>
+                    <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+                    <rdf:Description rdf:about="&ontologies;Medication.owl#Medication"/>
+                    <rdf:Description rdf:about="&ontologies;Medication.owl#Treatment"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isDetectedAt -->
+
+    <owl:ObjectProperty rdf:about="#isDetectedAt">
+        <rdfs:label xml:lang="en">is detected at</rdfs:label>
+        <rdfs:domain rdf:resource="#PressureUlcer"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ontologies;IncidentCharacteristic#Detection"/>
+                    <rdf:Description rdf:about="&time-entry;CalendarClockDescription"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isDetectedBy -->
+
+    <owl:ObjectProperty rdf:about="#isDetectedBy">
+        <rdfs:label xml:lang="en">is detected by</rdfs:label>
+        <rdfs:range rdf:resource="&ontologies;Detection.owl#DetectionProcess"/>
+        <rdfs:domain rdf:resource="#Incident"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isFailureInvolvedInFall -->
+
+    <owl:ObjectProperty rdf:about="#isFailureInvolvedInFall">
+        <rdfs:label xml:lang="en"
+            >is failure involved in fall</rdfs:label>
+        <rdfs:range rdf:resource="#Fall"/>
+        <rdfs:domain rdf:resource="#RestraintSafetyDeviceFailure"/>
+        <owl:inverseOf rdf:resource="#involvesFailure"/>
+        <rdfs:subPropertyOf rdf:resource="#isInvolvedInFall"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isFailureThatCauses -->
+
+    <owl:ObjectProperty rdf:about="#isFailureThatCauses">
+        <rdfs:label xml:lang="en"
+            >is failure that causes</rdfs:label>
+        <rdfs:range rdf:resource="#Fall"/>
+        <rdfs:domain rdf:resource="#RestraintSafetyDeviceFailure"/>
+        <rdfs:subPropertyOf rdf:resource="#causesAFall"/>
+        <owl:inverseOf rdf:resource="#isCausedByFailure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isFromCountry -->
+
+    <owl:ObjectProperty rdf:about="#isFromCountry">
+        <rdfs:label xml:lang="en">is from country</rdfs:label>
+        <rdfs:range rdf:resource="&Countries;Country"/>
+        <rdfs:domain rdf:resource="&ontologies;Person#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isInjuredIn -->
+
+    <owl:ObjectProperty rdf:about="#isInjuredIn">
+        <rdfs:label xml:lang="en">is injured in</rdfs:label>
+        <rdfs:range rdf:resource="#Fall"/>
+        <rdfs:subPropertyOf rdf:resource="#suffers"/>
+        <rdfs:domain rdf:resource="&ontologies;Person#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isInvolvedInFall -->
+
+    <owl:ObjectProperty rdf:about="#isInvolvedInFall">
+        <rdfs:label xml:lang="en"
+            >is involved in fall</rdfs:label>
+        <rdfs:range rdf:resource="#Fall"/>
+        <owl:inverseOf rdf:resource="#involves"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isObjectOfRiskAssessment -->
+
+    <owl:ObjectProperty rdf:about="#isObjectOfRiskAssessment">
+        <rdfs:label xml:lang="en"
+            >is object of risk assessment</rdfs:label>
+        <rdfs:range rdf:resource="&ontologies;ActionsToReduceRisk#RiskAssessment"/>
+        <owl:inverseOf rdf:resource="#isRiskAssessmentPerformedTo"/>
+        <rdfs:domain rdf:resource="&ontologies;Person#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isObservedByPersonPlayingRole -->
+
+    <owl:ObjectProperty rdf:about="#isObservedByPersonPlayingRole">
+        <rdfs:label xml:lang="en"
+            >is observed by person playing role</rdfs:label>
+        <rdfs:domain rdf:resource="#Fall"/>
+        <rdfs:range rdf:resource="#PersonPlayingRole"/>
+        <owl:inverseOf rdf:resource="#observes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isPersonInvolvedInFall -->
+
+    <owl:ObjectProperty rdf:about="#isPersonInvolvedInFall">
+        <rdfs:label xml:lang="en"
+            >is person involved in fall</rdfs:label>
+        <rdfs:range rdf:resource="#Fall"/>
+        <rdfs:domain rdf:resource="#PersonPlayingRole"/>
+        <rdfs:subPropertyOf rdf:resource="#isInvolvedInFall"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isPersonWhoCauses -->
+
+    <owl:ObjectProperty rdf:about="#isPersonWhoCauses">
+        <rdfs:label xml:lang="en"
+            >is person who causes</rdfs:label>
+        <rdfs:range rdf:resource="#Fall"/>
+        <rdfs:domain rdf:resource="#PersonPlayingRole"/>
+        <rdfs:subPropertyOf rdf:resource="#causesAFall"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isPersonifiedBy -->
+
+    <owl:ObjectProperty rdf:about="#isPersonifiedBy">
+        <rdfs:label xml:lang="en"
+            >is personified by</rdfs:label>
+        <rdfs:domain rdf:resource="#PersonPlayingRole"/>
+        <rdfs:range rdf:resource="&ontologies;Person#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isPlayedBy -->
+
+    <owl:ObjectProperty rdf:about="#isPlayedBy">
+        <rdfs:label xml:lang="en">is played by</rdfs:label>
+        <rdfs:range rdf:resource="#PersonPlayingRole"/>
+        <rdfs:domain rdf:resource="&objectrole;Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isPressureUlcerSufferedBy -->
+
+    <owl:ObjectProperty rdf:about="#isPressureUlcerSufferedBy">
+        <rdfs:label xml:lang="en"
+            >is pressure ulcer suffered by</rdfs:label>
+        <rdfs:domain rdf:resource="#PressureUlcer"/>
+        <rdfs:subPropertyOf rdf:resource="#isSufferedBy"/>
+        <owl:inverseOf rdf:resource="#suffersFromPressureUlcer"/>
+        <rdfs:range rdf:resource="&ontologies;Person#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isRiskAssessmentPerformedAt -->
+
+    <owl:ObjectProperty rdf:about="#isRiskAssessmentPerformedAt">
+        <rdfs:label xml:lang="en"
+            >is risk assessment perfomed at</rdfs:label>
+        <rdfs:domain rdf:resource="&ontologies;ActionsToReduceRisk#RiskAssessment"/>
+        <rdfs:range rdf:resource="&time-entry;CalendarClockDescription"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isRiskAssessmentPerformedByPersonPlayingRole -->
+
+    <owl:ObjectProperty rdf:about="#isRiskAssessmentPerformedByPersonPlayingRole">
+        <rdfs:label xml:lang="en"
+            >is risk assessment perfomed by person playing role</rdfs:label>
+        <rdfs:domain rdf:resource="&ontologies;ActionsToReduceRisk#RiskAssessment"/>
+        <rdfs:range rdf:resource="#PersonPlayingRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isRiskAssessmentPerformedTo -->
+
+    <owl:ObjectProperty rdf:about="#isRiskAssessmentPerformedTo">
+        <rdfs:label xml:lang="en"
+            >is risk assessment perfomed to</rdfs:label>
+        <rdfs:domain rdf:resource="&ontologies;ActionsToReduceRisk#RiskAssessment"/>
+        <rdfs:range rdf:resource="&ontologies;Person#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isSkinInspectionPerformedAtTime -->
+
+    <owl:ObjectProperty rdf:about="#isSkinInspectionPerformedAtTime">
+        <rdfs:label xml:lang="en"
+            >is sking inspection perfomed at time</rdfs:label>
+        <rdfs:domain rdf:resource="&ontologies;ActionsToReduceRisk#SkinInspection"/>
+        <rdfs:range rdf:resource="&time-entry;CalendarClockDescription"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isSkinInspectionPerformedTo -->
+
+    <owl:ObjectProperty rdf:about="#isSkinInspectionPerformedTo">
+        <rdfs:label xml:lang="en"
+            >is sking inspection perfomed to</rdfs:label>
+        <rdfs:domain rdf:resource="&ontologies;ActionsToReduceRisk#SkinInspection"/>
+        <rdfs:range rdf:resource="&ontologies;Person#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isSufferedBy -->
+
+    <owl:ObjectProperty rdf:about="#isSufferedBy">
+        <rdfs:label xml:lang="en">is suffered by</rdfs:label>
+        <rdfs:domain rdf:resource="#Incident"/>
+        <owl:inverseOf rdf:resource="#suffers"/>
+        <rdfs:range rdf:resource="&ontologies;Person#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isTheDirectWorseningOfPressureUlcer -->
+
+    <owl:ObjectProperty rdf:about="#isTheDirectWorseningOfPressureUlcer">
+        <rdfs:label xml:lang="en"
+            >is the direct worsening of pressure ulcer</rdfs:label>
+        <rdfs:domain rdf:resource="#PressureUlcer"/>
+        <rdfs:range rdf:resource="#PressureUlcer"/>
+        <rdfs:subPropertyOf rdf:resource="#isTheWorseningOfPressureUlcer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isTheWorseningOfPressureUlcer -->
+
+    <owl:ObjectProperty rdf:about="#isTheWorseningOfPressureUlcer">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en"
+            >is the worsening of pressure ulcer</rdfs:label>
+        <rdfs:range rdf:resource="#PressureUlcer"/>
+        <rdfs:domain rdf:resource="#PressureUlcer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#observes -->
+
+    <owl:ObjectProperty rdf:about="#observes">
+        <rdfs:label xml:lang="en">observes</rdfs:label>
+        <rdfs:range rdf:resource="#Fall"/>
+        <rdfs:domain rdf:resource="#PersonPlayingRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#occursAtHospital -->
+
+    <owl:ObjectProperty rdf:about="#occursAtHospital">
+        <rdfs:label xml:lang="en"
+            >occurs at hospital</rdfs:label>
+        <rdfs:domain rdf:resource="#Incident"/>
+        <rdfs:range rdf:resource="&ontologies;Place#HospitalBuilding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#occursAtTime -->
+
+    <owl:ObjectProperty rdf:about="#occursAtTime">
+        <rdfs:label xml:lang="en">occurs at time</rdfs:label>
+        <rdfs:domain rdf:resource="#Incident"/>
+        <rdfs:range rdf:resource="&time-entry;CalendarClockDescription"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#occursInCountry -->
+
+    <owl:ObjectProperty rdf:about="#occursInCountry">
+        <rdfs:label xml:lang="en"
+            >occurs in country</rdfs:label>
+        <rdfs:range rdf:resource="&Countries;Country"/>
+        <rdfs:domain rdf:resource="#Incident"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#performsRiskAssessment -->
+
+    <owl:ObjectProperty rdf:about="#performsRiskAssessment">
+        <rdfs:label xml:lang="en"
+            >perfoms risk assessment</rdfs:label>
+        <rdfs:range rdf:resource="&ontologies;ActionsToReduceRisk#RiskAssessment"/>
+        <rdfs:domain rdf:resource="#PersonPlayingRole"/>
+        <owl:inverseOf rdf:resource="#isRiskAssessmentPerformedByPersonPlayingRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#personifies -->
+
+    <owl:ObjectProperty rdf:about="#personifies">
+        <rdfs:label xml:lang="en">personifies</rdfs:label>
+        <rdfs:range rdf:resource="#PersonPlayingRole"/>
+        <owl:inverseOf rdf:resource="#isPersonifiedBy"/>
+        <rdfs:domain rdf:resource="&ontologies;Person#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#pressureUlcerLocatedAt -->
+
+    <owl:ObjectProperty rdf:about="#pressureUlcerLocatedAt">
+        <rdfs:label xml:lang="en"
+            >pressure ulcer located at</rdfs:label>
+        <rdfs:range rdf:resource="&ontologies;Anatomy#HumanBodyAnatomicalPart"/>
+        <rdfs:domain rdf:resource="#PressureUlcer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#pressureUlcerOccursAtTime -->
+
+    <owl:ObjectProperty rdf:about="#pressureUlcerOccursAtTime">
+        <rdfs:label xml:lang="en"
+            >pressure ulcer occurs at time</rdfs:label>
+        <rdfs:domain rdf:resource="#PressureUlcer"/>
+        <rdfs:subPropertyOf rdf:resource="#occursAtTime"/>
+        <rdfs:range rdf:resource="&time-entry;CalendarClockDescription"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#pressureUlcerSideLocation -->
+
+    <owl:ObjectProperty rdf:about="#pressureUlcerSideLocation">
+        <rdfs:label xml:lang="en"
+            >pressure ulcer side location</rdfs:label>
+        <rdfs:range rdf:resource="&ontologies;Anatomy#HumanBodySide"/>
+        <rdfs:domain rdf:resource="#PressureUlcer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#resultsInHarm -->
+
+    <owl:ObjectProperty rdf:about="#resultsInHarm">
+        <rdfs:label xml:lang="en">results in harm</rdfs:label>
+        <rdfs:range rdf:resource="&ontologies;PatientOutcomes#Harm"/>
+        <rdfs:domain rdf:resource="#Incident"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#resultsInInjury -->
+
+    <owl:ObjectProperty rdf:about="#resultsInInjury">
+        <rdfs:label xml:lang="en"
+            >results in injury</rdfs:label>
+        <rdfs:range rdf:resource="&ontologies;PatientOutcomes#Injury"/>
+        <rdfs:domain rdf:resource="#Fall"/>
+        <rdfs:subPropertyOf rdf:resource="#resultsInHarm"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#suffers -->
+
+    <owl:ObjectProperty rdf:about="#suffers">
+        <rdfs:label xml:lang="en">suffers</rdfs:label>
+        <rdfs:range rdf:resource="#Incident"/>
+        <rdfs:domain rdf:resource="&ontologies;Person#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#suffersFromPressureUlcer -->
+
+    <owl:ObjectProperty rdf:about="#suffersFromPressureUlcer">
+        <rdfs:label xml:lang="en"
+            >suffers from pressure ulcer</rdfs:label>
+        <rdfs:range rdf:resource="#PressureUlcer"/>
+        <rdfs:subPropertyOf rdf:resource="#suffers"/>
+        <rdfs:domain rdf:resource="&ontologies;Person#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#withRole -->
+
+    <owl:ObjectProperty rdf:about="#withRole">
+        <rdfs:label xml:lang="en">with role</rdfs:label>
+        <rdfs:domain rdf:resource="#PersonPlayingRole"/>
+        <rdfs:range rdf:resource="&objectrole;Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#hasPrimaryDiagnosis -->
+
+    <owl:ObjectProperty rdf:about="&ontologies;Person#hasPrimaryDiagnosis"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasRiskAssessmentPolicy -->
+
+    <owl:DatatypeProperty rdf:about="#hasRiskAssessmentPolicy">
+        <rdfs:label xml:lang="en"
+            >has risk assessment policy</rdfs:label>
+        <rdfs:domain rdf:resource="#CareSetting"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasRiskAssessmentPolicyForFalls -->
+
+    <owl:DatatypeProperty rdf:about="#hasRiskAssessmentPolicyForFalls">
+        <rdfs:label xml:lang="en"
+            >has risk assessment policy for falls</rdfs:label>
+        <rdfs:domain rdf:resource="#CareSetting"/>
+        <rdfs:subPropertyOf rdf:resource="#hasRiskAssessmentPolicy"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasRiskAssessmentPolicyForPressureUlcer -->
+
+    <owl:DatatypeProperty rdf:about="#hasRiskAssessmentPolicyForPressureUlcer">
+        <rdfs:label xml:lang="en"
+            >has risk assessment policy for pressure ulcer</rdfs:label>
+        <rdfs:domain rdf:resource="#CareSetting"/>
+        <rdfs:subPropertyOf rdf:resource="#hasRiskAssessmentPolicy"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hasValueOfIntervalRepositioning -->
+
+    <owl:DatatypeProperty rdf:about="#hasValueOfIntervalRepositioning">
+        <rdfs:label xml:lang="en"
+            >has value of interval repositioning</rdfs:label>
+        <rdfs:domain rdf:resource="&ontologies;ActionsToReduceRisk#IntervalRepositioning"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#isAControlledFall -->
+
+    <owl:DatatypeProperty rdf:about="#isAControlledFall">
+        <rdfs:label xml:lang="en"
+            >is controlled fall</rdfs:label>
+        <rdfs:domain rdf:resource="#Fall"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#mappingICD -->
+
+    <owl:DatatypeProperty rdf:about="#mappingICD">
+        <rdfs:label xml:lang="en">mapping ICD</rdfs:label>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#mappingICF -->
+
+    <owl:DatatypeProperty rdf:about="#mappingICF">
+        <rdfs:label xml:lang="en">mapping ICF</rdfs:label>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#mappingSNOMED -->
+
+    <owl:DatatypeProperty rdf:about="#mappingSNOMED">
+        <rdfs:label xml:lang="en">mapping SNOMED</rdfs:label>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country -->
+
+    <owl:Class rdf:about="&Countries;Country"/>
+    
+
+
+    <!-- http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#ISO3166DefinedCountry -->
+
+    <owl:Class rdf:about="&Countries;ISO3166DefinedCountry"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/ActionsToReduceRisk#FallMinimisationStrategy -->
+
+    <owl:Class rdf:about="&ontologies;ActionsToReduceRisk#FallMinimisationStrategy"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/ActionsToReduceRisk#IntervalRepositioning -->
+
+    <owl:Class rdf:about="&ontologies;ActionsToReduceRisk#IntervalRepositioning"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/ActionsToReduceRisk#MinimisationStrategy -->
+
+    <owl:Class rdf:about="&ontologies;ActionsToReduceRisk#MinimisationStrategy"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/ActionsToReduceRisk#PressureUlcerMinimisationStrategy -->
+
+    <owl:Class rdf:about="&ontologies;ActionsToReduceRisk#PressureUlcerMinimisationStrategy"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/ActionsToReduceRisk#RiskAssessment -->
+
+    <owl:Class rdf:about="&ontologies;ActionsToReduceRisk#RiskAssessment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontologies;ActionsToReduceRisk#hasRiskAssessmentResult"/>
+                <owl:onClass rdf:resource="&ontologies;ActionsToReduceRisk#RiskAssessmentResult"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/ActionsToReduceRisk#RiskAssessmentResult -->
+
+    <owl:Class rdf:about="&ontologies;ActionsToReduceRisk#RiskAssessmentResult"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/ActionsToReduceRisk#RiskAssessmentTool -->
+
+    <owl:Class rdf:about="&ontologies;ActionsToReduceRisk#RiskAssessmentTool"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/ActionsToReduceRisk#SkinInspection -->
+
+    <owl:Class rdf:about="&ontologies;ActionsToReduceRisk#SkinInspection"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Activity.owl#Activity -->
+
+    <owl:Class rdf:about="&ontologies;Activity.owl#Activity"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/AmelioratingActions.owl#AmelioratingAction -->
+
+    <owl:Class rdf:about="&ontologies;AmelioratingActions.owl#AmelioratingAction"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Anatomy#HumanBodyAnatomicalPart -->
+
+    <owl:Class rdf:about="&ontologies;Anatomy#HumanBodyAnatomicalPart"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Anatomy#HumanBodySide -->
+
+    <owl:Class rdf:about="&ontologies;Anatomy#HumanBodySide"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#BuildingStructure -->
+
+    <owl:Class rdf:about="&ontologies;BuildingStructure#BuildingStructure"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/BuildingStructure#FloorSurface -->
+
+    <owl:Class rdf:about="&ontologies;BuildingStructure#FloorSurface"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Clothing.owl#BedLinen -->
+
+    <owl:Class rdf:about="&ontologies;Clothing.owl#BedLinen">
+        <owl:disjointWith rdf:resource="&ontologies;Place#HospitalArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Clothing.owl#Clothing -->
+
+    <owl:Class rdf:about="&ontologies;Clothing.owl#Clothing"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Detection.owl#DetectionProcess -->
+
+    <owl:Class rdf:about="&ontologies;Detection.owl#DetectionProcess"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Furniture.owl#PieceOfFurniture -->
+
+    <owl:Class rdf:about="&ontologies;Furniture.owl#PieceOfFurniture">
+        <owl:disjointWith rdf:resource="&ontologies;Place#HospitalArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#MedicalEquipment -->
+
+    <owl:Class rdf:about="&ontologies;HospitalEquipment.owl#MedicalEquipment">
+        <owl:disjointWith rdf:resource="&ontologies;Place#HospitalArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/HospitalEquipment.owl#PathophysiologyFactor -->
+
+    <owl:Class rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/IncidentCharacteristic#Detection -->
+
+    <owl:Class rdf:about="&ontologies;IncidentCharacteristic#Detection"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Medication.owl#Medication -->
+
+    <owl:Class rdf:about="&ontologies;Medication.owl#Medication"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Medication.owl#Treatment -->
+
+    <owl:Class rdf:about="&ontologies;Medication.owl#Treatment"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/MitigatingFactors.owl#MitigatingFactor -->
+
+    <owl:Class rdf:about="&ontologies;MitigatingFactors.owl#MitigatingFactor"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/OrganizationalOutcomes#OrganizationalOutcome -->
+
+    <owl:Class rdf:about="&ontologies;OrganizationalOutcomes#OrganizationalOutcome"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientCharacteristics.owl#PrimaryDiagnosis -->
+
+    <owl:Class rdf:about="&ontologies;PatientCharacteristics.owl#PrimaryDiagnosis"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientOutcomes#DegreeOfHarm -->
+
+    <owl:Class rdf:about="&ontologies;PatientOutcomes#DegreeOfHarm"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientOutcomes#Harm -->
+
+    <owl:Class rdf:about="&ontologies;PatientOutcomes#Harm"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientOutcomes#Injury -->
+
+    <owl:Class rdf:about="&ontologies;PatientOutcomes#Injury"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientOutcomes#PressureUlcerStage -->
+
+    <owl:Class rdf:about="&ontologies;PatientOutcomes#PressureUlcerStage"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#AlarmMatFailure -->
+
+    <owl:Class rdf:about="#AlarmMatFailure">
+        <rdfs:label xml:lang="en"
+            >Alarm mat failure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#RestraintSafetyDeviceFailure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#BedrailsFailure -->
+
+    <owl:Class rdf:about="#BedrailsFailure">
+        <rdfs:label xml:lang="en"
+            >Bedrails failure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#RestraintSafetyDeviceFailure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#BedrailsLeftDown -->
+
+    <owl:Class rdf:about="#BedrailsLeftDown">
+        <rdfs:label xml:lang="en"
+            >Bedrails left down</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#BedrailsFailure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#Blood-BloodProduct -->
+
+    <owl:Class rdf:about="#Blood-BloodProduct">
+        <rdfs:label xml:lang="en"
+            >Blood - blood product</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Incident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#CallBellFailure -->
+
+    <owl:Class rdf:about="#CallBellFailure">
+        <rdfs:label xml:lang="en"
+            >Call bell failure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#RestraintSafetyDeviceFailure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#CareSetting -->
+
+    <owl:Class rdf:about="#CareSetting">
+        <rdfs:label xml:lang="en">Care setting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasRiskAssessmentPolicyForPressureUlcer"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#ChemicalRestraintFailure -->
+
+    <owl:Class rdf:about="#ChemicalRestraintFailure">
+        <rdfs:label xml:lang="en"
+            >Chemical restraint failure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#RestraintFailure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#ClinicalAdministration -->
+
+    <owl:Class rdf:about="#ClinicalAdministration">
+        <rdfs:label xml:lang="en"
+            >Clinical administration</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Incident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#ClinicalProcess -->
+
+    <owl:Class rdf:about="#ClinicalProcess">
+        <rdfs:label xml:lang="en"
+            >Clinical process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Incident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#Collapse -->
+
+    <owl:Class rdf:about="#Collapse">
+        <rdfs:label xml:lang="en">Collapse</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Fall"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasFallMechanism"/>
+                        <owl:hasValue rdf:resource="#collapse"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="#Fall"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#CommunityCareFacility -->
+
+    <owl:Class rdf:about="#CommunityCareFacility">
+        <rdfs:label xml:lang="en"
+            >Community care facility</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#CareSetting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#CommunityPharmacy -->
+
+    <owl:Class rdf:about="#CommunityPharmacy">
+        <rdfs:label xml:lang="en"
+            >Community pharmacy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#CareSetting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#ConfirmedStatusOfFall -->
+
+    <owl:Class rdf:about="#ConfirmedStatusOfFall">
+        <rdfs:label xml:lang="en"
+            >Confirmed status of fall</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#suspectedFall"/>
+                    <rdf:Description rdf:about="#confirmedFall"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#DentalCare -->
+
+    <owl:Class rdf:about="#DentalCare">
+        <rdfs:label xml:lang="en">Dental care</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#CareSetting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#DisabilityService -->
+
+    <owl:Class rdf:about="#DisabilityService">
+        <rdfs:label xml:lang="en"
+            >Disability service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#CareSetting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#Documentation -->
+
+    <owl:Class rdf:about="#Documentation">
+        <rdfs:label xml:lang="en">Documentation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Incident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#Fall -->
+
+    <owl:Class rdf:about="#Fall">
+        <rdfs:label xml:lang="en">Fall</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Incident"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasFallMechanism"/>
+                        <owl:allValuesFrom rdf:resource="#FallMechanism"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasFallMechanism"/>
+                        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#FallHeight -->
+
+    <owl:Class rdf:about="#FallHeight">
+        <rdfs:label xml:lang="en">Fall height</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#fallFromAHeight"/>
+                    <rdf:Description rdf:about="#fallOnTheSameLevel"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#FallMechanism -->
+
+    <owl:Class rdf:about="#FallMechanism">
+        <rdfs:label xml:lang="en">Fall mechanism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#FinalHealthCareFacilityStay -->
+
+    <owl:Class rdf:about="#FinalHealthCareFacilityStay">
+        <rdfs:label xml:lang="en"
+            >Final health care facility stay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#HealthCareFacilityStay"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasNextHealthCareFacilityStay"/>
+                        <owl:allValuesFrom rdf:resource="#HealthCareFacilityStay"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasNextHealthCareFacilityStay"/>
+                        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:maxCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en"
+            >This class cames from the &quot;N-ary Relation: Using Lists&quot; ontology design pattern reuse.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#FinalPressureUlcerStageSequenceItem -->
+
+    <owl:Class rdf:about="#FinalPressureUlcerStageSequenceItem">
+        <rdfs:label xml:lang="en"
+            >Final pressure ulcer stage sequence item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PressureUlcerStageSequenceItem"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasNextPressureUlcerStageSequenceItem"/>
+                        <owl:allValuesFrom rdf:resource="#PressureUlcerStageSequenceItem"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasNextPressureUlcerStageSequenceItem"/>
+                        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:maxCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en"
+            >This class cames from the &quot;N-ary Relation: Using Lists&quot; ontology design pattern reuse.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#Gender -->
+
+    <owl:Class rdf:about="#Gender"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#HasMinimisationStrategyToPreventItRelation -->
+
+    <owl:Class rdf:about="#HasMinimisationStrategyToPreventItRelation">
+        <rdfs:label xml:lang="en"
+            >Has minimisation strategy to prevent it relation</rdfs:label>
+        <rdfs:comment xml:lang="en"
+            >This class cames from the &quot;N-ary Relation: New Class&quot; ontology design pattern reuse.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#HealCareAssociatedInfection -->
+
+    <owl:Class rdf:about="#HealCareAssociatedInfection">
+        <rdfs:label xml:lang="en"
+            >Heal care associated infection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Incident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#HealthCareFacilityStay -->
+
+    <owl:Class rdf:about="#HealthCareFacilityStay">
+        <rdfs:label xml:lang="en"
+            >Health care facility stay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf rdf:resource="&time-entry;Interval"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasNextHealthCareFacilityStay"/>
+                        <owl:allValuesFrom rdf:resource="#HealthCareFacilityStay"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasNextHealthCareFacilityStay"/>
+                        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontologies;Person#hasPrimaryDiagnosis"/>
+                <owl:onClass rdf:resource="&ontologies;PatientCharacteristics.owl#PrimaryDiagnosis"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en"
+            >This class cames from the &quot;N-ary Relation: Using Lists&quot; ontology design pattern reuse.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#HipProtectorFailure -->
+
+    <owl:Class rdf:about="#HipProtectorFailure">
+        <rdfs:label xml:lang="en"
+            >Hip protector failure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#RestraintSafetyDeviceFailure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#HomeCare -->
+
+    <owl:Class rdf:about="#HomeCare">
+        <rdfs:label xml:lang="en">Home care</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#CareSetting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#Hospital -->
+
+    <owl:Class rdf:about="#Hospital">
+        <rdfs:label xml:lang="en">Hospital</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#CareSetting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#HumanRestraintFailure -->
+
+    <owl:Class rdf:about="#HumanRestraintFailure">
+        <rdfs:label xml:lang="en"
+            >Human restraint failure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#RestraintFailure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#ImpactFloormatFailure -->
+
+    <owl:Class rdf:about="#ImpactFloormatFailure">
+        <rdfs:label xml:lang="en"
+            >Impact floormat failure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#RestraintSafetyDeviceFailure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#Incident -->
+
+    <owl:Class rdf:about="#Incident">
+        <rdfs:label xml:lang="en">Incident</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#occursAtTime"/>
+                <owl:onClass rdf:resource="&time-entry;CalendarClockDescription"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#resultsInHarm"/>
+                <owl:onClass rdf:resource="&ontologies;PatientOutcomes#Harm"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasRiskAssessmentConducted"/>
+                <owl:onClass rdf:resource="&ontologies;ActionsToReduceRisk#RiskAssessment"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#occursAtHospital"/>
+                <owl:onClass rdf:resource="&ontologies;Place#HospitalBuilding"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#occursInCountry"/>
+                <owl:onClass rdf:resource="&Countries;Country"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasPersonReporting"/>
+                <owl:onClass rdf:resource="#PersonPlayingRole"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#Infrastructure-Building-Fixture -->
+
+    <owl:Class rdf:about="#Infrastructure-Building-Fixture">
+        <rdfs:label xml:lang="en"
+            >Infrastructure - building - fixture</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Incident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#LossOfBalance -->
+
+    <owl:Class rdf:about="#LossOfBalance">
+        <rdfs:label xml:lang="en">Loss of balance</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Fall"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasFallMechanism"/>
+                        <owl:hasValue rdf:resource="#lossOfBalance"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="#Fall"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#MedicalDevice-Equipment -->
+
+    <owl:Class rdf:about="#MedicalDevice-Equipment">
+        <rdfs:label xml:lang="en"
+            >Medical device - equipment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Incident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#Medication-IVFluid -->
+
+    <owl:Class rdf:about="#Medication-IVFluid">
+        <rdfs:label xml:lang="en"
+            >Medication - IV fluid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Incident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#MentalHealthService -->
+
+    <owl:Class rdf:about="#MentalHealthService">
+        <rdfs:label xml:lang="en"
+            >Mental health service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#CareSetting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#MobilityAidFailure -->
+
+    <owl:Class rdf:about="#MobilityAidFailure">
+        <rdfs:label xml:lang="en"
+            >Mobility aid failure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#RestraintSafetyDeviceFailure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#NursingFacility -->
+
+    <owl:Class rdf:about="#NursingFacility">
+        <rdfs:label xml:lang="en"
+            >Nursing facility</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#CareSetting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#Nutrition -->
+
+    <owl:Class rdf:about="#Nutrition">
+        <rdfs:label xml:lang="en">Nutrition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Incident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#Oxigen-Gas-Vapour -->
+
+    <owl:Class rdf:about="#Oxigen-Gas-Vapour">
+        <rdfs:label xml:lang="en"
+            >Oxigen - gas - vapour</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Incident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#Pathology-Laboratory -->
+
+    <owl:Class rdf:about="#Pathology-Laboratory">
+        <rdfs:label xml:lang="en"
+            >Pathology - laboratory</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Incident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#PatientAccident -->
+
+    <owl:Class rdf:about="#PatientAccident">
+        <rdfs:label xml:lang="en"
+            >Patient accident</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Incident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#PatientBehaviour -->
+
+    <owl:Class rdf:about="#PatientBehaviour">
+        <rdfs:label xml:lang="en"
+            >Patient behaviour</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Incident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#PersonPlayingRole -->
+
+    <owl:Class rdf:about="#PersonPlayingRole">
+        <rdfs:label xml:lang="en"
+            >Person playing role</rdfs:label>
+        <rdfs:comment xml:lang="en"
+            >This class cames from the &quot;N-ary Relation: New Class&quot; ontology design pattern reuse.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#PersonalAlertFailure -->
+
+    <owl:Class rdf:about="#PersonalAlertFailure">
+        <rdfs:label xml:lang="en"
+            >Personal alert failure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#RestraintSafetyDeviceFailure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#PhysicalRestraintFailure -->
+
+    <owl:Class rdf:about="#PhysicalRestraintFailure">
+        <rdfs:label xml:lang="en"
+            >Physical restraint failure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#RestraintFailure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#PressureUlcer -->
+
+    <owl:Class rdf:about="#PressureUlcer">
+        <rdfs:label xml:lang="en">Pressure ulcer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Incident"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&time-entry;CalendarClockDescription"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#isDetectedAt"/>
+                        <owl:onClass rdf:resource="&ontologies;IncidentCharacteristic#Detection"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isTheDirectWorseningOfPressureUlcer"/>
+                <owl:onClass rdf:resource="#PressureUlcer"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasDocumentedSkinInspection"/>
+                <owl:onClass rdf:resource="&ontologies;ActionsToReduceRisk#SkinInspection"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#PressureUlcerStageSequenceItem -->
+
+    <owl:Class rdf:about="#PressureUlcerStageSequenceItem">
+        <rdfs:label xml:lang="en"
+            >Pressure ulcer stage sequence item</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasNextPressureUlcerStageSequenceItem"/>
+                        <owl:allValuesFrom rdf:resource="#PressureUlcerStageSequenceItem"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasNextPressureUlcerStageSequenceItem"/>
+                        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasPressureUlcerStage"/>
+                <owl:allValuesFrom rdf:resource="&ontologies;PatientOutcomes#PressureUlcerStage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en"
+            >This class cames from the &quot;N-ary Relation: Using Lists&quot; ontology design pattern reuse.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#PrimaryMedicalCare -->
+
+    <owl:Class rdf:about="#PrimaryMedicalCare">
+        <rdfs:label xml:lang="en"
+            >Primary medical care</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#CareSetting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#Resource-OrganizationalManagement -->
+
+    <owl:Class rdf:about="#Resource-OrganizationalManagement">
+        <rdfs:label xml:lang="en"
+            >Resource - organizational management</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Incident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#RestraintFailure -->
+
+    <owl:Class rdf:about="#RestraintFailure">
+        <rdfs:label xml:lang="en"
+            >Restraint failure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#RestraintSafetyDeviceFailure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#RestraintSafetyDeviceFailure -->
+
+    <owl:Class rdf:about="#RestraintSafetyDeviceFailure">
+        <rdfs:label xml:lang="en"
+            >Restraint safety device failure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#SafetyHelmetFailure -->
+
+    <owl:Class rdf:about="#SafetyHelmetFailure">
+        <rdfs:label xml:lang="en"
+            >Safety helmet failure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#RestraintSafetyDeviceFailure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#Slip -->
+
+    <owl:Class rdf:about="#Slip">
+        <rdfs:label xml:lang="en">Slip</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Fall"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasFallMechanism"/>
+                        <owl:hasValue rdf:resource="#slip"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="#Fall"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#TransportService -->
+
+    <owl:Class rdf:about="#TransportService">
+        <rdfs:label xml:lang="en"
+            >Transport service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#CareSetting"/>
+        <rdfs:comment xml:lang="en"
+            >Transport Services (Including Ambulances)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#Trip -->
+
+    <owl:Class rdf:about="#Trip">
+        <rdfs:label xml:lang="en">Stumble</rdfs:label>
+        <rdfs:label xml:lang="en">Trip</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Fall"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasFallMechanism"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="#stumble"/>
+                                    <rdf:Description rdf:about="#trip"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="#Fall"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#Gender -->
+
+    <owl:Class rdf:about="&ontologies;Person#Gender"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#Patient -->
+
+    <owl:Class rdf:about="&ontologies;Person#Patient"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Person#Person -->
+
+    <owl:Class rdf:about="&ontologies;Person#Person"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Place#HospitalArea -->
+
+    <owl:Class rdf:about="&ontologies;Place#HospitalArea"/>
+    
+
+
+    <!-- http://www.ICPS/ontologies/Place#HospitalBuilding -->
+
+    <owl:Class rdf:about="&ontologies;Place#HospitalBuilding"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role -->
+
+    <owl:Class rdf:about="&objectrole;Role"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time-entry#CalendarClockDescription -->
+
+    <owl:Class rdf:about="&time-entry;CalendarClockDescription"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time-entry#Interval -->
+
+    <owl:Class rdf:about="&time-entry;Interval"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time-entry#TemporalUnit -->
+
+    <owl:Class rdf:about="&time-entry;TemporalUnit"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#alarmMatFaulty -->
+
+    <owl:Thing rdf:about="#alarmMatFaulty">
+        <rdf:type rdf:resource="#AlarmMatFailure"/>
+        <rdfs:label xml:lang="en"
+            >alarm mat faulty</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#alarmMatNotConnected -->
+
+    <PatientSafetyIncident:AlarmMatFailure rdf:about="#alarmMatNotConnected">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >alarm mat not connected</rdfs:label>
+    </PatientSafetyIncident:AlarmMatFailure>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#avoidedByPatient -->
+
+    <owl:Thing rdf:about="#avoidedByPatient">
+        <rdf:type rdf:resource="#AlarmMatFailure"/>
+        <rdfs:label xml:lang="en"
+            >avoided by patient</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#bedRailsBroken -->
+
+    <owl:Thing rdf:about="#bedRailsBroken">
+        <rdf:type rdf:resource="#BedrailsFailure"/>
+        <rdfs:label xml:lang="en"
+            >bed rails broken</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#bedRailsLeftDown -->
+
+    <owl:Thing rdf:about="#bedRailsLeftDown">
+        <rdf:type rdf:resource="#BedrailsLeftDown"/>
+        <rdfs:label xml:lang="en"
+            >bed rails left down</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#bedRailsLeftDownByPatient -->
+
+    <PatientSafetyIncident:BedrailsLeftDown rdf:about="#bedRailsLeftDownByPatient">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >bed rails left down by patient</rdfs:label>
+    </PatientSafetyIncident:BedrailsLeftDown>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#bedRailsLeftDownByStaff -->
+
+    <PatientSafetyIncident:BedrailsLeftDown rdf:about="#bedRailsLeftDownByStaff">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >bed rails left down by staff</rdfs:label>
+    </PatientSafetyIncident:BedrailsLeftDown>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#bedRailsLeftDownByVisitor -->
+
+    <owl:Thing rdf:about="#bedRailsLeftDownByVisitor">
+        <rdf:type rdf:resource="#BedrailsLeftDown"/>
+        <rdfs:label xml:lang="en"
+            >bed rails left down by visitor</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#bedRailsLeftUnlatched -->
+
+    <PatientSafetyIncident:BedrailsFailure rdf:about="#bedRailsLeftUnlatched">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >bed rails left unlatched</rdfs:label>
+    </PatientSafetyIncident:BedrailsFailure>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#bedRailsOrderedButNotUsed -->
+
+    <PatientSafetyIncident:BedrailsFailure rdf:about="#bedRailsOrderedButNotUsed">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >bed rails ordered but not used</rdfs:label>
+    </PatientSafetyIncident:BedrailsFailure>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#brokeRestraints -->
+
+    <PatientSafetyIncident:PhysicalRestraintFailure rdf:about="#brokeRestraints">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >broke restraints</rdfs:label>
+    </PatientSafetyIncident:PhysicalRestraintFailure>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#callBellDamaged -->
+
+    <PatientSafetyIncident:CallBellFailure rdf:about="#callBellDamaged">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >call bell damaged</rdfs:label>
+    </PatientSafetyIncident:CallBellFailure>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#callBellDisconnected -->
+
+    <owl:Thing rdf:about="#callBellDisconnected">
+        <rdf:type rdf:resource="#CallBellFailure"/>
+        <rdfs:label xml:lang="en"
+            >call bell disconnected</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#callBellFaulty -->
+
+    <owl:Thing rdf:about="#callBellFaulty">
+        <rdf:type rdf:resource="#CallBellFailure"/>
+        <rdfs:label xml:lang="en"
+            >call bell faulty</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#callBellNotHeard -->
+
+    <PatientSafetyIncident:CallBellFailure rdf:about="#callBellNotHeard">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >call bell not heard</rdfs:label>
+    </PatientSafetyIncident:CallBellFailure>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#callBellNotProvided -->
+
+    <owl:Thing rdf:about="#callBellNotProvided">
+        <rdf:type rdf:resource="#CallBellFailure"/>
+        <rdfs:label xml:lang="en"
+            >call bell not provided</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#callBellOutOfReach -->
+
+    <owl:Thing rdf:about="#callBellOutOfReach">
+        <rdf:type rdf:resource="#CallBellFailure"/>
+        <rdfs:label xml:lang="en"
+            >call bell out of reach</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#callBellProvidedButNotUsed -->
+
+    <PatientSafetyIncident:CallBellFailure rdf:about="#callBellProvidedButNotUsed">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >call bell provided but not used</rdfs:label>
+    </PatientSafetyIncident:CallBellFailure>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#chemicalDelayInAdministration -->
+
+    <owl:Thing rdf:about="#chemicalDelayInAdministration">
+        <rdf:type rdf:resource="#ChemicalRestraintFailure"/>
+        <rdfs:label xml:lang="en"
+            >chemical delay in administration</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#chemicalInadquateDose -->
+
+    <owl:Thing rdf:about="#chemicalInadquateDose">
+        <rdf:type rdf:resource="#ChemicalRestraintFailure"/>
+        <rdfs:label xml:lang="en"
+            >chemical inadquate dose</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#chemicalNotAdministeredWhenIndicated -->
+
+    <owl:Thing rdf:about="#chemicalNotAdministeredWhenIndicated">
+        <rdf:type rdf:resource="#ChemicalRestraintFailure"/>
+        <rdfs:label xml:lang="en"
+            >chemical not administered when indicated</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#collapse -->
+
+    <owl:Thing rdf:about="#collapse">
+        <rdf:type rdf:resource="#FallMechanism"/>
+        <rdfs:label xml:lang="en">collapse</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#confirmedFall -->
+
+    <PatientSafetyIncident:ConfirmedStatusOfFall rdf:about="#confirmedFall">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">confirmed fall</rdfs:label>
+    </PatientSafetyIncident:ConfirmedStatusOfFall>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#damageHelmet -->
+
+    <PatientSafetyIncident:SafetyHelmetFailure rdf:about="#damageHelmet">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">damage helmet</rdfs:label>
+    </PatientSafetyIncident:SafetyHelmetFailure>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#delayInStaffFailure -->
+
+    <PatientSafetyIncident:HumanRestraintFailure rdf:about="#delayInStaffFailure">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >delay in staff failure</rdfs:label>
+    </PatientSafetyIncident:HumanRestraintFailure>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#fallFromAHeight -->
+
+    <owl:Thing rdf:about="#fallFromAHeight">
+        <rdf:type rdf:resource="#FallHeight"/>
+        <rdfs:label xml:lang="en"
+            >fall from a height</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#fallOnTheSameLevel -->
+
+    <owl:Thing rdf:about="#fallOnTheSameLevel">
+        <rdf:type rdf:resource="#FallHeight"/>
+        <rdfs:label xml:lang="en"
+            >fall on the same level</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hipShieldsIncorrectSize -->
+
+    <owl:Thing rdf:about="#hipShieldsIncorrectSize">
+        <rdf:type rdf:resource="#HipProtectorFailure"/>
+        <rdfs:label xml:lang="en"
+            >hip shields incorrect size</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hipShieldsIncorrectWorn -->
+
+    <PatientSafetyIncident:HipProtectorFailure rdf:about="#hipShieldsIncorrectWorn">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >hip shields incorrect worn</rdfs:label>
+    </PatientSafetyIncident:HipProtectorFailure>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#hipShieldsNotInPlace -->
+
+    <PatientSafetyIncident:HipProtectorFailure rdf:about="#hipShieldsNotInPlace">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >hip shields not in place</rdfs:label>
+    </PatientSafetyIncident:HipProtectorFailure>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#impactFloorMatDamage -->
+
+    <owl:Thing rdf:about="#impactFloorMatDamage">
+        <rdf:type rdf:resource="#ImpactFloormatFailure"/>
+        <rdfs:label xml:lang="en"
+            >impact floor mat damage</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#impactFloorMatNotUsedWhenIndicated -->
+
+    <owl:Thing rdf:about="#impactFloorMatNotUsedWhenIndicated">
+        <rdf:type rdf:resource="#ImpactFloormatFailure"/>
+        <rdfs:label xml:lang="en"
+            >impact floor mat not used when indicated</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#impactFloorMatPlacedInIncorrectPosition -->
+
+    <PatientSafetyIncident:ImpactFloormatFailure rdf:about="#impactFloorMatPlacedInIncorrectPosition">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >impact floor mat placed in incorrect position</rdfs:label>
+    </PatientSafetyIncident:ImpactFloormatFailure>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#lossOfBalance -->
+
+    <PatientSafetyIncident:FallMechanism rdf:about="#lossOfBalance">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">loss of balance</rdfs:label>
+    </PatientSafetyIncident:FallMechanism>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#mistookOtherSwitchButtonForCallBell -->
+
+    <PatientSafetyIncident:CallBellFailure rdf:about="#mistookOtherSwitchButtonForCallBell">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >mistook other switch button for call bell</rdfs:label>
+    </PatientSafetyIncident:CallBellFailure>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#mobilityAidDamageBroken -->
+
+    <PatientSafetyIncident:MobilityAidFailure rdf:about="#mobilityAidDamageBroken">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >mobility aid damage broken</rdfs:label>
+    </PatientSafetyIncident:MobilityAidFailure>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#mobilityAidIncorrectUseByPatient -->
+
+    <owl:Thing rdf:about="#mobilityAidIncorrectUseByPatient">
+        <rdf:type rdf:resource="#MobilityAidFailure"/>
+        <rdfs:label xml:lang="en"
+            >mobility aid incorrect use by patient</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#mobilityAidNotUsedByPatient -->
+
+    <PatientSafetyIncident:MobilityAidFailure rdf:about="#mobilityAidNotUsedByPatient">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >mobility aid not used by patient</rdfs:label>
+    </PatientSafetyIncident:MobilityAidFailure>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#notSecuredCorrectly -->
+
+    <PatientSafetyIncident:SafetyHelmetFailure rdf:about="#notSecuredCorrectly">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >not secured correctly</rdfs:label>
+    </PatientSafetyIncident:SafetyHelmetFailure>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#notWornWhenIndicated -->
+
+    <PatientSafetyIncident:SafetyHelmetFailure rdf:about="#notWornWhenIndicated">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >not worn when indicated</rdfs:label>
+    </PatientSafetyIncident:SafetyHelmetFailure>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#patientRefusedRestraints -->
+
+    <owl:Thing rdf:about="#patientRefusedRestraints">
+        <rdf:type rdf:resource="#PhysicalRestraintFailure"/>
+        <rdfs:label xml:lang="en"
+            >patient refused restraints</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#personalAlertFaulty -->
+
+    <PatientSafetyIncident:PersonalAlertFailure rdf:about="#personalAlertFaulty">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >personal alert faulty</rdfs:label>
+    </PatientSafetyIncident:PersonalAlertFailure>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#personalAlertNotConnected -->
+
+    <owl:Thing rdf:about="#personalAlertNotConnected">
+        <rdf:type rdf:resource="#PersonalAlertFailure"/>
+        <rdfs:label xml:lang="en"
+            >personal alert not connected</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#personalAlertNotUsedWhenIndicated -->
+
+    <PatientSafetyIncident:PersonalAlertFailure rdf:about="#personalAlertNotUsedWhenIndicated">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >personal alert not used when indicated</rdfs:label>
+    </PatientSafetyIncident:PersonalAlertFailure>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#restraintIncorrectlyApplied -->
+
+    <PatientSafetyIncident:PhysicalRestraintFailure rdf:about="#restraintIncorrectlyApplied">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >restraint incorrectly applied</rdfs:label>
+    </PatientSafetyIncident:PhysicalRestraintFailure>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#restraintOrderedButNotUsed -->
+
+    <owl:Thing rdf:about="#restraintOrderedButNotUsed">
+        <rdf:type rdf:resource="#PhysicalRestraintFailure"/>
+        <rdfs:label xml:lang="en"
+            >restraint ordered but not used</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#restraintsIncorrectedused -->
+
+    <owl:Thing rdf:about="#restraintsIncorrectedused">
+        <rdf:type rdf:resource="#PhysicalRestraintFailure"/>
+        <rdfs:label xml:lang="en"
+            >restraints incorrectedused</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#slip -->
+
+    <owl:Thing rdf:about="#slip">
+        <rdf:type rdf:resource="#FallMechanism"/>
+        <rdfs:label xml:lang="en">slip</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#staffFailedToArrive -->
+
+    <owl:Thing rdf:about="#staffFailedToArrive">
+        <rdf:type rdf:resource="#HumanRestraintFailure"/>
+        <rdfs:label xml:lang="en"
+            >staff failed to arrive</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#stumble -->
+
+    <PatientSafetyIncident:FallMechanism rdf:about="#stumble">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">stumble</rdfs:label>
+    </PatientSafetyIncident:FallMechanism>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#subjectOverpoweredStaff -->
+
+    <PatientSafetyIncident:HumanRestraintFailure rdf:about="#subjectOverpoweredStaff">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >subject overpowered staff</rdfs:label>
+    </PatientSafetyIncident:HumanRestraintFailure>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#suspectedFall -->
+
+    <owl:Thing rdf:about="#suspectedFall">
+        <rdf:type rdf:resource="#ConfirmedStatusOfFall"/>
+        <rdfs:label xml:lang="en">suspected fall</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#trip -->
+
+    <PatientSafetyIncident:FallMechanism rdf:about="#trip">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">trip</rdfs:label>
+    </PatientSafetyIncident:FallMechanism>
+    
+
+
+    <!-- http://www.ICPS/ontologies/PatientSafetyIncident#undidRestraints -->
+
+    <owl:Thing rdf:about="#undidRestraints">
+        <rdf:type rdf:resource="#PhysicalRestraintFailure"/>
+        <rdfs:label xml:lang="en"
+            >undid restraints</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;ActionsToReduceRisk#RiskAssessmentResult"/>
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;ActionsToReduceRisk#RiskAssessment"/>
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&Countries;ISO3166DefinedCountry"/>
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;ActionsToReduceRisk#RiskAssessmentTool"/>
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="&ontologies;Person#Person"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="&ontologies;PatientOutcomes#PressureUlcerStage"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;ActionsToReduceRisk#SkinInspection"/>
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="#HealthCareFacilityStay"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="#FallMechanism"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;Anatomy#HumanBodySide"/>
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Blood-BloodProduct"/>
+            <rdf:Description rdf:about="#ClinicalAdministration"/>
+            <rdf:Description rdf:about="#ClinicalProcess"/>
+            <rdf:Description rdf:about="#Documentation"/>
+            <rdf:Description rdf:about="#Fall"/>
+            <rdf:Description rdf:about="#HealCareAssociatedInfection"/>
+            <rdf:Description rdf:about="#Infrastructure-Building-Fixture"/>
+            <rdf:Description rdf:about="#MedicalDevice-Equipment"/>
+            <rdf:Description rdf:about="#Medication-IVFluid"/>
+            <rdf:Description rdf:about="#Nutrition"/>
+            <rdf:Description rdf:about="#Oxigen-Gas-Vapour"/>
+            <rdf:Description rdf:about="#Pathology-Laboratory"/>
+            <rdf:Description rdf:about="#PatientAccident"/>
+            <rdf:Description rdf:about="#PatientBehaviour"/>
+            <rdf:Description rdf:about="#PressureUlcer"/>
+            <rdf:Description rdf:about="#Resource-OrganizationalManagement"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="#Incident"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="#PersonPlayingRole"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="#FallHeight"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="#impactFloorMatDamage"/>
+            <rdf:Description rdf:about="#collapse"/>
+            <rdf:Description rdf:about="#bedRailsLeftDownByVisitor"/>
+            <rdf:Description rdf:about="#confirmedFall"/>
+            <rdf:Description rdf:about="#callBellProvidedButNotUsed"/>
+            <rdf:Description rdf:about="#restraintOrderedButNotUsed"/>
+            <rdf:Description rdf:about="#callBellDamaged"/>
+            <rdf:Description rdf:about="#bedRailsLeftUnlatched"/>
+            <rdf:Description rdf:about="#chemicalInadquateDose"/>
+            <rdf:Description rdf:about="#fallOnTheSameLevel"/>
+            <rdf:Description rdf:about="#bedRailsBroken"/>
+            <rdf:Description rdf:about="#hipShieldsIncorrectSize"/>
+            <rdf:Description rdf:about="#trip"/>
+            <rdf:Description rdf:about="#callBellDisconnected"/>
+            <rdf:Description rdf:about="#hipShieldsIncorrectWorn"/>
+            <rdf:Description rdf:about="#alarmMatFaulty"/>
+            <rdf:Description rdf:about="#slip"/>
+            <rdf:Description rdf:about="#mobilityAidNotUsedByPatient"/>
+            <rdf:Description rdf:about="#suspectedFall"/>
+            <rdf:Description rdf:about="#impactFloorMatNotUsedWhenIndicated"/>
+            <rdf:Description rdf:about="#restraintIncorrectlyApplied"/>
+            <rdf:Description rdf:about="#bedRailsLeftDownByStaff"/>
+            <rdf:Description rdf:about="#callBellFaulty"/>
+            <rdf:Description rdf:about="#personalAlertNotConnected"/>
+            <rdf:Description rdf:about="#avoidedByPatient"/>
+            <rdf:Description rdf:about="#callBellOutOfReach"/>
+            <rdf:Description rdf:about="#hipShieldsNotInPlace"/>
+            <rdf:Description rdf:about="#fallFromAHeight"/>
+            <rdf:Description rdf:about="#delayInStaffFailure"/>
+            <rdf:Description rdf:about="#alarmMatNotConnected"/>
+            <rdf:Description rdf:about="#undidRestraints"/>
+            <rdf:Description rdf:about="#staffFailedToArrive"/>
+            <rdf:Description rdf:about="#patientRefusedRestraints"/>
+            <rdf:Description rdf:about="#bedRailsLeftDownByPatient"/>
+            <rdf:Description rdf:about="#notSecuredCorrectly"/>
+            <rdf:Description rdf:about="#bedRailsLeftDown"/>
+            <rdf:Description rdf:about="#brokeRestraints"/>
+            <rdf:Description rdf:about="#impactFloorMatPlacedInIncorrectPosition"/>
+            <rdf:Description rdf:about="#callBellNotProvided"/>
+            <rdf:Description rdf:about="#personalAlertNotUsedWhenIndicated"/>
+            <rdf:Description rdf:about="#subjectOverpoweredStaff"/>
+            <rdf:Description rdf:about="#stumble"/>
+            <rdf:Description rdf:about="#callBellNotHeard"/>
+            <rdf:Description rdf:about="#mistookOtherSwitchButtonForCallBell"/>
+            <rdf:Description rdf:about="#lossOfBalance"/>
+            <rdf:Description rdf:about="#mobilityAidDamageBroken"/>
+            <rdf:Description rdf:about="#bedRailsOrderedButNotUsed"/>
+            <rdf:Description rdf:about="#personalAlertFaulty"/>
+            <rdf:Description rdf:about="#chemicalNotAdministeredWhenIndicated"/>
+            <rdf:Description rdf:about="#notWornWhenIndicated"/>
+            <rdf:Description rdf:about="#restraintsIncorrectedused"/>
+            <rdf:Description rdf:about="#chemicalDelayInAdministration"/>
+            <rdf:Description rdf:about="#damageHelmet"/>
+            <rdf:Description rdf:about="#mobilityAidIncorrectUseByPatient"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="#RestraintSafetyDeviceFailure"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="&ontologies;IncidentCharacteristic#Detection"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+            <rdf:Description rdf:about="&objectrole;Role"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#AlarmMatFailure"/>
+            <rdf:Description rdf:about="#BedrailsFailure"/>
+            <rdf:Description rdf:about="#CallBellFailure"/>
+            <rdf:Description rdf:about="#HipProtectorFailure"/>
+            <rdf:Description rdf:about="#ImpactFloormatFailure"/>
+            <rdf:Description rdf:about="#MobilityAidFailure"/>
+            <rdf:Description rdf:about="#PersonalAlertFailure"/>
+            <rdf:Description rdf:about="#RestraintFailure"/>
+            <rdf:Description rdf:about="#SafetyHelmetFailure"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;BuildingStructure#FloorSurface"/>
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="#PressureUlcerStageSequenceItem"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;Clothing.owl#Clothing"/>
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&Countries;Country"/>
+            <rdf:Description rdf:about="&Countries;ISO3166DefinedCountry"/>
+            <rdf:Description rdf:about="&ontologies;ActionsToReduceRisk#MinimisationStrategy"/>
+            <rdf:Description rdf:about="&ontologies;ActionsToReduceRisk#RiskAssessment"/>
+            <rdf:Description rdf:about="&ontologies;ActionsToReduceRisk#RiskAssessmentResult"/>
+            <rdf:Description rdf:about="&ontologies;ActionsToReduceRisk#RiskAssessmentTool"/>
+            <rdf:Description rdf:about="&ontologies;ActionsToReduceRisk#SkinInspection"/>
+            <rdf:Description rdf:about="&ontologies;Activity.owl#Activity"/>
+            <rdf:Description rdf:about="&ontologies;Anatomy#HumanBodyAnatomicalPart"/>
+            <rdf:Description rdf:about="&ontologies;Anatomy#HumanBodySide"/>
+            <rdf:Description rdf:about="&ontologies;BuildingStructure#BuildingStructure"/>
+            <rdf:Description rdf:about="&ontologies;BuildingStructure#FloorSurface"/>
+            <rdf:Description rdf:about="&ontologies;Clothing.owl#BedLinen"/>
+            <rdf:Description rdf:about="&ontologies;Clothing.owl#Clothing"/>
+            <rdf:Description rdf:about="&ontologies;Furniture.owl#PieceOfFurniture"/>
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#MedicalEquipment"/>
+            <rdf:Description rdf:about="&ontologies;IncidentCharacteristic#Detection"/>
+            <rdf:Description rdf:about="&ontologies;Medication.owl#Medication"/>
+            <rdf:Description rdf:about="&ontologies;Medication.owl#Treatment"/>
+            <rdf:Description rdf:about="&ontologies;PatientCharacteristics.owl#PrimaryDiagnosis"/>
+            <rdf:Description rdf:about="&ontologies;PatientOutcomes#Harm"/>
+            <rdf:Description rdf:about="&ontologies;PatientOutcomes#PressureUlcerStage"/>
+            <rdf:Description rdf:about="#ConfirmedStatusOfFall"/>
+            <rdf:Description rdf:about="#FallHeight"/>
+            <rdf:Description rdf:about="#FallMechanism"/>
+            <rdf:Description rdf:about="#Gender"/>
+            <rdf:Description rdf:about="#HasMinimisationStrategyToPreventItRelation"/>
+            <rdf:Description rdf:about="#HealthCareFacilityStay"/>
+            <rdf:Description rdf:about="#Incident"/>
+            <rdf:Description rdf:about="#PersonPlayingRole"/>
+            <rdf:Description rdf:about="#PressureUlcerStageSequenceItem"/>
+            <rdf:Description rdf:about="#RestraintSafetyDeviceFailure"/>
+            <rdf:Description rdf:about="&ontologies;Person#Person"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalBuilding"/>
+            <rdf:Description rdf:about="&objectrole;Role"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&Countries;Country"/>
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="&ontologies;Medication.owl#Treatment"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="&ontologies;PatientCharacteristics.owl#PrimaryDiagnosis"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;Anatomy#HumanBodyAnatomicalPart"/>
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;Activity.owl#Activity"/>
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="#ConfirmedStatusOfFall"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="#HasMinimisationStrategyToPreventItRelation"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="&ontologies;Medication.owl#Medication"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;ActionsToReduceRisk#MinimisationStrategy"/>
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologies;HospitalEquipment.owl#PathophysiologyFactor"/>
+            <rdf:Description rdf:about="&ontologies;Person#Gender"/>
+            <rdf:Description rdf:about="&ontologies;Place#HospitalArea"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

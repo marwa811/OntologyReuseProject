@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://bitbucket.org/PlantExpAssay/ontology/raw/v0.1/PipelinePatterns.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+		 ontologyIRI="https://bitbucket.org/PlantExpAssay/ontology/raw/v0.1/PipelinePatterns.owl">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>https://bitbucket.org/PlantExpAssay/ontology/raw/v0.1/PipelinePatternsImported.owl</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">To answer the need for a workflow representing a sequence of data transformations, a high-level process ontology was defined, denoted Pipeline Patterns (PP) ontology (see Figure 2). The PP ontology represents high-level terms, that will later on be mapped onto the terms of the PEAO ontology, and the manner in which they can relate.
+
+Every concept is generically a Data (class from EDAM), which can be further specified as an Entry (P:00002) or an Exit (P:00009). All Entries can be subjected to an Operation (class from EDAM) producing an Intermediate (P:00010). An Intermediate has a TemporalEntity associated to represent its time of creation. Some Entries are specifically of the type Exit, meaning that they will represent concepts that exit the current category and be passed to the next one on the workflow. Additionally, in order to permit the treatment of a set of objects as a single entity, this high-level ontology considers the concept of List (P:00004) and more specifically an Aggregate (P:00005), containing a set of Data or Entry, respectively.
+The concept Intermediate is an Entry, allowing for the successive application of an operation to an Element. This is particularly useful in the case of the application of sequential set of operations.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#P:00002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#P:00004"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#P:00005"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#P:00009"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#P:00010"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#P:00006"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#P:00007"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#P:00008"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#P:00011"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#P:00002"/>
+        <Class IRI="http://edamontology.org/data_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#P:00005"/>
+        <Class IRI="#P:00002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#P:00005"/>
+        <Class IRI="#P:00004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#P:00005"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#P:00006"/>
+            <Class IRI="#P:00002"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#P:00009"/>
+        <Class IRI="#P:00002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#P:00010"/>
+        <Class IRI="#P:00002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#P:00010"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#P:00007"/>
+            <Class IRI="#P:00002"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#P:00010"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#P:00011"/>
+            <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#P:00006"/>
+        <Class IRI="#P:00004"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#P:00007"/>
+        <Class IRI="#P:00010"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#P:00008"/>
+        <Class IRI="#P:00010"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#P:00011"/>
+        <Class IRI="#P:00010"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#P:00006"/>
+        <Class IRI="http://edamontology.org/data_0006"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#P:00007"/>
+        <Class IRI="#P:00002"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#P:00008"/>
+        <Class IRI="http://edamontology.org/operation_0004"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#P:00011"/>
+        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#P:00002</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Point of entry in recursive pipeline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#P:00002</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Entry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#P:00004</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A List of Data objects from EDAM.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <IRI>#P:00004</IRI>
+        <IRI>http://purl.obolibrary.org/obo/BFO_0000005</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#P:00004</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">List</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#P:00005</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An aggregation of intermediate pipeline elements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#P:00005</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aggregate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#P:00006</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">contains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#P:00007</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">obtainedFrom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#P:00008</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">producedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#P:00009</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Point of exit in recursive pipeline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#P:00009</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Exit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#P:00010</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Intermediate result in recursive pipeline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#P:00010</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Intermediate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#P:00011</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">timeOfCreation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://edamontology.org/operation_0004</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Operation that transforms one intermediate (possibly the point of entry) into another intermediate (possibly the point of exit)</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
