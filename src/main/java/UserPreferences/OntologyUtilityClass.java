@@ -3,32 +3,32 @@ package UserPreferences;
 import java.io.File;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 import org.apache.log4j.Logger;
+import org.semanticweb.owlapi.apibinding.OWLManager;
+import org.semanticweb.owlapi.io.IRIDocumentSource;
+import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.model.MissingImportHandlingStrategy;
+import org.semanticweb.owlapi.model.OWLClass;
+import org.semanticweb.owlapi.model.OWLException;
+import org.semanticweb.owlapi.model.OWLOntology;
+import org.semanticweb.owlapi.model.OWLOntologyCreationException;
+import org.semanticweb.owlapi.model.OWLOntologyLoaderConfiguration;
+import org.semanticweb.owlapi.model.OWLOntologyManager;
+import org.semanticweb.owlapi.reasoner.OWLReasoner;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import BioOntologiesRepo.Ontology;
 import BioOntologiesRepo.TermSearchUsingBioportal;
+import OntologyExtractionPackage.BioPortalCategoryOntologyClass;
 
 public class OntologyUtilityClass {
-	static Logger log = Logger.getLogger(OntologyUtilityClass.class);
-	private static String[] generalDomainOntologies= {"Vocabularies","Upper_Level_Ontology","Taxonomic_Classification", 
-			"Other","Experimental_Conditions","All_Organisms","Yeast","Physicochemical","Phenotype"
-			,"Molecule","Immunology","Imaging","Health","Ethology","Dysfunction","Chemical",
-			"Biomedical_Resources","Biological_Process","Arabadopsis","Cell"};
 	
-	private static String[] parentDomainOntologies= {"Subcellular","Plant","Neurological_Disorder","Anatomy",
-			"Human","Genomic_and_Proteomic","Development"};
-	
-	private static String[] subDomainOntologies= {"Subcellular_anatomy","Plant_Development","Plant_Anatomy"
-			,"Neurologic_Disease","Mouse_Anatomy","Microbial_Anatomy","Gross_Anatomy","Fish_Anatomy"
-			,"Cellular_anatomy_","Human_Developmental_Anatomy","Gene_Product","Animal_Development"};
-	
-	private static String[] subSubDomainOntologies= {"Protein","Animal_Gross_Anatomy"};
-	
-	
+	static Logger log = Logger.getLogger(OntologyUtilityClass.class);	
 	public static float calculateOntologyUtilityFunction(String classesNames, int userPrefOntologyType, ArrayList<String> UserPrefOntologies,
 			ArrayList<String> candidateOntologies, UserPreferencesModel userPref) {
 		//read the ontology.json file and get a list of Ontology contain all information about ontologies
@@ -45,37 +45,6 @@ public class OntologyUtilityClass {
 		}
 		return 0;	
 	}
-	//////////////////////////////////////////////
-	//The function takes two concept names as input and returns the difference between their levels
-	//Example: 0 means they dont have any relations
-	//         1 means they are sub or super direct classes
-	//		   2 means they have 1 level in between
-	private static int getCategoryLevel(String userPrefDomain, String ontologyCategory) {
-		int difflevel=0;
-		//if the userPrefDomain and OntologyCategory are general Domains, then level difference =0.
-		//if the userPrefDomain is general Domain and the OntologyCategory is parent domain, or vice verse, then level difference =0.
-		//if the userPrefDomain is general Domain and the OntologyCategory is sub domain, or vice verse, then level difference =0.
-		//if the userPrefDomain is parent Domain and the OntologyCategory is sub domain, or vice verse, then level difference =1.
-		if((contains(userPrefDomain,parentDomainOntologies) && contains(ontologyCategory,subDomainOntologies))||
-			(contains(userPrefDomain,subDomainOntologies) && contains(ontologyCategory,parentDomainOntologies)))
-			difflevel=1;
-		if((contains(userPrefDomain,subSubDomainOntologies) && contains(ontologyCategory,subDomainOntologies))||
-			(contains(userPrefDomain,subDomainOntologies) && contains(ontologyCategory,subSubDomainOntologies)))
-			difflevel=1;
-		if((contains(userPrefDomain,subSubDomainOntologies) && contains(ontologyCategory,parentDomainOntologies))||
-			(contains(userPrefDomain,parentDomainOntologies) && contains(ontologyCategory,subSubDomainOntologies)))
-			difflevel=2;
-		return difflevel;
-	}
-	///////////////////////////////////////////////////////////////
-	//Function to test if an array of strings contains a string or not
-	private static boolean contains(String str, String[] strArray) {
-		for(String a: strArray)
-			if(str.equals(a))
-				return true;
-		return false;
-	}
-	////////////////////////////////////////////////////////////////
 	//read the ontology.json file and get a list of Ontology contain all information about ontologies
 	private static Ontology[] getOntologyInfoFromJsonFile(){
 		Ontology[] ontologiesInfo  = null;
@@ -124,7 +93,7 @@ public class OntologyUtilityClass {
 								score+=1;
 						else
 						{
-							int diffLevel=getCategoryLevel(userPrefDomains.get(d), ontologyCategories[0]);
+							int diffLevel=BioPortalCategoryOntologyClass.getCategoryLevel(userPrefDomains.get(d), ontologyCategories[0]);
 							if(diffLevel==1)
 								score+=0.5;
 							else if(diffLevel==2)
@@ -139,9 +108,9 @@ public class OntologyUtilityClass {
 						for(int k=0; k<ontologyCategories.length; k++) {
 							if(ontologyCategories[k].equals(userPrefDomains.get(d)))
 								score+= 1.0/ontologyCategories.length;
-							else if(getCategoryLevel(userPrefDomains.get(d), ontologyCategories[k])==1)
+							else if(BioPortalCategoryOntologyClass.getCategoryLevel(userPrefDomains.get(d), ontologyCategories[k])==1)
 								score+= 0.5/ontologyCategories.length;
-							else if(getCategoryLevel(userPrefDomains.get(d), ontologyCategories[k])==2)
+							else if(BioPortalCategoryOntologyClass.getCategoryLevel(userPrefDomains.get(d), ontologyCategories[k])==2)
 								score+= 0.25/ontologyCategories.length;
 						}
 					}

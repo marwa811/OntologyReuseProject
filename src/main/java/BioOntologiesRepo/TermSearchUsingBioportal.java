@@ -70,12 +70,6 @@ public class TermSearchUsingBioportal {
 	    	}
 	    	return recommenderResult;
 	 }
-	 ///////////////////////////////////////////////////////////////////////////
-	 //This function takes a JsonNode as an input and extract ontolgy information for this ontology
-	 //and populate an ontology object with this information to generate a utility score for each ontology 
-	 private static void extractandPopulateOntologyinfo(JsonNode ontology) {
-		 
-	 }
 	    
 	 //to avoid adding two ontologies twice in the returned list
 /*	 private static ArrayList<TermSearchResultInformation> checkForDuplicateOntologies

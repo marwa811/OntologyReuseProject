@@ -55,10 +55,7 @@
     	<groupId>net.sourceforge.owlapi</groupId>
     	<artifactId>owlapi-distribution</artifactId>
     	<version>4.5.18</version>
-	</dependency>
-
-
-  	
+	</dependency>	
     
   </dependencies>
 </project>
