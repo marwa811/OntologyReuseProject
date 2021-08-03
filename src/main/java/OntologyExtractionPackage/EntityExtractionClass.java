@@ -108,6 +108,21 @@ public class EntityExtractionClass {
 		String classIRI=c.getIRI().toString();
 		return classIRI.substring(classIRI.lastIndexOf('#')+1);
 	}
+	
+	public static String getClassIRI(String fileName, String className) throws OWLOntologyCreationException, OWLException, IOException {
+		Map<String, String> classIdAndLabel=new HashMap<String,String>();
+		String classIRI="";
+		OWLOntology ontology=null;
+		ontology= laodOntology(fileName);
+		classIdAndLabel=getOntolgyClassesLabels(ontology);
+		for(String classId: classIdAndLabel.keySet())
+		{
+			if(classIdAndLabel.get(classId).equals(className))		
+				classIRI=classId;
+		}
+		System.out.println("The Class IRI is: " + classIRI);
+		return classIRI;
+	}
 			
 	//Given a class and an ontology retuen the RDFS:Label for that class
 	/*private static String getClassName(OWLOntology o, OWLClass c) throws IOException {

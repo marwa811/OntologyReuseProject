@@ -72,7 +72,7 @@ public class OWLOntologyInformation {
 			log.info("Loading " + filename + "...");
 			} 
 		catch (OWLOntologyCreationException e) {
-			log.error("Error in loading the ontology: " + e);
+			log.error("The Ontology: " + e+ " is already loaded");
 		}
 	}
 	

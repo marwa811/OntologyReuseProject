@@ -1,24 +1,11 @@
-package UserPreferences;
+package AgentClasses;
 
 import java.io.File;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 import org.apache.log4j.Logger;
-import org.semanticweb.owlapi.apibinding.OWLManager;
-import org.semanticweb.owlapi.io.IRIDocumentSource;
-import org.semanticweb.owlapi.model.IRI;
-import org.semanticweb.owlapi.model.MissingImportHandlingStrategy;
-import org.semanticweb.owlapi.model.OWLClass;
-import org.semanticweb.owlapi.model.OWLException;
-import org.semanticweb.owlapi.model.OWLOntology;
-import org.semanticweb.owlapi.model.OWLOntologyCreationException;
-import org.semanticweb.owlapi.model.OWLOntologyLoaderConfiguration;
-import org.semanticweb.owlapi.model.OWLOntologyManager;
-import org.semanticweb.owlapi.reasoner.OWLReasoner;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -29,22 +16,45 @@ import OntologyExtractionPackage.BioPortalCategoryOntologyClass;
 public class OntologyUtilityClass {
 	
 	static Logger log = Logger.getLogger(OntologyUtilityClass.class);	
-	public static float calculateOntologyUtilityFunction(String classesNames, int userPrefOntologyType, ArrayList<String> UserPrefOntologies,
-			ArrayList<String> candidateOntologies, UserPreferencesModel userPref) {
+	public static ArrayList<CandidateOntologyClass> calculateOntologyUtilityFunction(String classesNames,ArrayList<CandidateOntologyClass> candidateOntologies,
+			UserPreferencesModel userPref) 
+	{
+		double domainWeight=0.25;
+		double populariyWeight=0.15;
+		double coverageWeight=0.25;
+		double prefOntologyWeight=0.25;
+		double ontologyTypeWeight=0.10;
 		//read the ontology.json file and get a list of Ontology contain all information about ontologies
 		Ontology[] ontologiesInfo  = getOntologyInfoFromJsonFile();
-		Map<String,String> recommenderResult= getRecommenderCoverageScore(classesNames,ontologiesInfo);
-		
+		Map<String,String> recommenderResult= getRecommenderCoverageScore(classesNames,candidateOntologies);
+		//Map<String,String> recommenderResult= getRecommenderCoverageScore(classesNames,candidateOntologies);
+		double totalOntologyUtilityScore=0.0;
+		int i=0;	
 		//for each candidate ontology
-		for(int i=0; i<candidateOntologies.size(); i++) {
-			calculateDomainScore(i+1,candidateOntologies.get(i),ontologiesInfo,userPref.getUserPrefDomain());
-			calculatePopularityScore(candidateOntologies.get(i),ontologiesInfo);
-			calculateCoverageScore(recommenderResult,candidateOntologies.get(i),ontologiesInfo);
-			calculatePrefOntologyScore(UserPrefOntologies,candidateOntologies.get(i),ontologiesInfo);
-			calculateOntologyTypeScore(userPrefOntologyType,candidateOntologies.get(i),ontologiesInfo);
+		ArrayList<CandidateOntologyClass> newCandidateOntology=candidateOntologies; 
+		for(CandidateOntologyClass candidateOntology: newCandidateOntology)
+		{
+			double domainScore= calculateDomainScore(++i,candidateOntology.getOntologyID(),ontologiesInfo,userPref.getUserPrefDomain());
+			double popularityScore= calculatePopularityScore(candidateOntology.getOntologyID(),ontologiesInfo);
+			double coverageScore= calculateCoverageScore(recommenderResult,candidateOntology.getOntologyID(),ontologiesInfo);
+			double prefOntologyScore= calculatePrefOntologyScore(userPref.getUserPrefOntologies(),candidateOntology.getOntologyID(),ontologiesInfo);
+			double ontologyTypeScore=calculateOntologyTypeScore(userPref.getUserPrefOntologyType(),candidateOntology.getOntologyID(),ontologiesInfo); 
+			
+			totalOntologyUtilityScore= 
+					domainWeight * domainScore+ 
+					populariyWeight * popularityScore+ 
+					coverageWeight * coverageScore+ 
+					prefOntologyWeight * prefOntologyScore + 
+					ontologyTypeWeight * ontologyTypeScore;
+			
+			OntologyUtilityScoreClass newOntologyUtilityScore= new OntologyUtilityScoreClass(domainScore,
+					popularityScore,coverageScore,prefOntologyScore,ontologyTypeScore,
+					totalOntologyUtilityScore);
+			candidateOntology.setOntologyUtilityScore(newOntologyUtilityScore);
 		}
-		return 0;	
+		return newCandidateOntology;	
 	}
+//-------------------------------------------------------------------------------------
 	//read the ontology.json file and get a list of Ontology contain all information about ontologies
 	private static Ontology[] getOntologyInfoFromJsonFile(){
 		Ontology[] ontologiesInfo  = null;
@@ -60,11 +70,10 @@ public class OntologyUtilityClass {
 		}
 		return ontologiesInfo;
 	}
-
-	///////////////////////////////////////////////
-	public static float calculateDomainScore(int count,String candidateOntologyID, Ontology[] ontologiesInfo,
+//-----------------------------------------------------------------------
+	public static double calculateDomainScore(int count,String candidateOntologyID, Ontology[] ontologiesInfo,
 			ArrayList<String> userPrefDomains){
-		float score=0;
+		double score=0;
 		String[] ontologyCategories=null;
 		System.out.println("Ontology "+count+": "+ candidateOntologyID);
 		if(userPrefDomains.size()!=0) {
@@ -123,10 +132,10 @@ public class OntologyUtilityClass {
 		else {
 			System.out.println("User didn't enter a preferred domain!!");
 		}
-		System.out.println("The domain score for ontology: "+candidateOntologyID+ " is :"+ score);
+		System.out.println("The domain score is :"+ score);
 		return score;
 	}
-/////////////////////////////////////////////////////////////////////////////////////////////////
+//---------------------------------------------------------------------------
 	//The function takes the ontology id and returns the bioportal categories
 	private static String[] getOntologyCategories(String ontologyId,Ontology[] ontologiesInfo ){
 		String[] ontologyCategories = null;
@@ -139,7 +148,7 @@ public class OntologyUtilityClass {
 		}	
 		return ontologyCategories;
 	}
-	////////////////////////////////////////////////////////////
+//-----------------------------------------------------------------------------
 	private static int getMaxNoProject(Ontology[] ontologiesInfo) {
 		int max= ontologiesInfo[0].getProjects();
 		for(int i=1; i<ontologiesInfo.length; i++) {
@@ -149,7 +158,7 @@ public class OntologyUtilityClass {
 		}
 		return max;
 	}
-	////////////////////////////////////////////////////////////
+//---------------------------------------------------------------------------
 	private static int getMaxNoView(Ontology[] ontologiesInfo) {
 		int max= ontologiesInfo[0].getVeiws();
 		for(int i=1; i<ontologiesInfo.length; i++) {
@@ -159,50 +168,24 @@ public class OntologyUtilityClass {
 		}
 		return max;
 	}
-	//////////////////////////////////////////////
-	private static float calculatePopularityScore(String candidateOntologyID, Ontology[] ontologiesInfo){
-		float score=0;
-		float MaxProjectNo=getMaxNoProject(ontologiesInfo);
-		float MaxViewNo=getMaxNoView(ontologiesInfo);
+//--------------------------------------------------------------------------------
+	private static double calculatePopularityScore(String candidateOntologyID, Ontology[] ontologiesInfo){
+		double score=0;
+		double MaxProjectNo=getMaxNoProject(ontologiesInfo);
+		double MaxViewNo=getMaxNoView(ontologiesInfo);
 		
 		for(int i=0; i <ontologiesInfo.length; i++) {
 			if(ontologiesInfo[i].getId().equals(candidateOntologyID))
 				score=(ontologiesInfo[i].getVeiws()/MaxViewNo)+(ontologiesInfo[i].getProjects()/MaxProjectNo);
 		}
-		System.out.println("The popularity score for ontology: "+candidateOntologyID+ " is :"+ score);
+		System.out.println("The popularity score is :"+ score);
 		return score;
+					
 	}
-	//////////////////////////////////////////////
-	private static float calculateOntologyTypeScore(int userPrefOntologyType,String candidateOntologyID, Ontology[] ontologiesInfo){
-		float score=0;
-		
-		/*for(int i=0; i<ontologiesInfo.length; i++) {
-			if(ontologiesInfo[i].getId().equals(candidateOntologyID)) {
-				if(ontologiesInfo[i].getClassNo()==0)
-					score=0;
-				else
-					score=(float)(ontologiesInfo[i].getObjPropertyNo()/ontologiesInfo[i].getClassNo());
-			}
-		}*/
-		for(int i=0; i<ontologiesInfo.length; i++) {
-			if(ontologiesInfo[i].getId().equals(candidateOntologyID)) {
-				if(userPrefOntologyType==3 || ontologiesInfo[i].getClassNo()==0)
-					score=0;
-				else if(ontologiesInfo[i].getObjPropertyNo()==0 && userPrefOntologyType==1) 
-					score=1;
-				else if(ontologiesInfo[i].getObjPropertyNo()!=0 && userPrefOntologyType==2) 
-					score=1;
-				else 
-					score=0;
-			}
-		}
-		System.out.println("The Ontology Type score for ontology: "+candidateOntologyID+ " is: " +score);
-		return score;
-	}
-	//////////////////////////////////////////////////////////////////
+//-------------------------------------------------------------------------
 	//If the ontology is prefered by the user, it gets a higher score than the others candidate ontologies
-	private static float calculatePrefOntologyScore(ArrayList<String> UserPrefOntologies,String candidateOntologyID, Ontology[] ontologiesInfo) {
-		float score=0;
+	private static double calculatePrefOntologyScore(ArrayList<String> UserPrefOntologies,String candidateOntologyID, Ontology[] ontologiesInfo) {
+		double score=0;
 		for(int i=0; i<ontologiesInfo.length; i++) {
 			if(ontologiesInfo[i].getId().equals(candidateOntologyID)) {
 				for(int j=0; j<UserPrefOntologies.size(); j++) {
@@ -211,18 +194,45 @@ public class OntologyUtilityClass {
 				}
 			}
 		}
-		System.out.println("The Preferred Ontology score for ontology: "+candidateOntologyID+ " is: " +score);
+		System.out.println("The Preferred Ontology score is: " +score);
 		return score;
 	}
-	///////////////////////////////////////////////////////////////////
-	//Using Bioportal recommender service, as input a string of input terms and a string of ontologies Acronyms
+//-------------------------------------------------------------------------------
+private static double calculateOntologyTypeScore(int userPrefOntologyType,String candidateOntologyID, Ontology[] ontologiesInfo){
+	double score=0;
+	for(int i=0; i<ontologiesInfo.length; i++) {
+		if(ontologiesInfo[i].getId().equals(candidateOntologyID)) {
+			if(userPrefOntologyType==3 || ontologiesInfo[i].getClassNo()==0)
+				score=0;
+			else if(ontologiesInfo[i].getObjPropertyNo()==0 && userPrefOntologyType==1) 
+				score=1;
+			else if(ontologiesInfo[i].getObjPropertyNo()!=0 && userPrefOntologyType==2) 
+				score=1;
+			else 
+				score=0;
+		}
+	}
+	System.out.println("The Ontology Type score is: " +score);
+	return score;
+	}
+//-------------------------------------------------------------------------------
+//Using Bioportal recommender service, as input a string of input terms and a string of ontologies Acronyms
 	//returns a Map of each ontologyId and its coverage score
-	private static Map<String,String> getRecommenderCoverageScore(String classesNames,Ontology[] ontologiesInfo) {	
+	private static Map<String,String> getRecommenderCoverageScore(String classesNames,ArrayList<CandidateOntologyClass> candidateOntologies) {	
+		String acronyms="";
+		for(CandidateOntologyClass candidateOntology: candidateOntologies) {
+	//	for(String ontologyId: candidateOntologies) {
+			//String temp=ontologyId;
+			String temp=candidateOntology.getOntologyID();
+			acronyms+=temp.substring(temp.lastIndexOf('/')+1,temp.length()) + ",";
+		}
+		acronyms=acronyms.substring(0, acronyms.length()-1);
+		System.out.println("The acronyms are: "+acronyms);
 		Map<String,String> recommenderResult=
-				TermSearchUsingBioportal.useBioportalRecommender(classesNames, getOntologiesNamesAsString(ontologiesInfo));
+				TermSearchUsingBioportal.useBioportalRecommender(classesNames, acronyms);
 		return recommenderResult;
 	}
-	///////////////////////////////////////////////////////////////////////
+//---------------------------------------------------------------------------------
 	//Convert the ontologies Acronym to a string seprated by commans to used it in the recommender
 	private static String getOntologiesNamesAsString(Ontology[] ontologiesInfo) {
 		String ontologies="";
@@ -234,15 +244,15 @@ public class OntologyUtilityClass {
 		}
 		return ontologies;
 	}
-	////////////////////////////////////////////////////////////////////////////////////
+//---------------------------------------------------------------------------------
 	//For each ontology get its coverage score
-	private static float calculateCoverageScore(Map<String,String> recommenderResult,String candidateOntologyID, Ontology[] ontologiesInfo){
-		float score=0;
+	private static double calculateCoverageScore(Map<String,String> recommenderResult,String candidateOntologyID, Ontology[] ontologiesInfo){
+		double score=0;
 		for(String id : recommenderResult.keySet()) {
 			if(id.equals(candidateOntologyID))
-				score=Float.parseFloat(recommenderResult.get(id));
+				score=Double.parseDouble(recommenderResult.get(id));
 		}
-		System.out.println("The coverage score for ontology: "+candidateOntologyID+ " is :"+ score);
+		System.out.println("The coverage score is :"+ score);
 		return score;
 	}
 }

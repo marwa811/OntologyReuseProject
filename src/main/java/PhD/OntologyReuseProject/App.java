@@ -1,23 +1,24 @@
 package PhD.OntologyReuseProject;
 import java.io.File;
 import java.io.FilenameFilter;
-import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 import org.apache.log4j.Logger;
-import org.semanticweb.owlapi.model.OWLException;
-import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 
+import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectWriter;
+
+import AgentClasses.*;
 import BioOntologiesRepo.TermSearchUsingBioportal;
 import OntologyExtractionPackage.EntityExtractionClass;
 import OntologyExtractionPackage.OntologyModularity;
-import OntologyMatchingPackage.AMLMapping;
-import OntologyMatchingPackage.AMLMappings;
-import OntologyMatchingPackage.OntologyMatchingAlgorithm;
-import UserPreferences.*;
 
 public class App 
 {
@@ -42,53 +43,72 @@ public class App
         //prompt the user to get his user preferences 
         System.out.println("Please Provide us with your prefernces: ");
     	
+        IterationClass firstIteration =new IterationClass(1);
     	//Prompt the user to enter his user preferences
-    	UserPreferencesModel userPreferences= promptUserInputPreferences();
+    	firstIteration= promptUserInputPreferences(firstIteration);
         
         //load the input ontology and retrieve its class in order to beging the reuse process
     	//return a string of all classes names seprated by commas to be used in the ontology utility class
-        String classNames=EntityExtractionClass.getClassesLabelsFromInputOntology(userPreferences.getInputFileName());
+        String classNames=EntityExtractionClass.getClassesLabelsFromInputOntology(firstIteration.getUserPreferences().getInputFileName());
         
-        /*Input a class (from the input ontology) to begin the reuse proess and begin 
+        /* Input a class (from the input ontology) to begin the reuse proess and begin 
     	 * creating a user profile
     	 */
         System.out.println("Please Select a Class to begin the ontology Reuse Process:");
     	String className= sc.nextLine();
     	System.out.println("You selected: "+className+ " class");
+    	//String inputClassIRI=EntityExtractionClass.getClassIRI(firstIteration.getUserPreferences().getInputFileName(),className);
     	System.out.println("Loading candidate ontologies...");
 
-    	/*search the bioportal repository for a match to the selected class,
+    	/* search the bioportal repository for a match to the selected class,
     	 * if found display the candidate ontologies to the user and begin the user profile
     	 * create the ontology Level preferences 
     	 */
     	
     	///
     	//get the class that have mapping with input class from bioportal seachTerm Function
-    	ArrayList<String> termSearchResultOntologies= TermSearchUsingBioportal.searchByTermBioportal(className);
-    	if(termSearchResultOntologies.size()==0)
+    	ArrayList<String> bioPortalSearchResult= TermSearchUsingBioportal.searchByTermBioportal(className);
+    	   
+    	if(bioPortalSearchResult.size()==0)
     		System.out.println("This class can not be extended, no matching ontologies found.");
     	else 
     	{
+    		//to remove reprated ontology Id coming from Bioportal search service
+    		bioPortalSearchResult=excludeRedundantOntologies(bioPortalSearchResult);
+    		
     		//here we have two main issues with the list of candidate ontologies "termSearchResultOntologies"
     		//1. Very large ontology, extract a module using the input class name and append its IRI to the list
     		//2. Not OWL file ontology, exclude it from the list
-    	//	ArrayList<String> modulesOfLaregFilesIRIs = getModulesIRIFromLargeOntologies(className,termSearchResultOntologies);
-    		termSearchResultOntologies=excludeNonOWLOntologies(termSearchResultOntologies);
-    	//	if(modulesOfLaregFilesIRIs.size()>0)
-    		//	termSearchResultOntologies.addAll(modulesOfLaregFilesIRIs);
-    		OntologyUtilityClass.calculateOntologyUtilityFunction(classNames,userPreferences.getUserPrefOntologyType(),
-    				userPreferences.getUserPrefOntologies(),termSearchResultOntologies,userPreferences);
-    		//ConceptUtilityClass.calculateConceptUtilityFunction(className, userPreferences.getInputFileName(), termSearchResultOntologies);
+    		bioPortalSearchResult=excludeNonOWLOntologies(bioPortalSearchResult);
+    		ArrayList<String> modulesOfLaregFilesIRIs = getModulesIRIFromLargeOntologies(className,bioPortalSearchResult);
+    		if(modulesOfLaregFilesIRIs.size()>0)
+    			bioPortalSearchResult.addAll(modulesOfLaregFilesIRIs);
+   
+    		ArrayList<CandidateOntologyClass> candidateOntologies= populateCandidateOntologyIDs(bioPortalSearchResult);
+    		candidateOntologies= OntologyUtilityClass.calculateOntologyUtilityFunction(classNames,candidateOntologies,firstIteration.getUserPreferences());
+    	//	Collections.sort(candidateOntologies,Collections.reverseOrder());
+    		Collections.sort(candidateOntologies,CandidateOntologyClass.sortByOntologyUtilityScore);
+    		for(CandidateOntologyClass t: candidateOntologies){
+    			t.display();
+    		}	
+    	   // ConceptUtilityClass.calculateConceptUtilityFunction(className, firstIteration.getUserPreferences().getInputFileName(), bioPortalSearchResult);
+    		candidateOntologies=ConceptUtilityClass.calculateConceptUtilityFunction10(className, firstIteration.getUserPreferences().getInputFileName(), candidateOntologies);
+    		Collections.sort(candidateOntologies,CandidateOntologyClass.sortByTotalUtilityScore);
+    		for(CandidateOntologyClass t: candidateOntologies){
+    			t.display1();
+    		}
+    		firstIteration.setCandidateOntologies(candidateOntologies);		
     	}
-    	//System.out.println("Please Select the ontology you want to use in the Reuse Process: (if more than one use ',' to seprate)");
-    	//String ontologies= sc.nextLine();
- 
+    	System.out.println("Please Select the ontology you want to use in the Reuse Process: (select from a ranked list)");
+    	String selectedOntology= sc.nextLine();
+    	firstIteration.setSelectedOntology(selectedOntology);
+    	firstIteration.displayRewardValue();
+    	iterationToJSON(firstIteration);
     	
     	// end main
     }
     
-    
-  //-------------------------------------------------------------------------------	
+  	//-------------------------------------------------------------------------------	
   	//The function takes an input string from the user, split it by ',' then uppercase 
   	//the file(s) name(s) and add .owl extension and return a list of files names 
   	public static ArrayList<String> getOntologyFileNames(String ontologies){
@@ -146,7 +166,17 @@ public class App
   		}
   		return newSetofOntologies;
   	}
-  	
+	//------------------------------------------------------------
+  	//The function checks if the list contains redundant ontology names, if so remove them from the list
+	private static ArrayList<String> excludeRedundantOntologies(ArrayList<String> setofOntologies){
+  		
+  		ArrayList<String> newSetofOntologies = new ArrayList<String>();
+  		for(String ontologyID: setofOntologies) {
+  			if(!newSetofOntologies.contains(ontologyID))
+  				newSetofOntologies.add(ontologyID);
+  		}
+  		return newSetofOntologies;
+  	}
   	//--------------------------------------------------------------------
   	//This Function returns a list of the names of all files in OWLOntologies directory
 	//It is used to get the names of the OWL files and the names of the very large files >50MB 
@@ -180,10 +210,10 @@ public class App
   	}
   	//------------------------------------------------------------------
   	
-  	public static UserPreferencesModel promptUserInputPreferences() {
+  	public static IterationClass promptUserInputPreferences(IterationClass firstIteration) {
   		
   		//A UserPreferencesModel object to collect user preferences
-  		UserPreferencesModel userPreferencesModel=new UserPreferencesModel();
+  		UserPreferencesModel userPreferences=new UserPreferencesModel();
     	sc = new Scanner(System.in);   	
     	
     	//Ask the user to enter his input ontology/ in the application browse for it
@@ -203,58 +233,79 @@ public class App
             file = new File(inputFileName);
         }
         log.info("Your file is:"+ inputFileName);
-        userPreferencesModel.setInputFileName(inputFileName);
+        userPreferences.setInputFileName(inputFileName);
         
         //get the user's preferred ontology domain(s)
         System.out.println("What is your preferred ontology domain(s): (select from a list)");
         String prefOntologyDomain;          //read input 
         ArrayList<String> prefOntologyDomains=new ArrayList<String>();
-        while (!(prefOntologyDomain = sc.nextLine()).isEmpty()) 
-        { 
+        while (!(prefOntologyDomain = sc.nextLine()).isEmpty()) { 
         	prefOntologyDomains.add(prefOntologyDomain);
         }
         System.out.println("You entered: ");
-        for(int j=0; j<prefOntologyDomains.size(); j++)
-        {
+        for(int j=0; j<prefOntologyDomains.size(); j++){
         	System.out.print(prefOntologyDomains.get(j)+ "  "); 
         }
         System.out.println();
-        userPreferencesModel.setUserPrefDomain(prefOntologyDomains);
+        userPreferences.setUserPrefDomain(prefOntologyDomains);
         
         //get the user's preferred ontology popularity
-        System.out.println("What is your preferred popularity degree: "+"\n"
-        		+ "(1. Very popular    2. Medium popularity   3. Not an important factor): ");
+        System.out.println("Do you prefer popular ontologies: "+"\n"
+        		+ "(1. Yes   2. No, not an important factor): ");
         int prefOntologyPopularity= Integer.parseInt( sc.nextLine());
-        userPreferencesModel.setUserPrefOntologyPopularity(prefOntologyPopularity);
+        userPreferences.setUserPrefOntologyPopularity(prefOntologyPopularity);
         
         //get the user's preferred ontology coverage
-        System.out.println("What is your preferred coverage degree: "+"\n"
-        		+ "(1. Strong coverage    2. Medium coverage   3. Not an important factor): ");
+        System.out.println("Do you prefer ontologies with high coverage score: "+"\n"
+        		+ "(1. Yes   2. No, not an important factor): ");
         int prefOntologycoverage= Integer.parseInt( sc.nextLine());
-        userPreferencesModel.setUserPrefOntologyCoverage(prefOntologycoverage);
+        userPreferences.setUserPrefOntologyCoverage(prefOntologycoverage);
         
         //get the user's preferred ontolog(ies)
         System.out.println("What is your preferred ontology(ies): (select from a list)");
         String prefOntology;          //read input 
         ArrayList<String> prefOntologies=new ArrayList<String>();
-        while (!(prefOntology = sc.nextLine()).isEmpty()) 
-        { 
+        while (!(prefOntology = sc.nextLine()).isEmpty()) { 
         	prefOntologies.add(prefOntology);
         }
         System.out.println("You entered: ");
-        for(int j=0; j<prefOntologies.size(); j++)
-        {
+        for(int j=0; j<prefOntologies.size(); j++){
         	System.out.print(prefOntologies.get(j)+ "  "); 
         }
         System.out.println();
-        userPreferencesModel.setUserPrefOntologies(prefOntologies);
+        userPreferences.setUserPrefOntologies(prefOntologies);
         
         //get the user's preferred ontology type
         System.out.println("What is your preferred ontology type: "+"\n"
         		+ "(1. Taxonomy   2. Full semantic ontology   3. Not an important factor): ");
         int prefOntologyType= Integer.parseInt( sc.nextLine());
-        userPreferencesModel.setUserPrefOntologyType(prefOntologyType);
-         
-		return userPreferencesModel;
-  	}  	
+        userPreferences.setUserPrefOntologyType(prefOntologyType);
+        firstIteration.setUserPreferences(userPreferences); 
+		return firstIteration;
+  	}
+//-----------------------------------------------------------
+	private static ArrayList<CandidateOntologyClass> populateCandidateOntologyIDs(ArrayList<String> bioPortalSearchResults)
+	{
+		ArrayList<CandidateOntologyClass> candidateOntologies= new ArrayList<CandidateOntologyClass>();
+			for(String ontologyId: bioPortalSearchResults) {
+				CandidateOntologyClass candidateOntology = new CandidateOntologyClass(ontologyId);
+				candidateOntologies.add(candidateOntology);
+			}
+		return candidateOntologies;
+	}
+//-------------------------------------------------------------------
+	private static void iterationToJSON(IterationClass firstIteration) {
+		try {
+	      	// create object mapper instance
+	        ObjectMapper mapper = new ObjectMapper();
+	        
+	        // create an instance of DefaultPrettyPrinter
+	        ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
+
+	        // write list of ontologies to JSON file
+	        writer.writeValue(Paths.get("UserIterations.json").toFile(), firstIteration);    	
+	    	} catch (Exception ex) {
+	    		ex.printStackTrace();
+	    	}
+	}
 }

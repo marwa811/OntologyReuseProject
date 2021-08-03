@@ -19,6 +19,9 @@ import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
 import org.semanticweb.owlapi.search.EntitySearcher;
+
+import AgentClasses.ConceptUtilityScoreClass;
+
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLDataProperty;
@@ -44,8 +47,11 @@ public class OntologyMatchingAlgorithm {
 	//The conceptContextMatching Score 
 	double conceptContextMatchingScore=0.0;
 	
-	//The conceptContextMatching Score 
+	//The conceptSemanticRichness Score 
 	double conceptSemanticRichnessScore=0.0;
+	
+	//The concetUtilityScore 
+	double conceptUtilityScore=0.0;
 	
 	static OWLOntologyInformation sourceOntology=new OWLOntologyInformation();
 	static OWLOntologyInformation targetOntology=new OWLOntologyInformation();
@@ -81,6 +87,11 @@ public class OntologyMatchingAlgorithm {
 		return conceptContextMatchingScore;
 	}
 	
+	public double getConceptUtilityScore() {
+		//System.out.println("the conceptSemanticRichnessScore is:"+ conceptSemanticRichnessScore);
+		return conceptUtilityScore;
+	}
+	
 	public void displayFinalMappings() {
 		Finalmappings.displayMappings();
 	}
@@ -92,282 +103,6 @@ public class OntologyMatchingAlgorithm {
 		}
 	}
 
-	/**
-	 * A method to test all the conditions of the algorithm to ensure semantic
-	 * matching step for a pair of classes. if the pair has a match, add the source
-	 * class to "semanticSimilarClasses" Set
-	 * @param targetOntology
-	 * @param sourceOntology 
-	 * @param mappings 
-	 * 
-	 * @param The source ontology, source class, target ontology , target class, AML mappings
-	 * @throws OWLException 
-	 * @throws OWLOntologyCreationException 
-	 */
-//	public void getSimilarclasses(OWLOntologyInformation sourceOntology, 
-	//		OWLOntologyInformation targetOntology,AMLMapping m, ArrayList<AMLMapping> mappings) throws IOException, OWLOntologyCreationException, OWLException {
-	public void getSimilarclasses(AMLMapping m, ArrayList<AMLMapping> mappings) throws IOException, OWLOntologyCreationException, OWLException {
-		// Condition 1: if the two classes have equivalent classes with mappings, then they can
-		// be semantically the same
-		getEquivalentClassesWithMappings (m,mappings );
-		
-		// Condition 2: if two classes has subclasses with mappings, then they can be
-		// semantically the same
-		getSubClassesWithMappings(m,mappings);
-				
-		// Condition 3: if two classes has direct superclass with mappings, then they can be
-		// semantically the same
-		getParentClassWithMappings(m, mappings);
-		
-		// Condition 4: if two classes has common non-direct superclass with mappings, then they can be
-		// semantically the same
-		getNotDirectParentClassWithMappings( m, mappings);
-
-		// Condition 5: if two classes has common sibling classes with mappings, then they can be
-		// semantically the same
-		getSiblingClassesWithMappings( m, mappings);
-		
-		// Condition 6: if two classes has common object properties && has domain/range classes that have mappings 
-		// then they are semantically the same.
-		getCommonObjectProperties(m, mappings);
-		
-		getSynonymsandDefinitionScores(m,mappings);
-		mappings=null;
-	}
-
-	/**
-	 * A method to get equivalent classes that has a mapping between source class and target
-	 * class. For example, if ClassA is equivalent to ClassC and ClassB is
-	 * equivalent to ClassC' so, ClassA and ClassB are equivalent iff classC and classC' has a mappings.
-	 * This function test if classC and classC' has a mapping
-	 * 
-	 * @param source class ,target class, and list of mappings.
-	 * @return The source class if there is a mapping between equivalent classes, else return null.
-	 */
-
-	public void getEquivalentClassesWithMappings(AMLMapping m, List<AMLMapping> mappings ) throws IOException {
-	
-	OWLClass sourceClass=sourceOntology.getOWLClassfromIRI(m.getSourceURI());
-	OWLClass targetClass = targetOntology.getOWLClassfromIRI(m.getTargetURI());	
-	Set<OWLClass> sourceClassEquavilantClasses= sourceOntology.getEquavilantClasses(sourceClass);
-	Set<OWLClass> targetClassEquavilantClasses= targetOntology.getEquavilantClasses(targetClass);
-	for (OWLClass c1 : sourceClassEquavilantClasses) 
-		for (OWLClass c2 : targetClassEquavilantClasses) 
-			if(testMappingExistence(c1, c2, mappings)) {
-				System.out.println("Added for common Equivalent classes");
-				Finalmappings.add(m);
-			}
-	sourceClassEquavilantClasses=null;
-	targetClassEquavilantClasses=null;
-	}
-	/**
-	 * A method to get sub-classes that has mappings between source class and target class.
-	 * get subclasses of source class
-	 * get subclasses of target class
-	 * test if there is a match between the two sets of subclasses.
-	 *
-	 * @param The source class, target class, and list of mappings.
-	 * @return The source class that has mappings between the input classes.
-	 */
-	public void getSubClassesWithMappings(AMLMapping m, List<AMLMapping> mappings ) throws IOException {
-		OWLClass sourceClass=sourceOntology.getOWLClassfromIRI(m.getSourceURI());
-		OWLClass targetClass = targetOntology.getOWLClassfromIRI(m.getTargetURI());
-		Set<OWLClass> sourceClassSubClasses= sourceOntology.getSubClasses(sourceClass);
-		Set<OWLClass> targetClassSubClasses= targetOntology.getSubClasses(targetClass);
-		if(targetClassSubClasses.size()>0)
-			conceptSemanticRichnessScore+=0.2;
-		for (OWLClass c1 : sourceClassSubClasses) { 
-			if (Finalmappings.contains(m))
-				break;
-			
-			for (OWLClass c2 : targetClassSubClasses) {
-				if(testMappingExistence(c1, c2, mappings)) {
-					System.out.println("Added for common sub classes");
-					conceptContextMatchingScore+=0.2;
-					Finalmappings.add(m);
-				}
-			}
-		}
-		sourceClassSubClasses=null;
-		targetClassSubClasses=null;
-		}
-	
-	/**
-	 * A method to get (direct) parent class that has mapping between source class and target class, if exists.
-	 * get superclass of source class
-	 * get superclass of target class
-	 * test if there is a match between the two superclasses.
-	 * 
-	 * @param The source class , target class, and list of mappings.
-	 * @return The source class that have common (direct) parent with mappings with the target superclasses.
-	 */
-	
-	public void getParentClassWithMappings(AMLMapping m, List<AMLMapping> mappings ) throws IOException {
-		OWLClass sourceClass=sourceOntology.getOWLClassfromIRI(m.getSourceURI());
-		OWLClass targetClass = targetOntology.getOWLClassfromIRI(m.getTargetURI());
-		Set<OWLClass> sourceClassDirectSuperClass= sourceOntology.getDirectSuperClass(sourceClass);
-		Set<OWLClass> targetClassDirectSuperClass= targetOntology.getDirectSuperClass(targetClass);
-		if(targetClassDirectSuperClass.size()>0)
-			conceptSemanticRichnessScore+=0.2;
-		for (OWLClass c1 : sourceClassDirectSuperClass) {
-			for (OWLClass c2 : targetClassDirectSuperClass) {	
-			// if direct parent is "Thing" don't count it
-			if (c1.getIRI().getFragment() == "Thing" || c2.getIRI().getFragment() == "Thing")
-				break;
-			if(testMappingExistence(c1, c2, mappings)) {
-				System.out.println("Added for common direct parent classes");
-				conceptContextMatchingScore+=0.2;
-				Finalmappings.add(m);
-			}
-			}
-		}
-		sourceClassDirectSuperClass=null;
-		targetClassDirectSuperClass=null;
-	}
-
-	/**
-	 * A method to get (all) not direct parent classes that has mapping between source class and target class, if exists.
-	 * get  all superclasses of source class
-	 * get all superclasses of target class
-	 * test if there is a match between any two superclasses.
-	 * 
-	 * @param The source class, target class, and list of mappings.
-	 * @return The source class that have common any not direct parents with mappings with the target superclasses.
-	 */
-	
-	public void getNotDirectParentClassWithMappings(AMLMapping m, List<AMLMapping> mappings) throws IOException {
-		OWLClass sourceClass=sourceOntology.getOWLClassfromIRI(m.getSourceURI());
-		OWLClass targetClass = targetOntology.getOWLClassfromIRI(m.getTargetURI());
-		Set<OWLClass> sourceClassAllSuperClass= sourceOntology.getAllSuperClasses(sourceClass);
-		Set<OWLClass> targetClassAllSuperClass= targetOntology.getAllSuperClasses(targetClass);
-		
-		for (OWLClass c1 : sourceClassAllSuperClass) {
-			if (Finalmappings.contains(m))
-				break;
-			for (OWLClass c2 : targetClassAllSuperClass) {	
-			// if direct parent is "Thing" don't count it
-			if(c1.getIRI().getFragment() == "Thing" || c2.getIRI().getFragment() == "Thing")
-				continue;
-			if(testMappingExistence(c1, c2, mappings)) {
-				System.out.println("Added for common non-direct parent classes");
-				conceptContextMatchingScore+=0.2;
-				Finalmappings.add(m);
-			}
-			}
-		}
-		sourceClassAllSuperClass=null;
-		targetClassAllSuperClass=null;
-	}
-
-	/**
-	 * A method to get sibling classes that has mapping between source class and target class, if exists.
-	 * get sibling classes of source class
-	 * get sibling classes of target class
-	 * test if there is a match between the two sibling classes.
-	 * 
-	 * @param The source class, target class, and list of mappings.
-	 * @return The source class that have common siblings with mappings with the target superclasses.
-	 */
-	
-	public void getSiblingClassesWithMappings(AMLMapping m, List<AMLMapping> mappings) throws IOException {
-		OWLClass sourceClass=sourceOntology.getOWLClassfromIRI(m.getSourceURI());
-		OWLClass targetClass = targetOntology.getOWLClassfromIRI(m.getTargetURI());
-		Set<OWLClass> sourceClassSiblingClasses= sourceOntology.getSiblingClasses(sourceClass);
-		Set<OWLClass> targetClassSiblingClasses= targetOntology.getSiblingClasses(targetClass);
-		
-		for (OWLClass c1 : sourceClassSiblingClasses) {
-			if (Finalmappings.contains(m))
-				break;
-			for (OWLClass c2 : targetClassSiblingClasses) {	
-			// if sibling class is "Thing" don't count it
-			if(c1.getIRI().getFragment() == "Thing" || c2.getIRI().getFragment() == "Thing")
-				continue;
-			if(c1.getIRI().getFragment() == sourceClass.getIRI().getFragment() || 
-					c2.getIRI().getFragment() == targetClass.getIRI().getFragment())
-				continue;
-			if(testMappingExistence(c1, c2, mappings)) {
-				System.out.println("Added for common sibling classes");
-				conceptContextMatchingScore+=0.2;
-				Finalmappings.add(m);
-				}
-			}
-		}
-		sourceClassSiblingClasses=null;
-		targetClassSiblingClasses=null;
-	}
-
-	/**
-	 * A method to get source class if the two input classes have common object properties,
-	 * and there is a mapping between their domain/target classes
-	 * 
-	 * @param The source class , target class, and list of mappings.
-	 * @return The source class
-	 */
-	public void getCommonObjectProperties(AMLMapping m, List<AMLMapping> mappings) throws IOException {
-		OWLClass sourceClass=sourceOntology.getOWLClassfromIRI(m.getSourceURI());
-		OWLClass targetClass = targetOntology.getOWLClassfromIRI(m.getTargetURI());
-		// get all object properties connected to the source class from the source ontology
-		// get all object properties connected to the target class from the target ontology
-		Set<OWLObjectProperty> targetOWLObjectProperty=targetOntology.getObjectProperties(targetClass);
-		if(targetOWLObjectProperty.size()>0)
-			conceptSemanticRichnessScore+=0.2;
-		for (OWLObjectProperty obSource : sourceOntology.getObjectProperties(sourceClass)) {
-			// if there is a common object property between the two classes (lexical similarity)
-			for (OWLObjectProperty obTarget : targetOWLObjectProperty) {
-				if (existin(obSource, obTarget)) {
-					//if there are any common object properties between the two classes
-					//check for any domain/range classes that are mapped
-					for(OWLClass cS : sourceOntology.getClassesRelatedToObjectProperty(obSource))
-						for(OWLClass cT : targetOntology.getClassesRelatedToObjectProperty(obTarget))
-							if(testMappingExistence(cS, cT, mappings)) {
-								System.out.println("Added for common classes with common Object properties");
-								conceptContextMatchingScore+=0.2;
-								Finalmappings.add(m);
-							}
-				}			
-			}
-		}
-	}
-	
-	/**
-	 * A method to get sub-classes that has mappings between source class and target class.
-	 * get subclasses of source class
-	 * get subclasses of target class
-	 * test if there is a match between the two sets of subclasses.
-	 *
-	 * @param The source class, target class, and list of mappings.
-	 * @return The source class that has mappings between the input classes.
-	 */
-	public void getSynonymsandDefinitionScores(AMLMapping m, List<AMLMapping> mappings ) throws IOException {
-		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-		OWLDataFactory factory = manager.getOWLDataFactory();
-		StructuralReasonerFactory structFactory = new StructuralReasonerFactory();
-		OWLOntology ontology=targetOntology.getOntology();
-		OWLReasoner reasoner = structFactory.createReasoner(ontology);
-		reasoner.precomputeInferences();
-		//OWLClass targetClass = targetOntology.getOWLClassfromIRI(m.getTargetURI());		
-		OWLClass targetClass = factory.getOWLClass(IRI.create(m.getTargetURI()));
-
-		Iterator<OWLAnnotation> iterator = EntitySearcher.getAnnotationObjects(targetClass, ontology.getImportsClosure()).iterator();
-		while (iterator.hasNext()) {
-			final OWLAnnotation annotat = iterator.next();
-			if(annotat.getProperty().getIRI().getFragment().contains("rdfs:label"))
-				System.out.println("Label: "+annotat.getValue());
-			if(annotat.getProperty().getIRI().getFragment().contains("rdfs:comment"))
-				System.out.println("Comment: "+annotat.getValue());
-			if(annotat.getProperty().getIRI().getFragment().contains("hasExactSynonym"))
-				System.out.println("Exact Synonym: "+ annotat.getValue());
-			if(annotat.getProperty().getIRI().getFragment().contains("hasNarrowSynonym"))
-				System.out.println("Narrow Synonym: "+annotat.getValue());
-			if(annotat.getProperty().getIRI().getFragment().contains("hasDefinition"))
-				System.out.println("Definition: "+annotat.getValue());
-		}
-		
-
-		conceptSemanticRichnessScore+=0.2;
-		iterator=null;
-		//targetClassSubClasses=null;
-		}
 
 
 	/**
@@ -488,5 +223,302 @@ public boolean testMappingExistence(OWLClass class1, OWLClass class2, List<AMLMa
 		for (OWLClass c : classes)
 			System.out.println(sourceOntology.getClassLabel(c));
 	}
+	
+	
+	
+	public ConceptUtilityScoreClass getSimilarclasses(AMLMapping m, ArrayList<AMLMapping> mappings) throws IOException, OWLOntologyCreationException, OWLException {
+		// Condition 1: if the two classes have equivalent classes with mappings, then they can
+		// be semantically the same
+		getEquivalentClassesWithMappings (m,mappings );
+		
+		// Condition 2: if two classes has subclasses with mappings, then they can be
+		// semantically the same
+		getSubClassesWithMappings(m,mappings);
+				
+		// Condition 3: if two classes has direct superclass with mappings, then they can be
+		// semantically the same
+		getParentClassWithMappings(m, mappings);
+		
+		// Condition 4: if two classes has common non-direct superclass with mappings, then they can be
+		// semantically the same
+		getNotDirectParentClassWithMappings( m, mappings);
+
+		// Condition 5: if two classes has common sibling classes with mappings, then they can be
+		// semantically the same
+		getSiblingClassesWithMappings( m, mappings);
+		
+		// Condition 6: if two classes has common object properties && has domain/range classes that have mappings 
+		// then they are semantically the same.
+		getCommonObjectProperties(m, mappings);
+		
+		getSynonymsandDefinitionScores(m,mappings);
+		
+		conceptUtilityScore=0.5* conceptContextMatchingScore+ 0.5*conceptSemanticRichnessScore;
+		
+		ConceptUtilityScoreClass conceptForExtension=new ConceptUtilityScoreClass(
+				m.getTargetURI(), conceptContextMatchingScore,conceptSemanticRichnessScore,conceptUtilityScore); 
+		
+		/*System.out.println("The concept Context Matching Score is: "+ conceptContextMatchingScore );
+		System.out.println("The concept Semantic Richness Score is: "+ conceptSemanticRichnessScore);
+		System.out.println("The concept Utility Score is: "+ conceptUtilityScore);*/
+		mappings=null;
+		conceptContextMatchingScore=0.0;
+		conceptSemanticRichnessScore=0.0;
+		conceptUtilityScore=0.0;
+		return conceptForExtension;
+	}
+
+	/**
+	 * A method to get equivalent classes that has a mapping between source class and target
+	 * class. For example, if ClassA is equivalent to ClassC and ClassB is
+	 * equivalent to ClassC' so, ClassA and ClassB are equivalent iff classC and classC' has a mappings.
+	 * This function test if classC and classC' has a mapping
+	 * 
+	 * @param source class ,target class, and list of mappings.
+	 * @return The source class if there is a mapping between equivalent classes, else return null.
+	 */
+
+	public void getEquivalentClassesWithMappings(AMLMapping m, List<AMLMapping> mappings ) throws IOException {
+	
+	OWLClass sourceClass=sourceOntology.getOWLClassfromIRI(m.getSourceURI());
+	OWLClass targetClass = targetOntology.getOWLClassfromIRI(m.getTargetURI());	
+	Set<OWLClass> sourceClassEquavilantClasses= sourceOntology.getEquavilantClasses(sourceClass);
+	Set<OWLClass> targetClassEquavilantClasses= targetOntology.getEquavilantClasses(targetClass);
+	for (OWLClass c1 : sourceClassEquavilantClasses) 
+		for (OWLClass c2 : targetClassEquavilantClasses) 
+			if(testMappingExistence(c1, c2, mappings)) {
+				System.out.println("Added for common Equivalent classes");
+				Finalmappings.add(m);
+			}
+	sourceClassEquavilantClasses=null;
+	targetClassEquavilantClasses=null;
+	}
+	/**
+	 * A method to get sub-classes that has mappings between source class and target class.
+	 * get subclasses of source class
+	 * get subclasses of target class
+	 * test if there is a match between the two sets of subclasses.
+	 *
+	 * @param The source class, target class, and list of mappings.
+	 * @return The source class that has mappings between the input classes.
+	 */
+	public void getSubClassesWithMappings(AMLMapping m, List<AMLMapping> mappings ) throws IOException {
+		boolean temp=false;
+		OWLClass sourceClass=sourceOntology.getOWLClassfromIRI(m.getSourceURI());
+		OWLClass targetClass = targetOntology.getOWLClassfromIRI(m.getTargetURI());
+		Set<OWLClass> sourceClassSubClasses= sourceOntology.getSubClasses(sourceClass);
+		Set<OWLClass> targetClassSubClasses= targetOntology.getSubClasses(targetClass);
+		if(targetClassSubClasses.size()>0)
+			conceptSemanticRichnessScore+=0.2;
+		for (OWLClass c1 : sourceClassSubClasses) { 
+			if (Finalmappings.contains(m))
+				break;
+			
+			for (OWLClass c2 : targetClassSubClasses) {
+				if(testMappingExistence(c1, c2, mappings)) {
+					System.out.println("Added for common sub classes");
+					temp=true;
+					Finalmappings.add(m);
+				}
+			}
+		}
+		if(temp==true)
+			conceptContextMatchingScore+=0.2;
+		sourceClassSubClasses=null;
+		targetClassSubClasses=null;
+		}
+	
+	/**
+	 * A method to get (direct) parent class that has mapping between source class and target class, if exists.
+	 * get superclass of source class
+	 * get superclass of target class
+	 * test if there is a match between the two superclasses.
+	 * 
+	 * @param The source class , target class, and list of mappings.
+	 * @return The source class that have common (direct) parent with mappings with the target superclasses.
+	 */
+	
+	public void getParentClassWithMappings(AMLMapping m, List<AMLMapping> mappings ) throws IOException {
+		boolean temp=false;
+		OWLClass sourceClass=sourceOntology.getOWLClassfromIRI(m.getSourceURI());
+		OWLClass targetClass = targetOntology.getOWLClassfromIRI(m.getTargetURI());
+		Set<OWLClass> sourceClassDirectSuperClass= sourceOntology.getDirectSuperClass(sourceClass);
+		Set<OWLClass> targetClassDirectSuperClass= targetOntology.getDirectSuperClass(targetClass);
+		if(targetClassDirectSuperClass.size()>0)
+			conceptSemanticRichnessScore+=0.2;
+		for (OWLClass c1 : sourceClassDirectSuperClass) {
+			for (OWLClass c2 : targetClassDirectSuperClass) {	
+			// if direct parent is "Thing" don't count it
+			if (c1.getIRI().getFragment() == "Thing" || c2.getIRI().getFragment() == "Thing")
+				break;
+			if(testMappingExistence(c1, c2, mappings)) {
+				System.out.println("Added for common direct parent classes");
+				temp=true;
+				Finalmappings.add(m);
+			}
+			}
+		}
+		if(temp==true)
+			conceptContextMatchingScore+=0.2;
+		sourceClassDirectSuperClass=null;
+		targetClassDirectSuperClass=null;
+	}
+
+	/**
+	 * A method to get (all) not direct parent classes that has mapping between source class and target class, if exists.
+	 * get  all superclasses of source class
+	 * get all superclasses of target class
+	 * test if there is a match between any two superclasses.
+	 * 
+	 * @param The source class, target class, and list of mappings.
+	 * @return The source class that have common any not direct parents with mappings with the target superclasses.
+	 */
+	
+	public void getNotDirectParentClassWithMappings(AMLMapping m, List<AMLMapping> mappings) throws IOException {
+		boolean temp=false;
+		OWLClass sourceClass=sourceOntology.getOWLClassfromIRI(m.getSourceURI());
+		OWLClass targetClass = targetOntology.getOWLClassfromIRI(m.getTargetURI());
+		Set<OWLClass> sourceClassAllSuperClass= sourceOntology.getAllSuperClasses(sourceClass);
+		Set<OWLClass> targetClassAllSuperClass= targetOntology.getAllSuperClasses(targetClass);
+		
+		for (OWLClass c1 : sourceClassAllSuperClass) {
+			if (Finalmappings.contains(m))
+				break;
+			for (OWLClass c2 : targetClassAllSuperClass) {	
+			// if direct parent is "Thing" don't count it
+			if(c1.getIRI().getFragment() == "Thing" || c2.getIRI().getFragment() == "Thing")
+				continue;
+			if(testMappingExistence(c1, c2, mappings)) {
+				System.out.println("Added for common non-direct parent classes");
+				temp=true;
+				Finalmappings.add(m);
+			}
+			}
+		}
+		if(temp==true)
+			conceptContextMatchingScore+=0.2;
+		sourceClassAllSuperClass=null;
+		targetClassAllSuperClass=null;
+	}
+	/**
+	 * A method to get sibling classes that has mapping between source class and target class, if exists.
+	 * get sibling classes of source class
+	 * get sibling classes of target class
+	 * test if there is a match between the two sibling classes.
+	 * 
+	 * @param The source class, target class, and list of mappings.
+	 * @return The source class that have common siblings with mappings with the target superclasses.
+	 */
+	
+	public void getSiblingClassesWithMappings(AMLMapping m, List<AMLMapping> mappings) throws IOException {
+		OWLClass sourceClass=sourceOntology.getOWLClassfromIRI(m.getSourceURI());
+		OWLClass targetClass = targetOntology.getOWLClassfromIRI(m.getTargetURI());
+		Set<OWLClass> sourceClassSiblingClasses= sourceOntology.getSiblingClasses(sourceClass);
+		Set<OWLClass> targetClassSiblingClasses= targetOntology.getSiblingClasses(targetClass);
+		
+		for (OWLClass c1 : sourceClassSiblingClasses) {
+			if (Finalmappings.contains(m))
+				break;
+			for (OWLClass c2 : targetClassSiblingClasses) {	
+			// if sibling class is "Thing" don't count it
+			if(c1.getIRI().getFragment() == "Thing" || c2.getIRI().getFragment() == "Thing")
+				continue;
+			if(c1.getIRI().getFragment() == sourceClass.getIRI().getFragment() || 
+					c2.getIRI().getFragment() == targetClass.getIRI().getFragment())
+				continue;
+			if(testMappingExistence(c1, c2, mappings)) {
+				System.out.println("Added for common sibling classes");
+				conceptContextMatchingScore+=0.2;
+				Finalmappings.add(m);
+				}
+			}
+		}
+		sourceClassSiblingClasses=null;
+		targetClassSiblingClasses=null;
+	}
+	
+	/**
+	 * A method to get source class if the two input classes have common object properties,
+	 * and there is a mapping between their domain/target classes
+	 * 
+	 * @param The source class , target class, and list of mappings.
+	 * @return The source class
+	 */
+	public void getCommonObjectProperties(AMLMapping m, List<AMLMapping> mappings) throws IOException {
+		OWLClass sourceClass=sourceOntology.getOWLClassfromIRI(m.getSourceURI());
+		OWLClass targetClass = targetOntology.getOWLClassfromIRI(m.getTargetURI());
+		boolean temp=false;
+		// get all object properties connected to the source class from the source ontology
+		// get all object properties connected to the target class from the target ontology
+		Set<OWLObjectProperty> targetOWLObjectProperty=targetOntology.getObjectProperties(targetClass);
+		if(targetOWLObjectProperty.size()>0)
+			conceptSemanticRichnessScore+=0.2;
+		for (OWLObjectProperty obSource : sourceOntology.getObjectProperties(sourceClass)) {
+			// if there is a common object property between the two classes (lexical similarity)
+			for (OWLObjectProperty obTarget : targetOWLObjectProperty) {
+				if (existin(obSource, obTarget)) {
+					//if there are any common object properties between the two classes
+					//check for any domain/range classes that are mapped
+					for(OWLClass cS : sourceOntology.getClassesRelatedToObjectProperty(obSource))
+						for(OWLClass cT : targetOntology.getClassesRelatedToObjectProperty(obTarget)) {
+								temp=true;
+								Finalmappings.add(m);
+							}
+						}
+				}			
+			}
+		if(temp==true)
+			conceptContextMatchingScore+=0.2;
+		}
+	
+	/**
+	 * A method to get sub-classes that has mappings between source class and target class.
+	 * get subclasses of source class
+	 * get subclasses of target class
+	 * test if there is a match between the two sets of subclasses.
+	 *
+	 * @param The source class, target class, and list of mappings.
+	 * @return The source class that has mappings between the input classes.
+	 */
+	public void getSynonymsandDefinitionScores(AMLMapping m,  List<AMLMapping> mappings ) throws IOException {
+		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+		OWLDataFactory factory = manager.getOWLDataFactory();
+		StructuralReasonerFactory structFactory = new StructuralReasonerFactory();
+		OWLOntology ontology=targetOntology.getOntology();
+		OWLReasoner reasoner = structFactory.createReasoner(ontology);
+		reasoner.precomputeInferences();
+		boolean temp=false;
+		//OWLClass targetClass = targetOntology.getOWLClassfromIRI(m.getTargetURI());		
+		OWLClass targetClass = factory.getOWLClass(IRI.create(m.getTargetURI()));
+
+		Iterator<OWLAnnotation> iterator = EntitySearcher.getAnnotationObjects(targetClass, ontology.getImportsClosure()).iterator();
+		while (iterator.hasNext()) {
+			final OWLAnnotation annotat = iterator.next();
+			if(annotat.getProperty().getIRI().getFragment().contains("rdfs:label")) {
+				System.out.println("Label: "+annotat.getValue());
+				temp=true;
+			}		
+			if(annotat.getProperty().getIRI().getFragment().contains("rdfs:comment")) {
+				System.out.println("Comment: "+annotat.getValue());
+				temp=true;
+			}
+			if(annotat.getProperty().getIRI().getFragment().contains("hasExactSynonym")) {
+				System.out.println("Exact Synonym: "+ annotat.getValue());
+				temp=true;
+			}
+			if(annotat.getProperty().getIRI().getFragment().contains("hasNarrowSynonym")) {
+				System.out.println("Narrow Synonym: "+annotat.getValue());
+				temp=true;
+			}
+			if(annotat.getProperty().getIRI().getFragment().contains("hasDefinition")) {
+				System.out.println("Definition: "+annotat.getValue());
+				temp=true;
+			}			
+		}
+		if(temp==true)
+			conceptSemanticRichnessScore+=0.2;
+		iterator=null;
+		//targetClassSubClasses=null;
+		}
 	
 }

@@ -57,6 +57,7 @@ public class TermSearchUsingBioportal {
 	     return searchResults;
 	     }
 	 }
+
 	 //////////////////////////////////////////////////////////////////////////
 	 //This function uses the Bioportal Recommender to get the coverage score and returns a 
 	 // Map<ontology id, Coverage Score>
@@ -148,4 +149,42 @@ public class TermSearchUsingBioportal {
 	        }
 	        return result;
 	    }
+	    ////////////////////////////////////////////////////
+		 /*This method is used temporary as AML import problem is fixed, it
+		  * calls BioPortal Rest API, As input it takes a string for the class name 
+		  * (search query) and returns an Map of OntologyId, classId*/
+			 public static Map<String,String> tempSearchByTermBioportal(String classLabel) throws Exception {
+			    	
+			 //An array list of type TermSearchResultInformation for the results 
+			 // ArrayList<TermSearchResultInformation> searchResults = new ArrayList<TermSearchResultInformation>();
+			 System.out.println("You are searching class: "+ classLabel);
+			 log.info("Searching bioportal for ontologies...");
+			 JsonNode results = jsonToNode(get(REST_URL + "/search?q=" + classLabel)).get("collection");
+			 if(results.size()==0) {
+				 System.out.println("No ontologies found to match this class.");
+			     return null;
+			     }
+			 else { 
+			  /*iterate over each JsonNode in the result which contains information about: 
+			  * each class such as, id , label, definitions, and synonyms
+			  * and the ontology it belongs to such as, its id, name, and acronym
+			  * return a list of ontology ids
+			  */
+				 Map<String,String> searchResults=new HashMap<String,String>();
+			     for (JsonNode result : results) {
+			       //if the result item is not obsolete
+			    	 if(result.get("obsolete").asText()=="false"){   
+			        	//searchResults.add(result.get("links").get("ontology").asText());
+			        	JsonNode ontology = jsonToNode(get(result.get("links").get("ontology").asText()));
+			        	String ontologyId=ontology.get("@id").asText();
+			        	String classId=result.get("@id").asText();
+			        	searchResults.put(ontologyId,classId);
+			        	} 
+			        } 
+			     
+			 //    for(String id : searchResults.keySet()) 
+			 //   	 System.out.println(id + "       " + searchResults.get(id));
+			     return searchResults;
+			 	}
+			 }
 	}

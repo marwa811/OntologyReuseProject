@@ -1,4 +1,4 @@
-package UserPreferences;
+package AgentClasses;
 
 import java.util.ArrayList;
 
@@ -10,7 +10,6 @@ public class UserPreferencesModel {
 	private int userPrefOntologyCoverage;
 	private ArrayList<String> userPrefOntologies;
 	private int userPrefOntologyType;
-	
 	
 	public UserPreferencesModel(String inputFileName, ArrayList<String> userPrefDomain, int userPrefOntologyPopularity,
 			int userPrefOntologyCoverage, ArrayList<String> userPrefOntologies, int userPrefOntologyType) {
