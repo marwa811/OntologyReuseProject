@@ -104,7 +104,7 @@ public class App
     	firstIteration.setSelectedOntology(selectedOntology);
     	firstIteration.displayRewardValue();
     	iterationToJSON(firstIteration);
-    	
+        
     	// end main
     }
     
