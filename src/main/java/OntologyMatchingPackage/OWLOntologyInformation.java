@@ -433,7 +433,8 @@ public class OWLOntologyInformation {
 			System.out.println("Annotations: " + annotation.getProperty().getIRI().getFragment() + " : "
 					+ annotation.getValue().toString());
 		}
-		return iterator;
+		return iterator; 
+		
 	}
 
 	/**
