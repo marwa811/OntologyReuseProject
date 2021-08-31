@@ -1,6 +1,9 @@
 package OntologyExtractionPackage;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -10,12 +13,16 @@ import org.apache.log4j.Logger;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.io.IRIDocumentSource;
 import org.semanticweb.owlapi.model.OWLClass;
+import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLException;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyLoaderConfiguration;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
+import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
+import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
+import org.semanticweb.owlapi.model.AddAxiom;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.MissingImportHandlingStrategy;
 
@@ -24,10 +31,9 @@ public class EntityExtractionClass {
 	final static Logger log = Logger.getLogger(EntityExtractionClass.class);
 		
 	//function that takes the file name and path and returns the labels of its classes 
-	public static String getClassesLabelsFromInputOntology(String filename) throws OWLOntologyCreationException, OWLException, IOException{
+	public static String getClassesLabelsFromInputOntology(String inputFileName) throws OWLOntologyCreationException, OWLException, IOException{
 		Map<String, String> allClasses=new HashMap<String,String>();
-		OWLOntology ontology=null;
-		ontology= laodOntology(filename);
+		OWLOntology ontology=laodOntology(inputFileName);
 		allClasses=getOntolgyClassesLabels(ontology);
 		print(allClasses);
 		return getClassesNamesinaString(allClasses);
@@ -172,6 +178,43 @@ public class EntityExtractionClass {
 				classNamesasInput+=map.get(i);
 		}
 		return classNamesasInput;
+	}
+	
+//////////////////////////////////////////////////////////////////////
+	//This function takes the selected ontologyURI and the selected classURI
+	//First it gets the set of selected class's subclasses from the target ontology 
+	//then add those subclasses as subclasses' to the input class in the input ontology 
+	//Finally output the changes in a file
+	public static void addClassInformationToSourceOntology(String sourceOntologyID, String sourceClassID, 
+			String targetOntologyID, String targetClassID) throws OWLOntologyCreationException, OWLException, FileNotFoundException {
+		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+		OWLDataFactory factory = manager.getOWLDataFactory();
+		StructuralReasonerFactory structFactory = new StructuralReasonerFactory();
+
+		String targetOntologyFileName=AgentClasses.ConceptUtilityClass.getOntologyFileName(targetOntologyID);
+		try {
+			OWLOntology targetOntology=laodOntology(targetOntologyFileName);
+			OWLOntology sourceOntology=laodOntology(sourceOntologyID);
+			OWLReasoner targetreasoner = structFactory.createReasoner(targetOntology);
+			targetreasoner.precomputeInferences();
+			
+			OWLClass owlclass= factory.getOWLClass(IRI.create(targetClassID));
+			OWLClass sourceOwlclass= factory.getOWLClass(IRI.create(sourceClassID));
+			Set<OWLSubClassOfAxiom> allAxioms=new HashSet<OWLSubClassOfAxiom>();
+			//get direct subclass
+			for (OWLClass subclass : targetreasoner.getSubClasses(owlclass, true).getFlattened()) {
+				OWLSubClassOfAxiom axiom=factory.getOWLSubClassOfAxiom(subclass, sourceOwlclass);
+				manager.applyChange(new AddAxiom(sourceOntology, axiom));
+			}
+			manager.saveOntology(sourceOntology);
+		//	File file = new File("C:\\Users\\marwa\\eclipse-workspace-photon\\OntologyReuseProject\\test1.owl");
+		//	OutputStream os = new FileOutputStream(file);
+		//	manager.saveOntology(sourceOntology,os);
+		}
+		catch(OWLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();		
+		}
 	}
 }
 

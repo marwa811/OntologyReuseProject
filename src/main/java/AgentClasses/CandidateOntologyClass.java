@@ -8,7 +8,8 @@ public  class CandidateOntologyClass {
 	private String ontologyID;
 	private OntologyUtilityScoreClass ontologyUtilityScore;
 	private ArrayList<ConceptUtilityScoreClass> conceptUtilityScores;
-	private double totalUtilityScore; 
+	private double totalUtilityScore;
+	private int ontologyScore;
 	
 	public CandidateOntologyClass() {
 		super();
@@ -16,11 +17,19 @@ public  class CandidateOntologyClass {
 		this.ontologyUtilityScore = new OntologyUtilityScoreClass();
 		this.conceptUtilityScores= new ArrayList<ConceptUtilityScoreClass>();
 		this.totalUtilityScore= 0;
+		this.ontologyScore=0;
+	}
+	
+	public CandidateOntologyClass(String ontologyID, int ontologyScore) {
+		super();
+		this.ontologyID = ontologyID;
+		this.ontologyScore= ontologyScore;
 	}
 	
 	public CandidateOntologyClass(String ontologyID) {
 		super();
 		this.ontologyID = ontologyID;
+		
 	}
 	
 	public CandidateOntologyClass(String ontologyID, OntologyUtilityScoreClass ontologyUtilityScore,
@@ -29,6 +38,7 @@ public  class CandidateOntologyClass {
 		this.ontologyID = ontologyID;
 		this.ontologyUtilityScore = ontologyUtilityScore;
 		this.conceptUtilityScores = conceptUtilityScores;
+		this.ontologyScore=this.ontologyScore+ 1;
 	}
 
 	public String getOntologyID() {
@@ -52,9 +62,9 @@ public  class CandidateOntologyClass {
 	}
 
 	public void setConceptUtilityScores(ArrayList<ConceptUtilityScoreClass> conceptUtilityScores) {
+		
 		this.conceptUtilityScores = conceptUtilityScores;
 	}
-	
 	
 	public double getTotalUtilityScore() {
 		return totalUtilityScore;
@@ -62,7 +72,7 @@ public  class CandidateOntologyClass {
 
 	public void setTotalUtilityScore(ArrayList<ConceptUtilityScoreClass> conceptUtilityScores) {
 		double allConceptsScore=0;
-		if(conceptUtilityScores!=null) {
+		if(conceptUtilityScores.size()!= 0) {
 			for(ConceptUtilityScoreClass candidateConcept: conceptUtilityScores) {
 				allConceptsScore+= candidateConcept.getConceptUtilityScore();
 			}		 
@@ -85,10 +95,23 @@ public  class CandidateOntologyClass {
 		System.out.println("Total Ontology Score: "+ totalUtilityScore+'\n');
 	}
 	
+	
 	/*public int compareTo(CandidateOntologyClass o) {
 		return new Double(this.getOntologyUtilityScore().getOntologyTotalUtilityScore()).compareTo(o.getOntologyUtilityScore().getOntologyTotalUtilityScore());
 	}*/
 	
+	public int getOntologyScore() {
+		return ontologyScore;
+	}
+
+	public void setOntologyScore(int ontologyScore) {
+		this.ontologyScore = ontologyScore;
+	}
+	
+	public void addToOntologyScore(int ontologyScore) {
+		this.ontologyScore = this.ontologyScore+ ontologyScore;
+	}
+
 	public static Comparator<CandidateOntologyClass> sortByOntologyUtilityScore = new Comparator<CandidateOntologyClass>() {
 
 		public int compare(CandidateOntologyClass o1, CandidateOntologyClass o2) {
@@ -108,5 +131,17 @@ public  class CandidateOntologyClass {
 			   //descending order
 			   return new Double(ontologyScore2).compareTo(ontologyScore1);
 		    }};
+		    
+		public static Comparator<CandidateOntologyClass> sortByOntologyScore = new Comparator<CandidateOntologyClass>() {
+
+		public int compare(CandidateOntologyClass o1, CandidateOntologyClass o2) {
+			int ontologyScore1 = o1.getOntologyScore();
+			int ontologyScore2 = o2.getOntologyScore();
+
+			//descending order
+			return new Integer(ontologyScore2).compareTo(ontologyScore1);
+			//return Integer.compare(ontologyScore2,ontologyScore1);
+		}};
+		    
 	
 }

@@ -50,7 +50,8 @@
         <rdfs:comment>A class annotation property that states that the annotated class is conceptually the same class as (i.e., conceptually equivalent to) the concept identified in the annotation value. If the value of the annotation property denotes an OWL class, then the sameConceptAsClass annotation property should be used instead.</rdfs:comment>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#sameConceptAsClass">
-        <rdfs:comment>A class annotation property that states that the annotated class is conceptually the same class as (i.e., conceptually equivalent to) the referenced class (as given by the value of the annotation property). Note that being conceptually the same can differ from strict class equivalance in that the two classes may have different structural definitions within their specific ontologies, e.g., their superclasses and subclasses in the respective ontologies may differ.</rdfs:comment>
+        <rdfs:comment>A class annotation property that states that the annotated class is conceptually the same 
+		as (i.e., conceptually equivalent to) the referenced class (as given by the value of the annotation property). Note that being conceptually the same can differ from strict class equivalance in that the two classes may have different structural definitions within their specific ontologies, e.g., their superclasses and subclasses in the respective ontologies may differ.</rdfs:comment>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#similarConceptAsClass">
         <rdfs:comment>A class annotation property that states that the annotated class is conceptually similar (e.g., overlapping), but not identical to the referenced class (the value of the annotation property).</rdfs:comment>

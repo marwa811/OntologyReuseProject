@@ -6,6 +6,7 @@ import java.util.List;
 public class IterationClass {	
 	private int iterationNo;
 	private UserPreferencesModel userPreferences;
+	private String inputClassName;
 	private ArrayList<CandidateOntologyClass> candidateOntologies;
 	private String selectedOntology;
 	private int rankingNo;
@@ -26,11 +27,12 @@ public class IterationClass {
 		this.iterationNo = iterationNo;
 	}
 	
-	public IterationClass(int iterationNo, UserPreferencesModel userPreferences,
+	public IterationClass(int iterationNo, UserPreferencesModel userPreferences, String inputClassName,
 			ArrayList<CandidateOntologyClass> candidateOntologies, String selectedOntology) {
 		super();
 		this.iterationNo = iterationNo;
 		this.userPreferences = userPreferences;
+		this.inputClassName=inputClassName;
 		this.candidateOntologies = candidateOntologies;
 		this.selectedOntology = selectedOntology;
 	}
@@ -50,7 +52,15 @@ public class IterationClass {
 	public void setUserPreferences(UserPreferencesModel userPreferences) {
 		this.userPreferences = userPreferences;
 	}
+	
+	public String getInputClassName() {
+		return inputClassName;
+	}
 
+	public void setInputClassName(String inputClassName) {
+		this.inputClassName = inputClassName;
+	}
+	
 	public List<CandidateOntologyClass> getCandidateOntologies() {
 		return candidateOntologies;
 	}
@@ -91,6 +101,17 @@ public class IterationClass {
 	
 	public void displayRewardValue() {
 		System.out.println("The Reward Value= "+ this.rewardValue);
+	}
+	
+	public void printMatchedClassesOfSelectedOntology(String ontologyID) {
+		for(CandidateOntologyClass candidateOntology: this.candidateOntologies) {
+			if(candidateOntology.getOntologyID().equals(ontologyID)) {
+				System.out.println("Available concepts to reuse are: ");
+				for(ConceptUtilityScoreClass concept: candidateOntology.getConceptUtilityScores()) {
+					System.out.println("Concept: "+ concept.getMatchedConceptName());
+				}				
+			}	
+		}
 	}
 }
 

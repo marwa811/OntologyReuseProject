@@ -45,20 +45,23 @@ public class OntologyMatchingAlgorithm {
 	AMLMappings Finalmappings=new AMLMappings();
 	
 	//The conceptContextMatching Score 
-	double conceptContextMatchingScore=0.0;
+	double conceptContextMatchingScore;
 	
 	//The conceptSemanticRichness Score 
-	double conceptSemanticRichnessScore=0.0;
+	double conceptSemanticRichnessScore;
 	
 	//The concetUtilityScore 
-	double conceptUtilityScore=0.0;
+	double conceptUtilityScore;
 	
 	static OWLOntologyInformation sourceOntology=new OWLOntologyInformation();
 	static OWLOntologyInformation targetOntology=new OWLOntologyInformation();
 	
 	public OntologyMatchingAlgorithm(String sourceFile,String targetFile) throws OWLOntologyCreationException, OWLException {
 		sourceOntology.laodOntology(sourceFile);
-		targetOntology.laodOntology(targetFile);	
+		targetOntology.laodOntology(targetFile);
+		conceptContextMatchingScore=0.0;
+		conceptSemanticRichnessScore=0.0;
+		conceptUtilityScore=0.0;
 	}
 	
 	public Set<OWLClass> getSemanticSimilarClasses() {

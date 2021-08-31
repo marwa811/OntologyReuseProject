@@ -425,8 +425,9 @@ public class OWLOntologyInformation {
 	 * @return Set of OWLAnnotations.
 	 */
 	public Iterator<OWLAnnotation> getAnnotationProperties(OWLClass c) {
-		Iterator<OWLAnnotation> iterator = EntitySearcher.getAnnotationObjects(c, onto.getImportsClosure())
+	Iterator<OWLAnnotation> iterator = EntitySearcher.getAnnotationObjects(c, onto.getImportsClosure())
 				.iterator();
+	//	Iterator<OWLAnnotation> iterator =c.getAnnotations(onto.getImportsClosure()).iterator();
 		while (iterator.hasNext()) {
 			final OWLAnnotation annotation = iterator.next();
 			System.out.println("Annotations: " + annotation.getProperty().getIRI().getFragment() + " : "
@@ -442,6 +443,14 @@ public class OWLOntologyInformation {
 	 * @return The class label.
 	 */
 	public String getClassLabel(OWLClass owlclass) throws IOException {
+		// Get the annotations on the class that use the label property (rdfs:label)
+	/*	for (OWLAnnotation annotation : owlclass.getAnnotations(onto, factory.getRDFSLabel())) {
+		  if (annotation.getValue() instanceof OWLLiteral) {
+		    OWLLiteral val = (OWLLiteral) annotation.getValue();
+		        //Get your String here
+		        System.out.println(owlclass + " labelled " + val.getLiteral());
+		   }
+		}*/
 		// OWLEntity.getIRI().getShortForm();
 		Iterator<OWLAnnotation> iterator = EntitySearcher.getAnnotations(owlclass, onto).iterator();
 		while (iterator.hasNext()) {
@@ -465,7 +474,6 @@ public class OWLOntologyInformation {
 			else if (an.getProperty().getIRI().getFragment().equals("altLabel"))
 				return an.getValue().toString();
 		}
-		// return owlclass.toStringID();
 		return owlclass.getIRI().getFragment();
 	}
 

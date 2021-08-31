@@ -2,6 +2,8 @@ package AgentClasses;
 
 import java.util.ArrayList;
 
+import org.semanticweb.owlapi.model.OWLOntology;
+
 public class UserPreferencesModel {
 	
 	private String inputFileName;

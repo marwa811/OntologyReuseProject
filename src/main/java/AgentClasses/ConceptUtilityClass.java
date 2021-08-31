@@ -29,16 +29,27 @@ public class ConceptUtilityClass {
 			conceptUtilityScore=getMapping(inputClassName, InputFileName, candidateOntologyFileName);	
 		}
 	}*/	
+	
+	////////////////////////////////////////////////////////////////////////
+	//to calculate the mean score of candidate ontologies total utility score
+	public static double meanScore(ArrayList<CandidateOntologyClass> candidateOntologies) throws OWLException, IOException, TranslatedUnloadedImportException{
+		double mean=0;
+		for(CandidateOntologyClass candidateOntology: candidateOntologies){
+			mean+=candidateOntology.getOntologyUtilityScore().getOntologyTotalUtilityScore();
+		}
+		return (double)mean/candidateOntologies.size();
+	}
+
 	///////////////////////////////////////////////////////////////////////
 	//consider 10 ontologies that has candidate concepts for extension to save time
 	public static ArrayList<CandidateOntologyClass> calculateConceptUtilityFunction10(String inputClassName, String InputFileName, ArrayList<CandidateOntologyClass> candidateOntologies) throws OWLException, IOException, TranslatedUnloadedImportException{
 		for(CandidateOntologyClass candidateOntology: candidateOntologies){
 			ArrayList<ConceptUtilityScoreClass> conceptsForExtension=new ArrayList<ConceptUtilityScoreClass>();
-			
-			//if the ontology Utility Score> a given threshold, say 0.1
+			double mean=meanScore(candidateOntologies);
+			//if the ontology Utility Score> a given threshold, say the mean value 
 			if(candidateOntology.getOntologyUtilityScore().getOntologyTotalUtilityScore() > 0.1) {
 			String candidateOntologyFileName=getOntologyFileName(candidateOntology.getOntologyID()); 
-			conceptsForExtension=getMapping(inputClassName, InputFileName, candidateOntologyFileName);	
+			conceptsForExtension=getMapping(inputClassName, InputFileName, candidateOntologyFileName);		
 			candidateOntology.setConceptUtilityScores(conceptsForExtension);
 			//to calculate the total score for an ontology
 			candidateOntology.setTotalUtilityScore(conceptsForExtension);			
@@ -58,7 +69,7 @@ public class ConceptUtilityClass {
 		return conceptContextScore;
 	}*/
 	////////////////////////////////////////////////////////////////////////////
-	private static String getOntologyFileName(String candidateOntology) {
+	public static String getOntologyFileName(String candidateOntology) {
 		String name=candidateOntology.substring(candidateOntology.lastIndexOf('/')+1,candidateOntology.length());
 		return "OWLOntologies/"+name+".owl";
 	}
