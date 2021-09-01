@@ -434,7 +434,6 @@ public class OWLOntologyInformation {
 					+ annotation.getValue().toString());
 		}
 		return iterator;  
-		
 	}
 
 	/**

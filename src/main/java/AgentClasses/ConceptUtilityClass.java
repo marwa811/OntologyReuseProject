@@ -32,7 +32,7 @@ public class ConceptUtilityClass {
 	
 	////////////////////////////////////////////////////////////////////////
 	//to calculate the mean score of candidate ontologies total utility score
-	public static double meanScore(ArrayList<CandidateOntologyClass> candidateOntologies) throws OWLException, IOException, TranslatedUnloadedImportException{
+	public static double meanScore(ArrayList<CandidateOntologyClass> candidateOntologies) throws OWLException, IOException{
 		double mean=0;
 		for(CandidateOntologyClass candidateOntology: candidateOntologies){
 			mean+=candidateOntology.getOntologyUtilityScore().getOntologyTotalUtilityScore();
