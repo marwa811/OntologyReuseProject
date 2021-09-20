@@ -61,7 +61,7 @@ public class IterationClass {
 		this.inputClassName = inputClassName;
 	}
 	
-	public List<CandidateOntologyClass> getCandidateOntologies() {
+	public ArrayList<CandidateOntologyClass> getCandidateOntologies() {
 		return candidateOntologies;
 	}
 
@@ -112,6 +112,11 @@ public class IterationClass {
 				}				
 			}	
 		}
+	}
+	
+	public void DispalyIteration() {
+		System.out.println("The selected ontology is:  "+ this.selectedOntology);
+		System.out.println("The ranking no. is:  "+ this.rankingNo);
 	}
 }
 

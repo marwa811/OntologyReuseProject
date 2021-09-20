@@ -23,7 +23,7 @@ public class App
     	startingApplication();
     	
         LearningClass test= new LearningClass();
-        test.beginIterations(0);    	
+        test.beginIterations();    	
     	// end main
     }
     

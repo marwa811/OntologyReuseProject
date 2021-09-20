@@ -41,6 +41,13 @@ public  class CandidateOntologyClass {
 		this.ontologyScore=this.ontologyScore+ 1;
 	}
 
+	public CandidateOntologyClass copy() {
+		CandidateOntologyClass newClass=new CandidateOntologyClass();
+		newClass.ontologyID=this.ontologyID;
+		newClass.ontologyScore=this.ontologyScore;
+		return newClass;
+	}
+	
 	public String getOntologyID() {
 		return ontologyID;
 	}
@@ -94,6 +101,7 @@ public  class CandidateOntologyClass {
 		}
 		System.out.println("Total Ontology Score: "+ totalUtilityScore+'\n');
 	}
+	
 	
 	
 	/*public int compareTo(CandidateOntologyClass o) {

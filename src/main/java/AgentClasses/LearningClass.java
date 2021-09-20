@@ -3,8 +3,11 @@ package AgentClasses;
 import java.io.File;
 import java.io.FilenameFilter;
 import java.nio.file.Paths;
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Deque;
+import java.util.Iterator;
 import java.util.Scanner;
 
 import org.apache.log4j.Logger;
@@ -25,32 +28,29 @@ public class LearningClass {
 	private static ArrayList<String> owlFilesNames=new ArrayList<String>();
 	private static ArrayList<String> largeOntologiesFilesNames=new ArrayList<String>();
 	private static FinalResultList finalResultList=new FinalResultList();
-	private static ArrayList<IterationClass> iterations=new ArrayList<IterationClass>();
+	private static Deque<IterationClass> iterationsQueue = new ArrayDeque<IterationClass>();
 	
-	public void beginIterations(int count) throws Exception {
+	public void beginIterations() throws Exception {
+		int count=0;
 		do {
 		//if first iteration collect user preferences and calculate candidate ontologies
-		if(count == 0) {
-			count++; 
+		if(count == 0) 
 			firstIteration();
-		}
-		else {
+		else
 			otherIterations();
-		}
-		}while(count<2);
+		count++;
+		}while(count<10);
 	}	
 	//////////////////////////////////////////////////////
-	public static void firstIteration() throws Exception {
+	public static void  firstIteration() throws Exception {
 		//prompt the user to get his user preferences 
         System.out.println("Please Provide us with your prefernces: ");
-    	
         IterationClass firstIteration =new IterationClass(1);
     	//Prompt the user to enter his user preferences
     	firstIteration= promptUserInputPreferences(firstIteration);
     	//load the input ontology and 
     	//retrieve its class in order to beging the reuse process
     	//return a string of all classes names seprated by commas to be used in the ontology utility class
-    	
     	String classNames=EntityExtractionClass.getClassesLabelsFromInputOntology(firstIteration.getUserPreferences().getInputFileName());
         
         /* Input a class (from the input ontology) to begin the reuse proess and begin 
@@ -89,7 +89,6 @@ public class LearningClass {
    
     		ArrayList<CandidateOntologyClass> candidateOntologies= populateCandidateOntologyIDs(bioPortalSearchResult);
     		candidateOntologies= OntologyUtilityClass.calculateOntologyUtilityFunction(classNames,candidateOntologies,firstIteration.getUserPreferences());
-    	//	Collections.sort(candidateOntologies,Collections.reverseOrder());
     		Collections.sort(candidateOntologies,CandidateOntologyClass.sortByOntologyUtilityScore);
     		for(CandidateOntologyClass t: candidateOntologies){
     			t.display();
@@ -111,20 +110,22 @@ public class LearningClass {
     	System.out.println("Please Select the class you want to reuse: (select from a ranked list)");
     	String selectedClass= sc.nextLine();
     	
-    //	EntityExtractionClass.addClassInformationToSourceOntology(firstIteration.getUserPreferences().getInputFileName(),
-    	//	firstIteration.getInputClassName(), selectedOntology, selectedClass);
     	//update the input ontology name to the new extended file 
-    	updateFirstFinalResultList(firstIteration);
+    	//EntityExtractionClass.addClassInformationToSourceOntology(firstIteration.getUserPreferences().getInputFileName(),
+    		//firstIteration.getInputClassName(), selectedOntology, selectedClass);
+    	
+    	//update the ontology score in the candidate ontology list in the first iteration
+    	updateCandidateOntologyScore(firstIteration);   	  	   	
+    	updateFinalResultListScores();
     	printFinalResult();
-    	iterations.add(firstIteration);
 	}
 	//----------------------------------------------------------------------------
 	public static void otherIterations() throws Exception {
 		
         IterationClass iteration =new IterationClass(1);
         //get the last iteration information
-        IterationClass lastIteration =iterations.get(iterations.size()-1);
-        //copy user preferences and add them in the new iteration
+        IterationClass lastIteration =iterationsQueue.getLast();
+        //copy user preferences and ad them in the new iteration
         iteration.setUserPreferences(lastIteration.getUserPreferences());
     	//load the updated input ontology and 
     	//retrieve its class in order to beging the reuse process
@@ -191,13 +192,12 @@ public class LearningClass {
     	String selectedClass= sc.nextLine();
     	
     	//EntityExtractionClass.addClassInformationToSourceOntology(firstIteration.getUserPreferences().getInputFileName(),
-    	//	firstIteration.getInputClassName(), selectedOntology, selectedClass);
+    		//firstIteration.getInputClassName(), selectedOntology, selectedClass);
     	
-    	updateNotFirstFinalResultList(iteration);
+    	updateCandidateOntologyScore(iteration);   	
+    	updateFinalResultListScores(); 
     	printFinalResult();
 	}
-
-	
 	//-------------------------------------------------------------------------------	
   	//The function takes an input string from the user, split it by ',' then uppercase 
   	//the file(s) name(s) and add .owl extension and return a list of files names 
@@ -395,74 +395,83 @@ public class LearningClass {
 	        	largeOntologiesFilesNames.add(f++,fileName);
 	         }
 	  	}
-	//----------------------------------------------------------------
-	private static void updateFirstFinalResultList(IterationClass firstIteration) {
-		ArrayList<CandidateOntologyClass> finalCandidateOntology=new ArrayList<CandidateOntologyClass>();
-	  	//For the first iteration add the candidate ontologies to the final result list
-		//adjust their scores
+	////////////////////////////////////////////////////////////////////////////
+	//This function put the scores of the candidate ontology list 
+	//For any candidate ontology the score is 1 
+	//For the selected ontology 3 is added to the score
+	private static void updateCandidateOntologyScore(IterationClass firstIteration){
 		for(CandidateOntologyClass tempOntology: firstIteration.getCandidateOntologies()) {
-			CandidateOntologyClass temp= new CandidateOntologyClass(tempOntology.getOntologyID(),1);
+			//tempOntology.addToOntologyScore(1);
 			if(tempOntology.getOntologyID().equals(firstIteration.getSelectedOntology()))
-				temp.addToOntologyScore(3);
-			finalCandidateOntology.add(temp);	
-		}
-		Collections.sort(finalCandidateOntology,CandidateOntologyClass.sortByOntologyScore);
-		finalResultList.setFinalCandidateOntologyList(finalCandidateOntology);
+				tempOntology.addToOntologyScore(3);
+			}
+		//sort the ontology list desc by the ontology score 
+		Collections.sort(firstIteration.getCandidateOntologies(),CandidateOntologyClass.sortByOntologyScore);
 		
-		ArrayList<String> selectedOntologyList=new ArrayList<String>();
-		selectedOntologyList.add(firstIteration.getSelectedOntology());
-		finalResultList.setSelectedOntology(selectedOntologyList);
-		
-		ArrayList<Double> rewardScores=new ArrayList<Double>();
-		rewardScores.add(firstIteration.getRewardValue());
-		finalResultList.setRewardScore(rewardScores);
-		
+		//if the Deque size is still less than 3 
+	    if(iterationsQueue.size()< 3)
+	    	iterationsQueue.add(firstIteration);
+	    //if the Deque size is 3, remove the first one and add the new one as last item 
+	    else if(iterationsQueue.size()==3)
+	    {
+	    	iterationsQueue.removeFirst();
+	    	iterationsQueue.add(firstIteration);
+	    }
 	}
 	//-------------------------------------------------------------------------
-	private static void updateNotFirstFinalResultList(IterationClass iteration) {
-		//get the already exist candidate ontology list to compare it with the iteration list
-		ArrayList<CandidateOntologyClass> finalCandidateOntology=finalResultList.getFinalCandidateOntologyList();
-		//put all final candidate ontology IDs in a list
-		ArrayList<String> finalCandidateOntologyIDs=new ArrayList<String>();
-		for(CandidateOntologyClass tempCandOntology:finalCandidateOntology)
-			finalCandidateOntologyIDs.add(tempCandOntology.getOntologyID());
-			
-		for(CandidateOntologyClass tempOntology: iteration.getCandidateOntologies()) 			
-	  	{
-			//if this ontology not exist before in the final candidate ontology list
-			//add it and set its score to 1
-			//if it is the selected ontology increase its score by 3
-			if(!(finalCandidateOntologyIDs.contains(tempOntology.getOntologyID())))
-			{
-				CandidateOntologyClass candOntology=new CandidateOntologyClass(tempOntology.getOntologyID(),1);
-				if(candOntology.getOntologyID().equals(iteration.getSelectedOntology()))
-					candOntology.addToOntologyScore(3);
-				finalCandidateOntology.add(candOntology);	
-			}
-			//if this ontology already in the candidate ontology list then update its score by 1
-			else	
-			{
-				for(CandidateOntologyClass tempCandOntology:finalCandidateOntology) {
-					if(tempCandOntology.getOntologyID().equals(tempOntology.getOntologyID()))
-					{
-						tempCandOntology.addToOntologyScore(1);
-						if(tempCandOntology.getOntologyID().equals(iteration.getSelectedOntology()))
-							tempCandOntology.addToOntologyScore(3);
-					}
-				}
-			}
+	//This function agregates the ontology scores and generate a final candidate ontology 
+	//list with their scores
+	private static void updateFinalResultListScores() {
+		IterationClass iteration= new IterationClass();
+		ArrayList<CandidateOntologyClass> agregatedCandidateOntology=new ArrayList<CandidateOntologyClass>();;		
+		//to preserve the selected ontologies list
+		ArrayList<String> selectedOntologyList=new ArrayList<String>();
+		//to presevre the reward scores for each ontology
+		ArrayList<Double> rewardScores=new ArrayList<Double>();
+				
+		// if the iterations deque is not empty/ contains at least one item
+		if (iterationsQueue.size()>0) {	
+			Iterator<IterationClass> it = iterationsQueue.iterator();
+			//loop for each iteration in the deque
+			int count=0;
+	        while (it.hasNext()) { 
+	        	iteration=it.next(); 
+	        	count++;
+        		//if this is the first iteration in the deque put all items in the list
+	        	if(count==1) 
+	        		for(CandidateOntologyClass temp: iteration.getCandidateOntologies())
+	        			agregatedCandidateOntology.add(temp.copy());
+	        	else
+	        	{
+	        		//if this is not the first iteration
+	        		//put all final candidate ontology IDs in a list to test of a particular one exists or not
+	        		ArrayList<String> agregatedCandidateOntologyIDs=new ArrayList<String>();
+	        		for(CandidateOntologyClass tempOnto: agregatedCandidateOntology) 
+	    				agregatedCandidateOntologyIDs.add(tempOnto.getOntologyID());
+	        		
+	        		for(CandidateOntologyClass temp: iteration.getCandidateOntologies()) {
+	        			//if this ontology ID does not exist in the agregated list,add it with its score 
+	        			if(!(agregatedCandidateOntologyIDs.contains(temp.getOntologyID()))) 
+	        				agregatedCandidateOntology.add(temp.copy());	
+	        			
+	        			//if this ontology ID exists in the agregated list update its score
+	        			else {
+	        				for(CandidateOntologyClass tempCandOnto: agregatedCandidateOntology) 
+	        					if(temp.getOntologyID().equals(tempCandOnto.getOntologyID())) 	        						
+	        						tempCandOnto.addToOntologyScore(temp.getOntologyScore());						
+	        				}	
+	        			}
+	        		}
+	        	selectedOntologyList.add(iteration.getSelectedOntology());	
+	        	rewardScores.add(iteration.getRewardValue());
+	        }
 		}
-		Collections.sort(finalCandidateOntology,CandidateOntologyClass.sortByOntologyScore);
-		finalResultList.setFinalCandidateOntologyList(finalCandidateOntology);
+		//sort the ontology list desc by the ontology score 
+		Collections.sort(agregatedCandidateOntology,CandidateOntologyClass.sortByOntologyScore);
 		
-		//if the selected ontology is not in the selected ontology list add it
-		//else no nothing
-		ArrayList<String> selectedOntologies=finalResultList.getSelectedOntology();	
-			
-		if(!selectedOntologies.contains(iteration.getSelectedOntology()))
-			finalResultList.getSelectedOntology().add(iteration.getSelectedOntology());
-		
-		finalResultList.getRewardScore().add(iteration.getRewardValue());
+		finalResultList.setFinalCandidateOntologyList(agregatedCandidateOntology);
+		finalResultList.setSelectedOntology(selectedOntologyList);
+		finalResultList.setRewardScore(rewardScores);
 	}
 	//------------------------------------------------------------------------
 	//To print the final results after each iteration
