@@ -11,7 +11,6 @@ public class App
 	 
 	// get Runtime instance
 	private static Runtime instance;
-	
 	 
 	// get Runtime instance
 //	private static Runtime instance;
@@ -26,15 +25,9 @@ public class App
         test.beginIterations();    	
     	// end main
     }
-    
   	//--------------------------------------------------------------------
   	//This function is to initialize some variables in the begining of the application
   	private static void startingApplication() {
     	LearningClass.getAllFilesinaFolder();
-  	}
-  	
-  
-  	//------------------------------------------------------------------
-  	
-  	
+  	} 	
 }

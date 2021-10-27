@@ -18,7 +18,6 @@ import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
-import org.semanticweb.owlapi.search.EntitySearcher;
 
 import AgentClasses.ConceptUtilityScoreClass;
 
@@ -494,7 +493,8 @@ public boolean testMappingExistence(OWLClass class1, OWLClass class2, List<AMLMa
 		//OWLClass targetClass = targetOntology.getOWLClassfromIRI(m.getTargetURI());		
 		OWLClass targetClass = factory.getOWLClass(IRI.create(m.getTargetURI()));
 
-		Iterator<OWLAnnotation> iterator = EntitySearcher.getAnnotationObjects(targetClass, ontology.getImportsClosure()).iterator();
+		//Iterator<OWLAnnotation> iterator = EntitySearcher.getAnnotationObjects(targetClass, ontology.getImportsClosure()).iterator();
+		Iterator<OWLAnnotation> iterator=ontology.getImportsClosure().stream().flatMap(onto->targetClass.getAnnotations(ontology).stream().distinct()).iterator();
 		while (iterator.hasNext()) {
 			final OWLAnnotation annotat = iterator.next();
 			if(annotat.getProperty().getIRI().getFragment().contains("rdfs:label")) {

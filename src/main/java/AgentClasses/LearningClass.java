@@ -1,8 +1,12 @@
 package AgentClasses;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.FilenameFilter;
+import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -96,6 +100,20 @@ public class LearningClass {
     	   // ConceptUtilityClass.calculateConceptUtilityFunction(className, firstIteration.getUserPreferences().getInputFileName(), bioPortalSearchResult);
     		candidateOntologies=ConceptUtilityClass.calculateConceptUtilityFunction10(className, firstIteration.getUserPreferences().getInputFileName(), candidateOntologies);
     		Collections.sort(candidateOntologies,CandidateOntologyClass.sortByTotalUtilityScore);
+    		// write the final result to a result JSON file
+    	    // create object mapper instance
+    		try {
+    		ObjectMapper mapper = new ObjectMapper();
+
+    		// create an instance of DefaultPrettyPrinter
+    		ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
+
+    	    // convert book object to JSON file
+    		writer.writeValue(Paths.get("results.json").toFile(), candidateOntologies);
+
+    		} catch (Exception ex) {
+    	    ex.printStackTrace();
+    		}
     		for(CandidateOntologyClass t: candidateOntologies){
     			t.display1();
     		}
@@ -105,14 +123,13 @@ public class LearningClass {
     	String selectedOntology= sc.nextLine();
     	firstIteration.setSelectedOntology(selectedOntology);
     	firstIteration.displayRewardValue();
-    	iterationToJSON(firstIteration);
     	firstIteration.printMatchedClassesOfSelectedOntology(selectedOntology);
     	System.out.println("Please Select the class you want to reuse: (select from a ranked list)");
     	String selectedClass= sc.nextLine();
     	
     	//update the input ontology name to the new extended file 
-    	//EntityExtractionClass.addClassInformationToSourceOntology(firstIteration.getUserPreferences().getInputFileName(),
-    		//firstIteration.getInputClassName(), selectedOntology, selectedClass);
+    	EntityExtractionClass.addClassInformationToSourceOntology(firstIteration.getUserPreferences().getInputFileName(),
+    		firstIteration.getInputClassName(), selectedOntology, selectedClass);
     	
     	//update the ontology score in the candidate ontology list in the first iteration
     	updateCandidateOntologyScore(firstIteration);   	  	   	
@@ -169,14 +186,28 @@ public class LearningClass {
    
     		ArrayList<CandidateOntologyClass> candidateOntologies= populateCandidateOntologyIDs(bioPortalSearchResult);
     		candidateOntologies= OntologyUtilityClass.calculateOntologyUtilityFunction(classNames,candidateOntologies,iteration.getUserPreferences());
-    	//	Collections.sort(candidateOntologies,Collections.reverseOrder());
-    		Collections.sort(candidateOntologies,CandidateOntologyClass.sortByOntologyUtilityScore);
-    		for(CandidateOntologyClass t: candidateOntologies){
+    		//Collections.sort(candidateOntologies,CandidateOntologyClass.sortByOntologyUtilityScore);
+    		/*for(CandidateOntologyClass t: candidateOntologies){
     			t.display();
-    		}	
+    		}*/	
+    		candidateOntologies= finalResultList.calculateOntologyAggregateScoreFunction(candidateOntologies);
     	   // ConceptUtilityClass.calculateConceptUtilityFunction(className, firstIteration.getUserPreferences().getInputFileName(), bioPortalSearchResult);
     		candidateOntologies=ConceptUtilityClass.calculateConceptUtilityFunction10(className, iteration.getUserPreferences().getInputFileName(), candidateOntologies);
     		Collections.sort(candidateOntologies,CandidateOntologyClass.sortByTotalUtilityScore);
+    		// write the final result to a result JSON file
+    	    // create object mapper instance
+    		try {
+    		ObjectMapper mapper = new ObjectMapper();
+
+    		// create an instance of DefaultPrettyPrinter
+    		ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
+
+    	    // convert book object to JSON file
+    		writer.writeValue(Paths.get("results.json").toFile(), candidateOntologies);
+
+    		} catch (Exception ex) {
+    	    ex.printStackTrace();
+    		}
     		for(CandidateOntologyClass t: candidateOntologies){
     			t.display1();
     		}
@@ -191,8 +222,8 @@ public class LearningClass {
     	System.out.println("Please Select the class you want to reuse: (select from a ranked list)");
     	String selectedClass= sc.nextLine();
     	
-    	//EntityExtractionClass.addClassInformationToSourceOntology(firstIteration.getUserPreferences().getInputFileName(),
-    		//firstIteration.getInputClassName(), selectedOntology, selectedClass);
+    	EntityExtractionClass.addClassInformationToSourceOntology(iteration.getUserPreferences().getInputFileName(),
+    		iteration.getInputClassName(), selectedOntology, selectedClass);
     	
     	updateCandidateOntologyScore(iteration);   	
     	updateFinalResultListScores(); 
@@ -287,7 +318,18 @@ public class LearningClass {
 	            file = new File(inputFileName);
 	        }
 	        log.info("Your file is:"+ inputFileName);
-	        userPreferences.setInputFileName(inputFileName);
+	        
+	        //copy the file to the Temp_Working directory
+	        //if exists a file with the same name, replace it by a new fresh copy
+	        File tempFile = new File("Working_Folder/"+name+".owl");
+	        try {
+				Files.copy(file.toPath(), tempFile.toPath(),StandardCopyOption.REPLACE_EXISTING);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	        //Set the input file path to the temporary working directory
+	        userPreferences.setInputFileName("Working_Folder/"+name+".owl");
 	                
 	        //get the user's preferred ontology domain(s)
 	        System.out.println("What is your preferred ontology domain(s): (select from a list)");
@@ -384,6 +426,20 @@ public class LearningClass {
 	        String oWLFilesList[] = directoryPathOWLFiles.list(textFilefilter);
 	        String largeFilesList[] = directoryPathLargeFiles.list(textFilefilter);
 	        //System.out.println("List of OWL text files in the specified directory:");
+	        
+	    /*    //write the file names to a file (Run once)
+	        FileWriter writer;
+			try {
+				writer = new FileWriter("C://Users//marwa//eclipse-workspace-photon//OntologyReuseProject//OntologyNames.txt");
+				for (int i = 0; i < oWLFilesList.length; i++) {
+					writer.write(oWLFilesList[i] + '\n');
+			     }
+			     writer.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	      */
 	        int k=0;
 	        int f=0;
 	        for(String fileName : oWLFilesList) {

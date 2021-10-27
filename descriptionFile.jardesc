@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="C:/Users/marwa/Desktop/ontologyReuseApp.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/OntologyReuseProject/descriptionFile.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" mainClassHandleIdentifier="=OntologyReuseProject/src\/main\/java&lt;PhD.OntologyReuseProject{App.java[App" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <file path="/OntologyReuseProject/oboe-core.owl"/>
+        <file path="/OntologyReuseProject/.gitignore"/>
+        <file path="/OntologyReuseProject/UserIterations.json"/>
+        <file path="/OntologyReuseProject/.project"/>
+        <file path="/OntologyReuseProject/BioPortal_Categories.owl"/>
+        <file path="/OntologyReuseProject/pom.xml"/>
+        <file path="/OntologyReuseProject/.classpath"/>
+        <file path="/OntologyReuseProject/test1.owl"/>
+        <javaElement handleIdentifier="=OntologyReuseProject/src\/main\/java"/>
+        <file path="/OntologyReuseProject/catalog-v001.xml"/>
+        <file path="/OntologyReuseProject/demoApplication.log"/>
+        <file path="/OntologyReuseProject/test.owl"/>
+        <folder path="/OntologyReuseProject/Ontologies causes problems"/>
+        <file path="/OntologyReuseProject/ontology.json"/>
+        <javaElement handleIdentifier="=OntologyReuseProject/src\/test\/java"/>
+    </selectedElements>
+</jardesc>

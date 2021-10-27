@@ -32,7 +32,7 @@ import org.semanticweb.owlapi.reasoner.Node;
 import org.semanticweb.owlapi.reasoner.NodeSet;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
-import org.semanticweb.owlapi.search.EntitySearcher;
+
 
 /**
  * OWLOntologyInformation.java 
@@ -425,9 +425,8 @@ public class OWLOntologyInformation {
 	 * @return Set of OWLAnnotations.
 	 */
 	public Iterator<OWLAnnotation> getAnnotationProperties(OWLClass c) {
-	Iterator<OWLAnnotation> iterator = EntitySearcher.getAnnotationObjects(c, onto.getImportsClosure())
-				.iterator();
 	//	Iterator<OWLAnnotation> iterator =c.getAnnotations(onto.getImportsClosure()).iterator();
+		Iterator<OWLAnnotation> iterator=onto.getImportsClosure().stream().flatMap(onto->c.getAnnotations(onto).stream().distinct()).iterator();
 		while (iterator.hasNext()) {
 			final OWLAnnotation annotation = iterator.next();
 			System.out.println("Annotations: " + annotation.getProperty().getIRI().getFragment() + " : "
@@ -452,7 +451,8 @@ public class OWLOntologyInformation {
 		   }
 		}*/
 		// OWLEntity.getIRI().getShortForm();
-		Iterator<OWLAnnotation> iterator = EntitySearcher.getAnnotations(owlclass, onto).iterator();
+	 //-------This line was modified in version conflict 
+		Iterator<OWLAnnotation> iterator = owlclass.getAnnotations(onto).iterator();
 		while (iterator.hasNext()) {
 			final OWLAnnotation an = iterator.next();
 			if (an.getProperty().isLabel()) {

@@ -187,26 +187,26 @@ public class EntityExtractionClass {
 	//Finally output the changes in a file
 	public static void addClassInformationToSourceOntology(String sourceOntologyID, String sourceClassID, 
 			String targetOntologyID, String targetClassID) throws OWLOntologyCreationException, OWLException, FileNotFoundException {
-		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-		OWLDataFactory factory = manager.getOWLDataFactory();
 		StructuralReasonerFactory structFactory = new StructuralReasonerFactory();
 
 		String targetOntologyFileName=AgentClasses.ConceptUtilityClass.getOntologyFileName(targetOntologyID);
 		try {
+			//selected Ontology
 			OWLOntology targetOntology=laodOntology(targetOntologyFileName);
+			//input ontology
 			OWLOntology sourceOntology=laodOntology(sourceOntologyID);
 			OWLReasoner targetreasoner = structFactory.createReasoner(targetOntology);
 			targetreasoner.precomputeInferences();
 			
-			OWLClass owlclass= factory.getOWLClass(IRI.create(targetClassID));
-			OWLClass sourceOwlclass= factory.getOWLClass(IRI.create(sourceClassID));
-			Set<OWLSubClassOfAxiom> allAxioms=new HashSet<OWLSubClassOfAxiom>();
+			OWLClass owlclass= targetOntology.getOWLOntologyManager().getOWLDataFactory().getOWLClass(IRI.create(targetClassID));
+			OWLClass sourceOwlclass= sourceOntology.getOWLOntologyManager().getOWLDataFactory().getOWLClass(IRI.create(sourceClassID));
 			//get direct subclass
 			for (OWLClass subclass : targetreasoner.getSubClasses(owlclass, true).getFlattened()) {
-				OWLSubClassOfAxiom axiom=factory.getOWLSubClassOfAxiom(subclass, sourceOwlclass);
-				manager.applyChange(new AddAxiom(sourceOntology, axiom));
+				OWLSubClassOfAxiom axiom=sourceOntology.getOWLOntologyManager().getOWLDataFactory().getOWLSubClassOfAxiom(subclass, sourceOwlclass);
+				sourceOntology.getOWLOntologyManager().applyChange(new AddAxiom(sourceOntology, axiom));
 			}
-			manager.saveOntology(sourceOntology);
+			sourceOntology.getOWLOntologyManager().saveOntology(sourceOntology);
+			//manager.saveOntology(sourceOntology);
 		//	File file = new File("C:\\Users\\marwa\\eclipse-workspace-photon\\OntologyReuseProject\\test1.owl");
 		//	OutputStream os = new FileOutputStream(file);
 		//	manager.saveOntology(sourceOntology,os);

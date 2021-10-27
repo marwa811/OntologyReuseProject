@@ -61,13 +61,6 @@ public class ConceptUtilityClass {
 		}
 		return candidateOntologies;
 	}	
-//////////////////////////////////////////////////////////////////////////
-/*	private static double calculateConceptUtilityScore(String inputClassName, String InputFileName, String candidateOntologyFileName) throws OWLException, IOException, TranslatedUnloadedImportException
-	{
-		double conceptContextScore=0.0;
-		conceptContextScore=getMapping(inputClassName, InputFileName, candidateOntologyFileName);	
-		return conceptContextScore;
-	}*/
 	////////////////////////////////////////////////////////////////////////////
 	public static String getOntologyFileName(String candidateOntology) {
 		String name=candidateOntology.substring(candidateOntology.lastIndexOf('/')+1,candidateOntology.length());
