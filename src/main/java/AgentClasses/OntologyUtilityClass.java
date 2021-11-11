@@ -24,6 +24,7 @@ public class OntologyUtilityClass {
 		double coverageWeight=0.25;
 		double prefOntologyWeight=0.25;
 		double ontologyTypeWeight=0.10;
+		
 		//read the ontology.json file and get a list of Ontology contain all information about ontologies
 		Ontology[] ontologiesInfo  = getOntologyInfoFromJsonFile();
 		Map<String,String> recommenderResult= getRecommenderCoverageScore(classesNames,candidateOntologies);
@@ -220,11 +221,14 @@ private static double calculateOntologyTypeScore(int userPrefOntologyType,String
 	//returns a Map of each ontologyId and its coverage score
 	private static Map<String,String> getRecommenderCoverageScore(String classesNames,ArrayList<CandidateOntologyClass> candidateOntologies) {	
 		String acronyms="";
+		//System.out.println("The size =: "+candidateOntologies.size());
 		for(CandidateOntologyClass candidateOntology: candidateOntologies) {
 	//	for(String ontologyId: candidateOntologies) {
 			//String temp=ontologyId;
 			String temp=candidateOntology.getOntologyID();
+		//	System.out.println("The temp are1: "+temp);
 			acronyms+=temp.substring(temp.lastIndexOf('/')+1,temp.length()) + ",";
+		//	System.out.println("The acronyms are2: "+acronyms);
 		}
 		acronyms=acronyms.substring(0, acronyms.length()-1);
 		System.out.println("The acronyms are: "+acronyms);

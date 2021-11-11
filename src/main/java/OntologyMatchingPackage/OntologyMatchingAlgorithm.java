@@ -63,6 +63,10 @@ public class OntologyMatchingAlgorithm {
 		conceptUtilityScore=0.0;
 	}
 	
+	public OWLOntology getTargetOntology() {
+		return targetOntology.getOntology();
+	}
+	
 	public Set<OWLClass> getSemanticSimilarClasses() {
 		return semanticSimilarClasses;
 	}
@@ -256,6 +260,7 @@ public boolean testMappingExistence(OWLClass class1, OWLClass class2, List<AMLMa
 		getSynonymsandDefinitionScores(m,mappings);
 		
 		conceptUtilityScore=0.5* conceptContextMatchingScore+ 0.5*conceptSemanticRichnessScore;
+		
 		
 		ConceptUtilityScoreClass conceptForExtension=new ConceptUtilityScoreClass(
 				m.getTargetURI(), conceptContextMatchingScore,conceptSemanticRichnessScore,conceptUtilityScore); 

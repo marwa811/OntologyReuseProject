@@ -1,6 +1,9 @@
 package AgentClasses;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.FilenameFilter;
 import java.io.IOException;
@@ -52,6 +55,8 @@ public class LearningClass {
         IterationClass firstIteration =new IterationClass(1);
     	//Prompt the user to enter his user preferences
     	firstIteration= promptUserInputPreferences(firstIteration);
+    	//firstIteration=promptUserInputPreferencesFromFile(firstIteration);
+    	
     	//load the input ontology and 
     	//retrieve its class in order to beging the reuse process
     	//return a string of all classes names seprated by commas to be used in the ontology utility class
@@ -64,6 +69,7 @@ public class LearningClass {
     	String className= sc.nextLine();
     	System.out.println("You selected: "+className+ " class");
     	String inputClassIRI=EntityExtractionClass.getClassIRI(firstIteration.getUserPreferences().getInputFileName(),className);
+    	System.out.println("seeeeeee   "+ inputClassIRI+ "    "+ firstIteration.getUserPreferences().getInputFileName());
     	firstIteration.setInputClassName(inputClassIRI);
     	System.out.println("Loading candidate ontologies...");
 
@@ -376,6 +382,68 @@ public class LearningClass {
 	        		+ "(1. Taxonomy   2. Full semantic ontology   3. Not an important factor): ");
 	        int prefOntologyType= Integer.parseInt( sc.nextLine());
 	        userPreferences.setUserPrefOntologyType(prefOntologyType);
+	        firstIteration.setUserPreferences(userPreferences); 
+			return firstIteration;
+	  	}
+	  	//----------------------------------------------------------------------------
+	  	//If the user preferences comes from a file (in the web app)
+	  	public static IterationClass promptUserInputPreferencesFromFile(IterationClass firstIteration) throws OWLOntologyCreationException, OWLException, IOException {
+	  		
+	  		//A UserPreferencesModel object to collect user preferences
+	  		UserPreferencesModel userPreferences=new UserPreferencesModel();
+	  		BufferedReader br = new BufferedReader(new FileReader("UserPreference.txt"));
+	  		String line = null;
+	  		while ((line = br.readLine()) != null) {
+	  		  String[] values = line.split("\\|");
+	  		  for (int i=0; i<values.length  ; i++) {
+	  			  //if first item in  the txt file == input ontology name
+	  			  if(i==0) {
+	  				//Set the first item as input ontology name  
+	  		        String inputFileName="OWLOntologies/"+values[i];
+	  		        File file = new File(inputFileName);
+	  		        File tempFile = new File("Working_Folder/"+values[i]);
+	  		        try {
+	  					Files.copy(file.toPath(), tempFile.toPath(),StandardCopyOption.REPLACE_EXISTING);
+	  				} catch (IOException e) {
+	  					// TODO Auto-generated catch block
+	  					e.printStackTrace();
+	  				}
+	  		        //Set the input file path to the temporary working directory
+	  		        userPreferences.setInputFileName("Working_Folder/"+values[i]);
+	  			  }
+	  			//if Second item in the txt file == preferred domain(s)
+	  			  if(i==1) {
+	  				String[] allDomains = values[1].split("\\,");   		//read input 
+	  		        ArrayList<String> prefOntologyDomains=new ArrayList<String>();
+	  		        for(int j=0; j<allDomains.length; j++){
+	  		        	prefOntologyDomains.add(allDomains[j]);
+	  		        }
+	  		        userPreferences.setUserPrefDomain(prefOntologyDomains);
+	  			  }
+	  			//if third item in the txt file == popularity
+	  			  if(i==2) {
+	  		        userPreferences.setUserPrefOntologyPopularity(Integer.parseInt( values[2]));
+	  			  }
+	  			//if fourth item in the txt file == coverage
+	  			  if(i==3) {
+	  		        userPreferences.setUserPrefOntologyCoverage(Integer.parseInt( values[3]));
+	  			  }
+	  			//if fifth item in the txt file == preferred ontology(s)
+	  			  if(i==4) {
+	  				String[] allontologies = values[4].split("\\,");   		//read input 
+	  		        ArrayList<String> prefOntologies=new ArrayList<String>();
+	  		        for(int j=0; j<allontologies.length; j++){
+	  		        	prefOntologies.add(allontologies[j]);
+	  		        }
+	  		        userPreferences.setUserPrefOntologies(prefOntologies);
+	  			  }
+	  			//if sixth item in the txt file == ontology type
+	  			  if(i==5) {
+	  		        userPreferences.setUserPrefOntologyType(Integer.parseInt( values[5]));
+	  			  }
+	  		  }
+	  		}
+	  		br.close(); 	
 	        firstIteration.setUserPreferences(userPreferences); 
 			return firstIteration;
 	  	}

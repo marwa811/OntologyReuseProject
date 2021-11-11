@@ -9,6 +9,7 @@ import org.coode.owlapi.rdfxml.parser.TranslatedUnloadedImportException;
 import org.semanticweb.owlapi.model.OWLException;
 import org.semanticweb.owlapi.model.UnloadableImportException;
 
+import OntologyExtractionPackage.EntityExtractionClass;
 import OntologyMatchingPackage.AMLMapping;
 import OntologyMatchingPackage.AMLMappings;
 import OntologyMatchingPackage.OntologyMatchingAlgorithm;
@@ -47,12 +48,13 @@ public class ConceptUtilityClass {
 			ArrayList<ConceptUtilityScoreClass> conceptsForExtension=new ArrayList<ConceptUtilityScoreClass>();
 			double mean=meanScore(candidateOntologies);
 			//if the ontology Utility Score> a given threshold, say the mean value 
-			if(candidateOntology.getOntologyUtilityScore().getOntologyTotalUtilityScore() > 0.1) {
+			if(candidateOntology.getOntologyUtilityScore().getOntologyTotalUtilityScore() > mean) {
 			String candidateOntologyFileName=getOntologyFileName(candidateOntology.getOntologyID()); 
-			conceptsForExtension=getMapping(inputClassName, InputFileName, candidateOntologyFileName);		
+			conceptsForExtension=getMapping(inputClassName, InputFileName, candidateOntologyFileName);	
+			//if there is matched concepts to retrieve
 			candidateOntology.setConceptUtilityScores(conceptsForExtension);
 			//to calculate the total score for an ontology
-			candidateOntology.setTotalUtilityScore(conceptsForExtension);			
+			candidateOntology.setTotalUtilityScore(conceptsForExtension);
 			}
 			else 
 				candidateOntology.setConceptUtilityScores(conceptsForExtension);
@@ -99,6 +101,7 @@ public class ConceptUtilityClass {
 				AMLMapping mapping = mappingIterator.next();
 				System.out.println("The AML mappings:   "+mapping.getMappingId() + " " + mapping.getSourceURI() + "     " + mapping.getTargetURI());
 				ConceptUtilityScoreClass candidateConceptForExtension=testCase.getSimilarclasses(mapping, mappings.getMappings());
+				candidateConceptForExtension.setMatchedConceptLabel(EntityExtractionClass.getClassName(testCase.getTargetOntology(), candidateConceptForExtension.getMatchedConceptName()));
 				conceptsForExtension.add(candidateConceptForExtension);
 				// used memory
 				System.out.println("Used Memory: "

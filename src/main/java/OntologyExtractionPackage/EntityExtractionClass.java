@@ -15,6 +15,7 @@ import org.semanticweb.owlapi.io.IRIDocumentSource;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLException;
+import org.semanticweb.owlapi.model.OWLLiteral;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyLoaderConfiguration;
@@ -25,6 +26,7 @@ import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
 import org.semanticweb.owlapi.model.AddAxiom;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.MissingImportHandlingStrategy;
+import org.semanticweb.owlapi.model.OWLAnnotationAssertionAxiom;
 
 public class EntityExtractionClass {
 	
@@ -129,9 +131,27 @@ public class EntityExtractionClass {
 		System.out.println("The Class IRI is: " + classIRI);
 		return classIRI;
 	}
-			
+	
 	//Given a class and an ontology retuen the RDFS:Label for that class
-	/*private static String getClassName(OWLOntology o, OWLClass c) throws IOException {
+	public static String getClassName(OWLOntology o, String c) throws IOException {
+		String classLabel="";
+		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+		OWLDataFactory factory = manager.getOWLDataFactory(); 
+		IRI classIRI= IRI.create(c);
+		OWLClass owlClass= factory.getOWLClass(classIRI);
+		//classLabel= owlClass.getAnnotations(o, factory.getRDFSLabel())..toString();
+		for(OWLAnnotationAssertionAxiom a : o.getAnnotationAssertionAxioms(classIRI)) {
+		    if(a.getProperty().isLabel()) {
+		        if(a.getValue() instanceof OWLLiteral) {
+		            OWLLiteral val = (OWLLiteral) a.getValue();
+		            classLabel= val.getLiteral();
+		        }
+		    }
+		}
+		return classLabel;
+	}
+	//Given a class and an ontology retuen the RDFS:Label for that class
+/*	private static String getClassName(OWLOntology o, OWLClass c) throws IOException {
 	Iterator<OWLAnnotation> iterator = EntitySearcher.getAnnotations(c, o).iterator();
 	while (iterator.hasNext()) {
 			    final OWLAnnotation an = iterator.next();

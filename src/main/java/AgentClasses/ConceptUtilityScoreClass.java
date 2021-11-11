@@ -5,13 +5,15 @@ public class ConceptUtilityScoreClass{
 	private double conceptContextMatchingScore;
 	private double conceptSemanticRichnessScore;
 	private double conceptUtilityScore;
-	
+	private String matchedConceptLabel;
+
 	public ConceptUtilityScoreClass() {
 		super();
 		this.matchedConceptName="";
 		this.conceptContextMatchingScore = 0;
 		this.conceptSemanticRichnessScore = 0;
 		this.conceptUtilityScore = 0;
+		this.matchedConceptLabel="";
 	}
 	
 	public ConceptUtilityScoreClass(String matchedConceptName, double conceptContextMatchingScore, double conceptSemanticRichnessScore,
@@ -53,5 +55,13 @@ public class ConceptUtilityScoreClass{
 
 	public void setConceptUtilityScore(double conceptUtilityScore) {
 		this.conceptUtilityScore = conceptUtilityScore;
+	}
+	
+	public String getMatchedConceptLabel() {
+		return matchedConceptLabel;
+	}
+
+	public void setMatchedConceptLabel(String matchedConceptLabel) {
+		this.matchedConceptLabel = matchedConceptLabel;
 	}
 }

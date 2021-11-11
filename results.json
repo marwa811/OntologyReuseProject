@@ -1,4 +1,24 @@
 [ {
+  "ontologyID" : "https://data.bioontology.org/ontologies/PREMEDONTO",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 1.0,
+    "ontologyPopularityScore" : 1.0578650841295082E-4,
+    "ontologyCoverageScore" : 0.344,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.33601586797626193
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/NCIT_C25447",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.6000000000000001,
+    "conceptUtilityScore" : 0.30000000000000004,
+    "matchedConceptLabel" : "Characteristic"
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.21200528932542065,
+  "ontologyScore" : 1
+}, {
   "ontologyID" : "https://data.bioontology.org/ontologies/OBOE",
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
@@ -9,52 +29,102 @@
     "ontologyTotalUtilityScore" : 0.10951692856079359
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#DerivedUnit",
+    "matchedConceptName" : "http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic",
     "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.30000000000000004
-  }, {
-    "matchedConceptName" : "http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#CompositeUnit",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.30000000000000004
-  }, {
-    "matchedConceptName" : "http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#BaseUnit",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.30000000000000004
-  }, {
-    "matchedConceptName" : "http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Unit",
-    "conceptContextMatchingScore" : 0.4,
     "conceptSemanticRichnessScore" : 0.6000000000000001,
-    "conceptUtilityScore" : 0.5
+    "conceptUtilityScore" : 0.4,
+    "matchedConceptLabel" : ""
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.15317230952026453,
+  "totalUtilityScore" : 0.16983897618693122,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ENM",
+  "ontologyID" : "https://data.bioontology.org/ontologies/GSSO",
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.04964524916795323,
+    "ontologyPopularityScore" : 2.796951771278147E-4,
+    "ontologyCoverageScore" : 0.25,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 1.0,
+    "ontologyTotalUtilityScore" : 0.16254195427656917
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/NCIT_C25447",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.2,
+    "matchedConceptLabel" : "characteristic"
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.12084731809218974,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/PEDTERM",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.5,
+    "ontologyPopularityScore" : 0.032654559964113816,
+    "ontologyCoverageScore" : 0.125,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.16114818399461708
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://www.owl-ontologies.com/Ontology1358660052.owl#Characteristic",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.2,
+    "matchedConceptLabel" : ""
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.12038272799820571,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/CSEO",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 1.0,
+    "ontologyPopularityScore" : 4.914041663295685E-4,
+    "ontologyCoverageScore" : 0.313,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.3283237106249494
+  },
+  "conceptUtilityScores" : [ ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.10944123687498314,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/PCALION",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.5,
+    "ontologyPopularityScore" : 5.3845060837440266E-5,
+    "ontologyCoverageScore" : 0.0,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.12500807675912562
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://www.semanticweb.org/ontologies/Prostate_cancer#Physiological_characteristics",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.2,
+    "matchedConceptLabel" : "Physiological characteristic"
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.1083360255863752,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/CHEAR",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.5,
+    "ontologyPopularityScore" : 0.016334622490352925,
     "ontologyCoverageScore" : 0.375,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.10119678737519298
+    "ontologyTotalUtilityScore" : 0.22120019337355293
   },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/UO_0000045",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.30000000000000004
-  }, {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/UO_0000000",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.30000000000000004
-  } ],
+  "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.13373226245839767,
+  "totalUtilityScore" : 0.0737333977911843,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/OBOE-SBC",
@@ -71,60 +141,46 @@
   "totalUtilityScore" : 0.07372967214808596,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/CHEAR",
+  "ontologyID" : "https://data.bioontology.org/ontologies/SCO",
   "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.016334622490352925,
-    "ontologyCoverageScore" : 0.375,
+    "ontologyDomainScore" : 0.5,
+    "ontologyPopularityScore" : 1.8845771293104092E-4,
+    "ontologyCoverageScore" : 0.188,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.09620019337355294
+    "ontologyTotalUtilityScore" : 0.17202826865693965
   },
   "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.03206673112451765,
+  "totalUtilityScore" : 0.057342756218979885,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/CSEO",
+  "ontologyID" : "https://data.bioontology.org/ontologies/PREO",
   "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 4.914041663295685E-4,
-    "ontologyCoverageScore" : 0.313,
+    "ontologyDomainScore" : 0.3333333333333333,
+    "ontologyPopularityScore" : 3.3585176835474105E-5,
+    "ontologyCoverageScore" : 0.063,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.07832371062494943
+    "ontologyTotalUtilityScore" : 0.09908837110985864
   },
   "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.02610790354164981,
+  "totalUtilityScore" : 0.033029457036619546,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/REPRODUCE-ME",
+  "ontologyID" : "https://data.bioontology.org/ontologies/DRANPTO",
   "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 6.96178564362864E-5,
-    "ontologyCoverageScore" : 0.313,
+    "ontologyDomainScore" : 0.3333333333333333,
+    "ontologyPopularityScore" : 7.750425423570948E-6,
+    "ontologyCoverageScore" : 0.063,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.07826044267846545
+    "ontologyTotalUtilityScore" : 0.09908449589714687
   },
   "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.02608681422615515,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/MO",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.048875917465381925,
-    "ontologyCoverageScore" : 0.25,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.06983138761980728
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.023277129206602427,
+  "totalUtilityScore" : 0.03302816529904895,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/RBO",
@@ -141,34 +197,6 @@
   "totalUtilityScore" : 0.022447263150577466,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/TOP-MENELAS",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.01619593066698376,
-    "ontologyCoverageScore" : 0.25,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.06492938960004756
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.021643129866682518,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/GALEN",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 5.374988017434378E-4,
-    "ontologyCoverageScore" : 0.25,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.06258062482026151
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.020860208273420503,
-  "ontologyScore" : 1
-}, {
   "ontologyID" : "https://data.bioontology.org/ontologies/BIRNLEX",
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
@@ -183,311 +211,115 @@
   "totalUtilityScore" : 0.018111672694080844,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/PMR",
+  "ontologyID" : "https://data.bioontology.org/ontologies/BAO-GPCR",
   "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.016257526153244772,
-    "ontologyCoverageScore" : 0.188,
+    "ontologyDomainScore" : 0.125,
+    "ontologyPopularityScore" : 0.016265412551044193,
+    "ontologyCoverageScore" : 0.0,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.04943862892298671
+    "ontologyTotalUtilityScore" : 0.03368981188265663
   },
   "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.016479542974328902,
+  "totalUtilityScore" : 0.011229937294218876,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/DIDEO",
+  "ontologyID" : "https://data.bioontology.org/ontologies/RADLEX",
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.01622666042392634,
-    "ontologyCoverageScore" : 0.188,
+    "ontologyPopularityScore" : 0.15558683626866626,
+    "ontologyCoverageScore" : 0.031,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.04943399906358895
+    "ontologyTotalUtilityScore" : 0.031088025440299937
   },
   "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.016477999687862982,
+  "totalUtilityScore" : 0.010362675146766646,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/RO",
+  "ontologyID" : "https://data.bioontology.org/ontologies/UPHENO",
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 2.671857185494195E-4,
-    "ontologyCoverageScore" : 0.188,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.047040077857782414
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.015680025952594136,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ADAR",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 1.6167115488817293E-4,
-    "ontologyCoverageScore" : 0.188,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.04702425067323322
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.015674750224411074,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ISO-FOOD",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 1.0755414929902842E-4,
-    "ontologyCoverageScore" : 0.188,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.04701613312239485
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.015672044374131618,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/PDRO",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 8.756621004876649E-5,
-    "ontologyCoverageScore" : 0.188,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.047013134931507314
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.015671044977169105,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/AGRO",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 7.736828185985735E-5,
-    "ontologyCoverageScore" : 0.188,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.04701160524227898
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.01567053508075966,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/CARRE",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 5.670048073033483E-5,
-    "ontologyCoverageScore" : 0.188,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.047008505072109553
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.015669501690703184,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/FOODON",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.032782373997414814,
-    "ontologyCoverageScore" : 0.125,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.03616735609961222
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.012055785366537406,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/QUDT",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.01647535389935987,
-    "ontologyCoverageScore" : 0.125,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.03372130308490398
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.01124043436163466,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ROO",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.0010701025979561992,
-    "ontologyCoverageScore" : 0.125,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.03141051538969343
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.010470171796564476,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/TEO",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 2.442063870304109E-4,
-    "ontologyCoverageScore" : 0.125,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.03128663095805456
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.010428876986018187,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/APOLLO-SV",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 4.650255254142568E-5,
-    "ontologyCoverageScore" : 0.125,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.03125697538288121
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.010418991794293737,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/UO",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.09838437842322792,
+    "ontologyPopularityScore" : 1.5691212173334865E-4,
     "ontologyCoverageScore" : 0.063,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.030507656763484187
+    "ontologyTotalUtilityScore" : 0.015773536818260003
   },
   "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.010169218921161394,
+  "totalUtilityScore" : 0.0052578456060866675,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/BDO",
+  "ontologyID" : "https://data.bioontology.org/ontologies/COB",
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.01645862929713006,
+    "ontologyPopularityScore" : 2.583475141190316E-5,
+    "ontologyCoverageScore" : 0.063,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.015753875212711786
+  },
+  "conceptUtilityScores" : [ ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.005251291737570595,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/MAMO",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 7.152146969821612E-4,
     "ontologyCoverageScore" : 0.0,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.002468794394569509
+    "ontologyTotalUtilityScore" : 1.0728220454732417E-4
   },
   "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 8.22931464856503E-4,
+  "totalUtilityScore" : 3.5760734849108054E-5,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/SOPHARM",
+  "ontologyID" : "https://data.bioontology.org/ontologies/FIRE",
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.01644081691589343,
+    "ontologyPopularityScore" : 1.820670112659912E-4,
     "ontologyCoverageScore" : 0.0,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.0024661225373840147
+    "ontologyTotalUtilityScore" : 2.731005168989868E-5
   },
   "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 8.220408457946715E-4,
+  "totalUtilityScore" : 9.10335056329956E-6,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/BIBFRAME",
+  "ontologyID" : "https://data.bioontology.org/ontologies/EOL",
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.01619851414212495,
+    "ontologyPopularityScore" : 5.6564508354482704E-5,
     "ontologyCoverageScore" : 0.0,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.0024297771213187425
+    "ontologyTotalUtilityScore" : 8.484676253172405E-6
   },
   "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 8.099257071062474E-4,
+  "totalUtilityScore" : 2.828225417724135E-6,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ADALAB-META",
+  "ontologyID" : "https://data.bioontology.org/ontologies/SOCPRES",
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.016154731037100568,
+    "ontologyPopularityScore" : 4.364713264853113E-5,
     "ontologyCoverageScore" : 0.0,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.0024232096555650852
+    "ontologyTotalUtilityScore" : 6.547069897279669E-6
   },
   "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 8.077365518550283E-4,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/SCIO",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 8.7022320545358E-5,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 1.30533480818037E-5
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 4.3511160272679E-6,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/EPO",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 5.670048073033483E-5,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 8.505072109550225E-6
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 2.8350240365167413E-6,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/QUDT2",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 7.750425423570948E-6,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 1.162563813535642E-6
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 3.875212711785473E-7,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ONTOPBM",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.0,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.0
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.0,
+  "totalUtilityScore" : 2.1823566324265563E-6,
   "ontologyScore" : 1
 } ]
