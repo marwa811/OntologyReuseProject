@@ -1,0 +1,2 @@
+oboe-core.owl|http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasuredCharacteristic
+|https://data.bioontology.org/ontologies/OBOE|http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#CompositeUnit

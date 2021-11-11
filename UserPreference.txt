@@ -1,0 +1,1 @@
+oboe-core.owl|Chemical,Health|2|2|1|ICO,HEIO|http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic
