@@ -156,6 +156,7 @@ public class WebLearningClass {
     	updateCandidateOntologyScore(firstIteration);   	  	   	
     	updateFinalResultListScores();
     	printFinalResult();
+    	
 	}
 	//----------------------------------------------------------------------------
 	public static void otherIterations() throws Exception {
@@ -501,8 +502,8 @@ public class WebLearningClass {
 		//It is used to get the names of the OWL files and the names of the very large files >50MB 
 	  	public static void getAllFilesinaFolder() {
 	  		 //Creating a File object for directory
-	        File directoryPathOWLFiles = new File("C://Users//marwa//eclipse-workspace-photon//OntologyReuseProject//OWLOntologies");
-	        File directoryPathLargeFiles = new File("C://Important files//large ontologies");
+	        File directoryPathOWLFiles = new File("OWLOntologies/");
+	       // File directoryPathLargeFiles = new File("C:\\Important files\\large ontologies");
 	        FilenameFilter textFilefilter = new FilenameFilter(){
 	           public boolean accept(File dir, String name) {
 	              if (name.endsWith(".owl")) {
@@ -514,32 +515,19 @@ public class WebLearningClass {
 	        };
 	        //List of all the text files
 	        String oWLFilesList[] = directoryPathOWLFiles.list(textFilefilter);
-	        String largeFilesList[] = directoryPathLargeFiles.list(textFilefilter);
+	       // String largeFilesList[] = directoryPathLargeFiles.list(textFilefilter);
 	        //System.out.println("List of OWL text files in the specified directory:");
-	        
-	    /*    //write the file names to a file (Run once)
-	        FileWriter writer;
-			try {
-				writer = new FileWriter("C://Users//marwa//eclipse-workspace-photon//OntologyReuseProject//OntologyNames.txt");
-				for (int i = 0; i < oWLFilesList.length; i++) {
-					writer.write(oWLFilesList[i] + '\n');
-			     }
-			     writer.close();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-	      */
+
 	        int k=0;
 	        int f=0;
 	        for(String fileName : oWLFilesList) {
 	           //System.out.println(fileName);
 	           owlFilesNames.add(k++,fileName);
 	        }
-	        for(String fileName : largeFilesList) {
+	     /*   for(String fileName : largeFilesList) {
 	            //System.out.println(fileName);
 	        	largeOntologiesFilesNames.add(f++,fileName);
-	         }
+	         }*/
 	  	}
 	////////////////////////////////////////////////////////////////////////////
 	//This function put the scores of the candidate ontology list 
