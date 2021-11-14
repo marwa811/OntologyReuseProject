@@ -164,9 +164,9 @@
     "ontologyTypeScore" : 0.0,
     "ontologyTotalUtilityScore" : 0.09908837110985864
   },
-  "conceptUtilityScores" : null,
+  "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.0,
+  "totalUtilityScore" : 0.033029457036619546,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/DRANPTO",
@@ -178,9 +178,9 @@
     "ontologyTypeScore" : 0.0,
     "ontologyTotalUtilityScore" : 0.09908449589714687
   },
-  "conceptUtilityScores" : null,
+  "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.0,
+  "totalUtilityScore" : 0.03302816529904895,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/RBO",
@@ -192,9 +192,9 @@
     "ontologyTypeScore" : 0.0,
     "ontologyTotalUtilityScore" : 0.0673417894517324
   },
-  "conceptUtilityScores" : null,
+  "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.0,
+  "totalUtilityScore" : 0.022447263150577466,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/BIRNLEX",
@@ -206,9 +206,9 @@
     "ontologyTypeScore" : 0.0,
     "ontologyTotalUtilityScore" : 0.05433501808224254
   },
-  "conceptUtilityScores" : null,
+  "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.0,
+  "totalUtilityScore" : 0.018111672694080844,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/BAO-GPCR",
@@ -220,9 +220,9 @@
     "ontologyTypeScore" : 0.0,
     "ontologyTotalUtilityScore" : 0.03368981188265663
   },
-  "conceptUtilityScores" : null,
+  "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.0,
+  "totalUtilityScore" : 0.011229937294218876,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/RADLEX",
@@ -234,9 +234,9 @@
     "ontologyTypeScore" : 0.0,
     "ontologyTotalUtilityScore" : 0.031088025440299937
   },
-  "conceptUtilityScores" : null,
+  "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.0,
+  "totalUtilityScore" : 0.010362675146766646,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/UPHENO",
@@ -248,9 +248,9 @@
     "ontologyTypeScore" : 0.0,
     "ontologyTotalUtilityScore" : 0.015773536818260003
   },
-  "conceptUtilityScores" : null,
+  "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.0,
+  "totalUtilityScore" : 0.0052578456060866675,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/COB",
@@ -262,9 +262,9 @@
     "ontologyTypeScore" : 0.0,
     "ontologyTotalUtilityScore" : 0.015753875212711786
   },
-  "conceptUtilityScores" : null,
+  "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.0,
+  "totalUtilityScore" : 0.005251291737570595,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/MAMO",
@@ -276,9 +276,9 @@
     "ontologyTypeScore" : 0.0,
     "ontologyTotalUtilityScore" : 1.0728220454732417E-4
   },
-  "conceptUtilityScores" : null,
+  "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.0,
+  "totalUtilityScore" : 3.5760734849108054E-5,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/FIRE",
@@ -290,9 +290,9 @@
     "ontologyTypeScore" : 0.0,
     "ontologyTotalUtilityScore" : 2.731005168989868E-5
   },
-  "conceptUtilityScores" : null,
+  "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.0,
+  "totalUtilityScore" : 9.10335056329956E-6,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/EOL",
@@ -304,9 +304,9 @@
     "ontologyTypeScore" : 0.0,
     "ontologyTotalUtilityScore" : 8.484676253172405E-6
   },
-  "conceptUtilityScores" : null,
+  "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.0,
+  "totalUtilityScore" : 2.828225417724135E-6,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/SOCPRES",
@@ -318,8 +318,8 @@
     "ontologyTypeScore" : 0.0,
     "ontologyTotalUtilityScore" : 6.547069897279669E-6
   },
-  "conceptUtilityScores" : null,
+  "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.0,
+  "totalUtilityScore" : 2.1823566324265563E-6,
   "ontologyScore" : 1
 } ]

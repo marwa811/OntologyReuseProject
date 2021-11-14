@@ -1,0 +1,1 @@
+oboe-core.owl|http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#Characteristic|https://data.bioontology.org/ontologies/GSSO|http://purl.obolibrary.org/obo/NCIT_C25447|characteristic

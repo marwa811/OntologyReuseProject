@@ -37,7 +37,8 @@ public class WebLearningClass {
 	private static Deque<IterationClass> iterationsQueue = new ArrayDeque<IterationClass>();
 	
 	public void beginIterations() throws Exception {
-		int count=0;
+		firstIteration();
+		/*int count=0;
 		do {
 		//if first iteration collect user preferences and calculate candidate ontologies
 		if(count == 0) 
@@ -45,7 +46,7 @@ public class WebLearningClass {
 		else
 			otherIterations();
 		count++;
-		}while(count<10);
+		}while(count<10);*/
 	}	
 	//////////////////////////////////////////////////////
 	public static void  firstIteration() throws Exception {
@@ -79,6 +80,16 @@ public class WebLearningClass {
     	///
     	//get the class that have mapping with input class from bioportal seachTerm Function
     	String className=firstIteration.getInputClassName().substring(firstIteration.getInputClassName().lastIndexOf('#')+1);
+    	//get the class name from the user preferences file
+    	if(className.equals("")){
+    		BufferedReader br = new BufferedReader(new FileReader("UserPreference.txt"));
+	  		String line = null;
+	  		while ((line = br.readLine()) != null) {
+	  		  String[] values = line.split("\\|");
+	  		  className=values[7];
+	  		  }
+    	}
+    			
     	ArrayList<String> bioPortalSearchResult= TermSearchUsingBioportal.searchByTermBioportal(className);   
     	if(bioPortalSearchResult.size()==0)
     		System.out.println("This class can not be extended, no matching ontologies found.");
@@ -91,9 +102,9 @@ public class WebLearningClass {
     		//2. Not OWL file ontology, exclude it from the list
     		bioPortalSearchResult=excludeNonOWLOntologies(bioPortalSearchResult);
     		System.out.println("The size bioPortalSearchResult after excludeNonOWL: "+bioPortalSearchResult.size());
-    		ArrayList<String> modulesOfLaregFilesIRIs = getModulesIRIFromLargeOntologies(className,bioPortalSearchResult);
-    		if(modulesOfLaregFilesIRIs.size()>0)
-    			bioPortalSearchResult.addAll(modulesOfLaregFilesIRIs);
+    //		ArrayList<String> modulesOfLaregFilesIRIs = getModulesIRIFromLargeOntologies(className,bioPortalSearchResult);
+    		//if(modulesOfLaregFilesIRIs.size()>0)
+    			//bioPortalSearchResult.addAll(modulesOfLaregFilesIRIs);
     		
     		ArrayList<CandidateOntologyClass> candidateOntologies= populateCandidateOntologyIDs(bioPortalSearchResult);
     		
@@ -157,99 +168,19 @@ public class WebLearningClass {
     	updateFinalResultListScores();
     	printFinalResult();
     	
-	}
-	//----------------------------------------------------------------------------
-	public static void otherIterations() throws Exception {
-		
-        IterationClass iteration =new IterationClass(1);
-        //get the last iteration information
-        IterationClass lastIteration =iterationsQueue.getLast();
-        //copy user preferences and ad them in the new iteration
-        iteration.setUserPreferences(lastIteration.getUserPreferences());
-    	//load the updated input ontology and 
-    	//retrieve its class in order to beging the reuse process
-    	//return a string of all classes names seprated by commas to be used in the ontology utility class
-    	
-    	String classNames=EntityExtractionClass.getClassesLabelsFromInputOntology(iteration.getUserPreferences().getInputFileName());
-        
-        /* Input a class (from the input ontology) to begin the reuse proess and begin 
-    	 * creating a user profile
-    	 */
-        System.out.println("Please Select a Class to Reuse:");
-    	String className= sc.nextLine();
-    	System.out.println("You selected: "+className+ " class");
-    	String inputClassIRI=EntityExtractionClass.getClassIRI(iteration.getUserPreferences().getInputFileName(),className);
-    	iteration.setInputClassName(inputClassIRI);
-    	System.out.println("Loading candidate ontologies...");
-
-    	/* search the bioportal repository for a match to the selected class,
-    	 * if found display the candidate ontologies to the user and begin the user profile
-    	 * create the ontology Level preferences 
-    	 */
-    	
-    	///
-    	//get the class that have mapping with input class from bioportal seachTerm Function
-    	ArrayList<String> bioPortalSearchResult= TermSearchUsingBioportal.searchByTermBioportal(className);
-    	   
-    	if(bioPortalSearchResult.size()==0)
-    		System.out.println("This class can not be extended, no matching ontologies found.");
-    	else 
-    	{
-    		//to remove reprated ontology Id coming from Bioportal search service
-    		bioPortalSearchResult=excludeRedundantOntologies(bioPortalSearchResult);
-    		
-    		//here we have two main issues with the list of candidate ontologies "termSearchResultOntologies"
-    		//1. Very large ontology, extract a module using the input class name and append its IRI to the list
-    		//2. Not OWL file ontology, exclude it from the list
-    		bioPortalSearchResult=excludeNonOWLOntologies(bioPortalSearchResult);
-    		ArrayList<String> modulesOfLaregFilesIRIs = getModulesIRIFromLargeOntologies(className,bioPortalSearchResult);
-    		if(modulesOfLaregFilesIRIs.size()>0)
-    			bioPortalSearchResult.addAll(modulesOfLaregFilesIRIs);
-   
-    		ArrayList<CandidateOntologyClass> candidateOntologies= populateCandidateOntologyIDs(bioPortalSearchResult);
-    		candidateOntologies= OntologyUtilityClass.calculateOntologyUtilityFunction(classNames,candidateOntologies,iteration.getUserPreferences());
-    		//Collections.sort(candidateOntologies,CandidateOntologyClass.sortByOntologyUtilityScore);
-    		/*for(CandidateOntologyClass t: candidateOntologies){
-    			t.display();
-    		}*/	
-    		candidateOntologies= finalResultList.calculateOntologyAggregateScoreFunction(candidateOntologies);
-    	   // ConceptUtilityClass.calculateConceptUtilityFunction(className, firstIteration.getUserPreferences().getInputFileName(), bioPortalSearchResult);
-    		candidateOntologies=ConceptUtilityClass.calculateConceptUtilityFunction10(className, iteration.getUserPreferences().getInputFileName(), candidateOntologies);
-    		Collections.sort(candidateOntologies,CandidateOntologyClass.sortByTotalUtilityScore);
-    		// write the final result to a result JSON file
-    	    // create object mapper instance
-    		try {
+    	//save FirstIteration to a file
+		try {
     		ObjectMapper mapper = new ObjectMapper();
 
     		// create an instance of DefaultPrettyPrinter
     		ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
 
     	    // convert book object to JSON file
-    		writer.writeValue(Paths.get("results.json").toFile(), candidateOntologies);
+    		writer.writeValue(Paths.get("Iterations.json").toFile(), firstIteration);
 
     		} catch (Exception ex) {
     	    ex.printStackTrace();
     		}
-    		for(CandidateOntologyClass t: candidateOntologies){
-    			t.display1();
-    		}
-    		iteration.setCandidateOntologies(candidateOntologies);		
-    	}
-    	System.out.println("Please Select the ontology you want to use in the Reuse Process: (select from a ranked list)");
-    	String selectedOntology= sc.nextLine();
-    	iteration.setSelectedOntology(selectedOntology);
-    	iteration.displayRewardValue();
-    	iterationToJSON(iteration);
-    	iteration.printMatchedClassesOfSelectedOntology(selectedOntology);
-    	System.out.println("Please Select the class you want to reuse: (select from a ranked list)");
-    	String selectedClass= sc.nextLine();
-    	
-    	EntityExtractionClass.addClassInformationToSourceOntology(iteration.getUserPreferences().getInputFileName(),
-    		iteration.getInputClassName(), selectedOntology, selectedClass);
-    	
-    	updateCandidateOntologyScore(iteration);   	
-    	updateFinalResultListScores(); 
-    	printFinalResult();
 	}
 	//-------------------------------------------------------------------------------	
   	//The function takes an input string from the user, split it by ',' then uppercase 
@@ -273,7 +204,7 @@ public class WebLearningClass {
 	//----------------------------------------------------------------------
 	  //The function checks if a set of ontologies are very large OWL ontologies or not, 
 	  	//if yes get a module from each one and add its IRI in a list to append them in the termSearchResultOntologies
-	  	private static ArrayList<String> getModulesIRIFromLargeOntologies(String className ,ArrayList<String> termSearchResultOntologies) throws OWLOntologyCreationException{
+	/*  	private static ArrayList<String> getModulesIRIFromLargeOntologies(String className ,ArrayList<String> termSearchResultOntologies) throws OWLOntologyCreationException{
 	  		String ontologyIRI="";
 	  		String owlFileName="";
 	  		String acronym="";
@@ -288,7 +219,7 @@ public class WebLearningClass {
 	  			}		
 	  		}	
 	  		return modulesIRI;
-	  	}
+	  	}*/
 	  	//---------------------------------------------------------------------
 	  	//The function checks if a set of ontologies are OWL ontologies or not, if not execlude them from the set
 		private static ArrayList<String> excludeNonOWLOntologies(ArrayList<String> setofOntologies){
@@ -542,6 +473,7 @@ public class WebLearningClass {
 		//sort the ontology list desc by the ontology score 
 		Collections.sort(firstIteration.getCandidateOntologies(),CandidateOntologyClass.sortByOntologyScore);
 		
+		
 		//if the Deque size is still less than 3 
 	    if(iterationsQueue.size()< 3)
 	    	iterationsQueue.add(firstIteration);
@@ -606,6 +538,20 @@ public class WebLearningClass {
 		finalResultList.setFinalCandidateOntologyList(agregatedCandidateOntology);
 		finalResultList.setSelectedOntology(selectedOntologyList);
 		finalResultList.setRewardScore(rewardScores);
+		
+		//save Final results to a json file 
+		try {
+    		ObjectMapper mapper = new ObjectMapper();
+
+    		// create an instance of DefaultPrettyPrinter
+    		ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
+
+    	    // convert book object to JSON file
+    		writer.writeValue(Paths.get("finalResultList.json").toFile(), finalResultList);
+
+    		} catch (Exception ex) {
+    	    ex.printStackTrace();
+    		}
 	}
 	//------------------------------------------------------------------------
 	//To print the final results after each iteration

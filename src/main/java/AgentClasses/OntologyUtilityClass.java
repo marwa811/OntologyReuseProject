@@ -64,7 +64,7 @@ public class OntologyUtilityClass {
 		    ObjectMapper mapper = new ObjectMapper();
 
 		    // convert JSON file to map
-		    ontologiesInfo = mapper.readValue(new File("C:\\Users\\marwa\\eclipse-workspace-photon\\OntologyReuseProject\\ontology.json"), Ontology[].class);
+		    ontologiesInfo = mapper.readValue(new File("ontology.json"), Ontology[].class);
 		    log.info("Getting information from JSON File");
 		} catch (Exception ex) {
 		    ex.printStackTrace();
