@@ -58,7 +58,7 @@ public class FinalResultList {
 		for(CandidateOntologyClass temp: candidateOntologies) {
 			double aggregatedScore=getOntologyAggregatedScore(temp.getOntologyID());
 			if(aggregatedScore!=-1)
-				temp.setOntologyAggregatedScore((aggregatedScore/12));
+				temp.setOntologyAggregatedScore(((double)aggregatedScore)/(double)12);
 			}
 		return candidateOntologies;
 	}

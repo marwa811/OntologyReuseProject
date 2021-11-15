@@ -89,6 +89,10 @@ public class IterationClass {
 		}
 		setRewardValue();
 	}
+	
+	public void setrankingNo(int rankingNo ) {
+		this.rankingNo=rankingNo;
+	}
 
 	public double getRewardValue() {
 		return rewardValue;
@@ -97,6 +101,10 @@ public class IterationClass {
 	public void setRewardValue() {
 		this.rewardValue = 
 				(this.candidateOntologies.size()-this.rankingNo+1.0)/this.candidateOntologies.size();
+	}
+	
+	public void setRewardValue(double rewardValue) {
+		this.rewardValue =  rewardValue ;			
 	}
 	
 	public void displayRewardValue() {

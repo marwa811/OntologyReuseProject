@@ -169,6 +169,11 @@ public  class CandidateOntologyClass {
 			return new Integer(ontologyScore2).compareTo(ontologyScore1);
 			//return Integer.compare(ontologyScore2,ontologyScore1);
 		}};
+
+
+		public void setTotalUtilityScore(double totalUtilityScore) {
+			this.totalUtilityScore=totalUtilityScore;
+		}
 		    
 	
 }

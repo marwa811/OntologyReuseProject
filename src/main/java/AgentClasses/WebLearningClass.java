@@ -167,6 +167,9 @@ public class WebLearningClass {
     	updateCandidateOntologyScore(firstIteration);   	  	   	
     	updateFinalResultListScores();
     	printFinalResult();
+    	ArrayList<IterationClass> iterations=new ArrayList<IterationClass>();
+    	iterations.add(firstIteration);
+    	Iterations iter=new Iterations(iterations);
     	
     	//save FirstIteration to a file
 		try {
@@ -176,7 +179,7 @@ public class WebLearningClass {
     		ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
 
     	    // convert book object to JSON file
-    		writer.writeValue(Paths.get("Iterations.json").toFile(), firstIteration);
+    		writer.writeValue(Paths.get("Iterations.json").toFile(), iter);
 
     		} catch (Exception ex) {
     	    ex.printStackTrace();
