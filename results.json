@@ -1,25 +1,7 @@
 [ {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ICO",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 1.0,
-    "ontologyPopularityScore" : 1.2128735926009272E-4,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 1.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.500018193103889
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/OBI_0000272",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.2,
-    "matchedConceptLabel" : "protocol"
-  } ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.2611171754790741,
-  "ontologyScore" : 1
-}, {
   "ontologyID" : "https://data.bioontology.org/ontologies/ENM",
+  "ontologyName" : "eNanoMapper",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 1.0,
     "ontologyPopularityScore" : 0.04964524916795323,
@@ -29,17 +11,49 @@
     "ontologyTotalUtilityScore" : 0.351196787375193
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/OBI_0000272",
-    "conceptContextMatchingScore" : 0.0,
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/UO_0000045",
+    "conceptContextMatchingScore" : 0.2,
     "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.2,
-    "matchedConceptLabel" : ""
+    "conceptUtilityScore" : 0.0,
+    "matchedConceptLabel" : "UO_0000045",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ "\"A unit which is one of a particular measure to which all measures of that type can be related.\" [NIST:NIST]" ],
+    "matchedConceptSubClasses" : [ "foot", "yard", "thou", "furlong", "mile", "kelvin", "chain", "ampere", "second", "meter", "kilogram", "inch", "candela", "league", "mole" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/UO_0010013", "http://purl.obolibrary.org/obo/UO_0010014", "http://purl.obolibrary.org/obo/UO_0010012", "http://purl.obolibrary.org/obo/UO_0010016", "http://purl.obolibrary.org/obo/UO_0010017", "http://purl.obolibrary.org/obo/UO_0000012", "http://purl.obolibrary.org/obo/UO_0010015", "http://purl.obolibrary.org/obo/UO_0000011", "http://purl.obolibrary.org/obo/UO_0000010", "http://purl.obolibrary.org/obo/UO_0000008", "http://purl.obolibrary.org/obo/UO_0000009", "http://purl.obolibrary.org/obo/UO_0010011", "http://purl.obolibrary.org/obo/UO_0000014", "http://purl.obolibrary.org/obo/UO_0010018", "http://purl.obolibrary.org/obo/UO_0000013" ]
+  }, {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/UO_0000000",
+    "conceptContextMatchingScore" : 0.2,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.0,
+    "matchedConceptLabel" : "UO_0000000",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ "\"A unit of measurement is a standardized quantity of a physical quality.\" [Wikipedia:Wikipedia]" ],
+    "matchedConceptSubClasses" : [ "time unit", "acceleration unit", "angular velocity unit", "information unit", "mass unit", "turbidity unit", "electric field strength unit", "density unit", "force unit", "length unit", "radiation unit", "volume unit", "speed/velocity unit", "momentum unit", "power unit", "substance unit", "electric current unit", "temperature unit", "electric potential difference unit", "dimensionless unit", "energy unit", "volumetric flow rate unit", "area unit", "pressure unit", "surface tension unit", "Age Unit", "conduction unit", "base unit", "magnetic flux density unit", "light unit", "frequency unit", "angle unit", "concentration unit", "viscosity unit", "rate unit", "magnetic flux unit", "electric charge", "angular acceleration unit", "catalytic activity unit" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/UO_0000003", "http://purl.obolibrary.org/obo/UO_0000048", "http://purl.obolibrary.org/obo/UO_0000049", "http://purl.obolibrary.org/obo/UO_0000231", "http://purl.obolibrary.org/obo/UO_0000002", "http://purl.obolibrary.org/obo/UO_0000315", "http://purl.obolibrary.org/obo/UO_0000267", "http://purl.obolibrary.org/obo/UO_0000182", "http://purl.obolibrary.org/obo/UO_0000107", "http://purl.obolibrary.org/obo/UO_0000001", "http://purl.obolibrary.org/obo/UO_0000127", "http://purl.obolibrary.org/obo/UO_0000095", "http://purl.obolibrary.org/obo/UO_0000060", "http://purl.obolibrary.org/obo/UO_0000057", "http://purl.obolibrary.org/obo/UO_0000113", "http://purl.obolibrary.org/obo/UO_0000006", "http://purl.obolibrary.org/obo/UO_0000004", "http://purl.obolibrary.org/obo/UO_0000005", "http://purl.obolibrary.org/obo/UO_0000217", "http://purl.obolibrary.org/obo/UO_0000186", "http://purl.obolibrary.org/obo/UO_0000111", "http://purl.obolibrary.org/obo/UO_0000270", "http://purl.obolibrary.org/obo/UO_0000047", "http://purl.obolibrary.org/obo/UO_0000109", "http://purl.obolibrary.org/obo/UO_0000253", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C50400", "http://purl.obolibrary.org/obo/UO_0000261", "http://purl.obolibrary.org/obo/UO_0000045", "http://purl.obolibrary.org/obo/UO_0000227", "http://purl.obolibrary.org/obo/UO_0000157", "http://purl.obolibrary.org/obo/UO_0000105", "http://purl.obolibrary.org/obo/UO_0000121", "http://purl.obolibrary.org/obo/UO_0000051", "http://purl.obolibrary.org/obo/UO_0000256", "http://purl.obolibrary.org/obo/UO_0000280", "http://purl.obolibrary.org/obo/UO_0000225", "http://purl.obolibrary.org/obo/UO_0000219", "http://purl.obolibrary.org/obo/UO_0000050", "http://purl.obolibrary.org/obo/UO_0000119" ]
   } ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.21151004023617548,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.117065595791731,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/HHEAR",
+  "ontologyName" : "Human Health Exposure Analysis Resource",
+  "ontologyDef" : null,
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 1.0,
+    "ontologyPopularityScore" : 8.498273490757618E-5,
+    "ontologyCoverageScore" : 0.375,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.34376274741023616
+  },
+  "conceptUtilityScores" : [ ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.11458758247007872,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/CSEO",
+  "ontologyName" : "Cigarette Smoke Exposure Ontology",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 1.0,
     "ontologyPopularityScore" : 4.914041663295685E-4,
@@ -49,37 +63,69 @@
     "ontologyTotalUtilityScore" : 0.3283237106249494
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://scai.fraunhofer.de/CSEO#Protocol",
+    "matchedConceptName" : "http://mged.sourceforge.net/ontologies/MGEDOntology.owl#Unit",
     "conceptContextMatchingScore" : 0.0,
     "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.2,
-    "matchedConceptLabel" : "Protocol"
+    "conceptUtilityScore" : 0.0,
+    "matchedConceptLabel" : "Unit",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ ],
+    "matchedConceptSubClassesIds" : [ ]
+  }, {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/UO_0000045",
+    "conceptContextMatchingScore" : 0.2,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.0,
+    "matchedConceptLabel" : "Base unit",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "Meter", "kelvin", "ampere", "second", "meter", "kilogram", "candela", "mole" ],
+    "matchedConceptSubClassesIds" : [ "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Meter", "http://purl.obolibrary.org/obo/UO_0000012", "http://purl.obolibrary.org/obo/UO_0000011", "http://purl.obolibrary.org/obo/UO_0000010", "http://purl.obolibrary.org/obo/UO_0000008", "http://purl.obolibrary.org/obo/UO_0000009", "http://purl.obolibrary.org/obo/UO_0000014", "http://purl.obolibrary.org/obo/UO_0000013" ]
+  }, {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/ExO_0000066",
+    "conceptContextMatchingScore" : 0.2,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.0,
+    "matchedConceptLabel" : "Unit",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "Time unit", "Flow Rate Unit", "Acceleration unit", "Exposure Interruption Duration Unit", "Angular velocity unit", "Arbitrary Fluorescence Units", "Information unit", "Plaque Forming Unit", "Drug Accountability Assessment Original Result", "Mass unit", "Per Low Powered Field", "Medical Drop", "Electric field strength unit", "Scoopful Dosing Unit", "Housing Humidity Units", "Microequivalent", "Standard Unit", "Troche Dosing Unit", "Kilo United States Pharmacopoeia Unit", "Milliequivalent", "Density unit", "Force unit", "Length unit", "Radiation unit", "Volume unit", "Speed/velocity unit", "Momentum unit", "Molarity-Based Dosing Unit", "Power unit", "Substance unit", "Tuberculin Unit", "Electric current unit", "Temperature unit", "Quantity Sufficient", "Environmental Temperature Units", "Electric potential difference unit", "Dimensionless unit", "Low Power Field", "Energy unit", "Millimeter of Mercury", "Smoke uptake unit", "Questionnaire Result Standard Unit", "Puff Dosing Unit", "Volumetric flow rate unit", "Physical Examination Result Standard Unit", "Area unit", "Vital Signs Result Standard Unit", "Tablespoon Dosing Unit", "Exposure Flow Rate Unit of Measure", "Exposure Total Volume Administration Unit" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/UO_0000003", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Flow_Rate_Unit", "http://purl.obolibrary.org/obo/UO_0000048", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Exposure_Interruption_Duration_Unit", "http://purl.obolibrary.org/obo/UO_0000049", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Arbitrary_Fluorescence_Units", "http://purl.obolibrary.org/obo/UO_0000231", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Plaque_Forming_Unit", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Drug_Accountability_Assessment_Original_Result", "http://purl.obolibrary.org/obo/UO_0000002", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Per_Low_Powered_Field", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Medical_Drop", "http://purl.obolibrary.org/obo/UO_0000267", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Scoopful_Dosing_Unit", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Housing_Humidity_Units", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Microequivalent", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Standard_Unit", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Troche_Dosing_Unit", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Kilo_United_States_Pharmacopoeia_Unit", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Milliequivalent", "http://purl.obolibrary.org/obo/UO_0000182", "http://purl.obolibrary.org/obo/UO_0000107", "http://purl.obolibrary.org/obo/UO_0000001", "http://purl.obolibrary.org/obo/UO_0000127", "http://purl.obolibrary.org/obo/UO_0000095", "http://purl.obolibrary.org/obo/UO_0000060", "http://purl.obolibrary.org/obo/UO_0000057", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Molarity-Based_Dosing_Unit", "http://purl.obolibrary.org/obo/UO_0000113", "http://purl.obolibrary.org/obo/UO_0000006", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Tuberculin_Unit", "http://purl.obolibrary.org/obo/UO_0000004", "http://purl.obolibrary.org/obo/UO_0000005", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Quantity_Sufficient", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Environmental_Temperature_Units", "http://purl.obolibrary.org/obo/UO_0000217", "http://purl.obolibrary.org/obo/UO_0000186", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Low_Power_Field", "http://purl.obolibrary.org/obo/UO_0000111", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Millimeter_of_Mercury", "http://scai.fraunhofer.de/CSEO#CSEO_00001154", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Questionnaire_Result_Standard_Unit", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Puff_Dosing_Unit", "http://purl.obolibrary.org/obo/UO_0000270", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Physical_Examination_Result_Standard_Unit", "http://purl.obolibrary.org/obo/UO_0000047", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Vital_Signs_Result_Standard_Unit", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Tablespoon_Dosing_Unit", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Exposure_Flow_Rate_Unit_of_Measure", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Exposure_Total_Volume_Administration_Unit" ]
   } ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.20388568131942758,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.10944123687498314,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/OBOE",
+  "ontologyID" : "https://data.bioontology.org/ontologies/PMR",
+  "ontologyName" : "Physical Medicine and Rehabilitation",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 1.1285707195726116E-4,
-    "ontologyCoverageScore" : 0.438,
+    "ontologyDomainScore" : 1.0,
+    "ontologyPopularityScore" : 0.016257526153244772,
+    "ontologyCoverageScore" : 0.188,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.10951692856079359
+    "ontologyTotalUtilityScore" : 0.2994386289229867
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Protocol",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.6000000000000001,
-    "conceptUtilityScore" : 0.4,
-    "matchedConceptLabel" : ""
+    "matchedConceptName" : "http://purl.bioontology.org/ontology/PMR.owl#Unit",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.0,
+    "matchedConceptLabel" : "Unit",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "Unit_of_fractional_measurement" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.bioontology.org/ontology/PMR.owl#Unit_of_fractional_measurement" ]
   } ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.197616753964709,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.09981287630766224,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/DIDEO",
+  "ontologyName" : "Drug Interaction and Evidence Ontology",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 1.0,
     "ontologyPopularityScore" : 0.01622666042392634,
@@ -89,117 +135,85 @@
     "ontologyTotalUtilityScore" : 0.2994339990635889
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/OBI_0000272",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/UO_0000000",
     "conceptContextMatchingScore" : 0.0,
     "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.2,
-    "matchedConceptLabel" : "protocol"
+    "conceptUtilityScore" : 0.0,
+    "matchedConceptLabel" : "unit",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ "A unit of measurement is a standardized quantity of a physical quality." ],
+    "matchedConceptSubClasses" : [ "dimensionless unit" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/UO_0000186" ]
   } ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.19425577746564074,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.0998113330211963,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/OBIB",
+  "ontologyID" : "https://data.bioontology.org/ontologies/ADAR",
+  "ontologyName" : "Autism DSM-ADI-R ontology",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 1.0,
-    "ontologyPopularityScore" : 2.83366431275822E-4,
-    "ontologyCoverageScore" : 0.125,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.2812925049646914
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/OBI_0000272",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.2,
-    "matchedConceptLabel" : "protocol"
-  } ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.18820861276600823,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ACGT-MO",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 1.0,
-    "ontologyPopularityScore" : 2.7548003347639894E-4,
-    "ontologyCoverageScore" : 0.125,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.28129132200502144
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://www.ifomis.org/acgt/1.0#Protocol",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.2,
-    "matchedConceptLabel" : ""
-  } ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.18820821844611826,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/CONTSONTO",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 1.0,
-    "ontologyPopularityScore" : 0.0,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.25
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "https://contsys.org/concept/protocol",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.2,
-    "matchedConceptLabel" : ""
-  } ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.17777777777777776,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/CANCO",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.25,
-    "ontologyPopularityScore" : 0.016301445230645008,
+    "ontologyPopularityScore" : 1.6167115488817293E-4,
     "ontologyCoverageScore" : 0.188,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.11194521678459675
+    "ontologyTotalUtilityScore" : 0.29702425067323324
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://chem.deri.ie/granatum#Protocol",
+    "matchedConceptName" : "http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC100006",
     "conceptContextMatchingScore" : 0.0,
     "conceptSemanticRichnessScore" : 0.6000000000000001,
-    "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "Protocol"
+    "conceptUtilityScore" : 0.0,
+    "matchedConceptLabel" : "Unit",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ ],
+    "matchedConceptSubClassesIds" : [ ]
   } ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.16509285003931,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.0990080835577444,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/VICO",
+  "ontologyID" : "https://data.bioontology.org/ontologies/ISO-FOOD",
+  "ontologyName" : "A formal representation of the knowledge within the domain of Isotopes for Food Science",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.5,
-    "ontologyPopularityScore" : 1.5500850847141895E-5,
-    "ontologyCoverageScore" : 0.0,
+    "ontologyDomainScore" : 1.0,
+    "ontologyPopularityScore" : 1.0755414929902842E-4,
+    "ontologyCoverageScore" : 0.188,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.12500232512762707
+    "ontologyTotalUtilityScore" : 0.29701613312239483
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/OBI_0000272",
-    "conceptContextMatchingScore" : 0.0,
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/UO_0000045",
+    "conceptContextMatchingScore" : 0.2,
     "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.2,
-    "matchedConceptLabel" : "protocol"
+    "conceptUtilityScore" : 0.0,
+    "matchedConceptLabel" : "base unit",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ "A unit which is one of a particular measure to which all measures of that type can be related." ],
+    "matchedConceptSubClasses" : [ "foot", "yard", "thou", "furlong", "mile", "kelvin", "chain", "ampere", "second", "meter", "kilogram", "inch", "candela", "league", "mole" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/UO_0010013", "http://purl.obolibrary.org/obo/UO_0010014", "http://purl.obolibrary.org/obo/UO_0010012", "http://purl.obolibrary.org/obo/UO_0010016", "http://purl.obolibrary.org/obo/UO_0010017", "http://purl.obolibrary.org/obo/UO_0000012", "http://purl.obolibrary.org/obo/UO_0010015", "http://purl.obolibrary.org/obo/UO_0000011", "http://purl.obolibrary.org/obo/UO_0000010", "http://purl.obolibrary.org/obo/UO_0000008", "http://purl.obolibrary.org/obo/UO_0000009", "http://purl.obolibrary.org/obo/UO_0010011", "http://purl.obolibrary.org/obo/UO_0000014", "http://purl.obolibrary.org/obo/UO_0010018", "http://purl.obolibrary.org/obo/UO_0000013" ]
+  }, {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/UO_0000000",
+    "conceptContextMatchingScore" : 0.2,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.0,
+    "matchedConceptLabel" : "unit",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ "A unit of measurement is a standardized quantity of a physical quality." ],
+    "matchedConceptSubClasses" : [ "time unit", "acceleration unit", "angular velocity unit", "information unit", "mass unit", "turbidity unit", "electric field strength unit", "density unit", "force unit", "length unit", "radiation unit", "volume unit", "speed/velocity unit", "momentum unit", "power unit", "substance unit", "electric current unit", "temperature unit", "electric potential difference unit", "dimensionless unit", "energy unit", "volumetric flow rate unit", "area unit", "pressure unit", "surface tension unit", "conduction unit", "isotope_unit", "base unit", "magnetic flux density unit", "light unit", "frequency unit", "angle unit", "concentration unit", "viscosity unit", "rate unit", "magnetic flux unit", "electric charge", "angular acceleration unit", "catalytic activity unit" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/UO_0000003", "http://purl.obolibrary.org/obo/UO_0000048", "http://purl.obolibrary.org/obo/UO_0000049", "http://purl.obolibrary.org/obo/UO_0000231", "http://purl.obolibrary.org/obo/UO_0000002", "http://purl.obolibrary.org/obo/UO_0000315", "http://purl.obolibrary.org/obo/UO_0000267", "http://purl.obolibrary.org/obo/UO_0000182", "http://purl.obolibrary.org/obo/UO_0000107", "http://purl.obolibrary.org/obo/UO_0000001", "http://purl.obolibrary.org/obo/UO_0000127", "http://purl.obolibrary.org/obo/UO_0000095", "http://purl.obolibrary.org/obo/UO_0000060", "http://purl.obolibrary.org/obo/UO_0000057", "http://purl.obolibrary.org/obo/UO_0000113", "http://purl.obolibrary.org/obo/UO_0000006", "http://purl.obolibrary.org/obo/UO_0000004", "http://purl.obolibrary.org/obo/UO_0000005", "http://purl.obolibrary.org/obo/UO_0000217", "http://purl.obolibrary.org/obo/UO_0000186", "http://purl.obolibrary.org/obo/UO_0000111", "http://purl.obolibrary.org/obo/UO_0000270", "http://purl.obolibrary.org/obo/UO_0000047", "http://purl.obolibrary.org/obo/UO_0000109", "http://purl.obolibrary.org/obo/UO_0000253", "http://purl.obolibrary.org/obo/UO_0000261", "http://www.semanticweb.org/tome/ontologies/2018/3/ISO-FOOD#isotope_unit", "http://purl.obolibrary.org/obo/UO_0000045", "http://purl.obolibrary.org/obo/UO_0000227", "http://purl.obolibrary.org/obo/UO_0000157", "http://purl.obolibrary.org/obo/UO_0000105", "http://purl.obolibrary.org/obo/UO_0000121", "http://purl.obolibrary.org/obo/UO_0000051", "http://purl.obolibrary.org/obo/UO_0000256", "http://purl.obolibrary.org/obo/UO_0000280", "http://purl.obolibrary.org/obo/UO_0000225", "http://purl.obolibrary.org/obo/UO_0000219", "http://purl.obolibrary.org/obo/UO_0000050", "http://purl.obolibrary.org/obo/UO_0000119" ]
   } ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.13611188615365344,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.09900537770746494,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/PDRO",
+  "ontologyName" : "The Prescription of Drugs Ontology",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 1.0,
     "ontologyPopularityScore" : 8.756621004876649E-5,
@@ -209,11 +223,65 @@
     "ontologyTotalUtilityScore" : 0.2970131349315073
   },
   "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.1267821560882802,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.09900437831050243,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/CARRE",
+  "ontologyName" : "CARRE Risk Factor ontology",
+  "ontologyDef" : null,
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 1.0,
+    "ontologyPopularityScore" : 5.670048073033483E-5,
+    "ontologyCoverageScore" : 0.188,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.2970085050721095
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "file:/Users/allanthird/Work/CARRE/CARREOntology/carre-ontology.xml#unit",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.0,
+    "matchedConceptLabel" : "unit",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ ],
+    "matchedConceptSubClassesIds" : [ ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.0990028350240365,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/APOLLO-SV",
+  "ontologyName" : "Apollo Structured Vocabulary",
+  "ontologyDef" : null,
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 1.0,
+    "ontologyPopularityScore" : 4.650255254142568E-5,
+    "ontologyCoverageScore" : 0.0,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.2500069753828812
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/UO_0000000",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.6000000000000001,
+    "conceptUtilityScore" : 0.0,
+    "matchedConceptLabel" : "unit",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "reactive control strategy threshold unit of measure", "individual treatment strategy administration capacity unit of measure", "individual treatment strategy supply schedule unit of measure" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/APOLLO_SV_00000295", "http://purl.obolibrary.org/obo/APOLLO_SV_00000293", "http://purl.obolibrary.org/obo/APOLLO_SV_00000292" ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.08333565846096039,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/CHEAR",
+  "ontologyName" : "Children's Health Exposure Analysis Resource",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.5,
     "ontologyPopularityScore" : 0.016334622490352925,
@@ -223,11 +291,13 @@
     "ontologyTotalUtilityScore" : 0.22120019337355293
   },
   "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.10151117556896208,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.0737333977911843,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/OBOE-SBC",
+  "ontologyName" : "Santa Barbara Coastal Observation Ontology",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
     "ontologyPopularityScore" : 0.01626010962838596,
@@ -237,53 +307,103 @@
     "ontologyTotalUtilityScore" : 0.2211890164442579
   },
   "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.10150744992586375,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.07372967214808596,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ONE",
+  "ontologyID" : "https://data.bioontology.org/ontologies/BDO",
+  "ontologyName" : "Bone Dysplasia Ontology",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.3333333333333333,
-    "ontologyPopularityScore" : 0.03230959804657699,
-    "ontologyCoverageScore" : 0.0,
+    "ontologyDomainScore" : 0.5,
+    "ontologyPopularityScore" : 0.01645862929713006,
+    "ontologyCoverageScore" : 0.125,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.08817977304031988
+    "ontologyTotalUtilityScore" : 0.1587187943945695
   },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.05717103545788439,
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://purl.org/obo/owl/UO#UO_0000000",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.0,
+    "matchedConceptLabel" : "Unit",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ ],
+    "matchedConceptSubClassesIds" : [ ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.052906264798189835,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/EGO",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.3333333333333333,
-    "ontologyPopularityScore" : 5.153353044795419E-5,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.08334106336290052
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.05555813223207795,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/VIVO",
+  "ontologyID" : "https://data.bioontology.org/ontologies/OBOE",
+  "ontologyName" : "The Extensible Observation Ontology",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.03300781619657763,
+    "ontologyPopularityScore" : 1.1285707195726116E-4,
+    "ontologyCoverageScore" : 0.438,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.10951692856079359
+  },
+  "conceptUtilityScores" : [ ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.036505642853597864,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/BLM",
+  "ontologyName" : "BioLink Model",
+  "ontologyDef" : null,
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.16666666666666666,
+    "ontologyPopularityScore" : 1.0293108852005627E-4,
+    "ontologyCoverageScore" : 0.25,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.10418210632994468
+  },
+  "conceptUtilityScores" : [ ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.034727368776648226,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/FOODON",
+  "ontologyName" : "The FoodOn Food Ontology",
+  "ontologyDef" : null,
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.2,
+    "ontologyPopularityScore" : 0.032782373997414814,
+    "ontologyCoverageScore" : 0.188,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.10191735609961222
+  },
+  "conceptUtilityScores" : [ ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.03397245203320407,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/REPRODUCE-ME",
+  "ontologyName" : "REPRODUCE-ME",
+  "ontologyDef" : null,
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 6.96178564362864E-5,
     "ontologyCoverageScore" : 0.313,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.08320117242948664
+    "ontologyTotalUtilityScore" : 0.07826044267846545
   },
   "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.05551150192093999,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.02608681422615515,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/MO",
+  "ontologyName" : "Microarray and Gene Expression Data Ontology",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
     "ontologyPopularityScore" : 0.048875917465381925,
@@ -293,11 +413,29 @@
     "ontologyTotalUtilityScore" : 0.06983138761980728
   },
   "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.0510549069843802,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.023277129206602427,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/RBO",
+  "ontologyName" : "Radiation Biology Ontology",
+  "ontologyDef" : null,
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 0.0322785963448827,
+    "ontologyCoverageScore" : 0.25,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.0673417894517324
+  },
+  "conceptUtilityScores" : [ ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.022447263150577466,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/TOP-MENELAS",
+  "ontologyName" : "Menelas Project Top-Level Ontology",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
     "ontologyPopularityScore" : 0.01619593066698376,
@@ -307,11 +445,13 @@
     "ontologyTotalUtilityScore" : 0.06492938960004756
   },
   "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.04942090764446029,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.021643129866682518,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/GALEN",
+  "ontologyName" : "Galen Ontology",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
     "ontologyPopularityScore" : 5.374988017434378E-4,
@@ -321,11 +461,13 @@
     "ontologyTotalUtilityScore" : 0.06258062482026151
   },
   "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.048637986051198276,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.020860208273420503,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/BIRNLEX",
+  "ontologyName" : "Biomedical Informatics Research Network Project Lexicon",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
     "ontologyPopularityScore" : 0.048900120548283604,
@@ -335,329 +477,199 @@
     "ontologyTotalUtilityScore" : 0.05433501808224254
   },
   "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.04588945047185862,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.018111672694080844,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ERO",
+  "ontologyID" : "https://data.bioontology.org/ontologies/ROO",
+  "ontologyName" : "Radiation Oncology Ontology",
+  "ontologyDef" : null,
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.2,
+    "ontologyPopularityScore" : 0.0010701025979561992,
+    "ontologyCoverageScore" : 0.0,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.05016051538969343
+  },
+  "conceptUtilityScores" : [ ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.016720171796564477,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/RO",
+  "ontologyName" : "Radiomics Ontology",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.032688417085701,
+    "ontologyPopularityScore" : 2.671857185494195E-4,
     "ontologyCoverageScore" : 0.188,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.05190326256285515
+    "ontologyTotalUtilityScore" : 0.047040077857782414
   },
   "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.04507886529872949,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.015680025952594136,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ONSTR",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.16666666666666666,
-    "ontologyPopularityScore" : 7.220133157747672E-5,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.041677496866403284
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.04167027673324553,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/STATO",
+  "ontologyID" : "https://data.bioontology.org/ontologies/AGRO",
+  "ontologyName" : "AGRonomy Ontology",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.049772655284126666,
+    "ontologyPopularityScore" : 7.736828185985735E-5,
+    "ontologyCoverageScore" : 0.188,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.04701160524227898
+  },
+  "conceptUtilityScores" : [ ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.01567053508075966,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/TEO",
+  "ontologyName" : "Time Event Ontology",
+  "ontologyDef" : null,
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 2.442063870304109E-4,
     "ontologyCoverageScore" : 0.125,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.038715898292619
+    "ontologyTotalUtilityScore" : 0.03128663095805456
   },
   "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.040683077208650775,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.010428876986018187,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/NEMO",
+  "ontologyID" : "https://data.bioontology.org/ontologies/EPO",
+  "ontologyName" : "Early Pregnancy Ontology",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.04866787973032818,
+    "ontologyPopularityScore" : 5.670048073033483E-5,
     "ontologyCoverageScore" : 0.125,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.03855018195954923
+    "ontologyTotalUtilityScore" : 0.03125850507210955
   },
   "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.04062783843096085,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.010419501690703183,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/FLU",
+  "ontologyID" : "https://data.bioontology.org/ontologies/UO",
+  "ontologyName" : "Units of Measurement Ontology",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.016270579501326574,
-    "ontologyCoverageScore" : 0.125,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.03369058692519899
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.03900797341951077,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ECSO",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 9.044882441683147E-4,
-    "ontologyCoverageScore" : 0.125,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.03138567323662525
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.03823966885665286,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/OBCS",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 3.8371404465468794E-4,
-    "ontologyCoverageScore" : 0.125,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.031307557106698206
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.038213630146677176,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/BCO",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 3.645419396595388E-4,
-    "ontologyCoverageScore" : 0.125,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.03130468129094893
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.03821267154142742,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/NIO",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 4.867811055505963E-5,
-    "ontologyCoverageScore" : 0.125,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.03125730171658326
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.038196878349972194,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/JERM",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.032412801079848744,
-    "ontologyCoverageScore" : 0.063,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.020611920161977312
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.03464841783177021,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/EDDA_PT",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 2.325127627071284E-5,
-    "ontologyCoverageScore" : 0.063,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.015753487691440606
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.03302894034159131,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ONL-DP",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.032307014571435796,
+    "ontologyPopularityScore" : 0.09838437842322792,
     "ontologyCoverageScore" : 0.0,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.004846052185715369
+    "ontologyTotalUtilityScore" : 0.014757656763484187
   },
   "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.029393128506349564,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.004919218921161395,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ONL-MR-DA",
+  "ontologyID" : "https://data.bioontology.org/ontologies/SOPHARM",
+  "ontologyName" : "Suggested Ontology for Pharmacogenomics",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.032307014571435796,
+    "ontologyPopularityScore" : 0.01644081691589343,
     "ontologyCoverageScore" : 0.0,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.004846052185715369
+    "ontologyTotalUtilityScore" : 0.0024661225373840147
   },
   "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.029393128506349564,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 8.220408457946715E-4,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/OntoVIP",
+  "ontologyID" : "https://data.bioontology.org/ontologies/BIBFRAME",
+  "ontologyName" : "BIBFRAME 2.0",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.016234682794101615,
+    "ontologyPopularityScore" : 0.01619851414212495,
     "ontologyCoverageScore" : 0.0,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.002435202419115242
+    "ontologyTotalUtilityScore" : 0.0024297771213187425
   },
   "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.028589511917482855,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 8.099257071062474E-4,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ONTODM-CORE",
+  "ontologyID" : "https://data.bioontology.org/ontologies/ADALAB-META",
+  "ontologyName" : "AdaLab-meta ontology",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.016226932368678042,
+    "ontologyPopularityScore" : 0.016154731037100568,
     "ontologyCoverageScore" : 0.0,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.0024340398553017065
+    "ontologyTotalUtilityScore" : 0.0024232096555650852
   },
   "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.028589124396211675,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 8.077365518550283E-4,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ONTODM-KDD",
+  "ontologyID" : "https://data.bioontology.org/ontologies/SCIO",
+  "ontologyName" : "Spinal Cord Injury Ontology",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.016206400539924372,
+    "ontologyPopularityScore" : 8.7022320545358E-5,
     "ontologyCoverageScore" : 0.0,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.0024309600809886557
+    "ontologyTotalUtilityScore" : 1.30533480818037E-5
   },
   "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.028588097804773994,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 4.3511160272679E-6,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/CTONT",
+  "ontologyID" : "https://data.bioontology.org/ontologies/QUDT2",
+  "ontologyName" : "Quantities, Units, Dimensions and Types (QUDT) Schema - Version 2.0",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 1.3379681783848792E-4,
+    "ontologyPopularityScore" : 7.750425423570948E-6,
     "ontologyCoverageScore" : 0.0,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 2.0069522675773187E-5
+    "ontologyTotalUtilityScore" : 1.162563813535642E-6
   },
   "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.0277844676186697,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 3.875212711785473E-7,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/OBI_BCGO",
+  "ontologyID" : "https://data.bioontology.org/ontologies/ONTOPBM",
+  "ontologyName" : "Ontology for Process-Based Modeling of Dynamical Systems (OntoPBM)",
+  "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 1.0075553050642231E-4,
+    "ontologyPopularityScore" : 0.0,
     "ontologyCoverageScore" : 0.0,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 1.5113329575963347E-5
+    "ontologyTotalUtilityScore" : 0.0
   },
   "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.027782815554303095,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/NGSONTO",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 9.300510508285136E-5,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 1.3950765762427705E-5
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.027782428033031915,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/CN",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 7.492077909451916E-5,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 1.1238116864177874E-5
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.027781523816732503,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/OLAM",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 2.325127627071284E-5,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 3.487691440606926E-6
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.027778940341591313,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ORNASEQ",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 1.0333900564761263E-5,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 1.5500850847141895E-6
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.027778294472806015,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/OBI_IEE",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 5.166950282380632E-6,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 7.750425423570947E-7
-  },
-  "conceptUtilityScores" : [ ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.027778036125291894,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.0,
   "ontologyScore" : 1
 } ]

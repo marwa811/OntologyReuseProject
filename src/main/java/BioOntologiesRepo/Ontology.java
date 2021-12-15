@@ -1,5 +1,7 @@
 package BioOntologiesRepo;
 
+import java.util.ArrayList;
+
 public class Ontology {
 	
 	private String name;
@@ -10,6 +12,7 @@ public class Ontology {
 	private int projects;
 	private int objPropertyNo;
 	private int classNo;
+	private ArrayList<BioClass> classes;
 	
 	//ontology class constructor
 	public Ontology(String name, String id, String acronym, String[] categories, int veiws, int projects, 
@@ -23,7 +26,23 @@ public class Ontology {
 		this.projects=projects;
 		this.objPropertyNo = objPropertyNo;
 		this.classNo = classNo;
+		
 	}
+	
+	//ontology class constructor
+		public Ontology(String name, String id, String acronym, String[] categories, int veiws, int projects, 
+				int objPropertyNo, int classNo, ArrayList<BioClass> classes) {
+			super();
+			this.name = name;
+			this.id = id;
+			this.acronym = acronym;
+			this.categories = categories;
+			this.veiws = veiws;
+			this.projects=projects;
+			this.objPropertyNo = objPropertyNo;
+			this.classNo = classNo;
+			this.classes=classes;
+		}
 	
 	public Ontology() 
 	{}
@@ -76,4 +95,12 @@ public class Ontology {
 	public void setClassNo(int classNo) {
 		this.classNo = classNo;
 	}
+	public ArrayList<BioClass> getClasses() {
+		return classes;
+	}
+
+	public void setClasses(ArrayList<BioClass> classes) {
+		this.classes = classes;
+	}
+
 }

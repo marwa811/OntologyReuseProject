@@ -100,7 +100,7 @@ public class ConceptUtilityClass {
 			while (mappingIterator.hasNext()) {
 				AMLMapping mapping = mappingIterator.next();
 				System.out.println("The AML mappings:   "+mapping.getMappingId() + " " + mapping.getSourceURI() + "     " + mapping.getTargetURI());
-				ConceptUtilityScoreClass candidateConceptForExtension=testCase.getSimilarclasses(mapping, mappings.getMappings());
+				ConceptUtilityScoreClass candidateConceptForExtension=testCase.getSimilarclasses(mapping, mappings.getMappings(),filename2);
 				candidateConceptForExtension.setMatchedConceptLabel(EntityExtractionClass.getClassName(testCase.getTargetOntology(), candidateConceptForExtension.getMatchedConceptName()));
 				conceptsForExtension.add(candidateConceptForExtension);
 				// used memory

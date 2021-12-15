@@ -28,6 +28,7 @@ import org.semanticweb.owlapi.model.OWLObjectPropertyRangeAxiom;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
+import org.semanticweb.owlapi.model.OWLRuntimeException;
 import org.semanticweb.owlapi.reasoner.Node;
 import org.semanticweb.owlapi.reasoner.NodeSet;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
@@ -73,6 +74,9 @@ public class OWLOntologyInformation {
 			} 
 		catch (OWLOntologyCreationException e) {
 			log.error("The Ontology: " + e+ " is already loaded");
+		}
+		catch(OWLRuntimeException x) {
+			log.error("The Ontology: " + x + " can not be loaded");
 		}
 	}
 	

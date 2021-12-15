@@ -55,6 +55,11 @@ public class OntologyInfo {
         				getOntologyAcronym(ontology), getOntologyCategory(ontology),
         				getViewsNo(ontology), getOntologyProjectsNo(ontology), getObjectPropertyNo(ontology), 
         				getClassesNo(ontology));
+        		
+        	/*	Ontology ont = new Ontology(getOntologyName(ontology), getOntologyId(ontology), 
+        				getOntologyAcronym(ontology), getOntologyCategory(ontology),
+        				getViewsNo(ontology), getOntologyProjectsNo(ontology), getObjectPropertyNo(ontology), 
+        				getClassesNo(ontology), getClasses(ontology));*/
         				ontologyList.add(ont);
         	}
         	// create object mapper instance
@@ -142,6 +147,13 @@ public class OntologyInfo {
 	          }
 	      return yearTotal;
 	   }
+	//--------------------------------------------------------------------
+	private static	ArrayList<BioClass> getClasses(JsonNode ontology){
+		ArrayList<BioClass> classes= new ArrayList<BioClass>();
+		JsonNode analytics = jsonToNode(get(ontology.get("links").get("classes").asText()));
+    	
+		return classes;
+	}
 		
 	//depricated function
 	//get name, id, acronym of any ontology

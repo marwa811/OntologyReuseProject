@@ -3,9 +3,15 @@ package AgentClasses;
 import java.io.File;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
+import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.model.OWLAnnotation;
+import org.semanticweb.owlapi.model.OWLAnnotationValue;
+import org.semanticweb.owlapi.model.OWLAnonymousIndividual;
+import org.semanticweb.owlapi.model.OWLLiteral;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -35,6 +41,7 @@ public class OntologyUtilityClass {
 		ArrayList<CandidateOntologyClass> newCandidateOntology=candidateOntologies; 
 		for(CandidateOntologyClass candidateOntology: newCandidateOntology)
 		{
+			String ontologyName= getOntologyName(candidateOntology.getOntologyID(), ontologiesInfo);
 			double domainScore= calculateDomainScore(++i,candidateOntology.getOntologyID(),ontologiesInfo,userPref.getUserPrefDomain());
 			double popularityScore= calculatePopularityScore(candidateOntology.getOntologyID(),ontologiesInfo);
 			double coverageScore= calculateCoverageScore(recommenderResult,candidateOntology.getOntologyID(),ontologiesInfo);
@@ -52,6 +59,7 @@ public class OntologyUtilityClass {
 					popularityScore,coverageScore,prefOntologyScore,ontologyTypeScore,
 					totalOntologyUtilityScore);
 			candidateOntology.setOntologyUtilityScore(newOntologyUtilityScore);
+			candidateOntology.setOntologyName(ontologyName);
 		}
 		return newCandidateOntology;	
 	}
@@ -70,6 +78,14 @@ public class OntologyUtilityClass {
 		    ex.printStackTrace();
 		}
 		return ontologiesInfo;
+	}
+//------------------------------------------------------------------------------
+	private static String getOntologyName(String candidateOntologyID, Ontology[] ontologiesInfo){
+		String ontologyName=null;
+		for(int i=0; i <ontologiesInfo.length; i++) 
+			if(ontologiesInfo[i].getId().equals(candidateOntologyID))
+				ontologyName=ontologiesInfo[i].getName();
+		return ontologyName;
 	}
 //-----------------------------------------------------------------------
 	public static double calculateDomainScore(int count,String candidateOntologyID, Ontology[] ontologiesInfo,

@@ -6,12 +6,14 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
 import org.apache.log4j.Logger;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.io.IRIDocumentSource;
+import org.semanticweb.owlapi.io.UnparsableOntologyException;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLException;
@@ -26,14 +28,17 @@ import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
 import org.semanticweb.owlapi.model.AddAxiom;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.MissingImportHandlingStrategy;
+import org.semanticweb.owlapi.model.OWLAnnotation;
 import org.semanticweb.owlapi.model.OWLAnnotationAssertionAxiom;
+import org.semanticweb.owlapi.model.OWLAnnotationValue;
+import org.semanticweb.owlapi.model.OWLAnonymousIndividual;
 
 public class EntityExtractionClass {
 	
 	final static Logger log = Logger.getLogger(EntityExtractionClass.class);
 		
 	//function that takes the file name and path and returns the labels of its classes 
-	public static String getClassesLabelsFromInputOntology(String inputFileName) throws OWLOntologyCreationException, OWLException, IOException{
+	public static String getClassesLabelsFromInputOntology(String inputFileName) throws Exception{
 		Map<String, String> allClasses=new HashMap<String,String>();
 		OWLOntology ontology=laodOntology(inputFileName);
 		allClasses=getOntolgyClassesLabels(ontology);
@@ -67,15 +72,19 @@ public class EntityExtractionClass {
 	then adds classes of all ontologies in one Set<OWLCLasses>
 	then check for duplicates  
 	returns all classes and class labels for an ontology (including imported ones)*/
-	public static Map<String, String>  getOntolgyClassesLabels(OWLOntology o) throws IOException{
+	public static Map<String, String>  getOntolgyClassesLabels(OWLOntology o) throws IOException, Exception {
 		Map<String, String> classIdAndLabel = new HashMap<String, String>();
 		String classLabel;			
-			
-		//get all ontologies that are imported in a given ontology//
-		Set<OWLOntology> importedOntologies=o.getOWLOntologyManager().getOntologies();
+		Set<OWLOntology> importedOntologies=null;
 		
+		try {
+		//get all ontologies that are imported in a given ontology//
+		     importedOntologies=o.getOWLOntologyManager().getOntologies();
+		}
+		catch(Exception e) {
+			log.info("Cant load some ontologies" +e);
+		}
 		log.info("You have "+ importedOntologies.size() +" imported ontologies...");
-			
 		Set<OWLClass> allClasses=new HashSet<OWLClass>();	
 		if(importedOntologies.size()>0) {
 			for(OWLOntology ontology: importedOntologies) {
@@ -91,7 +100,9 @@ public class EntityExtractionClass {
 			    }
 			  }
 		else
-			log.error("Error while getting classes...");
+		{	
+			log.info("Can't get ontology names"); 
+		}
 		return classIdAndLabel;
 	}
 			
@@ -117,7 +128,7 @@ public class EntityExtractionClass {
 		return classIRI.substring(classIRI.lastIndexOf('#')+1);
 	}
 	
-	public static String getClassIRI(String fileName, String className) throws OWLOntologyCreationException, OWLException, IOException {
+	public static String getClassIRI(String fileName, String className) throws Exception {
 		Map<String, String> classIdAndLabel=new HashMap<String,String>();
 		String classIRI="";
 		OWLOntology ontology=null;
@@ -140,15 +151,43 @@ public class EntityExtractionClass {
 		IRI classIRI= IRI.create(c);
 		OWLClass owlClass= factory.getOWLClass(classIRI);
 		//classLabel= owlClass.getAnnotations(o, factory.getRDFSLabel())..toString();
-		for(OWLAnnotationAssertionAxiom a : o.getAnnotationAssertionAxioms(classIRI)) {
+	/*	for(OWLAnnotationAssertionAxiom a : o.getAnnotationAssertionAxioms(classIRI)) {
+			OWLAnnotationValue owlVal = a.getValue();
+
 		    if(a.getProperty().isLabel()) {
 		        if(a.getValue() instanceof OWLLiteral) {
-		            OWLLiteral val = (OWLLiteral) a.getValue();
+		        	OWLLiteral val = (OWLLiteral) a.getValue();
 		            classLabel= val.getLiteral();
 		        }
 		    }
+		    else if (owlVal.toString().contains("http:"))
+		    	classLabel=owlVal.toString().substring(owlVal.toString().lastIndexOf('/')+1);
+		  }*/
+		Iterator<OWLAnnotation> iterator = owlClass.getAnnotations(o).iterator();
+		while (iterator.hasNext()) {
+			final OWLAnnotation an = iterator.next();
+			if (an.getProperty().isLabel()) {
+				OWLAnnotationValue val = an.getValue();
+
+				if (val instanceof IRI) {
+					return ((IRI) val).toString();
+				} else if (val instanceof OWLLiteral) {
+					OWLLiteral lit = (OWLLiteral) val;
+					return lit.getLiteral();
+				} else if (val instanceof OWLAnonymousIndividual) {
+					OWLAnonymousIndividual ind = (OWLAnonymousIndividual) val;
+					return ind.toStringID();
+				} else {
+					throw new RuntimeException("Unexpected class" + val.getClass());
+				}
+			} else if (an.getProperty().getIRI().getFragment().equals("prefLabel"))
+				return an.getValue().toString();
+			else if (an.getProperty().getIRI().getFragment().equals("altLabel"))
+				return an.getValue().toString();
 		}
-		return classLabel;
+		return owlClass.getIRI().getFragment();
+		
+		//return classLabel;
 	}
 	//Given a class and an ontology retuen the RDFS:Label for that class
 /*	private static String getClassName(OWLOntology o, OWLClass c) throws IOException {

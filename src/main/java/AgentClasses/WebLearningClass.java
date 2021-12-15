@@ -31,7 +31,7 @@ import OntologyExtractionPackage.OntologyModularity;
 public class WebLearningClass {
 	static Logger log = Logger.getLogger(LearningClass.class);
 	private static Scanner sc;
-	private static ArrayList<String> owlFilesNames=new ArrayList<String>();
+	public static ArrayList<String> owlFilesNames=new ArrayList<String>();
 	private static ArrayList<String> largeOntologiesFilesNames=new ArrayList<String>();
 	private static FinalResultList finalResultList=new FinalResultList();
 	private static Deque<IterationClass> iterationsQueue = new ArrayDeque<IterationClass>();
@@ -415,7 +415,7 @@ public class WebLearningClass {
 				}
 			return candidateOntologies;
 		}
-	//-------------------------------------------------------------------
+	//------------------------------------------------------------------- 	
 		private static void iterationToJSON(IterationClass firstIteration) {
 			try {
 		      	// create object mapper instance

@@ -1,18 +1,22 @@
 package BioOntologiesRepo;
 
 import java.io.BufferedReader;
-
+import java.io.File;
+import java.io.FilenameFilter;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
+
+import AgentClasses.AdditionalClassInfo;
 
 import org.apache.log4j.Logger;
 
@@ -71,7 +75,93 @@ public class TermSearchUsingBioportal {
 	    	}
 	    	return recommenderResult;
 	 }
-	    
+	 /////////////////////////////////////////////////////////////////////////////////////
+	 //This function returns the details of a class (preflabel, synonyms, defination, subclasses) in an ontology
+	 public static AdditionalClassInfo getClassInfo(String classId, String ontologyId) {
+		 AdditionalClassInfo classObj = null;
+		 boolean classExist=false;
+	/*	 String fileName=ontologyId.substring(ontologyId.lastIndexOf("/")+1) ;
+		 String acronym="";
+		if(fileName.contains("."))
+			acronym=fileName.substring(0,fileName.indexOf("."));
+		else 
+			acronym=fileName;*/
+		System.out.println("The ontology Name"+ontologyId);
+		String fileName= ontologyId.substring(ontologyId.lastIndexOf("/")+1);
+		String acronym="";
+		if(fileName.contains("."))
+			acronym=fileName.substring(0,fileName.indexOf("."));
+		System.out.println("The ontology Name"+ontologyId +"   " +acronym);
+		//if(getAllFilesinaFolder().contains(acronym.toUpperCase()+".owl"))
+		//{
+
+	    try {
+	    	
+	    	String label="";
+	        ArrayList<String> synonym = new ArrayList<String>();
+	        ArrayList<String> definations = new ArrayList<String>();
+	        ArrayList<String> subClasses = new ArrayList<String>();
+	        ArrayList<String> subClassesId=new ArrayList<String>();
+	        classId=classId.replace(":", "%3A");
+	        classId=classId.replaceAll("/", "%2F");
+	        classId=classId.replace("#", "%23");
+	        String theLink= REST_URL + "/ontologies/" +acronym.toUpperCase()+"/classes/"+classId;
+	        JsonNode result = jsonToNode(get(theLink));
+	        if(result.get("obsolete").asText()=="false"){   
+	          	classExist=true;
+	           	if(result.has("prefLabel")) {
+	            	label=result.get("prefLabel").asText();
+	            	System.out.println("Class Pref Label: "+ label);
+	            }
+	            if(result.has("definition"))
+	            {
+	            	Iterator<JsonNode> definitions = result.get("definition").elements();
+	                while (definitions.hasNext()) { 
+	                    JsonNode fieldName = definitions.next();
+	                    definations.add(fieldName.asText());
+	                    System.out.println("Class definition: "+ fieldName.asText());
+	                }
+	            }
+	            if(result.has("synonym"))
+	            {
+	            	Iterator<JsonNode> synonyms = result.get("synonym").elements();
+	                while (synonyms.hasNext()){ 
+	                    JsonNode fieldName = synonyms.next();
+	                    synonym.add(fieldName.asText());
+	                    System.out.println("Class synonyms: "+ fieldName.asText());
+	                }
+	            }
+	            	  
+		        if(result.get("links").has("children")) {
+		        	JsonNode subclassesResults=jsonToNode(get(result.get("links").get("children").asText()));
+		        	 for (JsonNode subclassesResult : subclassesResults.get("collection")) { 
+		                    if(subclassesResult.get("obsolete").asText()=="false"){  
+		                    	if (!subclassesResult.get("prefLabel").isNull()) {
+		                            subClasses.add(subclassesResult.get("prefLabel").asText());
+		                            subClassesId.add(subclassesResult.get("@id").asText());
+		                            System.out.println("subclasses: "+ subclassesResult.get("prefLabel").asText());
+		                        }
+		                    }
+		                 }
+		            }
+		         }
+	      classObj=new AdditionalClassInfo(classId,label,synonym,definations,subClasses,subClassesId,classExist);
+	    	} catch(Exception e) {
+	    		System.out.println("The class not exist" +e.getStackTrace().toString());
+	    		classExist=false;
+	    	}
+		/*}
+		else { 
+	
+			return classObj;
+		}*/
+	    return classObj;
+	 }	 	 
+	 /////////////////////////////////////////////////////////////////////////////////
+	 // This function the ontology ID and returns it acronym
+	 {
+		 
+	 }
 	 //to avoid adding two ontologies twice in the returned list
 /*	 private static ArrayList<TermSearchResultInformation> checkForDuplicateOntologies
 	 (ArrayList<TermSearchResultInformation> searchResults){
@@ -187,4 +277,29 @@ public class TermSearchUsingBioportal {
 			     return searchResults;
 			 	}
 			 }
+	 //----------------------------------------------------
+			 public static ArrayList<String> getAllFilesinaFolder() {
+		  		 //Creating a File object for directory
+		        File directoryPathOWLFiles = new File("OWLOntologies/");
+		       // File directoryPathLargeFiles = new File("C:\\Important files\\large ontologies");
+		        FilenameFilter textFilefilter = new FilenameFilter(){
+		           public boolean accept(File dir, String name) {
+		              if (name.endsWith(".owl")) {
+		                 return true;
+		              } else {
+		                 return false;
+		              }
+		           }
+		        };
+		        //List of all the text files
+		        String oWLFilesList[] = directoryPathOWLFiles.list(textFilefilter);
+		        ArrayList<String> filenames=new ArrayList<String>();
+		        int k=0;
+		        int f=0;
+		        for(String fileName : oWLFilesList) {
+		           //System.out.println(fileName);
+		        	filenames.add(k++,fileName);
+		        }
+		       return filenames;
+		  	}
 	}

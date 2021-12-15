@@ -10,16 +10,23 @@ import java.util.Set;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAnnotation;
+import org.semanticweb.owlapi.model.OWLAnnotationAssertionAxiom;
+import org.semanticweb.owlapi.model.OWLAnnotationValue;
+import org.semanticweb.owlapi.model.OWLAnonymousIndividual;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLException;
+import org.semanticweb.owlapi.model.OWLLiteral;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 
 import org.semanticweb.owlapi.model.OWLOntologyManager;
+import org.semanticweb.owlapi.model.OWLRuntimeException;
 import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
 
+import AgentClasses.AdditionalClassInfo;
 import AgentClasses.ConceptUtilityScoreClass;
+import BioOntologiesRepo.TermSearchUsingBioportal;
 
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.model.OWLDataFactory;
@@ -57,7 +64,12 @@ public class OntologyMatchingAlgorithm {
 	
 	public OntologyMatchingAlgorithm(String sourceFile,String targetFile) throws OWLOntologyCreationException, OWLException {
 		sourceOntology.laodOntology(sourceFile);
+		try {
 		targetOntology.laodOntology(targetFile);
+		}
+		catch (OWLRuntimeException e) {
+			System.out.println("can't load this ontology " + e.getStackTrace());
+		}
 		conceptContextMatchingScore=0.0;
 		conceptSemanticRichnessScore=0.0;
 		conceptUtilityScore=0.0;
@@ -232,7 +244,7 @@ public boolean testMappingExistence(OWLClass class1, OWLClass class2, List<AMLMa
 	
 	
 	
-	public ConceptUtilityScoreClass getSimilarclasses(AMLMapping m, ArrayList<AMLMapping> mappings) throws IOException, OWLOntologyCreationException, OWLException {
+	public ConceptUtilityScoreClass getSimilarclasses(AMLMapping m, ArrayList<AMLMapping> mappings,String targetFileName) throws IOException, OWLOntologyCreationException, OWLException {
 		// Condition 1: if the two classes have equivalent classes with mappings, then they can
 		// be semantically the same
 		getEquivalentClassesWithMappings (m,mappings );
@@ -259,12 +271,25 @@ public boolean testMappingExistence(OWLClass class1, OWLClass class2, List<AMLMa
 		
 		getSynonymsandDefinitionScores(m,mappings);
 		
+		
+		AdditionalClassInfo classInfo=TermSearchUsingBioportal.getClassInfo(m.getTargetURI(),targetFileName);
+		if(classInfo==null)
+		
 		conceptUtilityScore=0.5* conceptContextMatchingScore+ 0.5*conceptSemanticRichnessScore;
-		
-		
-		ConceptUtilityScoreClass conceptForExtension=new ConceptUtilityScoreClass(
-				m.getTargetURI(), conceptContextMatchingScore,conceptSemanticRichnessScore,conceptUtilityScore); 
-		
+		ConceptUtilityScoreClass conceptForExtension=null;
+		if(classInfo==null)
+			conceptForExtension=new ConceptUtilityScoreClass(
+					m.getTargetURI(), conceptContextMatchingScore,conceptSemanticRichnessScore,conceptUtilityScore);
+		else
+		{
+			System.out.println("**The Preferred Label is :        " +classInfo.getConceptLabel());
+			conceptForExtension=new ConceptUtilityScoreClass(
+				m.getTargetURI(), conceptContextMatchingScore,conceptSemanticRichnessScore,conceptUtilityScore,
+				classInfo.getConceptLabel(),classInfo.getConceptSynonyms(),classInfo.getConceptDef(),
+				classInfo.getConceptSubClasses(), classInfo.getConceptSubClassesIds()); 
+		}
+		System.out.println("**The Preferred Label is :        " +classInfo.getConceptLabel());
+		//getClassDef(String classURI, String ontologyID)
 		/*System.out.println("The concept Context Matching Score is: "+ conceptContextMatchingScore );
 		System.out.println("The concept Semantic Richness Score is: "+ conceptSemanticRichnessScore);
 		System.out.println("The concept Utility Score is: "+ conceptUtilityScore);*/
@@ -274,7 +299,46 @@ public boolean testMappingExistence(OWLClass class1, OWLClass class2, List<AMLMa
 		conceptUtilityScore=0.0;
 		return conceptForExtension;
 	}
+//////////////---------------------------------------------------------------
+	//This Function is used to get additional information for any matched class in the result
+	//it takes the ontology ID (to get its acronym) and the class ID and then useing Bioportal service return
+	//its label, sysnonyms, definations, subclasses
+	/*public AdditionalClassInfo getClassDefination(AMLMapping m) {
+		String stringToReturn="";
+		OWLClass targetClass= targetOntology.factory.getOWLClass(IRI.create(m.getTargetURI()));
+		OWLOntology ont=targetOntology.getOntology();
+		for(OWLAnnotation annotations: targetClass.getAnnotations( targetOntology.getOntology()))
+			allAnnotations+=annotations.getProperty().getIRI().getFragment()+ " "+ annotations.getValue();
+		System.out.println(allAnnotations);
+		
+		Iterator<OWLAnnotation> iterator = targetClass.getAnnotations( targetOntology.getOntology()).iterator();
+		while (iterator.hasNext()) {
+			final OWLAnnotation an = iterator.next();
+			if (an.getProperty().isComment()) {
+				OWLAnnotationValue val = an.getValue();
 
+				if (val instanceof IRI) {
+					stringToReturn+= ((IRI) val).toString();
+				} else if (val instanceof OWLLiteral) {
+					OWLLiteral lit = (OWLLiteral) val;
+					stringToReturn+= lit.getLiteral();
+				} else if (val instanceof OWLAnonymousIndividual) {
+					OWLAnonymousIndividual ind = (OWLAnonymousIndividual) val;
+					stringToReturn+= ind.toStringID();
+				} else {
+					throw new RuntimeException("Unexpected class" + val.getClass());
+				}
+			}else if(an.getProperty().getIRI().getFragment()==null) 
+				stringToReturn+= an.getValue().toString();  
+			if (an.getProperty().getIRI().getFragment().equals("definition"))
+				stringToReturn+= an.getValue().toString();
+			else if(an.getProperty().getIRI().getFragment().equals("IAO_0000115"))
+				stringToReturn+= an.getValue().toString();
+			else if(an.getProperty().getIRI().getFragment().equals("comment"))
+				stringToReturn+= an.getValue().toString();
+		}
+		return stringToReturn;
+	}*/
 	/**
 	 * A method to get equivalent classes that has a mapping between source class and target
 	 * class. For example, if ClassA is equivalent to ClassC and ClassB is
