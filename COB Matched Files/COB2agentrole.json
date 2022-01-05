@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role",
+  "targetName" : "90",
+  "similarityScore" : 0.9569
+} ]

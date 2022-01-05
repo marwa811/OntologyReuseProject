@@ -1,0 +1,22 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://www.semanticweb.org/ontologies/Prostate_cancer#Protein",
+  "targetName" : "139",
+  "similarityScore" : 0.964
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000065",
+  "sourceName" : "16",
+  "targetURI" : "http://www.semanticweb.org/ontologies/Prostate_cancer#Environmental_factors",
+  "targetName" : "339",
+  "similarityScore" : 0.6627
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000003",
+  "sourceName" : "35",
+  "targetURI" : "http://www.semanticweb.org/ontologies/Prostate_cancer#Fat_mass",
+  "targetName" : "187",
+  "similarityScore" : 0.6066
+} ]

@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://doe-generated-ontology.com/OntoPneumo#Cellule",
+  "targetName" : "840",
+  "similarityScore" : 0.8742
+} ]

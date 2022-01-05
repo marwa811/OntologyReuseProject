@@ -1,0 +1,43 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://xmlns.com/foaf/0.1/Organization",
+  "targetName" : "141",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000502",
+  "sourceName" : "9",
+  "targetURI" : "http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Characteristic",
+  "targetName" : "117",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000120",
+  "sourceName" : "49",
+  "targetURI" : "http://w3id.org/ontopbm#OntoPBM_00494",
+  "targetName" : "103",
+  "similarityScore" : 0.7069
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000102",
+  "sourceName" : "5",
+  "targetURI" : "http://purl.obolibrary.org/obo/IAO_0000027",
+  "targetName" : "264",
+  "similarityScore" : 0.6578
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://purl.obolibrary.org/obo/BFO_0000040",
+  "targetName" : "213",
+  "similarityScore" : 0.653
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000079",
+  "sourceName" : "53",
+  "targetURI" : "http://purl.obolibrary.org/obo/IAO_0000104",
+  "targetName" : "163",
+  "similarityScore" : 0.646
+} ]

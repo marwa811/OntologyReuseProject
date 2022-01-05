@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000120",
+  "sourceName" : "49",
+  "targetURI" : "http://purl.org/dc/terms/FormatScheme",
+  "targetName" : "97",
+  "similarityScore" : 0.7445
+} ]

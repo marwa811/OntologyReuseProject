@@ -1,0 +1,162 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000011",
+  "sourceName" : "26",
+  "targetURI" : "http://www.projecthalo.com/aura#Atom",
+  "targetName" : "16519",
+  "similarityScore" : 0.9645
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000009",
+  "sourceName" : "51",
+  "targetURI" : "http://www.projecthalo.com/aura#Neutron",
+  "targetName" : "13320",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000101",
+  "sourceName" : "2",
+  "targetURI" : "http://www.projecthalo.com/aura#Document",
+  "targetName" : "12505",
+  "similarityScore" : 0.9639
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://www.projecthalo.com/aura#Organization",
+  "targetName" : "12586",
+  "similarityScore" : 0.9623
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000007",
+  "sourceName" : "40",
+  "targetURI" : "http://www.projecthalo.com/aura#Subatomic-Particle",
+  "targetName" : "22051",
+  "similarityScore" : 0.9607
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://www.projecthalo.com/aura#Role",
+  "targetName" : "24477",
+  "similarityScore" : 0.9607
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000061",
+  "sourceName" : "12",
+  "targetURI" : "http://www.projecthalo.com/aura#Information",
+  "targetName" : "26650",
+  "similarityScore" : 0.9579
+}, {
+  "mappingId" : 7,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://www.projecthalo.com/aura#Biological-Process",
+  "targetName" : "1105",
+  "similarityScore" : 0.9576
+}, {
+  "mappingId" : 8,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000012",
+  "sourceName" : "28",
+  "targetURI" : "http://www.projecthalo.com/aura#Atomic-Nucleus",
+  "targetName" : "21763",
+  "similarityScore" : 0.9555
+}, {
+  "mappingId" : 9,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000057",
+  "sourceName" : "23",
+  "targetURI" : "http://www.projecthalo.com/aura#E-Site",
+  "targetName" : "16085",
+  "similarityScore" : 0.9497
+}, {
+  "mappingId" : 10,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000067",
+  "sourceName" : "8",
+  "targetURI" : "http://www.projecthalo.com/aura#Ecosystem",
+  "targetName" : "19867",
+  "similarityScore" : 0.9481
+}, {
+  "mappingId" : 11,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://www.projecthalo.com/aura#Organism",
+  "targetName" : "21072",
+  "similarityScore" : 0.9446
+}, {
+  "mappingId" : 12,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000008",
+  "sourceName" : "50",
+  "targetURI" : "http://www.projecthalo.com/aura#Proton",
+  "targetName" : "2402",
+  "similarityScore" : 0.9436
+}, {
+  "mappingId" : 13,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000042",
+  "sourceName" : "47",
+  "targetURI" : "http://www.projecthalo.com/aura#Monoatomic-Ion",
+  "targetName" : "10393",
+  "similarityScore" : 0.9342
+}, {
+  "mappingId" : 14,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://www.projecthalo.com/aura#Protein",
+  "targetName" : "20080",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 15,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000010",
+  "sourceName" : "33",
+  "targetURI" : "http://www.projecthalo.com/aura#Electron",
+  "targetName" : "20498",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 16,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://www.projecthalo.com/aura#Cell",
+  "targetName" : "27322",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 17,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000118",
+  "sourceName" : "70",
+  "targetURI" : "http://www.projecthalo.com/aura#Unicellular-Organism",
+  "targetName" : "15627",
+  "similarityScore" : 0.6841
+}, {
+  "mappingId" : 18,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000066",
+  "sourceName" : "7",
+  "targetURI" : "http://www.projecthalo.com/aura#Physical-Process",
+  "targetName" : "6730",
+  "similarityScore" : 0.6551
+}, {
+  "mappingId" : 19,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000049",
+  "sourceName" : "43",
+  "targetURI" : "http://www.projecthalo.com/aura#Nucleic-Acid",
+  "targetName" : "531",
+  "similarityScore" : 0.6328
+}, {
+  "mappingId" : 20,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000004",
+  "sourceName" : "41",
+  "targetURI" : "http://www.projecthalo.com/aura#Charge-Value",
+  "targetName" : "17411",
+  "similarityScore" : 0.603
+}, {
+  "mappingId" : 21,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000062",
+  "sourceName" : "17",
+  "targetURI" : "http://www.projecthalo.com/aura#Diagnosis-Of-Renal-Disease",
+  "targetName" : "12143",
+  "similarityScore" : 0.6027
+}, {
+  "mappingId" : 22,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000003",
+  "sourceName" : "35",
+  "targetURI" : "http://www.projecthalo.com/aura#Mass-Constant",
+  "targetName" : "20365",
+  "similarityScore" : 0.6026
+} ]

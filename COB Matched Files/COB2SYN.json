@@ -1,0 +1,183 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000011",
+  "sourceName" : "26",
+  "targetURI" : "http://www.bootstrep.eu/ontology/GRO#Atom",
+  "targetName" : "5502",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://www.bootstrep.eu/ontology/GRO#Protein",
+  "targetName" : "338",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000112",
+  "sourceName" : "54",
+  "targetURI" : "http://www.bootstrep.eu/ontology/GRO#Function",
+  "targetName" : "3449",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://www.bootstrep.eu/ontology/GRO#Organism",
+  "targetName" : "1308",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000116",
+  "sourceName" : "61",
+  "targetURI" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Cellular_Membrane",
+  "targetName" : "9579",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://www.bootstrep.eu/ontology/GRO#Quality",
+  "targetName" : "9589",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Cell",
+  "targetName" : "1658",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 7,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://www.bootstrep.eu/ontology/GRO#Cell",
+  "targetName" : "10959",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 8,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000108",
+  "sourceName" : "21",
+  "targetURI" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Data_Transformation",
+  "targetName" : "13666",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 9,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000107",
+  "sourceName" : "20",
+  "targetURI" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Assay",
+  "targetName" : "12865",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 10,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Organization",
+  "targetName" : "3637",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 11,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000020",
+  "sourceName" : "13",
+  "targetURI" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Subcellular_Structure",
+  "targetName" : "6381",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 12,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000109",
+  "sourceName" : "19",
+  "targetURI" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Investigation",
+  "targetName" : "4004",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 13,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Protein_Structure",
+  "targetName" : "14498",
+  "similarityScore" : 0.893
+}, {
+  "mappingId" : 14,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Cell_Structure",
+  "targetName" : "6118",
+  "similarityScore" : 0.893
+}, {
+  "mappingId" : 15,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000113",
+  "sourceName" : "55",
+  "targetURI" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Planned",
+  "targetName" : "5092",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 16,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Organisms",
+  "targetName" : "6842",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 17,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://purl.bioontology.org/ontology/MCCL/CL_0000000",
+  "targetName" : "1868",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 18,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Body",
+  "targetName" : "6681",
+  "similarityScore" : 0.846
+}, {
+  "mappingId" : 19,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000107",
+  "sourceName" : "20",
+  "targetURI" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Bioassay",
+  "targetName" : "12658",
+  "similarityScore" : 0.7802
+}, {
+  "mappingId" : 20,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Total_Protein_Measurement",
+  "targetName" : "4602",
+  "similarityScore" : 0.7708
+}, {
+  "mappingId" : 21,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000103",
+  "sourceName" : "11",
+  "targetURI" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Nucleus",
+  "targetName" : "6750",
+  "similarityScore" : 0.7708
+}, {
+  "mappingId" : 22,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000057",
+  "sourceName" : "23",
+  "targetURI" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Anatomic_Sites",
+  "targetName" : "7058",
+  "similarityScore" : 0.7614
+}, {
+  "mappingId" : 23,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000080",
+  "sourceName" : "46",
+  "targetURI" : "http://www.bootstrep.eu/ontology/GRO#ComplexMolecularEntity",
+  "targetName" : "10829",
+  "similarityScore" : 0.6891
+}, {
+  "mappingId" : 24,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000073",
+  "sourceName" : "69",
+  "targetURI" : "http://www.bootstrep.eu/ontology/GRO#GeneProductFunction",
+  "targetName" : "8466",
+  "similarityScore" : 0.655
+}, {
+  "mappingId" : 25,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000049",
+  "sourceName" : "43",
+  "targetURI" : "http://www.bootstrep.eu/ontology/GRO#NucleicAcid",
+  "targetName" : "556",
+  "similarityScore" : 0.6328
+} ]

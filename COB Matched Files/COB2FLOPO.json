@@ -1,0 +1,29 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://purl.obolibrary.org/obo/PATO_0000001",
+  "targetName" : "1760",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000003",
+  "sourceName" : "35",
+  "targetURI" : "http://purl.obolibrary.org/obo/PATO_0000125",
+  "targetName" : "130",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000111",
+  "sourceName" : "60",
+  "targetURI" : "http://purl.obolibrary.org/obo/PATO_0001727",
+  "targetName" : "20154",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000018",
+  "sourceName" : "31",
+  "targetURI" : "http://purl.obolibrary.org/obo/PO_0025606",
+  "targetName" : "22476",
+  "similarityScore" : 0.7247
+} ]

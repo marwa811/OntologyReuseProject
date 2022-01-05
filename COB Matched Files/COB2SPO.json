@@ -1,0 +1,22 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2008/8/MultiscaleSkinPhysiologyOntology.owl#Protein",
+  "targetName" : "380",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2008/8/MultiscaleSkinPhysiologyOntology.owl#Cell",
+  "targetName" : "284",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000116",
+  "sourceName" : "61",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2008/8/MultiscaleSkinPhysiologyOntology.owl#AcellularMembrane",
+  "targetName" : "302",
+  "similarityScore" : 0.7232
+} ]

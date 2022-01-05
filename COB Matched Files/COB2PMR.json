@@ -1,0 +1,36 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://purl.bioontology.org/ontology/PMR.owl#Protein",
+  "targetName" : "931",
+  "similarityScore" : 0.9622
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000113",
+  "sourceName" : "55",
+  "targetURI" : "http://purl.bioontology.org/ontology/PMR.owl#Plan",
+  "targetName" : "1026",
+  "similarityScore" : 0.9622
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://purl.bioontology.org/ontology/PMR.owl#Process",
+  "targetName" : "413",
+  "similarityScore" : 0.9333
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000112",
+  "sourceName" : "54",
+  "targetURI" : "http://purl.bioontology.org/ontology/PMR.owl#Function",
+  "targetName" : "1291",
+  "similarityScore" : 0.9317
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000057",
+  "sourceName" : "23",
+  "targetURI" : "http://purl.bioontology.org/ontology/PMR.owl#Finding_by_site",
+  "targetName" : "272",
+  "similarityScore" : 0.6032
+} ]

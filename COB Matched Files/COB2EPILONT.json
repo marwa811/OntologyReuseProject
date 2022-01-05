@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000010",
+  "sourceName" : "33",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Electrode",
+  "targetName" : "164",
+  "similarityScore" : 0.6372
+} ]

@@ -1,0 +1,127 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://doe-generated-ontology.com/OntoAD#Organism",
+  "targetName" : "3423",
+  "similarityScore" : 0.9645
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://doe-generated-ontology.com/OntoAD#C1522240",
+  "targetName" : "4938",
+  "similarityScore" : 0.9396
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://doe-generated-ontology.com/OntoAD#Cell",
+  "targetName" : "1452",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://doe-generated-ontology.com/OntoAD#Organization",
+  "targetName" : "3536",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000107",
+  "sourceName" : "20",
+  "targetURI" : "http://doe-generated-ontology.com/OntoAD#C1510438",
+  "targetName" : "5157",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000020",
+  "sourceName" : "13",
+  "targetURI" : "http://doe-generated-ontology.com/OntoAD#C0729605",
+  "targetName" : "4829",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000103",
+  "sourceName" : "11",
+  "targetURI" : "http://doe-generated-ontology.com/OntoAD#C0007610",
+  "targetName" : "553",
+  "similarityScore" : 0.8742
+}, {
+  "mappingId" : 7,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000109",
+  "sourceName" : "19",
+  "targetURI" : "http://doe-generated-ontology.com/OntoAD#C1261322",
+  "targetName" : "1059",
+  "similarityScore" : 0.8742
+}, {
+  "mappingId" : 8,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://doe-generated-ontology.com/OntoAD#C0029237",
+  "targetName" : "3940",
+  "similarityScore" : 0.7802
+}, {
+  "mappingId" : 9,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000073",
+  "sourceName" : "69",
+  "targetURI" : "http://doe-generated-ontology.com/OntoAD#C0033684",
+  "targetName" : "4424",
+  "similarityScore" : 0.7614
+}, {
+  "mappingId" : 10,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://doe-generated-ontology.com/OntoAD#C0033684",
+  "targetName" : "4424",
+  "similarityScore" : 0.7614
+}, {
+  "mappingId" : 11,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000111",
+  "sourceName" : "60",
+  "targetURI" : "http://doe-generated-ontology.com/OntoAD#C0184758",
+  "targetName" : "949",
+  "similarityScore" : 0.7614
+}, {
+  "mappingId" : 12,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://doe-generated-ontology.com/OntoAD#C1522486",
+  "targetName" : "622",
+  "similarityScore" : 0.752
+}, {
+  "mappingId" : 13,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000107",
+  "sourceName" : "20",
+  "targetURI" : "http://doe-generated-ontology.com/OntoAD#C0005507",
+  "targetName" : "5819",
+  "similarityScore" : 0.7426
+}, {
+  "mappingId" : 14,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000064",
+  "sourceName" : "14",
+  "targetURI" : "http://doe-generated-ontology.com/OntoAD#C0242656",
+  "targetName" : "4317",
+  "similarityScore" : 0.7144
+}, {
+  "mappingId" : 15,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000116",
+  "sourceName" : "61",
+  "targetURI" : "http://doe-generated-ontology.com/OntoAD#C0007603",
+  "targetName" : "531",
+  "similarityScore" : 0.705
+}, {
+  "mappingId" : 16,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000003",
+  "sourceName" : "35",
+  "targetURI" : "http://doe-generated-ontology.com/OntoAD#C0577559",
+  "targetName" : "2550",
+  "similarityScore" : 0.705
+}, {
+  "mappingId" : 17,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://doe-generated-ontology.com/OntoAD#C0007634",
+  "targetName" : "602",
+  "similarityScore" : 0.6768
+} ]

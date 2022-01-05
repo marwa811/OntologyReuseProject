@@ -1,0 +1,22 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000113",
+  "sourceName" : "55",
+  "targetURI" : "http://www.limics.fr/ontologies/menelastop#plan",
+  "targetName" : "131",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://www.limics.fr/ontologies/menelastop#process",
+  "targetName" : "342",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000122",
+  "sourceName" : "38",
+  "targetURI" : "http://www.limics.fr/ontologies/menelastop#physical_change_action",
+  "targetName" : "447",
+  "similarityScore" : 0.6
+} ]

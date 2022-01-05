@@ -1,0 +1,22 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://omv.ontoware.org/2005/05/ontology#Organization",
+  "targetName" : "172",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000101",
+  "sourceName" : "2",
+  "targetURI" : "http://cui.unige.ch/isi/onto/tok/TOK.owl#Document",
+  "targetName" : "234",
+  "similarityScore" : 0.9621
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000120",
+  "sourceName" : "49",
+  "targetURI" : "http://cui.unige.ch/isi/onto/tok/TOK.owl#Database_Scheme",
+  "targetName" : "247",
+  "similarityScore" : 0.7445
+} ]

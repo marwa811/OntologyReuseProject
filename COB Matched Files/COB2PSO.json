@@ -1,0 +1,36 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://www.semanticweb.org/schra/ontologies/2017/4/PRIME_NewOntology#Process",
+  "targetName" : "182",
+  "similarityScore" : 0.9645
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://www.semanticweb.org/schra/ontologies/2017/4/PRIME_NewOntology#Organization",
+  "targetName" : "100",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000061",
+  "sourceName" : "12",
+  "targetURI" : "http://www.semanticweb.org/schra/ontologies/2017/4/PRIME_NewOntology#Information",
+  "targetName" : "640",
+  "similarityScore" : 0.9633
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://www.semanticweb.org/schra/ontologies/2017/4/PRIME_NewOntology#Role",
+  "targetName" : "191",
+  "similarityScore" : 0.9631
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000101",
+  "sourceName" : "2",
+  "targetURI" : "http://www.semanticweb.org/schra/ontologies/2017/4/PRIME_NewOntology#Document",
+  "targetName" : "259",
+  "similarityScore" : 0.9483
+} ]

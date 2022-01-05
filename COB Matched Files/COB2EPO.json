@@ -1,0 +1,36 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://www.semanticweb.org/ontologies/epo.owl#Process",
+  "targetName" : "181",
+  "similarityScore" : 0.9356
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2009/3/ontoDPN.owl#OPPIO_a000202",
+  "targetName" : "944",
+  "similarityScore" : 0.9338
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000056",
+  "sourceName" : "29",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2009/3/ontoDPN.owl#ImmaterialAnatomicalEntity",
+  "targetName" : "946",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000066",
+  "sourceName" : "7",
+  "targetURI" : "http://www.semanticweb.org/ontologies/epo.owl#OPPIO_p000001",
+  "targetName" : "1027",
+  "similarityScore" : 0.6221
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2009/3/ontoDPN.owl#OPPIO_a000204",
+  "targetName" : "952",
+  "similarityScore" : 0.609
+} ]

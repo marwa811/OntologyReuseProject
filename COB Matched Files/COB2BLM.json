@@ -1,0 +1,78 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "https://w3id.org/biolink/vocab/Cell",
+  "targetName" : "109",
+  "similarityScore" : 0.9635
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "https://w3id.org/biolink/vocab/Protein",
+  "targetName" : "171",
+  "similarityScore" : 0.9634
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000013",
+  "sourceName" : "22",
+  "targetURI" : "https://w3id.org/biolink/vocab/MolecularEntity",
+  "targetName" : "231",
+  "similarityScore" : 0.9617
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000065",
+  "sourceName" : "16",
+  "targetURI" : "https://w3id.org/biolink/vocab/EnvironmentalProcess",
+  "targetName" : "220",
+  "similarityScore" : 0.9601
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "https://w3id.org/biolink/vocab/BiologicalProcess",
+  "targetName" : "249",
+  "similarityScore" : 0.945
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000073",
+  "sourceName" : "69",
+  "targetURI" : "https://w3id.org/biolink/vocab/GeneProduct",
+  "targetName" : "120",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000032",
+  "sourceName" : "67",
+  "targetURI" : "https://w3id.org/biolink/vocab/GeographicLocation",
+  "targetName" : "244",
+  "similarityScore" : 0.8375
+}, {
+  "mappingId" : 7,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000120",
+  "sourceName" : "49",
+  "targetURI" : "https://w3id.org/biolink/vocab/DataSet",
+  "targetName" : "132",
+  "similarityScore" : 0.7069
+}, {
+  "mappingId" : 8,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "https://w3id.org/biolink/vocab/MaterialSample",
+  "targetName" : "226",
+  "similarityScore" : 0.698
+}, {
+  "mappingId" : 9,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000021",
+  "sourceName" : "15",
+  "targetURI" : "https://w3id.org/biolink/vocab/GrossAnatomicalStructure",
+  "targetName" : "198",
+  "similarityScore" : 0.6218
+}, {
+  "mappingId" : 10,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000069",
+  "sourceName" : "4",
+  "targetURI" : "https://w3id.org/biolink/vocab/InformationContentEntity",
+  "targetName" : "142",
+  "similarityScore" : 0.6
+} ]

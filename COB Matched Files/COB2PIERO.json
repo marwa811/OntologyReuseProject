@@ -1,0 +1,22 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000073",
+  "sourceName" : "69",
+  "targetURI" : "http://reactionontology.org/piero/gene_product",
+  "targetName" : "103",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000011",
+  "sourceName" : "26",
+  "targetURI" : "http://reactionontology.org/piero/kcfs#atom",
+  "targetName" : "118",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://reactionontology.org/piero/process",
+  "targetName" : "90",
+  "similarityScore" : 0.9306
+} ]

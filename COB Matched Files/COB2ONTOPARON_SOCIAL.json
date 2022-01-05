@@ -1,0 +1,36 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000061",
+  "sourceName" : "12",
+  "targetURI" : "http://www.limics.fr/ontologies/ontoparonnoy#Information",
+  "targetName" : "320",
+  "similarityScore" : 0.957
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000101",
+  "sourceName" : "2",
+  "targetURI" : "http://www.limics.fr/ontologies/ontoparonnoy#Document",
+  "targetName" : "1247",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://www.limics.fr/ontologies/ontoparonnoy#Qualite",
+  "targetName" : "1147",
+  "similarityScore" : 0.8742
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://www.limics.fr/ontologies/menelastop#Processus",
+  "targetName" : "137",
+  "similarityScore" : 0.8742
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000113",
+  "sourceName" : "55",
+  "targetURI" : "http://www.limics.fr/ontologies/ontoparonnoy#Etat",
+  "targetName" : "93",
+  "similarityScore" : 0.7631
+} ]

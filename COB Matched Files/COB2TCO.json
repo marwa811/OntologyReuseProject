@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000109",
+  "sourceName" : "19",
+  "targetURI" : "http://www.semanticweb.org/hx-jta/ontologies/thyroid_cancer_ontology#Investigation",
+  "targetName" : "636",
+  "similarityScore" : 0.9306
+} ]

@@ -1,0 +1,29 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://glycomics.ccrc.uga.edu/ontologies/GlycO#protein",
+  "targetName" : "249",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000049",
+  "sourceName" : "43",
+  "targetURI" : "http://glycomics.ccrc.uga.edu/ontologies/GlycO#nucleic_acid_polymer",
+  "targetName" : "218",
+  "similarityScore" : 0.9409
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000011",
+  "sourceName" : "26",
+  "targetURI" : "http://glycomics.ccrc.uga.edu/ontologies/GlycO#atom",
+  "targetName" : "183",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://glycomics.ccrc.uga.edu/ontologies/GlycO#chemical_entity",
+  "targetName" : "250",
+  "similarityScore" : 0.8375
+} ]

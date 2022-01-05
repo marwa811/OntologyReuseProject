@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000032",
+  "sourceName" : "67",
+  "targetURI" : "http://www.owl-ontologies.com/GeographicalRegion.owl#Geographical_Regions",
+  "targetName" : "111",
+  "similarityScore" : 0.8375
+} ]

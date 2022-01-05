@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "https://bitbucket.org/PlantExpAssay/ontology/raw/v0.1/PlantExperimentalAssayOntology.owl#PEAO:000040",
+  "targetName" : "209",
+  "similarityScore" : 0.9172
+} ]

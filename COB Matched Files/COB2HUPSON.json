@@ -1,0 +1,190 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000057",
+  "sourceName" : "23",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#Site",
+  "targetName" : "2764",
+  "similarityScore" : 0.9512
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000113",
+  "sourceName" : "55",
+  "targetURI" : "http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000354",
+  "targetName" : "1431",
+  "similarityScore" : 0.9346
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000082",
+  "sourceName" : "44",
+  "targetURI" : "http://purl.obolibrary.org/obo/OBI_0000011",
+  "targetName" : "131",
+  "similarityScore" : 0.9307
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#Quality",
+  "targetName" : "2610",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#Role",
+  "targetName" : "1542",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/span#Process",
+  "targetName" : "477",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000111",
+  "sourceName" : "60",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#Disposition",
+  "targetName" : "1042",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 7,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000003",
+  "sourceName" : "35",
+  "targetURI" : "http://purl.org/obo/owl/PATO#PATO_0000125",
+  "targetName" : "1215",
+  "similarityScore" : 0.8989
+}, {
+  "mappingId" : 8,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000102",
+  "sourceName" : "5",
+  "targetURI" : "http://purl.obofoundry.org/obo/IAO_0000027",
+  "targetName" : "2080",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 9,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://purl.obolibrary.org/obo/CHEBI_36080",
+  "targetName" : "120",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 10,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000112",
+  "sourceName" : "54",
+  "targetURI" : "http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000034",
+  "targetName" : "700",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 11,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000013",
+  "sourceName" : "22",
+  "targetURI" : "http://scai.fraunhofer.de/HuPSON#SCAIVPH_00001152",
+  "targetName" : "2029",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 12,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://purl.obolibrary.org/obo/OBI_0100026",
+  "targetName" : "1948",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 13,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://purl.org/obo/owl/PATO#PATO_0000001",
+  "targetName" : "497",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 14,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000046",
+  "targetName" : "677",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 15,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://purl.org/obo/owl/GO#GO_0008150",
+  "targetName" : "2454",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 16,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000052",
+  "targetName" : "733",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 17,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000101",
+  "sourceName" : "2",
+  "targetURI" : "http://purl.obolibrary.org/obo/IAO_0000310",
+  "targetName" : "2447",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 18,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000283",
+  "targetName" : "1957",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 19,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://purl.obolibrary.org/obo/CL_0000000",
+  "targetName" : "1075",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 20,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000024",
+  "targetName" : "844",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 21,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000111",
+  "sourceName" : "60",
+  "targetURI" : "http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000268",
+  "targetName" : "2157",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 22,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000011",
+  "sourceName" : "26",
+  "targetURI" : "http://purl.obolibrary.org/obo/CHEBI_33250",
+  "targetName" : "1841",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 23,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000108",
+  "sourceName" : "21",
+  "targetURI" : "http://purl.obolibrary.org/obo/OBI_0200000",
+  "targetName" : "1283",
+  "similarityScore" : 0.7708
+}, {
+  "mappingId" : 24,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000009",
+  "sourceName" : "51",
+  "targetURI" : "http://purl.org/obo/owl/PATO#PATO_0001171",
+  "targetName" : "1666",
+  "similarityScore" : 0.7191
+}, {
+  "mappingId" : 25,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000021",
+  "sourceName" : "15",
+  "targetURI" : "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Anatomical_part",
+  "targetName" : "2136",
+  "similarityScore" : 0.6204
+}, {
+  "mappingId" : 26,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://purl.org/obo/owl/PATO#PATO_0002264",
+  "targetName" : "260",
+  "similarityScore" : 0.6117
+} ]

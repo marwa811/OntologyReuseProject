@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000014",
+  "sourceName" : "24",
+  "targetURI" : "urn:absolute:OFSMR#Obsolete:_MRS_broth",
+  "targetName" : "120",
+  "similarityScore" : 0.6
+} ]

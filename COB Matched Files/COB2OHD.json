@@ -1,0 +1,162 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000112",
+  "sourceName" : "54",
+  "targetURI" : "http://purl.obolibrary.org/obo/BFO_0000034",
+  "targetName" : "1321",
+  "similarityScore" : 0.94
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://purl.obolibrary.org/obo/BFO_0000019",
+  "targetName" : "1343",
+  "similarityScore" : 0.94
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://purl.obolibrary.org/obo/BFO_0000007",
+  "targetName" : "1279",
+  "similarityScore" : 0.94
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000057",
+  "sourceName" : "23",
+  "targetURI" : "http://purl.obolibrary.org/obo/BFO_0000029",
+  "targetName" : "1311",
+  "similarityScore" : 0.94
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000111",
+  "sourceName" : "60",
+  "targetURI" : "http://purl.obolibrary.org/obo/BFO_0000016",
+  "targetName" : "1338",
+  "similarityScore" : 0.94
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000077",
+  "sourceName" : "57",
+  "targetURI" : "http://purl.obolibrary.org/obo/IAO_0000007",
+  "targetName" : "121",
+  "similarityScore" : 0.9395
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000079",
+  "sourceName" : "53",
+  "targetURI" : "http://purl.obolibrary.org/obo/IAO_0000104",
+  "targetName" : "756",
+  "similarityScore" : 0.9393
+}, {
+  "mappingId" : 7,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000107",
+  "sourceName" : "20",
+  "targetURI" : "http://purl.obolibrary.org/obo/OBI_0000070",
+  "targetName" : "138",
+  "similarityScore" : 0.9387
+}, {
+  "mappingId" : 8,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://purl.obolibrary.org/obo/OBI_0000245",
+  "targetName" : "1778",
+  "similarityScore" : 0.9387
+}, {
+  "mappingId" : 9,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000102",
+  "sourceName" : "5",
+  "targetURI" : "http://purl.obolibrary.org/obo/IAO_0000027",
+  "targetName" : "219",
+  "similarityScore" : 0.9381
+}, {
+  "mappingId" : 10,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000108",
+  "sourceName" : "21",
+  "targetURI" : "http://purl.obolibrary.org/obo/OBI_0200000",
+  "targetName" : "1230",
+  "similarityScore" : 0.9362
+}, {
+  "mappingId" : 11,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000110",
+  "sourceName" : "58",
+  "targetURI" : "http://purl.obolibrary.org/obo/OBI_0000094",
+  "targetName" : "671",
+  "similarityScore" : 0.9362
+}, {
+  "mappingId" : 12,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000076",
+  "sourceName" : "68",
+  "targetURI" : "http://purl.obolibrary.org/obo/IAO_0000005",
+  "targetName" : "124",
+  "similarityScore" : 0.9342
+}, {
+  "mappingId" : 13,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000064",
+  "sourceName" : "14",
+  "targetURI" : "http://purl.obolibrary.org/obo/OGMS_0000063",
+  "targetName" : "465",
+  "similarityScore" : 0.9317
+}, {
+  "mappingId" : 14,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000082",
+  "sourceName" : "44",
+  "targetURI" : "http://purl.obolibrary.org/obo/OBI_0000011",
+  "targetName" : "176",
+  "similarityScore" : 0.9311
+}, {
+  "mappingId" : 15,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000069",
+  "sourceName" : "4",
+  "targetURI" : "http://purl.obolibrary.org/obo/IAO_0000033",
+  "targetName" : "202",
+  "similarityScore" : 0.931
+}, {
+  "mappingId" : 16,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000119",
+  "sourceName" : "71",
+  "targetURI" : "http://purl.obolibrary.org/obo/OBI_0000067",
+  "targetName" : "123",
+  "similarityScore" : 0.9303
+}, {
+  "mappingId" : 17,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000056",
+  "sourceName" : "29",
+  "targetURI" : "http://purl.obolibrary.org/obo/FMA_67112",
+  "targetName" : "301",
+  "similarityScore" : 0.9288
+}, {
+  "mappingId" : 18,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://purl.obolibrary.org/obo/BFO_0000040",
+  "targetName" : "189",
+  "similarityScore" : 0.9281
+}, {
+  "mappingId" : 19,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://purl.obolibrary.org/obo/BFO_0000023",
+  "targetName" : "1350",
+  "similarityScore" : 0.9175
+}, {
+  "mappingId" : 20,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://purl.obolibrary.org/obo/CARO_0000012",
+  "targetName" : "221",
+  "similarityScore" : 0.846
+}, {
+  "mappingId" : 21,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000026",
+  "sourceName" : "10",
+  "targetURI" : "http://purl.obolibrary.org/obo/OBI_0000047",
+  "targetName" : "214",
+  "similarityScore" : 0.7003
+}, {
+  "mappingId" : 22,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://purl.obolibrary.org/obo/OGMS_0000059",
+  "targetName" : "456",
+  "similarityScore" : 0.6433
+} ]

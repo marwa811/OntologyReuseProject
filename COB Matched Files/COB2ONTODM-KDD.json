@@ -1,0 +1,64 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000079",
+  "sourceName" : "53",
+  "targetURI" : "http://purl.obolibrary.org/obo/IAO_0000104",
+  "targetName" : "137",
+  "similarityScore" : 0.931
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000082",
+  "sourceName" : "44",
+  "targetURI" : "http://purl.obolibrary.org/obo/OBI_0000011",
+  "targetName" : "150",
+  "similarityScore" : 0.9305
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000069",
+  "sourceName" : "4",
+  "targetURI" : "http://purl.obolibrary.org/obo/IAO_0000033",
+  "targetName" : "173",
+  "similarityScore" : 0.93
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000109",
+  "sourceName" : "19",
+  "targetURI" : "http://purl.obolibrary.org/obo/OBI_0000066",
+  "targetName" : "113",
+  "similarityScore" : 0.9246
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000076",
+  "sourceName" : "68",
+  "targetURI" : "http://purl.obolibrary.org/obo/IAO_0000005",
+  "targetName" : "119",
+  "similarityScore" : 0.9198
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000102",
+  "sourceName" : "5",
+  "targetURI" : "http://purl.obolibrary.org/obo/IAO_0000027",
+  "targetName" : "190",
+  "similarityScore" : 0.8994
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000110",
+  "sourceName" : "58",
+  "targetURI" : "http://www.ebi.ac.uk/efo/swo/SWO_0000393",
+  "targetName" : "149",
+  "similarityScore" : 0.7952
+}, {
+  "mappingId" : 7,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000026",
+  "sourceName" : "10",
+  "targetURI" : "http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_110000",
+  "targetName" : "105",
+  "similarityScore" : 0.6185
+}, {
+  "mappingId" : 8,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000083",
+  "sourceName" : "45",
+  "targetURI" : "http://purl.obolibrary.org/obo/OBI_0000471",
+  "targetName" : "238",
+  "similarityScore" : 0.6
+} ]

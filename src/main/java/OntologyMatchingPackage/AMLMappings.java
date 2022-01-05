@@ -1,10 +1,21 @@
 package OntologyMatchingPackage;
+import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
 import org.semanticweb.owlapi.model.OWLException;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import BioOntologiesRepo.TermSearchUsingBioportal;
+import OntologyExtractionPackage.EntityExtractionClass;
 import aml.AML;
 
 public class AMLMappings {
@@ -53,6 +64,44 @@ public class AMLMappings {
 		  System.out .println("There are no AML mappings!!"); 
 		}
 	
+	
+	public void setSavedMappings(String inputClassName, String sourceFileName, String targetFileName) throws IOException, Exception {
+		final Logger log = Logger.getLogger(AMLMappings.class);
+		
+		String sourceAcronym= sourceFileName.substring(sourceFileName.indexOf("/")+1,sourceFileName.indexOf("."));
+		String targetAcronym= targetFileName.substring(targetFileName.indexOf("/")+1,targetFileName.indexOf("."));
+		String matchedFileName= "COB Matched Files/"+sourceAcronym+"2"+targetAcronym+".json";
+		System.out.println("Saved File Matched Ontology:  "+ matchedFileName);
+		
+		//get the AML Alignmnets from the saved file
+		List<AMLMapping> AMLAlignments=getAlignments(matchedFileName);
+		
+		//get inputFile classids and labels
+		Map<String,String> classIdandLabels=EntityExtractionClass.getOntolgyClassesLabels(EntityExtractionClass.laodOntology(sourceFileName));
+		Iterator<Map.Entry<String, String>> itr = classIdandLabels.entrySet().iterator();
+		//get the alignments that are related to the input class and add them to the "mappings"
+		//for(AMLMapping m: AMLAlignments) {
+			while(itr.hasNext())
+	        {
+	           Map.Entry<String, String> entry = itr.next();
+	           if(entry.getValue().toLowerCase().contains(inputClassName.toLowerCase())) {
+	        	   System.out.println("The Map Entry Key is : "+ entry.getKey() +"   "+entry.getValue());
+	        	   for(AMLMapping m: AMLAlignments) {
+	        		   if(m.getSourceURI().equals(entry.getKey()))
+	        			   mappings.add(m);
+	        	   }
+	           }
+	        }
+	    //}
+		if(mappings.size() > 0) { 
+			displayMappings();
+		}
+		else
+			System.out.println("There are no AML mappings for this input class!!"); 
+		}
+	
+	
+	
 	public ArrayList<AMLMapping> getMappings() {
 		return mappings;
 	}
@@ -99,5 +148,20 @@ public class AMLMappings {
 					+","+mapping.getTargetURI().substring(mapping.getTargetURI().indexOf('#')+1));
 		}
 		return newMappings;
+	}
+	
+	public List<AMLMapping> getAlignments(String matchedFileName){
+		List<AMLMapping> alignments = null;
+		try {
+		    // create object mapper instance
+		    ObjectMapper mapper = new ObjectMapper();
+
+		    // convert JSON array to list of books
+		    alignments= Arrays.asList(mapper.readValue(Paths.get(matchedFileName).toFile(), AMLMapping[].class));
+		    System.out.println("Alignments number is:  "+ alignments.size());
+		} catch (Exception ex) {
+		    ex.printStackTrace();
+		}
+		return alignments;
 	}
 }

@@ -1,0 +1,22 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://www.w3.org/ns/prov#Organization",
+  "targetName" : "104",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://www.w3.org/ns/prov#Role",
+  "targetName" : "110",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000113",
+  "sourceName" : "55",
+  "targetURI" : "http://www.w3.org/ns/prov#Plan",
+  "targetName" : "90",
+  "similarityScore" : 0.9569
+} ]

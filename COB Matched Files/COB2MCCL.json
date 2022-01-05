@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://www.semanticweb.org/pallabi.d/ontologies/2014/2/untitled-ontology-11#Protein",
+  "targetName" : "3996",
+  "similarityScore" : 0.9624
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000056",
+  "sourceName" : "29",
+  "targetURI" : "http://www.semanticweb.org/pallabi.d/ontologies/2014/2/untitled-ontology-11#AnatomicalEntity",
+  "targetName" : "4320",
+  "similarityScore" : 0.6253
+} ]

@@ -75,6 +75,22 @@ public class TermSearchUsingBioportal {
 	    	}
 	    	return recommenderResult;
 	 }
+	 //////////////////////////////////////////////////////////////////////////////////////
+	 //This function takes the Acronym of a an ontology and returns a Map of classId and LabelName
+	 //This function uses the Bioportal Recommender to get the coverage score and returns a 
+	 // Map<ontology id, Coverage Score>
+	 public static Map<String,String> getClassIdAndLabel(String OntAcronym) {
+		 Map<String,String> classResult=new HashMap<String, String>();
+		 JsonNode results = jsonToNode(get(REST_URL + "/ontologies/" + OntAcronym.toUpperCase()+"/classes/")).get("collection");
+	    	for (JsonNode result : results) {
+	    		if(result.get("obsolete").asText().equals("false")) 
+	    		{
+	    		classResult.put(result.get("@id").asText(), result.get("prefLabel").asText());
+	    	//	System.out.println("GET Class ID and LAbel: "+ result.get("@id").asText()+"   ,   "+ result.get("prefLabel").asText());
+	    		}
+	    	}
+	    	return classResult;
+	 }
 	 /////////////////////////////////////////////////////////////////////////////////////
 	 //This function returns the details of a class (preflabel, synonyms, defination, subclasses) in an ontology
 	 public static AdditionalClassInfo getClassInfo(String classId, String ontologyId) {

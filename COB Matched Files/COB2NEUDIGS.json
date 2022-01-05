@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://bmkeg.isi.edu/neuDIGs#ChemicalEntity",
+  "targetName" : "104",
+  "similarityScore" : 0.8375
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000009",
+  "sourceName" : "51",
+  "targetURI" : "http://bmkeg.isi.edu/neuDIGs#Neuron",
+  "targetName" : "100",
+  "similarityScore" : 0.7044
+} ]

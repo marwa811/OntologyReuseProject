@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://webprotege.stanford.edu/project/B1YA5aP4fTfTaBBx7flwQP#AdherenceQuality",
+  "targetName" : "196",
+  "similarityScore" : 0.6915
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000122",
+  "sourceName" : "38",
+  "targetURI" : "http://webprotege.stanford.edu/project/B1YA5aP4fTfTaBBx7flwQP#PhysicalHealthFactor",
+  "targetName" : "173",
+  "similarityScore" : 0.6
+} ]

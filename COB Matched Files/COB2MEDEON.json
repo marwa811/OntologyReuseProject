@@ -1,0 +1,22 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000057",
+  "sourceName" : "23",
+  "targetURI" : "http://www.semanticweb.org/chen/ontologies/2015/8/untitled-ontology-72#Site",
+  "targetName" : "107",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://www.semanticweb.org/chen/ontologies/2015/8/untitled-ontology-72#Process",
+  "targetName" : "99",
+  "similarityScore" : 0.9315
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000120",
+  "sourceName" : "49",
+  "targetURI" : "http://www.semanticweb.org/chen/ontologies/2015/8/untitled-ontology-72#StuffActivity",
+  "targetName" : "126",
+  "similarityScore" : 0.7445
+} ]

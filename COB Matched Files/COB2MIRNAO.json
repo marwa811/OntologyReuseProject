@@ -1,0 +1,99 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#Quality",
+  "targetName" : "542",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000111",
+  "sourceName" : "60",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#Disposition",
+  "targetName" : "213",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000112",
+  "sourceName" : "54",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#Function",
+  "targetName" : "290",
+  "similarityScore" : 0.9635
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#Role",
+  "targetName" : "116",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/span#Process",
+  "targetName" : "499",
+  "similarityScore" : 0.9537
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000013",
+  "sourceName" : "22",
+  "targetURI" : "http://www.bootstrep.eu/ontology/GRO#MolecularEntity",
+  "targetName" : "539",
+  "similarityScore" : 0.9477
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#MaterialEntity",
+  "targetName" : "700",
+  "similarityScore" : 0.9437
+}, {
+  "mappingId" : 7,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://purl.obolibrary.org/obo/OBI_0100026",
+  "targetName" : "647",
+  "similarityScore" : 0.9391
+}, {
+  "mappingId" : 8,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000118",
+  "sourceName" : "70",
+  "targetURI" : "http://purl.obolibrary.org/obo/NCBITaxon_131567",
+  "targetName" : "238",
+  "similarityScore" : 0.9391
+}, {
+  "mappingId" : 9,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://purl.obolibrary.org/obo/CHEBI_36080",
+  "targetName" : "140",
+  "similarityScore" : 0.9377
+}, {
+  "mappingId" : 10,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://purl.org/obo/owl/GO#GO_0008150",
+  "targetName" : "364",
+  "similarityScore" : 0.9317
+}, {
+  "mappingId" : 11,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000031",
+  "sourceName" : "65",
+  "targetURI" : "http://purl.obolibrary.org/obo/BFO_0000141",
+  "targetName" : "692",
+  "similarityScore" : 0.9239
+}, {
+  "mappingId" : 12,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000033",
+  "sourceName" : "56",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#RealizableEntity",
+  "targetName" : "662",
+  "similarityScore" : 0.6287
+}, {
+  "mappingId" : 13,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000049",
+  "sourceName" : "43",
+  "targetURI" : "http://purl.obolibrary.org/obo/CHEBI_33696",
+  "targetName" : "613",
+  "similarityScore" : 0.6008
+} ]

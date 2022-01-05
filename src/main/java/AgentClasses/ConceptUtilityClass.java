@@ -43,12 +43,12 @@ public class ConceptUtilityClass {
 
 	///////////////////////////////////////////////////////////////////////
 	//consider 10 ontologies that has candidate concepts for extension to save time
-	public static ArrayList<CandidateOntologyClass> calculateConceptUtilityFunction10(String inputClassName, String InputFileName, ArrayList<CandidateOntologyClass> candidateOntologies) throws OWLException, IOException, TranslatedUnloadedImportException{
+	public static ArrayList<CandidateOntologyClass> calculateConceptUtilityFunction10(String inputClassName, String InputFileName, ArrayList<CandidateOntologyClass> candidateOntologies) throws Exception{
 		for(CandidateOntologyClass candidateOntology: candidateOntologies){
 			ArrayList<ConceptUtilityScoreClass> conceptsForExtension=new ArrayList<ConceptUtilityScoreClass>();
-			double mean=meanScore(candidateOntologies);
+			//double mean=meanScore(candidateOntologies);
 			//if the ontology Utility Score> a given threshold, say the mean value 
-			if(candidateOntology.getOntologyUtilityScore().getOntologyTotalUtilityScore() > mean) {
+			if(candidateOntology.getOntologyUtilityScore().getOntologyTotalUtilityScore() > 0) {
 			String candidateOntologyFileName=getOntologyFileName(candidateOntology.getOntologyID()); 
 			conceptsForExtension=getMapping(inputClassName, InputFileName, candidateOntologyFileName);	
 			//if there is matched concepts to retrieve
@@ -72,7 +72,7 @@ public class ConceptUtilityClass {
 	//This Function takes a class name and the names of two owl files, it calculates the AML mappings 
 	//then call the getSimilarclasses() function to get the contextual mappings and calculate the 
 	//conceptContextMatchingScore and returns it
-	public static ArrayList<ConceptUtilityScoreClass> getMapping(String inputClassName, String filename1, String filename2) throws OWLException, IOException, TranslatedUnloadedImportException {
+	public static ArrayList<ConceptUtilityScoreClass> getMapping(String inputClassName, String filename1, String filename2) throws Exception {
 		ArrayList<ConceptUtilityScoreClass> conceptsForExtension=new ArrayList<ConceptUtilityScoreClass>();
 		
 		double conceptUtilityScore=0.0;
@@ -80,7 +80,13 @@ public class ConceptUtilityClass {
 		double conceptSemanticRichnessScore=0.0;
 		try {
 		AMLMappings mappings=new AMLMappings();
-		mappings.setMappings(inputClassName,filename1, filename2);
+		System.out.println("mapping= inputclass Name: "+ inputClassName);
+		System.out.println("mapping= file1: "+ filename1);
+		System.out.println("mapping= file2: "+ filename2);
+		//the new setMapping function that takes from the saved matching classes
+		mappings.setSavedMappings(inputClassName, filename1, filename2);
+		//original setMappings that rum AML 
+		//mappings.setMappings(inputClassName,filename1, filename2);
 
 		// used memory
 		instance = Runtime.getRuntime();

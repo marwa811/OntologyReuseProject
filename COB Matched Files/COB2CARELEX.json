@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000069",
+  "sourceName" : "4",
+  "targetURI" : "http://www.CareLex.org/2012/carelex.owl#Subject_Information_Form",
+  "targetName" : "368",
+  "similarityScore" : 0.6
+} ]

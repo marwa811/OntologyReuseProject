@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000120",
+  "sourceName" : "49",
+  "targetURI" : "http://bigdatau.org/dseo#knowledge_representation",
+  "targetName" : "93",
+  "similarityScore" : 0.8375
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000013",
+  "sourceName" : "22",
+  "targetURI" : "http://bigdatau.org/dseo#molecular_biology",
+  "targetName" : "208",
+  "similarityScore" : 0.698
+} ]

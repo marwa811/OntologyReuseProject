@@ -1,0 +1,36 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000011",
+  "sourceName" : "26",
+  "targetURI" : "http://neurolog.unice.fr/ontoneurolog/v3.0/dolce-particular.owl#atom",
+  "targetName" : "529",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000061",
+  "sourceName" : "12",
+  "targetURI" : "http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-extension-of-dolce.owl#information",
+  "targetName" : "701",
+  "similarityScore" : 0.9474
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://neurolog.unice.fr/ontoneurolog/v3.0/dolce-particular.owl#quality",
+  "targetName" : "667",
+  "similarityScore" : 0.9444
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000112",
+  "sourceName" : "54",
+  "targetURI" : "http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-extension-of-dolce.owl#function",
+  "targetName" : "751",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://neurolog.unice.fr/ontoneurolog/v3.0/dolce-particular.owl#process",
+  "targetName" : "653",
+  "similarityScore" : 0.9306
+} ]

@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://purl.bioontology.org/ontology/BCTT#00279",
+  "targetName" : "125",
+  "similarityScore" : 0.6
+} ]

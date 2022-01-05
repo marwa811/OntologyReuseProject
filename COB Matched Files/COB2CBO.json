@@ -1,0 +1,50 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000003",
+  "sourceName" : "35",
+  "targetURI" : "http://cbo.biocomplexity.indiana.edu/svn/cbo/trunk/CBO_1_1_0.owl#Mass",
+  "targetName" : "170",
+  "similarityScore" : 0.9626
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000004",
+  "sourceName" : "41",
+  "targetURI" : "http://cbo.biocomplexity.indiana.edu/svn/cbo/trunk/CBO_1_1_0.owl#Charge",
+  "targetName" : "120",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://cbo.biocomplexity.indiana.edu/svn/cbo/trunk/CBO_1_1_0.owl#Cell",
+  "targetName" : "228",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000110",
+  "sourceName" : "58",
+  "targetURI" : "http://cbo.biocomplexity.indiana.edu/svn/cbo/trunk/CBO_1_1_0.owl#MoleculeProcess",
+  "targetName" : "286",
+  "similarityScore" : 0.7445
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000013",
+  "sourceName" : "22",
+  "targetURI" : "http://cbo.biocomplexity.indiana.edu/svn/cbo/trunk/CBO_1_1_0.owl#MolecularField",
+  "targetName" : "138",
+  "similarityScore" : 0.698
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000066",
+  "sourceName" : "7",
+  "targetURI" : "http://cbo.biocomplexity.indiana.edu/svn/cbo/trunk/CBO_1_1_0.owl#CellularChemicalProcess",
+  "targetName" : "293",
+  "similarityScore" : 0.6204
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000122",
+  "sourceName" : "38",
+  "targetURI" : "http://cbo.biocomplexity.indiana.edu/svn/cbo/trunk/CBO_1_1_0.owl#PhysicalEntityType",
+  "targetName" : "116",
+  "similarityScore" : 0.6
+} ]

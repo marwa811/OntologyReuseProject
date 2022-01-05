@@ -1,0 +1,22 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000113",
+  "sourceName" : "55",
+  "targetURI" : "http://semantic-dicom.org/dcm#Plan",
+  "targetName" : "422",
+  "similarityScore" : 0.9622
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000101",
+  "sourceName" : "2",
+  "targetURI" : "http://semantic-dicom.org/dcm#Document",
+  "targetName" : "212",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000061",
+  "sourceName" : "12",
+  "targetURI" : "http://semantic-dicom.org/dcm#InformationEntity",
+  "targetName" : "1274",
+  "similarityScore" : 0.6367
+} ]

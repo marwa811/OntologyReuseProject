@@ -1,0 +1,36 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://gbol.life/0.1/Organism",
+  "targetName" : "239",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000032",
+  "sourceName" : "67",
+  "targetURI" : "http://gbol.life/0.1/GeographicalLocation",
+  "targetName" : "275",
+  "similarityScore" : 0.9501
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://gbol.life/0.1/Protein",
+  "targetName" : "95",
+  "similarityScore" : 0.9465
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000101",
+  "sourceName" : "2",
+  "targetURI" : "http://purl.org/ontology/bibo/Document",
+  "targetName" : "308",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://www.w3.org/ns/prov#Organization",
+  "targetName" : "278",
+  "similarityScore" : 0.9306
+} ]

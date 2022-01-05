@@ -1,0 +1,36 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://biomodels.net/SBO/SBO_0000375",
+  "targetName" : "715",
+  "similarityScore" : 0.9348
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://purl.obolibrary.org/obo/GO_0008150",
+  "targetName" : "148",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://sbgnbricks.org/BKO/BKO:0000488",
+  "targetName" : "434",
+  "similarityScore" : 0.7066
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://sbgnbricks.org/BKO/BKO:0000487",
+  "targetName" : "439",
+  "similarityScore" : 0.7066
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://sbgnbricks.org/BKO/BKO:0000486",
+  "targetName" : "444",
+  "similarityScore" : 0.7066
+} ]

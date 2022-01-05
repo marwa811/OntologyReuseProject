@@ -1,0 +1,92 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#Quality",
+  "targetName" : "325",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000111",
+  "sourceName" : "60",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#Disposition",
+  "targetName" : "189",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/span#Process",
+  "targetName" : "315",
+  "similarityScore" : 0.9586
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://purl.obolibrary.org/obo/ODGI.owl#Protein",
+  "targetName" : "399",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://purl.obolibrary.org/obo/ODGI.owl#Organism",
+  "targetName" : "379",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000073",
+  "sourceName" : "69",
+  "targetURI" : "http://purl.obolibrary.org/obo/ODGI.owl#Gene_Product",
+  "targetName" : "106",
+  "similarityScore" : 0.9504
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000112",
+  "sourceName" : "54",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#Function",
+  "targetName" : "220",
+  "similarityScore" : 0.9496
+}, {
+  "mappingId" : 7,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#MaterialEntity",
+  "targetName" : "434",
+  "similarityScore" : 0.9496
+}, {
+  "mappingId" : 8,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000057",
+  "sourceName" : "23",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#Site",
+  "targetName" : "384",
+  "similarityScore" : 0.9496
+}, {
+  "mappingId" : 9,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://purl.obolibrary.org/obo/ODGI.owl#Biological_Process",
+  "targetName" : "352",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 10,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#Role",
+  "targetName" : "96",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 11,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000032",
+  "sourceName" : "67",
+  "targetURI" : "http://www.owl-ontologies.com/GeographicalRegion.owl#Geographical_Regions",
+  "targetName" : "392",
+  "similarityScore" : 0.8375
+}, {
+  "mappingId" : 12,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000069",
+  "sourceName" : "4",
+  "targetURI" : "http://purl.obolibrary.org/obo/ODGI.owl#Quantitative_Data_Entity",
+  "targetName" : "358",
+  "similarityScore" : 0.6
+} ]

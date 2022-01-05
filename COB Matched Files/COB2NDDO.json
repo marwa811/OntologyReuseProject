@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000120",
+  "sourceName" : "49",
+  "targetURI" : "http://www.ontodm.com/OntoDM-core/OntoDM_892395",
+  "targetName" : "366",
+  "similarityScore" : 0.7069
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000107",
+  "sourceName" : "20",
+  "targetURI" : "http://purl.obolibrary.org/obo/NPT_0011015",
+  "targetName" : "287",
+  "similarityScore" : 0.6134
+} ]

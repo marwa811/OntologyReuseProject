@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://www.semanticweb.org/demetrios/ontologies/2014/5/untitled-ontology-3#CYTOKINE",
+  "targetName" : "280",
+  "similarityScore" : 0.8178
+} ]

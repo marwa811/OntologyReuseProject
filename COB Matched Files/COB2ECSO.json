@@ -1,0 +1,50 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000003",
+  "sourceName" : "35",
+  "targetURI" : "http://ecoinformatics.org/oboe/oboe.1.2/oboe-characteristics.owl#Mass",
+  "targetName" : "1093",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://purl.obolibrary.org/obo/BFO_0000040",
+  "targetName" : "176",
+  "similarityScore" : 0.9199
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000067",
+  "sourceName" : "8",
+  "targetURI" : "http://purl.dataone.org/odo/ECSO_00000309",
+  "targetName" : "1058",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://purl.dataone.org/odo/ECSO_00000312",
+  "targetName" : "1016",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://purl.obolibrary.org/obo/BFO_0000015",
+  "targetName" : "1001",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://purl.dataone.org/odo/ECSO_00000546",
+  "targetName" : "2107",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000065",
+  "sourceName" : "16",
+  "targetURI" : "http://purl.obolibrary.org/obo/ENVO_02500000",
+  "targetName" : "2174",
+  "similarityScore" : 0.6214
+} ]

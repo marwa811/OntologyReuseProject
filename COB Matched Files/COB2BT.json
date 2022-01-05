@@ -1,0 +1,148 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000010",
+  "sourceName" : "33",
+  "targetURI" : "http://purl.org/biotop/biotop.owl#Electron",
+  "targetName" : "422",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000008",
+  "sourceName" : "50",
+  "targetURI" : "http://purl.org/biotop/biotop.owl#Proton",
+  "targetName" : "172",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://purl.org/biotop/biotop.owl#Organization",
+  "targetName" : "432",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000111",
+  "sourceName" : "60",
+  "targetURI" : "http://purl.org/biotop/biotop.owl#Disposition",
+  "targetName" : "298",
+  "similarityScore" : 0.963
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://purl.org/biotop/biotop.owl#Process",
+  "targetName" : "255",
+  "similarityScore" : 0.9621
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://purl.org/biotop/biotop.owl#MaterialEntity",
+  "targetName" : "110",
+  "similarityScore" : 0.9619
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000007",
+  "sourceName" : "40",
+  "targetURI" : "http://purl.org/biotop/biotop.owl#SubatomicParticle",
+  "targetName" : "147",
+  "similarityScore" : 0.9611
+}, {
+  "mappingId" : 7,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000113",
+  "sourceName" : "55",
+  "targetURI" : "http://purl.org/biotop/biotop.owl#Plan",
+  "targetName" : "223",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 8,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000011",
+  "sourceName" : "26",
+  "targetURI" : "http://purl.org/biotop/biotop.owl#Atom",
+  "targetName" : "309",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 9,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000103",
+  "sourceName" : "11",
+  "targetURI" : "http://purl.org/biotop/biotop.owl#CellNucleus",
+  "targetName" : "131",
+  "similarityScore" : 0.9555
+}, {
+  "mappingId" : 10,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://purl.org/biotop/biotop.owl#Cell",
+  "targetName" : "300",
+  "similarityScore" : 0.9535
+}, {
+  "mappingId" : 11,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000112",
+  "sourceName" : "54",
+  "targetURI" : "http://purl.org/biotop/biotop.owl#Function",
+  "targetName" : "370",
+  "similarityScore" : 0.9507
+}, {
+  "mappingId" : 12,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://purl.org/biotop/biotop.owl#Quality",
+  "targetName" : "187",
+  "similarityScore" : 0.9464
+}, {
+  "mappingId" : 13,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000009",
+  "sourceName" : "51",
+  "targetURI" : "http://purl.org/biotop/biotop.owl#Neutron",
+  "targetName" : "336",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 14,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://purl.org/biotop/biotop.owl#Role",
+  "targetName" : "404",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 15,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://purl.org/biotop/biotop.owl#BiologicalAction",
+  "targetName" : "444",
+  "similarityScore" : 0.8375
+}, {
+  "mappingId" : 16,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000013",
+  "sourceName" : "22",
+  "targetURI" : "http://purl.org/biotop/biotop.owl#MolecularResidue",
+  "targetName" : "419",
+  "similarityScore" : 0.698
+}, {
+  "mappingId" : 17,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000031",
+  "sourceName" : "65",
+  "targetURI" : "http://purl.org/biotop/biotop.owl#ImmaterialPhysicalEntity",
+  "targetName" : "218",
+  "similarityScore" : 0.6442
+}, {
+  "mappingId" : 18,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000049",
+  "sourceName" : "43",
+  "targetURI" : "http://purl.org/biotop/biotop.owl#NucleicAcidStructure",
+  "targetName" : "90",
+  "similarityScore" : 0.6279
+}, {
+  "mappingId" : 19,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000026",
+  "sourceName" : "10",
+  "targetURI" : "http://purl.org/biotop/biotop.owl#CollectiveMaterialEntity",
+  "targetName" : "276",
+  "similarityScore" : 0.6204
+}, {
+  "mappingId" : 20,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000056",
+  "sourceName" : "29",
+  "targetURI" : "http://purl.org/biotop/biotop.owl#ImmaterialNonphysicalEntity",
+  "targetName" : "118",
+  "similarityScore" : 0.6204
+} ]

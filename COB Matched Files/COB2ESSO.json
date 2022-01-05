@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000064",
+  "sourceName" : "14",
+  "targetURI" : "http://www.semanticweb.org/rjyy/ontologies/2015/5/ESSO#Disease_Course",
+  "targetName" : "1180",
+  "similarityScore" : 0.9461
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://www.semanticweb.org/rjyy/ontologies/2015/5/ESSO#Noachter_1999_Organization",
+  "targetName" : "2174",
+  "similarityScore" : 0.723
+} ]

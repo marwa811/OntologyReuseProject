@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000101",
+  "sourceName" : "2",
+  "targetURI" : "http://www.semanticweb.org/associatedmedicine/lavima/2011/10/Ontology1.owl#Document",
+  "targetName" : "132",
+  "similarityScore" : 0.9643
+} ]

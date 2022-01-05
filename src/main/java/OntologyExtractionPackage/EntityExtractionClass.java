@@ -93,7 +93,7 @@ public class EntityExtractionClass {
 			    }
 			//get class_labels no duplicates, no classes without labels
 			for (OWLClass c : allClasses) {
-			    classLabel=getClassName(c);	    				    			
+			    classLabel=getClassName(o, c);	    				    			
 			    if(classLabel!=null) 
 			    	if(!existsIn(classIdAndLabel, c.getIRI().toString(), classLabel)) {
 			    			classIdAndLabel.put(c.getIRI().toString(), classLabel);			    		}
@@ -123,9 +123,27 @@ public class EntityExtractionClass {
 	}
 		
 	//Given an OWLClass retuens the class label
-	private static String getClassName( OWLClass c) throws IOException {
-		String classIRI=c.getIRI().toString();
-		return classIRI.substring(classIRI.lastIndexOf('#')+1);
+	private static String getClassName( OWLOntology ontology ,OWLClass c) throws IOException {
+		//This Function is used to get additional information for any matched class in the result
+		//it takes the ontology ID (to get its acronym) and the class ID and then useing Bioportal service return
+		//its label, sysnonyms, definations, subclasses
+
+			String classLabel="";
+			for(OWLAnnotationAssertionAxiom annotation: c.getAnnotationAssertionAxioms(ontology)) {
+				if(!annotation.getProperty().isDeprecated()) 
+				{
+				if(annotation.getProperty().isLabel()) {
+				   if(annotation.getValue() instanceof OWLLiteral) {
+				      OWLLiteral val = (OWLLiteral) annotation.getValue();
+				      classLabel= val.getLiteral();
+				     // System.out.println(c + " labelled " + val.getLiteral());
+				   }
+				}
+				}
+			}
+	//	String classIRI=c.getIRI().toString();
+		return classLabel;
+		//return classIRI.substring(classIRI.lastIndexOf('#')+1);
 	}
 	
 	public static String getClassIRI(String fileName, String className) throws Exception {
@@ -229,12 +247,14 @@ public class EntityExtractionClass {
 		int count=1;
 		int size=map.size();
 		for (String i : map.keySet()) {
-			if(count<size) {
-			classNamesasInput+=map.get(i)+",";
+			if(!map.get(i).equals("")) {
+			if(count<size) {	
+			classNamesasInput+=map.get(i)+", ";
 			count++;
 			}
 			else
 				classNamesasInput+=map.get(i);
+			}
 		}
 		return classNamesasInput;
 	}

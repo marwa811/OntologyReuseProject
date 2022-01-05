@@ -1,0 +1,71 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000112",
+  "sourceName" : "54",
+  "targetURI" : "http://www.ifomis.org/bfo/1.0/snap#Function",
+  "targetName" : "448",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://www.ifomis.org/bfo/1.0/snap#Quality",
+  "targetName" : "123",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000111",
+  "sourceName" : "60",
+  "targetURI" : "http://www.ifomis.org/bfo/1.0/snap#Disposition",
+  "targetName" : "326",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://www.ifomis.org/bfo/1.0/span#Process",
+  "targetName" : "734",
+  "similarityScore" : 0.9607
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://www.ifomis.org/bfo/1.0/snap#Role",
+  "targetName" : "515",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000057",
+  "sourceName" : "23",
+  "targetURI" : "http://www.ifomis.org/bfo/1.0/snap#Site",
+  "targetName" : "737",
+  "similarityScore" : 0.9309
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://ccdb.ucsd.edu/SAO/1.2#sao26622963",
+  "targetName" : "582",
+  "similarityScore" : 0.9101
+}, {
+  "mappingId" : 7,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://ccdb.ucsd.edu/SAO/1.2#sao1813327414",
+  "targetName" : "285",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 8,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000033",
+  "sourceName" : "56",
+  "targetURI" : "http://www.ifomis.org/bfo/1.0/snap#RealizableEntity",
+  "targetName" : "800",
+  "similarityScore" : 0.6287
+}, {
+  "mappingId" : 9,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000049",
+  "sourceName" : "43",
+  "targetURI" : "http://ccdb.ucsd.edu/SAO/1.2#sao83745184",
+  "targetName" : "377",
+  "similarityScore" : 0.6211
+} ]

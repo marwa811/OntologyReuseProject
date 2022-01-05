@@ -1,0 +1,43 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://www.semanticweb.org/DMO#process",
+  "targetName" : "4271",
+  "similarityScore" : 0.9645
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://www.semanticweb.org/ADMO#biological_process",
+  "targetName" : "1479",
+  "similarityScore" : 0.9608
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://www.semanticweb.org/ADMO#cell",
+  "targetName" : "2059",
+  "similarityScore" : 0.9581
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000013",
+  "sourceName" : "22",
+  "targetURI" : "http://www.semanticweb.org/DMO#molecular_entity",
+  "targetName" : "549",
+  "similarityScore" : 0.9449
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://www.semanticweb.org/DMO#material_entity",
+  "targetName" : "8799",
+  "similarityScore" : 0.9377
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000073",
+  "sourceName" : "69",
+  "targetURI" : "http://www.semanticweb.org/DMO#gene_product",
+  "targetName" : "10205",
+  "similarityScore" : 0.9306
+} ]

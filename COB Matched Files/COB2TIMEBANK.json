@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000065",
+  "sourceName" : "16",
+  "targetURI" : "https://w3id.org/timebank#EnvironmentalAllergy",
+  "targetName" : "113",
+  "similarityScore" : 0.698
+} ]

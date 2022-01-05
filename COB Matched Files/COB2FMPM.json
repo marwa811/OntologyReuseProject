@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000014",
+  "sourceName" : "24",
+  "targetURI" : "urn:absolute:FMPM#Obsolete:_MRS_broth",
+  "targetName" : "175",
+  "similarityScore" : 0.6
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000026",
+  "sourceName" : "10",
+  "targetURI" : "urn:absolute:FMPM#Processed_raw_meat",
+  "targetName" : "242",
+  "similarityScore" : 0.6
+} ]

@@ -1,0 +1,36 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000102",
+  "sourceName" : "5",
+  "targetURI" : "http://purl.obolibrary.org/obo/IAO_0000027",
+  "targetName" : "140",
+  "similarityScore" : 0.94
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.MaterialEntity",
+  "targetName" : "105",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000108",
+  "sourceName" : "21",
+  "targetURI" : "http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.DataTransformation",
+  "targetName" : "97",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000107",
+  "sourceName" : "20",
+  "targetURI" : "http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.Assay",
+  "targetName" : "107",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000069",
+  "sourceName" : "4",
+  "targetURI" : "http://purl.obolibrary.org/obo/IAO_0000030",
+  "targetName" : "122",
+  "similarityScore" : 0.6
+} ]

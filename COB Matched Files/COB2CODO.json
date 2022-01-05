@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://xmlns.com/foaf/0.1/Organization",
+  "targetName" : "120",
+  "similarityScore" : 0.9643
+} ]

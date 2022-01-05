@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000061",
+  "sourceName" : "12",
+  "targetURI" : "http://www.ebi.ac.uk/efo/medo/MEDO_0000089",
+  "targetName" : "134",
+  "similarityScore" : 0.9147
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://www.ebi.ac.uk/efo/medo/MEDO_0000092",
+  "targetName" : "117",
+  "similarityScore" : 0.8836
+} ]

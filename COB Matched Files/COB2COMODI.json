@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000112",
+  "sourceName" : "54",
+  "targetURI" : "http://purl.uni-rostock.de/comodi/comodi#FunctionDefinition",
+  "targetName" : "103",
+  "similarityScore" : 0.6825
+} ]

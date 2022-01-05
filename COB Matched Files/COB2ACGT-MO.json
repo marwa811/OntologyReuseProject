@@ -1,0 +1,113 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000010",
+  "sourceName" : "33",
+  "targetURI" : "http://www.ifomis.org/acgt/1.0#Electron",
+  "targetName" : "680",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000101",
+  "sourceName" : "2",
+  "targetURI" : "http://www.ifomis.org/acgt/1.0#Document",
+  "targetName" : "741",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000111",
+  "sourceName" : "60",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#Disposition",
+  "targetName" : "672",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://www.ifomis.org/acgt/1.0#Protein",
+  "targetName" : "601",
+  "similarityScore" : 0.9642
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#Quality",
+  "targetName" : "1695",
+  "similarityScore" : 0.9636
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000057",
+  "sourceName" : "23",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#Site",
+  "targetName" : "1768",
+  "similarityScore" : 0.9636
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://www.ifomis.org/acgt/1.0#Cell",
+  "targetName" : "657",
+  "similarityScore" : 0.9568
+}, {
+  "mappingId" : 7,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#Role",
+  "targetName" : "1021",
+  "similarityScore" : 0.9551
+}, {
+  "mappingId" : 8,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000112",
+  "sourceName" : "54",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#Function",
+  "targetName" : "707",
+  "similarityScore" : 0.9501
+}, {
+  "mappingId" : 9,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/span#Process",
+  "targetName" : "391",
+  "similarityScore" : 0.9474
+}, {
+  "mappingId" : 10,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#MaterialEntity",
+  "targetName" : "1824",
+  "similarityScore" : 0.9455
+}, {
+  "mappingId" : 11,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://www.ifomis.org/acgt/1.0#Organism",
+  "targetName" : "1077",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 12,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://www.ifomis.org/acgt/1.0#Body",
+  "targetName" : "636",
+  "similarityScore" : 0.846
+}, {
+  "mappingId" : 13,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000049",
+  "sourceName" : "43",
+  "targetURI" : "http://www.ifomis.org/acgt/1.0#NucleicAcid",
+  "targetName" : "1490",
+  "similarityScore" : 0.6457
+}, {
+  "mappingId" : 14,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000061",
+  "sourceName" : "12",
+  "targetURI" : "http://www.ifomis.org/acgt/1.0#InformationObject",
+  "targetName" : "1573",
+  "similarityScore" : 0.6367
+}, {
+  "mappingId" : 15,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000033",
+  "sourceName" : "56",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#RealizableEntity",
+  "targetName" : "1766",
+  "similarityScore" : 0.6287
+} ]

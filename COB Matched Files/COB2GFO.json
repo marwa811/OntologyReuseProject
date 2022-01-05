@@ -1,0 +1,29 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://www.onto-med.de/ontologies/gfo.owl#Role",
+  "targetName" : "120",
+  "similarityScore" : 0.9533
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://www.onto-med.de/ontologies/gfo.owl#Process",
+  "targetName" : "127",
+  "similarityScore" : 0.9517
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://www.onto-med.de/ontologies/gfo.owl#Material_boundary",
+  "targetName" : "115",
+  "similarityScore" : 0.698
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000069",
+  "sourceName" : "4",
+  "targetURI" : "http://www.onto-med.de/ontologies/gfo.owl#Space_time",
+  "targetName" : "106",
+  "similarityScore" : 0.6
+} ]

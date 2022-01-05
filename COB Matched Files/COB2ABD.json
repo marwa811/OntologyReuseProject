@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://brd.bsvgateway.org/api/organism/",
+  "targetName" : "852",
+  "similarityScore" : 0.9346
+} ]

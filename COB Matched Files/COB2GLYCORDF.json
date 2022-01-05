@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://purl.jp/bio/12/glyco/glycan#role",
+  "targetName" : "102",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://purl.jp/bio/12/glyco/glycan#protein",
+  "targetName" : "161",
+  "similarityScore" : 0.9306
+} ]

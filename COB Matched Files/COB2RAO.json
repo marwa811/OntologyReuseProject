@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000122",
+  "sourceName" : "38",
+  "targetURI" : "http://bmi.utah.edu/ontologies/peontology/C0401927",
+  "targetName" : "190",
+  "similarityScore" : 0.6
+} ]

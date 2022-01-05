@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000101",
+  "sourceName" : "2",
+  "targetURI" : "http://cbakerlab.unbsj.ca:8080/ontologies/BIM.owl#Document",
+  "targetName" : "114",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000013",
+  "sourceName" : "22",
+  "targetURI" : "http://cbakerlab.unbsj.ca:8080/sebi/BIM.owl#Molecular_imaging",
+  "targetName" : "193",
+  "similarityScore" : 0.698
+} ]

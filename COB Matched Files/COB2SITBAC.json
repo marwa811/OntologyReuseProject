@@ -1,0 +1,22 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Role",
+  "targetName" : "228",
+  "similarityScore" : 0.963
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Organization",
+  "targetName" : "118",
+  "similarityScore" : 0.9623
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000101",
+  "sourceName" : "2",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#Document",
+  "targetName" : "120",
+  "similarityScore" : 0.9306
+} ]

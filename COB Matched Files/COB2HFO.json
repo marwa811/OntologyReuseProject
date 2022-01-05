@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000003",
+  "sourceName" : "35",
+  "targetURI" : "http://bmi.utah.edu/ontologies/hfontology/T0000083",
+  "targetName" : "479",
+  "similarityScore" : 0.9121
+} ]

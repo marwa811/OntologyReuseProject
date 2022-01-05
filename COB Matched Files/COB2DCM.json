@@ -1,0 +1,22 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000113",
+  "sourceName" : "55",
+  "targetURI" : "http://dicom.nema.org/resources/ontology/DCM/PLAN",
+  "targetName" : "2922",
+  "similarityScore" : 0.9517
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000101",
+  "sourceName" : "2",
+  "targetURI" : "http://dicom.nema.org/resources/ontology/DCM/121003",
+  "targetName" : "2435",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000101",
+  "sourceName" : "2",
+  "targetURI" : "http://dicom.nema.org/resources/ontology/DCM/DOC",
+  "targetName" : "4326",
+  "similarityScore" : 0.8836
+} ]

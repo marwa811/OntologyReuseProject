@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://www.onto-med.de/ontologies/gfo-persian-medicine-diseases.owl#Role",
+  "targetName" : "116",
+  "similarityScore" : 0.9638
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://www.onto-med.de/ontologies/gfo-persian-medicine-diseases.owl#Process",
+  "targetName" : "484",
+  "similarityScore" : 0.9353
+} ]

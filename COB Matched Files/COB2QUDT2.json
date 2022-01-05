@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://qudt.org/schema/qudt/Organization",
+  "targetName" : "139",
+  "similarityScore" : 0.9643
+} ]

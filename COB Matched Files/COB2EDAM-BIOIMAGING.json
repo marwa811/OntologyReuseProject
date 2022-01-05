@@ -1,0 +1,36 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000107",
+  "sourceName" : "20",
+  "targetURI" : "http://edamontology.org/operation_2945",
+  "targetName" : "385",
+  "similarityScore" : 0.7755
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://edamontology.org/operation_0004",
+  "targetName" : "212",
+  "similarityScore" : 0.7708
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000120",
+  "sourceName" : "49",
+  "targetURI" : "http://edamontology.org/data_Image",
+  "targetName" : "272",
+  "similarityScore" : 0.7445
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000013",
+  "sourceName" : "22",
+  "targetURI" : "http://edamontology.org/topic______Molecular_Imaging",
+  "targetName" : "287",
+  "similarityScore" : 0.6627
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000010",
+  "sourceName" : "33",
+  "targetURI" : "http://edamontology.org/topic_0611",
+  "targetName" : "178",
+  "similarityScore" : 0.6007
+} ]

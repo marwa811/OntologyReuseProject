@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://www.shojaee.com/shr/shr.owl#Protein",
+  "targetName" : "114",
+  "similarityScore" : 0.9569
+} ]

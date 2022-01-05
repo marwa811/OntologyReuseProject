@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000073",
+  "sourceName" : "69",
+  "targetURI" : "http://scdontology.h3abionet.org/ontology/SCDO_0001343",
+  "targetName" : "239",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://scdontology.h3abionet.org/ontology/SCDO_1000253",
+  "targetName" : "329",
+  "similarityScore" : 0.6828
+} ]

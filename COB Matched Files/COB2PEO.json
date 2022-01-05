@@ -1,0 +1,22 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://paige.ctegd.uga.edu/ParasiteLifecycle.owl#organism",
+  "targetName" : "221",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://knoesis.wright.edu/provenir/provenir.owl#process",
+  "targetName" : "192",
+  "similarityScore" : 0.949
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000049",
+  "sourceName" : "43",
+  "targetURI" : "http://knoesis.wright.edu/ParasiteExperiment.owl#nucleic_acid",
+  "targetName" : "223",
+  "similarityScore" : 0.6457
+} ]

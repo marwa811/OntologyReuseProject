@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000073",
+  "sourceName" : "69",
+  "targetURI" : "http://vocabularies.wikipathways.org/wp#GeneProduct",
+  "targetName" : "93",
+  "similarityScore" : 0.9605
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://vocabularies.wikipathways.org/wp#Protein",
+  "targetName" : "101",
+  "similarityScore" : 0.9306
+} ]

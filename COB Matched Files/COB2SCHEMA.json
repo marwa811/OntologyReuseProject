@@ -1,0 +1,43 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000003",
+  "sourceName" : "35",
+  "targetURI" : "http://schema.org/Mass",
+  "targetName" : "219",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://schema.org/Role",
+  "targetName" : "167",
+  "similarityScore" : 0.9633
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://schema.org/Organization",
+  "targetName" : "485",
+  "similarityScore" : 0.9457
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000113",
+  "sourceName" : "55",
+  "targetURI" : "http://schema.org/PlanAction",
+  "targetName" : "581",
+  "similarityScore" : 0.6578
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000102",
+  "sourceName" : "5",
+  "targetURI" : "http://schema.org/DataFeedItem",
+  "targetName" : "471",
+  "similarityScore" : 0.6198
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://schema.org/Quantity",
+  "targetName" : "355",
+  "similarityScore" : 0.6045
+} ]

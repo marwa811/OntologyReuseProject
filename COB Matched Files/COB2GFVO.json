@@ -1,0 +1,43 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "https://www.codamono.com/biointerchange/gfvo#Cell",
+  "targetName" : "184",
+  "similarityScore" : 0.9639
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "https://www.codamono.com/biointerchange/gfvo#MaterialEntity",
+  "targetName" : "91",
+  "similarityScore" : 0.9467
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "https://www.codamono.com/biointerchange/gfvo#Quality",
+  "targetName" : "98",
+  "similarityScore" : 0.9454
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "https://www.codamono.com/biointerchange/gfvo#Process",
+  "targetName" : "127",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "https://www.codamono.com/biointerchange/gfvo#ProteinSequence",
+  "targetName" : "119",
+  "similarityScore" : 0.6236
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000069",
+  "sourceName" : "4",
+  "targetURI" : "https://www.codamono.com/biointerchange/gfvo#InformationContentEntity",
+  "targetName" : "181",
+  "similarityScore" : 0.6
+} ]

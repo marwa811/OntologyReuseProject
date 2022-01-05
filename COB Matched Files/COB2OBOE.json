@@ -1,0 +1,22 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000004",
+  "sourceName" : "41",
+  "targetURI" : "http://ecoinformatics.org/oboe/oboe.1.2/oboe-characteristics.owl#Charge",
+  "targetName" : "121",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000502",
+  "sourceName" : "9",
+  "targetURI" : "http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic",
+  "targetName" : "219",
+  "similarityScore" : 0.9423
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000003",
+  "sourceName" : "35",
+  "targetURI" : "http://ecoinformatics.org/oboe/oboe.1.2/oboe-characteristics.owl#Mass",
+  "targetName" : "362",
+  "similarityScore" : 0.9306
+} ]

@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2018/1/ProstateCancer.owl#Pro",
+  "targetName" : "293",
+  "similarityScore" : 0.7896
+} ]

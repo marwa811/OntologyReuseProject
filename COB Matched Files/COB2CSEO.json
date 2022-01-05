@@ -1,0 +1,113 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000111",
+  "sourceName" : "60",
+  "targetURI" : "http://www.ifomis.org/snap#Disposition",
+  "targetName" : "5457",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://www.ifomis.org/snap#Role",
+  "targetName" : "17101",
+  "similarityScore" : 0.9572
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://www.ifomis.org/span#Process",
+  "targetName" : "2733",
+  "similarityScore" : 0.9465
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://www.ifomis.org/snap#MaterialEntity",
+  "targetName" : "13606",
+  "similarityScore" : 0.9415
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000057",
+  "sourceName" : "23",
+  "targetURI" : "http://www.ifomis.org/snap#Site",
+  "targetName" : "2019",
+  "similarityScore" : 0.9384
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://scai.fraunhofer.de/CSEO#Biological_Process",
+  "targetName" : "19205",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000003",
+  "sourceName" : "35",
+  "targetURI" : "http://scai.fraunhofer.de/CSEO#Mass",
+  "targetName" : "19045",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 7,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000107",
+  "sourceName" : "20",
+  "targetURI" : "http://scai.fraunhofer.de/CSEO#Assay",
+  "targetName" : "19471",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 8,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Organisms",
+  "targetName" : "10785",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 9,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://purl.obolibrary.org/obo/ExO_0000046",
+  "targetName" : "19794",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 10,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000107",
+  "sourceName" : "20",
+  "targetURI" : "http://scai.fraunhofer.de/CSEO#Assays",
+  "targetName" : "10143",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 11,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://scai.fraunhofer.de/CSEO#CSEO_00000909",
+  "targetName" : "20017",
+  "similarityScore" : 0.8657
+}, {
+  "mappingId" : 12,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000107",
+  "sourceName" : "20",
+  "targetURI" : "http://scai.fraunhofer.de/CSEO#CSEO_00001358",
+  "targetName" : "6211",
+  "similarityScore" : 0.7896
+}, {
+  "mappingId" : 13,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000121",
+  "sourceName" : "36",
+  "targetURI" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Measure",
+  "targetName" : "16635",
+  "similarityScore" : 0.7802
+}, {
+  "mappingId" : 14,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000103",
+  "sourceName" : "11",
+  "targetURI" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Nucleus",
+  "targetName" : "10644",
+  "similarityScore" : 0.7802
+}, {
+  "mappingId" : 15,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000004",
+  "sourceName" : "41",
+  "targetURI" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#CHARGE_Syndrome",
+  "targetName" : "2144",
+  "similarityScore" : 0.6227
+} ]

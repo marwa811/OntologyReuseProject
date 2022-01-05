@@ -1,0 +1,43 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000011",
+  "sourceName" : "26",
+  "targetURI" : "http://bioportal/bioontology.org/ontologies/HIVO0004#Atom",
+  "targetName" : "1410",
+  "similarityScore" : 0.9639
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000103",
+  "sourceName" : "11",
+  "targetURI" : "http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLClass_00000011684763306998",
+  "targetName" : "329",
+  "similarityScore" : 0.9232
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLClass_00000012046554187473",
+  "targetName" : "1392",
+  "similarityScore" : 0.9072
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLClass_00000002522031359432",
+  "targetName" : "144",
+  "similarityScore" : 0.9072
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000020",
+  "sourceName" : "13",
+  "targetURI" : "http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLClass_00000002635488548335",
+  "targetName" : "169",
+  "similarityScore" : 0.639
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000049",
+  "sourceName" : "43",
+  "targetURI" : "http://www.semanticweb.org/owner/ontologies/2014/2/HIVandAIDS.owl#OWLClass_00000013800072822174",
+  "targetName" : "100",
+  "similarityScore" : 0.6148
+} ]

@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000120",
+  "sourceName" : "49",
+  "targetURI" : "http://www.owl-ontologies.com/assert.owl#Data_representation",
+  "targetName" : "181",
+  "similarityScore" : 0.8375
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000064",
+  "sourceName" : "14",
+  "targetURI" : "http://www.owl-ontologies.com/assert.owl#Prolonged_disease_course",
+  "targetName" : "88",
+  "similarityScore" : 0.6641
+} ]

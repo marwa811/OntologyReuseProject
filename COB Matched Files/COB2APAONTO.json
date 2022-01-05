@@ -1,0 +1,50 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000103",
+  "sourceName" : "11",
+  "targetURI" : "http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cell_Nucleus",
+  "targetName" : "5527",
+  "similarityScore" : 0.9614
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000064",
+  "sourceName" : "14",
+  "targetURI" : "http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Disease_Course",
+  "targetName" : "1442",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000061",
+  "sourceName" : "12",
+  "targetURI" : "http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Information",
+  "targetName" : "4227",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000109",
+  "sourceName" : "19",
+  "targetURI" : "http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Experimentation",
+  "targetName" : "1740",
+  "similarityScore" : 0.8742
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000111",
+  "sourceName" : "60",
+  "targetURI" : "http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Personality",
+  "targetName" : "3236",
+  "similarityScore" : 0.8648
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000116",
+  "sourceName" : "61",
+  "targetURI" : "http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Cell_Membrane",
+  "targetName" : "630",
+  "similarityScore" : 0.799
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000061",
+  "sourceName" : "12",
+  "targetURI" : "http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Messages",
+  "targetName" : "2707",
+  "similarityScore" : 0.622
+} ]

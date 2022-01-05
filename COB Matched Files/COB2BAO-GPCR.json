@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000112",
+  "sourceName" : "54",
+  "targetURI" : "http://www.bioassayontology.org/bao#BAO_0200453",
+  "targetName" : "871",
+  "similarityScore" : 0.753
+} ]

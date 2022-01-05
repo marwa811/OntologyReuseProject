@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000013",
+  "sourceName" : "22",
+  "targetURI" : "https://pat.nichd.nih.gov/patgeneticvariance/GV.03.08",
+  "targetName" : "129",
+  "similarityScore" : 0.6
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000049",
+  "sourceName" : "43",
+  "targetURI" : "https://pat.nichd.nih.gov/patgeneticvariance/GV.05",
+  "targetName" : "106",
+  "similarityScore" : 0.6
+} ]

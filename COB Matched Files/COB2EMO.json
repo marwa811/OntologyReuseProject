@@ -1,0 +1,22 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000011",
+  "sourceName" : "26",
+  "targetURI" : "http://purl.obolibrary.org/obo/CHEBI_33250",
+  "targetName" : "138",
+  "similarityScore" : 0.9346
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2011/1/14/EMO.owl/EMO_00124",
+  "targetName" : "167",
+  "similarityScore" : 0.9115
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000049",
+  "sourceName" : "43",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2011/1/14/EMO.owl/EMO_00048",
+  "targetName" : "95",
+  "similarityScore" : 0.6
+} ]

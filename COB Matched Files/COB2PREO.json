@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000502",
+  "sourceName" : "9",
+  "targetURI" : "http://presence-ontology.org/ontology/Characteristic",
+  "targetName" : "130",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://presence-ontology.org/ontology/Quality",
+  "targetName" : "261",
+  "similarityScore" : 0.9524
+} ]

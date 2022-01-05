@@ -1,0 +1,29 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000101",
+  "sourceName" : "2",
+  "targetURI" : "http://www.cidoc-crm.org/cidoc-crm/E31_Document",
+  "targetName" : "169",
+  "similarityScore" : 0.8366
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000057",
+  "sourceName" : "23",
+  "targetURI" : "http://www.cidoc-crm.org/cidoc-crm/E27_Site",
+  "targetName" : "134",
+  "similarityScore" : 0.8366
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000061",
+  "sourceName" : "12",
+  "targetURI" : "http://www.cidoc-crm.org/cidoc-crm/E66_Formation",
+  "targetName" : "139",
+  "similarityScore" : 0.6362
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000121",
+  "sourceName" : "36",
+  "targetURI" : "http://www.cidoc-crm.org/cidoc-crm/E16_Measurement",
+  "targetName" : "103",
+  "similarityScore" : 0.616
+} ]

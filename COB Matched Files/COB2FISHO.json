@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000013",
+  "sourceName" : "22",
+  "targetURI" : "http://bioportal.bioontology.org/ontologies/FISHO#FISHO_0000086",
+  "targetName" : "362",
+  "similarityScore" : 0.6627
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000056",
+  "sourceName" : "29",
+  "targetURI" : "http://bioportal.bioontology.org/ontologies/FISHO#ZFA_0100000",
+  "targetName" : "350",
+  "similarityScore" : 0.6
+} ]

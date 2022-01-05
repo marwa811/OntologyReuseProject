@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://www.limics.fr/ontologies/ontolurgences#Role",
+  "targetName" : "1265",
+  "similarityScore" : 0.9572
+} ]

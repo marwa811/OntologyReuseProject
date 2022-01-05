@@ -288,7 +288,6 @@ public boolean testMappingExistence(OWLClass class1, OWLClass class2, List<AMLMa
 				classInfo.getConceptLabel(),classInfo.getConceptSynonyms(),classInfo.getConceptDef(),
 				classInfo.getConceptSubClasses(), classInfo.getConceptSubClassesIds()); 
 		}
-		System.out.println("**The Preferred Label is :        " +classInfo.getConceptLabel());
 		//getClassDef(String classURI, String ontologyID)
 		/*System.out.println("The concept Context Matching Score is: "+ conceptContextMatchingScore );
 		System.out.println("The concept Semantic Richness Score is: "+ conceptSemanticRichnessScore);

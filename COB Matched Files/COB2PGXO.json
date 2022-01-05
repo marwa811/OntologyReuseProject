@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality",
+  "targetName" : "91",
+  "similarityScore" : 0.9643
+} ]

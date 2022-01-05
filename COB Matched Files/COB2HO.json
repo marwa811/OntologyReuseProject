@@ -1,0 +1,22 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://www.univalle.edu.co/ontologies/Tissue#Celula",
+  "targetName" : "174",
+  "similarityScore" : 0.8742
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000009",
+  "sourceName" : "51",
+  "targetURI" : "http://www.univalle.edu.co/ontologies/Tissue#TejidoNerviosoComponenteNeurona",
+  "targetName" : "256",
+  "similarityScore" : 0.6688
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://www.univalle.edu.co/ontologies/organ#Organo",
+  "targetName" : "223",
+  "similarityScore" : 0.609
+} ]

@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000004",
+  "sourceName" : "41",
+  "targetURI" : "http://www.co-ode.org/ontologies/amino-acid/2006/05/18/amino-acid.owl#Charge",
+  "targetName" : "128",
+  "similarityScore" : 0.9569
+} ]

@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000502",
+  "sourceName" : "9",
+  "targetURI" : "http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#Characteristic",
+  "targetName" : "98",
+  "similarityScore" : 0.9306
+} ]

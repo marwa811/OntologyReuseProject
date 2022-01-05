@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000069",
+  "sourceName" : "4",
+  "targetURI" : "http://whistl.uwaterloo.ca/heio.owl#OWLClass_000000TPAP1016",
+  "targetName" : "150",
+  "similarityScore" : 0.6
+} ]

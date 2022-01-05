@@ -1,0 +1,78 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://www.bootstrep.eu/ontology/GRO#Process",
+  "targetName" : "519",
+  "similarityScore" : 0.9641
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://www.bootstrep.eu/ontology/GRO#Quality",
+  "targetName" : "454",
+  "similarityScore" : 0.9632
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://www.bootstrep.eu/ontology/GRO#Cell",
+  "targetName" : "341",
+  "similarityScore" : 0.9586
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://www.bootstrep.eu/ontology/GRO#Organism",
+  "targetName" : "391",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000011",
+  "sourceName" : "26",
+  "targetURI" : "http://www.bootstrep.eu/ontology/GRO#Atom",
+  "targetName" : "233",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000112",
+  "sourceName" : "54",
+  "targetURI" : "http://www.bootstrep.eu/ontology/GRO#Function",
+  "targetName" : "277",
+  "similarityScore" : 0.9527
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000073",
+  "sourceName" : "69",
+  "targetURI" : "http://www.bootstrep.eu/ontology/GRO#GeneProduct",
+  "targetName" : "251",
+  "similarityScore" : 0.9417
+}, {
+  "mappingId" : 7,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://www.bootstrep.eu/ontology/GRO#Protein",
+  "targetName" : "378",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 8,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://www.bootstrep.eu/ontology/GRO#PhysiologicalProcess",
+  "targetName" : "476",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 9,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000080",
+  "sourceName" : "46",
+  "targetURI" : "http://www.bootstrep.eu/ontology/GRO#ComplexMolecularEntity",
+  "targetName" : "201",
+  "similarityScore" : 0.6763
+}, {
+  "mappingId" : 10,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000049",
+  "sourceName" : "43",
+  "targetURI" : "http://www.bootstrep.eu/ontology/GRO#NucleicAcid",
+  "targetName" : "561",
+  "similarityScore" : 0.623
+} ]

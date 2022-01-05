@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://www.semanticweb.org/philshields/ontologies/2015/4/Administrator.owl#Quality",
+  "targetName" : "93",
+  "similarityScore" : 0.9643
+} ]

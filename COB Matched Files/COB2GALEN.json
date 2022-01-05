@@ -1,0 +1,113 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://www.co-ode.org/ontologies/galen#Protein",
+  "targetName" : "22513",
+  "similarityScore" : 0.9609
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000107",
+  "sourceName" : "20",
+  "targetURI" : "http://www.co-ode.org/ontologies/galen#Assay",
+  "targetName" : "10804",
+  "similarityScore" : 0.9603
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000061",
+  "sourceName" : "12",
+  "targetURI" : "http://www.co-ode.org/ontologies/galen#Information",
+  "targetName" : "9366",
+  "similarityScore" : 0.9598
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000113",
+  "sourceName" : "55",
+  "targetURI" : "http://www.co-ode.org/ontologies/galen#Plan",
+  "targetName" : "10254",
+  "similarityScore" : 0.9572
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://www.co-ode.org/ontologies/galen#Cell",
+  "targetName" : "10780",
+  "similarityScore" : 0.9564
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000103",
+  "sourceName" : "11",
+  "targetURI" : "http://www.co-ode.org/ontologies/galen#CellNucleus",
+  "targetName" : "4864",
+  "similarityScore" : 0.9511
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://www.co-ode.org/ontologies/galen#BiologicalProcess",
+  "targetName" : "13921",
+  "similarityScore" : 0.949
+}, {
+  "mappingId" : 7,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://www.co-ode.org/ontologies/galen#Quality",
+  "targetName" : "4104",
+  "similarityScore" : 0.9419
+}, {
+  "mappingId" : 8,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://www.co-ode.org/ontologies/galen#Organism",
+  "targetName" : "22262",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 9,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://www.co-ode.org/ontologies/galen#Role",
+  "targetName" : "6417",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 10,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000003",
+  "sourceName" : "35",
+  "targetURI" : "http://www.co-ode.org/ontologies/galen#mass",
+  "targetName" : "8757",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 11,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000003",
+  "sourceName" : "35",
+  "targetURI" : "http://www.co-ode.org/ontologies/galen#Mass",
+  "targetName" : "10890",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 12,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://www.co-ode.org/ontologies/galen#BodyStructure",
+  "targetName" : "7868",
+  "similarityScore" : 0.846
+}, {
+  "mappingId" : 13,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000020",
+  "sourceName" : "13",
+  "targetURI" : "http://www.co-ode.org/ontologies/galen#CellularStructure",
+  "targetName" : "8325",
+  "similarityScore" : 0.6872
+}, {
+  "mappingId" : 14,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000064",
+  "sourceName" : "14",
+  "targetURI" : "http://www.co-ode.org/ontologies/galen#DiseaseCourseStage",
+  "targetName" : "7964",
+  "similarityScore" : 0.6677
+}, {
+  "mappingId" : 15,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000049",
+  "sourceName" : "43",
+  "targetURI" : "http://www.co-ode.org/ontologies/galen#NucleicAcid",
+  "targetName" : "13105",
+  "similarityScore" : 0.6033
+} ]

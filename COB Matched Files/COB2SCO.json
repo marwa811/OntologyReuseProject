@@ -1,0 +1,351 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000102",
+  "sourceName" : "5",
+  "targetURI" : "http://semanticscience.org/resource/DataItem",
+  "targetName" : "1075",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://semanticscience.org/resource/Protein",
+  "targetName" : "3326",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000112",
+  "sourceName" : "54",
+  "targetURI" : "http://semanticscience.org/resource/Function",
+  "targetName" : "2605",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000113",
+  "sourceName" : "55",
+  "targetURI" : "http://www.w3.org/ns/prov#Plan",
+  "targetName" : "3610",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000113",
+  "sourceName" : "55",
+  "targetURI" : "http://semanticscience.org/resource/Plan",
+  "targetName" : "2863",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://semanticscience.org/resource/Organism",
+  "targetName" : "1601",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://semanticscience.org/resource/Quality",
+  "targetName" : "2937",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 7,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000077",
+  "sourceName" : "57",
+  "targetURI" : "http://semanticscience.org/resource/ActionSpecification",
+  "targetName" : "1661",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 8,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://semanticscience.org/resource/Role",
+  "targetName" : "1874",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 9,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://www.w3.org/ns/prov#Role",
+  "targetName" : "2278",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 10,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000101",
+  "sourceName" : "2",
+  "targetURI" : "http://semanticscience.org/resource/Document",
+  "targetName" : "919",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 11,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000003",
+  "sourceName" : "35",
+  "targetURI" : "http://semanticscience.org/resource/Mass",
+  "targetName" : "621",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 12,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://semanticscience.org/resource/MaterialEntity",
+  "targetName" : "1890",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 13,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://semanticscience.org/resource/Cell",
+  "targetName" : "798",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 14,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000108",
+  "sourceName" : "21",
+  "targetURI" : "http://semanticscience.org/resource/DataTransformation",
+  "targetName" : "2857",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 15,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000118",
+  "sourceName" : "70",
+  "targetURI" : "http://semanticscience.org/resource/CellularOrganism",
+  "targetName" : "833",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 16,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://semanticscience.org/resource/Process",
+  "targetName" : "2239",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 17,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000057",
+  "sourceName" : "23",
+  "targetURI" : "http://semanticscience.org/resource/Site",
+  "targetName" : "1495",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 18,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000111",
+  "sourceName" : "60",
+  "targetURI" : "http://semanticscience.org/resource/Disposition",
+  "targetName" : "793",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 19,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000107",
+  "sourceName" : "20",
+  "targetURI" : "http://semanticscience.org/resource/Assay",
+  "targetName" : "283",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 20,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://semanticscience.org/resource/Organization",
+  "targetName" : "1252",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 21,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://www.w3.org/ns/prov#Organization",
+  "targetName" : "2058",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 22,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000109",
+  "sourceName" : "19",
+  "targetURI" : "http://semanticscience.org/resource/Investigation",
+  "targetName" : "2701",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 23,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000011",
+  "sourceName" : "26",
+  "targetURI" : "http://semanticscience.org/resource/Atom",
+  "targetName" : "2646",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 24,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000102",
+  "sourceName" : "5",
+  "targetURI" : "http://semanticscience.org/resource/SIO_000069",
+  "targetName" : "760",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 25,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://semanticscience.org/resource/SIO_010043",
+  "targetName" : "1817",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 26,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000112",
+  "sourceName" : "54",
+  "targetURI" : "http://semanticscience.org/resource/SIO_000017",
+  "targetName" : "988",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 27,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000113",
+  "sourceName" : "55",
+  "targetURI" : "http://semanticscience.org/resource/SIO_000076",
+  "targetName" : "736",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 28,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://semanticscience.org/resource/SIO_010000",
+  "targetName" : "1884",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 29,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://semanticscience.org/resource/SIO_000005",
+  "targetName" : "1015",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 30,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://purl.obolibrary.org/obo/PATO_0000001",
+  "targetName" : "1644",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 31,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000077",
+  "sourceName" : "57",
+  "targetURI" : "http://semanticscience.org/resource/SIO_000091",
+  "targetName" : "846",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 32,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://semanticscience.org/resource/SIO_000016",
+  "targetName" : "986",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 33,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000101",
+  "sourceName" : "2",
+  "targetURI" : "http://semanticscience.org/resource/SIO_000148",
+  "targetName" : "3278",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 34,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000003",
+  "sourceName" : "35",
+  "targetURI" : "http://semanticscience.org/resource/SIO_000279",
+  "targetName" : "3631",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 35,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://semanticscience.org/resource/SIO_000004",
+  "targetName" : "1032",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 36,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://purl.obolibrary.org/obo/CL_0000000",
+  "targetName" : "656",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 37,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://semanticscience.org/resource/SIO_010001",
+  "targetName" : "1885",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 38,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000108",
+  "sourceName" : "21",
+  "targetURI" : "http://semanticscience.org/resource/SIO_000594",
+  "targetName" : "1390",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 39,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000118",
+  "sourceName" : "70",
+  "targetURI" : "http://semanticscience.org/resource/SIO_010377",
+  "targetName" : "3287",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 40,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://semanticscience.org/resource/SIO_000006",
+  "targetName" : "1017",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 41,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000057",
+  "sourceName" : "23",
+  "targetURI" : "http://semanticscience.org/resource/SIO_000019",
+  "targetName" : "985",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 42,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000111",
+  "sourceName" : "60",
+  "targetURI" : "http://semanticscience.org/resource/SIO_000014",
+  "targetName" : "1003",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 43,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000107",
+  "sourceName" : "20",
+  "targetURI" : "http://semanticscience.org/resource/SIO_001007",
+  "targetName" : "1453",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 44,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://semanticscience.org/resource/SIO_000012",
+  "targetName" : "1008",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 45,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000109",
+  "sourceName" : "19",
+  "targetURI" : "http://semanticscience.org/resource/SIO_000747",
+  "targetName" : "112",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 46,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000011",
+  "sourceName" : "26",
+  "targetURI" : "http://semanticscience.org/resource/SIO_010044",
+  "targetName" : "1818",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 47,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000013",
+  "sourceName" : "22",
+  "targetURI" : "http://semanticscience.org/resource/MolecularEntityRole",
+  "targetName" : "1074",
+  "similarityScore" : 0.685
+}, {
+  "mappingId" : 48,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000020",
+  "sourceName" : "13",
+  "targetURI" : "http://semanticscience.org/resource/SubcellularEntity",
+  "targetName" : "3197",
+  "similarityScore" : 0.6071
+}, {
+  "mappingId" : 49,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000033",
+  "sourceName" : "56",
+  "targetURI" : "http://semanticscience.org/resource/RealizableEntity",
+  "targetName" : "3517",
+  "similarityScore" : 0.6071
+} ]

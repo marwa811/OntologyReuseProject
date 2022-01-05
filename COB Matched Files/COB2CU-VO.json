@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology#Organism",
+  "targetName" : "89",
+  "similarityScore" : 0.9569
+} ]

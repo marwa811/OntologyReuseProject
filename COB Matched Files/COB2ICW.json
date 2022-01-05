@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000065",
+  "sourceName" : "16",
+  "targetURI" : "http://webprotege.stanford.edu/R9Z6mAfpQTw0jZFPrx7HzF5",
+  "targetName" : "162",
+  "similarityScore" : 0.7868
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000122",
+  "sourceName" : "38",
+  "targetURI" : "http://webprotege.stanford.edu/RCrqbAnvafgoUTIpJrL0Pow",
+  "targetName" : "152",
+  "similarityScore" : 0.6
+} ]

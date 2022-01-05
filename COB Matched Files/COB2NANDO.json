@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000004",
+  "sourceName" : "41",
+  "targetURI" : "http://nanbyodata.jp/ontology/nando#2200972",
+  "targetName" : "1545",
+  "similarityScore" : 0.6849
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://nanbyodata.jp/ontology/nando#2100197",
+  "targetName" : "1444",
+  "similarityScore" : 0.6164
+} ]

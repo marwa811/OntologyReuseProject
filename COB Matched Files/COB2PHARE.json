@@ -1,0 +1,92 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000073",
+  "sourceName" : "69",
+  "targetURI" : "http://www.stanford.edu/~coulet/phare.owl#GeneProduct",
+  "targetName" : "191",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://www.stanford.edu/~coulet/phare.owl#Protein",
+  "targetName" : "216",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://www.stanford.edu/~coulet/phare.owl#Organism",
+  "targetName" : "205",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://www.stanford.edu/~coulet/phare.owl#Cell",
+  "targetName" : "276",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000111",
+  "sourceName" : "60",
+  "targetURI" : "http://www.stanford.edu/~coulet/phare.owl#DrugDisposition",
+  "targetName" : "310",
+  "similarityScore" : 0.8648
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000502",
+  "sourceName" : "9",
+  "targetURI" : "http://www.stanford.edu/~coulet/phare.owl#GeneProductProperty",
+  "targetName" : "315",
+  "similarityScore" : 0.8554
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000057",
+  "sourceName" : "23",
+  "targetURI" : "http://www.stanford.edu/~coulet/phare.owl#DrugTarget",
+  "targetName" : "137",
+  "similarityScore" : 0.846
+}, {
+  "mappingId" : 7,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000112",
+  "sourceName" : "54",
+  "targetURI" : "http://www.stanford.edu/~coulet/phare.owl#PhenotypeMechanism",
+  "targetName" : "104",
+  "similarityScore" : 0.8366
+}, {
+  "mappingId" : 8,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000107",
+  "sourceName" : "20",
+  "targetURI" : "http://www.stanford.edu/~coulet/phare.owl#GeneAnalysis",
+  "targetName" : "124",
+  "similarityScore" : 0.8178
+}, {
+  "mappingId" : 9,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000109",
+  "sourceName" : "19",
+  "targetURI" : "http://www.stanford.edu/~coulet/phare.owl#PhenotypeAnalysis",
+  "targetName" : "287",
+  "similarityScore" : 0.8178
+}, {
+  "mappingId" : 10,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://www.stanford.edu/~coulet/phare.owl#GeneOrGeneProductFunction",
+  "targetName" : "195",
+  "similarityScore" : 0.7144
+}, {
+  "mappingId" : 11,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000003",
+  "sourceName" : "35",
+  "targetURI" : "http://www.stanford.edu/~coulet/phare.owl#DrugDose",
+  "targetName" : "258",
+  "similarityScore" : 0.6204
+}, {
+  "mappingId" : 12,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000035",
+  "sourceName" : "52",
+  "targetURI" : "http://www.stanford.edu/~coulet/phare.owl#Analysis",
+  "targetName" : "260",
+  "similarityScore" : 0.6133
+} ]

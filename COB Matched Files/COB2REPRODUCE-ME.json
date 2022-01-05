@@ -1,0 +1,64 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000107",
+  "sourceName" : "20",
+  "targetURI" : "https://w3id.org/reproduceme#Assay",
+  "targetName" : "265",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://www.w3.org/ns/prov#Organization",
+  "targetName" : "276",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "https://w3id.org/reproduceme#Protein",
+  "targetName" : "272",
+  "similarityScore" : 0.9614
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000112",
+  "sourceName" : "54",
+  "targetURI" : "https://w3id.org/reproduceme#Function",
+  "targetName" : "139",
+  "similarityScore" : 0.9581
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000113",
+  "sourceName" : "55",
+  "targetURI" : "http://purl.org/net/p-plan#Plan",
+  "targetName" : "295",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "https://w3id.org/reproduceme#Organism",
+  "targetName" : "290",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://www.w3.org/ns/prov#Role",
+  "targetName" : "243",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 7,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "https://w3id.org/reproduceme#Cell",
+  "targetName" : "107",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 8,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000122",
+  "sourceName" : "38",
+  "targetURI" : "https://w3id.org/reproduceme#PhysicalSizeX",
+  "targetName" : "387",
+  "similarityScore" : 0.6
+} ]

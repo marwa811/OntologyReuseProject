@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000013",
+  "sourceName" : "22",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2012/0/Ontology1325521724189.owl#Molecular_Readouts",
+  "targetName" : "420",
+  "similarityScore" : 0.6627
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2012/0/Ontology1325521724189.owl#Biological_Readouts",
+  "targetName" : "415",
+  "similarityScore" : 0.6627
+} ]

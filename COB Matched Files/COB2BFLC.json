@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://id.loc.gov/ontologies/bibframe/Organization",
+  "targetName" : "244",
+  "similarityScore" : 0.9625
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://id.loc.gov/ontologies/bibframe/Role",
+  "targetName" : "95",
+  "similarityScore" : 0.9569
+} ]

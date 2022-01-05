@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://www.owl-ontologies.com/RCTOntology.owl#MaterialMethods",
+  "targetName" : "110",
+  "similarityScore" : 0.698
+} ]

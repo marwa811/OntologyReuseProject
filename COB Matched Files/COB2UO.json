@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000061",
+  "sourceName" : "12",
+  "targetURI" : "http://purl.obolibrary.org/obo/UO_0000231",
+  "targetName" : "232",
+  "similarityScore" : 0.7249
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000003",
+  "sourceName" : "35",
+  "targetURI" : "http://purl.obolibrary.org/obo/UO_0000002",
+  "targetName" : "270",
+  "similarityScore" : 0.7202
+} ]

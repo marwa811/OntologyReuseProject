@@ -1,0 +1,36 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2010/3/Ontology1271664172453.owl#protein",
+  "targetName" : "382",
+  "similarityScore" : 0.9493
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2010/3/Ontology1271664172453.owl#biological_activity",
+  "targetName" : "275",
+  "similarityScore" : 0.8375
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2010/3/Ontology1271664172453.owl#Independent_Continuant_Entity",
+  "targetName" : "452",
+  "similarityScore" : 0.7106
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000013",
+  "sourceName" : "22",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2010/3/Ontology1271664172453.owl#Molecular_volume",
+  "targetName" : "448",
+  "similarityScore" : 0.698
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000066",
+  "sourceName" : "7",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2010/3/Ontology1271664172453.owl#Quantum_Chemical_Descriptors",
+  "targetName" : "343",
+  "similarityScore" : 0.6
+} ]

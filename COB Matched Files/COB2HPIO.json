@@ -1,0 +1,85 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/span#Process",
+  "targetName" : "149",
+  "similarityScore" : 0.9645
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000112",
+  "sourceName" : "54",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#Function",
+  "targetName" : "335",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000057",
+  "sourceName" : "23",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#Site",
+  "targetName" : "269",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#MaterialEntity",
+  "targetName" : "336",
+  "similarityScore" : 0.9519
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000001",
+  "targetName" : "299",
+  "similarityScore" : 0.9355
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#Quality",
+  "targetName" : "180",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://www.ifomis.org/bfo/1.1/snap#Role",
+  "targetName" : "123",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 7,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000064",
+  "sourceName" : "14",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000163",
+  "targetName" : "229",
+  "similarityScore" : 0.9204
+}, {
+  "mappingId" : 8,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000013",
+  "sourceName" : "22",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000208",
+  "targetName" : "352",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 9,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000159",
+  "targetName" : "260",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 10,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000118",
+  "sourceName" : "70",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000002",
+  "targetName" : "305",
+  "similarityScore" : 0.7952
+}, {
+  "mappingId" : 11,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000122",
+  "sourceName" : "38",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000200",
+  "targetName" : "354",
+  "similarityScore" : 0.6
+} ]

@@ -1,0 +1,29 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://purl.bioontology.org/ontology/STY/T001",
+  "targetName" : "281",
+  "similarityScore" : 0.94
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://purl.bioontology.org/ontology/STY/T025",
+  "targetName" : "221",
+  "similarityScore" : 0.94
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000057",
+  "sourceName" : "23",
+  "targetURI" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C37901",
+  "targetName" : "335",
+  "similarityScore" : 0.9352
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://purl.bioontology.org/ontology/STY/T092",
+  "targetName" : "674",
+  "similarityScore" : 0.9352
+} ]

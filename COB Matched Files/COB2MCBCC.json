@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://purl.obolibrary.org/obo/MCBCC_0000015#Protein",
+  "targetName" : "171",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000056",
+  "sourceName" : "29",
+  "targetURI" : "http://sig.biostr.washington.edu/fma3.0#AnatomicalEntity",
+  "targetName" : "388",
+  "similarityScore" : 0.6243
+} ]

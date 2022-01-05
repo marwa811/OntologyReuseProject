@@ -1,0 +1,29 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://www.fao.org/aims/aos/cwr.owl#Organism",
+  "targetName" : "147",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000067",
+  "sourceName" : "8",
+  "targetURI" : "http://www.fao.org/aims/aos/cwr.owl#Ecosystem",
+  "targetName" : "95",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000065",
+  "sourceName" : "16",
+  "targetURI" : "http://purl.obolibrary.org/obo/ENVO_01000203",
+  "targetName" : "88",
+  "similarityScore" : 0.7952
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://cerrado.linkeddata.es/ecology/ccon#Biodiversity",
+  "targetName" : "156",
+  "similarityScore" : 0.6627
+} ]

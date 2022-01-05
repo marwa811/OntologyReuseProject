@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000109",
+  "sourceName" : "19",
+  "targetURI" : "http://opendata.inra.fr/ATOL/ATOL_0000844",
+  "targetName" : "1955",
+  "similarityScore" : 0.8366
+} ]

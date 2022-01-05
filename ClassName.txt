@@ -1,1 +1,1 @@
-oboe-core.owl|http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#Unit|https://data.bioontology.org/ontologies/ENM|http://purl.obolibrary.org/obo/OBI_0000272|
+COB.owl|http://purl.obolibrary.org/obo/COB_0000067|https://data.bioontology.org/ontologies/BOF|http://www.owl-ontologies.com/BiodiversityOntologyFull.owl#Ecosystem|

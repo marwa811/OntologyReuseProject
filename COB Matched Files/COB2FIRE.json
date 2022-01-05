@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000065",
+  "sourceName" : "16",
+  "targetURI" : "http://purl.obolibrary.org/obo/EnvironmentalCondition",
+  "targetName" : "126",
+  "similarityScore" : 0.8375
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000502",
+  "sourceName" : "9",
+  "targetURI" : "http://cerrado.linkeddata.es/ecology/fire#FireCharacteristic",
+  "targetName" : "114",
+  "similarityScore" : 0.6955
+} ]

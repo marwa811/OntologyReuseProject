@@ -1,0 +1,36 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://www.loa-cnr.it/ontologies/DnS#role",
+  "targetName" : "219",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#Process",
+  "targetName" : "175",
+  "similarityScore" : 0.9604
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#Organization",
+  "targetName" : "217",
+  "similarityScore" : 0.9506
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000109",
+  "sourceName" : "19",
+  "targetURI" : "https://contsys.org/concept/healthcare_investigation",
+  "targetName" : "205",
+  "similarityScore" : 0.7208
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000061",
+  "sourceName" : "12",
+  "targetURI" : "https://contsys.org/concept/healthcare_information",
+  "targetName" : "123",
+  "similarityScore" : 0.6525
+} ]

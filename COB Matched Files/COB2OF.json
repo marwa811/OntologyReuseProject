@@ -1,0 +1,36 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://www.owl-ontologies.com/Ontology1435740495.owl#Quality",
+  "targetName" : "238",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://www.owl-ontologies.com/Ontology1435740495.owl#Protein",
+  "targetName" : "180",
+  "similarityScore" : 0.9637
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://www.owl-ontologies.com/Ontology1435740495.owl#Process",
+  "targetName" : "135",
+  "similarityScore" : 0.9568
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://www.owl-ontologies.com/Ontology1435740495.owl#Material_entity",
+  "targetName" : "310",
+  "similarityScore" : 0.9534
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000031",
+  "sourceName" : "65",
+  "targetURI" : "http://www.owl-ontologies.com/Ontology1435740495.owl#Immaterial_entity",
+  "targetName" : "94",
+  "similarityScore" : 0.9502
+} ]

@@ -1,0 +1,22 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000073",
+  "sourceName" : "69",
+  "targetURI" : "http://purl.obolibrary.org/obo/HIO_0000252",
+  "targetName" : "309",
+  "similarityScore" : 0.9361
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000032",
+  "sourceName" : "67",
+  "targetURI" : "http://purl.obolibrary.org/obo/HIO_0000385",
+  "targetName" : "188",
+  "similarityScore" : 0.7952
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000004",
+  "sourceName" : "41",
+  "targetURI" : "http://purl.obolibrary.org/obo/HIO_0000025",
+  "targetName" : "173",
+  "similarityScore" : 0.6131
+} ]

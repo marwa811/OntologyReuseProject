@@ -1,0 +1,29 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://www.cea.fr/ontotoxnuc#Proteine",
+  "targetName" : "600",
+  "similarityScore" : 0.8742
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://www.cea.fr/ontotoxnuc#Organisme",
+  "targetName" : "305",
+  "similarityScore" : 0.8742
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://www.cea.fr/ontotoxnuc#Cellule",
+  "targetName" : "479",
+  "similarityScore" : 0.8742
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000049",
+  "sourceName" : "43",
+  "targetURI" : "http://www.cea.fr/ontotoxnuc#AcideNucleique",
+  "targetName" : "442",
+  "similarityScore" : 0.6008
+} ]

@@ -1,0 +1,29 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://edamontology.org/format_1208",
+  "targetName" : "1035",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000101",
+  "sourceName" : "2",
+  "targetURI" : "http://edamontology.org/data_2048",
+  "targetName" : "2374",
+  "similarityScore" : 0.8272
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://edamontology.org/operation_0004",
+  "targetName" : "2335",
+  "similarityScore" : 0.7708
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000112",
+  "sourceName" : "54",
+  "targetURI" : "http://edamontology.org/operation_0226",
+  "targetName" : "1544",
+  "similarityScore" : 0.7003
+} ]

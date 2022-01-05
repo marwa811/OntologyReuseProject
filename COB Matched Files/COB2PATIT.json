@@ -1,0 +1,22 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000018",
+  "sourceName" : "31",
+  "targetURI" : "https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.05",
+  "targetName" : "220",
+  "similarityScore" : 0.6627
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000013",
+  "sourceName" : "22",
+  "targetURI" : "https://pat.nichd.nih.gov/patinvestigativetechniques/IT.11.01",
+  "targetName" : "188",
+  "similarityScore" : 0.6
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000049",
+  "sourceName" : "43",
+  "targetURI" : "https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.02",
+  "targetName" : "213",
+  "similarityScore" : 0.6
+} ]

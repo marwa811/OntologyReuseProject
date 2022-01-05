@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2012/11/abnormalities.owl#phenodb:2227",
+  "targetName" : "4295",
+  "similarityScore" : 0.8109
+} ]

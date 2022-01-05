@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000003",
+  "sourceName" : "35",
+  "targetURI" : "http://mimi.case.edu/ontologies/2009/1/UnitsOntology#mass_unit",
+  "targetName" : "115",
+  "similarityScore" : 0.6507
+} ]

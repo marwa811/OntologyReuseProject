@@ -1,0 +1,64 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000113",
+  "sourceName" : "55",
+  "targetURI" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan",
+  "targetName" : "95",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organism",
+  "targetName" : "168",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality",
+  "targetName" : "224",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+  "targetName" : "255",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process",
+  "targetName" : "188",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organization",
+  "targetName" : "140",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+  "targetName" : "136",
+  "similarityScore" : 0.8375
+}, {
+  "mappingId" : 7,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000082",
+  "sourceName" : "44",
+  "targetURI" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution",
+  "targetName" : "137",
+  "similarityScore" : 0.7445
+}, {
+  "mappingId" : 8,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#BiologicalObject",
+  "targetName" : "146",
+  "similarityScore" : 0.698
+} ]

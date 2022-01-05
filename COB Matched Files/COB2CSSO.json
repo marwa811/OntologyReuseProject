@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://purl.jp/bio/11/csso/CSSO_000189",
+  "targetName" : "182",
+  "similarityScore" : 0.6126
+} ]

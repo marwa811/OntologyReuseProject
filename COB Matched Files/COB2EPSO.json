@@ -1,0 +1,22 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://www.case.edu/EpSO.owl#Organism",
+  "targetName" : "449",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000056",
+  "sourceName" : "29",
+  "targetURI" : "http://www.case.edu/EpSO.owl#ImmaterialAnatomicalEntity",
+  "targetName" : "477",
+  "similarityScore" : 0.9512
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000006",
+  "sourceName" : "39",
+  "targetURI" : "http://www.case.edu/EpSO.owl#MaterialAnatomicalEntity",
+  "targetName" : "300",
+  "similarityScore" : 0.6166
+} ]

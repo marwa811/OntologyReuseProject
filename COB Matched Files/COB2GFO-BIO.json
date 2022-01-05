@@ -1,0 +1,71 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000112",
+  "sourceName" : "54",
+  "targetURI" : "http://www.onto-med.de/ontologies/gfo.owl#Function",
+  "targetName" : "97",
+  "similarityScore" : 0.9618
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Organism",
+  "targetName" : "166",
+  "similarityScore" : 0.9618
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://www.onto-med.de/ontologies/gfo.owl#Role",
+  "targetName" : "160",
+  "similarityScore" : 0.9618
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Protein",
+  "targetName" : "134",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000011",
+  "sourceName" : "26",
+  "targetURI" : "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Atom",
+  "targetName" : "175",
+  "similarityScore" : 0.9569
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://www.onto-med.de/ontologies/gfo.owl#Process",
+  "targetName" : "201",
+  "similarityScore" : 0.9557
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Cell",
+  "targetName" : "184",
+  "similarityScore" : 0.9524
+}, {
+  "mappingId" : 7,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Biological_process",
+  "targetName" : "187",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 8,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000110",
+  "sourceName" : "58",
+  "targetURI" : "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Chemical_process",
+  "targetName" : "144",
+  "similarityScore" : 0.7445
+}, {
+  "mappingId" : 9,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000056",
+  "sourceName" : "29",
+  "targetURI" : "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Plant_anatomical_development",
+  "targetName" : "191",
+  "similarityScore" : 0.6
+} ]

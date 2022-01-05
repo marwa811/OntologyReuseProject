@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000076",
+  "sourceName" : "68",
+  "targetURI" : "http://www.semanticweb.org/ontologies/2008/10/languageacquisition_autism.owl#Object_naming",
+  "targetName" : "105",
+  "similarityScore" : 0.7445
+} ]

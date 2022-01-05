@@ -32,6 +32,7 @@ public class WebLearningClass {
 	static Logger log = Logger.getLogger(LearningClass.class);
 	private static Scanner sc;
 	public static ArrayList<String> owlFilesNames=new ArrayList<String>();
+	public static ArrayList<String> matchedFileNames=new ArrayList<String>();
 	private static ArrayList<String> largeOntologiesFilesNames=new ArrayList<String>();
 	private static FinalResultList finalResultList=new FinalResultList();
 	private static Deque<IterationClass> iterationsQueue = new ArrayDeque<IterationClass>();
@@ -61,7 +62,7 @@ public class WebLearningClass {
     	//retrieve its class in order to beging the reuse process
     	//return a string of all classes names seprated by commas to be used in the ontology utility class
     	String classNames=EntityExtractionClass.getClassesLabelsFromInputOntology(firstIteration.getUserPreferences().getInputFileName());
-        
+    	System.out.println("Class Names: " + classNames);
         /* Input a class (from the input ontology) to begin the reuse proess and begin 
     	 * creating a user profile
     	 */
@@ -95,14 +96,18 @@ public class WebLearningClass {
     		System.out.println("This class can not be extended, no matching ontologies found.");
     	else 
     	{
+    		System.out.println("The size bioPortalSearchResult search results: "+bioPortalSearchResult.size());
     		//to remove reprated ontology Id coming from Bioportal search service
     		bioPortalSearchResult=excludeRedundantOntologies(bioPortalSearchResult);
+    		System.out.println("The size bioPortalSearchResult after exclude redundant : "+bioPortalSearchResult.size());
     		//here we have two main issues with the list of candidate ontologies "termSearchResultOntologies"
     		//1. Very large ontology, extract a module using the input class name and append its IRI to the list
     		//2. Not OWL file ontology, exclude it from the list
     		bioPortalSearchResult=excludeNonOWLOntologies(bioPortalSearchResult);
     		System.out.println("The size bioPortalSearchResult after excludeNonOWL: "+bioPortalSearchResult.size());
-    //		ArrayList<String> modulesOfLaregFilesIRIs = getModulesIRIFromLargeOntologies(className,bioPortalSearchResult);
+    		bioPortalSearchResult=excludeNonMatchedOntologies(bioPortalSearchResult);
+    		System.out.println("The size bioPortalSearchResult after excludeNonMatchedOntologies: "+bioPortalSearchResult.size());
+    		//ArrayList<String> modulesOfLaregFilesIRIs = getModulesIRIFromLargeOntologies(className,bioPortalSearchResult);
     		//if(modulesOfLaregFilesIRIs.size()>0)
     			//bioPortalSearchResult.addAll(modulesOfLaregFilesIRIs);
     		
@@ -239,6 +244,41 @@ public class WebLearningClass {
 	  		}
 	  		return newSetofOntologies;
 	  	}
+		//-----------------------------------------------------------------------
+		//This Function checks if the search result exists in the matching folder or not
+		private static ArrayList<String> excludeNonMatchedOntologies (ArrayList<String> setofOntologies){
+			File directoryPathOWLFiles = new File("COB Matched Files/");
+		        FilenameFilter textFilefilter = new FilenameFilter(){
+		           public boolean accept(File dir, String name) {
+		              if (name.contains("2")) {
+		                 return true;
+		              } else {
+		                 return false;
+		              }
+		           }
+		        };
+		        //List of all the text files
+		        String matchedFilesList[] = directoryPathOWLFiles.list(textFilefilter);
+		       
+		        int k=0;
+		        for(String fileName : matchedFilesList) {
+		           matchedFileNames.add(k++,fileName.substring(fileName.indexOf("2")+1, fileName.indexOf(".")));
+		           //System.out.println("test   " + fileName.substring(fileName.indexOf("2")+1, fileName.indexOf(".")));
+		        }
+			
+			String fileName="";
+	  		String newFileName="";
+	  		String acronym="";
+	  		ArrayList<String> newSetofMatchedFileNames = new ArrayList<String>();
+	  		for(int i=0; i<setofOntologies.size() ; i++) {
+	  			fileName= setofOntologies.get(i);	  	  		
+	  			acronym=fileName.substring(fileName.lastIndexOf('/')+1, fileName.length());
+	  			if(matchedFileNames.contains(acronym))
+	  				newSetofMatchedFileNames.add(fileName);
+	  			//System.out.println("Matched acronym is:  " +acronym);
+	  		}
+	  		return newSetofMatchedFileNames;
+		}
 		//------------------------------------------------------------
 	  	//The function checks if the list contains redundant ontology names, if so remove them from the list
 		private static ArrayList<String> excludeRedundantOntologies(ArrayList<String> setofOntologies){
@@ -458,6 +498,7 @@ public class WebLearningClass {
 	           //System.out.println(fileName);
 	           owlFilesNames.add(k++,fileName);
 	        }
+	        
 	     /*   for(String fileName : largeFilesList) {
 	            //System.out.println(fileName);
 	        	largeOntologiesFilesNames.add(f++,fileName);

@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://opendata.inra.fr/AHOL/AHOL_0004000",
+  "targetName" : "401",
+  "similarityScore" : 0.93
+} ]

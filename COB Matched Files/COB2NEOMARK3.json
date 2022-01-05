@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://www.neomark.eu/ontologies/neomark.owl#BiologicalProcess",
+  "targetName" : "128",
+  "similarityScore" : 0.9521
+} ]

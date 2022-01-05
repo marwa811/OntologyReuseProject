@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://www.bioontology.org/pma.owl#PMA_129",
+  "targetName" : "1749",
+  "similarityScore" : 0.7972
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://www.bioontology.org/pma.owl#PMA_1303",
+  "targetName" : "1498",
+  "similarityScore" : 0.6282
+} ]

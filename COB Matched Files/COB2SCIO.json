@@ -1,0 +1,43 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://psink.de/scio/Cell",
+  "targetName" : "232",
+  "similarityScore" : 0.9636
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://psink.de/scio/Protein",
+  "targetName" : "454",
+  "similarityScore" : 0.9631
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000112",
+  "sourceName" : "54",
+  "targetURI" : "http://psink.de/scio/Function",
+  "targetName" : "433",
+  "similarityScore" : 0.9524
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000061",
+  "sourceName" : "12",
+  "targetURI" : "http://data.nasa.gov/qudt/owl/qudt#InformationQuantityKind",
+  "targetName" : "271",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000003",
+  "sourceName" : "35",
+  "targetURI" : "http://data.nasa.gov/qudt/owl/qudt#MassUnit",
+  "targetName" : "194",
+  "similarityScore" : 0.6896
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000049",
+  "sourceName" : "43",
+  "targetURI" : "http://psink.de/scio/NucleicAcid",
+  "targetName" : "558",
+  "similarityScore" : 0.6457
+} ]

@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://rdf.biosemantics.org/ontologies/genomecomponents#Organism",
+  "targetName" : "89",
+  "similarityScore" : 0.9569
+} ]

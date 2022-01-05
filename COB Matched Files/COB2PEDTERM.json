@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000502",
+  "sourceName" : "9",
+  "targetURI" : "http://www.owl-ontologies.com/Ontology1358660052.owl#Characteristic",
+  "targetName" : "1281",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://www.owl-ontologies.com/Ontology1358660052.owl#Organism",
+  "targetName" : "1413",
+  "similarityScore" : 0.9569
+} ]

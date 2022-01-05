@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://www.cvrgrid.org/ontologies/Electrophysiology#Protein",
+  "targetName" : "115",
+  "similarityScore" : 0.9629
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://www.cvrgrid.org/ontologies/Electrophysiology#Cell",
+  "targetName" : "280",
+  "similarityScore" : 0.9624
+} ]

@@ -1,0 +1,113 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000111",
+  "sourceName" : "60",
+  "targetURI" : "http://bioontology.org/projects/ontologies/birnlex#Disposition",
+  "targetName" : "2470",
+  "similarityScore" : 0.9643
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000001",
+  "sourceName" : "37",
+  "targetURI" : "http://bioontology.org/projects/ontologies/birnlex#Quality",
+  "targetName" : "2177",
+  "similarityScore" : 0.964
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://bioontology.org/projects/ontologies/birnlex#Role",
+  "targetName" : "1430",
+  "similarityScore" : 0.9592
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000057",
+  "sourceName" : "23",
+  "targetURI" : "http://bioontology.org/projects/ontologies/birnlex#Site",
+  "targetName" : "1785",
+  "similarityScore" : 0.959
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000034",
+  "sourceName" : "59",
+  "targetURI" : "http://bioontology.org/projects/ontologies/birnlex#Process",
+  "targetName" : "3169",
+  "similarityScore" : 0.9438
+}, {
+  "mappingId" : 5,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000108",
+  "sourceName" : "21",
+  "targetURI" : "http://bioontology.org/projects/ontologies/birnlex#birnlex_11024",
+  "targetName" : "1511",
+  "similarityScore" : 0.9392
+}, {
+  "mappingId" : 6,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000107",
+  "sourceName" : "20",
+  "targetURI" : "http://bioontology.org/projects/ontologies/birnlex#birnlex_11025",
+  "targetName" : "1512",
+  "similarityScore" : 0.9308
+}, {
+  "mappingId" : 7,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000112",
+  "sourceName" : "54",
+  "targetURI" : "http://bioontology.org/projects/ontologies/birnlex#Function",
+  "targetName" : "576",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 8,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000082",
+  "sourceName" : "44",
+  "targetURI" : "http://bioontology.org/projects/ontologies/birnlex#birnlex_11021",
+  "targetName" : "1506",
+  "similarityScore" : 0.9242
+}, {
+  "mappingId" : 9,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://bioontology.org/projects/ontologies/birnlex#birnlex_23",
+  "targetName" : "1579",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 10,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://bioontology.org/projects/ontologies/birnlex#birnlex_2",
+  "targetName" : "2418",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 11,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://bioontology.org/projects/ontologies/birnlex#birnlex_376",
+  "targetName" : "807",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 12,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000017",
+  "sourceName" : "30",
+  "targetURI" : "http://bioontology.org/projects/ontologies/birnlex#birnlex_12",
+  "targetName" : "1564",
+  "similarityScore" : 0.8836
+}, {
+  "mappingId" : 13,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://bioontology.org/projects/ontologies/birnlex#birnlex_18",
+  "targetName" : "1587",
+  "similarityScore" : 0.846
+}, {
+  "mappingId" : 14,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://bioontology.org/projects/ontologies/birnlex#birnlex_2085",
+  "targetName" : "3142",
+  "similarityScore" : 0.7849
+}, {
+  "mappingId" : 15,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000033",
+  "sourceName" : "56",
+  "targetURI" : "http://bioontology.org/projects/ontologies/birnlex#RealizableEntity",
+  "targetName" : "3433",
+  "similarityScore" : 0.6287
+} ]

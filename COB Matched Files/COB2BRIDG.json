@@ -1,0 +1,36 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000101",
+  "sourceName" : "2",
+  "targetURI" : "http://xmlns.com/foaf/0.1/Document",
+  "targetName" : "183",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000025",
+  "sourceName" : "3",
+  "targetURI" : "http://xmlns.com/foaf/0.1/Organization",
+  "targetName" : "132",
+  "similarityScore" : 0.9306
+}, {
+  "mappingId" : 2,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000082",
+  "sourceName" : "44",
+  "targetURI" : "http://www.bridgmodel.org/owl#PlannedActivity",
+  "targetName" : "213",
+  "similarityScore" : 0.8375
+}, {
+  "mappingId" : 3,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000022",
+  "sourceName" : "6",
+  "targetURI" : "http://www.bridgmodel.org/owl#BiologicEntity",
+  "targetName" : "234",
+  "similarityScore" : 0.7896
+}, {
+  "mappingId" : 4,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000120",
+  "sourceName" : "49",
+  "targetURI" : "http://www.bridgmodel.org/owl#ReportVersion",
+  "targetName" : "190",
+  "similarityScore" : 0.7445
+} ]

@@ -1,0 +1,15 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000113",
+  "sourceName" : "55",
+  "targetURI" : "http://www.limics.org/hrdo/rdfns#pat_id_21923",
+  "targetName" : "5856",
+  "similarityScore" : 0.7896
+}, {
+  "mappingId" : 1,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000003",
+  "sourceName" : "35",
+  "targetURI" : "http://www.limics.org/hrdo/rdfns#gen_id_16032",
+  "targetName" : "9702",
+  "similarityScore" : 0.752
+} ]

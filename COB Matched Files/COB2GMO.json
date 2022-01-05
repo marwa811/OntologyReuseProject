@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000114",
+  "sourceName" : "63",
+  "targetURI" : "http://purl.jp/bio/10/gmo/GMO_000037",
+  "targetName" : "830",
+  "similarityScore" : 0.9346
+} ]

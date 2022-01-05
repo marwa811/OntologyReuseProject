@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000037",
+  "sourceName" : "62",
+  "targetURI" : "http://aimlab.cs.uoregon.edu/smash/ontologies/biomarker.owl#BiologicalMeasure",
+  "targetName" : "223",
+  "similarityScore" : 0.698
+} ]

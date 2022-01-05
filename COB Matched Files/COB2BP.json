@@ -1,0 +1,8 @@
+[ {
+  "mappingId" : 0,
+  "sourceURI" : "http://purl.obolibrary.org/obo/COB_0000015",
+  "sourceName" : "32",
+  "targetURI" : "http://www.biopax.org/release/biopax-level3.owl#Protein",
+  "targetName" : "95",
+  "similarityScore" : 0.9644
+} ]

@@ -248,10 +248,31 @@ private static double calculateOntologyTypeScore(int userPrefOntologyType,String
 		}
 		acronyms=acronyms.substring(0, acronyms.length()-1);
 		System.out.println("The acronyms are: "+acronyms);
+		String[] classNameSeprated=classesNames.split(",");
+		if(classNameSeprated.length>50)
+			classesNames=getSummeryOfClasses(classesNames);
+		
 		Map<String,String> recommenderResult=
 				TermSearchUsingBioportal.useBioportalRecommender(classesNames, acronyms);
 		return recommenderResult;
 	}
+	//-----------------------------------------------------------
+	//This Function takes the classes Names as a String a and summarize it not to be too long
+	private static String getSummeryOfClasses(String classesNames) {
+		String allClasses = "";
+		String[] classNameSeprated=classesNames.split(",");
+		for(int i=0; i<30 ; i++) {
+			String[] words=classNameSeprated[i].trim().split(" ");
+			if(words.length>1)
+				allClasses+=words[0]+" "+words[1]+",";
+			else
+				allClasses+=words[0]+",";
+		}	
+		allClasses=allClasses.substring(0,allClasses.length()-2);
+		//System.out.println("The symmerized Classes is: "+allClasses);
+		return allClasses;
+	}
+	
 //---------------------------------------------------------------------------------
 	//Convert the ontologies Acronym to a string seprated by commans to used it in the recommender
 	private static String getOntologiesNamesAsString(Ontology[] ontologiesInfo) {
