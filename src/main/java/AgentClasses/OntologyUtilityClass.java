@@ -41,6 +41,7 @@ public class OntologyUtilityClass {
 		ArrayList<CandidateOntologyClass> newCandidateOntology=candidateOntologies; 
 		for(CandidateOntologyClass candidateOntology: newCandidateOntology)
 		{
+			//
 			String ontologyName= getOntologyName(candidateOntology.getOntologyID(), ontologiesInfo);
 			double domainScore= calculateDomainScore(++i,candidateOntology.getOntologyID(),ontologiesInfo,userPref.getUserPrefDomain());
 			double popularityScore= calculatePopularityScore(candidateOntology.getOntologyID(),ontologiesInfo);
