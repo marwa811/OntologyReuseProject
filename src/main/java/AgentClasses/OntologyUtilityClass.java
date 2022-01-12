@@ -265,7 +265,7 @@ private static double calculateOntologyTypeScore(int userPrefOntologyType,String
 		for(int i=0; i<30 ; i++) {
 			String[] words=classNameSeprated[i].trim().split(" ");
 			if(words.length>1)
-				allClasses+=words[0]+" "+words[1]+",";
+				allClasses+=words[0]+",";
 			else
 				allClasses+=words[0]+",";
 		}	

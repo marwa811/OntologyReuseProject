@@ -35,6 +35,10 @@ public class TermSearchUsingBioportal {
 	    	
 	 //An array list of type TermSearchResultInformation for the results 
 	 // ArrayList<TermSearchResultInformation> searchResults = new ArrayList<TermSearchResultInformation>();
+	if(classLabel.contains(" "))	 
+		classLabel=classLabel.replace(" ", "%20");
+	if(classLabel.contains("_"))
+		classLabel=classLabel.replace("_", "%20");
 	 System.out.println("You are searching class: "+ classLabel);
 	 log.info("Searching bioportal for ontologies...");
 	 JsonNode results = jsonToNode(get(REST_URL + "/search?q=" + classLabel)).get("collection");

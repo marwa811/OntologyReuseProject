@@ -3,260 +3,130 @@
   "ontologyName" : "Environment Ontology",
   "ontologyDef" : null,
   "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
+    "ontologyDomainScore" : 0.3333333333333333,
     "ontologyPopularityScore" : 0.16738038932268584,
-    "ontologyCoverageScore" : 0.0,
+    "ontologyCoverageScore" : 0.196,
     "prefOntologyScore" : 1.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.2751070583984029
+    "ontologyTotalUtilityScore" : 0.4074403917317362
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_33250",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
     "conceptContextMatchingScore" : 0.0,
     "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "atom",
+    "matchedConceptLabel" : "immaterial entity",
     "matchedConceptSynonyms" : [ ],
     "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "main group element atom", "metal atom", "metalloid atom", "nonmetal atom", "s-block element atom" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_33318", "http://purl.obolibrary.org/obo/CHEBI_33521", "http://purl.obolibrary.org/obo/CHEBI_137980", "http://purl.obolibrary.org/obo/CHEBI_25585", "http://purl.obolibrary.org/obo/CHEBI_33559" ]
-  }, {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_33252",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "atomic nucleus",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "hydron", "alpha-particle" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_15378", "http://purl.obolibrary.org/obo/CHEBI_30216" ]
-  }, {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/UBERON_0000466",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.6000000000000001,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "immaterial anatomical entity",
-    "matchedConceptSynonyms" : [ "immaterial physical anatomical entity" ],
-    "matchedConceptDef" : [ "Anatomical entity that has no mass." ],
-    "matchedConceptSubClasses" : [ "anatomical space" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/UBERON_0000464" ]
-  }, {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_24867",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "monoatomic ion",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "monoatomic anion", "monoatomic cation" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_23905", "http://purl.obolibrary.org/obo/CHEBI_23906" ]
-  }, {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "subatomic particle",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "boson", "nuclear particle", "composite particle" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36341", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
+    "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
   } ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.1194801305772454,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.13581346391057872,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/RBO",
-  "ontologyName" : "Radiation Biology Ontology",
+  "ontologyID" : "https://data.bioontology.org/ontologies/OGMS",
+  "ontologyName" : "Ontology for General Medical Science",
   "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.0322785963448827,
+    "ontologyPopularityScore" : 0.0653643247128236,
     "ontologyCoverageScore" : 0.0,
     "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.004841789451732405
+    "ontologyTypeScore" : 1.0,
+    "ontologyTotalUtilityScore" : 0.10980464870692354
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_33250",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
     "conceptContextMatchingScore" : 0.0,
     "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "atom",
+    "matchedConceptLabel" : "BFO_0000141",
     "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ "A chemical entity constituting the smallest component of an element having the chemical properties of the element." ],
-    "matchedConceptSubClasses" : [ "main group element atom", "radionuclide", "metal atom", "nonmetal atom" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_33318", "http://purl.obolibrary.org/obo/RBO_00000060", "http://purl.obolibrary.org/obo/CHEBI_33521", "http://purl.obolibrary.org/obo/CHEBI_25585" ]
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
   } ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.02939170759502191,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.03660154956897451,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/AURA",
-  "ontologyName" : "KB_Bio_101",
+  "ontologyID" : "https://data.bioontology.org/ontologies/OBOREL",
+  "ontologyName" : "Relations Ontology",
   "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 1.8043534275576575E-4,
-    "ontologyCoverageScore" : 0.0,
+    "ontologyPopularityScore" : 0.2744631816084115,
+    "ontologyCoverageScore" : 0.196,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 2.706530141336486E-5
+    "ontologyTotalUtilityScore" : 0.09016947724126173
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://www.projecthalo.com/aura#Atom",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
     "conceptContextMatchingScore" : 0.0,
     "conceptSemanticRichnessScore" : 0.6000000000000001,
     "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "Atom",
+    "matchedConceptLabel" : "BFO_0000141",
     "matchedConceptSynonyms" : [ ],
     "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "Isotope", "Non-Metal-Atom", "Metalloid-Atom", "Metal-Atom" ],
-    "matchedConceptSubClassesIds" : [ "http://www.projecthalo.com/aura#Isotope", "http://www.projecthalo.com/aura#Non-Metal-Atom", "http://www.projecthalo.com/aura#Metalloid-Atom", "http://www.projecthalo.com/aura#Metal-Atom" ]
-  }, {
-    "matchedConceptName" : "http://www.projecthalo.com/aura#Atomic-Nucleus",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "Atomic-Nucleus",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ ],
-    "matchedConceptSubClassesIds" : [ ]
-  }, {
-    "matchedConceptName" : "http://www.projecthalo.com/aura#Monoatomic-Ion",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "Monoatomic-Ion",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "Sodium-Ion", "Hydrogen-Ion", "I-Minus", "Cl-Minus", "Ba-Plus-2", "Potassium-Ion", "S-Minus-2", "N-Minus-3", "Pb-Plus-2", "Zn-Plus-2", "Fe-Plus-3", "Calcium-Ion", "Magnesium-Ion", "Cs-Plus" ],
-    "matchedConceptSubClassesIds" : [ "http://www.projecthalo.com/aura#Sodium-Ion", "http://www.projecthalo.com/aura#Hydrogen-Ion", "http://www.projecthalo.com/aura#I-Minus", "http://www.projecthalo.com/aura#Cl-Minus", "http://www.projecthalo.com/aura#Ba-Plus-2", "http://www.projecthalo.com/aura#Potassium-Ion", "http://www.projecthalo.com/aura#S-Minus-2", "http://www.projecthalo.com/aura#N-Minus-3", "http://www.projecthalo.com/aura#Pb-Plus-2", "http://www.projecthalo.com/aura#Zn-Plus-2", "http://www.projecthalo.com/aura#Fe-Plus-3", "http://www.projecthalo.com/aura#Calcium-Ion", "http://www.projecthalo.com/aura#Magnesium-Ion", "http://www.projecthalo.com/aura#Cs-Plus" ]
-  }, {
-    "matchedConceptName" : "http://www.projecthalo.com/aura#Subatomic-Particle",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "Subatomic-Particle",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "Positron", "Proton", "Neutron", "Electron" ],
-    "matchedConceptSubClassesIds" : [ "http://www.projecthalo.com/aura#Positron", "http://www.projecthalo.com/aura#Proton", "http://www.projecthalo.com/aura#Neutron", "http://www.projecthalo.com/aura#Electron" ]
+    "matchedConceptSubClasses" : [ "spatial region", "immaterial anatomical entity" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/CARO_0000007" ]
   } ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.02778679954491556,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.03005649241375391,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/KTAO",
-  "ontologyName" : "Kidney Tissue Atlas Ontology",
+  "ontologyID" : "https://data.bioontology.org/ontologies/HSO",
+  "ontologyName" : "Health Surveillance Ontology",
   "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 1.1299304433311328E-4,
-    "ontologyCoverageScore" : 0.0,
+    "ontologyPopularityScore" : 3.344920445962198E-5,
+    "ontologyCoverageScore" : 0.353,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 1.694895664996699E-5
+    "ontologyTotalUtilityScore" : 0.08825501738066893
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_33252",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.6000000000000001,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "atomic nucleus",
-    "matchedConceptSynonyms" : [ "noyau atomique", "nuclei", "noyau", "nucleus atomi", "nucleo atomico", "Kern", "nucleus", "nucleo", "Atomkern" ],
-    "matchedConceptDef" : [ "A nucleus is the positively charged central portion of an atom, excluding the orbital electrons." ],
-    "matchedConceptSubClasses" : [ ],
-    "matchedConceptSubClassesIds" : [ ]
-  }, {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CARO_0000007",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
     "conceptContextMatchingScore" : 0.0,
     "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "immaterial anatomical entity",
+    "matchedConceptLabel" : "immaterial entity",
     "matchedConceptSynonyms" : [ ],
     "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ ],
-    "matchedConceptSubClassesIds" : [ ]
-  }, {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/UBERON_0000466",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.6000000000000001,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "immaterial anatomical entity",
-    "matchedConceptSynonyms" : [ "immaterial physical anatomical entity" ],
-    "matchedConceptDef" : [ "Anatomical entity that has no mass." ],
-    "matchedConceptSubClasses" : [ "anatomical surface", "bona-fide anatomical boundary", "anatomical space", "non-material anatomical boundary" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/UBERON_0006984", "http://purl.obolibrary.org/obo/UBERON_0010199", "http://purl.obolibrary.org/obo/UBERON_0000464", "http://purl.obolibrary.org/obo/UBERON_0000015" ]
-  }, {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "subatomic particle",
-    "matchedConceptSynonyms" : [ "subatomic particles" ],
-    "matchedConceptDef" : [ "A particle smaller than an atom." ],
-    "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "nuclear particle", "composite particle" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
+    "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
   } ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.027783427429994432,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.029418339126889643,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/AGRO",
-  "ontologyName" : "AGRonomy Ontology",
+  "ontologyID" : "https://data.bioontology.org/ontologies/VO",
+  "ontologyName" : "Vaccine Ontology",
   "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 7.736828185985735E-5,
-    "ontologyCoverageScore" : 0.0,
+    "ontologyPopularityScore" : 0.04864979540433985,
+    "ontologyCoverageScore" : 0.314,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 1.1605242278978602E-5
+    "ontologyTotalUtilityScore" : 0.08579746931065098
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_33250",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.6000000000000001,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "atom",
-    "matchedConceptSynonyms" : [ "element", "elements", "atomus", "atoms", "atomo", "atome", "atom" ],
-    "matchedConceptDef" : [ "A chemical entity constituting the smallest component of an element having the chemical properties of the element." ],
-    "matchedConceptSubClasses" : [ "main group element atom", "metal atom", "metalloid atom", "nonmetal atom", "s-block element atom" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_33318", "http://purl.obolibrary.org/obo/CHEBI_33521", "http://purl.obolibrary.org/obo/CHEBI_137980", "http://purl.obolibrary.org/obo/CHEBI_25585", "http://purl.obolibrary.org/obo/CHEBI_33559" ]
-  }, {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_33252",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.6000000000000001,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "atomic nucleus",
-    "matchedConceptSynonyms" : [ "Kern", "nucleus atomi", "nucleo atomico", "noyau", "noyau atomique", "nuclei", "Atomkern", "nucleo", "nucleus" ],
-    "matchedConceptDef" : [ "A nucleus is the positively charged central portion of an atom, excluding the orbital electrons." ],
-    "matchedConceptSubClasses" : [ ],
-    "matchedConceptSubClassesIds" : [ ]
-  }, {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_24867",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
     "conceptContextMatchingScore" : 0.0,
     "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "monoatomic ion",
-    "matchedConceptSynonyms" : [ "monoatomic ions" ],
+    "matchedConceptLabel" : "immaterial entity",
+    "matchedConceptSynonyms" : [ ],
     "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "zinc ion", "monoatomic anion", "monoatomic cation" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_27365", "http://purl.obolibrary.org/obo/CHEBI_23905", "http://purl.obolibrary.org/obo/CHEBI_23906" ]
-  }, {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "subatomic particle",
-    "matchedConceptSynonyms" : [ "subatomic particles" ],
-    "matchedConceptDef" : [ "A particle smaller than an atom." ],
-    "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "nuclear particle", "composite particle" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
+    "matchedConceptSubClasses" : [ "spatial region", "site" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
   } ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.027781646191870766,
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.02859915643688366,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/OHMI",
@@ -265,390 +135,40 @@
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
     "ontologyPopularityScore" : 6.458687852975789E-5,
-    "ontologyCoverageScore" : 0.0,
+    "ontologyCoverageScore" : 0.333,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 9.688031779463683E-6
+    "ontologyTotalUtilityScore" : 0.08325968803177947
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_33250",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
     "conceptContextMatchingScore" : 0.0,
     "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "atom",
+    "matchedConceptLabel" : "immaterial entity",
     "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ "A chemical entity constituting the smallest component of an element having the chemical properties of the element." ],
-    "matchedConceptSubClasses" : [ ],
-    "matchedConceptSubClassesIds" : [ ]
-  } ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.02778100712170426,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/OPMI",
-  "ontologyName" : "Ontology of Precision Medicine and Investigation",
-  "ontologyDef" : null,
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 3.3585176835474105E-5,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 5.037776525321116E-6
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_33250",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "atom",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ "A chemical entity constituting the smallest component of an element having the chemical properties of the element." ],
-    "matchedConceptSubClasses" : [ ],
-    "matchedConceptSubClassesIds" : [ ]
-  }, {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/UBERON_0000466",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.6000000000000001,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "immaterial anatomical entity",
-    "matchedConceptSynonyms" : [ "immaterial physical anatomical entity" ],
-    "matchedConceptDef" : [ "Anatomical entity that has no mass." ],
-    "matchedConceptSubClasses" : [ "anatomical surface", "anatomical space", "anatomical boundary" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/UBERON_0006984", "http://purl.obolibrary.org/obo/UBERON_0000464", "http://purl.obolibrary.org/obo/UBERON_0000015" ]
-  } ],
-  "ontologyAggregatedScore" : 0.08333333333333333,
-  "totalUtilityScore" : 0.027779457036619548,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/NBO",
-  "ontologyName" : "Neuro Behavior Ontology",
-  "ontologyDef" : null,
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 3.36939547361558E-4,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 5.05409321042337E-5
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_33252",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.6000000000000001,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "atomic nucleus",
-    "matchedConceptSynonyms" : [ "noyau atomique", "nuclei", "noyau", "nucleus atomi", "nucleo atomico", "Kern", "nucleus", "nucleo", "Atomkern" ],
-    "matchedConceptDef" : [ "A nucleus is the positively charged central portion of an atom, excluding the orbital electrons." ],
-    "matchedConceptSubClasses" : [ ],
-    "matchedConceptSubClassesIds" : [ ]
-  }, {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CARO_0000007",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.2,
-    "matchedConceptLabel" : "immaterial anatomical entity",
-    "matchedConceptSynonyms" : null,
-    "matchedConceptDef" : null,
-    "matchedConceptSubClasses" : null,
-    "matchedConceptSubClassesIds" : null
-  }, {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/UBERON_0000466",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.6000000000000001,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "immaterial anatomical entity",
-    "matchedConceptSynonyms" : [ "immaterial physical anatomical entity" ],
-    "matchedConceptDef" : [ "Anatomical entity that has no mass." ],
-    "matchedConceptSubClasses" : [ "bona-fide anatomical boundary", "anatomical space", "non-material anatomical boundary" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/UBERON_0010199", "http://purl.obolibrary.org/obo/UBERON_0000464", "http://purl.obolibrary.org/obo/UBERON_0000015" ]
-  }, {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "subatomic particle",
-    "matchedConceptSynonyms" : [ "subatomic particles" ],
-    "matchedConceptDef" : [ "A particle smaller than an atom." ],
-    "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "nuclear particle", "composite particle" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "spatial region" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.016683513644034746,
+  "totalUtilityScore" : 0.02775322934392649,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/GRO",
-  "ontologyName" : "Gene Regulation Ontology",
+  "ontologyID" : "https://data.bioontology.org/ontologies/OMIT",
+  "ontologyName" : "Ontology for MicroRNA Target",
   "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.032402331206908136,
-    "ontologyCoverageScore" : 0.0,
+    "ontologyPopularityScore" : 0.016306340236175682,
+    "ontologyCoverageScore" : 0.314,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.00486034968103622
+    "ontologyTotalUtilityScore" : 0.08094595103542636
   },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://www.bootstrep.eu/ontology/GRO#Atom",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "atom",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ ],
-    "matchedConceptSubClassesIds" : [ ]
-  } ],
+  "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.0016201165603454068,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/EMO",
-  "ontologyName" : "Enzyme Mechanism Ontology",
-  "ontologyDef" : null,
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.03239648439474649,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.004859472659211973
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_33250",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "Atom",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "Pros-Nitrogen", "Tele-Nitrogen", "Alpha Carbon" ],
-    "matchedConceptSubClassesIds" : [ "http://www.semanticweb.org/ontologies/2011/1/14/EMO.owl/EMO_00095", "http://www.semanticweb.org/ontologies/2011/1/14/EMO.owl/EMO_00096", "http://www.semanticweb.org/ontologies/2011/1/14/EMO.owl/EMO_00091" ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.0016198242197373244,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ONL-MR-DA",
-  "ontologyName" : "Magnetic Resonance Dataset Acquisition Ontology",
-  "ontologyDef" : null,
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.032307014571435796,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.004846052185715369
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://neurolog.unice.fr/ontoneurolog/v3.0/dolce-particular.owl#atom",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "atom",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "achievement", "lexeme" ],
-    "matchedConceptSubClassesIds" : [ "http://neurolog.unice.fr/ontoneurolog/v3.0/dolce-particular.owl#achievement", "http://neurolog.unice.fr/ontoneurolog/v3.0/core-ontology-programs-software.owl#lexeme" ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.0016153507285717897,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/BT",
-  "ontologyName" : "BioTop Ontology",
-  "ontologyDef" : null,
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.016375686147860266,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.00245635292217904
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.org/biotop/biotop.owl#Atom",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "atom",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "alpha particle" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.org/biotop/biotop.owl#AlphaParticle" ]
-  }, {
-    "matchedConceptName" : "http://purl.org/biotop/biotop.owl#ImmaterialNonphysicalEntity",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "immaterial nonphysical entity",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ ],
-    "matchedConceptSubClassesIds" : [ ]
-  }, {
-    "matchedConceptName" : "http://purl.org/biotop/biotop.owl#SubatomicParticle",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "subatomic particle",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "*" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.org/biotop/biotop.owl#SubatomicEntityByChargePartition" ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 8.187843073930133E-4,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ONL-MSA",
-  "ontologyName" : "Mental State Assessment",
-  "ontologyDef" : null,
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.016283496877032524,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.0024425245315548784
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://neurolog.unice.fr/ontoneurolog/v3.0/dolce-particular.owl#atom",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "atom",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "achievement" ],
-    "matchedConceptSubClassesIds" : [ "http://neurolog.unice.fr/ontoneurolog/v3.0/dolce-particular.owl#achievement" ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 8.141748438516261E-4,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/BIOMO",
-  "ontologyName" : "Biological Observation Matrix Ontology",
-  "ontologyDef" : null,
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.016211703462582605,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.0024317555193873906
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://semanticscience.org/resource/SIO_010044",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.6000000000000001,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "SIO_010044",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "francium atom", "roentgenium atom", "rhenium atom", "bohrium atom", "tellurium atom", "polonium atom", "cerium atom", "lanthanum atom", "europium atom", "uranium atom", "radium atom", "samarium atom", "hassium atom", "holmium atom", "nitrogen atom", "thulium atom", "carbon atom", "gadolinium atom", "ununhexium atom", "actinium atom", "mercury atom", "praseodymium atom", "mendelevium atom", "ytterbium atom", "terbium atom", "rutherfordium atom", "ununseptium atom", "sulfur atom", "curium atom", "hydrogen atom", "neodymium atom", "nobelium atom", "copernicium atom", "scandium atom", "chlorine atom", "berkelium atom", "promethium atom", "neptunium atom", "oxygen atom", "unutrium atom", "manganese atom", "ununoctium atom", "thorium atom", "americium atom", "magnesium atom", "argon atom", "lawrencium atom", "californium atom", "plutonium atom", "sodium atom" ],
-    "matchedConceptSubClassesIds" : [ "http://semanticscience.org/resource/SIO_011072", "http://semanticscience.org/resource/SIO_011082", "http://semanticscience.org/resource/SIO_011060", "http://semanticscience.org/resource/SIO_011078", "http://semanticscience.org/resource/SIO_011051", "http://semanticscience.org/resource/SIO_011069", "http://semanticscience.org/resource/SIO_011090", "http://semanticscience.org/resource/SIO_011056", "http://semanticscience.org/resource/SIO_011095", "http://semanticscience.org/resource/SIO_011106", "http://semanticscience.org/resource/SIO_011073", "http://semanticscience.org/resource/SIO_011094", "http://semanticscience.org/resource/SIO_011079", "http://semanticscience.org/resource/SIO_011099", "http://semanticscience.org/resource/SIO_011006", "http://semanticscience.org/resource/SIO_011101", "http://semanticscience.org/resource/SIO_011001", "http://semanticscience.org/resource/SIO_011096", "http://semanticscience.org/resource/SIO_011087", "http://semanticscience.org/resource/SIO_011074", "http://semanticscience.org/resource/SIO_011065", "http://semanticscience.org/resource/SIO_011091", "http://semanticscience.org/resource/SIO_011115", "http://semanticscience.org/resource/SIO_011102", "http://semanticscience.org/resource/SIO_011097", "http://semanticscience.org/resource/SIO_011075", "http://semanticscience.org/resource/SIO_011088", "http://semanticscience.org/resource/SIO_011015", "http://semanticscience.org/resource/SIO_011110", "http://semanticscience.org/resource/SIO_011002", "http://semanticscience.org/resource/SIO_011092", "http://semanticscience.org/resource/SIO_011116", "http://semanticscience.org/resource/SIO_011083", "http://semanticscience.org/resource/SIO_011020", "http://semanticscience.org/resource/SIO_011016", "http://semanticscience.org/resource/SIO_011111", "http://semanticscience.org/resource/SIO_011093", "http://semanticscience.org/resource/SIO_011107", "http://semanticscience.org/resource/SIO_011007", "http://semanticscience.org/resource/SIO_011084", "http://semanticscience.org/resource/SIO_011024", "http://semanticscience.org/resource/SIO_011089", "http://semanticscience.org/resource/SIO_011104", "http://semanticscience.org/resource/SIO_011109", "http://semanticscience.org/resource/SIO_011011", "http://semanticscience.org/resource/SIO_011017", "http://semanticscience.org/resource/SIO_011117", "http://semanticscience.org/resource/SIO_011112", "http://semanticscience.org/resource/SIO_011108", "http://semanticscience.org/resource/SIO_011010" ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 8.105851731291301E-4,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/HIVO004",
-  "ontologyName" : "HIVOntologymain.owl",
-  "ontologyDef" : null,
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.0011338736422308443,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 1.7008104633462663E-4
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://bioportal/bioontology.org/ontologies/HIVO0004#Atom",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "Atom",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ ],
-    "matchedConceptSubClassesIds" : [ ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 5.669368211154221E-5,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/HUPSON",
-  "ontologyName" : "Human Physiology Simulation Ontology",
-  "ontologyDef" : null,
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 2.0096717150943613E-4,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 3.0145075726415417E-5
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Anatomical_part",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "anatomical part",
-    "matchedConceptSynonyms" : [ "anatomical parts" ],
-    "matchedConceptDef" : [ "part of human anatomy, such as arm, liver (organs), tissue etc", "Linkout / Placeholder for anatomy ontology." ],
-    "matchedConceptSubClasses" : [ "cranium", "ventricle", "endoplasmic reticulum", "tissue", "modelled anatomical part", "arm", "foot", "heart valve", "myocardium", "colon", "vertebral column", "blood vessel wall", "leg", "ribosome", "brain", "lymph node", "atrium", "organ", "blood vessel", "axon", "tooth", "olfactory bulb", "blood plasma", "eye", "heart", "airway", "membrane", "mouth", "bone" ],
-    "matchedConceptSubClassesIds" : [ "http://sig.uw.edu/fma#Skull", "http://sig.uw.edu/fma#Ventricle", "http://sig.uw.edu/fma#Endoplasmic_reticulum", "http://sig.uw.edu/fma#Portion_of_tissue", "http://scai.fraunhofer.de/HuPSON#SCAIVPH_00001042", "http://sig.uw.edu/fma#Arm", "http://sig.uw.edu/fma#Foot", "http://sig.uw.edu/fma#Cardiac_valve", "http://sig.uw.edu/fma#Myocardium", "http://sig.uw.edu/fma#Colon", "http://sig.uw.edu/fma#Vertebral_column", "http://purl.bioontology.org/ontology/FMA_subset/FMA_67473", "http://sig.uw.edu/fma#Leg", "http://sig.uw.edu/fma#Ribosome", "http://purl.org/obo/owl/FMA#FMA_50801", "http://purl.org/obo/owl/FMA#FMA_5034", "http://sig.uw.edu/fma#Atrium", "http://sig.uw.edu/fma#Organ", "http://sig.uw.edu/fma#Blood_vessel", "http://sig.uw.edu/fma#Axon", "http://sig.uw.edu/fma#Tooth", "http://sig.uw.edu/fma#Olfactory_bulb", "http://sig.uw.edu/fma#Portion_of_plasma", "http://sig.uw.edu/fma#Eye", "http://sig.uw.edu/fma#Heart", "http://scai.fraunhofer.de/HuPSON#SCAIVPH_00001160", "http://sig.uw.edu/fma#Membrane", "http://sig.uw.edu/fma#Mouth", "http://sig.uw.edu/fma#Bone" ]
-  }, {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_33250",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "atom",
-    "matchedConceptSynonyms" : [ "atoms" ],
-    "matchedConceptDef" : [ "A chemical entity constituting the smallest component of an element having the chemical properties of the element.\n\nsource: http://purl.obolibrary.org/obo/CHEBI_33250" ],
-    "matchedConceptSubClasses" : [ "nitrogen atom", "lanthanoid atom", "actinoid atom", "gold atom", "Potassium atom", "elemental sodium" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_25555", "http://purl.obolibrary.org/obo/CHEBI_33319", "http://purl.obolibrary.org/obo/CHEBI_33320", "http://purl.obolibrary.org/obo/CHEBI_29287", "http://purl.obolibrary.org/obo/CHEBI_26216", "http://purl.obolibrary.org/obo/CHEBI_37246" ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 1.0048358575471805E-5,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/SCO",
-  "ontologyName" : "Study Cohort Ontology",
-  "ontologyDef" : null,
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 1.8845771293104092E-4,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 2.8268656939656138E-5
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://semanticscience.org/resource/Atom",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.6000000000000001,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "Atom",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "cobalt atom", "caesium atom", "actinium atom", "sodium atom", "chromium atom", "scandium atom", "indium atom", "holmium atom", "xenon atom", "thulium atom", "silicon atom", "platinum atom", "antimony atom", "cadmium atom", "yttrium atom", "lithium atom", "berkelium atom", "erbium atom", "roentgenium atom", "hafnium atom", "hassium atom", "copernicium atom", "osmium atom", "hydrogen atom", "rhodium atom", "boron atom", "radium atom", "ytterbium atom", "molybdemum atom", "lutetium atom", "technetium atom", "ununseptium atom", "carbon atom", "nickel atom", "ununoctium atom", "barium atom", "potassium atom", "zinc atom", "americium atom", "strontium atom", "ununpentium atom", "aluminium atom", "selenium atom", "tantalum atom", "mendelevium atom", "thallium atom", "neodymium atom", "magnesium atom", "fermium atom", "dubnium atom" ],
-    "matchedConceptSubClassesIds" : [ "http://semanticscience.org/resource/CobaltAtom", "http://semanticscience.org/resource/CaesiumAtom", "http://semanticscience.org/resource/ActiniumAtom", "http://semanticscience.org/resource/SodiumAtom", "http://semanticscience.org/resource/ChromiumAtom", "http://semanticscience.org/resource/ScandiumAtom", "http://semanticscience.org/resource/IndiumAtom", "http://semanticscience.org/resource/HolmiumAtom", "http://semanticscience.org/resource/XenonAtom", "http://semanticscience.org/resource/ThuliumAtom", "http://semanticscience.org/resource/SiliconAtom", "http://semanticscience.org/resource/PlatinumAtom", "http://semanticscience.org/resource/AntimonyAtom", "http://semanticscience.org/resource/CadmiumAtom", "http://semanticscience.org/resource/YttriumAtom", "http://semanticscience.org/resource/LithiumAtom", "http://semanticscience.org/resource/BerkeliumAtom", "http://semanticscience.org/resource/ErbiumAtom", "http://semanticscience.org/resource/RoentgeniumAtom", "http://semanticscience.org/resource/HafniumAtom", "http://semanticscience.org/resource/HassiumAtom", "http://semanticscience.org/resource/CoperniciumAtom", "http://semanticscience.org/resource/OsmiumAtom", "http://semanticscience.org/resource/HydrogenAtom", "http://semanticscience.org/resource/RhodiumAtom", "http://semanticscience.org/resource/BoronAtom", "http://semanticscience.org/resource/RadiumAtom", "http://semanticscience.org/resource/YtterbiumAtom", "http://semanticscience.org/resource/MolybdemumAtom", "http://semanticscience.org/resource/LutetiumAtom", "http://semanticscience.org/resource/TechnetiumAtom", "http://semanticscience.org/resource/UnunseptiumAtom", "http://semanticscience.org/resource/CarbonAtom", "http://semanticscience.org/resource/NickelAtom", "http://semanticscience.org/resource/UnunoctiumAtom", "http://semanticscience.org/resource/BariumAtom", "http://semanticscience.org/resource/PotassiumAtom", "http://semanticscience.org/resource/ZincAtom", "http://semanticscience.org/resource/AmericiumAtom", "http://semanticscience.org/resource/StrontiumAtom", "http://semanticscience.org/resource/UnunpentiumAtom", "http://semanticscience.org/resource/AluminiumAtom", "http://semanticscience.org/resource/SeleniumAtom", "http://semanticscience.org/resource/TantalumAtom", "http://semanticscience.org/resource/MendeleviumAtom", "http://semanticscience.org/resource/ThalliumAtom", "http://semanticscience.org/resource/NeodymiumAtom", "http://semanticscience.org/resource/MagnesiumAtom", "http://semanticscience.org/resource/FermiumAtom", "http://semanticscience.org/resource/DubniumAtom" ]
-  }, {
-    "matchedConceptName" : "http://semanticscience.org/resource/SIO_010044",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.6000000000000001,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "SIO_010044",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "francium atom", "roentgenium atom", "rhenium atom", "bohrium atom", "tellurium atom", "polonium atom", "cerium atom", "lanthanum atom", "europium atom", "uranium atom", "radium atom", "samarium atom", "hassium atom", "holmium atom", "nitrogen atom", "thulium atom", "carbon atom", "gadolinium atom", "ununhexium atom", "actinium atom", "mercury atom", "praseodymium atom", "mendelevium atom", "ytterbium atom", "terbium atom", "rutherfordium atom", "ununseptium atom", "sulfur atom", "curium atom", "hydrogen atom", "neodymium atom", "nobelium atom", "copernicium atom", "scandium atom", "chlorine atom", "berkelium atom", "promethium atom", "neptunium atom", "oxygen atom", "unutrium atom", "manganese atom", "ununoctium atom", "thorium atom", "americium atom", "magnesium atom", "argon atom", "lawrencium atom", "californium atom", "plutonium atom", "sodium atom" ],
-    "matchedConceptSubClassesIds" : [ "http://semanticscience.org/resource/SIO_011072", "http://semanticscience.org/resource/SIO_011082", "http://semanticscience.org/resource/SIO_011060", "http://semanticscience.org/resource/SIO_011078", "http://semanticscience.org/resource/SIO_011051", "http://semanticscience.org/resource/SIO_011069", "http://semanticscience.org/resource/SIO_011090", "http://semanticscience.org/resource/SIO_011056", "http://semanticscience.org/resource/SIO_011095", "http://semanticscience.org/resource/SIO_011106", "http://semanticscience.org/resource/SIO_011073", "http://semanticscience.org/resource/SIO_011094", "http://semanticscience.org/resource/SIO_011079", "http://semanticscience.org/resource/SIO_011099", "http://semanticscience.org/resource/SIO_011006", "http://semanticscience.org/resource/SIO_011101", "http://semanticscience.org/resource/SIO_011001", "http://semanticscience.org/resource/SIO_011096", "http://semanticscience.org/resource/SIO_011087", "http://semanticscience.org/resource/SIO_011074", "http://semanticscience.org/resource/SIO_011065", "http://semanticscience.org/resource/SIO_011091", "http://semanticscience.org/resource/SIO_011115", "http://semanticscience.org/resource/SIO_011102", "http://semanticscience.org/resource/SIO_011097", "http://semanticscience.org/resource/SIO_011075", "http://semanticscience.org/resource/SIO_011088", "http://semanticscience.org/resource/SIO_011015", "http://semanticscience.org/resource/SIO_011110", "http://semanticscience.org/resource/SIO_011002", "http://semanticscience.org/resource/SIO_011092", "http://semanticscience.org/resource/SIO_011116", "http://semanticscience.org/resource/SIO_011083", "http://semanticscience.org/resource/SIO_011020", "http://semanticscience.org/resource/SIO_011016", "http://semanticscience.org/resource/SIO_011111", "http://semanticscience.org/resource/SIO_011093", "http://semanticscience.org/resource/SIO_011107", "http://semanticscience.org/resource/SIO_011007", "http://semanticscience.org/resource/SIO_011084", "http://semanticscience.org/resource/SIO_011024", "http://semanticscience.org/resource/SIO_011089", "http://semanticscience.org/resource/SIO_011104", "http://semanticscience.org/resource/SIO_011109", "http://semanticscience.org/resource/SIO_011011", "http://semanticscience.org/resource/SIO_011017", "http://semanticscience.org/resource/SIO_011117", "http://semanticscience.org/resource/SIO_011112", "http://semanticscience.org/resource/SIO_011108", "http://semanticscience.org/resource/SIO_011010" ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 9.422885646552046E-6,
+  "totalUtilityScore" : 0.02698198367847545,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/HOIP",
@@ -657,24 +177,24 @@
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
     "ontologyPopularityScore" : 1.6683810517055354E-4,
-    "ontologyCoverageScore" : 0.0,
+    "ontologyCoverageScore" : 0.314,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 2.5025715775583032E-5
+    "ontologyTotalUtilityScore" : 0.07852502571577559
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_33250",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
     "conceptContextMatchingScore" : 0.0,
     "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "atom",
+    "matchedConceptLabel" : "immaterial entity",
     "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ "A chemical entity constituting the smallest component of an element having the chemical properties of the element." ],
-    "matchedConceptSubClasses" : [ "nitrogen atom", "carbon atom", "calcium atom", "metal atom", "oxygen atom", "iron atom", "sulfur atom", "hydrogen atom", "phosphorus atom" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_25555", "http://purl.obolibrary.org/obo/CHEBI_27594", "http://purl.obolibrary.org/obo/CHEBI_22984", "http://purl.obolibrary.org/obo/CHEBI_33521", "http://purl.obolibrary.org/obo/CHEBI_25805", "http://purl.obolibrary.org/obo/CHEBI_18248", "http://purl.obolibrary.org/obo/CHEBI_26833", "http://purl.obolibrary.org/obo/CHEBI_49637", "http://purl.bioontology.org/ontology/HOIP/HOIP_0003128" ]
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 8.341905258527677E-6,
+  "totalUtilityScore" : 0.026175008571925194,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/TXPO",
@@ -683,239 +203,309 @@
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
     "ontologyPopularityScore" : 1.5691212173334865E-4,
-    "ontologyCoverageScore" : 0.0,
+    "ontologyCoverageScore" : 0.314,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 2.3536818260002297E-5
+    "ontologyTotalUtilityScore" : 0.07852353681826
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_33250",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
     "conceptContextMatchingScore" : 0.0,
     "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "atom",
+    "matchedConceptLabel" : "immaterial entity",
     "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ "A chemical entity constituting the smallest component of an element having the chemical properties of the element." ],
-    "matchedConceptSubClasses" : [ "nitrogen atom", "carbon atom", "calcium atom", "metal atom", "oxygen atom", "iron atom", "sulfur atom", "hydrogen atom", "phosphorus atom" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_25555", "http://purl.obolibrary.org/obo/CHEBI_27594", "http://purl.obolibrary.org/obo/CHEBI_22984", "http://purl.obolibrary.org/obo/CHEBI_33521", "http://purl.obolibrary.org/obo/CHEBI_25805", "http://purl.obolibrary.org/obo/CHEBI_18248", "http://purl.obolibrary.org/obo/CHEBI_26833", "http://purl.obolibrary.org/obo/CHEBI_49637", "http://purl.obolibrary.org/obo/TXPO_0003128" ]
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 7.845606086667432E-6,
+  "totalUtilityScore" : 0.026174512272753334,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/GFO-BIO",
-  "ontologyName" : "General Formal Ontology for Biology",
+  "ontologyID" : "https://data.bioontology.org/ontologies/MIRNAO",
+  "ontologyName" : "MicroRNA Ontology",
   "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 9.273316033114713E-5,
-    "ontologyCoverageScore" : 0.0,
+    "ontologyPopularityScore" : 1.0551456366124658E-4,
+    "ontologyCoverageScore" : 0.314,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 1.3909974049672068E-5
+    "ontologyTotalUtilityScore" : 0.07851582718454919
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Atom",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
     "conceptContextMatchingScore" : 0.0,
     "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "Atom",
+    "matchedConceptLabel" : "Immaterial Entity",
     "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ ],
-    "matchedConceptSubClassesIds" : [ ]
-  }, {
-    "matchedConceptName" : "http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Plant_anatomical_development",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "Plant_anatomical_development",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "PO_0007021" ],
-    "matchedConceptSubClassesIds" : [ "http://www.geneontology.org/owl/#PO_0007021" ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 4.6366580165573555E-6,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/HHEAR",
-  "ontologyName" : "Human Health Exposure Analysis Resource",
-  "ontologyDef" : null,
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 8.498273490757618E-5,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 1.2747410236136426E-5
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_33250",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.0,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "CHEBI_33250",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ "A chemical entity constituting the smallest component of an element having the chemical properties of the element." ],
-    "matchedConceptSubClasses" : [ ],
-    "matchedConceptSubClassesIds" : [ ]
-  }, {
-    "matchedConceptName" : "http://semanticscience.org/resource/SIO_010044",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.0,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "SIO_010044",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "francium atom", "roentgenium atom", "rhenium atom", "bohrium atom", "tellurium atom", "polonium atom", "cerium atom", "lanthanum atom", "europium atom", "uranium atom", "radium atom", "samarium atom", "hassium atom", "holmium atom", "nitrogen atom", "thulium atom", "carbon atom", "gadolinium atom", "ununhexium atom", "actinium atom", "mercury atom", "praseodymium atom", "mendelevium atom", "ytterbium atom", "terbium atom", "rutherfordium atom", "ununseptium atom", "sulfur atom", "curium atom", "hydrogen atom", "neodymium atom", "nobelium atom", "copernicium atom", "scandium atom", "chlorine atom", "berkelium atom", "promethium atom", "neptunium atom", "oxygen atom", "unutrium atom", "manganese atom", "ununoctium atom", "thorium atom", "americium atom", "magnesium atom", "argon atom", "lawrencium atom", "californium atom", "plutonium atom", "sodium atom" ],
-    "matchedConceptSubClassesIds" : [ "http://semanticscience.org/resource/SIO_011072", "http://semanticscience.org/resource/SIO_011082", "http://semanticscience.org/resource/SIO_011060", "http://semanticscience.org/resource/SIO_011078", "http://semanticscience.org/resource/SIO_011051", "http://semanticscience.org/resource/SIO_011069", "http://semanticscience.org/resource/SIO_011090", "http://semanticscience.org/resource/SIO_011056", "http://semanticscience.org/resource/SIO_011095", "http://semanticscience.org/resource/SIO_011106", "http://semanticscience.org/resource/SIO_011073", "http://semanticscience.org/resource/SIO_011094", "http://semanticscience.org/resource/SIO_011079", "http://semanticscience.org/resource/SIO_011099", "http://semanticscience.org/resource/SIO_011006", "http://semanticscience.org/resource/SIO_011101", "http://semanticscience.org/resource/SIO_011001", "http://semanticscience.org/resource/SIO_011096", "http://semanticscience.org/resource/SIO_011087", "http://semanticscience.org/resource/SIO_011074", "http://semanticscience.org/resource/SIO_011065", "http://semanticscience.org/resource/SIO_011091", "http://semanticscience.org/resource/SIO_011115", "http://semanticscience.org/resource/SIO_011102", "http://semanticscience.org/resource/SIO_011097", "http://semanticscience.org/resource/SIO_011075", "http://semanticscience.org/resource/SIO_011088", "http://semanticscience.org/resource/SIO_011015", "http://semanticscience.org/resource/SIO_011110", "http://semanticscience.org/resource/SIO_011002", "http://semanticscience.org/resource/SIO_011092", "http://semanticscience.org/resource/SIO_011116", "http://semanticscience.org/resource/SIO_011083", "http://semanticscience.org/resource/SIO_011020", "http://semanticscience.org/resource/SIO_011016", "http://semanticscience.org/resource/SIO_011111", "http://semanticscience.org/resource/SIO_011093", "http://semanticscience.org/resource/SIO_011107", "http://semanticscience.org/resource/SIO_011007", "http://semanticscience.org/resource/SIO_011084", "http://semanticscience.org/resource/SIO_011024", "http://semanticscience.org/resource/SIO_011089", "http://semanticscience.org/resource/SIO_011104", "http://semanticscience.org/resource/SIO_011109", "http://semanticscience.org/resource/SIO_011011", "http://semanticscience.org/resource/SIO_011017", "http://semanticscience.org/resource/SIO_011117", "http://semanticscience.org/resource/SIO_011112", "http://semanticscience.org/resource/SIO_011108", "http://semanticscience.org/resource/SIO_011010" ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 4.249136745378809E-6,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/VDOT",
-  "ontologyName" : "Viral Disease Ontology Trunk",
-  "ontologyDef" : null,
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 3.344920445962198E-5,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 5.017380668943297E-6
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_33250",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "CHEBI_33250",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ "A chemical entity constituting the smallest component of an element having the chemical properties of the element." ],
+    "matchedConceptDef" : [ "BFO 2 Reference: Immaterial entities are divided into two subgroups:boundaries and sites, which bound, or are demarcated in relation, to material entities, and which can thus change location, shape and size and as their material hosts move or change shape or size (for example: your nasal passage; the hold of a ship; the boundary of Wales (which moves with the rotation of the Earth)." ],
     "matchedConceptSubClasses" : [ ],
     "matchedConceptSubClassesIds" : [ ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 1.6724602229810988E-6,
+  "totalUtilityScore" : 0.02617194239484973,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/HASCO",
-  "ontologyName" : "Human-Aware Science Ontology",
+  "ontologyID" : "https://data.bioontology.org/ontologies/NCRO",
+  "ontologyName" : "Non-coding RNA Ontology",
   "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 1.5500850847141895E-5,
-    "ontologyCoverageScore" : 0.0,
+    "ontologyPopularityScore" : 5.398103321329239E-5,
+    "ontologyCoverageScore" : 0.314,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 2.325127627071284E-6
+    "ontologyTotalUtilityScore" : 0.078508097154982
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://semanticscience.org/resource/SIO_010044",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
     "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "SIO_010044",
+    "matchedConceptLabel" : "BFO_0000141",
     "matchedConceptSynonyms" : [ ],
     "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "francium atom", "roentgenium atom", "rhenium atom", "bohrium atom", "tellurium atom", "polonium atom", "cerium atom", "lanthanum atom", "europium atom", "uranium atom", "radium atom", "samarium atom", "hassium atom", "holmium atom", "nitrogen atom", "thulium atom", "carbon atom", "gadolinium atom", "ununhexium atom", "actinium atom", "mercury atom", "praseodymium atom", "mendelevium atom", "ytterbium atom", "terbium atom", "rutherfordium atom", "ununseptium atom", "sulfur atom", "curium atom", "hydrogen atom", "neodymium atom", "nobelium atom", "copernicium atom", "scandium atom", "chlorine atom", "berkelium atom", "promethium atom", "neptunium atom", "oxygen atom", "unutrium atom", "manganese atom", "ununoctium atom", "thorium atom", "americium atom", "magnesium atom", "argon atom", "lawrencium atom", "californium atom", "plutonium atom", "sodium atom" ],
-    "matchedConceptSubClassesIds" : [ "http://semanticscience.org/resource/SIO_011072", "http://semanticscience.org/resource/SIO_011082", "http://semanticscience.org/resource/SIO_011060", "http://semanticscience.org/resource/SIO_011078", "http://semanticscience.org/resource/SIO_011051", "http://semanticscience.org/resource/SIO_011069", "http://semanticscience.org/resource/SIO_011090", "http://semanticscience.org/resource/SIO_011056", "http://semanticscience.org/resource/SIO_011095", "http://semanticscience.org/resource/SIO_011106", "http://semanticscience.org/resource/SIO_011073", "http://semanticscience.org/resource/SIO_011094", "http://semanticscience.org/resource/SIO_011079", "http://semanticscience.org/resource/SIO_011099", "http://semanticscience.org/resource/SIO_011006", "http://semanticscience.org/resource/SIO_011101", "http://semanticscience.org/resource/SIO_011001", "http://semanticscience.org/resource/SIO_011096", "http://semanticscience.org/resource/SIO_011087", "http://semanticscience.org/resource/SIO_011074", "http://semanticscience.org/resource/SIO_011065", "http://semanticscience.org/resource/SIO_011091", "http://semanticscience.org/resource/SIO_011115", "http://semanticscience.org/resource/SIO_011102", "http://semanticscience.org/resource/SIO_011097", "http://semanticscience.org/resource/SIO_011075", "http://semanticscience.org/resource/SIO_011088", "http://semanticscience.org/resource/SIO_011015", "http://semanticscience.org/resource/SIO_011110", "http://semanticscience.org/resource/SIO_011002", "http://semanticscience.org/resource/SIO_011092", "http://semanticscience.org/resource/SIO_011116", "http://semanticscience.org/resource/SIO_011083", "http://semanticscience.org/resource/SIO_011020", "http://semanticscience.org/resource/SIO_011016", "http://semanticscience.org/resource/SIO_011111", "http://semanticscience.org/resource/SIO_011093", "http://semanticscience.org/resource/SIO_011107", "http://semanticscience.org/resource/SIO_011007", "http://semanticscience.org/resource/SIO_011084", "http://semanticscience.org/resource/SIO_011024", "http://semanticscience.org/resource/SIO_011089", "http://semanticscience.org/resource/SIO_011104", "http://semanticscience.org/resource/SIO_011109", "http://semanticscience.org/resource/SIO_011011", "http://semanticscience.org/resource/SIO_011017", "http://semanticscience.org/resource/SIO_011117", "http://semanticscience.org/resource/SIO_011112", "http://semanticscience.org/resource/SIO_011108", "http://semanticscience.org/resource/SIO_011010" ]
+    "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 7.750425423570946E-7,
+  "totalUtilityScore" : 0.02616936571832733,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/MCO",
-  "ontologyName" : "Microbial Conditions Ontology",
+  "ontologyID" : "https://data.bioontology.org/ontologies/OGSF",
+  "ontologyName" : "Ontology for Genetic Susceptibility Factor",
   "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 1.291737570595158E-5,
-    "ontologyCoverageScore" : 0.0,
+    "ontologyPopularityScore" : 3.0865729318431666E-5,
+    "ontologyCoverageScore" : 0.314,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 1.937606355892737E-6
+    "ontologyTotalUtilityScore" : 0.07850462985939777
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_33250",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.0,
+    "matchedConceptLabel" : "immaterial entity",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.026168209953132588,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/APOLLO-SV",
+  "ontologyName" : "Apollo Structured Vocabulary",
+  "ontologyDef" : null,
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 4.650255254142568E-5,
+    "ontologyCoverageScore" : 0.294,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.07350697538288122
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
     "conceptContextMatchingScore" : 0.0,
     "conceptSemanticRichnessScore" : 0.6000000000000001,
     "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "atom",
-    "matchedConceptSynonyms" : [ "element", "elements", "atomus", "atoms", "atomo", "atome", "atom" ],
-    "matchedConceptDef" : [ "A chemical entity constituting the smallest component of an element having the chemical properties of the element." ],
-    "matchedConceptSubClasses" : [ "main group element atom", "metal atom", "metalloid atom", "nonmetal atom", "s-block element atom" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_33318", "http://purl.obolibrary.org/obo/CHEBI_33521", "http://purl.obolibrary.org/obo/CHEBI_137980", "http://purl.obolibrary.org/obo/CHEBI_25585", "http://purl.obolibrary.org/obo/CHEBI_33559" ]
-  }, {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_33252",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.6000000000000001,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "atomic nucleus",
-    "matchedConceptSynonyms" : [ "Kern", "nucleus atomi", "nucleo atomico", "noyau", "noyau atomique", "nuclei", "Atomkern", "nucleo", "nucleus" ],
-    "matchedConceptDef" : [ "A nucleus is the positively charged central portion of an atom, excluding the orbital electrons." ],
-    "matchedConceptSubClasses" : [ ],
-    "matchedConceptSubClassesIds" : [ ]
-  }, {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_24867",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "monoatomic ion",
-    "matchedConceptSynonyms" : [ "monoatomic ions" ],
+    "matchedConceptLabel" : "BFO_0000141",
+    "matchedConceptSynonyms" : [ ],
     "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "zinc ion", "monoatomic anion", "monoatomic cation" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_27365", "http://purl.obolibrary.org/obo/CHEBI_23905", "http://purl.obolibrary.org/obo/CHEBI_23906" ]
-  }, {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "subatomic particle",
-    "matchedConceptSynonyms" : [ "subatomic particles" ],
-    "matchedConceptDef" : [ "A particle smaller than an atom." ],
-    "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "nuclear particle", "composite particle" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
+    "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 6.45868785297579E-7,
+  "totalUtilityScore" : 0.02450232512762707,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/DPO",
-  "ontologyName" : "Drosophila Phenotype Ontology",
+  "ontologyID" : "https://data.bioontology.org/ontologies/LIFO",
+  "ontologyName" : "Life Ontology",
   "ontologyDef" : null,
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 1.0333900564761263E-5,
-    "ontologyCoverageScore" : 0.0,
+    "ontologyPopularityScore" : 4.391907740023537E-5,
+    "ontologyCoverageScore" : 0.294,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 1.5500850847141895E-6
+    "ontologyTotalUtilityScore" : 0.07350658786161003
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CARO_0001008",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
     "conceptContextMatchingScore" : 0.0,
     "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "gross anatomical part",
+    "matchedConceptLabel" : "immaterial entity",
     "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ "Anatomical structure that is part of a multicellular organism and is at the gross anatomical level, e.g. above the level of a cell.  Included are portions of organism substances such as blood, multi-cell-part structures such as axon tracts, acellular anatomical structures such as hair, and organism subdivisions such as head. Excluded is the whole organism and more granular parts of the organism, such as atoms, molecules, macromolecular complexes and cells. " ],
-    "matchedConceptSubClasses" : [ "acellular anatomical structure", "organism substance", "multi-cell-part structure", "multicellular anatomical structure", "extraembryonic structure" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CARO_0000040", "http://purl.obolibrary.org/obo/CARO_0000004", "http://purl.obolibrary.org/obo/CARO_0001000", "http://purl.obolibrary.org/obo/CARO_0010000", "http://purl.obolibrary.org/obo/CARO_0000042" ]
-  }, {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/CARO_0000007",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.0,
-    "matchedConceptLabel" : "immaterial anatomical entity",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ "Anatomical entity that has no mass." ],
-    "matchedConceptSubClasses" : [ ],
-    "matchedConceptSubClassesIds" : [ ]
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "spatial region", "site" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 5.166950282380631E-7,
+  "totalUtilityScore" : 0.024502195953870008,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/IDO",
+  "ontologyName" : "Infectious Disease Ontology",
+  "ontologyDef" : null,
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 0.08137601281052774,
+    "ontologyCoverageScore" : 0.235,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.07095640192157916
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.6000000000000001,
+    "conceptUtilityScore" : 0.0,
+    "matchedConceptLabel" : "immaterial entity",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "spatial region", "site" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.02365213397385972,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/ICO",
+  "ontologyName" : "Informed Consent Ontology",
+  "ontologyDef" : null,
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 1.2128735926009272E-4,
+    "ontologyCoverageScore" : 0.275,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.06876819310388901
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.6000000000000001,
+    "conceptUtilityScore" : 0.0,
+    "matchedConceptLabel" : "immaterial entity",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.02292273103462967,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/AGRO",
+  "ontologyName" : "AGRonomy Ontology",
+  "ontologyDef" : null,
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 7.736828185985735E-5,
+    "ontologyCoverageScore" : 0.275,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.06876160524227898
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.0,
+    "matchedConceptLabel" : "immaterial entity",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.022920535080759658,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/OVAE",
+  "ontologyName" : "Ontology of Vaccine Adverse Events",
+  "ontologyDef" : null,
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 4.1335602259045054E-5,
+    "ontologyCoverageScore" : 0.275,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.06875620034033886
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.0,
+    "matchedConceptLabel" : "immaterial entity",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "spatial region", "site" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.022918733446779617,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/OPMI",
+  "ontologyName" : "Ontology of Precision Medicine and Investigation",
+  "ontologyDef" : null,
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 3.3585176835474105E-5,
+    "ontologyCoverageScore" : 0.275,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.06875503777652532
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.0,
+    "matchedConceptLabel" : "immaterial entity",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "site" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000029" ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.02291834592550844,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/DIDEO",
+  "ontologyName" : "Drug Interaction and Evidence Ontology",
+  "ontologyDef" : null,
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 0.01622666042392634,
+    "ontologyCoverageScore" : 0.255,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.06618399906358895
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.6000000000000001,
+    "conceptUtilityScore" : 0.0,
+    "matchedConceptLabel" : "BFO_0000141",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.022061333021196314,
   "ontologyScore" : 1
 } ]

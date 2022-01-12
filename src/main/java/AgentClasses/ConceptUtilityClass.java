@@ -59,7 +59,7 @@ public class ConceptUtilityClass {
 			else 
 				candidateOntology.setConceptUtilityScores(conceptsForExtension);
 				//to calculate the total score for an ontology
-				candidateOntology.setTotalUtilityScore(conceptsForExtension);
+			candidateOntology.setTotalUtilityScore(conceptsForExtension);
 		}
 		return candidateOntologies;
 	}	

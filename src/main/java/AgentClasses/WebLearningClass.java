@@ -119,6 +119,7 @@ public class WebLearningClass {
     			t.display();
     		}	
     	   // ConceptUtilityClass.calculateConceptUtilityFunction(className, firstIteration.getUserPreferences().getInputFileName(), bioPortalSearchResult);
+    		candidateOntologies=getBest20(candidateOntologies);
     		candidateOntologies=ConceptUtilityClass.calculateConceptUtilityFunction10(className, firstIteration.getUserPreferences().getInputFileName(), candidateOntologies);
     		Collections.sort(candidateOntologies,CandidateOntologyClass.sortByTotalUtilityScore);
     		// write the final result to a result JSON file
@@ -207,6 +208,14 @@ public class WebLearningClass {
   			System.out.println("You selected: "+ontologies.trim().toUpperCase()+ " ontology");
   			}
   		return ontologyList;
+  	}
+  	 //------------------------------------------------------------
+  	//This Function returns the best 20 ontology based on their scores
+  	static private ArrayList<CandidateOntologyClass> getBest20(ArrayList<CandidateOntologyClass> candidateOntologies){
+  		ArrayList<CandidateOntologyClass> temp= new ArrayList<CandidateOntologyClass>();
+  		for(int i=0; i<20; i++)
+  			temp.add(candidateOntologies.get(i));
+  		return temp;	
   	}
 	
 	//----------------------------------------------------------------------

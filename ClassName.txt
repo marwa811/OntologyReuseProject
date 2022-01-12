@@ -1,1 +1,1 @@
-COB.owl|http://purl.obolibrary.org/obo/COB_0000067|https://data.bioontology.org/ontologies/BOF|http://www.owl-ontologies.com/BiodiversityOntologyFull.owl#Ecosystem|
+COB.owl|http://purl.obolibrary.org/obo/COB_0000031|https://data.bioontology.org/ontologies/ENVO|http://purl.obolibrary.org/obo/BFO_0000141|

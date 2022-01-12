@@ -133,6 +133,7 @@ public class WebOtherIterations {
 			/*for(CandidateOntologyClass t: candidateOntologies){
 				t.display();
 			}*/	
+			candidateOntologies=getBest20(candidateOntologies);
 			candidateOntologies= finalResultList.calculateOntologyAggregateScoreFunction(candidateOntologies);
 		   // ConceptUtilityClass.calculateConceptUtilityFunction(className, firstIteration.getUserPreferences().getInputFileName(), bioPortalSearchResult);
 			candidateOntologies=ConceptUtilityClass.calculateConceptUtilityFunction10(className, iteration.getUserPreferences().getInputFileName(), candidateOntologies);
@@ -222,6 +223,14 @@ public class WebOtherIterations {
   				newSetofOntologies.add(fileName);
   		}
   		return newSetofOntologies;
+  	}
+	//-------------------------------------------------------------------------------------------
+  	//This Function returns the best 20 ontology based on their scores
+  	static private ArrayList<CandidateOntologyClass> getBest20(ArrayList<CandidateOntologyClass> candidateOntologies){
+  		ArrayList<CandidateOntologyClass> temp= new ArrayList<CandidateOntologyClass>();
+  		for(int i=0; i<20; i++)
+  			temp.add(candidateOntologies.get(i));
+  		return temp;	
   	}
 	//---------------------------------------------------------
 	//This Function checks if the search result exists in the matching folder or not

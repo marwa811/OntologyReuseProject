@@ -1,1 +1,1 @@
-COB.owl|Biology|2|2|1|ENVO|ecosystem
+COB.owl|Physicochemical|2|2|1|ENVO|immaterial entity
