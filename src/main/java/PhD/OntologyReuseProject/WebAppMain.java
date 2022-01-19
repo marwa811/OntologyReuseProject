@@ -13,7 +13,8 @@ public class WebAppMain {
     	startingApplication();
     	
         WebLearningClass test= new WebLearningClass();
-        test.beginIterations();    	
+        test.beginIterations(); 
+        
     	// end main
         
     }
