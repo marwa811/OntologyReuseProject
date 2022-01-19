@@ -15,6 +15,7 @@ public class WebAppMain {
         WebLearningClass test= new WebLearningClass();
         test.beginIterations();    	
     	// end main
+        
     }
   	//--------------------------------------------------------------------
   	//This function is to initialize some variables in the begining of the application
