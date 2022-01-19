@@ -13,9 +13,9 @@
     },
     "conceptUtilityScores" : [ {
       "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-      "conceptContextMatchingScore" : 0.0,
+      "conceptContextMatchingScore" : 0.2,
       "conceptSemanticRichnessScore" : 0.4,
-      "conceptUtilityScore" : 0.0,
+      "conceptUtilityScore" : 0.30000000000000004,
       "matchedConceptLabel" : "immaterial entity",
       "matchedConceptSynonyms" : [ ],
       "matchedConceptDef" : [ ],
@@ -23,34 +23,8 @@
       "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
     } ],
     "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.13581346391057872,
+    "totalUtilityScore" : 0.23581346391057872,
     "ontologyScore" : 4
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/OGMS",
-    "ontologyName" : "Ontology for General Medical Science",
-    "ontologyDef" : null,
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 0.0653643247128236,
-      "ontologyCoverageScore" : 0.0,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 1.0,
-      "ontologyTotalUtilityScore" : 0.10980464870692354
-    },
-    "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-      "conceptContextMatchingScore" : 0.0,
-      "conceptSemanticRichnessScore" : 0.4,
-      "conceptUtilityScore" : 0.0,
-      "matchedConceptLabel" : "BFO_0000141",
-      "matchedConceptSynonyms" : [ ],
-      "matchedConceptDef" : [ ],
-      "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
-    } ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.03660154956897451,
-    "ontologyScore" : 1
   }, {
     "ontologyID" : "https://data.bioontology.org/ontologies/OBOREL",
     "ontologyName" : "Relations Ontology",
@@ -65,9 +39,9 @@
     },
     "conceptUtilityScores" : [ {
       "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-      "conceptContextMatchingScore" : 0.0,
+      "conceptContextMatchingScore" : 0.2,
       "conceptSemanticRichnessScore" : 0.6000000000000001,
-      "conceptUtilityScore" : 0.0,
+      "conceptUtilityScore" : 0.4,
       "matchedConceptLabel" : "BFO_0000141",
       "matchedConceptSynonyms" : [ ],
       "matchedConceptDef" : [ ],
@@ -75,7 +49,163 @@
       "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/CARO_0000007" ]
     } ],
     "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.03005649241375391,
+    "totalUtilityScore" : 0.16338982574708724,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/APOLLO-SV",
+    "ontologyName" : "Apollo Structured Vocabulary",
+    "ontologyDef" : null,
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 0.0,
+      "ontologyPopularityScore" : 4.650255254142568E-5,
+      "ontologyCoverageScore" : 0.294,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.07350697538288122
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+      "conceptContextMatchingScore" : 0.2,
+      "conceptSemanticRichnessScore" : 0.6000000000000001,
+      "conceptUtilityScore" : 0.4,
+      "matchedConceptLabel" : "BFO_0000141",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ ],
+      "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.1578356584609604,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/IDO",
+    "ontologyName" : "Infectious Disease Ontology",
+    "ontologyDef" : null,
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 0.0,
+      "ontologyPopularityScore" : 0.08137601281052774,
+      "ontologyCoverageScore" : 0.235,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.07095640192157916
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+      "conceptContextMatchingScore" : 0.2,
+      "conceptSemanticRichnessScore" : 0.6000000000000001,
+      "conceptUtilityScore" : 0.4,
+      "matchedConceptLabel" : "immaterial entity",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ ],
+      "matchedConceptSubClasses" : [ "spatial region", "site" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.15698546730719304,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/ICO",
+    "ontologyName" : "Informed Consent Ontology",
+    "ontologyDef" : null,
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 0.0,
+      "ontologyPopularityScore" : 1.2128735926009272E-4,
+      "ontologyCoverageScore" : 0.275,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.06876819310388901
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+      "conceptContextMatchingScore" : 0.2,
+      "conceptSemanticRichnessScore" : 0.6000000000000001,
+      "conceptUtilityScore" : 0.4,
+      "matchedConceptLabel" : "immaterial entity",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ ],
+      "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.15625606436796302,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/DIDEO",
+    "ontologyName" : "Drug Interaction and Evidence Ontology",
+    "ontologyDef" : null,
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 0.0,
+      "ontologyPopularityScore" : 0.01622666042392634,
+      "ontologyCoverageScore" : 0.255,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.06618399906358895
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+      "conceptContextMatchingScore" : 0.2,
+      "conceptSemanticRichnessScore" : 0.6000000000000001,
+      "conceptUtilityScore" : 0.4,
+      "matchedConceptLabel" : "BFO_0000141",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ ],
+      "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.15539466635452964,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/HHEAR",
+    "ontologyName" : "Human Health Exposure Analysis Resource",
+    "ontologyDef" : null,
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 0.0,
+      "ontologyPopularityScore" : 8.498273490757618E-5,
+      "ontologyCoverageScore" : 0.51,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.12751274741023613
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+      "conceptContextMatchingScore" : 0.2,
+      "conceptSemanticRichnessScore" : 0.4,
+      "conceptUtilityScore" : 0.30000000000000004,
+      "matchedConceptLabel" : "immaterial entity",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ ],
+      "matchedConceptSubClasses" : [ "spatial region" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.14250424913674536,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/OGMS",
+    "ontologyName" : "Ontology for General Medical Science",
+    "ontologyDef" : null,
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 0.0,
+      "ontologyPopularityScore" : 0.0653643247128236,
+      "ontologyCoverageScore" : 0.0,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 1.0,
+      "ontologyTotalUtilityScore" : 0.10980464870692354
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+      "conceptContextMatchingScore" : 0.2,
+      "conceptSemanticRichnessScore" : 0.4,
+      "conceptUtilityScore" : 0.30000000000000004,
+      "matchedConceptLabel" : "BFO_0000141",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ ],
+      "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.13660154956897452,
     "ontologyScore" : 1
   }, {
     "ontologyID" : "https://data.bioontology.org/ontologies/HSO",
@@ -91,9 +221,9 @@
     },
     "conceptUtilityScores" : [ {
       "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-      "conceptContextMatchingScore" : 0.0,
+      "conceptContextMatchingScore" : 0.2,
       "conceptSemanticRichnessScore" : 0.4,
-      "conceptUtilityScore" : 0.0,
+      "conceptUtilityScore" : 0.30000000000000004,
       "matchedConceptLabel" : "immaterial entity",
       "matchedConceptSynonyms" : [ ],
       "matchedConceptDef" : [ ],
@@ -101,7 +231,7 @@
       "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
     } ],
     "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.029418339126889643,
+    "totalUtilityScore" : 0.12941833912688966,
     "ontologyScore" : 1
   }, {
     "ontologyID" : "https://data.bioontology.org/ontologies/VO",
@@ -117,9 +247,9 @@
     },
     "conceptUtilityScores" : [ {
       "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-      "conceptContextMatchingScore" : 0.0,
+      "conceptContextMatchingScore" : 0.2,
       "conceptSemanticRichnessScore" : 0.4,
-      "conceptUtilityScore" : 0.0,
+      "conceptUtilityScore" : 0.30000000000000004,
       "matchedConceptLabel" : "immaterial entity",
       "matchedConceptSynonyms" : [ ],
       "matchedConceptDef" : [ ],
@@ -127,7 +257,7 @@
       "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
     } ],
     "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.02859915643688366,
+    "totalUtilityScore" : 0.12859915643688366,
     "ontologyScore" : 1
   }, {
     "ontologyID" : "https://data.bioontology.org/ontologies/OHMI",
@@ -143,9 +273,9 @@
     },
     "conceptUtilityScores" : [ {
       "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-      "conceptContextMatchingScore" : 0.0,
+      "conceptContextMatchingScore" : 0.2,
       "conceptSemanticRichnessScore" : 0.4,
-      "conceptUtilityScore" : 0.0,
+      "conceptUtilityScore" : 0.30000000000000004,
       "matchedConceptLabel" : "immaterial entity",
       "matchedConceptSynonyms" : [ ],
       "matchedConceptDef" : [ ],
@@ -153,7 +283,215 @@
       "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006" ]
     } ],
     "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.02775322934392649,
+    "totalUtilityScore" : 0.1277532293439265,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/HOIP",
+    "ontologyName" : "Homeostasis imbalance process ontology",
+    "ontologyDef" : null,
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 0.0,
+      "ontologyPopularityScore" : 1.6683810517055354E-4,
+      "ontologyCoverageScore" : 0.314,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.07852502571577559
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+      "conceptContextMatchingScore" : 0.2,
+      "conceptSemanticRichnessScore" : 0.4,
+      "conceptUtilityScore" : 0.30000000000000004,
+      "matchedConceptLabel" : "immaterial entity",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ ],
+      "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.1261750085719252,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/TXPO",
+    "ontologyName" : "Toxic Process Ontology",
+    "ontologyDef" : null,
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 0.0,
+      "ontologyPopularityScore" : 1.5691212173334865E-4,
+      "ontologyCoverageScore" : 0.314,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.07852353681826
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+      "conceptContextMatchingScore" : 0.2,
+      "conceptSemanticRichnessScore" : 0.4,
+      "conceptUtilityScore" : 0.30000000000000004,
+      "matchedConceptLabel" : "immaterial entity",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ ],
+      "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.12617451227275334,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/MIRNAO",
+    "ontologyName" : "MicroRNA Ontology",
+    "ontologyDef" : null,
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 0.0,
+      "ontologyPopularityScore" : 1.0551456366124658E-4,
+      "ontologyCoverageScore" : 0.314,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.07851582718454919
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+      "conceptContextMatchingScore" : 0.2,
+      "conceptSemanticRichnessScore" : 0.4,
+      "conceptUtilityScore" : 0.30000000000000004,
+      "matchedConceptLabel" : "Immaterial Entity",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ "BFO 2 Reference: Immaterial entities are divided into two subgroups:boundaries and sites, which bound, or are demarcated in relation, to material entities, and which can thus change location, shape and size and as their material hosts move or change shape or size (for example: your nasal passage; the hold of a ship; the boundary of Wales (which moves with the rotation of the Earth)." ],
+      "matchedConceptSubClasses" : [ ],
+      "matchedConceptSubClassesIds" : [ ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.12617194239484975,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/NCRO",
+    "ontologyName" : "Non-coding RNA Ontology",
+    "ontologyDef" : null,
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 0.0,
+      "ontologyPopularityScore" : 5.398103321329239E-5,
+      "ontologyCoverageScore" : 0.314,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.078508097154982
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+      "conceptContextMatchingScore" : 0.2,
+      "conceptSemanticRichnessScore" : 0.4,
+      "conceptUtilityScore" : 0.30000000000000004,
+      "matchedConceptLabel" : "BFO_0000141",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ ],
+      "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.12616936571832732,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/OGSF",
+    "ontologyName" : "Ontology for Genetic Susceptibility Factor",
+    "ontologyDef" : null,
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 0.0,
+      "ontologyPopularityScore" : 3.0865729318431666E-5,
+      "ontologyCoverageScore" : 0.314,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.07850462985939777
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+      "conceptContextMatchingScore" : 0.2,
+      "conceptSemanticRichnessScore" : 0.4,
+      "conceptUtilityScore" : 0.30000000000000004,
+      "matchedConceptLabel" : "immaterial entity",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ ],
+      "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.1261682099531326,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/LIFO",
+    "ontologyName" : "Life Ontology",
+    "ontologyDef" : null,
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 0.0,
+      "ontologyPopularityScore" : 4.391907740023537E-5,
+      "ontologyCoverageScore" : 0.294,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.07350658786161003
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+      "conceptContextMatchingScore" : 0.2,
+      "conceptSemanticRichnessScore" : 0.4,
+      "conceptUtilityScore" : 0.30000000000000004,
+      "matchedConceptLabel" : "immaterial entity",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ ],
+      "matchedConceptSubClasses" : [ "spatial region", "site" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.12450219595387002,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/AGRO",
+    "ontologyName" : "AGRonomy Ontology",
+    "ontologyDef" : null,
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 0.0,
+      "ontologyPopularityScore" : 7.736828185985735E-5,
+      "ontologyCoverageScore" : 0.275,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.06876160524227898
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+      "conceptContextMatchingScore" : 0.2,
+      "conceptSemanticRichnessScore" : 0.4,
+      "conceptUtilityScore" : 0.30000000000000004,
+      "matchedConceptLabel" : "immaterial entity",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ ],
+      "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.12292053508075967,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/OVAE",
+    "ontologyName" : "Ontology of Vaccine Adverse Events",
+    "ontologyDef" : null,
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 0.0,
+      "ontologyPopularityScore" : 4.1335602259045054E-5,
+      "ontologyCoverageScore" : 0.275,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.06875620034033886
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+      "conceptContextMatchingScore" : 0.2,
+      "conceptSemanticRichnessScore" : 0.4,
+      "conceptUtilityScore" : 0.30000000000000004,
+      "matchedConceptLabel" : "immaterial entity",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ ],
+      "matchedConceptSubClasses" : [ "spatial region", "site" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.12291873344677963,
     "ontologyScore" : 1
   }, {
     "ontologyID" : "https://data.bioontology.org/ontologies/OMIT",
@@ -170,344 +508,6 @@
     "conceptUtilityScores" : [ ],
     "ontologyAggregatedScore" : 0.0,
     "totalUtilityScore" : 0.02698198367847545,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/HOIP",
-    "ontologyName" : "Homeostasis imbalance process ontology",
-    "ontologyDef" : null,
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 1.6683810517055354E-4,
-      "ontologyCoverageScore" : 0.314,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.07852502571577559
-    },
-    "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-      "conceptContextMatchingScore" : 0.0,
-      "conceptSemanticRichnessScore" : 0.4,
-      "conceptUtilityScore" : 0.0,
-      "matchedConceptLabel" : "immaterial entity",
-      "matchedConceptSynonyms" : [ ],
-      "matchedConceptDef" : [ ],
-      "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
-    } ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.026175008571925194,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/TXPO",
-    "ontologyName" : "Toxic Process Ontology",
-    "ontologyDef" : null,
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 1.5691212173334865E-4,
-      "ontologyCoverageScore" : 0.314,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.07852353681826
-    },
-    "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-      "conceptContextMatchingScore" : 0.0,
-      "conceptSemanticRichnessScore" : 0.4,
-      "conceptUtilityScore" : 0.0,
-      "matchedConceptLabel" : "immaterial entity",
-      "matchedConceptSynonyms" : [ ],
-      "matchedConceptDef" : [ ],
-      "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
-    } ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.026174512272753334,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/MIRNAO",
-    "ontologyName" : "MicroRNA Ontology",
-    "ontologyDef" : null,
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 1.0551456366124658E-4,
-      "ontologyCoverageScore" : 0.314,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.07851582718454919
-    },
-    "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-      "conceptContextMatchingScore" : 0.0,
-      "conceptSemanticRichnessScore" : 0.4,
-      "conceptUtilityScore" : 0.0,
-      "matchedConceptLabel" : "Immaterial Entity",
-      "matchedConceptSynonyms" : [ ],
-      "matchedConceptDef" : [ "BFO 2 Reference: Immaterial entities are divided into two subgroups:boundaries and sites, which bound, or are demarcated in relation, to material entities, and which can thus change location, shape and size and as their material hosts move or change shape or size (for example: your nasal passage; the hold of a ship; the boundary of Wales (which moves with the rotation of the Earth)." ],
-      "matchedConceptSubClasses" : [ ],
-      "matchedConceptSubClassesIds" : [ ]
-    } ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.02617194239484973,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/NCRO",
-    "ontologyName" : "Non-coding RNA Ontology",
-    "ontologyDef" : null,
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 5.398103321329239E-5,
-      "ontologyCoverageScore" : 0.314,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.078508097154982
-    },
-    "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-      "conceptContextMatchingScore" : 0.0,
-      "conceptSemanticRichnessScore" : 0.4,
-      "conceptUtilityScore" : 0.0,
-      "matchedConceptLabel" : "BFO_0000141",
-      "matchedConceptSynonyms" : [ ],
-      "matchedConceptDef" : [ ],
-      "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
-    } ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.02616936571832733,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/OGSF",
-    "ontologyName" : "Ontology for Genetic Susceptibility Factor",
-    "ontologyDef" : null,
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 3.0865729318431666E-5,
-      "ontologyCoverageScore" : 0.314,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.07850462985939777
-    },
-    "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-      "conceptContextMatchingScore" : 0.0,
-      "conceptSemanticRichnessScore" : 0.4,
-      "conceptUtilityScore" : 0.0,
-      "matchedConceptLabel" : "immaterial entity",
-      "matchedConceptSynonyms" : [ ],
-      "matchedConceptDef" : [ ],
-      "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
-    } ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.026168209953132588,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/APOLLO-SV",
-    "ontologyName" : "Apollo Structured Vocabulary",
-    "ontologyDef" : null,
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 4.650255254142568E-5,
-      "ontologyCoverageScore" : 0.294,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.07350697538288122
-    },
-    "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-      "conceptContextMatchingScore" : 0.0,
-      "conceptSemanticRichnessScore" : 0.6000000000000001,
-      "conceptUtilityScore" : 0.0,
-      "matchedConceptLabel" : "BFO_0000141",
-      "matchedConceptSynonyms" : [ ],
-      "matchedConceptDef" : [ ],
-      "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
-    } ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.02450232512762707,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/LIFO",
-    "ontologyName" : "Life Ontology",
-    "ontologyDef" : null,
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 4.391907740023537E-5,
-      "ontologyCoverageScore" : 0.294,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.07350658786161003
-    },
-    "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-      "conceptContextMatchingScore" : 0.0,
-      "conceptSemanticRichnessScore" : 0.4,
-      "conceptUtilityScore" : 0.0,
-      "matchedConceptLabel" : "immaterial entity",
-      "matchedConceptSynonyms" : [ ],
-      "matchedConceptDef" : [ ],
-      "matchedConceptSubClasses" : [ "spatial region", "site" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
-    } ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.024502195953870008,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/IDO",
-    "ontologyName" : "Infectious Disease Ontology",
-    "ontologyDef" : null,
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 0.08137601281052774,
-      "ontologyCoverageScore" : 0.235,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.07095640192157916
-    },
-    "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-      "conceptContextMatchingScore" : 0.0,
-      "conceptSemanticRichnessScore" : 0.6000000000000001,
-      "conceptUtilityScore" : 0.0,
-      "matchedConceptLabel" : "immaterial entity",
-      "matchedConceptSynonyms" : [ ],
-      "matchedConceptDef" : [ ],
-      "matchedConceptSubClasses" : [ "spatial region", "site" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
-    } ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.02365213397385972,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/ICO",
-    "ontologyName" : "Informed Consent Ontology",
-    "ontologyDef" : null,
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 1.2128735926009272E-4,
-      "ontologyCoverageScore" : 0.275,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.06876819310388901
-    },
-    "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-      "conceptContextMatchingScore" : 0.0,
-      "conceptSemanticRichnessScore" : 0.6000000000000001,
-      "conceptUtilityScore" : 0.0,
-      "matchedConceptLabel" : "immaterial entity",
-      "matchedConceptSynonyms" : [ ],
-      "matchedConceptDef" : [ ],
-      "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
-    } ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.02292273103462967,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/AGRO",
-    "ontologyName" : "AGRonomy Ontology",
-    "ontologyDef" : null,
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 7.736828185985735E-5,
-      "ontologyCoverageScore" : 0.275,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.06876160524227898
-    },
-    "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-      "conceptContextMatchingScore" : 0.0,
-      "conceptSemanticRichnessScore" : 0.4,
-      "conceptUtilityScore" : 0.0,
-      "matchedConceptLabel" : "immaterial entity",
-      "matchedConceptSynonyms" : [ ],
-      "matchedConceptDef" : [ ],
-      "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
-    } ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.022920535080759658,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/OVAE",
-    "ontologyName" : "Ontology of Vaccine Adverse Events",
-    "ontologyDef" : null,
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 4.1335602259045054E-5,
-      "ontologyCoverageScore" : 0.275,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.06875620034033886
-    },
-    "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-      "conceptContextMatchingScore" : 0.0,
-      "conceptSemanticRichnessScore" : 0.4,
-      "conceptUtilityScore" : 0.0,
-      "matchedConceptLabel" : "immaterial entity",
-      "matchedConceptSynonyms" : [ ],
-      "matchedConceptDef" : [ ],
-      "matchedConceptSubClasses" : [ "spatial region", "site" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
-    } ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.022918733446779617,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/OPMI",
-    "ontologyName" : "Ontology of Precision Medicine and Investigation",
-    "ontologyDef" : null,
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 3.3585176835474105E-5,
-      "ontologyCoverageScore" : 0.275,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.06875503777652532
-    },
-    "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-      "conceptContextMatchingScore" : 0.0,
-      "conceptSemanticRichnessScore" : 0.4,
-      "conceptUtilityScore" : 0.0,
-      "matchedConceptLabel" : "immaterial entity",
-      "matchedConceptSynonyms" : [ ],
-      "matchedConceptDef" : [ ],
-      "matchedConceptSubClasses" : [ "site" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000029" ]
-    } ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.02291834592550844,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/DIDEO",
-    "ontologyName" : "Drug Interaction and Evidence Ontology",
-    "ontologyDef" : null,
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 0.01622666042392634,
-      "ontologyCoverageScore" : 0.255,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.06618399906358895
-    },
-    "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-      "conceptContextMatchingScore" : 0.0,
-      "conceptSemanticRichnessScore" : 0.6000000000000001,
-      "conceptUtilityScore" : 0.0,
-      "matchedConceptLabel" : "BFO_0000141",
-      "matchedConceptSynonyms" : [ ],
-      "matchedConceptDef" : [ ],
-      "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
-    } ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.022061333021196314,
     "ontologyScore" : 1
   } ],
   "rewardScore" : [ 1.0 ],

@@ -24,6 +24,7 @@ public class AMLMappings {
 	}
 
 	private ArrayList<AMLMapping> mappings=new ArrayList<AMLMapping>();
+	private ArrayList<AMLMapping> AMLAlignments=new ArrayList<AMLMapping>();
 	
 	public void setMappings(String inputClassName, String sourceFileName, String targetFileName) throws OWLException {
 		final Logger log = Logger.getLogger(AMLMappings.class);
@@ -38,7 +39,7 @@ public class AMLMappings {
 		log.info("AML made the matching step between the two ontologies...");
 		
 		//If there exist AML mappings put them in AMLMappings object (arraylist)
-		if(aml.getAlignment().size() > 0) { 
+	/*	if(aml.getAlignment().size() > 0) { 
 			int id=1;
 			/*System.out.println("AML mappings are: "+ aml.getAlignment().size());
 			for(int i=0; i<aml.getAlignment().size(); i++) {
@@ -49,7 +50,7 @@ public class AMLMappings {
 				id++;
 				} */
 			//to add mapping for only the class that is chosen by the user
-			for(int i=0; i<aml.getAlignment().size(); i++) {
+	/*		for(int i=0; i<aml.getAlignment().size(); i++) {
 				String[] mappingitems=aml.getAlignment().get(i).toString().split("\t");
 				if(mappingitems[0].trim().endsWith(inputClassName)) {
 					mappings.add(new AMLMapping(id,mappingitems[0].trim(),mappingitems[1].trim(),
@@ -62,8 +63,8 @@ public class AMLMappings {
 			}
 		} else
 		  System.out .println("There are no AML mappings!!"); 
-		}
-	
+		}*/
+	}
 	
 	public void setSavedMappings(String inputClassName, String sourceFileName, String targetFileName) throws IOException, Exception {
 		final Logger log = Logger.getLogger(AMLMappings.class);
@@ -74,7 +75,7 @@ public class AMLMappings {
 		System.out.println("Saved File Matched Ontology:  "+ matchedFileName);
 		
 		//get the AML Alignmnets from the saved file
-		List<AMLMapping> AMLAlignments=getAlignments(matchedFileName);
+		AMLAlignments=getAlignments(matchedFileName);
 		
 		//get inputFile classids and labels
 		Map<String,String> classIdandLabels=EntityExtractionClass.getOntolgyClassesLabels(EntityExtractionClass.laodOntology(sourceFileName));
@@ -104,6 +105,10 @@ public class AMLMappings {
 	
 	public ArrayList<AMLMapping> getMappings() {
 		return mappings;
+	}
+	
+	public ArrayList<AMLMapping> getAlignments() {
+		return AMLAlignments;
 	}
 	
 	public AMLMapping getMappingAtIndex(int i)
@@ -150,8 +155,9 @@ public class AMLMappings {
 		return newMappings;
 	}
 	
-	public List<AMLMapping> getAlignments(String matchedFileName){
+	public ArrayList<AMLMapping> getAlignments(String matchedFileName){
 		List<AMLMapping> alignments = null;
+		ArrayList<AMLMapping> modifiedArrayList=new ArrayList<AMLMapping>();
 		try {
 		    // create object mapper instance
 		    ObjectMapper mapper = new ObjectMapper();
@@ -162,6 +168,8 @@ public class AMLMappings {
 		} catch (Exception ex) {
 		    ex.printStackTrace();
 		}
-		return alignments;
+	    for(AMLMapping m: alignments) 
+			modifiedArrayList.add(m);	    
+		return modifiedArrayList;
 	}
 }

@@ -101,12 +101,14 @@ public class ConceptUtilityClass {
 		OntologyMatchingAlgorithm testCase= new OntologyMatchingAlgorithm(filename1,filename2);
 		System.out.println("The output is:");
 		//For each Mapping check to include it or not in our final mappings
+		System.out.println("Alignments size is:    "+ mappings.getAlignments().size());
 		if(mappings.getSizeOfMappings() > 0) {		
 			Iterator<AMLMapping> mappingIterator = mappings.getMappings().iterator();
 			while (mappingIterator.hasNext()) {
 				AMLMapping mapping = mappingIterator.next();
 				System.out.println("The AML mappings:   "+mapping.getMappingId() + " " + mapping.getSourceURI() + "     " + mapping.getTargetURI());
-				ConceptUtilityScoreClass candidateConceptForExtension=testCase.getSimilarclasses(mapping, mappings.getMappings(),filename2);
+				//ConceptUtilityScoreClass candidateConceptForExtension=testCase.getSimilarclasses(mapping, mappings.getMappings(),filename2);
+				ConceptUtilityScoreClass candidateConceptForExtension=testCase.getSimilarclasses(mapping, mappings.getAlignments(),filename2);
 				candidateConceptForExtension.setMatchedConceptLabel(EntityExtractionClass.getClassName(testCase.getTargetOntology(), candidateConceptForExtension.getMatchedConceptName()));
 				conceptsForExtension.add(candidateConceptForExtension);
 				// used memory

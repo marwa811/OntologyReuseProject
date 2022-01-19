@@ -64,6 +64,7 @@ public class OntologyMatchingAlgorithm {
 	
 	public OntologyMatchingAlgorithm(String sourceFile,String targetFile) throws OWLOntologyCreationException, OWLException {
 		sourceOntology.laodOntology(sourceFile);
+		//sourceOntology.getOntology();
 		try {
 		targetOntology.laodOntology(targetFile);
 		}
@@ -96,12 +97,10 @@ public class OntologyMatchingAlgorithm {
 	}
 	
 	public double getConceptSemanticRichnessScore() {
-		System.out.println("the conceptSemanticRichnessScore is:"+ conceptSemanticRichnessScore);
 		return conceptSemanticRichnessScore;
 	}
 	
 	public double getconceptContextMatchingScore() {
-		System.out.println("the conceptContextMatchingScore is:"+ conceptContextMatchingScore);
 		return conceptContextMatchingScore;
 	}
 	
@@ -264,18 +263,19 @@ public boolean testMappingExistence(OWLClass class1, OWLClass class2, List<AMLMa
 		// Condition 5: if two classes has common sibling classes with mappings, then they can be
 		// semantically the same
 		getSiblingClassesWithMappings( m, mappings);
-		
 		// Condition 6: if two classes has common object properties && has domain/range classes that have mappings 
 		// then they are semantically the same.
 		getCommonObjectProperties(m, mappings);
 		
 		getSynonymsandDefinitionScores(m,mappings);
 		
-		
 		AdditionalClassInfo classInfo=TermSearchUsingBioportal.getClassInfo(m.getTargetURI(),targetFileName);
-		if(classInfo==null)
 		
 		conceptUtilityScore=0.5* conceptContextMatchingScore+ 0.5*conceptSemanticRichnessScore;
+		System.out.println("the conceptContextMatchingScore is:"+ conceptContextMatchingScore);
+		System.out.println("the conceptSemanticRichnessScore is:"+ conceptSemanticRichnessScore);
+		System.out.println("the conceptUtilityScore is:"+ conceptUtilityScore);
+		
 		ConceptUtilityScoreClass conceptForExtension=null;
 		if(classInfo==null)
 			conceptForExtension=new ConceptUtilityScoreClass(
@@ -349,7 +349,7 @@ public boolean testMappingExistence(OWLClass class1, OWLClass class2, List<AMLMa
 	 */
 
 	public void getEquivalentClassesWithMappings(AMLMapping m, List<AMLMapping> mappings ) throws IOException {
-	
+	System.out.println("Equivalence test");
 	OWLClass sourceClass=sourceOntology.getOWLClassfromIRI(m.getSourceURI());
 	OWLClass targetClass = targetOntology.getOWLClassfromIRI(m.getTargetURI());	
 	Set<OWLClass> sourceClassEquavilantClasses= sourceOntology.getEquavilantClasses(sourceClass);
@@ -374,17 +374,21 @@ public boolean testMappingExistence(OWLClass class1, OWLClass class2, List<AMLMa
 	 */
 	public void getSubClassesWithMappings(AMLMapping m, List<AMLMapping> mappings ) throws IOException {
 		boolean temp=false;
+		//System.out.println("SubClass test.........");
 		OWLClass sourceClass=sourceOntology.getOWLClassfromIRI(m.getSourceURI());
 		OWLClass targetClass = targetOntology.getOWLClassfromIRI(m.getTargetURI());
 		Set<OWLClass> sourceClassSubClasses= sourceOntology.getSubClasses(sourceClass);
 		Set<OWLClass> targetClassSubClasses= targetOntology.getSubClasses(targetClass);
+		//System.out.println("SubClass Size: "+ targetClassSubClasses.size());
 		if(targetClassSubClasses.size()>0)
 			conceptSemanticRichnessScore+=0.2;
 		for (OWLClass c1 : sourceClassSubClasses) { 
+			//System.out.println("Source SubClass: "+ c1.toString());
 			if (Finalmappings.contains(m))
 				break;
 			
 			for (OWLClass c2 : targetClassSubClasses) {
+				//System.out.println("Target SubClass: "+ c2.toString());
 				if(testMappingExistence(c1, c2, mappings)) {
 					System.out.println("Added for common sub classes");
 					temp=true;
@@ -410,6 +414,7 @@ public boolean testMappingExistence(OWLClass class1, OWLClass class2, List<AMLMa
 	
 	public void getParentClassWithMappings(AMLMapping m, List<AMLMapping> mappings ) throws IOException {
 		boolean temp=false;
+		System.out.println("Parent test.........");
 		OWLClass sourceClass=sourceOntology.getOWLClassfromIRI(m.getSourceURI());
 		OWLClass targetClass = targetOntology.getOWLClassfromIRI(m.getTargetURI());
 		Set<OWLClass> sourceClassDirectSuperClass= sourceOntology.getDirectSuperClass(sourceClass);
@@ -446,6 +451,7 @@ public boolean testMappingExistence(OWLClass class1, OWLClass class2, List<AMLMa
 	
 	public void getNotDirectParentClassWithMappings(AMLMapping m, List<AMLMapping> mappings) throws IOException {
 		boolean temp=false;
+		System.out.println("Not Direct Parent test.........");
 		OWLClass sourceClass=sourceOntology.getOWLClassfromIRI(m.getSourceURI());
 		OWLClass targetClass = targetOntology.getOWLClassfromIRI(m.getTargetURI());
 		Set<OWLClass> sourceClassAllSuperClass= sourceOntology.getAllSuperClasses(sourceClass);
