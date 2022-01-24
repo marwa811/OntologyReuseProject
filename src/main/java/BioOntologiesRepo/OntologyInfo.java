@@ -52,7 +52,7 @@ public class OntologyInfo {
         		
         		//create new ontology object
         		Ontology ont = new Ontology(getOntologyName(ontology), getOntologyId(ontology), 
-        				getOntologyAcronym(ontology), getOntologyCategory(ontology),
+        				getOntologyAcronym(ontology), getOntologyDescription(ontology), getOntologyCategory(ontology),
         				getViewsNo(ontology), getOntologyProjectsNo(ontology), getObjectPropertyNo(ontology), 
         				getClassesNo(ontology));
         		
@@ -98,6 +98,27 @@ public class OntologyInfo {
         System.out.println(ontAcronym);
         return ontAcronym;    
     }
+	
+	//return ontology description as a string 
+	private static String getOntologyDescription(JsonNode ontology) throws IOException {
+		String description=null;
+		JsonNode latest_submission = jsonToNode(get(ontology.get("links").get("latest_submission").asText())); 	
+        try {
+	    if (latest_submission.has("description")) {
+	    	description=latest_submission.get("description").asText();
+	    	System.out.println(description);
+	     }
+	    else
+	    	System.out.println("No available description for this ontology");
+    	}
+    	catch(NullPointerException e){
+    		System.out.println("No available description for this ontology (null pointer)");
+    	}	
+        return description;   
+	}
+
+	
+	
 	///////////////////////////////////////////////////////////////////////////
 	//return ontology category(ies) as a string[] 
 	private static String[] getOntologyCategory(JsonNode ontology) throws IOException {	

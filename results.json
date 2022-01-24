@@ -1,511 +1,541 @@
 [ {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ENVO",
-  "ontologyName" : "Environment Ontology",
-  "ontologyDef" : null,
+  "ontologyID" : "https://data.bioontology.org/ontologies/ICO",
+  "ontologyName" : "Informed Consent Ontology",
+  "ontologyDescription" : "Informed Consent Ontology (ICO) is a community-based ontology in the domain of informed consent. It is an OBO library ontology and developed by following the OBO Foundry principles. ",
   "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.3333333333333333,
-    "ontologyPopularityScore" : 0.16738038932268584,
-    "ontologyCoverageScore" : 0.196,
+    "ontologyDomainScore" : 1.0,
+    "ontologyPopularityScore" : 1.182200240046301E-4,
+    "ontologyCoverageScore" : 0.275,
     "prefOntologyScore" : 1.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.4074403917317362
+    "ontologyTotalUtilityScore" : 0.5687677330036007
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000040",
+    "conceptContextMatchingScore" : 0.2,
+    "conceptSemanticRichnessScore" : 0.6000000000000001,
+    "conceptUtilityScore" : 0.4,
+    "matchedConceptLabel" : "material entity",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time." ],
+    "matchedConceptSubClasses" : [ "whole organism preparation", "molecular-labeled material", "anatomical cluster", "processed material", "object aggregate", "photographic print", "object", "material sample", "blood plasma specimen", "specimen", "Material anatomical entity", "fiat object part", "collection of organisms", "molecular entity", "organization", "aggregate of organizations", "population", "material information bearer", "disorder", "material anatomical entity", "agent", "target of material addition", "cell", "residual clinical biospecimen", "organism" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/OBI_0000680", "http://purl.obolibrary.org/obo/OBI_0001936", "http://purl.obolibrary.org/obo/UBERON_0000477", "http://purl.obolibrary.org/obo/OBI_0000047", "http://purl.obolibrary.org/obo/BFO_0000027", "http://purl.obolibrary.org/obo/IAO_0000186", "http://purl.obolibrary.org/obo/BFO_0000030", "http://purl.obolibrary.org/obo/OBI_0000747", "http://purl.obolibrary.org/obo/OBI_0100016", "http://purl.obolibrary.org/obo/OBI_0100051", "http://purl.obolibrary.org/obo/FMA_67165", "http://purl.obolibrary.org/obo/BFO_0000024", "http://purl.obolibrary.org/obo/OMRSE_00000022", "http://purl.obolibrary.org/obo/CHEBI_23367", "http://purl.obolibrary.org/obo/OBI_0000245", "http://purl.obolibrary.org/obo/OMRSE_00000033", "http://purl.obolibrary.org/obo/OBI_0000181", "http://purl.obolibrary.org/obo/IAO_0000178", "http://purl.obolibrary.org/obo/OGMS_0000045", "http://purl.obolibrary.org/obo/UBERON_0000465", "http://purl.obolibrary.org/obo/ICO_0000220", "http://purl.obolibrary.org/obo/OBI_1110109", "http://purl.obolibrary.org/obo/CL_0000000", "http://purl.obolibrary.org/obo/ICO_0000429", "http://purl.obolibrary.org/obo/OBI_0100026" ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.3229225776678669,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/MHMO",
+  "ontologyName" : "Mental Health Management Ontology",
+  "ontologyDescription" : "This ontology can be used to assist in the management of mental healthcare network to allow the integration and interoperability between independent databases and to enable the generation of relevant indicators to mental health, to improve decision making, increasing the efficiency and effectiveness of mental health management.\r\nOntology created in the Laboratory of Health Intelligence - Ribeirao Preto Medical School, University of Sao Paulo, Brazil.\r\n",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 1.0,
+    "ontologyPopularityScore" : 7.198948709456259E-5,
+    "ontologyCoverageScore" : 0.196,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.29901079842306416
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000040",
     "conceptContextMatchingScore" : 0.2,
     "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "immaterial entity",
+    "matchedConceptLabel" : "material entity",
     "matchedConceptSynonyms" : [ ],
     "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+    "matchedConceptSubClasses" : [ "object aggregate", "object", "fiat object part" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000027", "http://purl.obolibrary.org/obo/BFO_0000030", "http://purl.obolibrary.org/obo/BFO_0000024" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.23581346391057872,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/OBOREL",
-  "ontologyName" : "Relations Ontology",
-  "ontologyDef" : null,
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.2744631816084115,
-    "ontologyCoverageScore" : 0.196,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.09016947724126173
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.6000000000000001,
-    "conceptUtilityScore" : 0.4,
-    "matchedConceptLabel" : "BFO_0000141",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "spatial region", "immaterial anatomical entity" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/CARO_0000007" ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.16338982574708724,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/APOLLO-SV",
-  "ontologyName" : "Apollo Structured Vocabulary",
-  "ontologyDef" : null,
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 4.650255254142568E-5,
-    "ontologyCoverageScore" : 0.294,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.07350697538288122
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.6000000000000001,
-    "conceptUtilityScore" : 0.4,
-    "matchedConceptLabel" : "BFO_0000141",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.1578356584609604,
+  "totalUtilityScore" : 0.19967026614102137,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/IDO",
   "ontologyName" : "Infectious Disease Ontology",
-  "ontologyDef" : null,
+  "ontologyDescription" : "The IDO ontologies are designed as a set of interoperable ontologies that will together provide coverage of the infectious disease domain. At the core of the set is a general Infectious Disease Ontology (IDO-Core) of entities relevant to both biomedical and clinical aspects of most infectious diseases. Sub-domain specific extensions of IDO-Core complete the set providing ontology coverage of entities relevant to specific pathogens or diseases. \r\n\r\n<br><br>\r\nTo import,<br>\r\nLatest version: <a href=\"http://purl.obolibrary.org/obo/ido.owl\">http://purl.obolibrary.org/obo/ido.owl</a><br>\r\nThis version (2010-12-02): <a href=\"http://purl.obolibrary.org/obo/ido/2010-12-02/ido.owl\">http://purl.obolibrary.org/obo/ido/2010-12-02/ido.owl</a><br>\r\nPrevious  versions:<br>\r\n2010-05-26 <a href=\"http://purl.obolibrary.org/obo/ido/2010-05-26/ido.owl\">http://purl.obolibrary.org/obo/ido/2010-05-26/ido.owl</a><br>\r\n2009-08-14 <a href=\"http://purl.obolibrary.org/obo/ido/2009-08-14/ido.owl\">http://purl.obolibrary.org/obo/ido/2009-08-14/ido.owl</a><br>\r\n<br>\r\n<br>\r\nLatest release notes at <a href=\"http://infectiousdiseaseontology.org/page/Download\">http://infectiousdiseaseontology.org/page/Download</a><br>\r\n\r\nPlease note: The ontology metrics displayed by BioPortal do not distinguish IDO-developed terms from terms imported from other ontologies.",
   "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.08137601281052774,
+    "ontologyDomainScore" : 0.5,
+    "ontologyPopularityScore" : 0.08144395989288597,
     "ontologyCoverageScore" : 0.235,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.07095640192157916
+    "ontologyTotalUtilityScore" : 0.1959665939839329
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000040",
     "conceptContextMatchingScore" : 0.2,
     "conceptSemanticRichnessScore" : 0.6000000000000001,
     "conceptUtilityScore" : 0.4,
-    "matchedConceptLabel" : "immaterial entity",
+    "matchedConceptLabel" : "material entity",
     "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "spatial region", "site" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+    "matchedConceptDef" : [ "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time." ],
+    "matchedConceptSubClasses" : [ "pathogen", "geographical entity", "processed material", "object aggregate", "infection", "object", "pathogen transporter", "architectual structure", "resistant entity", "cidal agent", "source of infection", "molecular entity", "macromolecular complex", "anatomical entity", "static agent", "disorder", "infectious agent reservoir" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/IDO_0000528", "http://purl.obolibrary.org/obo/GEO_000000370", "http://purl.obolibrary.org/obo/OBI_0000047", "http://purl.obolibrary.org/obo/BFO_0000027", "http://purl.obolibrary.org/obo/IDO_0000586", "http://purl.obolibrary.org/obo/BFO_0000030", "http://purl.obolibrary.org/obo/IDO_0001095", "http://purl.obolibrary.org/obo/OMRSE_00000061", "http://purl.obolibrary.org/obo/IDO_0000571", "http://purl.obolibrary.org/obo/IDO_0001089", "http://purl.obolibrary.org/obo/IDO_0000665", "http://purl.obolibrary.org/obo/CHEBI_23367", "http://purl.obolibrary.org/obo/GO_0032991", "http://purl.obolibrary.org/obo/CARO_0000000", "http://purl.obolibrary.org/obo/IDO_0001090", "http://purl.obolibrary.org/obo/OGMS_0000045", "http://purl.obolibrary.org/obo/IDO_0000545" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.15698546730719304,
+  "totalUtilityScore" : 0.19865553132797764,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ICO",
-  "ontologyName" : "Informed Consent Ontology",
-  "ontologyDef" : null,
+  "ontologyID" : "https://data.bioontology.org/ontologies/ODAE",
+  "ontologyName" : "Ontology of Drug Adverse Events",
+  "ontologyDescription" : "The Ontology of Drug Adverse Events (ODAE) is a biomedical ontology in the area of drug adverse events, developed by following OBO Foundry principles (e.g., openness, collaboration). ",
   "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 1.2128735926009272E-4,
-    "ontologyCoverageScore" : 0.275,
+    "ontologyDomainScore" : 1.0,
+    "ontologyPopularityScore" : 6.439737546123773E-5,
+    "ontologyCoverageScore" : 0.176,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.06876819310388901
+    "ontologyTotalUtilityScore" : 0.2940096596063192
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.6000000000000001,
-    "conceptUtilityScore" : 0.4,
-    "matchedConceptLabel" : "immaterial entity",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.15625606436796302,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/DIDEO",
-  "ontologyName" : "Drug Interaction and Evidence Ontology",
-  "ontologyDef" : null,
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.01622666042392634,
-    "ontologyCoverageScore" : 0.255,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.06618399906358895
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.6000000000000001,
-    "conceptUtilityScore" : 0.4,
-    "matchedConceptLabel" : "BFO_0000141",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.15539466635452964,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/HHEAR",
-  "ontologyName" : "Human Health Exposure Analysis Resource",
-  "ontologyDef" : null,
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 8.498273490757618E-5,
-    "ontologyCoverageScore" : 0.51,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.12751274741023613
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000040",
     "conceptContextMatchingScore" : 0.2,
     "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "immaterial entity",
+    "matchedConceptLabel" : "material entity",
     "matchedConceptSynonyms" : [ ],
     "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "spatial region" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006" ]
+    "matchedConceptSubClasses" : [ "Homo sapiens", "anatomical entity", "object", "Chemical Ingredients [Chemical/Ingredient]", "Pharmaceutical Preparations" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/NCBITaxon_9606", "http://purl.obolibrary.org/obo/UBERON_0001062", "http://purl.obolibrary.org/obo/BFO_0000030", "http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000002", "http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000001" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.14250424913674536,
+  "totalUtilityScore" : 0.19800321986877306,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/OGMS",
-  "ontologyName" : "Ontology for General Medical Science",
-  "ontologyDef" : null,
+  "ontologyID" : "https://data.bioontology.org/ontologies/VDOT",
+  "ontologyName" : "Viral Disease Ontology Trunk",
+  "ontologyDescription" : "VDOT is a middle-layer ontology for the health care domain with special emphasis on viral infections and transplantation medicine.",
   "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.0653643247128236,
-    "ontologyCoverageScore" : 0.0,
+    "ontologyDomainScore" : 0.3333333333333333,
+    "ontologyPopularityScore" : 4.053645318507385E-5,
+    "ontologyCoverageScore" : 0.235,
     "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 1.0,
-    "ontologyTotalUtilityScore" : 0.10980464870692354
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.14208941380131107
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000040",
     "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "BFO_0000141",
+    "conceptSemanticRichnessScore" : 0.6000000000000001,
+    "conceptUtilityScore" : 0.4,
+    "matchedConceptLabel" : "BFO_0000040",
     "matchedConceptSynonyms" : [ ],
     "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+    "matchedConceptSubClasses" : [ "object aggregate", "object", "fiat object part", "organism" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000027", "http://purl.obolibrary.org/obo/BFO_0000030", "http://purl.obolibrary.org/obo/BFO_0000024", "http://purl.obolibrary.org/obo/OBI_0100026" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.13660154956897452,
+  "totalUtilityScore" : 0.18069647126710367,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/AERO",
+  "ontologyName" : "Adverse Event Reporting Ontology",
+  "ontologyDescription" : "The Adverse Event Reporting Ontology (AERO) is an ontology aimed at supporting clinicians at the time of data entry, increasing quality and accuracy of reported adverse events.",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.5,
+    "ontologyPopularityScore" : 0.03266410691508989,
+    "ontologyCoverageScore" : 0.216,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.18389961603726349
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://www.ifomis.org/bfo/1.1/snap#MaterialEntity",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.6000000000000001,
+    "conceptUtilityScore" : 0.30000000000000004,
+    "matchedConceptLabel" : "MaterialEntity",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "device", "disorder", "anatomical entity", "patient" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/OBI_0000968", "http://purl.obolibrary.org/obo/OGMS_0000045", "http://purl.obolibrary.org/obo/OBI_0100015", "http://purl.obolibrary.org/obo/AERO_0000270" ]
+  }, {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000040",
+    "conceptContextMatchingScore" : 0.2,
+    "conceptSemanticRichnessScore" : 0.6000000000000001,
+    "conceptUtilityScore" : 0.4,
+    "matchedConceptLabel" : "BFO_0000040",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time." ],
+    "matchedConceptSubClasses" : [ "object aggregate", "photographic print", "object", "fiat object part", "material information bearer" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000027", "http://purl.obolibrary.org/obo/IAO_0000186", "http://purl.obolibrary.org/obo/BFO_0000030", "http://purl.obolibrary.org/obo/BFO_0000024", "http://purl.obolibrary.org/obo/IAO_0000178" ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.17796653867908785,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/HSO",
   "ontologyName" : "Health Surveillance Ontology",
-  "ontologyDef" : null,
+  "ontologyDescription" : "This is an ontology to support (one) health surveillance, focused on \"surveillance system level data\", that is, data outputs from surveillance activities, such as number of samples collected, cases observed, etc.",
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 3.344920445962198E-5,
+    "ontologyPopularityScore" : 3.755383790055337E-5,
     "ontologyCoverageScore" : 0.353,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.08825501738066893
+    "ontologyTotalUtilityScore" : 0.08825563307568508
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000040",
     "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "immaterial entity",
+    "conceptSemanticRichnessScore" : 0.6000000000000001,
+    "conceptUtilityScore" : 0.4,
+    "matchedConceptLabel" : "material entity",
     "matchedConceptSynonyms" : [ ],
     "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+    "matchedConceptSubClasses" : [ "object aggregate", "anatomical entity", "object", "specimen", "Campylobacter", "fiat object part", "organization", "portion of material", "organism" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000027", "http://purl.obolibrary.org/obo/UBERON_0001062", "http://purl.obolibrary.org/obo/BFO_0000030", "http://purl.obolibrary.org/obo/OBI_0100051", "http://purl.obolibrary.org/obo/NCBITaxon_194", "http://purl.obolibrary.org/obo/BFO_0000024", "http://purl.obolibrary.org/obo/OBI_0000245", "http://purl.obolibrary.org/obo/CHMO_0000993", "http://purl.obolibrary.org/obo/OBI_0100026" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.12941833912688966,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/VO",
-  "ontologyName" : "Vaccine Ontology",
-  "ontologyDef" : null,
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.04864979540433985,
-    "ontologyCoverageScore" : 0.314,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.08579746931065098
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "immaterial entity",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "spatial region", "site" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.12859915643688366,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/OHMI",
-  "ontologyName" : "Ontology of Host-Microbe Interactions",
-  "ontologyDef" : null,
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 6.458687852975789E-5,
-    "ontologyCoverageScore" : 0.333,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.08325968803177947
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "immaterial entity",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "spatial region" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006" ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.1277532293439265,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/HOIP",
-  "ontologyName" : "Homeostasis imbalance process ontology",
-  "ontologyDef" : null,
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 1.6683810517055354E-4,
-    "ontologyCoverageScore" : 0.314,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.07852502571577559
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "immaterial entity",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.1261750085719252,
+  "totalUtilityScore" : 0.16275187769189503,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/TXPO",
   "ontologyName" : "Toxic Process Ontology",
-  "ontologyDef" : null,
+  "ontologyDescription" : "TOXic Process Ontology (TXPO) includes entities related to toxic mechanisms (toxic courses) and processes, mainly focusing on hepatotoxicity.\r\nApplication system TOXPILOT:\r\nhttps://toxpilot.nibiohn.go.jp",
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 1.5691212173334865E-4,
+    "ontologyPopularityScore" : 1.7665216889682685E-4,
     "ontologyCoverageScore" : 0.314,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.07852353681826
+    "ontologyTotalUtilityScore" : 0.07852649782533452
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000040",
     "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "immaterial entity",
+    "conceptSemanticRichnessScore" : 0.6000000000000001,
+    "conceptUtilityScore" : 0.4,
+    "matchedConceptLabel" : "material entity",
     "matchedConceptSynonyms" : [ ],
     "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+    "matchedConceptSubClasses" : [ "object aggregate", "gene", "object", "fiat object part", "substance with role", "organism" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000027", "http://purl.obolibrary.org/obo/OGG_0000000002", "http://purl.obolibrary.org/obo/BFO_0000030", "http://purl.obolibrary.org/obo/BFO_0000024", "http://purl.obolibrary.org/obo/GOCHE_50906", "http://purl.obolibrary.org/obo/OBI_0100026" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.12617451227275334,
+  "totalUtilityScore" : 0.15950883260844484,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/MIRNAO",
   "ontologyName" : "MicroRNA Ontology",
-  "ontologyDef" : null,
+  "ontologyDescription" : "An application ontology for microRNAs.",
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 1.0551456366124658E-4,
+    "ontologyPopularityScore" : 1.126615137016601E-4,
     "ontologyCoverageScore" : 0.314,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.07851582718454919
+    "ontologyTotalUtilityScore" : 0.07851689922705525
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+    "matchedConceptName" : "http://www.ifomis.org/bfo/1.1/snap#MaterialEntity",
     "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "Immaterial Entity",
+    "conceptSemanticRichnessScore" : 0.6000000000000001,
+    "conceptUtilityScore" : 0.4,
+    "matchedConceptLabel" : "Material Entity",
     "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ "BFO 2 Reference: Immaterial entities are divided into two subgroups:boundaries and sites, which bound, or are demarcated in relation, to material entities, and which can thus change location, shape and size and as their material hosts move or change shape or size (for example: your nasal passage; the hold of a ship; the boundary of Wales (which moves with the rotation of the Earth)." ],
-    "matchedConceptSubClasses" : [ ],
-    "matchedConceptSubClassesIds" : [ ]
+    "matchedConceptDef" : [ "An independent continuant [snap:IndependentContinuant] that is spatially extended whose identity is independent of that of other entities and can be maintained through time. Note: Material entity [snap:MaterialEntity] subsumes object [snap:Object], fiat object part [snap:FiatObjectPart], and object aggregate [snap:ObjectAggregate], which assume a three level theory of granularity, which is inadequate for some domains, such as biology." ],
+    "matchedConceptSubClasses" : [ "Collection of Material Entities", "Object", "Fiat Object Part" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/RNAO_0000110", "http://purl.obolibrary.org/obo/BFO_0000030", "http://www.ifomis.org/bfo/1.1/snap#FiatObjectPart" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.12617194239484975,
+  "totalUtilityScore" : 0.15950563307568508,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/NCRO",
   "ontologyName" : "Non-coding RNA Ontology",
-  "ontologyDef" : null,
+  "ontologyDescription" : "The NCRO is a reference ontology in the non-coding RNA (ncRNA) field, aiming to provide a common set of terms and relations that will facilitate the curation, analysis, exchange, sharing, and management of ncRNA structural, functional, and sequence data.",
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 5.398103321329239E-5,
+    "ontologyPopularityScore" : 7.253178078265722E-5,
     "ontologyCoverageScore" : 0.314,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.078508097154982
+    "ontologyTotalUtilityScore" : 0.0785108797671174
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000040",
     "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "BFO_0000141",
+    "conceptSemanticRichnessScore" : 0.6000000000000001,
+    "conceptUtilityScore" : 0.4,
+    "matchedConceptLabel" : "BFO_0000040",
     "matchedConceptSynonyms" : [ ],
     "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+    "matchedConceptSubClasses" : [ "organic group", "cellular_component", "processed material", "object aggregate", "object", "fiat object part", "molecular entity", "organ", "material anatomical entity", "organism", "cultured cell population" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_33247", "http://purl.obolibrary.org/obo/GO_0005575", "http://purl.obolibrary.org/obo/OBI_0000047", "http://purl.obolibrary.org/obo/BFO_0000027", "http://purl.obolibrary.org/obo/BFO_0000030", "http://purl.obolibrary.org/obo/BFO_0000024", "http://purl.obolibrary.org/obo/CHEBI_23367", "http://purl.obolibrary.org/obo/UBERON_0000062", "http://purl.obolibrary.org/obo/UBERON_0000465", "http://purl.obolibrary.org/obo/OBI_0100026", "http://purl.obolibrary.org/obo/OBI_0100060" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.12616936571832732,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/OGSF",
-  "ontologyName" : "Ontology for Genetic Susceptibility Factor",
-  "ontologyDef" : null,
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 3.0865729318431666E-5,
-    "ontologyCoverageScore" : 0.314,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.07850462985939777
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "immaterial entity",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.1261682099531326,
+  "totalUtilityScore" : 0.15950362658903913,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/LIFO",
   "ontologyName" : "Life Ontology",
-  "ontologyDef" : null,
+  "ontologyDescription" : "The Life Ontology (LifO) is an ontology of the life of organism. LifO represents the life processes of organisms and related entities and relations. LifO is a general purpose ontology that covers the common features associated with different organisms such as unicellular prokaryotes (e.g., E. coli) and multicellular organisms (e.g., human).",
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 4.391907740023537E-5,
+    "ontologyPopularityScore" : 5.1246753524942865E-5,
     "ontologyCoverageScore" : 0.294,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.07350658786161003
+    "ontologyTotalUtilityScore" : 0.07350768701302873
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000040",
     "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "immaterial entity",
+    "conceptSemanticRichnessScore" : 0.6000000000000001,
+    "conceptUtilityScore" : 0.4,
+    "matchedConceptLabel" : "material entity",
     "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "spatial region", "site" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+    "matchedConceptDef" : [ "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time." ],
+    "matchedConceptSubClasses" : [ "cellular_component", "anatomical entity", "infection", "gene", "object", "environmental material", "protein", "organism", "genotype", "genome", "system", "environmental feature", "population", "nucleic acid", "extended organism", "cell" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/GO_0005575", "http://purl.obolibrary.org/obo/UBERON_0001062", "http://purl.obolibrary.org/obo/IDO_0000586", "http://purl.obolibrary.org/obo/OGG_0000000002", "http://purl.obolibrary.org/obo/BFO_0000030", "http://purl.obolibrary.org/obo/ENVO_00010483", "http://purl.obolibrary.org/obo/PR_000000001", "http://purl.obolibrary.org/obo/LifO_0000005", "http://purl.obolibrary.org/obo/LifO_0000002", "http://purl.obolibrary.org/obo/OGG_0000000001", "http://purl.obolibrary.org/obo/RO_0002577", "http://purl.obolibrary.org/obo/ENVO_00002297", "http://purl.obolibrary.org/obo/OBI_0000181", "http://purl.obolibrary.org/obo/CHEBI_33696", "http://purl.obolibrary.org/obo/OGMS_0000087", "http://purl.obolibrary.org/obo/CL_0000000" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.12450219595387002,
+  "totalUtilityScore" : 0.15783589567100959,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/AGRO",
   "ontologyName" : "AGRonomy Ontology",
-  "ontologyDef" : null,
+  "ontologyDescription" : "AGRO, the AGRonomy Ontology, describes agronomic practices, agronomic techniques, and agronomic variables used in agronomic experiments. AGRO is being built using traits identified by agronomists, the ICASA variables, and other existing ontologies such as ENVO, UO, and PATO, IAO, and CHEBI. Further, AGRO will power an Agronomy Management System and fieldbook modeled on a CGIAR Breeding Management System to capture agronomic data.",
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 7.736828185985735E-5,
+    "ontologyPopularityScore" : 8.59535495629994E-5,
     "ontologyCoverageScore" : 0.275,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.06876160524227898
+    "ontologyTotalUtilityScore" : 0.06876289303243445
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000040",
+    "conceptContextMatchingScore" : 0.2,
+    "conceptSemanticRichnessScore" : 0.6000000000000001,
+    "conceptUtilityScore" : 0.4,
+    "matchedConceptLabel" : "material entity",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time." ],
+    "matchedConceptSubClasses" : [ "organism or virus or viroid", "processed material", "object aggregate", "irrigation source", "photographic print", "object", "collection of specimens", "chemical entity", "material sample", "specimen", "system", "subatomic particle", "construction", "fiat object part", "plant anatomical entity", "root", "part of organism", "manufactured product", "glacial feature", "material supplier", "manufacturer", "organization", "material to be added", "population", "material information bearer", "material anatomical entity", "target of material addition", "layer", "organism" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CARO_0001010", "http://purl.obolibrary.org/obo/OBI_0000047", "http://purl.obolibrary.org/obo/BFO_0000027", "http://purl.obolibrary.org/obo/AGRO_00000009", "http://purl.obolibrary.org/obo/IAO_0000186", "http://purl.obolibrary.org/obo/BFO_0000030", "http://purl.obolibrary.org/obo/OBI_0002076", "http://purl.obolibrary.org/obo/CHEBI_24431", "http://purl.obolibrary.org/obo/OBI_0000747", "http://purl.obolibrary.org/obo/OBI_0100051", "http://purl.obolibrary.org/obo/RO_0002577", "http://purl.obolibrary.org/obo/CHEBI_36342", "http://purl.obolibrary.org/obo/ENVO_01001813", "http://purl.obolibrary.org/obo/BFO_0000024", "http://purl.obolibrary.org/obo/PO_0025131", "http://purl.obolibrary.org/obo/NCBITaxon_1", "http://purl.obolibrary.org/obo/FOODON_03420116", "http://purl.obolibrary.org/obo/ENVO_00003074", "http://purl.obolibrary.org/obo/ENVO_00000131", "http://purl.obolibrary.org/obo/OBI_0002989", "http://purl.obolibrary.org/obo/OBI_0000835", "http://purl.obolibrary.org/obo/OBI_0000245", "http://purl.obolibrary.org/obo/OBI_1110108", "http://purl.obolibrary.org/obo/OBI_0000181", "http://purl.obolibrary.org/obo/IAO_0000178", "http://purl.obolibrary.org/obo/UBERON_0000465", "http://purl.obolibrary.org/obo/OBI_1110109", "http://purl.obolibrary.org/obo/ENVO_01000281", "http://purl.obolibrary.org/obo/OBI_0100026" ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.15625429767747814,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/VIVO",
+  "ontologyName" : "VIVO Ontology for Researcher Discovery",
+  "ontologyDescription" : "The VIVO ontology represents researchers in the context of their experience, outputs, interests, accomplishments, and associated institutions.",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 0.033049406580481125,
+    "ontologyCoverageScore" : 0.235,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.06370741098707217
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000040",
+    "conceptContextMatchingScore" : 0.2,
+    "conceptSemanticRichnessScore" : 0.6000000000000001,
+    "conceptUtilityScore" : 0.4,
+    "matchedConceptLabel" : "Material Entity",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "Software", "Instrument", "Reagent", "Biological Specimen", "Equipment", "Organism" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/ERO_0000071", "http://purl.obolibrary.org/obo/ERO_0000004", "http://purl.obolibrary.org/obo/ERO_0000006", "http://purl.obolibrary.org/obo/ERO_0000020", "http://vivoweb.org/ontology/core#Equipment", "http://purl.obolibrary.org/obo/OBI_0100026" ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.15456913699569072,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/OGSF",
+  "ontologyName" : "Ontology for Genetic Susceptibility Factor",
+  "ontologyDescription" : "Ontology for Genetic Susceptibility Factor (OGSF) is an application ontology to model/represent the notion of genetic susceptibility to a specific disease or an adverse event or a pathological biological process. It is developed using BFO2.0's framwork. The ontology is under the domain of genetic epidemiology.",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.3333333333333333,
+    "ontologyPopularityScore" : 3.2130901019607034E-5,
+    "ontologyCoverageScore" : 0.314,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.16183815296848628
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000040",
     "conceptContextMatchingScore" : 0.2,
     "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "immaterial entity",
+    "matchedConceptLabel" : "material entity",
     "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "continuant fiat boundary", "spatial region", "site" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000140", "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+    "matchedConceptDef" : [ "An independent continuant  that is spatially extended whose identity is independent of that of other entities and can be maintained through time." ],
+    "matchedConceptSubClasses" : [ "cellular_component", "genetics map", "processed material", "object aggregate", "object", "biological molecule", "chemical entity", "genetic susceptibility factor", "biological sequence", "fiat object part", "biological material interval", "author", "genetic material", "organization", "book", "vaccine component", "population", "organism" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/GO_0005575", "http://purl.obolibrary.org/obo/OGI_0000074", "http://purl.obolibrary.org/obo/OBI_0000047", "http://purl.obolibrary.org/obo/BFO_0000027", "http://purl.obolibrary.org/obo/BFO_0000030", "http://purl.obolibrary.org/obo/OGI.owl#Biological_Molecule", "http://purl.obolibrary.org/obo/CHEBI_24431", "http://purl.obolibrary.org/obo/OGSF_0000004", "http://purl.obolibrary.org/obo/OGI_0000014", "http://purl.obolibrary.org/obo/BFO_0000024", "http://purl.obolibrary.org/obo/OGI_0000001", "http://purl.obolibrary.org/obo/OGI.owl#Author", "http://purl.obolibrary.org/obo/REO_0000826", "http://purl.obolibrary.org/obo/OBI_0000245", "http://purl.obolibrary.org/obo/OGI.owl#Book", "http://purl.obolibrary.org/obo/VO_0000179", "http://purl.obolibrary.org/obo/OBI_0000181", "http://purl.obolibrary.org/obo/OBI_0100026" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.12292053508075967,
+  "totalUtilityScore" : 0.15394605098949543,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/OGMS",
+  "ontologyName" : "Ontology for General Medical Science",
+  "ontologyDescription" : "The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX) and the Signs, Symptoms, and Findings Workshop(Milan, Italy). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology. See http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 0.06541050689734813,
+    "ontologyCoverageScore" : 0.196,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 1.0,
+    "ontologyTotalUtilityScore" : 0.15881157603460222
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000040",
+    "conceptContextMatchingScore" : 0.2,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.30000000000000004,
+    "matchedConceptLabel" : "BFO_0000040",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "portion of pathological body substance", "object aggregate", "congenital disorder", "infection", "object", "pathological formation", "organism population", "fiat object part", "disorder", "physical sign", "extended organism", "pathological anatomical structure" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/OGMS_0000079", "http://purl.obolibrary.org/obo/BFO_0000027", "http://purl.obolibrary.org/obo/OGMS_0000089", "http://purl.obolibrary.org/obo/IDO_0000586", "http://purl.obolibrary.org/obo/BFO_0000030", "http://purl.obolibrary.org/obo/OGMS_0000077", "http://purl.obolibrary.org/obo/OGMS_0000084", "http://purl.obolibrary.org/obo/BFO_0000024", "http://purl.obolibrary.org/obo/OGMS_0000045", "http://purl.obolibrary.org/obo/OGMS_0000129", "http://purl.obolibrary.org/obo/OGMS_0000087", "http://purl.obolibrary.org/obo/OGMS_0000078" ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.15293719201153408,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/MPIO",
+  "ontologyName" : "Minimum PDDI Information Ontology",
+  "ontologyDescription" : "MPIO (Minimum PDDI Information Ontology) is an OWL representation of minimum information regarding potential drug-drug interaction information. It is based on and meant to be use in alignment with DIDEO or DINTO.",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 1.0,
+    "ontologyPopularityScore" : 1.599766379879169E-5,
+    "ontologyCoverageScore" : 0.0,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.25000239964956983
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000040",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.2,
+    "matchedConceptLabel" : "material entity",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ ],
+    "matchedConceptSubClassesIds" : [ ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.15000079988318993,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/SCO",
+  "ontologyName" : "Study Cohort Ontology",
+  "ontologyDescription" : "The Study Cohort Ontology (SCO) is developed to model overall structure and patterns of cohort variables and control/intervention groups defined within the structured population descriptions (commonly referred to as Table1's or Cohort Summary Tables)of observational case studies and clinical trials. We maintain only domain agnostic and commonly occuring subject variables and interventions in SCO, and we have a suite of ontologies (Diseases, Medications, LabResults etc) to encode Diabetes related terminology. We have adopted a bottom-up approach to modeling and we have revised the structure of SCO upon investigation of a few research studies (11 to be precise) from the Pharmacological Interventions (Chapter 8) and Cardiovascular Complications (Chapter 9) of the American Diabetes Association (ADA)’s Standards of Medical Care 2018 CPG. We enable deep drive visualizations driven off queries to knowledge graphs modeled on SCO, to help assist physician visualize the similarity of a patient to a study group, at a quick glance. We welcome contributions and suggestions to extend SCO to represent cohort descriptions of publications targeted to other diseases, and we plan to release set of tools to make this process seamless.",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.5,
+    "ontologyPopularityScore" : 2.315594048164085E-4,
+    "ontologyCoverageScore" : 0.471,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.24278473391072244
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://semanticscience.org/resource/MaterialEntity",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.2,
+    "matchedConceptLabel" : "MaterialEntity",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "chemical entity", "specialized material entity" ],
+    "matchedConceptSubClassesIds" : [ "http://semanticscience.org/resource/ChemicalEntity", "http://semanticscience.org/resource/SpecializedMaterialEntity" ]
+  }, {
+    "matchedConceptName" : "http://semanticscience.org/resource/SIO_000004",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.2,
+    "matchedConceptLabel" : "SIO_000004",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "chemical entity", "specialized material entity" ],
+    "matchedConceptSubClassesIds" : [ "http://semanticscience.org/resource/SIO_010004", "http://semanticscience.org/resource/SIO_010410" ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.14759491130357416,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/OVAE",
   "ontologyName" : "Ontology of Vaccine Adverse Events",
-  "ontologyDef" : null,
+  "ontologyDescription" : "The Ontology of Vaccine Adverse Events (OVAE) is a biomedical ontology in the area of vaccine adverse events. OVAE is an extension of the Ontology of Adverse Events (OAE) and the Vaccine Ontology (VO). OVAE is aimed to represent and analyze various vaccine-specific adverse events. ",
   "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 4.1335602259045054E-5,
+    "ontologyDomainScore" : 0.25,
+    "ontologyPopularityScore" : 4.595939006602019E-5,
     "ontologyCoverageScore" : 0.275,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.06875620034033886
+    "ontologyTotalUtilityScore" : 0.13125689390850992
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000141",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000040",
     "conceptContextMatchingScore" : 0.2,
     "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "immaterial entity",
+    "matchedConceptLabel" : "material entity",
     "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "spatial region", "site" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/BFO_0000006", "http://purl.obolibrary.org/obo/BFO_0000029" ]
+    "matchedConceptDef" : [ "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time." ],
+    "matchedConceptSubClasses" : [ "processed material", "anatomical entity", "gene", "gross anatomical part", "chemical entity", "human vaccinee population", "genome", "vaccine allergen", "organization", "vaccine component", "organism" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/OBI_0000047", "http://purl.obolibrary.org/obo/UBERON_0001062", "http://purl.obolibrary.org/obo/OGG_0000000002", "http://purl.obolibrary.org/obo/CARO_0001008", "http://purl.obolibrary.org/obo/CHEBI_24431", "http://purl.obolibrary.org/obo/VO_0000545", "http://purl.obolibrary.org/obo/OGG_0000000001", "http://purl.obolibrary.org/obo/VO_0000910", "http://purl.obolibrary.org/obo/OBI_0000245", "http://purl.obolibrary.org/obo/VO_0000179", "http://purl.obolibrary.org/obo/OBI_0100026" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.12291873344677963,
+  "totalUtilityScore" : 0.1437522979695033,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/OMIT",
-  "ontologyName" : "Ontology for MicroRNA Target",
-  "ontologyDef" : null,
+  "ontologyID" : "https://data.bioontology.org/ontologies/OBCS",
+  "ontologyName" : "Ontology of Biological and Clinical Statistics",
+  "ontologyDescription" : "The Ontology of Biological and Clinical Statistics (OBCS) is a biomedical ontology in the domain of biological and clinical statistics. OBCS is primarily targeted for statistical representation in the fields in biological, biomedical, and clinical domains.\r\n\r\nOBCS uses the Basic Formal Ontology (BFO) as the upper level ontology. OBCS imports all biostatistics related terms in the Ontology for Biomedical Investigations (OBI) including all logical axioms.",
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.016306340236175682,
-    "ontologyCoverageScore" : 0.314,
+    "ontologyPopularityScore" : 4.166171258787022E-4,
+    "ontologyCoverageScore" : 0.255,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.08094595103542636
+    "ontologyTotalUtilityScore" : 0.0638124925688818
   },
-  "conceptUtilityScores" : [ ],
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/BFO_0000040",
+    "conceptContextMatchingScore" : 0.2,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.30000000000000004,
+    "matchedConceptLabel" : "material entity",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time." ],
+    "matchedConceptSubClasses" : [ "processed material", "specimen", "molecular entity", "recombinant vector", "growth environment", "organization", "material to be added", "material information bearer", "cloning vector", "cell", "organism" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/OBI_0000047", "http://purl.obolibrary.org/obo/OBI_0100051", "http://purl.obolibrary.org/obo/CHEBI_23367", "http://purl.obolibrary.org/obo/OBI_0000731", "http://purl.obolibrary.org/obo/OBI_0000997", "http://purl.obolibrary.org/obo/OBI_0000245", "http://purl.obolibrary.org/obo/OBI_1110108", "http://purl.obolibrary.org/obo/IAO_0000178", "http://purl.obolibrary.org/obo/OBI_0000737", "http://purl.obolibrary.org/obo/CL_0000000", "http://purl.obolibrary.org/obo/OBI_0100026" ]
+  } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.02698198367847545,
+  "totalUtilityScore" : 0.12127083085629393,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/HASCO",
+  "ontologyName" : "Human-Aware Science Ontology",
+  "ontologyDescription" : "The Human-Aware Science Ontology (HAScO) integrates a collection of well-established science-related ontologies, and aims to address issues related to data annotation for large data ecosystem, where data can come from diverse data sources including sensors, lab results, and questionnaires. The HAScO has been used to annotate data collections to facilitate data exploration and analysis for numerous scientific projects. Data files produced by scientific studies are processed to identify and annotate the objects (a gene, for instance) with the appropriate ontological terms. ",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 1.8844705661288515E-5,
+    "ontologyCoverageScore" : 0.471,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.11775282670584919
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://semanticscience.org/resource/SIO_000004",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.0,
+    "conceptUtilityScore" : 0.0,
+    "matchedConceptLabel" : "SIO_000004",
+    "matchedConceptSynonyms" : [ ],
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "chemical entity", "specialized material entity" ],
+    "matchedConceptSubClassesIds" : [ "http://semanticscience.org/resource/SIO_010004", "http://semanticscience.org/resource/SIO_010410" ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.03925094223528306,
   "ontologyScore" : 1
 } ]

@@ -85,7 +85,7 @@ public class AMLMappings {
 			while(itr.hasNext())
 	        {
 	           Map.Entry<String, String> entry = itr.next();
-	           if(entry.getValue().toLowerCase().contains(inputClassName.toLowerCase())) {
+	           if(entry.getValue().toLowerCase().equals(inputClassName.toLowerCase())) {
 	        	   System.out.println("The Map Entry Key is : "+ entry.getKey() +"   "+entry.getValue());
 	        	   for(AMLMapping m: AMLAlignments) {
 	        		   if(m.getSourceURI().equals(entry.getKey()))

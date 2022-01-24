@@ -119,7 +119,8 @@ public class WebLearningClass {
     			t.display();
     		}	
     	   // ConceptUtilityClass.calculateConceptUtilityFunction(className, firstIteration.getUserPreferences().getInputFileName(), bioPortalSearchResult);
-    		candidateOntologies=getBest20(candidateOntologies);
+    		if(candidateOntologies.size()>20)
+    			candidateOntologies=getBest20(candidateOntologies);
     		candidateOntologies=ConceptUtilityClass.calculateConceptUtilityFunction10(className, firstIteration.getUserPreferences().getInputFileName(), candidateOntologies);
     		Collections.sort(candidateOntologies,CandidateOntologyClass.sortByTotalUtilityScore);
     		// write the final result to a result JSON file

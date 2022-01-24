@@ -7,7 +7,7 @@ import java.util.List;
 public  class CandidateOntologyClass {
 	private String ontologyID;
 	private String ontologyName;
-	private String ontologyDef;
+	private String ontologyDescription;
 	private OntologyUtilityScoreClass ontologyUtilityScore;
 	private ArrayList<ConceptUtilityScoreClass> conceptUtilityScores;
 	private double ontologyAggregatedScore;
@@ -19,7 +19,7 @@ public  class CandidateOntologyClass {
 		super();
 		this.ontologyID = "";
 		this.ontologyName="";
-		this.ontologyDef="";
+		this.ontologyDescription="";
 		this.ontologyUtilityScore = new OntologyUtilityScoreClass();
 		this.conceptUtilityScores= new ArrayList<ConceptUtilityScoreClass>();
 		this.totalUtilityScore= 0;
@@ -52,7 +52,7 @@ public  class CandidateOntologyClass {
 		CandidateOntologyClass newClass=new CandidateOntologyClass();
 		newClass.ontologyID=this.ontologyID;
 		newClass.ontologyName=this.ontologyName;
-		newClass.ontologyDef=this.ontologyDef;
+		newClass.ontologyDescription=this.ontologyDescription;
 		newClass.ontologyUtilityScore = this.ontologyUtilityScore;
 		newClass.conceptUtilityScores=this.conceptUtilityScores;
 		newClass.ontologyAggregatedScore=this.ontologyAggregatedScore;
@@ -77,12 +77,12 @@ public  class CandidateOntologyClass {
 		this.ontologyName = ontologyName;
 	}
 
-	public String getOntologyDef() {
-		return ontologyDef;
+	public String getOntologyDescription() {
+		return ontologyDescription;
 	}
 
-	public void setOntologyDef(String ontologyDef) {
-		this.ontologyDef = ontologyDef;
+	public void setOntologyDescription(String ontologyDescription) {
+		this.ontologyDescription = ontologyDescription;
 	}
 
 	public OntologyUtilityScoreClass getOntologyUtilityScore() {

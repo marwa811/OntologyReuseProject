@@ -43,6 +43,7 @@ public class OntologyUtilityClass {
 		{
 			//
 			String ontologyName= getOntologyName(candidateOntology.getOntologyID(), ontologiesInfo);
+			String ontologyDescription=getOntologyDescription(candidateOntology.getOntologyID(), ontologiesInfo);
 			double domainScore= calculateDomainScore(++i,candidateOntology.getOntologyID(),ontologiesInfo,userPref.getUserPrefDomain());
 			double popularityScore= calculatePopularityScore(candidateOntology.getOntologyID(),ontologiesInfo);
 			double coverageScore= calculateCoverageScore(recommenderResult,candidateOntology.getOntologyID(),ontologiesInfo);
@@ -61,6 +62,7 @@ public class OntologyUtilityClass {
 					totalOntologyUtilityScore);
 			candidateOntology.setOntologyUtilityScore(newOntologyUtilityScore);
 			candidateOntology.setOntologyName(ontologyName);
+			candidateOntology.setOntologyDescription(ontologyDescription);
 		}
 		return newCandidateOntology;	
 	}
@@ -87,6 +89,14 @@ public class OntologyUtilityClass {
 			if(ontologiesInfo[i].getId().equals(candidateOntologyID))
 				ontologyName=ontologiesInfo[i].getName();
 		return ontologyName;
+	}
+//-----------------------------------------------------------------------
+	private static String getOntologyDescription(String candidateOntologyID, Ontology[] ontologiesInfo){
+		String ontologyDesc=null;
+		for(int i=0; i <ontologiesInfo.length; i++) 
+			if(ontologiesInfo[i].getId().equals(candidateOntologyID))
+				ontologyDesc=ontologiesInfo[i].getDescription();
+		return ontologyDesc;
 	}
 //-----------------------------------------------------------------------
 	public static double calculateDomainScore(int count,String candidateOntologyID, Ontology[] ontologiesInfo,

@@ -7,6 +7,7 @@ public class Ontology {
 	private String name;
 	private String id;
 	private String acronym;
+	private String description;
 	private String[] categories;
 	private int veiws;
 	private int projects;
@@ -15,12 +16,13 @@ public class Ontology {
 	private ArrayList<BioClass> classes;
 	
 	//ontology class constructor
-	public Ontology(String name, String id, String acronym, String[] categories, int veiws, int projects, 
+	public Ontology(String name, String id, String acronym, String description ,String[] categories, int veiws, int projects, 
 			int objPropertyNo, int classNo) {
 		super();
 		this.name = name;
 		this.id = id;
 		this.acronym = acronym;
+		this.description= description;
 		this.categories = categories;
 		this.veiws = veiws;
 		this.projects=projects;
@@ -30,12 +32,13 @@ public class Ontology {
 	}
 	
 	//ontology class constructor
-		public Ontology(String name, String id, String acronym, String[] categories, int veiws, int projects, 
+		public Ontology(String name, String id, String acronym, String description ,String[] categories, int veiws, int projects, 
 				int objPropertyNo, int classNo, ArrayList<BioClass> classes) {
 			super();
 			this.name = name;
 			this.id = id;
 			this.acronym = acronym;
+			this.description= description;
 			this.categories = categories;
 			this.veiws = veiws;
 			this.projects=projects;
@@ -53,6 +56,12 @@ public class Ontology {
 	public void setName(String name) {
 		this.name = name;
 	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
 	public String getId() {
 		return id;
 	}
@@ -65,6 +74,7 @@ public class Ontology {
 	public void setAcronym(String acronym) {
 		this.acronym = acronym;
 	}
+	
 	public String[] getCategories() {
 		return categories;
 	}

@@ -133,7 +133,8 @@ public class WebOtherIterations {
 			/*for(CandidateOntologyClass t: candidateOntologies){
 				t.display();
 			}*/	
-			candidateOntologies=getBest20(candidateOntologies);
+			if(candidateOntologies.size()>20)
+				candidateOntologies=getBest20(candidateOntologies);
 			candidateOntologies= finalResultList.calculateOntologyAggregateScoreFunction(candidateOntologies);
 		   // ConceptUtilityClass.calculateConceptUtilityFunction(className, firstIteration.getUserPreferences().getInputFileName(), bioPortalSearchResult);
 			candidateOntologies=ConceptUtilityClass.calculateConceptUtilityFunction10(className, iteration.getUserPreferences().getInputFileName(), candidateOntologies);
