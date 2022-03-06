@@ -117,6 +117,7 @@ public class WebLearningClass {
     		Collections.sort(candidateOntologies,CandidateOntologyClass.sortByOntologyUtilityScore);
     		for(CandidateOntologyClass t: candidateOntologies){
     			t.display();
+    			//comment to  make commit
     		}	
     	   // ConceptUtilityClass.calculateConceptUtilityFunction(className, firstIteration.getUserPreferences().getInputFileName(), bioPortalSearchResult);
     		if(candidateOntologies.size()>20)
