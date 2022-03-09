@@ -76,7 +76,7 @@ public class OntologyUtilityClass {
 		    // create object mapper instance
 		    ObjectMapper mapper = new ObjectMapper();
 		 //   mapper.configure(MapperFeature.ACCEPT_CASE_INSENSITIVE_PROPERTIES, true);
-		//    mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+		// mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 		    // convert JSON file to map
 		    ontologiesInfo = mapper.readValue(new File("ontology.json"), Ontology[].class);
 		    log.info("Getting information from JSON File");
