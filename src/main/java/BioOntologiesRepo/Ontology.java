@@ -2,6 +2,9 @@ package BioOntologiesRepo;
 
 import java.util.ArrayList;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown=true)
 public class Ontology {
 	
 	private String name;

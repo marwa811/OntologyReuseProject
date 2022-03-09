@@ -1,1 +1,1 @@
-COB.owl|Health|2|2|1|ICO|material entity
+COB.owl|Health|2|2|1|ICO|ecosystem|http://purl.obolibrary.org/obo/COB_0000011
