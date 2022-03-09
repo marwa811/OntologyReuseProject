@@ -11,7 +11,6 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 //@JsonIgnoreProperties(ignoreUnknown=true)
 public class Ontology {
 	
-	//@JsonFormat(with = JsonFormat.Feature.ACCEPT_CASE_INSENSITIVE_PROPERTIES)
 	private String name;
 	private String id;
 	private String acronym;
