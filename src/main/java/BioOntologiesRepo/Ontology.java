@@ -14,7 +14,7 @@ public class Ontology {
 	private String name;
 	private String id;
 	private String acronym;
-	//@JsonProperty("description")
+	
 	public String description;
 	private String[] categories;
 	private int veiws;
