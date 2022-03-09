@@ -9,8 +9,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonSetter;
 
 
-public class Ontology {
-	
+public class Ontology {	
 	private String name;
 	private String id;
 	private String acronym;	
