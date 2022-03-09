@@ -13,6 +13,8 @@ import org.semanticweb.owlapi.model.OWLAnnotationValue;
 import org.semanticweb.owlapi.model.OWLAnonymousIndividual;
 import org.semanticweb.owlapi.model.OWLLiteral;
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import BioOntologiesRepo.Ontology;
@@ -73,7 +75,8 @@ public class OntologyUtilityClass {
 		try {
 		    // create object mapper instance
 		    ObjectMapper mapper = new ObjectMapper();
-
+		//    mapper.configure(MapperFeature.ACCEPT_CASE_INSENSITIVE_PROPERTIES, true);
+		//    mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 		    // convert JSON file to map
 		    ontologiesInfo = mapper.readValue(new File("ontology.json"), Ontology[].class);
 		    log.info("Getting information from JSON File");

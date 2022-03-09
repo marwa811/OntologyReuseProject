@@ -2,15 +2,21 @@ package BioOntologiesRepo;
 
 import java.util.ArrayList;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
-@JsonIgnoreProperties(ignoreUnknown=true)
+//@JsonIgnoreProperties(ignoreUnknown=true)
 public class Ontology {
 	
+	//@JsonFormat(with = JsonFormat.Feature.ACCEPT_CASE_INSENSITIVE_PROPERTIES)
 	private String name;
 	private String id;
 	private String acronym;
-	private String description;
+	//@JsonProperty("description")
+	public String description;
 	private String[] categories;
 	private int veiws;
 	private int projects;
@@ -59,9 +65,11 @@ public class Ontology {
 	public void setName(String name) {
 		this.name = name;
 	}
+	//@JsonGetter
 	public String getDescription() {
 		return description;
 	}
+	//@JsonSetter
 	public void setDescription(String description) {
 		this.description = description;
 	}
