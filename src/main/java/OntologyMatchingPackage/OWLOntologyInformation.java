@@ -142,9 +142,10 @@ public class OWLOntologyInformation {
 	 * @return Set of equivalent OWLClasses
 	 */
 	public Set<OWLClass> getEquavilantClasses(OWLClass c) throws IOException {
-		Set<OWLClass> finalEquivalntClasses = new HashSet<OWLClass>();
+		Set<OWLClass> finalEquivalntClasses =  new HashSet<OWLClass>() ;
 		//Set<OWLEquivalentClassesAxiom> equavilantClasses = onto.getEquivalentClassesAxioms(c);
 		if ((onto.getEquivalentClassesAxioms(c)).size() > 0) {
+			System.out.println("test");
 			for (OWLEquivalentClassesAxiom equivalentAxiom : onto.getEquivalentClassesAxioms(c)) {
 				for (OWLClass cls : equivalentAxiom.getClassesInSignature()) {
 					if (!cls.equals(c)) {
@@ -260,6 +261,7 @@ public class OWLOntologyInformation {
 		if (!subclass.isAnonymous() && !subclass.equals(c))
 			subClasses.add(subclass);
 		}
+	
 	return subClasses;
 	}
 	

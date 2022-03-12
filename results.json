@@ -1,158 +1,158 @@
 [ {
-  "ontologyID" : "https://data.bioontology.org/ontologies/APOLLO-SV",
-  "ontologyName" : "Apollo Structured Vocabulary",
-  "ontologyDescription" : "Apollo-SV, developed as an OWL specification, defines the terms and relations necessary for interoperation between epidemic simulators and public health application software that interface with these simulators.",
+  "ontologyID" : "https://data.bioontology.org/ontologies/OCE",
+  "ontologyName" : "Ontology of Chemical Elements",
+  "ontologyDescription" : "The Ontology of Chemical Elements (OCE) is a community-based ontology in the domain of chemical elements. OCE systematically represents and annotates the known 118 chemical elements and their charactistics and relations with other entities. OCE imports the basic chemical element information from ChEBI and adds more classes, annotations, and axioms. OCE specifically focuses on adding all the related information from the Periodic Table of Chemical Elements. ",
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 1.0,
-    "ontologyPopularityScore" : 5.395822196541603E-5,
-    "ontologyCoverageScore" : 0.294,
+    "ontologyPopularityScore" : 3.48423694600802E-5,
+    "ontologyCoverageScore" : 0.039,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.3235080937332948
+    "ontologyTotalUtilityScore" : 0.259755226355419
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/APOLLO_SV_00000097",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
     "conceptContextMatchingScore" : 0.2,
     "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "ecosystem",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ "The sum of all biotic and abiotic entities in a geographical region. " ],
-    "matchedConceptSubClasses" : [ ],
-    "matchedConceptSubClassesIds" : [ ]
+    "matchedConceptLabel" : "subatomic particle",
+    "matchedConceptSynonyms" : [ "subatomic particles" ],
+    "matchedConceptDef" : [ "A particle smaller than an atom." ],
+    "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "nuclear particle", "composite particle" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.20783603124443162,
+  "totalUtilityScore" : 0.18658507545180636,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/OPMI",
-  "ontologyName" : "Ontology of Precision Medicine and Investigation",
-  "ontologyDescription" : "The Ontology of Precision Medicine and Investigation (OPMI) is an application ontology to support precision medicine and its related investigations. OPMI is community-driven and developed by following the OBO Foundry ontology development principles. OPMI reuses, aligns, and integrates related terms from existing OBO ontologies.  ",
+  "ontologyID" : "https://data.bioontology.org/ontologies/CL",
+  "ontologyName" : "Cell Ontology",
+  "ontologyDescription" : "The Cell Ontology is designed as a structured controlled vocabulary for cell types. This ontology was constructed for use by the model organism and other bioinformatics databases, where there is a need for a controlled vocabulary of cell types. This ontology is not organism specific it covers cell types from prokaryotes to mammals. However, it excludes plant cell types, which are covered by PO. See the website <a href=\"http://cellontology.org\">http://cellontology.org</a> for more details.",
   "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 1.0,
-    "ontologyPopularityScore" : 3.768941132257703E-5,
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 0.16589764975469717,
     "ontologyCoverageScore" : 0.275,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.3187556534116984
+    "ontologyTotalUtilityScore" : 0.09363464746320457
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/ENVO_01001110",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
+    "conceptContextMatchingScore" : 0.4,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.4,
+    "matchedConceptLabel" : "subatomic particle",
+    "matchedConceptSynonyms" : [ "subatomic particles" ],
+    "matchedConceptDef" : [ "A particle smaller than an atom." ],
+    "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "boson", "nuclear particle", "composite particle" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36341", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.16454488248773486,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/ENVO",
+  "ontologyName" : "Environment Ontology",
+  "ontologyDescription" : "Official PURL: http://purl.obolibrary.org/obo/envo.owl\r\n\r\n\r\nThe most up-to-date information about ENVO is available here: http://www.obofoundry.org/ontology/envo.html\r\n\r\n\r\nEnvO is an OBO Foundry and Library ontology for the concise, controlled description of environmental entities such as ecosystems, environmental processes, and environmental qualities. It closely interoperates with a broad collection of other OBO ontologies and is used in a diverse range of projects. \r\n\r\n",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.3333333333333333,
+    "ontologyPopularityScore" : 0.1674475251152716,
+    "ontologyCoverageScore" : 0.196,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.15745046210062408
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
     "conceptContextMatchingScore" : 0.2,
     "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "ecosystem",
+    "matchedConceptLabel" : "subatomic particle",
     "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ "This class will be primarily filled by inference, any environmental system which necessarily includes living parts should be autoclassified here.", "An environmental system which includes both living and non-living components." ],
-    "matchedConceptSubClasses" : [ "biosphere" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/ENVO_01000817" ]
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "boson", "nuclear particle", "composite particle" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36341", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.20625188447056614,
+  "totalUtilityScore" : 0.1524834873668747,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/KTAO",
   "ontologyName" : "Kidney Tissue Atlas Ontology",
   "ontologyDescription" : "The Kidney Tissue Atlas Ontology (KTAO) is an ontology that integrates kidney-related cell types, cell states, locations, gene markers, disease, etc., and their relations. KTAO is \r\ndeveloped to support the NIH-NIDDK-funed Kidney Precision Medicine Project (KPMP). ",
   "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0625,
+    "ontologyDomainScore" : 0.0,
     "ontologyPopularityScore" : 1.3340424727127984E-4,
     "ontologyCoverageScore" : 0.392,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.1136450106370907
+    "ontologyTotalUtilityScore" : 0.09802001063709069
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/ENVO_01001110",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
     "conceptContextMatchingScore" : 0.2,
     "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "ecosystem",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ "This class will be primarily filled by inference, any environmental system which necessarily includes living parts should be autoclassified here.", "An environmental system which includes both living and non-living components." ],
-    "matchedConceptSubClasses" : [ "biosphere" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/ENVO_01000817" ]
+    "matchedConceptLabel" : "subatomic particle",
+    "matchedConceptSynonyms" : [ "subatomic particles" ],
+    "matchedConceptDef" : [ "A particle smaller than an atom." ],
+    "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "nuclear particle", "composite particle" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.13788167021236358,
+  "totalUtilityScore" : 0.13267333687903024,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/RBO",
-  "ontologyName" : "Radiation Biology Ontology",
-  "ontologyDescription" : "RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.",
+  "ontologyID" : "https://data.bioontology.org/ontologies/AFO",
+  "ontologyName" : "Allotrope Merged Ontology Suite",
+  "ontologyDescription" : "<p><strong>Allotrope Merged Ontology Suite</strong></p>\r\n\r\n<p>The AFO is an ontology suite that provides a standard vocabulary and semantic model for the representation of laboratory analytical processes. The AFO suite is aligned at the upper layer to the Basic Formal Ontology (BFO). The core domains modeled include: Equipment, Material, Process, and Results.</p>\r\n\r\n<p>This version of Allotrope Foundation Ontology (AFO) has been prepared specifically for publication on the NCBO platform.</p>\r\n\r\n<p>license: http://purl.allotrope.org/voc/creative-commons-attribution-license<br/>\r\nrights: http://purl.allotrope.org/voc/copyright<br/></p>\r\n \r\n<p>Please get the latest version of AFO from http://purl.allotrope.org</p>",
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.032282196585249244,
-    "ontologyCoverageScore" : 0.392,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.10284232948778739
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/ENVO_01001110",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "ecosystem",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ "This class will be primarily filled by inference, any environmental system which necessarily includes living parts should be autoclassified here.", "An environmental system which includes both living and non-living components." ],
-    "matchedConceptSubClasses" : [ "ecozone", "biome", "environment associated with an aquatic invertebrate", "ecoregion", "aquatic ecosystem", "desert ecosystem", "environmental system determined by an organism", "environment associated with a plant part or small plant", "habitat" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/ENVO_01000280", "http://purl.obolibrary.org/obo/ENVO_00000428", "http://purl.obolibrary.org/obo/ENVO_01001176", "http://purl.obolibrary.org/obo/ENVO_01000276", "http://purl.obolibrary.org/obo/ENVO_01001787", "http://purl.obolibrary.org/obo/ENVO_01001780", "http://purl.obolibrary.org/obo/ENVO_01001000", "http://purl.obolibrary.org/obo/ENVO_01001057", "http://purl.obolibrary.org/obo/ENVO_01000739" ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.13428077649592912,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/EUPATH",
-  "ontologyName" : "VEuPathDB Ontology",
-  "ontologyDescription" : "The VEuPathDB ontology is an application ontology developed to encode our understanding of what data is about in the public resources developed and maintained by the Eukaryotic Pathogen, Host & Vector Genomics Resource (VEuPathDB; https://veupathdb.org). The VEuPathDB ontology was previously named the EuPathDB ontology prior to EuPathDB joining with VectorBase.The ontology was built based on the Ontology of Biomedical Investigations (OBI) with integration of other OBO ontologies such as PATO, OGMS, DO, etc. as needed for coverage. Currently the VEuPath ontology is primarily intended to be used for support of the VEuPathDB sites. Terms with VEuPathDB ontology IDs that are not specific to VEuPathDB will be submitted to OBO Foundry ontologies for subsequent import and replacement of those terms when they are available.",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 4.29767747814997E-5,
+    "ontologyPopularityScore" : 3.290366952514189E-4,
     "ontologyCoverageScore" : 0.373,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.09325644651621723
+    "ontologyTotalUtilityScore" : 0.09329935550428771
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/ENVO_01001110",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
     "conceptContextMatchingScore" : 0.2,
     "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "ecosystem",
+    "matchedConceptLabel" : "\"subatomic particle\"",
     "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ "An environmental system which includes both living and non-living components." ],
-    "matchedConceptSubClasses" : [ "wetland ecosystem", "biome", "rice field", "animal-associated environment" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/ENVO_01001209", "http://purl.obolibrary.org/obo/ENVO_00000428", "http://purl.obolibrary.org/obo/ENVO_00000296", "http://purl.obolibrary.org/obo/ENVO_01001002" ]
+    "matchedConceptDef" : [ "A subatomic particle is a material that is below the scale of an atom. [Allotrope]" ],
+    "matchedConceptSubClasses" : [ "fermion", "boson", "nuclear particle" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_36341", "http://purl.obolibrary.org/obo/CHEBI_36347" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.13108548217207242,
+  "totalUtilityScore" : 0.1310997851680959,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/OHMI",
-  "ontologyName" : "Ontology of Host-Microbe Interactions",
-  "ontologyDescription" : "OHMI is a biomedical ontology that represents the entities and relations in the domain of host-microbiome interactions.",
+  "ontologyID" : "https://data.bioontology.org/ontologies/BT",
+  "ontologyName" : "BioTop Ontology",
+  "ontologyDescription" : "A top-domain ontology that provides definitions for the foundational entities of biomedicine as a basic vocabulary to unambiguously describe facts in this domain. The original BioTop is no longer maintained, because it duplicated much content of other ontologies. The currently maintained version is BioTopLite 2, abbreviated as BTL2 ",
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 6.982031234218406E-5,
-    "ontologyCoverageScore" : 0.333,
+    "ontologyPopularityScore" : 0.01639719648682731,
+    "ontologyCoverageScore" : 0.353,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.08326047304685133
+    "ontologyTotalUtilityScore" : 0.09070957947302409
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/ENVO_01001110",
+    "matchedConceptName" : "http://purl.org/biotop/biotop.owl#SubatomicParticle",
     "conceptContextMatchingScore" : 0.2,
     "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "ecosystem",
+    "matchedConceptLabel" : "subatomic particle",
     "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ "This class will be primarily filled by inference, any environmental system which necessarily includes living parts should be autoclassified here.", "An environmental system which includes both living and non-living components." ],
-    "matchedConceptSubClasses" : [ "biome", "habitat" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/ENVO_00000428", "http://purl.obolibrary.org/obo/ENVO_01000739" ]
+    "matchedConceptDef" : [ ],
+    "matchedConceptSubClasses" : [ "*" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.org/biotop/biotop.owl#SubatomicEntityByChargePartition" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.12775349101561712,
+  "totalUtilityScore" : 0.13023652649100803,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/AURA",
@@ -167,70 +167,18 @@
     "ontologyTotalUtilityScore" : 0.07852954822733006
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://www.projecthalo.com/aura#Ecosystem",
+    "matchedConceptName" : "http://www.projecthalo.com/aura#Subatomic-Particle",
     "conceptContextMatchingScore" : 0.2,
     "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "Ecosystem",
+    "matchedConceptLabel" : "Subatomic-Particle",
     "matchedConceptSynonyms" : [ ],
     "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "Desert", "Canopy", "Subglacial-Ecosystem", "Terrestrial-Ecosystem", "Aquatic-Ecosystem", "Forest" ],
-    "matchedConceptSubClassesIds" : [ "http://www.projecthalo.com/aura#Desert", "http://www.projecthalo.com/aura#Canopy", "http://www.projecthalo.com/aura#Subglacial-Ecosystem", "http://www.projecthalo.com/aura#Terrestrial-Ecosystem", "http://www.projecthalo.com/aura#Aquatic-Ecosystem", "http://www.projecthalo.com/aura#Forest" ]
+    "matchedConceptSubClasses" : [ "Positron", "Proton", "Neutron", "Electron" ],
+    "matchedConceptSubClassesIds" : [ "http://www.projecthalo.com/aura#Positron", "http://www.projecthalo.com/aura#Proton", "http://www.projecthalo.com/aura#Neutron", "http://www.projecthalo.com/aura#Electron" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
   "totalUtilityScore" : 0.12617651607577668,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ENVO",
-  "ontologyName" : "Environment Ontology",
-  "ontologyDescription" : "Official PURL: http://purl.obolibrary.org/obo/envo.owl\r\n\r\n\r\nThe most up-to-date information about ENVO is available here: http://www.obofoundry.org/ontology/envo.html\r\n\r\n\r\nEnvO is an OBO Foundry and Library ontology for the concise, controlled description of environmental entities such as ecosystems, environmental processes, and environmental qualities. It closely interoperates with a broad collection of other OBO ontologies and is used in a diverse range of projects. \r\n\r\n",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.1674475251152716,
-    "ontologyCoverageScore" : 0.196,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.07411712876729074
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/ENVO_01001110",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "ecosystem",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ "This class will be primarily filled by inference, any environmental system which necessarily includes living parts should be autoclassified here.", "An environmental system which includes both living and non-living components." ],
-    "matchedConceptSubClasses" : [ "ecozone", "wetland ecosystem", "agricultural ecosystem", "environment determined by a biofilm on an animal surface", "ecological corridor", "digestive tract environment", "bone element environment", "biome", "environment determined by a biofilm on a fungal surface", "environment determined by a biofilm on a plant surface", "ecological province", "environment determined by a metazoan secretion", "environment associated with an aquatic invertebrate", "ecoregion", "climate system", "disturbed ecosystem", "ecotone", "feather environment", "environment associated with a fungal tissue", "aquatic ecosystem", "desert ecosystem", "environment determined by a biofilm on a saline surface", "terrestrial ecosystem", "ecosystem fragment", "environmental system determined by an organism", "environment associated with an animal part or small animal", "environment associated with a plant part or small plant", "mouth environment", "habitat", "environment determined by a biofilm on a non-saline surface", "skin environment" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/ENVO_01000280", "http://purl.obolibrary.org/obo/ENVO_01001209", "http://purl.obolibrary.org/obo/ENVO_00000077", "http://purl.obolibrary.org/obo/ENVO_01001034", "http://purl.obolibrary.org/obo/ENVO_01000930", "http://purl.obolibrary.org/obo/ENVO_01001033", "http://purl.obolibrary.org/obo/ENVO_01001306", "http://purl.obolibrary.org/obo/ENVO_00000428", "http://purl.obolibrary.org/obo/ENVO_01001035", "http://purl.obolibrary.org/obo/ENVO_01001032", "http://purl.obolibrary.org/obo/ENVO_01001404", "http://purl.obolibrary.org/obo/ENVO_01001030", "http://purl.obolibrary.org/obo/ENVO_01001176", "http://purl.obolibrary.org/obo/ENVO_01000276", "http://purl.obolibrary.org/obo/ENVO_01001364", "http://purl.obolibrary.org/obo/ENVO_01000445", "http://purl.obolibrary.org/obo/ENVO_01000947", "http://purl.obolibrary.org/obo/ENVO_2100006", "http://purl.obolibrary.org/obo/ENVO_01001058", "http://purl.obolibrary.org/obo/ENVO_01001787", "http://purl.obolibrary.org/obo/ENVO_01001780", "http://purl.obolibrary.org/obo/ENVO_01001056", "http://purl.obolibrary.org/obo/ENVO_01001790", "http://purl.obolibrary.org/obo/ENVO_01001167", "http://purl.obolibrary.org/obo/ENVO_01001000", "http://purl.obolibrary.org/obo/ENVO_01001055", "http://purl.obolibrary.org/obo/ENVO_01001057", "http://purl.obolibrary.org/obo/ENVO_08000002", "http://purl.obolibrary.org/obo/ENVO_01000739", "http://purl.obolibrary.org/obo/ENVO_01001051", "http://purl.obolibrary.org/obo/ENVO_2100003" ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.12470570958909691,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/LIFO",
-  "ontologyName" : "Life Ontology",
-  "ontologyDescription" : "The Life Ontology (LifO) is an ontology of the life of organism. LifO represents the life processes of organisms and related entities and relations. LifO is a general purpose ontology that covers the common features associated with different organisms such as unicellular prokaryotes (e.g., E. coli) and multicellular organisms (e.g., human).",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 5.1246753524942865E-5,
-    "ontologyCoverageScore" : 0.294,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.07350768701302873
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/ENVO_01001110",
-    "conceptContextMatchingScore" : 0.2,
-    "conceptSemanticRichnessScore" : 0.4,
-    "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "ecosystem",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ "This class will be primarily filled by inference, any environmental system which necessarily includes living parts should be autoclassified here.", "An environmental system which includes both living and non-living components." ],
-    "matchedConceptSubClasses" : [ ],
-    "matchedConceptSubClassesIds" : [ ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.12450256233767626,
   "ontologyScore" : 1
 }, {
   "ontologyID" : "https://data.bioontology.org/ontologies/AGRO",
@@ -245,15 +193,15 @@
     "ontologyTotalUtilityScore" : 0.06876289303243445
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/ENVO_01001110",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
     "conceptContextMatchingScore" : 0.2,
     "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "ecosystem",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ "An environmental system which includes both living and non-living components." ],
-    "matchedConceptSubClasses" : [ "ecozone", "wetland ecosystem", "agricultural ecosystem", "biome", "environment associated with an aquatic invertebrate", "ecoregion", "ecotone", "aquatic ecosystem", "desert ecosystem", "terrestrial ecosystem", "environmental system determined by an organism", "environment associated with a plant part or small plant", "habitat" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/ENVO_01000280", "http://purl.obolibrary.org/obo/ENVO_01001209", "http://purl.obolibrary.org/obo/ENVO_00000077", "http://purl.obolibrary.org/obo/ENVO_00000428", "http://purl.obolibrary.org/obo/ENVO_01001176", "http://purl.obolibrary.org/obo/ENVO_01000276", "http://purl.obolibrary.org/obo/ENVO_01000947", "http://purl.obolibrary.org/obo/ENVO_01001787", "http://purl.obolibrary.org/obo/ENVO_01001780", "http://purl.obolibrary.org/obo/ENVO_01001790", "http://purl.obolibrary.org/obo/ENVO_01001000", "http://purl.obolibrary.org/obo/ENVO_01001057", "http://purl.obolibrary.org/obo/ENVO_01000739" ]
+    "matchedConceptLabel" : "subatomic particle",
+    "matchedConceptSynonyms" : [ "subatomic particles" ],
+    "matchedConceptDef" : [ "A particle smaller than an atom." ],
+    "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "nuclear particle", "composite particle" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
   "totalUtilityScore" : 0.12292096434414482,
@@ -271,127 +219,243 @@
     "ontologyTotalUtilityScore" : 0.0687540265306341
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.obolibrary.org/obo/ENVO_01001110",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
     "conceptContextMatchingScore" : 0.2,
     "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "ecosystem",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ "This class will be primarily filled by inference, any environmental system which necessarily includes living parts should be autoclassified here.", "An environmental system which includes both living and non-living components." ],
-    "matchedConceptSubClasses" : [ "ecozone", "agricultural ecosystem", "digestive tract environment", "biome", "environment determined by a metazoan secretion", "environment associated with an aquatic invertebrate", "ecoregion", "climate system", "aquatic ecosystem", "desert ecosystem", "terrestrial ecosystem", "ecosystem fragment", "environmental system determined by an organism", "environment associated with a plant part or small plant", "mouth environment", "habitat", "skin environment" ],
-    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/ENVO_01000280", "http://purl.obolibrary.org/obo/ENVO_00000077", "http://purl.obolibrary.org/obo/ENVO_01001033", "http://purl.obolibrary.org/obo/ENVO_00000428", "http://purl.obolibrary.org/obo/ENVO_01001030", "http://purl.obolibrary.org/obo/ENVO_01001176", "http://purl.obolibrary.org/obo/ENVO_01000276", "http://purl.obolibrary.org/obo/ENVO_01001364", "http://purl.obolibrary.org/obo/ENVO_01001787", "http://purl.obolibrary.org/obo/ENVO_01001780", "http://purl.obolibrary.org/obo/ENVO_01001790", "http://purl.obolibrary.org/obo/ENVO_01001167", "http://purl.obolibrary.org/obo/ENVO_01001000", "http://purl.obolibrary.org/obo/ENVO_01001057", "http://purl.obolibrary.org/obo/ENVO_08000002", "http://purl.obolibrary.org/obo/ENVO_01000739", "http://purl.obolibrary.org/obo/ENVO_2100003" ]
+    "matchedConceptLabel" : "subatomic particle",
+    "matchedConceptSynonyms" : [ "subatomic particles" ],
+    "matchedConceptDef" : [ "A particle smaller than an atom." ],
+    "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "boson", "nuclear particle", "composite particle" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36341", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
   "totalUtilityScore" : 0.12291800884354472,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/ECSO",
-  "ontologyName" : "The Ecosystem Ontology",
-  "ontologyDescription" : "DataONE ontology of Carbon Flux measurements for MsTMIP and LTER Use Cases",
+  "ontologyID" : "https://data.bioontology.org/ontologies/MCO",
+  "ontologyName" : "Microbial Conditions Ontology",
+  "ontologyDescription" : "Microbial Conditions Ontology contains terms to describe growth conditions in microbiological experiments. The first version is based on gene regulation experiments in Escherichia coli K-12. It is being used in RegulonDB to link growth conditions to gene regulation data.",
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 9.42913150174544E-4,
-    "ontologyCoverageScore" : 0.078,
+    "ontologyPopularityScore" : 2.413206912021119E-5,
+    "ontologyCoverageScore" : 0.196,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.019641436972526183
+    "ontologyTotalUtilityScore" : 0.049003619810368035
   },
   "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://purl.dataone.org/odo/ECSO_00000309",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.6000000000000001,
-    "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "\"Ecological system\"^^xsd:string",
-    "matchedConceptSynonyms" : [ "Ecological system" ],
-    "matchedConceptDef" : [ "This class should be incorporated into ENVO.", "Ecosystems are dynamic entities composed of the biological community and the abiotic environment.\n" ],
-    "matchedConceptSubClasses" : [ ],
-    "matchedConceptSubClassesIds" : [ ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.10654714565750874,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/BOF",
-  "ontologyName" : "Biodiversity Ontology",
-  "ontologyDescription" : "An ontology of biodiversity of INPA",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 2.0119095828310902E-4,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 3.017864374246635E-5
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://www.owl-ontologies.com/BiodiversityOntologyFull.owl#Ecosystem",
-    "conceptContextMatchingScore" : 0.0,
-    "conceptSemanticRichnessScore" : 0.6000000000000001,
-    "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "Ecosystem",
-    "matchedConceptSynonyms" : [ ],
-    "matchedConceptDef" : [ ],
-    "matchedConceptSubClasses" : [ "MesoEcosystem", "MacroEcosystem", "MicroEcosystem" ],
-    "matchedConceptSubClassesIds" : [ "http://www.owl-ontologies.com/BiodiversityOntologyFull.owl#MesoEcosystem", "http://www.owl-ontologies.com/BiodiversityOntologyFull.owl#MacroEcosystem", "http://www.owl-ontologies.com/BiodiversityOntologyFull.owl#MicroEcosystem" ]
-  } ],
-  "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.10001005954791416,
-  "ontologyScore" : 1
-}, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/CCON",
-  "ontologyName" : "Cerrado concepts and plant community dynamics",
-  "ontologyDescription" : "The ontology of Cerrado wood plant dynamics was created in order to represent the set of concepts about the dynamics, that is, changes over time of the wood vegetation structure, of Cerrado. Ccon describes the main parameters used to measure the changes, such as mortality rate and recruitment rate.",
-  "ontologyUtilityScore" : {
-    "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 1.6268810642839006E-5,
-    "ontologyCoverageScore" : 0.0,
-    "prefOntologyScore" : 0.0,
-    "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 2.4403215964258506E-6
-  },
-  "conceptUtilityScores" : [ {
-    "matchedConceptName" : "http://www.fao.org/aims/aos/cwr.owl#Ecosystem",
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
     "conceptContextMatchingScore" : 0.2,
     "conceptSemanticRichnessScore" : 0.4,
     "conceptUtilityScore" : 0.30000000000000004,
-    "matchedConceptLabel" : "ecosystem",
-    "matchedConceptSynonyms" : null,
-    "matchedConceptDef" : null,
-    "matchedConceptSubClasses" : null,
-    "matchedConceptSubClassesIds" : null
+    "matchedConceptLabel" : "subatomic particle",
+    "matchedConceptSynonyms" : [ "subatomic particles" ],
+    "matchedConceptDef" : [ "A particle smaller than an atom." ],
+    "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "nuclear particle", "composite particle" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
   } ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.10000081344053215,
+  "totalUtilityScore" : 0.11633453993678936,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/COB",
-  "ontologyName" : " Core Ontology for Biology and Biomedicine",
-  "ontologyDescription" : "The Core Ontology for Biology and Biomedicine (COB) brings together key terms from a wide range of OBO projects into a single, small ontology. The goal is to improve interoperabilty and reuse across the OBO community through better coordination of key terms.",
+  "ontologyID" : "https://data.bioontology.org/ontologies/OCMR",
+  "ontologyName" : "Ontology of Chinese Medicine for Rheumatism",
+  "ontologyDescription" : "OCMR is a biomedical ontology that represents anti-rheumatism traditional Chinese medicines and related information.",
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 3.511351630412752E-5,
+    "ontologyPopularityScore" : 4.5552669799949215E-5,
+    "ontologyCoverageScore" : 0.157,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.039256832900469996
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
+    "conceptContextMatchingScore" : 0.2,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.30000000000000004,
+    "matchedConceptLabel" : "subatomic particle",
+    "matchedConceptSynonyms" : [ "subatomic particles" ],
+    "matchedConceptDef" : [ "A particle smaller than an atom." ],
+    "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "nuclear particle", "composite particle" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.11308561096682335,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/FB-CV",
+  "ontologyName" : "FlyBase Controlled Vocabulary",
+  "ontologyDescription" : "A structured controlled vocabulary used for various aspects of annotation by FlyBase. It includes the Drosophila Phenotype Ontology (DPO) which is also released separately. This ontology is maintained by FlyBase for various aspects of annotation not covered, or not yet covered, by other OBO ontologies. If and when community ontologies are available for the domains here covered FlyBase will use them.",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 0.016174720501286488,
+    "ontologyCoverageScore" : 0.196,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.05142620807519298
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.2,
+    "matchedConceptLabel" : "subatomic particle",
+    "matchedConceptSynonyms" : [ "subatomic particles" ],
+    "matchedConceptDef" : [ "A particle smaller than an atom." ],
+    "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "nuclear particle", "composite particle" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.08380873602506433,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/PHIPO",
+  "ontologyName" : "Pathogen Host Interaction Phenotype Ontology",
+  "ontologyDescription" : "PHIPO is a formal ontology of species-neutral phenotypes observed in pathogen-host interactions. PHIPO is being developed to support the comprehensive and detailed representation of phenotypes in PHI-base, the multi-species Pathogen-Host Interactions database available online at http://www.phi-base.org. PHIPO is pre-composed and logically defined.",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 1.8844705661288515E-5,
+    "ontologyCoverageScore" : 0.157,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.039252826705849196
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.2,
+    "matchedConceptLabel" : "subatomic particle",
+    "matchedConceptSynonyms" : [ "subatomic particles" ],
+    "matchedConceptDef" : [ "A particle smaller than an atom." ],
+    "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "nuclear particle", "composite particle" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.07975094223528306,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/NBO",
+  "ontologyName" : "Neuro Behavior Ontology",
+  "ontologyDescription" : "The Neurobehavior Ontology (NBO) consists of two main components, an ontology of behavioral processes and an ontology of behavioral phenotypes. The behavioral process branch of NBO contains a classification of behavior processes complementing and extending GO’s process ontology. The behavior phenotype branch of NBO consists of a classification of both normal and abnormal behavioral characteristics of organisms.",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 3.293078420954662E-4,
+    "ontologyCoverageScore" : 0.137,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.03429939617631432
+  },
+  "conceptUtilityScores" : [ {
+    "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
+    "conceptContextMatchingScore" : 0.0,
+    "conceptSemanticRichnessScore" : 0.4,
+    "conceptUtilityScore" : 0.2,
+    "matchedConceptLabel" : "subatomic particle",
+    "matchedConceptSynonyms" : [ "subatomic particles" ],
+    "matchedConceptDef" : [ "A particle smaller than an atom." ],
+    "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "nuclear particle", "composite particle" ],
+    "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
+  } ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.07809979872543811,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/RBO",
+  "ontologyName" : "Radiation Biology Ontology",
+  "ontologyDescription" : "RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 0.032282196585249244,
     "ontologyCoverageScore" : 0.392,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.09800526702744562
+    "ontologyTotalUtilityScore" : 0.10284232948778739
   },
   "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.03266842234248187,
+  "totalUtilityScore" : 0.03428077649592913,
   "ontologyScore" : 1
 }, {
-  "ontologyID" : "https://data.bioontology.org/ontologies/OMIT",
-  "ontologyName" : "Ontology for MicroRNA Target",
-  "ontologyDescription" : "The purpose of the OMIT ontology is to establish data exchange standards and common data elements in the microRNA (miR) domain. \r\n\r\nBiologists (cell biologists in particular) and bioinformaticians can make use of OMIT to leverage emerging semantic technologies in knowledge acquisition and discovery for more effective identification of important roles performed by miRs in humans' various diseases and biological processes (usually through miRs' respective target genes).\r\n\r\nOMIT has reused and extended a set of well-established concepts from existing bio-ontologies, e.g., Gene Ontology, Sequence Ontology, Protein Ontology, NCBI Organism Taxonomy, Human Disease Ontology, Foundational Model of Anatomy, and so forth.",
+  "ontologyID" : "https://data.bioontology.org/ontologies/HUPSON",
+  "ontologyName" : "Human Physiology Simulation Ontology",
+  "ontologyDescription" : "Large biomedical simulation initiatives, such as the Virtual Physiological Human (VPH), are substantially dependent on controlled vocabularies to facilitate the exchange of information, of data and of models. Hindering these initiatives is a lack of a comprehensive ontology that covers the essential concepts of the simulation domain. \r\nWe propose a first version of a newly constructed ontology, HuPSON, as a basis for shared semantics and interoperability of simulations, of models, of algorithms and of other resources in this domain. The ontology is based on the Basic Formal Ontology, and adheres to the MIREOT principles.",
   "ontologyUtilityScore" : {
     "ontologyDomainScore" : 0.0,
-    "ontologyPopularityScore" : 0.01633266353794405,
-    "ontologyCoverageScore" : 0.314,
+    "ontologyPopularityScore" : 2.025466925033456E-4,
+    "ontologyCoverageScore" : 0.353,
     "prefOntologyScore" : 0.0,
     "ontologyTypeScore" : 0.0,
-    "ontologyTotalUtilityScore" : 0.08094989953069161
+    "ontologyTotalUtilityScore" : 0.0882803820038755
   },
   "conceptUtilityScores" : [ ],
   "ontologyAggregatedScore" : 0.0,
-  "totalUtilityScore" : 0.026983299843563867,
+  "totalUtilityScore" : 0.029426794001291834,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/PATO",
+  "ontologyName" : "Phenotypic Quality Ontology",
+  "ontologyDescription" : "Phenotypic qualities (properties). This ontology can be used in conjunction with other ontologies such as GO or anatomical ontologies to refer to phenotypes. Examples of qualities are red, ectopic, high temperature, fused, small, edematous and arrested.",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 0.22801290905633825,
+    "ontologyCoverageScore" : 0.196,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.08320193635845075
+  },
+  "conceptUtilityScores" : [ ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.02773397878615025,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/OBA",
+  "ontologyName" : "Ontology of Biological Attributes",
+  "ontologyDescription" : "A collection of biological attributes (traits) covering all kingdoms of life. Interoperable with VT (vertebrate trait ontology) and TO (plant trait ontology). Extends PATO.",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 1.3923390441829714E-4,
+    "ontologyCoverageScore" : 0.275,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.06877088508566274
+  },
+  "conceptUtilityScores" : [ ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.02292362836188758,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/DPO",
+  "ontologyName" : "Drosophila Phenotype Ontology",
+  "ontologyDescription" : "An ontology of commonly encountered and/or high level Drosophila phenotypes. It has significant formalisation - utilising terms from GO, CL, PATO and the Drosophila anatomy ontology. It has been used by FlyBase for > 159000 annotations of phenotype.",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 3.48423694600802E-5,
+    "ontologyCoverageScore" : 0.196,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.04900522635541901
+  },
+  "conceptUtilityScores" : [ ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.016335075451806336,
+  "ontologyScore" : 1
+}, {
+  "ontologyID" : "https://data.bioontology.org/ontologies/CARO",
+  "ontologyName" : "Common Anatomy Reference Ontology",
+  "ontologyDescription" : "The Common Anatomy Reference Ontology (CARO) is being developed to facilitate interoperability between existing anatomy ontologies for different species, and will provide a template for building new anatomy ontologies. CARO will be described in Anatomy Ontologies for Bioinformatics: Principles and Practice Albert Burger, Duncan Davidson and Richard Baldock (Editors)",
+  "ontologyUtilityScore" : {
+    "ontologyDomainScore" : 0.0,
+    "ontologyPopularityScore" : 0.016274231393051855,
+    "ontologyCoverageScore" : 0.157,
+    "prefOntologyScore" : 0.0,
+    "ontologyTypeScore" : 0.0,
+    "ontologyTotalUtilityScore" : 0.04169113470895778
+  },
+  "conceptUtilityScores" : [ ],
+  "ontologyAggregatedScore" : 0.0,
+  "totalUtilityScore" : 0.013897044902985926,
   "ontologyScore" : 1
 } ]

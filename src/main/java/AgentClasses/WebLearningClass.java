@@ -401,7 +401,7 @@ public class WebLearningClass {
 	  			  //if first item in  the txt file == input ontology name
 	  			  if(i==0) {
 	  				//Set the first item as input ontology name  
-	  		        String inputFileName="OWLOntologies/"+values[i];
+	  		        String inputFileName=values[i];
 	  		        File file = new File(inputFileName);
 	  		        File tempFile = new File("Working_Folder/"+values[i]);
 	  		        try {
