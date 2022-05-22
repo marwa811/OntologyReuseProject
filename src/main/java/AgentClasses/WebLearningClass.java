@@ -98,20 +98,22 @@ public class WebLearningClass {
     	{
     		System.out.println("The size bioPortalSearchResult search results: "+bioPortalSearchResult.size());
     		//to remove reprated ontology Id coming from Bioportal search service
+    			
     		bioPortalSearchResult=excludeRedundantOntologies(bioPortalSearchResult);
     		System.out.println("The size bioPortalSearchResult after exclude redundant : "+bioPortalSearchResult.size());
     		//here we have two main issues with the list of candidate ontologies "termSearchResultOntologies"
     		//1. Very large ontology, extract a module using the input class name and append its IRI to the list
     		//2. Not OWL file ontology, exclude it from the list
+    	//	ArrayList<CandidateOntologyClass> candidateOntologies= populateCandidateOntologyIDs(bioPortalSearchResult);
     		bioPortalSearchResult=excludeNonOWLOntologies(bioPortalSearchResult);
     		System.out.println("The size bioPortalSearchResult after excludeNonOWL: "+bioPortalSearchResult.size());
-    		bioPortalSearchResult=excludeNonMatchedOntologies(bioPortalSearchResult);
+    	    bioPortalSearchResult=excludeNonMatchedOntologies(bioPortalSearchResult);
     		System.out.println("The size bioPortalSearchResult after excludeNonMatchedOntologies: "+bioPortalSearchResult.size());
     		//ArrayList<String> modulesOfLaregFilesIRIs = getModulesIRIFromLargeOntologies(className,bioPortalSearchResult);
     		//if(modulesOfLaregFilesIRIs.size()>0)
     			//bioPortalSearchResult.addAll(modulesOfLaregFilesIRIs);
     		
-    		ArrayList<CandidateOntologyClass> candidateOntologies= populateCandidateOntologyIDs(bioPortalSearchResult);
+    	    ArrayList<CandidateOntologyClass> candidateOntologies= populateCandidateOntologyIDs(bioPortalSearchResult);
     		
     		candidateOntologies= OntologyUtilityClass.calculateOntologyUtilityFunction(classNames,candidateOntologies,firstIteration.getUserPreferences());
     		Collections.sort(candidateOntologies,CandidateOntologyClass.sortByOntologyUtilityScore);
@@ -244,13 +246,15 @@ public class WebLearningClass {
 		private static ArrayList<String> excludeNonOWLOntologies(ArrayList<String> setofOntologies){
 	  		String fileName="";
 	  		String newFileName="";
+	  		String newFileNameOBO="";
 	  		String acronym="";
 	  		ArrayList<String> newSetofOntologies = new ArrayList<String>();
 	  		for(int i=0; i<setofOntologies.size() ; i++) {
 	  			fileName= setofOntologies.get(i);	  	  		
 	  			acronym=fileName.substring(fileName.lastIndexOf('/')+1, fileName.length());
 	  			newFileName=acronym+".owl";
-	  			if(owlFilesNames.contains(newFileName))
+	  			newFileNameOBO=acronym+".obo";
+	  			if(owlFilesNames.contains(newFileName)||owlFilesNames.contains(newFileNameOBO))
 	  				newSetofOntologies.add(fileName);
 	  		}
 	  		return newSetofOntologies;
@@ -402,6 +406,7 @@ public class WebLearningClass {
 	  			  if(i==0) {
 	  				//Set the first item as input ontology name  
 	  		        String inputFileName=values[i];
+	  		        System.out.println("The file name is:  "+ values[i]);
 	  		        File file = new File(inputFileName);
 	  		        File tempFile = new File("Working_Folder/"+values[i]);
 	  		        try {
@@ -491,7 +496,8 @@ public class WebLearningClass {
 	       // File directoryPathLargeFiles = new File("C:\\Important files\\large ontologies");
 	        FilenameFilter textFilefilter = new FilenameFilter(){
 	           public boolean accept(File dir, String name) {
-	              if (name.endsWith(".owl")) {
+	              //if (name.endsWith(".owl")) {
+	        	   if (name.endsWith(".owl")||name.endsWith(".obo")) {
 	                 return true;
 	              } else {
 	                 return false;

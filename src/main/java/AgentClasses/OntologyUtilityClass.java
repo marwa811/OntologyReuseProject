@@ -27,11 +27,11 @@ public class OntologyUtilityClass {
 	public static ArrayList<CandidateOntologyClass> calculateOntologyUtilityFunction(String classesNames,ArrayList<CandidateOntologyClass> candidateOntologies,
 			UserPreferencesModel userPref) 
 	{
-		double domainWeight=0.25;
-		double populariyWeight=0.15;
-		double coverageWeight=0.25;
-		double prefOntologyWeight=0.25;
-		double ontologyTypeWeight=0.10;
+		double domainWeight=0.70;
+		double populariyWeight=0.10;
+		double coverageWeight=0.10;
+		double prefOntologyWeight=0.10;
+	//	double ontologyTypeWeight=0.10;
 		
 		//read the ontology.json file and get a list of Ontology contain all information about ontologies
 		Ontology[] ontologiesInfo  = getOntologyInfoFromJsonFile();
@@ -56,8 +56,8 @@ public class OntologyUtilityClass {
 					domainWeight * domainScore+ 
 					populariyWeight * popularityScore+ 
 					coverageWeight * coverageScore+ 
-					prefOntologyWeight * prefOntologyScore + 
-					ontologyTypeWeight * ontologyTypeScore;
+					prefOntologyWeight * prefOntologyScore; 
+					//ontologyTypeWeight * ontologyTypeScore;
 			
 			OntologyUtilityScoreClass newOntologyUtilityScore= new OntologyUtilityScoreClass(domainScore,
 					popularityScore,coverageScore,prefOntologyScore,ontologyTypeScore,

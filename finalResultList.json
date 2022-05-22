@@ -1,159 +1,341 @@
 {
   "finalCandidateOntologyList" : [ {
-    "ontologyID" : "https://data.bioontology.org/ontologies/ENVO",
-    "ontologyName" : "Environment Ontology",
-    "ontologyDescription" : "Official PURL: http://purl.obolibrary.org/obo/envo.owl\r\n\r\n\r\nThe most up-to-date information about ENVO is available here: http://www.obofoundry.org/ontology/envo.html\r\n\r\n\r\nEnvO is an OBO Foundry and Library ontology for the concise, controlled description of environmental entities such as ecosystems, environmental processes, and environmental qualities. It closely interoperates with a broad collection of other OBO ontologies and is used in a diverse range of projects. \r\n\r\n",
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.3333333333333333,
-      "ontologyPopularityScore" : 0.1674475251152716,
-      "ontologyCoverageScore" : 0.196,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.15745046210062408
-    },
-    "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
-      "conceptContextMatchingScore" : 0.2,
-      "conceptSemanticRichnessScore" : 0.4,
-      "conceptUtilityScore" : 0.30000000000000004,
-      "matchedConceptLabel" : "subatomic particle",
-      "matchedConceptSynonyms" : [ ],
-      "matchedConceptDef" : [ ],
-      "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "boson", "nuclear particle", "composite particle" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36341", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
-    } ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.1524834873668747,
-    "ontologyScore" : 4
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/OCE",
-    "ontologyName" : "Ontology of Chemical Elements",
-    "ontologyDescription" : "The Ontology of Chemical Elements (OCE) is a community-based ontology in the domain of chemical elements. OCE systematically represents and annotates the known 118 chemical elements and their charactistics and relations with other entities. OCE imports the basic chemical element information from ChEBI and adds more classes, annotations, and axioms. OCE specifically focuses on adding all the related information from the Periodic Table of Chemical Elements. ",
+    "ontologyID" : "https://data.bioontology.org/ontologies/PREMEDONTO",
+    "ontologyName" : "Precision Medicine Ontology",
+    "ontologyDescription" : "Precision MedicinePreMedOnto is an application ontology built for the precision medicine domain on top of gold standard biomedical ontologies. The ontology learning process involves mining the PubMed repository to extract domain specific texts, abstracts and vocabulary as sources of data. The information gathered is clustered and outlined to determine main modules. It reuses terms and concepts from NCIT, MESH and IOBC to construct the ontology hierarchy.",
     "ontologyUtilityScore" : {
       "ontologyDomainScore" : 1.0,
-      "ontologyPopularityScore" : 3.48423694600802E-5,
-      "ontologyCoverageScore" : 0.039,
+      "ontologyPopularityScore" : 1.2093149244510327E-4,
+      "ontologyCoverageScore" : 0.549,
       "prefOntologyScore" : 0.0,
       "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.259755226355419
+      "ontologyTotalUtilityScore" : 0.7549120931492446
     },
     "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
-      "conceptContextMatchingScore" : 0.2,
-      "conceptSemanticRichnessScore" : 0.4,
-      "conceptUtilityScore" : 0.30000000000000004,
-      "matchedConceptLabel" : "subatomic particle",
-      "matchedConceptSynonyms" : [ "subatomic particles" ],
-      "matchedConceptDef" : [ "A particle smaller than an atom." ],
-      "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "nuclear particle", "composite particle" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
-    } ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.18658507545180636,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/CL",
-    "ontologyName" : "Cell Ontology",
-    "ontologyDescription" : "The Cell Ontology is designed as a structured controlled vocabulary for cell types. This ontology was constructed for use by the model organism and other bioinformatics databases, where there is a need for a controlled vocabulary of cell types. This ontology is not organism specific it covers cell types from prokaryotes to mammals. However, it excludes plant cell types, which are covered by PO. See the website <a href=\"http://cellontology.org\">http://cellontology.org</a> for more details.",
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 0.16589764975469717,
-      "ontologyCoverageScore" : 0.275,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.09363464746320457
-    },
-    "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
-      "conceptContextMatchingScore" : 0.4,
-      "conceptSemanticRichnessScore" : 0.4,
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/NCIT_C17828",
+      "conceptContextMatchingScore" : 0.0,
+      "conceptSemanticRichnessScore" : 0.8,
       "conceptUtilityScore" : 0.4,
-      "matchedConceptLabel" : "subatomic particle",
-      "matchedConceptSynonyms" : [ "subatomic particles" ],
-      "matchedConceptDef" : [ "A particle smaller than an atom." ],
-      "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "boson", "nuclear particle", "composite particle" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36341", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
+      "matchedConceptLabel" : "Biological Process",
+      "matchedConceptSynonyms" : [ "Biological Process", "Biological Function" ],
+      "matchedConceptDef" : [ "An activity occurring within an organism, between organisms or among organisms and the mechanisms underlying such events." ],
+      "matchedConceptSubClasses" : [ "Subcellular Process", "Multicellular Process", "Pathologic Process", "Organismal Process", "Population Process" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/NCIT_C17710", "http://purl.obolibrary.org/obo/NCIT_C21124", "http://purl.obolibrary.org/obo/NCIT_C16956", "http://purl.obolibrary.org/obo/NCIT_C19988", "http://purl.obolibrary.org/obo/NCIT_C20182" ]
     } ],
     "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.16454488248773486,
+    "totalUtilityScore" : 0.3849706977164149,
     "ontologyScore" : 1
   }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/KTAO",
-    "ontologyName" : "Kidney Tissue Atlas Ontology",
-    "ontologyDescription" : "The Kidney Tissue Atlas Ontology (KTAO) is an ontology that integrates kidney-related cell types, cell states, locations, gene markers, disease, etc., and their relations. KTAO is \r\ndeveloped to support the NIH-NIDDK-funed Kidney Precision Medicine Project (KPMP). ",
+    "ontologyID" : "https://data.bioontology.org/ontologies/HUPSON",
+    "ontologyName" : "Human Physiology Simulation Ontology",
+    "ontologyDescription" : "Large biomedical simulation initiatives, such as the Virtual Physiological Human (VPH), are substantially dependent on controlled vocabularies to facilitate the exchange of information, of data and of models. Hindering these initiatives is a lack of a comprehensive ontology that covers the essential concepts of the simulation domain. \r\nWe propose a first version of a newly constructed ontology, HuPSON, as a basis for shared semantics and interoperability of simulations, of models, of algorithms and of other resources in this domain. The ontology is based on the Basic Formal Ontology, and adheres to the MIREOT principles.",
     "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 1.3340424727127984E-4,
-      "ontologyCoverageScore" : 0.392,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.09802001063709069
-    },
-    "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
-      "conceptContextMatchingScore" : 0.2,
-      "conceptSemanticRichnessScore" : 0.4,
-      "conceptUtilityScore" : 0.30000000000000004,
-      "matchedConceptLabel" : "subatomic particle",
-      "matchedConceptSynonyms" : [ "subatomic particles" ],
-      "matchedConceptDef" : [ "A particle smaller than an atom." ],
-      "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "nuclear particle", "composite particle" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
-    } ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.13267333687903024,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/AFO",
-    "ontologyName" : "Allotrope Merged Ontology Suite",
-    "ontologyDescription" : "<p><strong>Allotrope Merged Ontology Suite</strong></p>\r\n\r\n<p>The AFO is an ontology suite that provides a standard vocabulary and semantic model for the representation of laboratory analytical processes. The AFO suite is aligned at the upper layer to the Basic Formal Ontology (BFO). The core domains modeled include: Equipment, Material, Process, and Results.</p>\r\n\r\n<p>This version of Allotrope Foundation Ontology (AFO) has been prepared specifically for publication on the NCBO platform.</p>\r\n\r\n<p>license: http://purl.allotrope.org/voc/creative-commons-attribution-license<br/>\r\nrights: http://purl.allotrope.org/voc/copyright<br/></p>\r\n \r\n<p>Please get the latest version of AFO from http://purl.allotrope.org</p>",
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 3.290366952514189E-4,
-      "ontologyCoverageScore" : 0.373,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.09329935550428771
-    },
-    "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
-      "conceptContextMatchingScore" : 0.2,
-      "conceptSemanticRichnessScore" : 0.4,
-      "conceptUtilityScore" : 0.30000000000000004,
-      "matchedConceptLabel" : "\"subatomic particle\"",
-      "matchedConceptSynonyms" : [ ],
-      "matchedConceptDef" : [ "A subatomic particle is a material that is below the scale of an atom. [Allotrope]" ],
-      "matchedConceptSubClasses" : [ "fermion", "boson", "nuclear particle" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_36341", "http://purl.obolibrary.org/obo/CHEBI_36347" ]
-    } ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.1310997851680959,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/BT",
-    "ontologyName" : "BioTop Ontology",
-    "ontologyDescription" : "A top-domain ontology that provides definitions for the foundational entities of biomedicine as a basic vocabulary to unambiguously describe facts in this domain. The original BioTop is no longer maintained, because it duplicated much content of other ontologies. The currently maintained version is BioTopLite 2, abbreviated as BTL2 ",
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 0.01639719648682731,
+      "ontologyDomainScore" : 1.0,
+      "ontologyPopularityScore" : 2.025466925033456E-4,
       "ontologyCoverageScore" : 0.353,
       "prefOntologyScore" : 0.0,
       "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.09070957947302409
+      "ontologyTotalUtilityScore" : 0.7353202546692503
     },
     "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.org/biotop/biotop.owl#SubatomicParticle",
+      "matchedConceptName" : "http://purl.org/obo/owl/GO#GO_0008150",
       "conceptContextMatchingScore" : 0.2,
       "conceptSemanticRichnessScore" : 0.4,
       "conceptUtilityScore" : 0.30000000000000004,
-      "matchedConceptLabel" : "subatomic particle",
-      "matchedConceptSynonyms" : [ ],
-      "matchedConceptDef" : [ ],
-      "matchedConceptSubClasses" : [ "*" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.org/biotop/biotop.owl#SubatomicEntityByChargePartition" ]
+      "matchedConceptLabel" : "biological process",
+      "matchedConceptSynonyms" : [ "physiological reactions", "physiological reaction", "physiological processes", "physiological process", "biological processes" ],
+      "matchedConceptDef" : [ "Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end.\n\nsource: Gene Ontology Extension\nhttp://purl.bioontology.org/ontology/GO/GO_0008150" ],
+      "matchedConceptSubClasses" : [ "signal transduction", "clotting", "motion", "disease process", "cell movement", "binding", "desorption", "phagocytosis", "muscle contraction", "apoptosis", "biochemical reaction", "metabolic process", "regulation of gene expression", "respiration", "molecular interaction", "endocrine process", "growth", "initiation of growth", "developmental process", "activation", "excitation-contraction coupling", "cell cycle", "adhesion", "biosynthesis", "circadian rhythm", "homeostatic process" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.org/obo/owl/GO#GO_0007165", "http://purl.org/obo/owl/GO#GO_0050817", "http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000882", "http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000259", "http://purl.org/obo/owl/GO#GO_0048870", "http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000281", "http://purl.org/obo/owl/REX#REX_0000199", "http://purl.org/obo/owl/GO#GO_0006909", "http://purl.org/obo/owl/GO#GO_0006936", "http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000304", "http://purl.org/obo/owl/SBO#SBO_0000176", "http://purl.org/obo/owl/GO#GO_0008152", "http://purl.org/obo/owl/GO#GO_0010468", "http://www.co-ode.org/ontologies/galen#Breathing", "http://purl.org/obo/owl/SBO#SBO_0000344", "http://purl.org/obo/owl/GO#GO_0050886", "http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000284", "http://scai.fraunhofer.de/HuPSON#SCAIVPH_00001084", "http://purl.org/obo/owl/GO#GO_0032502", "http://purl.obolibrary.org/obo/OBI_0302901", "http://scai.fraunhofer.de/HuPSON#SCAIVPH_00001178", "http://purl.org/obo/owl/GO#GO_0007049", "http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000289", "http://semanticscience.org/resource/SIO_000590", "http://purl.org/obo/owl/GO#GO_0007623", "http://purl.org/obo/owl/GO#GO_0042592" ]
     } ],
     "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.13023652649100803,
+    "totalUtilityScore" : 0.3451067515564168,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/HPIO",
+    "ontologyName" : "Host Pathogen Interactions Ontology",
+    "ontologyDescription" : "Ontology for host pathogen interactions in farmed animals",
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 1.0,
+      "ontologyPopularityScore" : 1.2364296088557644E-4,
+      "ontologyCoverageScore" : 0.314,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.7314123642960885
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000159",
+      "conceptContextMatchingScore" : 0.0,
+      "conceptSemanticRichnessScore" : 0.6000000000000001,
+      "conceptUtilityScore" : 0.30000000000000004,
+      "matchedConceptLabel" : "biological process",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ ],
+      "matchedConceptSubClasses" : [ "response to stimulus", "symbiosis, encompassing mutualism through parasitism", "cytokine production", "evasion or tolerance of host immune response" ],
+      "matchedConceptSubClassesIds" : [ "http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000162", "http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000180", "http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000160", "http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000161" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.34380412143202943,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/APOLLO-SV",
+    "ontologyName" : "Apollo Structured Vocabulary",
+    "ontologyDescription" : "Apollo-SV, developed as an OWL specification, defines the terms and relations necessary for interoperation between epidemic simulators and public health application software that interface with these simulators.",
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 1.0,
+      "ontologyPopularityScore" : 5.395822196541603E-5,
+      "ontologyCoverageScore" : 0.294,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.7294053958221964
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/GO_0008150",
+      "conceptContextMatchingScore" : 0.2,
+      "conceptSemanticRichnessScore" : 0.4,
+      "conceptUtilityScore" : 0.30000000000000004,
+      "matchedConceptLabel" : "biological process",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ "Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end." ],
+      "matchedConceptSubClasses" : [ "biological regulation", "establishment of localization", "contamination", "entry into host", "reproduction", "response to stimulus", "infection acquistion from self colonization", "organism emergence from protective structure", "behavior", "reproductive process", "developmental process", "multi-organism process", "potentially infectious contacting", "gonotrophic cycle", "contamination acquisition" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/GO_0065007", "http://purl.obolibrary.org/obo/GO_0051234", "http://purl.obolibrary.org/obo/APOLLO_SV_00000186", "http://purl.obolibrary.org/obo/GO_0044409", "http://purl.obolibrary.org/obo/GO_0000003", "http://purl.obolibrary.org/obo/GO_0050896", "http://purl.obolibrary.org/obo/APOLLO_SV_00000334", "http://purl.obolibrary.org/obo/GO_0071684", "http://purl.obolibrary.org/obo/GO_0007610", "http://purl.obolibrary.org/obo/GO_0022414", "http://purl.obolibrary.org/obo/GO_0032502", "http://purl.obolibrary.org/obo/GO_0051704", "http://purl.obolibrary.org/obo/APOLLO_SV_00000405", "http://purl.obolibrary.org/obo/APOLLO_SV_00000314", "http://purl.obolibrary.org/obo/APOLLO_SV_00000167" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.34313513194073214,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/NEOMARK3",
+    "ontologyName" : "Neomark Oral Cancer Ontology, version 3",
+    "ontologyDescription" : "Ontology that describes the medical information necessary for early detection of the oral cancer reoccurrence extracted from the NeoMark Project.",
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 1.0,
+      "ontologyPopularityScore" : 3.2266474441630696E-5,
+      "ontologyCoverageScore" : 0.078,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.7078032266474441
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://www.neomark.eu/ontologies/neomark.owl#BiologicalProcess",
+      "conceptContextMatchingScore" : 0.0,
+      "conceptSemanticRichnessScore" : 0.6000000000000001,
+      "conceptUtilityScore" : 0.30000000000000004,
+      "matchedConceptLabel" : "Biological Process",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ "Biological process associated to a gene analyzed by the PCR." ],
+      "matchedConceptSubClasses" : [ "Signaling", "Signaling Process", "Cell Killing Process", "Death Process", "Immune System Process" ],
+      "matchedConceptSubClassesIds" : [ "http://www.neomark.eu/ontologies/neomark.owl#Signaling", "http://www.neomark.eu/ontologies/neomark.owl#SignalingProcess", "http://www.neomark.eu/ontologies/neomark.owl#CellKilling", "http://www.neomark.eu/ontologies/neomark.owl#Death", "http://www.neomark.eu/ontologies/neomark.owl#ImmuneSystemProcess" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.3359344088824814,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/CPRO",
+    "ontologyName" : "Computer-Based Patient Record Ontology",
+    "ontologyDescription" : "A uniform core set of data elements (whose formal semantics are captured in OWL) for use in a Computer-Based Patient Record (CPR)",
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 1.0,
+      "ontologyPopularityScore" : 2.5677606131280895E-4,
+      "ontologyCoverageScore" : 0.196,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.7196256776061312
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.org/cpr/biological-process",
+      "conceptContextMatchingScore" : 0.0,
+      "conceptSemanticRichnessScore" : 0.0,
+      "conceptUtilityScore" : 0.0,
+      "matchedConceptLabel" : "biological-process",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ "Those processes which either take place within the human organism or\n            are processes of causal interaction in which the human organism is involved." ],
+      "matchedConceptSubClasses" : [ "Process of physiological or granularity-agnostic anatomical alteration as a result of the realization\nof a pathological disposition (a disease)", "Physiological process", "Pathological process" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.org/cpr/morphologic-alteration", "http://purl.org/cpr/physiological-process", "http://purl.org/cpr/pathological-process" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.23987522586871038,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/IDO",
+    "ontologyName" : "Infectious Disease Ontology",
+    "ontologyDescription" : "The IDO ontologies are designed as a set of interoperable ontologies that will together provide coverage of the infectious disease domain. At the core of the set is a general Infectious Disease Ontology (IDO-Core) of entities relevant to both biomedical and clinical aspects of most infectious diseases. Sub-domain specific extensions of IDO-Core complete the set providing ontology coverage of entities relevant to specific pathogens or diseases. \r\n\r\n<br><br>\r\nTo import,<br>\r\nLatest version: <a href=\"http://purl.obolibrary.org/obo/ido.owl\">http://purl.obolibrary.org/obo/ido.owl</a><br>\r\nThis version (2010-12-02): <a href=\"http://purl.obolibrary.org/obo/ido/2010-12-02/ido.owl\">http://purl.obolibrary.org/obo/ido/2010-12-02/ido.owl</a><br>\r\nPrevious  versions:<br>\r\n2010-05-26 <a href=\"http://purl.obolibrary.org/obo/ido/2010-05-26/ido.owl\">http://purl.obolibrary.org/obo/ido/2010-05-26/ido.owl</a><br>\r\n2009-08-14 <a href=\"http://purl.obolibrary.org/obo/ido/2009-08-14/ido.owl\">http://purl.obolibrary.org/obo/ido/2009-08-14/ido.owl</a><br>\r\n<br>\r\n<br>\r\nLatest release notes at <a href=\"http://infectiousdiseaseontology.org/page/Download\">http://infectiousdiseaseontology.org/page/Download</a><br>\r\n\r\nPlease note: The ontology metrics displayed by BioPortal do not distinguish IDO-developed terms from terms imported from other ontologies.",
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 0.5,
+      "ontologyPopularityScore" : 0.08144395989288597,
+      "ontologyCoverageScore" : 0.235,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.3816443959892886
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/GO_0008150",
+      "conceptContextMatchingScore" : 0.2,
+      "conceptSemanticRichnessScore" : 0.4,
+      "conceptUtilityScore" : 0.30000000000000004,
+      "matchedConceptLabel" : "biological process",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ "Process specifically pertinent to the functioning of functionally integrated units." ],
+      "matchedConceptSubClasses" : [ "establishment of localization", "entry into host", "immune response", "symbiotic process", "developmental process", "adhesion of symbiont to host" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/GO_0051234", "http://purl.obolibrary.org/obo/GO_0044409", "http://purl.obolibrary.org/obo/GO_0006955", "http://purl.obolibrary.org/obo/GO_0044403", "http://purl.obolibrary.org/obo/GO_0032502", "http://purl.obolibrary.org/obo/GO_0044406" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.22721479866309618,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/IDODEN",
+    "ontologyName" : "Dengue Fever Ontology",
+    "ontologyDescription" : "An ontology for dengue fever.",
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 0.3333333333333333,
+      "ontologyPopularityScore" : 0.01627138435118936,
+      "ontologyCoverageScore" : 0.294,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.26436047176845223
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/GO_0008150",
+      "conceptContextMatchingScore" : 0.2,
+      "conceptSemanticRichnessScore" : 0.6000000000000001,
+      "conceptUtilityScore" : 0.4,
+      "matchedConceptLabel" : "biological process",
+      "matchedConceptSynonyms" : [ "biological process", "physiological process", "biological process unknown" ],
+      "matchedConceptDef" : [ "\"Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end.\" [GOC:go_curators, GOC:isa_complete]" ],
+      "matchedConceptSubClasses" : [ "process of dengue virus", "process of dengue vector", "multi-organism process", "process of human host population", "process of human host", "process of dengue vector population" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.bioontology.org/ontology/IDODEN_0000252", "http://purl.bioontology.org/ontology/IDODEN_0000246", "http://purl.obolibrary.org/obo/GO_0051704", "http://purl.bioontology.org/ontology/IDODEN_0000245", "http://purl.bioontology.org/ontology/IDODEN_0000233", "http://purl.bioontology.org/ontology/IDODEN_0000249" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.22145349058948408,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/VDOT",
+    "ontologyName" : "Viral Disease Ontology Trunk",
+    "ontologyDescription" : "VDOT is a middle-layer ontology for the health care domain with special emphasis on viral infections and transplantation medicine.",
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 0.3333333333333333,
+      "ontologyPopularityScore" : 4.053645318507385E-5,
+      "ontologyCoverageScore" : 0.235,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.2568373869786518
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/GO_0008150",
+      "conceptContextMatchingScore" : 0.2,
+      "conceptSemanticRichnessScore" : 0.4,
+      "conceptUtilityScore" : 0.30000000000000004,
+      "matchedConceptLabel" : "GO_0008150",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ "Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end." ],
+      "matchedConceptSubClasses" : [ "single-organism process" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/GO_0044699" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.18561246232621725,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/ECTO",
+    "ontologyName" : "Environmental conditions, treatments and exposures ontology",
+    "ontologyDescription" : "ECTO describes exposures to experimental treatments of plants and model organisms (e.g. exposures to modification of diet, lighting levels, temperature); exposures of humans or any other organisms to stressors through a variety of routes, for purposes of public health, environmental monitoring etc, stimuli, natural and experimental, any kind of environmental condition or change in condition that can be experienced by an organism or population of organisms on earth. The scope is very general and can include for example plant treatment regimens, as well as human clinical exposures (although these may better be handled by a more specialized ontology).",
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 0.0,
+      "ontologyPopularityScore" : 2.6843537560684358E-5,
+      "ontologyCoverageScore" : 0.392,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.039202684353756075
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/GO_0008150",
+      "conceptContextMatchingScore" : 0.2,
+      "conceptSemanticRichnessScore" : 0.8,
+      "conceptUtilityScore" : 0.5,
+      "matchedConceptLabel" : "biological_process",
+      "matchedConceptSynonyms" : [ "single-organism process", "biological process", "physiological process", "single organism process" ],
+      "matchedConceptDef" : [ "Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.", "A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.", "A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.", "Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end." ],
+      "matchedConceptSubClasses" : [ "localization", "signaling", "gliogenesis", "biological regulation", "lithification", "reproduction", "response to stimulus", "metabolic process", "locomotion", "growth", "biological process involved in interspecies interaction between organisms", "reproductive process", "ecosystem fragmentation process", "immune system process", "developmental process", "multicellular organismal process", "multi-organism process", "cellular process", "pigmentation", "snow accumulation process", "cell development" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/GO_0051179", "http://purl.obolibrary.org/obo/GO_0023052", "http://purl.obolibrary.org/obo/GO_0042063", "http://purl.obolibrary.org/obo/GO_0065007", "http://purl.obolibrary.org/obo/ENVO_01001205", "http://purl.obolibrary.org/obo/GO_0000003", "http://purl.obolibrary.org/obo/GO_0050896", "http://purl.obolibrary.org/obo/GO_0008152", "http://purl.obolibrary.org/obo/GO_0040011", "http://purl.obolibrary.org/obo/GO_0040007", "http://purl.obolibrary.org/obo/GO_0044419", "http://purl.obolibrary.org/obo/GO_0022414", "http://purl.obolibrary.org/obo/ENVO_01001168", "http://purl.obolibrary.org/obo/GO_0002376", "http://purl.obolibrary.org/obo/GO_0032502", "http://purl.obolibrary.org/obo/GO_0032501", "http://purl.obolibrary.org/obo/GO_0051704", "http://purl.obolibrary.org/obo/GO_0009987", "http://purl.obolibrary.org/obo/GO_0043473", "http://purl.obolibrary.org/obo/ENVO_01001617", "http://purl.obolibrary.org/obo/GO_0048468" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.17973422811791867,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/SDO",
+    "ontologyName" : "Sleep Domain Ontology",
+    "ontologyDescription" : "An application ontology for the domain of Sleep Medicine. \r\n",
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 0.2,
+      "ontologyPopularityScore" : 2.3047481744021924E-4,
+      "ontologyCoverageScore" : 0.275,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.16752304748174401
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.org/cpr/biological-process",
+      "conceptContextMatchingScore" : 0.2,
+      "conceptSemanticRichnessScore" : 0.4,
+      "conceptUtilityScore" : 0.30000000000000004,
+      "matchedConceptLabel" : "Biological process",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ "Those processes which either take place within the human organism or\n            are processes of causal interaction in which the human organism is involved." ],
+      "matchedConceptSubClasses" : [ "Process of physiological or anatomical alteration as a result of the realization\nof a pathological disposition (a disease)", "Physiological process", "organism process", "Pathological process" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.org/cpr/morphologic-alteration", "http://purl.org/cpr/physiological-process", "http://purl.org/biotop/biotop.owl#OrganismProcess", "http://purl.org/cpr/pathological-process" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.15584101582724802,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/RBO",
+    "ontologyName" : "Radiation Biology Ontology",
+    "ontologyDescription" : "RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.",
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 0.0,
+      "ontologyPopularityScore" : 0.032282196585249244,
+      "ontologyCoverageScore" : 0.471,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 0.0,
+      "ontologyTotalUtilityScore" : 0.05032821965852493
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/GO_0008150",
+      "conceptContextMatchingScore" : 0.2,
+      "conceptSemanticRichnessScore" : 0.6000000000000001,
+      "conceptUtilityScore" : 0.4,
+      "matchedConceptLabel" : "biological_process",
+      "matchedConceptSynonyms" : [ "biological_process", "single-organism process", "biological process", "biological process unknown", "physiological process", "Physiological Processes", "single organism process" ],
+      "matchedConceptDef" : [ "Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.", "The activities of living organisms that support life in single- or multi-cellular organisms from their origin through the progression of life.", "A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.", "Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end.\n", "Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. Note that when this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.\n" ],
+      "matchedConceptSubClasses" : [ "localization", "biological regulation", "reproduction", "response to stimulus", "metabolic process", "locomotion", "reproductive process", "single-organism process", "immune system process", "developmental process", "multicellular organismal process", "multi-organism process", "cellular process", "translation" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/GO_0051179", "http://purl.obolibrary.org/obo/GO_0065007", "http://purl.obolibrary.org/obo/GO_0000003", "http://purl.obolibrary.org/obo/GO_0050896", "http://purl.obolibrary.org/obo/GO_0008152", "http://purl.obolibrary.org/obo/GO_0040011", "http://purl.obolibrary.org/obo/GO_0022414", "http://purl.obolibrary.org/obo/GO_0044699", "http://purl.obolibrary.org/obo/GO_0002376", "http://purl.obolibrary.org/obo/GO_0032502", "http://purl.obolibrary.org/obo/GO_0032501", "http://purl.obolibrary.org/obo/GO_0051704", "http://purl.obolibrary.org/obo/GO_0009987", "http://purl.obolibrary.org/obo/GO_0006412" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.15010940655284163,
+    "ontologyScore" : 1
+  }, {
+    "ontologyID" : "https://data.bioontology.org/ontologies/GSSO",
+    "ontologyName" : "Gender, Sex, and Sexual Orientation Ontology",
+    "ontologyDescription" : "The Gender, Sex, and Sexual Orientation (GSSO) ontology is an interdisciplinary ontology connecting terms from biology, medicine, psychology, sociology, and gender studies, aiming to bridge gaps between linguistic variations inside and outside of the health care environment. A large focus of the ontology is its consideration of LGBTQIA+ terminology.",
+    "ontologyUtilityScore" : {
+      "ontologyDomainScore" : 0.0,
+      "ontologyPopularityScore" : 3.4503435905021055E-4,
+      "ontologyCoverageScore" : 0.51,
+      "prefOntologyScore" : 0.0,
+      "ontologyTypeScore" : 1.0,
+      "ontologyTotalUtilityScore" : 0.05103450343590502
+    },
+    "conceptUtilityScores" : [ {
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/GO_0008150",
+      "conceptContextMatchingScore" : 0.2,
+      "conceptSemanticRichnessScore" : 0.4,
+      "conceptUtilityScore" : 0.30000000000000004,
+      "matchedConceptLabel" : "biological process",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ "An activity occurring within an organism, between organisms or among organisms and the mechanisms underlying such events." ],
+      "matchedConceptSubClasses" : [ "localization", "biological phase", "reproduction", "response to stimulus", "genetic process", "growth", "behavior", "immune system process", "developmental process", "multi-organism process", "cellular process", "organismal process", "population process", "pathologic process" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/GO_0051179", "http://purl.obolibrary.org/obo/GO_0044848", "http://purl.obolibrary.org/obo/GO_0000003", "http://purl.obolibrary.org/obo/GO_0050896", "http://purl.obolibrary.org/obo/GSSO_000905", "http://purl.obolibrary.org/obo/GO_0040007", "http://purl.obolibrary.org/obo/GO_0007610", "http://purl.obolibrary.org/obo/GO_0002376", "http://purl.obolibrary.org/obo/GO_0032502", "http://purl.obolibrary.org/obo/GO_0051704", "http://purl.obolibrary.org/obo/GO_0009987", "http://purl.obolibrary.org/obo/NCIT_C19988", "http://purl.obolibrary.org/obo/NCIT_C20182", "http://purl.obolibrary.org/obo/OBI_1110122" ]
+    } ],
+    "ontologyAggregatedScore" : 0.0,
+    "totalUtilityScore" : 0.11701150114530169,
     "ontologyScore" : 1
   }, {
     "ontologyID" : "https://data.bioontology.org/ontologies/AURA",
@@ -165,301 +347,169 @@
       "ontologyCoverageScore" : 0.314,
       "prefOntologyScore" : 0.0,
       "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.07852954822733006
+      "ontologyTotalUtilityScore" : 0.03141969881822004
     },
     "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://www.projecthalo.com/aura#Subatomic-Particle",
+      "matchedConceptName" : "http://www.projecthalo.com/aura#Biological-Process",
       "conceptContextMatchingScore" : 0.2,
       "conceptSemanticRichnessScore" : 0.4,
       "conceptUtilityScore" : 0.30000000000000004,
-      "matchedConceptLabel" : "Subatomic-Particle",
+      "matchedConceptLabel" : "Biological-Process",
       "matchedConceptSynonyms" : [ ],
       "matchedConceptDef" : [ ],
-      "matchedConceptSubClasses" : [ "Positron", "Proton", "Neutron", "Electron" ],
-      "matchedConceptSubClassesIds" : [ "http://www.projecthalo.com/aura#Positron", "http://www.projecthalo.com/aura#Proton", "http://www.projecthalo.com/aura#Neutron", "http://www.projecthalo.com/aura#Electron" ]
+      "matchedConceptSubClasses" : [ "Coral-Reef-Calcification", "Behavior", "Gametogenesis", "Ecological-Process", "Agglutination", "Dental-Cavity-Formation", "Nutrition", "Biofilm-Formation", "Disease-Process", "Evolutionary-Process", "Fruiting-Body-Formation-In-Prokaryote", "Translocation", "Biomolecular-Process", "Cellular-Process", "Synthesis-Of-Blood-Cell", "Metabolism", "Subcellular-Process", "Tumor-Growth", "Signal-Transmission", "Tissue-Repair", "Shivering", "Metastasis", "Shell-Calcification", "Decomposition", "Macrophysiological-Process", "Secretion" ],
+      "matchedConceptSubClassesIds" : [ "http://www.projecthalo.com/aura#Coral-Reef-Calcification", "http://www.projecthalo.com/aura#Behavior", "http://www.projecthalo.com/aura#Gametogenesis", "http://www.projecthalo.com/aura#Ecological-Process", "http://www.projecthalo.com/aura#Agglutination", "http://www.projecthalo.com/aura#Dental-Cavity-Formation", "http://www.projecthalo.com/aura#Nutrition", "http://www.projecthalo.com/aura#Biofilm-Formation", "http://www.projecthalo.com/aura#Disease-Process", "http://www.projecthalo.com/aura#Evolutionary-Process", "http://www.projecthalo.com/aura#Fruiting-Body-Formation-In-Prokaryote", "http://www.projecthalo.com/aura#Translocation", "http://www.projecthalo.com/aura#Biomolecular-Process", "http://www.projecthalo.com/aura#Cellular-Process", "http://www.projecthalo.com/aura#Synthesis-Of-Blood-Cell", "http://www.projecthalo.com/aura#Metabolism", "http://www.projecthalo.com/aura#Subcellular-Process", "http://www.projecthalo.com/aura#Tumor-Growth", "http://www.projecthalo.com/aura#Signal-Transmission", "http://www.projecthalo.com/aura#Tissue-Repair", "http://www.projecthalo.com/aura#Shivering", "http://www.projecthalo.com/aura#Metastasis", "http://www.projecthalo.com/aura#Shell-Calcification", "http://www.projecthalo.com/aura#Decomposition", "http://www.projecthalo.com/aura#Macrophysiological-Process", "http://www.projecthalo.com/aura#Secretion" ]
     } ],
     "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.12617651607577668,
+    "totalUtilityScore" : 0.1104732329394067,
     "ontologyScore" : 1
   }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/AGRO",
-    "ontologyName" : "AGRonomy Ontology",
-    "ontologyDescription" : "AGRO, the AGRonomy Ontology, describes agronomic practices, agronomic techniques, and agronomic variables used in agronomic experiments. AGRO is being built using traits identified by agronomists, the ICASA variables, and other existing ontologies such as ENVO, UO, and PATO, IAO, and CHEBI. Further, AGRO will power an Agronomy Management System and fieldbook modeled on a CGIAR Breeding Management System to capture agronomic data.",
+    "ontologyID" : "https://data.bioontology.org/ontologies/MIRNAO",
+    "ontologyName" : "MicroRNA Ontology",
+    "ontologyDescription" : "An application ontology for microRNAs.",
     "ontologyUtilityScore" : {
       "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 8.59535495629994E-5,
-      "ontologyCoverageScore" : 0.275,
+      "ontologyPopularityScore" : 1.126615137016601E-4,
+      "ontologyCoverageScore" : 0.314,
       "prefOntologyScore" : 0.0,
       "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.06876289303243445
+      "ontologyTotalUtilityScore" : 0.031411266151370174
     },
     "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
+      "matchedConceptName" : "http://purl.org/obo/owl/GO#GO_0008150",
       "conceptContextMatchingScore" : 0.2,
       "conceptSemanticRichnessScore" : 0.4,
       "conceptUtilityScore" : 0.30000000000000004,
-      "matchedConceptLabel" : "subatomic particle",
-      "matchedConceptSynonyms" : [ "subatomic particles" ],
-      "matchedConceptDef" : [ "A particle smaller than an atom." ],
-      "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "nuclear particle", "composite particle" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
+      "matchedConceptLabel" : "Biological Process",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ "Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end." ],
+      "matchedConceptSubClasses" : [ "Biological Regulation", "Metabolic Process" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.org/obo/owl/GO#GO_0065007", "http://purl.org/obo/owl/GO#GO_0008152" ]
     } ],
     "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.12292096434414482,
+    "totalUtilityScore" : 0.11047042205045673,
     "ontologyScore" : 1
   }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/ECTO",
-    "ontologyName" : "Environmental conditions, treatments and exposures ontology",
-    "ontologyDescription" : "ECTO describes exposures to experimental treatments of plants and model organisms (e.g. exposures to modification of diet, lighting levels, temperature); exposures of humans or any other organisms to stressors through a variety of routes, for purposes of public health, environmental monitoring etc, stimuli, natural and experimental, any kind of environmental condition or change in condition that can be experienced by an organism or population of organisms on earth. The scope is very general and can include for example plant treatment regimens, as well as human clinical exposures (although these may better be handled by a more specialized ontology).",
+    "ontologyID" : "https://data.bioontology.org/ontologies/GRO",
+    "ontologyName" : "Gene Regulation Ontology",
+    "ontologyDescription" : "The Gene Regulation Ontology (GRO) is a conceptual model for the domain of gene regulation. It covers processes  that are linked to the regulation of gene expression as well as physical entities that are involved in these processes (such as genes and transcription factors) in terms of ontology classes and semantic relations between classes.",
     "ontologyUtilityScore" : {
       "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 2.6843537560684358E-5,
-      "ontologyCoverageScore" : 0.275,
+      "ontologyPopularityScore" : 0.03240353479796042,
+      "ontologyCoverageScore" : 0.235,
       "prefOntologyScore" : 0.0,
       "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.0687540265306341
+      "ontologyTotalUtilityScore" : 0.02674035347979604
     },
     "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
+      "matchedConceptName" : "http://www.bootstrep.eu/ontology/GRO#PhysiologicalProcess",
       "conceptContextMatchingScore" : 0.2,
       "conceptSemanticRichnessScore" : 0.4,
       "conceptUtilityScore" : 0.30000000000000004,
-      "matchedConceptLabel" : "subatomic particle",
-      "matchedConceptSynonyms" : [ "subatomic particles" ],
-      "matchedConceptDef" : [ "A particle smaller than an atom." ],
-      "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "boson", "nuclear particle", "composite particle" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36341", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
+      "matchedConceptLabel" : "biological process",
+      "matchedConceptSynonyms" : [ "physiological process" ],
+      "matchedConceptDef" : [ ],
+      "matchedConceptSubClasses" : [ "organismal process", "growth", "death", "behavior", "developmental process", "cellular process", "starvation", "physiological process phase" ],
+      "matchedConceptSubClassesIds" : [ "http://www.bootstrep.eu/ontology/GRO#OrganismalProcess", "http://www.bootstrep.eu/ontology/GRO#Growth", "http://www.bootstrep.eu/ontology/GRO#Death", "http://www.bootstrep.eu/ontology/GRO#Behavior", "http://www.bootstrep.eu/ontology/GRO#DevelopmentalProcess", "http://www.bootstrep.eu/ontology/GRO#CellularProcess", "http://www.bootstrep.eu/ontology/GRO#Starvation", "http://www.bootstrep.eu/ontology/GRO#PhysiologicalProcessPhase" ]
     } ],
     "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.12291800884354472,
+    "totalUtilityScore" : 0.10891345115993202,
     "ontologyScore" : 1
   }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/MCO",
-    "ontologyName" : "Microbial Conditions Ontology",
-    "ontologyDescription" : "Microbial Conditions Ontology contains terms to describe growth conditions in microbiological experiments. The first version is based on gene regulation experiments in Escherichia coli K-12. It is being used in RegulonDB to link growth conditions to gene regulation data.",
+    "ontologyID" : "https://data.bioontology.org/ontologies/IDO-COVID-19",
+    "ontologyName" : "The COVID-19 Infectious Disease Ontology",
+    "ontologyDescription" : "The COVID-19 Infectious Disease Ontology (IDO-COVID-19) is an extension of the Infectious Disease Ontology (IDO) and the Virus Infectious Disease Ontology (VIDO). IDO Virus follows OBO Foundry guidelines, employs the Basic Formal Ontology as its starting point, and covers epidemiology, classification, pathogenesis, and treatment of terms used to represent infection by the SARS-CoV-2 virus strain, and the associated COVID-19 disease.\r\n",
     "ontologyUtilityScore" : {
       "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 2.413206912021119E-5,
-      "ontologyCoverageScore" : 0.196,
+      "ontologyPopularityScore" : 1.388271841522262E-4,
+      "ontologyCoverageScore" : 0.235,
       "prefOntologyScore" : 0.0,
       "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.049003619810368035
+      "ontologyTotalUtilityScore" : 0.023513882718415223
     },
     "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/GO_0008150",
       "conceptContextMatchingScore" : 0.2,
       "conceptSemanticRichnessScore" : 0.4,
       "conceptUtilityScore" : 0.30000000000000004,
-      "matchedConceptLabel" : "subatomic particle",
-      "matchedConceptSynonyms" : [ "subatomic particles" ],
-      "matchedConceptDef" : [ "A particle smaller than an atom." ],
-      "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "nuclear particle", "composite particle" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
+      "matchedConceptLabel" : "biological process",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ "Process specifically pertinent to the functioning of functionally integrated units." ],
+      "matchedConceptSubClasses" : [ "establishment of localization", "entry into host", "immune response", "symbiotic process", "developmental process", "adhesion of symbiont to host" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/GO_0051234", "http://purl.obolibrary.org/obo/GO_0044409", "http://purl.obolibrary.org/obo/GO_0006955", "http://purl.obolibrary.org/obo/GO_0044403", "http://purl.obolibrary.org/obo/GO_0032502", "http://purl.obolibrary.org/obo/GO_0044406" ]
     } ],
     "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.11633453993678936,
+    "totalUtilityScore" : 0.10783796090613841,
     "ontologyScore" : 1
   }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/OCMR",
-    "ontologyName" : "Ontology of Chinese Medicine for Rheumatism",
-    "ontologyDescription" : "OCMR is a biomedical ontology that represents anti-rheumatism traditional Chinese medicines and related information.",
+    "ontologyID" : "https://data.bioontology.org/ontologies/GENO",
+    "ontologyName" : "Genotype Ontology",
+    "ontologyDescription" : "An integrated ontology for representing the genetic variations described in genotypes, and their causal relationships to phenotype and diseases.",
     "ontologyUtilityScore" : {
       "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 4.5552669799949215E-5,
-      "ontologyCoverageScore" : 0.157,
+      "ontologyPopularityScore" : 1.3177736620699593E-4,
+      "ontologyCoverageScore" : 0.235,
       "prefOntologyScore" : 0.0,
       "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.039256832900469996
+      "ontologyTotalUtilityScore" : 0.023513177736620698
     },
     "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/GENO_0000351",
       "conceptContextMatchingScore" : 0.2,
       "conceptSemanticRichnessScore" : 0.4,
       "conceptUtilityScore" : 0.30000000000000004,
-      "matchedConceptLabel" : "subatomic particle",
-      "matchedConceptSynonyms" : [ "subatomic particles" ],
-      "matchedConceptDef" : [ "A particle smaller than an atom." ],
-      "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "nuclear particle", "composite particle" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
+      "matchedConceptLabel" : "biological process",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ ],
+      "matchedConceptSubClasses" : [ "life cycle stage", "human life cycle stage", "developmental process", "phenotypic inheritance process" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/UBERON_0000105", "http://purl.obolibrary.org/obo/HsapDv_0000000", "http://purl.obolibrary.org/obo/GO_0032502", "http://purl.obolibrary.org/obo/GENO_0000770" ]
     } ],
     "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.11308561096682335,
+    "totalUtilityScore" : 0.10783772591220692,
     "ontologyScore" : 1
   }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/FB-CV",
-    "ontologyName" : "FlyBase Controlled Vocabulary",
-    "ontologyDescription" : "A structured controlled vocabulary used for various aspects of annotation by FlyBase. It includes the Drosophila Phenotype Ontology (DPO) which is also released separately. This ontology is maintained by FlyBase for various aspects of annotation not covered, or not yet covered, by other OBO ontologies. If and when community ontologies are available for the domains here covered FlyBase will use them.",
+    "ontologyID" : "https://data.bioontology.org/ontologies/VIDO",
+    "ontologyName" : "Virus Infectious Disease Ontology",
+    "ontologyDescription" : "The Virus Infectious Disease Ontology (IDO Virus) is an extension of the Infectious Disease Ontology (IDO). IDO Virus follows OBO Foundry guidelines, employs the Basic Formal Ontology as its starting point, and covers epidemiology, classification, pathogenesis, and treatment of terms used by Virologists, i.e. virus, prion, satellite, viroid, etc. ",
     "ontologyUtilityScore" : {
       "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 0.016174720501286488,
-      "ontologyCoverageScore" : 0.196,
+      "ontologyPopularityScore" : 8.256421401240795E-5,
+      "ontologyCoverageScore" : 0.235,
       "prefOntologyScore" : 0.0,
       "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.05142620807519298
+      "ontologyTotalUtilityScore" : 0.023508256421401242
     },
     "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
-      "conceptContextMatchingScore" : 0.0,
+      "matchedConceptName" : "http://purl.obolibrary.org/obo/GO_0008150",
+      "conceptContextMatchingScore" : 0.2,
       "conceptSemanticRichnessScore" : 0.4,
-      "conceptUtilityScore" : 0.2,
-      "matchedConceptLabel" : "subatomic particle",
-      "matchedConceptSynonyms" : [ "subatomic particles" ],
-      "matchedConceptDef" : [ "A particle smaller than an atom." ],
-      "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "nuclear particle", "composite particle" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
+      "conceptUtilityScore" : 0.30000000000000004,
+      "matchedConceptLabel" : "biological process",
+      "matchedConceptSynonyms" : [ ],
+      "matchedConceptDef" : [ "Process specifically pertinent to the functioning of functionally integrated units." ],
+      "matchedConceptSubClasses" : [ "establishment of localization", "entry into host", "immune response", "symbiotic process", "developmental process", "adhesion of symbiont to host" ],
+      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/GO_0051234", "http://purl.obolibrary.org/obo/GO_0044409", "http://purl.obolibrary.org/obo/GO_0006955", "http://purl.obolibrary.org/obo/GO_0044403", "http://purl.obolibrary.org/obo/GO_0032502", "http://purl.obolibrary.org/obo/GO_0044406" ]
     } ],
     "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.08380873602506433,
+    "totalUtilityScore" : 0.10783608547380043,
     "ontologyScore" : 1
   }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/PHIPO",
-    "ontologyName" : "Pathogen Host Interaction Phenotype Ontology",
-    "ontologyDescription" : "PHIPO is a formal ontology of species-neutral phenotypes observed in pathogen-host interactions. PHIPO is being developed to support the comprehensive and detailed representation of phenotypes in PHI-base, the multi-species Pathogen-Host Interactions database available online at http://www.phi-base.org. PHIPO is pre-composed and logically defined.",
+    "ontologyID" : "https://data.bioontology.org/ontologies/COB",
+    "ontologyName" : " Core Ontology for Biology and Biomedicine",
+    "ontologyDescription" : "The Core Ontology for Biology and Biomedicine (COB) brings together key terms from a wide range of OBO projects into a single, small ontology. The goal is to improve interoperabilty and reuse across the OBO community through better coordination of key terms.",
     "ontologyUtilityScore" : {
       "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 1.8844705661288515E-5,
-      "ontologyCoverageScore" : 0.157,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.039252826705849196
-    },
-    "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
-      "conceptContextMatchingScore" : 0.0,
-      "conceptSemanticRichnessScore" : 0.4,
-      "conceptUtilityScore" : 0.2,
-      "matchedConceptLabel" : "subatomic particle",
-      "matchedConceptSynonyms" : [ "subatomic particles" ],
-      "matchedConceptDef" : [ "A particle smaller than an atom." ],
-      "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "nuclear particle", "composite particle" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
-    } ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.07975094223528306,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/NBO",
-    "ontologyName" : "Neuro Behavior Ontology",
-    "ontologyDescription" : "The Neurobehavior Ontology (NBO) consists of two main components, an ontology of behavioral processes and an ontology of behavioral phenotypes. The behavioral process branch of NBO contains a classification of behavior processes complementing and extending GO’s process ontology. The behavior phenotype branch of NBO consists of a classification of both normal and abnormal behavioral characteristics of organisms.",
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 3.293078420954662E-4,
-      "ontologyCoverageScore" : 0.137,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.03429939617631432
-    },
-    "conceptUtilityScores" : [ {
-      "matchedConceptName" : "http://purl.obolibrary.org/obo/CHEBI_36342",
-      "conceptContextMatchingScore" : 0.0,
-      "conceptSemanticRichnessScore" : 0.4,
-      "conceptUtilityScore" : 0.2,
-      "matchedConceptLabel" : "subatomic particle",
-      "matchedConceptSynonyms" : [ "subatomic particles" ],
-      "matchedConceptDef" : [ "A particle smaller than an atom." ],
-      "matchedConceptSubClasses" : [ "fermion", "fundamental particle", "nuclear particle", "composite particle" ],
-      "matchedConceptSubClassesIds" : [ "http://purl.obolibrary.org/obo/CHEBI_36340", "http://purl.obolibrary.org/obo/CHEBI_33233", "http://purl.obolibrary.org/obo/CHEBI_36347", "http://purl.obolibrary.org/obo/CHEBI_36343" ]
-    } ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.07809979872543811,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/RBO",
-    "ontologyName" : "Radiation Biology Ontology",
-    "ontologyDescription" : "RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.",
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 0.032282196585249244,
+      "ontologyPopularityScore" : 3.511351630412752E-5,
       "ontologyCoverageScore" : 0.392,
       "prefOntologyScore" : 0.0,
       "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.10284232948778739
+      "ontologyTotalUtilityScore" : 0.039203511351630416
     },
     "conceptUtilityScores" : [ ],
     "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.03428077649592913,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/HUPSON",
-    "ontologyName" : "Human Physiology Simulation Ontology",
-    "ontologyDescription" : "Large biomedical simulation initiatives, such as the Virtual Physiological Human (VPH), are substantially dependent on controlled vocabularies to facilitate the exchange of information, of data and of models. Hindering these initiatives is a lack of a comprehensive ontology that covers the essential concepts of the simulation domain. \r\nWe propose a first version of a newly constructed ontology, HuPSON, as a basis for shared semantics and interoperability of simulations, of models, of algorithms and of other resources in this domain. The ontology is based on the Basic Formal Ontology, and adheres to the MIREOT principles.",
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 2.025466925033456E-4,
-      "ontologyCoverageScore" : 0.353,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.0882803820038755
-    },
-    "conceptUtilityScores" : [ ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.029426794001291834,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/PATO",
-    "ontologyName" : "Phenotypic Quality Ontology",
-    "ontologyDescription" : "Phenotypic qualities (properties). This ontology can be used in conjunction with other ontologies such as GO or anatomical ontologies to refer to phenotypes. Examples of qualities are red, ectopic, high temperature, fused, small, edematous and arrested.",
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 0.22801290905633825,
-      "ontologyCoverageScore" : 0.196,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.08320193635845075
-    },
-    "conceptUtilityScores" : [ ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.02773397878615025,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/OBA",
-    "ontologyName" : "Ontology of Biological Attributes",
-    "ontologyDescription" : "A collection of biological attributes (traits) covering all kingdoms of life. Interoperable with VT (vertebrate trait ontology) and TO (plant trait ontology). Extends PATO.",
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 1.3923390441829714E-4,
-      "ontologyCoverageScore" : 0.275,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.06877088508566274
-    },
-    "conceptUtilityScores" : [ ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.02292362836188758,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/DPO",
-    "ontologyName" : "Drosophila Phenotype Ontology",
-    "ontologyDescription" : "An ontology of commonly encountered and/or high level Drosophila phenotypes. It has significant formalisation - utilising terms from GO, CL, PATO and the Drosophila anatomy ontology. It has been used by FlyBase for > 159000 annotations of phenotype.",
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 3.48423694600802E-5,
-      "ontologyCoverageScore" : 0.196,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.04900522635541901
-    },
-    "conceptUtilityScores" : [ ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.016335075451806336,
-    "ontologyScore" : 1
-  }, {
-    "ontologyID" : "https://data.bioontology.org/ontologies/CARO",
-    "ontologyName" : "Common Anatomy Reference Ontology",
-    "ontologyDescription" : "The Common Anatomy Reference Ontology (CARO) is being developed to facilitate interoperability between existing anatomy ontologies for different species, and will provide a template for building new anatomy ontologies. CARO will be described in Anatomy Ontologies for Bioinformatics: Principles and Practice Albert Burger, Duncan Davidson and Richard Baldock (Editors)",
-    "ontologyUtilityScore" : {
-      "ontologyDomainScore" : 0.0,
-      "ontologyPopularityScore" : 0.016274231393051855,
-      "ontologyCoverageScore" : 0.157,
-      "prefOntologyScore" : 0.0,
-      "ontologyTypeScore" : 0.0,
-      "ontologyTotalUtilityScore" : 0.04169113470895778
-    },
-    "conceptUtilityScores" : [ ],
-    "ontologyAggregatedScore" : 0.0,
-    "totalUtilityScore" : 0.013897044902985926,
+    "totalUtilityScore" : 0.013067837117210138,
     "ontologyScore" : 1
   } ],
-  "rewardScore" : [ 0.9 ],
+  "rewardScore" : [ 1.05 ],
   "selectedOntology" : [ "https://data.bioontology.org/ontologies/ENVO" ]
 }
